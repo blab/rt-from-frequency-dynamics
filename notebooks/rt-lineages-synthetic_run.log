@@ -1,0 +1,320 @@
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 2000
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+method = sample (Default)
+      gamma = 0.050000000000000003 (Default)
+  sample
+      delta = 0.80000000000000004 (Default)
+    num_samples = 1000 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+    num_warmup = 2000
+      window = 25 (Default)
+    save_warmup = 0 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+    thin = 1 (Default)
+        stepsize = 1 (Default)
+    adapt
+        stepsize_jitter = 1
+      engaged = 1 (Default)
+id = 3
+      gamma = 0.050000000000000003 (Default)
+data
+      delta = 0.80000000000000004 (Default)
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_3.data.R
+      kappa = 0.75 (Default)
+init = 2 (Default)
+      t0 = 10 (Default)
+random
+      init_buffer = 75 (Default)
+  seed = 812480172 (Default)
+output
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_samples_3.csv
+  diagnostic_file =  (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+
+    algorithm = hmc (Default)
+      hmc
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 2000
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+        engine = nuts (Default)
+      gamma = 0.050000000000000003 (Default)
+          nuts
+      delta = 0.80000000000000004 (Default)
+            max_depth = 10 (Default)
+      kappa = 0.75 (Default)
+        metric = diag_e (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 1
+id = 4
+data
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_4.data.R
+        metric_file =  (Default)
+init = 2 (Default)
+        stepsize = 1 (Default)
+random
+  seed = 812480172 (Default)
+output
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_samples_4.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+method = sample (Default)
+  sig_figs = -1 (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 2000
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+  profile_file = profile.csv (Default)
+        stepsize_jitter = 1
+
+id = 2
+data
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_2.data.R
+init = 2 (Default)
+random
+  seed = 812480172 (Default)
+output
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_samples_2.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 1
+id = 1
+data
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_1.data.R
+init = 2 (Default)
+random
+  seed = 812480172 (Default)
+output
+  file = /Users/marlinfiggins/Documents/rt-from-frequency-dynamics/data/sims/synthetic/synthetic/rt-lineages-synthetic_samples_1.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+
+
+Gradient evaluation took 0.001425 seconds
+1000 transitions using 10 leapfrog steps per transition would take 14.25 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001478 seconds
+1000 transitions using 10 leapfrog steps per transition would take 14.78 seconds.
+
+Gradient evaluation took 0.001269 seconds
+1000 transitions using 10 leapfrog steps per transition would take 12.69 seconds.
+Adjust your expectations accordingly!
+
+
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001438 seconds
+1000 transitions using 10 leapfrog steps per transition would take 14.38 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:    1 / 3000 [  0%]  (Warmup)
+Iteration:    1 / 3000 [  0%]  (Warmup)
+Iteration:    1 / 3000 [  0%]  (Warmup)
+Iteration:    1 / 3000 [  0%]  (Warmup)
+Iteration:  100 / 3000 [  3%]  (Warmup)
+Iteration:  100 / 3000 [  3%]  (Warmup)
+Iteration:  100 / 3000 [  3%]  (Warmup)
+Iteration:  100 / 3000 [  3%]  (Warmup)
+Iteration:  200 / 3000 [  6%]  (Warmup)
+Iteration:  200 / 3000 [  6%]  (Warmup)
+Iteration:  200 / 3000 [  6%]  (Warmup)
+Iteration:  200 / 3000 [  6%]  (Warmup)
+Iteration:  300 / 3000 [ 10%]  (Warmup)
+Iteration:  300 / 3000 [ 10%]  (Warmup)
+Iteration:  300 / 3000 [ 10%]  (Warmup)
+Iteration:  300 / 3000 [ 10%]  (Warmup)
+Iteration:  400 / 3000 [ 13%]  (Warmup)
+Iteration:  400 / 3000 [ 13%]  (Warmup)
+Iteration:  400 / 3000 [ 13%]  (Warmup)
+Iteration:  400 / 3000 [ 13%]  (Warmup)
+Iteration:  500 / 3000 [ 16%]  (Warmup)
+Iteration:  500 / 3000 [ 16%]  (Warmup)
+Iteration:  500 / 3000 [ 16%]  (Warmup)
+Iteration:  500 / 3000 [ 16%]  (Warmup)
+Iteration:  600 / 3000 [ 20%]  (Warmup)
+Iteration:  600 / 3000 [ 20%]  (Warmup)
+Iteration:  600 / 3000 [ 20%]  (Warmup)
+Iteration:  600 / 3000 [ 20%]  (Warmup)
+Iteration:  700 / 3000 [ 23%]  (Warmup)
+Iteration:  700 / 3000 [ 23%]  (Warmup)
+Iteration:  700 / 3000 [ 23%]  (Warmup)
+Iteration:  700 / 3000 [ 23%]  (Warmup)
+Iteration:  800 / 3000 [ 26%]  (Warmup)
+Iteration:  800 / 3000 [ 26%]  (Warmup)
+Iteration:  800 / 3000 [ 26%]  (Warmup)
+Iteration:  800 / 3000 [ 26%]  (Warmup)
+Iteration:  900 / 3000 [ 30%]  (Warmup)
+Iteration:  900 / 3000 [ 30%]  (Warmup)
+Iteration:  900 / 3000 [ 30%]  (Warmup)
+Iteration:  900 / 3000 [ 30%]  (Warmup)
+Iteration: 1000 / 3000 [ 33%]  (Warmup)
+Iteration: 1000 / 3000 [ 33%]  (Warmup)
+Iteration: 1000 / 3000 [ 33%]  (Warmup)
+Iteration: 1000 / 3000 [ 33%]  (Warmup)
+Iteration: 1100 / 3000 [ 36%]  (Warmup)
+Iteration: 1100 / 3000 [ 36%]  (Warmup)
+Iteration: 1100 / 3000 [ 36%]  (Warmup)
+Iteration: 1200 / 3000 [ 40%]  (Warmup)
+Iteration: 1100 / 3000 [ 36%]  (Warmup)
+Iteration: 1200 / 3000 [ 40%]  (Warmup)
+Iteration: 1200 / 3000 [ 40%]  (Warmup)
+Iteration: 1300 / 3000 [ 43%]  (Warmup)
+Iteration: 1200 / 3000 [ 40%]  (Warmup)
+Iteration: 1300 / 3000 [ 43%]  (Warmup)
+Iteration: 1400 / 3000 [ 46%]  (Warmup)
+Iteration: 1300 / 3000 [ 43%]  (Warmup)
+Iteration: 1400 / 3000 [ 46%]  (Warmup)
+Iteration: 1300 / 3000 [ 43%]  (Warmup)
+Iteration: 1500 / 3000 [ 50%]  (Warmup)
+Iteration: 1400 / 3000 [ 46%]  (Warmup)
+Iteration: 1400 / 3000 [ 46%]  (Warmup)
+Iteration: 1500 / 3000 [ 50%]  (Warmup)
+Iteration: 1600 / 3000 [ 53%]  (Warmup)
+Iteration: 1500 / 3000 [ 50%]  (Warmup)
+Iteration: 1500 / 3000 [ 50%]  (Warmup)
+Iteration: 1600 / 3000 [ 53%]  (Warmup)
+Iteration: 1700 / 3000 [ 56%]  (Warmup)
+Iteration: 1600 / 3000 [ 53%]  (Warmup)
+Iteration: 1600 / 3000 [ 53%]  (Warmup)
+Iteration: 1700 / 3000 [ 56%]  (Warmup)
+Iteration: 1800 / 3000 [ 60%]  (Warmup)
+Iteration: 1700 / 3000 [ 56%]  (Warmup)
+Iteration: 1700 / 3000 [ 56%]  (Warmup)
+Iteration: 1800 / 3000 [ 60%]  (Warmup)
+Iteration: 1900 / 3000 [ 63%]  (Warmup)
+Iteration: 1800 / 3000 [ 60%]  (Warmup)
+Iteration: 1800 / 3000 [ 60%]  (Warmup)
+Iteration: 1900 / 3000 [ 63%]  (Warmup)
+Iteration: 2000 / 3000 [ 66%]  (Warmup)
+Iteration: 2001 / 3000 [ 66%]  (Sampling)
+Iteration: 1900 / 3000 [ 63%]  (Warmup)
+Iteration: 1900 / 3000 [ 63%]  (Warmup)
+Iteration: 2000 / 3000 [ 66%]  (Warmup)
+Iteration: 2001 / 3000 [ 66%]  (Sampling)
+Iteration: 2100 / 3000 [ 70%]  (Sampling)
+Iteration: 2000 / 3000 [ 66%]  (Warmup)
+Iteration: 2001 / 3000 [ 66%]  (Sampling)
+Iteration: 2000 / 3000 [ 66%]  (Warmup)
+Iteration: 2001 / 3000 [ 66%]  (Sampling)
+Iteration: 2200 / 3000 [ 73%]  (Sampling)
+Iteration: 2100 / 3000 [ 70%]  (Sampling)
+Iteration: 2100 / 3000 [ 70%]  (Sampling)
+Iteration: 2100 / 3000 [ 70%]  (Sampling)
+Iteration: 2300 / 3000 [ 76%]  (Sampling)
+Iteration: 2200 / 3000 [ 73%]  (Sampling)
+Iteration: 2200 / 3000 [ 73%]  (Sampling)
+Iteration: 2400 / 3000 [ 80%]  (Sampling)
+Iteration: 2200 / 3000 [ 73%]  (Sampling)
+Iteration: 2300 / 3000 [ 76%]  (Sampling)
+Iteration: 2500 / 3000 [ 83%]  (Sampling)
+Iteration: 2300 / 3000 [ 76%]  (Sampling)
+Iteration: 2300 / 3000 [ 76%]  (Sampling)
+Iteration: 2400 / 3000 [ 80%]  (Sampling)
+Iteration: 2600 / 3000 [ 86%]  (Sampling)
+Iteration: 2400 / 3000 [ 80%]  (Sampling)
+Iteration: 2400 / 3000 [ 80%]  (Sampling)
+Iteration: 2700 / 3000 [ 90%]  (Sampling)
+Iteration: 2500 / 3000 [ 83%]  (Sampling)
+Iteration: 2500 / 3000 [ 83%]  (Sampling)
+Iteration: 2500 / 3000 [ 83%]  (Sampling)
+Iteration: 2800 / 3000 [ 93%]  (Sampling)
+Iteration: 2600 / 3000 [ 86%]  (Sampling)
+Iteration: 2600 / 3000 [ 86%]  (Sampling)
+Iteration: 2600 / 3000 [ 86%]  (Sampling)
+Iteration: 2900 / 3000 [ 96%]  (Sampling)
+Iteration: 2700 / 3000 [ 90%]  (Sampling)
+Iteration: 2700 / 3000 [ 90%]  (Sampling)
+Iteration: 2700 / 3000 [ 90%]  (Sampling)
+Iteration: 3000 / 3000 [100%]  (Sampling)
+
+ Elapsed Time: 148.91 seconds (Warm-up)
+               80.485 seconds (Sampling)
+               229.395 seconds (Total)
+
+Iteration: 2800 / 3000 [ 93%]  (Sampling)
+Iteration: 2800 / 3000 [ 93%]  (Sampling)
+Iteration: 2800 / 3000 [ 93%]  (Sampling)
+Iteration: 2900 / 3000 [ 96%]  (Sampling)
+Iteration: 2900 / 3000 [ 96%]  (Sampling)
+Iteration: 2900 / 3000 [ 96%]  (Sampling)
+Iteration: 3000 / 3000 [100%]  (Sampling)
+
+ Elapsed Time: 157.384 seconds (Warm-up)
+               94.472 seconds (Sampling)
+               251.856 seconds (Total)
+
+Iteration: 3000 / 3000 [100%]  (Sampling)
+
+ Elapsed Time: 160.84 seconds (Warm-up)
+               93.942 seconds (Sampling)
+               254.782 seconds (Total)
+
+Iteration: 3000 / 3000 [100%]  (Sampling)
+
+ Elapsed Time: 156.153 seconds (Warm-up)
+               100.641 seconds (Sampling)
+               256.794 seconds (Total)
+
