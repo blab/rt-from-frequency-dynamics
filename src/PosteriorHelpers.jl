@@ -1,3 +1,5 @@
+
+# Interval Based
 """
 Takes in array of matrices each of which is a simulation. Returns lQ, uQ, med which are the lQuant, uQuant quantiles and median respectively.
 """
@@ -102,4 +104,57 @@ function parse_by_deme(lQ, uQ, med)
     med = [hcat([med[ints][:, i] for ints in 1:len_quants]...) for i in 1:N_deme]
 
     return lQ, uQ, med
+end
+
+# HDI-Based
+function reshape_to_original(Q)
+    # Q is vector of samples
+    shape = size(Q[1])
+    sample_type = eltype(Q[1])
+    
+    # Q_ has original shape of quantity 
+    # Each index is a vector of samples
+    Q_ = Array{Vector{sample_type}}(undef, size(Q[1])...)
+    N = length(Q)
+    
+    for idx in eachindex(Q_)
+       Q_[idx] = sample_type[Q[sample][idx] for sample in 1:N]
+    end
+    
+    return Q_
+end
+
+# From MCMCChains
+function hpd(x::AbstractVector{<:Real}; alpha::Real=0.05)
+    n = length(x)
+    m = max(1, ceil(Int, alpha * n))
+
+    y = sort(x)
+    a = y[1:m]
+    b = y[(n - m + 1):n]
+    _, i = findmin(b - a)
+
+    return [a[i], b[i]]
+end
+
+lower_hpd(x;alpha=0.05) = hpd(x;alpha=alpha)[1]
+upper_hpd(x;alpha=0.05) = hpd(x;alpha=alpha)[2]
+
+"""
+Given quantitiy Q (Vector of samples of Q)
+return median, lower and upper HPD bounds for probability ps.
+Each lQ, uQ has indices so that ps[i] -> lQ[i].
+lQ[i][idx] gives lower bound of ps[i] of Q[i,j] from Stan.
+"""
+function get_quants(Q, ps)
+    Q_ = reshape_to_original(Q)
+    med = median.(Q_)
+    lQ = []
+    uQ = []
+    for p in ps
+        push!(lQ, lower_hpd.(Q_, alpha = 1-p)) 
+        push!(uQ, upper_hpd.(Q_, alpha = 1-p)) 
+    end
+    
+    return med, lQ, uQ
 end

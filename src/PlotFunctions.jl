@@ -46,6 +46,7 @@ function get_sequence_map(seq_labels)
     return lineage_map
 end
 
+# Interval-Methods
 function plot_R(SoI, states_dict)
     seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
     lineage_map = get_sequence_map(seq_labels)
@@ -347,6 +348,239 @@ function plot_EC(SoI, states_dict)
     ticks, _ = get_nice_ticks(dates)
     ax.xticks = ticks
     ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+
+    fig
+end
+
+# HDI-Methods
+function plot_R_HDI(SoI, states_dict)
+    seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
+    lineage_map = get_sequence_map(seq_labels)
+    
+    R = get_posterior(states_dict, SoI, "R.", true)
+    med, lQ, uQ = get_quants(R, ps)
+    
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 800), fontsize = 24)
+    ax = fig[1, 1] = Axis(fig,ylabel = "Effective Reproduction Number")
+
+    lines!(ax, dates_num, fill(1., length(dates_num)), color = "black", linestyle=:dash)  
+
+    for (lineage, name) in enumerate(seq_labels)
+        this_color = lineage_colors[lineage_map[name]]
+
+        # Plot credible intervals\
+        for i in reverse(1:length(ps))
+            band!(ax, dates_num, 
+                lQ[i][:, lineage], uQ[i][:, lineage], 
+                color = (this_color, alphas[i]), 
+                label = "$(Int(ps[i] * 100))% CI")
+        end
+
+        # Add median
+        lines!(ax, dates_num, med[:,lineage], color = "black", label = "Median")
+    end
+    
+    ticks, _ = get_nice_ticks(dates)
+    ax.xticks = ticks
+    ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+
+    #elements = [PolyElement(polycolor = lineage_colors[lineage_map[l]]) for l in seq_labels]
+    #fig[2,1] = Legend(fig, elements, seq_labels, "", orientation = :horizontal, tellwidth = false, tellheight = true)
+
+    fig 
+end
+
+function plot_sim_freq_HDI(SoI, states_dict)
+    seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
+    lineage_map = get_sequence_map(seq_labels)
+    
+    sim_freq = get_posterior(states_dict, SoI, "sim_freq", true)
+    med, lQ, uQ = get_quants(sim_freq, ps)
+
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 800), fontsize = 24)
+    ax = fig[1, 1] = Axis(fig,ylabel = "Posterior Lineage Frequencies")
+
+    for (lineage, name) in enumerate(seq_labels)
+        this_color = lineage_colors[lineage_map[name]]
+
+        # Plot credible intervals
+        for i in reverse(1:length(ps))
+            band!(ax, dates_num, 
+                lQ[i][:,lineage], uQ[lineage][:,lineage], 
+                color = (this_color, alphas[i]), 
+                label = "$(Int(ps[i] * 100))% CI")
+        end
+
+        # Add median
+        lines!(ax, dates_num, med[:,lineage], color = "black", linewidth = 1.5, label = "Median")
+    end
+
+    ticks, _ = get_nice_ticks(dates)
+    ax.xticks = ticks
+    ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+
+    #elements = [PolyElement(polycolor = lineage_colors[lineage_map[l]]) for l in seq_labels]
+    #fig[2,1] = Legend(fig, elements, seq_labels, "", orientation = :horizontal, tellwidth = false, tellheight = true)
+
+    fig 
+end
+
+function plot_post_pred_freq_HDI(SoI, states_dict)
+    seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
+    lineage_map = get_sequence_map(seq_labels)
+    
+    sample_freq = states_dict[SoI]["stan_data"]["num_sequenced"] ./ sum(states_dict[SoI]["stan_data"]["num_sequenced"], dims = 2)
+
+    obs_freq = get_posterior(states_dict, SoI, "obs_freqs", true)
+    med, lQ, uQ = get_quants(obs_freq, ps)
+
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 800), fontsize = 24)
+    ax = fig[1, 1] = Axis(fig,ylabel = "Posterior predictive sample frequencies")
+
+    for (lineage, name) in enumerate(seq_labels)
+        this_color = lineage_colors[lineage_map[name]]
+
+        # Plot credible intervals
+        for i in reverse(1:length(ps))
+            band!(ax, dates_num, 
+                lQ[i][:,lineage], uQ[i][:,lineage], 
+                color = (this_color, alphas[i]), 
+                label = "$(Int(ps[i] * 100))% CI")
+        end
+
+        # Add median
+        lines!(ax, dates_num, med[:,lineage], color = "black", linewidth = 1.5, label = "Median")
+        CairoMakie.scatter!(ax, dates_num,sample_freq[:,lineage],
+            color = (this_color, 1.0),
+            strokewidth = 0.5)
+    end
+
+    ticks, _ = get_nice_ticks(dates)
+    ax.xticks = ticks
+    ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+
+    #elements = [PolyElement(polycolor = lineage_colors[lineage_map[l]]) for l in seq_labels]
+    #fig[2,1] = Legend(fig, elements, seq_labels, "", orientation = :horizontal, tellwidth = false, tellheight = true)
+
+    fig
+end
+
+function plot_lineage_I_prev_HDI(SoI, states_dict)
+    seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
+    lineage_map = get_sequence_map(seq_labels)
+    
+    scaled_prev = get_posterior(states_dict, SoI, "scaled_prev.", true)
+    med, lQ, uQ = get_quants(scaled_prev, ps)
+
+    
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 800), fontsize = 24)
+    ax = fig[1, 1] = Axis(fig,ylabel = "Posterior Smoothed Cases")
+
+    barplot!(ax, dates_num, states_dict[SoI]["stan_data"]["cases"], color = (:black, 0.3))
+
+    for (lineage, name) in enumerate(seq_labels)
+        this_color = lineage_colors[lineage_map[name]]
+
+        # Plot credible intervals
+        for i in reverse(1:length(ps))
+            band!(ax, dates_num, 
+                lQ[i][:,lineage], uQ[i][:,lineage], 
+                color = (this_color, alphas[i]), 
+                label = "$(Int(ps[i] * 100))% CI")
+        end
+
+        # Add median
+        lines!(ax, dates_num, med[:,lineage], color = "black", linewidth = 1.5, label = "Median")
+    end
+
+    ticks, _ = get_nice_ticks(dates)
+    ax.xticks = ticks
+    ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+
+    elements = [PolyElement(polycolor = lineage_colors[lineage_map[l]]) for l in seq_labels]
+    #fig[2,1] = Legend(fig, elements, seq_labels, "", orientation = :horizontal, tellwidth = false, tellheight = true)
+    
+    fig
+end
+
+function plot_EC_smooth_HDI(SoI, states_dict)
+    seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
+    lineage_map = get_sequence_map(seq_labels)
+    
+    EC_smooth = get_posterior(states_dict, SoI, "EC_smooth.", false)
+    med, lQ, uQ = get_quants(EC_smooth, ps)
+
+
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 800), fontsize = 24)
+    ax = fig[1, 1] = Axis(fig,ylabel = "Posterior Smoothed Cases")
+
+    barplot!(ax, dates_num, states_dict[SoI]["stan_data"]["cases"], color = (:black, 0.3))
+    # Plot credible intervals
+    for i in reverse(1:length(ps))
+        band!(ax, dates_num, 
+            lQ[i],  uQ[i], 
+            color = (:purple, alphas[i]), 
+            label = "$(Int(ps[i] * 100))% CI")
+    end
+
+    # Add median
+    lines!(ax, dates_num, med, color = "black", linewidth = 1.5, label = "Median")
+    
+    # TIME AXIS 
+    ticks, _ = get_nice_ticks(dates)
+    ax.xticks = ticks
+    ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+    fig
+end
+
+function plot_post_pred_seq_counts_HDI(SoI, states_dict)
+    seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
+    lineage_map = get_sequence_map(seq_labels)
+
+    sample_counts = states_dict[SoI]["stan_data"]["num_sequenced"]
+    obs_counts = get_posterior(states_dict, SoI, "obs_counts", true)
+    med, lQ, uQ = get_quants(obs_counts, ps)
+
+    
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 1280), fontsize = 24)
+    supertitle = fig[1, 1] = Label(fig, "Posterior predictive lineage counts",
+        textsize = 24, color = :black, orientation = :horizontal, tellwidth = false, tellheight = true)
+    ticks, _ = get_nice_ticks(dates)
+
+
+    ax = []
+    for i in 1:length(seq_labels)
+        ax_now = Axis(fig)
+        push!(ax, ax_now)
+        fig[i+1, 1] = ax_now
+        ax_now.xticks = ticks
+        ax_now.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+    end
+
+    for (lineage, name) in enumerate(seq_labels)
+        this_color = lineage_colors[lineage_map[name]]
+
+        CairoMakie.barplot!(ax[lineage], dates_num,sample_counts[:,lineage],
+            color = (:black, 0.2))
+
+        # Plot credible intervals
+        for i in reverse(1:length(ps))
+            band!(ax[lineage], dates_num, 
+                lQ[i][:,lineage], uQ[lineage][:,lineage], 
+                color = (this_color, alphas[i]), 
+                label = "$(Int(ps[i] * 100))% CI")
+        end
+
+        # Add median
+        lines!(ax[lineage], dates_num, med[:,lineage], color = "black", linewidth = 1.5, label = "Median")
+
+      if lineage != length(seq_labels)
+            hidexdecorations!(ax[lineage], grid = false) 
+        end
+    end
+
+    #elements = [PolyElement(polycolor = lineage_colors[lineage_map[l]]) for l in seq_labels]
+    #fig[length(seq_labels)+2,1] = Legend(fig, elements, WHO_seq_names, "", orientation = :horizontal, tellwidth = false, tellheight = true)
 
     fig
 end

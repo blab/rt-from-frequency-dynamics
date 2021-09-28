@@ -141,6 +141,7 @@ function process_all_states(filename, df, g, onset, seed_L, forecast_L,
     return states_dict    
 end
 
+# Interval Based
 function get_Rt_by_state(state, states_dict)
     N_lineages = states_dict[state]["stan_data"]["N_lineage"]
     seq_labels = states_dict[state]["seq_labels"]
@@ -208,4 +209,55 @@ function get_growth_advantages(SoI, states_dict)
                v_lower_80 = lQ[:, 2],
                v_upper_80 = uQ[:, 2]
                )    
+end
+
+
+# HDI-based
+function get_Rt_by_state_HDI(state, states_dict)
+    N_lineages = states_dict[state]["stan_data"]["N_lineage"]
+    seq_labels = states_dict[state]["seq_labels"]
+    
+    # Process Rt 
+    R = sample_posterior(states_dict[state]["stan_results"], states_dict[state]["stan_cnames"], N_lineages, "R.")
+    med, lQ, uQ = get_quants(R, ps)
+
+    sim_freq = sample_posterior(states_dict[state]["stan_results"], states_dict[state]["stan_cnames"], N_lineages, "sim_freq")
+    freq_med, _, _ = get_quants(sim_freq, ps)
+
+    dates_vec = [] 
+    state_vec = []
+    lineage_vec = []
+    rt_median = []
+    rt_lower = [[] for i in 1:length(ps)]
+    rt_upper = [[] for i in 1:length(ps)]
+    freq_median = []
+
+    # May have to adjust to the size of things
+    seed_L = states_dict[state]["stan_data"]["seed_L"]
+    for lineage in 1:N_lineages
+        dates_vec = vcat(dates_vec, states_dict[state]["date"])
+        state_vec = vcat(state_vec, repeat([state], length(states_dict[state]["date"])))
+        lineage_vec = vcat(lineage_vec, repeat([seq_labels[lineage]], length(states_dict[state]["date"])))
+        rt_median = vcat(rt_median, med[:, lineage])
+        freq_median = vcat(freq_median, freq_med[:, lineage])
+        for i in 1:length(ps)
+            rt_lower[i] = vcat(rt_lower[i], lQ[i][:, lineage]) # Each col different p
+            rt_upper[i] = vcat(rt_upper[i], uQ[i][:, lineage])
+        end
+    end
+    
+    rt_lower = vcat(rt_lower...)
+    rt_upper = vcat(rt_upper...)
+
+    return DataFrame(state = state_vec, 
+        date = dates_vec,
+        lineage = lineage_vec,
+        rt_median = rt_median,
+        rt_lower_50 = rt_lower[1],
+        rt_upper_50 = rt_upper[1],
+        rt_lower_80 = rt_lower[2],
+        rt_upper_80 = rt_upper[2],
+        rt_lower_95 = rt_lower[3],
+        rt_upper_95 = rt_upper[3],
+        freq_median = freq_median)
 end
