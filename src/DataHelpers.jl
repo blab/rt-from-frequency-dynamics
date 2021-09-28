@@ -261,3 +261,23 @@ function get_Rt_by_state_HDI(state, states_dict)
         rt_upper_95 = rt_upper[3],
         freq_median = freq_median)
 end
+
+function get_growth_advantages_HDI(SoI, states_dict)
+    v = get_posterior(states_dict, SoI, "v", false)
+    v = [exp.(vi) for vi in v]
+    med, lQ, uQ = get_quants(v, ps)
+
+    state_vec = repeat([SoI], length(med))
+    lineage_vec =  vcat(states_dict[SoI]["seq_labels"]...)[1:end-1]
+
+    return DataFrame(state = state_vec, 
+               lineage = lineage_vec,
+               v_median = vec(med),
+               v_lower_50 = lQ[1],
+               v_upper_50 = uQ[1],
+               v_lower_80 = lQ[2],
+               v_upper_80 = uQ[2],
+               v_lower_95 = lQ[3],
+               v_upper_95 = uQ[3]
+               )    
+end

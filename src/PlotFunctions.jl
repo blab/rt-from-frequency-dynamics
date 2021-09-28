@@ -165,18 +165,15 @@ end
 function plot_growth_advantage(SoI, states_dict)
     seq_labels, dates, dates_num, seed_L = unpack_params(SoI, states_dict)
     lineage_map = get_sequence_map(seq_labels)
-
+    WHO_seq_names = [lineage_to_WHO[lineage] for lineage in seq_labels]
+    
     v = get_posterior(states_dict, SoI, "v", false)
     v = vcat(hcat(v...)')
-    med = median(v, dims = 1)
-    lQ = vcat([quantile(vi, lQuants) for vi in eachcol(v)]...)
-    uQ = vcat([quantile(vi, uQuants) for vi in eachcol(v)]...) 
-    
     
     fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (1280, 800), fontsize = 24)
     ax = fig[1, 1] = Axis(fig,ylabel = "Inferred Growth Advantage")
 
-    lines!(ax, [0.5, 5.5], [1.0, 1.0], color = :black, linestyle = :dash)
+    hlines!(ax, [1.0], color = :black, linestyle = :dash)
     for (lineage, name) in enumerate(seq_labels[1:end-1])
         this_color = lineage_colors[lineage_map[name]]
         CairoMakie.violin!(ax, fill(lineage, size(v, 1)), exp.(v[:, lineage]), 
@@ -188,7 +185,7 @@ function plot_growth_advantage(SoI, states_dict)
         CairoMakie.scatter!(ax, fill(lineage, size(v, 1)), exp.(v[:, lineage]), color = (:black, 0.1))
     end
 
-    ax.xticks = 1:5
+    ax.xticks = 1:length(seq_labels)
     ax.xtickformat = xs -> WHO_seq_names[convert.(Int,xs)]
     #CairoMakie.ylims!(ax, (0.9, 2.5))
 
