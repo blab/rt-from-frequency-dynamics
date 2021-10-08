@@ -21,6 +21,17 @@ function generation_time(n_days = 20)
 end
 
 """
+Get discretized generation time based on gamma distribution with given mode and std
+"""
+function generation_time_Gamma(n_days, m_g, std_g)
+    ra = ( m_g + sqrt( m_g^2 + 4*std_g^2 ) ) / ( 2 * std_g^2 )
+    sh = 1 + m_g * ra
+    g = Gamma(sh, inv(ra))
+    xsd = 1:n_days
+    return diff(cdf.(g, vcat(0., collect(xsd .+ 0.5))))
+end
+
+"""
 Generate generation time based on shape and rate parameters GS and GP.
 """
 function generation_time(n_days, GP, GS)
