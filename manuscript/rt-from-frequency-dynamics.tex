@@ -41,15 +41,15 @@
 
 %TODO: Be consistent on the language of lineage v. variant
 
-%TODO: This being grounded in renewal equation modeling also makes extending thes models easier
-
-%TODO: Structured R_{t} approach is also flexible and extensible 
+%TODO: Clean up results
+%TODO: Focus on synthesizing literature in the discussion to discuss limitations and future directions
+%TODO: What should two sentence takeaway be if I had to explan this to someone who was familiar with this line of work?
 
 \maketitle
 
 \begin{abstract}
 Relating genomic data of SARS-CoV-2 lineages to epidemic surveillance data is difficult. 
-Models of infectious diseases using genomic data typically rely on phylodynamic inference and tree-based models which have issues scaling to large number of samples. %TODO: Do we have an upper bound here?
+Models of infectious diseases using genomic data typically rely on phylogenetic and phylodynamic inference which have issues scaling to large number of samples. %TODO: Do we have an upper bound here?
 In response to this, recent studies have tried to use the frequencies of different variants to describe variant dynamics, but frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2. 
 We extend methods for inferring the effective reproduction number of an epidemic using case to jointly estimate variant-specific effective reproduction numbers and frequencies of several co-circulating SARS-CoV-2 variants using case data and genetic sequences.
 Our method can be used to infer structured relationships between effective reproduction numbers across time series which may be amendable to various analyses.
@@ -136,42 +136,40 @@ We attempted to estimate the rate of change of the effective reproduction number
 
 \section{Discussion}%
 
-%TODO: What are main points here?
-
-What does this mean for the future?
-
-%TODO: Surveillance of variants should be folded into regular epidemiological surveillance
-Surveillance of variants should be folded into standard epidemiological surveillance as knowledge of variant-specific growth advantages will be useful for forecasting growth of cases.
-%TODO: Knowing variant differences in transmission can be useful for epidemic planning 
+Summarize main results quickly. 
 
 How might these methods be useful in the future?
 
-[FOLD INTO STANDARD EPI MODELS, ALLOW REALISTIC DELAYS]
-
 %TODO: Reinforce that this is grounded in epidemiological modeling, requires no logistic growth assumption 
-[DOES NOT REQUIRE PARAMETRIC ASSUMPTIONS ON FREQUENCY GROWTH AND IS THEREFORE MORE FLEXIBLE]
+%TODO: Reinforce extensibility of the model with the structred R_{t} stuff
 
-[THIS METHOD IS CLEARLY EXTENSIBLE FOR OTHER ANALYSES DUE THE STRUCTURED MODEL]
+%% LIMITATIONS 
+With this mind, this work is not without limitations.
+% Limitations of it being deterministic
+The underlying transmission model for this work is deterministic and does not account for demographic stochasticity and over-dispersion in transmission which is well documented in transmision transmission. 
+% Introductions
+Further, we do not explictly model multiple introductions of variants which can play an important role in variants establishing themselves in different geographies at low infection counts and could bias our estimates of the effective reproduction number if not properly accounted for.
+
+%TODO: Hierarchical infernece
+Using hierarchical models of variants to jointly estimate growth advantages and pool estimates across locations could be a useful approach for analyzing consistency between growth advantages of lineages geographically.
+This would be a way to account for low growth advantages inferred for Beta (B.) in a handful of states including Louisiana and Wyoming which we believe is due to a lack successful introductions in these states.
 
 %TODO: Mention that there is further a need of these models to estimate possible means of control and provide early warning to transmissibility gains between variants
+Though there are several ways to improve these methods and explain their applicability, our current model does have use as a way of assessing early claims of variant advantages and is able to show there is evidence of consistent variant advantages shared between different geographies.
+Additional work is needed to attribute these inferred advantages to biological mechanisms like immune escape and transmissibility using [HERE] or to changes in other factors such as contact patterns or non-pharameutical interventions. %TODO: With what data? \cite{}
+Additionally, our method can be extended to analyze the role of specific constituent mutations defining a variant or lineage in changing the effective reproduction number of specific variants directly.
+With this in mind, our method potentially has use for evoluntary forecasting of variants for SARS-CoV-2. 
+Extending the model towards this aim will require methods for quantifying population immunity as well escape potential for circulating and potential as SARS-CoV-2 tends towards endemicity.
 
-%TODO: We have not fully explore the applicability of this approach model to assessing growth advantages on various scales
-[HOPE TO TRANSITION THIS FORM OF MODEL FOR EVOLUTIONARY SURVEILLANCE OF SARS-COV-2]
+%TODO: [TRANSITION TO ENDEMICITY]
+To better adjust these models to the transition to endemicity of SARS-CoV-2 will require transmission models that are capable of properly quantifying population immunity and the potential for immune escape of currently circulating and novel variants.
 
-Yet there are still very many ways to improve these methods.
+%TODO: Surveillance of variants should be folded into regular epidemiological surveillance
+Surveillance of variants should be folded into standard epidemiological surveillance as knowledge of variant-specific growth advantages will be useful for forecasting growth of cases.
 
-The growth advantages we infer cannot be readily attributed to immune escape or transmissibility. More work is needed in this area. 
-%TODO: Further work is needed to tie this to actual biological mechanisms such as immune escape
+%TODO: Knowing variant differences in transmission can be useful for epidemic planning 
 
-[FURTHER DUE TO NPI LOOSENING ... could be applied in conjunction with methods from [SHARMA]]
-%TODO: Note that growth of Delta might be additioanlly considered in conjuction with NPIs.
-
-Similar, these methods only currently work on lineages, but they can be extended to analyze the role of specific mutations in changing the $R_{t}$ of specific variants directly.
-Later, hierarchical models of variant growth jointly across locations using variational inference could be useful for analyzing consistency between growth advantages of lineages geographically.
-This would account for extremely low growth advantages inferred for Beta in a handful of states including Louisiana and Wyoming which we believe is due to a lack successful Beta introductions in these states.
-
-[TRANSITION TO ENDEMICITY]
-To better adjust these models to the transition to endemicity of SARS-CoV-2 will require transmission models that are capable of properly quantifying population immune and the potential for immune escape.
+%TODO: Close on what?
 
 \section{Methods}
 
@@ -254,6 +252,7 @@ Each basis spline is written as a column in the design matrix $\vec{X}$, so that
 where the $\vec{\beta}$ are to be estimated to parameterize the effective reproduction number.
 We then use locally adaptive smoothing of order one with a Laplace prior on the coefficients $\vec{\beta}$ to promote smoothness on the inferred $R_t$ trajectory \cite{Faulkner2018}. 
 This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity .etc. 
+%TODO: Structured R_{t} approach is also flexible and extensible, mention NPIs and that one paper 
 
 \paragraph{Modeling variant-specific effective reproduction numbers}%
 
@@ -261,8 +260,8 @@ To model the variant-specific reproduction numbers, we can infer individual inde
 \begin{equation}
   \ln R_{t, v} = \vec{X} \vec{\beta}_{v},
 \end{equation}
-where each lineage $v$ gets its own vector of parameters $\vec{\beta}_{v}$ model. 
-We use the same prior structure as above to promote smoothness on inferred trajectories.
+where each lineage $v$ gets its own vector of parameters $\vec{\beta}_{v}$ in this model. 
+We use the same prior structure as above to promote smoothness on inferred trajectories. This is our ``free $R_{t}$'' model which is used to generate figure \ref{fig:1}.
 
 \paragraph{Modeling variant-specific growth advantages}%
 
@@ -306,14 +305,16 @@ The authors declare no conflicting interests.
 \subsection*{Acknowledgements}%
  
 %TODO: We have to thank all the laboratories in the USA which submitted data.
-T.B. is a Pew Biomedical Scholar.
 M.F. is an ARCS Foundation scholar and was supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-1762114.
+T.B. is a Pew Biomedical Scholar.
 
 %TODO: Takeaway should be the general principle of the method as depicted in the caption.
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fig_1.png}
-  \caption{ (a) When assessing epidemic growth rates, we often compute single effective reproductive which is an average over the fitnesses of the viruses in the population.  (b) Epidemics are made of different variants. Using case counts alongside sequences of different lineages allows us to understand the proportion of different variants in the population. (c) Using both case count and frequency data, we can get at the growth rates of different lineages.}%
+  \caption{ (a) When assessing epidemic growth rates, we often compute a single effective reproduction number trajectory which is effectively an average over the all viruses in population.  
+    (b) Epidemics are made of different variants which may differ in fitness. Using case counts alongside sequences of different lineages allows us to understand the proportion of different variants in the population.
+(c) Using both case count and frequency data, we can estimate the effective reproduction numbers of different lineages.}%
   \label{fig:1}
 \end{figure}
 
@@ -401,6 +402,7 @@ By fixing one pivot class so that $I_{u_{*}} = \delta_{u_{*}} / T_{g} = 1$, we c
 
 This shows that the multinomial logistic regression function similarly to our fixed growth advantage model except with the additional assumption that the generation time is Dirac-delta at $T_{g}$. 
 This assumption additionally allows us to relate the epidemic growth rate and the effective reproduction number as $R = \exp(\frac{rt}{T_{g}})$. \cite{Wallinga2006}
+Further work is needed to directly quantify how making this assumption on the generation time affects the inferred growth advantages.
 
 \begin{figure}
   \centering
