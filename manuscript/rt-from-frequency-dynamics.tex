@@ -40,6 +40,11 @@
 \begin{document}
 
 %TODO: Be consistent on the language of lineage v. variant
+
+%TODO: This being grounded in renewal equation modeling also makes extending thes models easier
+
+%TODO: Structured R_{t} approach is also flexible and extensible 
+
 \maketitle
 
 \begin{abstract}
@@ -61,6 +66,7 @@ We use this model to quantify growth advantages for various SARS-CoV-2 variants 
 %TODO: Mention that modeling efforts are useful for understanding what has happened over the course of the pandemic
 %TODO: And will be useful for tackling the continued spread of SARS-CoV-2
 %TODO: Mention that in particular, we are concerned with the arrival of new genetic variants
+
 As SARS-CoV-2 evolves, extant lineages may increase in their ability to transmit and escape acquired immunity. %TODO: Reference here 
 Quantifying the observed growth advantages of SARS-CoV-2 variants of concern allow us to understand which variants are able to thrive in different locations.
 %TODO: Mention that GISAID exists and is relevant here.
@@ -96,17 +102,31 @@ The second model is a fixed growth advantage model of variant $R_{t}$ in which a
 
 We estimate the effective reproduction numbers of SARS-CoV-2 variants of concern in the United States using daily confirmed case counts and sequence lineage annotations from GISAID. 
 We consider the following 7 variants which have been flagged as variants of interest or concern: Alpha, Beta, Gamma, Delta, Epsilon, Iota, Mu. 
-In order to inform our estimation of the frequency of genetic variation, we divide sequences from each state into daily sample counts for each of the 7 variants and one "other" category containing all other sequences. 
-We then use these counts alongside the daily case counts in each state to estimate the effective reproduction number for individual variants. 
-%TODO: Briefly describe that frequencies are informed by the probability of observing these particular counts
-In order to estimate a fixed advantage of particular variants in the population, we can re-parameterize or model to infer a fixed variant-specific growth advantage or effective reproduction number scaling.
-Using our model, we find that most variants identified share some positive growth advantage with the exception of Epsilon. Overall, in all states, we find that the Delta variant appears to have the highest growth advantage of all variants considered followed by Mu. 
 
+In order to inform our estimation of the frequency of genetic variation, we divide sequences from each state into daily sample counts for each of the 7 variants and one "other" category containing all other sequences. 
+We then use these counts alongside the daily case counts in each state to estimate the effective reproduction number for individual variants using a fixed growth advantage model. 
+
+%TODO: Rephrase, we're inferring $R_{t}$ trajectories which induce a frequency trajectory
+The growth and transmission of each variant is modeled using a deterministic renewal equation which allows for realistic delay distributions between infection, transmission, and detection as a case. 
+With this approach, we need only to determine the initial number of infections and the effective reproduction numbers, to model the frequency of each variant in the population over time. 
+Here, observed counts of each lineage each day to inform the variant frequency on each day using a multinomial likelihood. 
+We can then infer the effective reproduction numbers for each variant, so that they are constrained in both their differences and absolute scale by both the sequence counts and the case count data.
+
+In order to estimate a fixed advantage of particular variants in the population, we can re-parameterize or model to infer a fixed variant-specific growth advantage or effective reproduction number scaling. 
+By parameterizing the effective reproductive numbers directly, our results measure variant differences at the level of transmission and not frequency changes as in other methods.
+
+Using our model, we find that most variants identified share some positive growth advantage with the exception of Epsilon. 
+Further, these growth advantages appear to be consistent between the states analyzed (Fig 3).
+Overall, in all states, we find that the Delta variant appears to have the highest growth advantage of all variants considered followed by Mu. 
 %TODO: Mention that our inferred transmission advantage is consistent with that inferred by other groups. Add citations for this.
+The inferred transmission advantage of Delta is consistent with the approaches of % Fritz, Moritz, others.
+% which find that Delta has ..
 
 %TODO: Include particulars about what we learned about individual variants above
+Beta, Gamma, Mu...
 
 %TODO: Acknowledge consistency in shapes of $R_{t}$ trajectories across states and relate to Fig 4.
+In addition to the consistency in the inferred growth advantages between variants, we also observe similarities in the shapes of $R_{t}$ trajectories between states. %TODO: Expand this 
 
 \paragraph{Vaccination effect on variants}
 
@@ -117,23 +137,41 @@ We attempted to estimate the rate of change of the effective reproduction number
 \section{Discussion}%
 
 %TODO: What are main points here?
-%TODO: Surveillance of variants should be folded into regular epidemiological surveillance
-%TODO: Knowing variant differences in transmission can be useful for epidemic planning 
-%TODO: There is a lot of room for growth here
-%TODO: Further work is needed to tie this to actual biological mechanisms such as immune escape
-%TODO: We have not fully explore the applicability of this model to assessing mutational advantages
 
 What does this mean for the future?
 
+%TODO: Surveillance of variants should be folded into regular epidemiological surveillance
 Surveillance of variants should be folded into standard epidemiological surveillance as knowledge of variant-specific growth advantages will be useful for forecasting growth of cases.
+%TODO: Knowing variant differences in transmission can be useful for epidemic planning 
 
 How might these methods be useful in the future?
 
+[FOLD INTO STANDARD EPI MODELS, ALLOW REALISTIC DELAYS]
+
+%TODO: Reinforce that this is grounded in epidemiological modeling, requires no logistic growth assumption 
+[DOES NOT REQUIRE PARAMETRIC ASSUMPTIONS ON FREQUENCY GROWTH AND IS THEREFORE MORE FLEXIBLE]
+
+[THIS METHOD IS CLEARLY EXTENSIBLE FOR OTHER ANALYSES DUE THE STRUCTURED MODEL]
+
+%TODO: Mention that there is further a need of these models to estimate possible means of control and provide early warning to transmissibility gains between variants
+
+%TODO: We have not fully explore the applicability of this approach model to assessing growth advantages on various scales
+[HOPE TO TRANSITION THIS FORM OF MODEL FOR EVOLUTIONARY SURVEILLANCE OF SARS-COV-2]
+
 Yet there are still very many ways to improve these methods.
+
 The growth advantages we infer cannot be readily attributed to immune escape or transmissibility. More work is needed in this area. 
+%TODO: Further work is needed to tie this to actual biological mechanisms such as immune escape
+
+[FURTHER DUE TO NPI LOOSENING ... could be applied in conjunction with methods from [SHARMA]]
+%TODO: Note that growth of Delta might be additioanlly considered in conjuction with NPIs.
+
 Similar, these methods only currently work on lineages, but they can be extended to analyze the role of specific mutations in changing the $R_{t}$ of specific variants directly.
 Later, hierarchical models of variant growth jointly across locations using variational inference could be useful for analyzing consistency between growth advantages of lineages geographically.
 This would account for extremely low growth advantages inferred for Beta in a handful of states including Louisiana and Wyoming which we believe is due to a lack successful Beta introductions in these states.
+
+[TRANSITION TO ENDEMICITY]
+To better adjust these models to the transition to endemicity of SARS-CoV-2 will require transmission models that are capable of properly quantifying population immune and the potential for immune escape.
 
 \section{Methods}
 
@@ -149,20 +187,20 @@ We exclude the following US states and territories which have fewer than 2,000 s
 We estimate the effective reproduction number of competing lineages using a deterministic renewal equation based framework. These equations arise as the expectation of a Bellman-Harris branching process. \cite{Bellman1948} 
 
 The renewal equation framework allows one to model infection processes in a way that is mathematically equivalent to standard epidemic models like the SEIR compartment model, but in a way that can be more suitable for estimating the effective reproduction number and forecasting using arbitrary generation times \cite{Champredon2018}. This renewal equation can be written as
-\begin{align*}
+\begin{equation}
   I(t) = R_{t} \int_{0}^{t} I(\tau)g_{t-\tau} d\tau,
-\end{align*}
+\end{equation}
 where $g$ is the generation time. 
 In addition, we also include onset distribution $o$ for symptoms which allows us to compute the prevalence as
-\begin{align*}
+\begin{equation}
   P(t) = \int_{0}^{t} I(\tau) o_{t-\tau} d \tau.
-\end{align*}
+\end{equation}
 We bin the generation time $g$ and the onset distribution $o$ to nearest day, so that we estimate the daily incidence $I(t)$ and prevalence $P(t)$ as
 
-\begin{align*}
+\begin{align}
   I(t) &= R_{t} \sum_{\tau < t} I(\tau) g_{t-\tau}\\
   P(t) &= \sum_{\tau < t} I(\tau) o_{t-\tau}
-\end{align*}
+\end{align}
 
 We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020}.
 
@@ -178,9 +216,9 @@ This method of stacking delays can be extended to any number of delays to better
 
 In the case there are multiple variants co-circulating in a population, we can additionally compute the frequency of variant $v$ in the population at time $t$ under the infection process outlined above as
 
-\begin{align*}
+\begin{equation}
   f_{v}(t) = \frac{P_{v}(t)}{ \sum_{1\leq v \leq V} P_{v}(t)}.
-\end{align*}
+\end{equation}
 
 Since we've defined the frequency in terms of the transmission dynamics, the variant-specific effective reproduction numbers $R_{t,v}$ and initial infections $I_{0, v}$ determine the frequency dynamics directly. 
 Therefore, we do not need to impose a parametric form on $f_{v}(t)$ directly as in other models of variant frequency.
@@ -189,9 +227,9 @@ Therefore, we do not need to impose a parametric form on $f_{v}(t)$ directly as 
 
 As most case time series in the United States have a strong weekly seasonal effect, we estimate a reporting rate which varies weekly, so that $\rho = (\rho_{1}, \ldots, \rho_{7})$ as in \cite{Abbott2020}. 
 We then define the observation likelihood using a negative binomial distribution as follows
-\begin{align*}
+\begin{equation}
   Y_{t} \sim \text{NegBinom}(\rho_{[t]} P(t),  \alpha),
-\end{align*}
+\end{equation}
 where $[t] = t \mod 7 + 1$, $\alpha$ is an over-dispersion parameter relative to the Poisson distribution and $\text{NegBinom}(\mu, \alpha)$ is the negative binomial distribution with mean $\mu$ and variance  $\mu + \alpha\mu^{2}$. In the case of multiple variants, we use $P(t) = \sum_{1\leq v \leq V} P_{v}(t)$. 
 The negative binomial likelihood is often used for modeling observation noise in epidemic time series which are often over-dispersed relative to a Poisson distribution. %TODO: Citation here?
 
@@ -199,9 +237,9 @@ The negative binomial likelihood is often used for modeling observation noise in
 
 Suppose we're tracking the growth of $V$ variants, our data for a given day $t$ takes the form of daily counts $C_{t} = (C_{t,1}, \ldots, C_{t,V})$ of sequences of each variant with daily total $N_{t} = \sum_{1\leq v \leq V} C_{t, v}$. 
 We then assume that the likelihood of observing these counts of each lineage is described by a multinomial distribution, so that
-\begin{align*}
-    C_{t} \sim \text{Multinomial}(N_{t}, f(t)),\\
-\end{align*}
+\begin{equation}
+    C_{t} \sim \text{Multinomial}(N_{t}, f(t)),
+\end{equation}
 given lineage frequencies $f(t) = (f_{1}(t), \ldots, f_{V}(t))$.
 
 We also attempted to use a Dirichlet-Multinomial distribution to account for possible over-dispersion in the counts relative to the Multinomial, but this did not make much difference in our inferences.
@@ -210,27 +248,28 @@ We also attempted to use a Dirichlet-Multinomial distribution to account for pos
 
 Instead of inferring $R_{t}$ directly, we parameterize the log effective reproduction number using a basis of cubic splines. 
 Each basis spline is written as a column in the design matrix $\vec{X}$, so that 
-\begin{align*}
+\begin{equation}
   \ln R_{t} = \vec{X} \vec{\beta},
-\end{align*}
+\end{equation}
 where the $\vec{\beta}$ are to be estimated to parameterize the effective reproduction number.
 We then use locally adaptive smoothing of order one with a Laplace prior on the coefficients $\vec{\beta}$ to promote smoothness on the inferred $R_t$ trajectory \cite{Faulkner2018}. 
 This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity .etc. 
 
-\paragraph{Modeling variant-specific effective reproduction numbers}
+\paragraph{Modeling variant-specific effective reproduction numbers}%
 
 To model the variant-specific reproduction numbers, we can infer individual independent effective reproduction number trajectories for each variant 
-\begin{align*}
+\begin{equation}
   \ln R_{t, v} = \vec{X} \vec{\beta}_{v},
-\end{align*}
+\end{equation}
 where each lineage $v$ gets its own vector of parameters $\vec{\beta}_{v}$ model. 
 We use the same prior structure as above to promote smoothness on inferred trajectories.
 
 \paragraph{Modeling variant-specific growth advantages}%
+
 In order to use our model to infer growth advantages for specific variants, we can instead parameterize the effective reproduction numbers as
-\begin{align*}
+\begin{equation}
 \ln R_{t,v} = \vec{X} \vec{\beta} + \delta_{v},
-\end{align*}
+\end{equation}
 where the parameters $\beta$ are shared between all variants and $\delta_{v}$ is the log-scale lineage-specific growth advantage of variant $v$. 
 We consider $\Delta_{v} = \exp(\delta_{v})$ to be the lineage-specific growth advantage which can be seen in figure \ref{fig:3}.
 
@@ -329,35 +368,37 @@ M.F. is an ARCS Foundation scholar and was supported by the National Science Fou
 
 Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analysis is roughly equivalent to our fixed growth advantage model but with additional restrictions on the generation time. 
 Multinomial logistic regression typically models the probability of a given observation belong to class $v$ as
-\begin{align*}
+\begin{equation}
   \text{Prob}(X = v) = f_{v} = \frac{p_{v}\exp(r_{v} t)}{\sum_{1\leq u\leq V} p_{u}\exp(r_{u} t)}.
-\end{align*}
+\end{equation}
 For our purpose, we can assume this probability is equivalent to the true frequency of variant $v$ in the population and in this case, $p_{v}$ is considered to be related to the prevalence on variant $v$ in the population at $t=0$ and $r_{v}$ can be considered to be the growth advantage relative to a pivot class $u_{*}$ which has $r_{k_{*}} = 1$.
 In order to see the connection between this above model and ours, we return to the original renewal equation of the form
-\begin{align*}
+\begin{equation}
   I(t) = R_{t}\int_{0}^{t} I(t-\tau) g(\tau).
-\end{align*}
+\end{equation}
 Assuming that $g$  is the Dirac delta centered at a mean generation time $T_{g}$, we have that
-\begin{align*}
+\begin{equation}
   I(nT_{g}) = \left(\prod_{i=1}^{n} R_{iT_{g}}\right) I(0).
-\end{align*}
+\end{equation}
 Assuming that there are several variants following these same dynamics, we have that the frequency of a given variant $v$ can be written as
-\begin{align*}
-  f_{v}(nT_{g}) &= \frac{I_{v}(nT_{g})}{\sum_{1\leq u \leq V} I_{u}(nT_{g})}.
-\end{align*}
+\begin{equation}
+  f_{v}(nT_{g}) = \frac{I_{v}(nT_{g})}{\sum_{1\leq u \leq V} I_{u}(nT_{g})}.
+\end{equation}
 If we assume a constant growth advantage as in our model, we then have that $R_{t,v} = \Delta_{v} R_{t}$, so that
-\begin{align*}
+\begin{equation}
   f_{v}(nT_{g}) =  \frac{\Delta_{v}^{n} I_{v}(0)}{\sum_{1\leq u \leq V} \Delta_{u}^{n} I_{u}(0)}.
-\end{align*}
+\end{equation}
 Writing $\Delta_{v} = \exp(\delta_{v})$ and $t = n T_{g}$, allows us to see that
-\begin{align*}
+\begin{equation}
   f_{v}(t) = \frac{I_{v}(0) \exp(\frac{\delta_{v}}{T_{g}} t)}{\sum_{1\leq u \leq V}I_{u}(0) \exp(\frac{\delta_{u}}{T_{g}} t)}.
-\end{align*}
+\end{equation}
 By fixing one pivot class so that $I_{u_{*}} = \delta_{u_{*}} / T_{g} = 1$, we can identify our model with the multinomial logistic regression by relating the parameters as 
-\begin{align*}
+
+\begin{align}
   \delta_{v} &= r_{v}T_{g}\\
   I_{v}(0) &= p_{v}.
-\end{align*}
+\end{align}
+
 This shows that the multinomial logistic regression function similarly to our fixed growth advantage model except with the additional assumption that the generation time is Dirac-delta at $T_{g}$. 
 This assumption additionally allows us to relate the epidemic growth rate and the effective reproduction number as $R = \exp(\frac{rt}{T_{g}})$. \cite{Wallinga2006}
 
