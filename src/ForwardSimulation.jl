@@ -6,7 +6,7 @@ function get_infections(R, I0, g_rev, seed_L)
     I = zeros(T)
     I[1:seed_L] .+= I0
     for t in seed_L:(l-1)
-        I[t+1] = R[t-seed_L+1] * sum(I[1:t] .* g_rev[1:t])
+        I[t+1] = R[t-seed_L+1] * sum(I[1:t] .* g_rev[(l-t+1):l])
     end
     for t in l:(T-1)
         I[t+1] = R[t-seed_L+1] * sum(I[(t-l+1):t] .* g_rev)
@@ -20,7 +20,7 @@ function apply_delay(I, delay_rev)
     T = length(I)
 
     for t in 1:(l-1)
-        I_delay[t] = sum(I[1:t] .* delay_rev[1:t])
+        I_delay[t] = sum(I[1:t] .* delay_rev[(l-t+1):l])
     end
     for t in l:T
         I_delay[t] = sum(I[(t-l+1):t] .* delay_rev)
