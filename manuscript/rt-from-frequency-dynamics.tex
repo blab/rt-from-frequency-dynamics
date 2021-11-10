@@ -96,7 +96,7 @@ Here, we develop joint epidemiological and population genetic model of SARS-CoV-
 
 %TODO: More lead in here?
 
-We implement two models of variant effective reproduction number based on a renewal equation model of epidemic spread.
+We implement two models of variant effective reproduction number based on a renewal equation model of epidemic spread (see Methods).
 First, we introduce a free variant $R_{t}$ which infers the effective reproduction number of each variant independently from one another.
 The second model is a fixed growth advantage model of variant $R_{t}$ in which all variant viruses have their own growth advantage which acts as a scaling to a single non-variant $R_{t}$ trajectory.
 
@@ -104,8 +104,10 @@ The second model is a fixed growth advantage model of variant $R_{t}$ in which a
 
 \paragraph{Estimating growth advantages in the United States}
 
-We estimate the effective reproduction numbers of SARS-CoV-2 variants of concern in the United States using daily confirmed case counts and sequence lineage annotations from GISAID. %TODO: Be more clear about PANGO and where these came from
-We consider the following 7 variants which have been flagged as variants of interest or concern: Alpha (B.1.1.7), Beta (B.1.351), Gamma (P.1), Delta (B.1.617.2), Epsilon (B.1.427), Iota (B.1.526), Mu (B.1.621).
+We estimate the effective reproduction numbers of SARS-CoV-2 variants of concern in the United States using daily confirmed case counts and sequences shared to GISAID [CITE]. %TODO: Be more clear about PANGO and where these came from
+Each sequence is labeled with a Nextstrain clade [CITE Hadfield et al] and we partition clades into variants based on WHO VOC/VOI status [CITE Konings et al].
+Nextstrain clades annotated in the fashion correspond to a subset of major lineages designated by PANGO [CITE Rambaut et al].
+We consider the following 7 variants which have been flagged as variants of interest or concern and which circulated in the US during 2021: Alpha (PANGO lineage B.1.1.7, Nextstrain clade 20I), Beta (PANGO lineage B.1.351, Nextstrain clade 20H), Gamma (PANGO lineage P.1, Nextstrain clade 20J), Delta (PANGO lineage B.1.617.2, Nextstrain clade 21A), Epsilon (PANGO lineage B.1.427, Nextstrain clade 21C), Iota (Nextstrain clade B.1.526, Nextstrain clade 21F), Mu (PANGO lineage B.1.621, Nextstrain clade 21H).
 
 In order to inform our estimates of the frequency of genetic variants, we divide sequences from each state into daily sample counts for each of the 7 variants and one "other" category containing all other non-variant sequences.
 We then use these counts alongside the daily case counts in each state to estimate the effective reproduction number for individual variants using a fixed growth advantage model.
