@@ -1,4 +1,8 @@
-function define_stan_model(state, filename)
+function define_stan_model(state, filename; 
+    num_warmup = 2000, 
+    num_samples = 1000,
+    thin = 2,
+    nchains = 4)
     # Construct Model 
      model_string = read(filename, String);
      stan_model = Stanmodel(
@@ -23,13 +27,23 @@ function define_stan_model(state, filename)
     return state_df[:, :date], seq_cols, stan_data
 end
 
-function process_all_states(filename, df, g, onset, seed_L, forecast_L, k; states_names = unique(df[: , :state]))
+function process_all_states(filename, df, g, onset, seed_L, forecast_L, k; 
+    states_names = unique(df[: , :state]),
+    num_warmup = 2000, 
+    num_samples = 1000,
+    thin = 2,
+    nchains = 4)
+
     states_dict = Dict()
     
     for state in state_names
         dates_vec, seq_labels, state_data = process_state_data_for_stan(state, df, g, onset, seed_L, forecast_L, k)
         state = replace(state, ' ' => '_')
-        state_model = define_stan_model(state, filename)
+        state_model = define_stan_model(state, filename,
+            num_warmup=num_warmup,
+            num_samples=num_samples,
+            thin=thin,
+            nchains=nchains)
         
        states_dict[state] = Dict(
         "date" => dates_vec,
