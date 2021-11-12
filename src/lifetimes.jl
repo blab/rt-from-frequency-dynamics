@@ -1,59 +1,57 @@
 # Edit to use Gamma and parameterize in terms of mean and sd
 # I have code for this somewhere
 
+function _discretize_dist(D::Distributions.continuous_distributions, max_q)
+    max_n = Int(round(quantile(D, max_q))) + 1
+    xsd = 1:max_n
+    xsd = vcat(0., collect(xsd .+ 0.5)) # 0.0, 1.5, 2.5, ..., max_n + 0.5
+    return diff(cdf.(g, xsd)) # \int_{n-0.5}^{n+0.5} d(t) dt
+end
+
+function discrete_Gamma(μ, σ; max_q = 0.999)
+    #μ = a*b
+    #σ = sqrt(a) * b
+    a = (μ  / σ)^2
+    b_inv = σ^2  / μ # b = (μ / σ^2)
+    g = Gamma(a, b_inv) # k = a, θ = b^-1
+    return _discretize_dist(g, max_q)
+end
+
+function discrete_LogNormal(μ, σ; max_q = 0.999)
+    γ = 1 + σ^2 / μ^2
+    LN = LogNormal(log(μ / sqrt(γ)), sqrt(log(γ)))
+    return _discretize_dist(LN, max_q)
+end
+
 """
 Serial interval of novel coronavirus (COVID-19) infections
 Nishiura. T
 The author's fit the serial interval using a log-normal distribution.
 """
-function generation_time(n_days = 20)
+function SI_Nishiura()
     # Generate best fit log-norm to serial interval (Nishiura 2020)
     mean_serial = 4.7
     sd_serial = 2.9
-    
-    γ = 1 + sd_serial^2 / mean_serial^2
-    dist = LogNormal(log(mean_serial / sqrt(γ)), sqrt(log(γ)))
-    # What are the breakpoints
-    # 0.5 - 1.5, 1.5 - 2.5
-    gen = cdf(dist, pushfirst!([day + 0.5 for day in 1:n_days], 0.0))
-    gen = diff(gen)
-    gen /= sum(gen)
+    return discrete_LogNormal(mean_serial, sd_serial)    
 end
 
 """
-Get discretized generation time based on gamma distribution with given mode and std
+Generate onset time from distribution and maximum probability on symptom onset.
 """
-function generation_time_Gamma(n_days, m_g, std_g)
-    ra = ( m_g + sqrt( m_g^2 + 4*std_g^2 ) ) / ( 2 * std_g^2 )
-    sh = 1 + m_g * ra
-    g = Gamma(sh, inv(ra))
-    xsd = 1:n_days
-    return diff(cdf.(g, vcat(0., collect(xsd .+ 0.5))))
+function onset_time(dist, onset_max)
+    return onset_max * dist / maximum(dist) 
 end
 
-"""
-Generate generation time based on shape and rate parameters GS and GP.
-"""
-function generation_time(n_days, GP, GS)
-    # Generate generation time based on parameters GP and GS
+# function onset_time_Gamma(m_g, std_g, onset_max)
+#     dist = discrete_Gamma(m_g, std_g)
+#     return onset_time(dist, onset_max)
+# end
 
-    x = pushfirst!([day + 0.5 for day in 1:n_days], 1e-16)
-    
-    gen = cdf(Normal(), (log.(x) .- log(GP)) * inv(GS))
-    gen = diff(gen)
-    gen /= sum(gen)
-end
+function get_standard_delays(; max_q = 0.999)
+    # Ganyani 2020 for serial interval
+    g = discrete_Gamma(5.2, 1.72, max_q)
 
-
-"""
-Generate onset time based on shape and rate parameters GS and GP.
-"""
-function onset_time(n_days, OP, OS, onset_max)
-    
-    x = pushfirst!([day + 0.5 for day in 1:n_days], 1e-16)
-    
-    onset = cdf(Normal(), (log.(x) .- log(OP)) * inv(OS))
-    onset = diff(onset)
-    onset /= maximum(onset)
-    onset_max * onset
+    # Cheng 2021 for inclubation / onset
+    onset = onset_time(discrete_LogNormal(6.9, 2.0, max_q), 1.0)
+    return g, onset
 end
