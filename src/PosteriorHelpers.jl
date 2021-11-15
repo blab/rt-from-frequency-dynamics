@@ -1,4 +1,3 @@
-
 # Interval Based
 """
 Takes in array of matrices each of which is a simulation. Returns lQ, uQ, med which are the lQuant, uQuant quantiles and median respectively.
@@ -89,6 +88,14 @@ function sample_posterior(sim, cnames, N_demes, varname)
     end
     
     return Q
+end
+
+function get_posterior(MS::ModelStan, var::String, multi::Bool)
+    if multi
+        sample_posterior(MS.posterior["samples"], MS.posterior["cnames"], MS.data["N_lineage"], var)
+    else
+        sample_posterior(MS.posterior["samples"], MS.posterior["cnames"], var)
+    end
 end
 
 """

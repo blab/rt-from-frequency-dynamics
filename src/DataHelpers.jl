@@ -8,11 +8,10 @@ function export_dataframe_for_modeling(cases, counts, lineage_names, state_name;
     return hcat(case_df, count_df) 
 end
 
-function load_state_data(state, df)
-    sort!(df, :date) |>
-    @filter(_.state == state) |>
-    DataFrame
-end
+# function load_state_data(state, df)
+#     df = sort!(df, :date) |>
+#     filter(x -> x.state == state, df)
+# end
 
 function sequence_counts_to_matrix(state_df)
     seq_cols = sort([x for x in names(state_df) if startswith(x, "sequence") .& !endswith(x, "total") ]) #Check order
@@ -25,121 +24,121 @@ function cases_to_vector(state_df)
     Vector(state_df[:, :cases])
 end
 
-function get_data_obs_period(true_L, seed_L, forecast_L, is_sim)
-    # For simulations, we hold back more data for forecast evaluation and seeding
-    # For real data, we use all data for inference
-    if is_sim
-        L = true_L - forecast_L - seed_L
-        obs_period = (seed_L+1):(L + seed_L)
-    else
-        L = true_L
-        obs_period = 1:true_L
-    end
-    return L, obs_period
-end
+# function get_data_obs_period(true_L, seed_L, forecast_L, is_sim)
+#     # For simulations, we hold back more data for forecast evaluation and seeding
+#     # For real data, we use all data for inference
+#     if is_sim
+#         L = true_L - forecast_L - seed_L
+#         obs_period = (seed_L+1):(L + seed_L)
+#     else
+#         L = true_L
+#         obs_period = 1:true_L
+#     end
+#     return L, obs_period
+# end
 
 function clean_labels(seq_labels, stan_data)
     reshape([split(label, "_")[2] for label in seq_labels],
                 1, stan_data["N_lineage"])
 end
 
-function get_data_for_inference(seed_L, forecast_L, 
-        C, sequence_counts, N_seqs, 
-        g, onset, model::TimeSeriesNode; is_sim=false)
+# function get_data_for_inference(seed_L, forecast_L, 
+#         C, sequence_counts, N_seqs, 
+#         g, onset, model::TimeSeriesNode; is_sim=false)
 
-    true_L, N_deme = size(sequence_counts)
+#     true_L, N_deme = size(sequence_counts)
 
-    # How much data to pass to model
-    L, obs_period = get_data_obs_period(true_L, seed_L, forecast_L, is_sim)
+#     # How much data to pass to model
+#     L, obs_period = get_data_obs_period(true_L, seed_L, forecast_L, is_sim)
     
-    t = collect(1:L)
-    X = get_design(model, t)
+#     t = collect(1:L)
+#     X = get_design(model, t)
     
-    stan_data = Dict(
-        "seed_L" => seed_L,
-        "forecast_L" => forecast_L,
-        "L" => L,
-        "N_lineage" => N_deme,
-        "cases" => Int.(C)[obs_period],
-        "num_sequenced" => sequence_counts[obs_period, :],
-        "N_sequences" => Int.(N_seqs)[obs_period],
-        "g" => g,
-        "onset" => onset,
-        "l" => length(g),
-        "K" => size(X, 2),
-        "features" => X
-    )
-    return stan_data
-end
+#     stan_data = Dict(
+#         "seed_L" => seed_L,
+#         "forecast_L" => forecast_L,
+#         "L" => L,
+#         "N_lineage" => N_deme,
+#         "cases" => Int.(C)[obs_period],
+#         "num_sequenced" => sequence_counts[obs_period, :],
+#         "N_sequences" => Int.(N_seqs)[obs_period],
+#         "g" => g,
+#         "onset" => onset,
+#         "l" => length(g),
+#         "K" => size(X, 2),
+#         "features" => X
+#     )
+#     return stan_data
+# end
 
- function process_state_data_for_stan(state, df, g, onset, seed_L, forecast_L, model::TimeSeriesNode)
-    state_df = load_state_data(state, df)
-    seq_cols, seq_counts, seq_total = sequence_counts_to_matrix(state_df)
-    cases = cases_to_vector(state_df)
+#  function process_state_data_for_stan(state, df, g, onset, seed_L, forecast_L, model::TimeSeriesNode)
+#     state_df = load_state_data(state, df)
+#     seq_cols, seq_counts, seq_total = sequence_counts_to_matrix(state_df)
+#     cases = cases_to_vector(state_df)
     
-    stan_data = get_data_for_inference(seed_L, forecast_L,
-                                     cases, seq_counts, seq_total, 
-                                     g, onset, model)
+#     stan_data = get_data_for_inference(seed_L, forecast_L,
+#                                      cases, seq_counts, seq_total, 
+#                                      g, onset, model)
     
-    return state_df[:, :date], seq_cols, stan_data
-end
+#     return state_df[:, :date], seq_cols, stan_data
+# end
 
-function define_stan_model(state, filename, 
-        model::TimeSeriesNode, priors, 
-        model_name; num_samples = 1000, num_warmup = 2000)
-    # Construct Model 
-    model_string = read(filename, String);
-    model_string = add_priors(model_string, model, priors)
-    model_string = add_other_parms(model_string, model, priors)
+# function define_stan_model(state, filename, 
+#         model::TimeSeriesNode, priors, 
+#         model_name; num_samples = 1000, num_warmup = 2000)
+#     # Construct Model 
+#     model_string = read(filename, String);
+#     model_string = add_priors(model_string, model, priors)
+#     model_string = add_other_parms(model_string, model, priors)
     
-    method = Sample(
-        save_warmup = false,
-        num_samples = 1000,
-        num_warmup = 2000)
+#     method = Sample(
+#         save_warmup = false,
+#         num_samples = 1000,
+#         num_warmup = 2000)
     
-    #method = Variational(
-    #    grad_samples=1,
-     #   elbo_samples=100,
-      #  tol_rel_obj =1e-5,
-      #  output_samples=4000)
+#     #method = Variational(
+#     #    grad_samples=1,
+#      #   elbo_samples=100,
+#       #  tol_rel_obj =1e-5,
+#       #  output_samples=4000)
     
-    #method = Optimize(iter = 2000)
+#     #method = Optimize(iter = 2000)
     
-    mkpath(cd(pwd, "..") * "/data/sims/$(model_name)/")
-    stan_model = Stanmodel(
-        method,
-        nchains = 4,
-        name = "rt-lineages-" * state,   
-        tmpdir = cd(pwd, "..") * "/data/sims/$(model_name)/" * state,
-        model = model_string); 
- end
+#     mkpath(cd(pwd, "..") * "/data/sims/$(model_name)/")
+#     stan_model = Stanmodel(
+#         method,
+#         nchains = 4,
+#         name = "rt-lineages-" * state,   
+#         tmpdir = cd(pwd, "..") * "/data/sims/$(model_name)/" * state,
+#         model = model_string); 
+#  end
 
-function process_all_states(filename, df, g, onset, seed_L, forecast_L, 
-        model::TimeSeriesNode; 
-        priors = nothing,
-        state_names = unique(df[:, :state]),
-        model_name = "test",
-        num_samples = 1000,
-        num_warmup = 2000
-        )
-    states_dict = Dict()
+# function process_all_states(filename, df, g, onset, seed_L, forecast_L, 
+#         model::TimeSeriesNode; 
+#         priors = nothing,
+#         state_names = unique(df[:, :state]),
+#         model_name = "test",
+#         num_samples = 1000,
+#         num_warmup = 2000
+#         )
+#     states_dict = Dict()
     
-    for state in state_names
-        dates_vec, seq_labels, state_data = process_state_data_for_stan(state, df, g, onset, seed_L, forecast_L, model)
-        state = replace(state, ' ' => '_')
-        state_model = define_stan_model(state, filename, model, priors, model_name; 
-            num_samples = num_samples, num_warmup = num_warmup)
+#     for state in state_names
+#         dates_vec, seq_labels, state_data = process_state_data_for_stan(state, df, g, onset, seed_L, forecast_L, model)
+#         state = replace(state, ' ' => '_')
+#         state_model = define_stan_model(state, filename, model, priors, model_name; 
+#             num_samples = num_samples, num_warmup = num_warmup)
         
-       states_dict[state] = Dict(
-        "date" => dates_vec,
-        "seq_labels" => clean_labels(seq_labels, state_data),
-        "stan_data" => state_data,
-        "stan_model" => state_model
-        )
-    end
+#        states_dict[state] = Dict(
+#         "date" => dates_vec,
+#         "seq_labels" => clean_labels(seq_labels, state_data),
+#         "stan_data" => state_data,
+#         "stan_model" => state_model
+#         )
+#     end
     
-    return states_dict    
-end
+#     return states_dict    
+# end
 
 # Interval Based
 function get_Rt_by_state(state, states_dict)

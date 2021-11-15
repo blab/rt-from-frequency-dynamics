@@ -1,3 +1,4 @@
+# To be removed!
 function define_stan_model(state, filename; 
     num_warmup = 2000, 
     num_samples = 1000,

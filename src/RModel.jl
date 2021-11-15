@@ -4,7 +4,7 @@ mutable struct SingleRModel{T <: Real} <: RModel
     g::Vector{T}
     delay::Vector{T}
     rt_model::TimeSeriesNode
-    priors::Vector{Any}
+    priors::Vector{V} where {V <: Any}
     seed_L::Int
     forecast_L::Int
 end
@@ -33,8 +33,7 @@ end
 function make_stan_model(model::SingleRModel, model_name::String, tmpdir)
     # Update model with user priors and parameterizations 
     model_string = read(joinpath(@__DIR__, "stan_models/Rt_Structured_single.stan"), String); 
-    model_string = add_R_priors_single(model_string, model, priors) # These methods depend on what kind of time series model we're using?
-    model_string = add_other_parms(model_string, model, priors)
+    model_string = add_R_priors_single(model_string, model.rt_model, model.priors) # These methods depend on what kind of time series model we're using?
+    model_string = add_other_parms(model_string, model.rt_model, model.priors)
     return make_stan_model(model_string, model_name, tmpdir)
 end
-

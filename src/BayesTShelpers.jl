@@ -1,3 +1,4 @@
+# To be removed!
 function BayesTS.get_prior_string(TS::TimeSeriesNode, priors, s_idx::Int, e_idx::Int)
     n_dists = length(priors)
     if priors[1] == "LAS"
