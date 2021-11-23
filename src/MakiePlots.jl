@@ -50,14 +50,16 @@ function plot_cases!(ax, MS; color = (:black, 0.3))
     barplot!(ax, dates_num, MS.data["cases"], color = color) #, kwargs...)
 end
 
-function plot_observed_frequencies!(ax, MS; colors=lineage_colors)
+function plot_observed_frequencies!(ax, MS; colors=lineage_colors; size = N -> 3)
     dates_num, seed_L, forecast_L, N_lineage = unpack_data(MS)
     sample_freq = MS.data["num_sequenced"] ./ sum(MS.data["num_sequenced"], dims = 2)
+    N_samples = vec(sum(MS.data["num_sequenced"], dims = 2))
     
     for lineage in 1:N_lineage
         scatter!(ax, dates_num, sample_freq[:,lineage],
             color = (colors[lineage], 1.0),
-            strokewidth = 1.5)
+            strokewidth = 1.5,
+            markersize = size.(N_samples))
     end
 end
 
