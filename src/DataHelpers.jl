@@ -1,3 +1,30 @@
+function make_plot_dataframe(obs_cases, obs_counts, lineage_names)
+    cases = Int[]
+    counts = Int[]
+    obs_freqs = Float64[]
+    dates = Int[]
+    lineages = String[]
+    lineages_num = Int[]
+   # state = String[]
+    
+    T = length(obs_cases)
+    N_lineage = size(obs_counts,2)
+    
+    obs_freq = obs_counts ./ sum(obs_counts, dims=2)
+    
+    
+    for lineage in 1:N_lineage
+        dates = vcat(dates, collect(1:T))
+        cases = vcat(cases, obs_cases)
+        counts = vcat(counts, obs_counts[:, lineage])
+        obs_freqs = vcat(obs_freqs, obs_freq[:, lineage])
+        lineages_num = vcat(lineages_num, repeat([lineage], T))
+        lineages  = vcat(lineages, repeat([lineage_names[lineage]], T))
+    end
+    
+    return DataFrame(date = dates, cases = cases, counts = Int.(counts), obs_freqs = obs_freqs, lineage = lineages, lineage_num = lineages_num) #, state = state)   
+end
+
 function export_dataframe_for_modeling(cases, counts, lineage_names, state_name; start_date = Date(2020,1,1)) 
     dates = Day.(collect(0:(T-1))) .+ start_date
     case_df = DataFrame(state = state_name, cases = cases, date = dates)

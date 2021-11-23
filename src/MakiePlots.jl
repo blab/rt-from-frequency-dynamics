@@ -12,7 +12,8 @@ lineage_to_WHO["B.1.427"] = "Epsilon"
 lineage_to_WHO["B.1.621"] = "Mu"
 
 lineage_colors = [ "#5081b9" "pink" "#ffdf64" "orange" "#40916c" "#ff6666" "#8a897c"]
-lineage_colors = ["#2e5eaa", "#5adbff", "#b4c5e4","#f5bb00","#56e39f", "#9e4244", "#f03a47", "#808080"] 
+lineage_colors = ["#2e5eaa", "#5adbff", "#f03a47", "#56e39f","#b4c5e4",  "#f5bb00", "#9e4244", "#808080"] 
+
 
 alphas = [0.65, 0.45, 0.35]
 ps = [0.5 0.8 0.95]
@@ -140,7 +141,7 @@ function plot_lineage_frequency!(ax, MS; colors=lineage_colors, alphas=alphas, p
         # Plot credible intervals
         for i in reverse(1:length(ps))
             band!(ax, dates_num, 
-                lQ[i][:,lineage], uQ[lineage][:,lineage], 
+                lQ[i][:,lineage], uQ[i][:,lineage], 
                 color = (colors[lineage], alphas[i]), 
                 label = "$(Int(ps[i] * 100))% CI")
         end
@@ -205,6 +206,24 @@ function plot_smoothed_EC!(ax, MS; color=:purple, alphas=alphas, ps=ps)
     
     # Add median
     lines!(ax, dates_num, med, color = "black", linewidth = 1.5, label = "Median")
+end
+
+function plot_growth_advantage!(ax, MS; colors=lineage_colors, alphas=alphas, ps=ps)
+    dates_num, seed_L, forecast_L, N_lineage = unpack_data(MS)
+    v = get_posterior(MS, "v", false)
+    v = vcat(hcat(v...)')
+    
+    hlines!(ax, [1.0], color = :black, linestyle = :dash)
+    for lineage in 1:(N_lineage-1)
+        violin!(ax, fill(lineage, size(v, 1)), exp.(v[:, lineage]), 
+            color = colors[lineage], 
+            orientation=:vertical,
+            width = 0.25,
+            strokewidth = 1.5,
+            strokecolor = :black)
+        scatter!(ax, fill(lineage, size(v, 1)), exp.(v[:, lineage]), color = (:black, 0.1))
+    end
+    ax.xticks = 1:N_lineage
 end
 
 function add_monthly_dates!(ax, dates; skip=1)
