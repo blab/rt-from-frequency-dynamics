@@ -31,6 +31,7 @@ module rt_from_frequency_dynamics
     # Trash: Process all states -> (Make sure names and labels are cleaned)
     # Clean: export get_Rt_by_state_HDI, get_growth_advantages_HDI
 
+    export format_sequence_names, counts_to_matrix, prep_sequence_counts, prep_cases
     include("DataHelpers.jl")
 
     # Once interface is working
