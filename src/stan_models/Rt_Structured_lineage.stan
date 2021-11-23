@@ -149,8 +149,8 @@ data {
 }
 
 transformed data {
-    vector[l] g_rev = to_vector(reverse(g));
-    vector[l] onset_rev = to_vector(reverse(onset));
+    vector[lg] g_rev = to_vector(reverse(g));
+    vector[lo] onset_rev = to_vector(reverse(onset));
 
     int L_ws = L + seed_L; // L with seed time
     int L_wf = L + forecast_L; // L with forecast included

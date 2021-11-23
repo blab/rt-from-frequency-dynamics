@@ -77,8 +77,8 @@ data {
 
 transformed data {
   // #include /data/trans_reverse_lifetimes.stan
-  vector[l] g_rev = to_vector(reverse(g));
-  vector[l] onset_rev = to_vector(reverse(onset));
+  vector[lg] g_rev = to_vector(reverse(g));
+  vector[lo] onset_rev = to_vector(reverse(onset));
   
   //#include /data/trans_obs_times.stan
   int L_ws = L + seed_L; // L with seed time
