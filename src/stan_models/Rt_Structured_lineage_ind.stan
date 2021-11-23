@@ -133,16 +133,17 @@ data {
   int cases[L]; // number of cases
   int num_sequenced[L, N_lineage]; // number of occurances in each lineage in sample from that day
   int N_sequences[L]; // total count of sequences
-  int<lower=1> l; // max length of generation time
-  real g[l];
-  real onset[l];
+  int<lower=1> lg; // max length of generation time
+  int<lower=1> lo; // max length of onset distribution
+  real g[lg];
+  real onset[lo];
   int K; // Number of features
   matrix[L, K] features; // Features in linear regression on R
 }
 
 transformed data {
-    vector[l] g_rev = to_vector(reverse(g));
-    vector[l] onset_rev = to_vector(reverse(onset));
+    vector[lg] g_rev = to_vector(reverse(g));
+    vector[lo] onset_rev = to_vector(reverse(onset));
 
     int L_ws = L + seed_L; // L with seed time
     int L_wf = L + forecast_L; // L with forecast included
@@ -183,8 +184,8 @@ transformed parameters {
   matrix[L_wsf, N_lineage] I_prev;
 
   for (lineage in 1:N_lineage){
-      I[:, lineage] = get_infections(R[:,lineage], I0[lineage], g_rev, L_wsf, l, seed_L);
-      I_prev[:, lineage] = get_PCR_detectable(I[:, lineage], onset_rev, L_wsf, l);
+      I[:, lineage] = get_infections(R[:,lineage], I0[lineage], g_rev, L_wsf, lg, seed_L);
+      I_prev[:, lineage] = get_PCR_detectable(I[:, lineage], onset_rev, L_wsf, lo);
   }
 
   vector[L_wsf] total_prev = row_sum(I_prev);
