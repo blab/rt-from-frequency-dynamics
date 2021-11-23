@@ -60,7 +60,7 @@ module rt_from_frequency_dynamics
     export get_Rt_dataframe, get_growth_advantages_dataframe
     include("ExportData.jl")
 
-    # Refactor EVERYTHING here, make more flexible using Makie, so you provide ax, and colors
+    # TODO: Make growth advantage plots
     export lineage_to_WHO, lineage_colors, alphas, ps
     export get_nice_ticks, unpack_data, get_sequence_map
     export add_monthly_dates! #, make_lineage_legend!
