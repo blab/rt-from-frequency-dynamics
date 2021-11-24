@@ -22,9 +22,21 @@ uQuants = 0.5 * (1. .+ ps)
 
 check_if_first(d) = (Day(d) == Day(1)) ? true : false
 
-function get_nice_ticks(days)
+# function get_nice_ticks(days)
+#     ticks = findall(check_if_first, days)
+#     labels = Dates.monthabbr.(days[ticks]) 
+#    return ticks, labels 
+# end
+
+function get_nice_ticks(days; get_past=true)
     ticks = findall(check_if_first, days)
     labels = Dates.monthabbr.(days[ticks]) 
+    
+    # If you want the label for last month before your data begins
+    if (Dates.monthabbr(days[1]) != Dates.monthabbr(days[ticks[1]])) & get_past
+       pushfirst!(ticks, 2 - Dates.dayofmonth(days[1]))
+       pushfirst!(labels, Dates.monthabbr(days[1]))
+    end
    return ticks, labels 
 end
 
@@ -50,7 +62,7 @@ function plot_cases!(ax, MS; color = (:black, 0.3))
     barplot!(ax, dates_num, MS.data["cases"], color = color) #, kwargs...)
 end
 
-function plot_observed_frequencies!(ax, MS; colors=lineage_colors; size = N -> 3)
+function plot_observed_frequencies!(ax, MS; colors=lineage_colors, size = N -> 3)
     dates_num, seed_L, forecast_L, N_lineage = unpack_data(MS)
     sample_freq = MS.data["num_sequenced"] ./ sum(MS.data["num_sequenced"], dims = 2)
     N_samples = vec(sum(MS.data["num_sequenced"], dims = 2))
@@ -100,16 +112,17 @@ function plot_lineage_R_censored!(ax, MS; colors=lineage_colors, alphas=alphas, 
     for lineage in 1:N_lineage
         # Which dates have posterior_median_frequency > 0.001
         censored = findall(x -> (x > thres), med_freq[:,lineage])
-        
-        # Plot credible intervals
-        for i in reverse(1:length(ps))
-            band!(ax, dates_num[censored], 
-                lQ[i][censored, lineage], uQ[i][censored, lineage], 
-                color = (colors[lineage], alphas[i]), 
-                label = "$(Int(ps[i] * 100))% CI")
+        if length(censored) > 0
+            # Plot credible intervals
+            for i in reverse(1:length(ps))
+                band!(ax, dates_num[censored], 
+                    lQ[i][censored, lineage], uQ[i][censored, lineage], 
+                    color = (colors[lineage], alphas[i]), 
+                    label = "$(Int(ps[i] * 100))% CI")
+            end
+            # Add median
+            lines!(ax, dates_num[censored], med[censored,lineage], color = "black", label = "Median")
         end
-        # Add median
-        lines!(ax, dates_num[censored], med[censored,lineage], color = "black", label = "Median")
     end
 end
 
@@ -228,8 +241,15 @@ function plot_growth_advantage!(ax, MS; colors=lineage_colors, alphas=alphas, ps
     ax.xticks = 1:N_lineage
 end
 
-function add_monthly_dates!(ax, dates; skip=1)
-    ticks, _ = get_nice_ticks(dates)
+# function add_monthly_dates!(ax, dates; skip=1)
+#     ticks, _ = get_nice_ticks(dates)
+#     ax.xticks = ticks[1:skip:end]
+#     ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+# end
+
+function add_monthly_dates!(ax, dates; skip=1, get_past=true)
+    ticks, labels = get_nice_ticks(dates, get_past=get_past)
+    tl = Dict(t => l for (t,l) in zip(ticks, labels)) 
     ax.xticks = ticks[1:skip:end]
-    ax.xtickformat = xs -> Dates.monthabbr.(dates[convert.(Int, xs)])
+    ax.xtickformat = xs -> [tl[convert.(Int, x)] for x in xs]
 end
