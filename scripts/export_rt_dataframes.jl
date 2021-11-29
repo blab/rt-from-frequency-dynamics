@@ -51,5 +51,30 @@ LDs, MSs = make_state_models(seq_df, cases_df, LM, model_dir)
 
 # 6. Run stan models
 for MS in MSs
-  run!(MS, num_warmup = 1000, num_samples=1000, num_chains=4, get_samples=false) # Make sure to save samples
+  load_samples!(MS)
 end
+
+# 7. Last thing would be to export the dataframes
+today = "11_28_21"
+function export_dataframes(MSs, LDs)
+  df_list = DataFrame[]
+  for (MS, LD) in zip(MSs, LDs)
+    push!(df_list, get_Rt_dataframe(MS, LD))
+  end
+  return vcat(df_list...)
+end
+
+rt_df = export_dataframes(MSs, LDs)
+CSV.write("../data/sims/results/inferred_lineage_rts_$(model_name)_$(today).tsv", delim ="\t", rt_df)
+
+# 8. Also writing the growth advantages
+function export_growth_advantages(MSs, LDs)
+  df_list = DataFrame[]
+  for (MS, LD) in zip(MSs, LDs)
+    push!(df_list, get_growth_advantages_dataframe(MS, LD))
+  end
+  return reduce(vcat, df_list)
+end
+
+ga_df = export_growth_advantages(MSs, LDs)
+CSV.write("../data/sims/results/inferred_lineage_growth_advantage_$(model_name)_$(today).tsv", delim ="\t", ga_df)
