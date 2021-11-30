@@ -16,14 +16,13 @@ struct LineageData <: ModelData
     dates::Vector{Date}
 end
 
-# # Update and test OR choose to delete
-# function LineageData(df::DataFrame)
-#     seq_names, seq_counts = sequence_counts_to_matrix(df)
-#     seq_names = [split(name, "_")[2] for name in seq_names]
-# cases = df[:, :cases]
-#     dates = df[:, :date]
-#     return LineageData(seq_counts, cases, seq_names, dates)
-# end
+function LineageData(df::DataFrame)
+    seq_names, seq_counts = sequence_counts_to_matrix(df)
+    seq_names = [split(name, "_")[2] for name in seq_names]
+cases = df[:, :cases]
+    dates = df[:, :date]
+    return LineageData(seq_counts, cases, seq_names, dates)
+end
 
 function LineageData(seq_df::DataFrame, cases_df::DataFrame)
     seq_names, dates_s, seq_counts = prep_sequence_counts(seq_df)

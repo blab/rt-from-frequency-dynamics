@@ -76,7 +76,7 @@ function prep_sequence_counts(seq_df::DataFrame)
 end
 
 function prep_cases(cases_df::DataFrame)
-    dmn, dmx = extrema(unique(cases_df.date)) # Get extrema
+    dmn, dmx = extrema(unique(cases_df.date)) # Get extrema # Do I need unique here?
     dates = [dmn + Day(d) for d in 0:Dates.value(dmx-dmn)] # Generate intermediate dates   
     date_to_index = Dict(d => i for (i,d) in enumerate(dates)) # Turn dates to indices
     
@@ -85,7 +85,7 @@ function prep_cases(cases_df::DataFrame)
         C[date_to_index[row.date]] += row.cases 
     end
     
-    return cases_df.date, cases_df.cases
+    return dates, C
 end
 
 # ########

@@ -37,7 +37,7 @@ end
 # Switching to StanSample -> This should go in InferenceHelpers
 function make_stan_model(model_string::String, model_name::String, tmpdir)
     mkpath(abspath(tmpdir))
-    stan_model = SampleModel(model_name, model_string, tmpdir = abspath(tmpdir))
+    stan_model = SampleModel(model_name, model_string, tmpdir=abspath(tmpdir))
     return stan_model
 end
 

@@ -42,8 +42,10 @@ module rt_from_frequency_dynamics
     #include("InferenceHelpers.jl")
 
     export AggregateData, LineageData
+    export RModel, LineageModel
     export SingleRModel, FreeLineageModel, FixedLineageModel
     export make_stan_data, make_stan_model, make_stan
+    export ModelStan
     export run!, load_samples!
 
     # New 
@@ -69,5 +71,6 @@ module rt_from_frequency_dynamics
     export plot_lineage_R!, plot_average_R!, plot_lineage_R_censored!
     export plot_lineage_frequency!, plot_frequency_ppc!
     export plot_lineage_prev!, plot_smoothed_EC!
+    export plot_growth_advantage!
     include("MakiePlots.jl")
 end

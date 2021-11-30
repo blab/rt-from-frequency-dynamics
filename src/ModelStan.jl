@@ -15,7 +15,7 @@ function make_stan(model_R::RModel, model_D::ModelData, model_name::String, tmpd
 end
 
 function load_samples!(MS::ModelStan)
-        res, names = read_samples(MS.model, output_format=:array; return_parameters = true)
+        res, names = read_samples(MS.model, output_format=:array, return_parameters = true)
         MS.posterior["samples"] = res
         MS.posterior["cnames"] = names 
 end
