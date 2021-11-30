@@ -253,3 +253,198 @@ function add_monthly_dates!(ax, dates; skip=1, get_past=true)
     ax.xticks = ticks[1:skip:end]
     ax.xtickformat = xs -> [tl[convert.(Int, x)] for x in xs]
 end
+
+
+function make_plot_dataframe(obs_cases, obs_counts, lineage_names)
+    cases = Int[]
+    counts = Int[]
+    obs_freqs = Float64[]
+    dates = Int[]
+    lineages = String[]
+    lineages_num = Int[]
+   # state = String[]
+    
+    T = length(obs_cases)
+    N_lineage = size(obs_counts,2)
+    
+    obs_freq = obs_counts ./ sum(obs_counts, dims=2)
+    
+    
+    for lineage in 1:N_lineage
+        dates = vcat(dates, collect(1:T))
+        cases = vcat(cases, obs_cases)
+        counts = vcat(counts, obs_counts[:, lineage])
+        obs_freqs = vcat(obs_freqs, obs_freq[:, lineage])
+        lineages_num = vcat(lineages_num, repeat([lineage], T))
+        lineages  = vcat(lineages, repeat([lineage_names[lineage]], T))
+    #    state = vcat(state, repeat([state_name], T))
+    end
+    
+    return DataFrame(date = dates, cases = cases, counts = Int.(counts), obs_freqs = obs_freqs, lineage = lineages, lineage_num = lineages_num) #, state = state)   
+end
+
+function figure_1(MS, LD, colors; figsize=(3200, 2600), fontsize=32, font="Helvetica")
+    dates_num, seed_L, forecast_L, N_lineage = unpack_data(MS)
+    seq_labels = LD.seq_names
+    dates = LD.dates 
+
+    lineage_map = get_sequence_map(seq_labels)
+    cases = MS.data["cases"]
+    counts =  MS.data["num_sequenced"]
+    plot_data = make_plot_dataframe(cases, counts, seq_labels)
+    color_vec = [colors[i] for i in plot_data.lineage_num]
+    
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = (3200, 2600), fontsize = fontsize, font = font)
+ 
+    g_cases_rt =  fig[1:3,1:2] = GridLayout()
+    
+    ##################### CASES AND AGGREGATE SMOOTH ###############
+    ax_cases = Axis(g_cases_rt[1:2,1], ylabel = "Observed Cases")
+    plot_cases!(ax_cases, MS)
+    plot_smoothed_EC!(ax_cases, MS)
+    add_monthly_dates!(ax_cases, LD.dates)
+    hidexdecorations!(ax_cases, grid = false)
+    
+    ###################### AVERAGE RT ##############################
+    ax_average_rt = Axis(g_cases_rt[3,1], ylabel = L"R_{t}")
+    plot_average_R!(ax_average_rt, MS)
+    add_monthly_dates!(ax_average_rt, LD.dates)
+    linkxaxes!(ax_cases, ax_average_rt)
+
+    g_variant = fig[1:3, 3:4] = GridLayout()
+    
+    ###################### Lineage Prevalence ######################
+    ax_smooth_lin = Axis(g_variant[1:2,1:2])
+    plot_lineage_prev!(ax_smooth_lin, MS, colors = colors)
+    add_monthly_dates!(ax_smooth_lin, LD.dates)
+    hidexdecorations!(ax_smooth_lin, grid = false)
+    
+    ###################### Lineage Effective Reproductive Number ###
+    ax_Rt = Axis(g_variant[3,1:2])
+    plot_lineage_R_censored!(ax_Rt, MS, colors = colors)
+    add_monthly_dates!(ax_Rt, LD.dates)
+    linkxaxes!(ax_smooth_lin, ax_Rt)
+
+    ##################### PLOTTING ORIGINAL SAMPLES ################
+    g_seq_count = fig[4:5,1:4] = GridLayout()
+    
+    ax_obs_cases = Axis(g_seq_count[1:2,2], ylabel = "Observed Cases")
+    plot_cases!(ax_obs_cases, MS)
+    add_monthly_dates!(ax_obs_cases, LD.dates, skip = 2)
+    
+    ax_seq_count = Axis(g_seq_count[1,1], ylabel = "Observed Counts")
+    barplot!(ax_seq_count, plot_data.date, plot_data.counts, 
+        stack = plot_data.lineage_num,
+        color = color_vec)    
+    
+    ##################### PLOTTING OBSERVED FREQ ################
+    ax_seq_freq = Axis(g_seq_count[2,1], ylabel = "Sample Frequency")
+    barplot!(ax_seq_freq, plot_data.date, plot_data.obs_freqs, 
+        stack = plot_data.lineage_num,
+        color = color_vec)    
+    
+    linkxaxes!(ax_seq_count, ax_seq_freq)
+    hidexdecorations!(ax_seq_count, grid = false)
+    
+    add_monthly_dates!(ax_seq_freq, LD.dates, skip=2)
+
+    
+    ##################### PLOTTING APPROX LINEAGE ################
+    
+    ax_true_cases = Axis(g_seq_count[1:2,3])
+    
+    sim_freq = get_posterior(MS, "sim_freq", true)
+    med, lQ, uQ = get_quants(sim_freq, ps)
+    
+    plot_data.sim_freqs = reduce(vcat, [m for m in eachcol(med)])
+    barplot!(ax_true_cases, plot_data.date, plot_data.cases .* plot_data.sim_freqs, 
+        stack = plot_data.lineage_num,
+        color = color_vec)    
+    
+    add_monthly_dates!(ax_true_cases, LD.dates, skip=2)
+
+    linkyaxes!(ax_obs_cases, ax_true_cases)
+    hideydecorations!(ax_true_cases, grid = false)
+
+    for (label, layout) in zip(["(a)", "(b)", "(c)"], [g_cases_rt, g_seq_count, g_variant])
+    Label(layout[1, 1, TopLeft()], label,
+        textsize = fontsize * 1.8,
+        padding = (0, 5, 5, 0),
+        font = font,
+        halign = :right)
+    end
+    
+    return fig
+end
+
+function figure_2(MS, LD, colors; figsize=(1800, 1800), fontsize=32, font="Helvetica")
+    dates_num, seed_L, forecast_L, N_lineage = unpack_data(MS)
+    dates = LD.dates 
+    
+    seq_labels = LD.seq_names
+    #lineage_map = get_sequence_map(seq_labels)
+    #WHO_seq_names = [lineage_to_WHO[lineage] for lineage in seq_labels]
+    
+    cases = MS.data["cases"]
+    counts =  MS.data["num_sequenced"]
+    
+    fig = Figure(backgroundcolor = RGBf0(1., 1., 1.), resolution = figsize, fontsize = fontsize, font = font)
+    
+    
+    # Posterior smooth prevalence 
+    g_smooth = fig[1:4,1] = GridLayout()
+    ax_smooth = Axis(g_smooth[1,1], ylabel = "Posterior Smoothed Cases")
+    plot_cases!(ax_smooth, MS)
+    plot_smoothed_EC!(ax_smooth, MS)
+    add_monthly_dates!(ax_smooth, dates)
+    hidexdecorations!(ax_smooth, grid = false)
+
+    # Frequency plot 
+    g_freq = fig[5:8, 1] = GridLayout()
+    ax_freq = Axis(g_freq[1,1],ylabel = "Posterior Lineage Frequency")
+    plot_observed_frequencies!(ax_freq, MS; colors = colors, size = N -> 1.5 * sqrt(N))
+    plot_lineage_frequency!(ax_freq, MS; colors = colors)
+    add_monthly_dates!(ax_freq, dates)
+    
+    linkxaxes!(ax_smooth, ax_freq)
+    
+    # Posterior lineage cases
+    g_smooth_lin = fig[1:4,2] = GridLayout()
+    ax_smooth_lin = Axis(g_smooth_lin[1,1],ylabel = "Posterior Lineage Cases")
+    
+    plot_lineage_prev!(ax_smooth_lin, MS; colors = colors)
+    add_monthly_dates!(ax_smooth_lin, dates)
+    
+    
+    # Link y-axes with other smooth
+    hideydecorations!(ax_smooth_lin, grid = false)
+    linkyaxes!(ax_smooth, ax_smooth_lin)
+    
+    
+    # Effective Reproductive Number Panel
+    g_Rt = fig[5:6, 2] = GridLayout()
+    ax_Rt = Axis(g_Rt[1,1], ylabel = L"R_t")
+    
+    plot_lineage_R_censored!(ax_Rt, MS, colors = colors)
+    add_monthly_dates!(ax_Rt, dates)
+    
+    g_growth = fig[7:8, 2] = GridLayout()
+    ax_growth = Axis(g_growth[1,1],ylabel = "Growth Advantage")
+    
+    plot_growth_advantage!(ax_growth, MS, colors = colors)
+    ax_growth.xtickformat = xs -> seq_labels[convert.(Int, xs)]
+
+    # Adding legend
+    elements = [PolyElement(polycolor = colors[i]) for (i,s) in enumerate(seq_labels)]
+    fig[9,1:2] = Legend(fig, elements, seq_labels, "", orientation = :horizontal, tellwidth = false, tellheight = true)
+
+    for (label, layout) in zip(["(a)", "(b)", "(c)", "(d)", "(e)"], [g_smooth, g_smooth_lin, g_freq, g_Rt, g_growth])
+        Label(layout[1, 1, TopLeft()], label,
+            textsize = fontsize*1.8,
+            padding = (0, 5, 5, 0),
+            font = font,
+            halign = :right)
+    end
+    
+    return fig
+end

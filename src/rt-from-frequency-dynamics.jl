@@ -72,5 +72,7 @@ module rt_from_frequency_dynamics
     export plot_lineage_frequency!, plot_frequency_ppc!
     export plot_lineage_prev!, plot_smoothed_EC!
     export plot_growth_advantage!
+    export make_plot_dataframe
+    export figure_1, figure_2
     include("MakiePlots.jl")
 end
