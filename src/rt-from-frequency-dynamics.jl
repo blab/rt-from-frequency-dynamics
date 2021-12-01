@@ -41,9 +41,10 @@ module rt_from_frequency_dynamics
     # Clean: export get_posterior
     #include("InferenceHelpers.jl")
 
-    export AggregateData, LineageData
+    export ModelData, AggregateData, LineageData
     export RModel, LineageModel
     export SingleRModel, FreeLineageModel, FixedLineageModel
+    export MLRData, MLRModel
     export make_stan_data, make_stan_model, make_stan
     export ModelStan
     export run!, load_samples!
@@ -54,7 +55,7 @@ module rt_from_frequency_dynamics
     include("StanPriors.jl")
     include("LineageModels.jl")
     include("ModelStan.jl")
-    # Eventually: include("MLR.jl")
+    include("MLR.jl")
 
     # PosteriorHelpers is fine
     export sample_posterior, get_posterior, get_quants, hpd
