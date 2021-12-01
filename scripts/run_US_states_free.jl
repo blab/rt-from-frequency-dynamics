@@ -21,7 +21,7 @@ seed_L = 7
 forecast_L = 0
 
 # 4. Choose lineage model type
-LM =  FixedLineageModel(g, onset, rt_model, priors, seed_L, forecast_L)
+LM =  FreeLineageModel(g, onset, rt_model, priors, seed_L, forecast_L)
 
 # 5. Make stan models using shared model type
 function make_state_models(seq_df::DataFrame, cases_df::DataFrame, LM::LineageModel, model_dir::String)
@@ -45,7 +45,7 @@ function make_state_models(seq_df::DataFrame, cases_df::DataFrame, LM::LineageMo
   return LDs, MSs
 end
 
-model_name = "all-states-preprint"
+model_name = "all-states-preprint-free"
 model_dir = "../data/sims/$(model_name)"
 LDs, MSs = make_state_models(seq_df, cases_df, LM, model_dir)
 
