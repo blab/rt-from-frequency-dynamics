@@ -284,9 +284,7 @@ We consider $\Delta_{v} = \exp(\delta_{v})$ to be the lineage-specific growth ad
 \paragraph{Inference}
 
 The model is implemented in Stan \cite{carpenter2017stan} and inference was done in a Markov Chain Monte Carlo framework using the No-U-Turn Sampler (NUTS) \cite{hoffman2011nouturn}.
-For each model, we run 4 chains with [INSERT HERE] warm-up samples and retain [INSERT HERE] samples for a total of [INSERT HERE] samples for each state.
-To assess convergence, we
-%TODO: ensure that all parameters have Rhat less than 1.01 [NEED REFERENCE FOR APPROPRIATE RHAT].
+For each model, we run 4 chains with 1000 warm-up samples and retain 1000 samples for a total of 4000 samples for each state.
 We also implement a method for automatically generating Stan code for various basis expansions of $\ln R_{t}$ using Julia \cite{bezanson2017julia} and running the inference using Stan \cite{carpenter2017stan}.
 
 \paragraph{Analyzing vaccination}
@@ -331,7 +329,7 @@ T.B. is a Pew Biomedical Scholar.
 %TODO: The labeling on this one will be made consistent with 1 and 3
 \begin{figure}
   \centering
-  \includegraphics[width=\linewidth]{figs/fig_2_WA.png}
+  \includegraphics[width=\linewidth]{figs/fig_2_Michigan.png}
   \caption{Fitting the fixed growth advantage model to Washington state data.
   (a) Posterior expected cases without weekly seasonality in reporting rate.
   (b) Posterior expected cases by lineage.
@@ -410,8 +408,8 @@ By fixing one pivot class so that $I_{u_{*}} = \delta_{u_{*}} / T_{g} = 1$, we c
   I_{v}(0) &= p_{v}.
 \end{align}
 
-This shows that the multinomial logistic regression function similarly to our fixed growth advantage model except with the additional assumption that the generation time is Dirac-delta at $T_{g}$.
-This assumption additionally allows us to relate the epidemic growth rate and the effective reproduction number as $R = \exp(\frac{rt}{T_{g}})$. \cite{Wallinga2006} %TODO: Error here
+This shows that the multinomial logistic regression functions similarly to our fixed growth advantage model except with the additional assumption that the generation time is Dirac-delta at $T_{g}$.
+This assumption additionally allows us to relate the epidemic growth rate $r$ and the effective reproduction number as $R = \exp(r T_{g})$ \cite{Wallinga2006}.
 Further work is needed to directly quantify how making this assumption on the generation time affects the inferred growth advantages.
 
 \begin{figure}
@@ -427,4 +425,5 @@ Further work is needed to directly quantify how making this assumption on the ge
 
 %TODO: Supplemental version of fig 2 for different states
 %TODO: Might want to include posterior predictive of observed sequences of each variant type.
+
 \end{document}
