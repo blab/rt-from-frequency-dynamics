@@ -51,7 +51,7 @@ end
 # lineage to index map
 function get_sequence_map(seq_labels)
     lineage_map = Dict()
-    for (i, lineage) in enumerate(sort(seq_labels))
+    for (i, lineage) in enumerate(seq_labels)
         lineage_map[lineage] = i
     end
     return lineage_map

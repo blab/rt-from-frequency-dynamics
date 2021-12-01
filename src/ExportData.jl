@@ -35,9 +35,6 @@ function get_Rt_dataframe(MS::ModelStan, LD::LineageData)
         end
     end
     
-    rt_lower = vcat(rt_lower...)
-    rt_upper = vcat(rt_upper...)
-
     return DataFrame(state = state_vec, 
         date = dates_vec,
         lineage = lineage_vec,
