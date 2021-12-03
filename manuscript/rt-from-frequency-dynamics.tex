@@ -26,6 +26,8 @@
 
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 
+\linespread{1.5} % Increase Line spread
+
 \title{SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers}
 
 \author[1,2,*]{Marlin D.\ Figgins}
@@ -50,7 +52,7 @@
 Reconciling genetic data of SARS-CoV-2 lineages with epidemic surveillance data is difficult.
 Models of infectious diseases using genomic data typically rely on phylogenetic and phylodynamic inference which have issues scaling to large number of samples. %TODO: Do we have an upper bound here?
 In response to this, recent studies have used the sample proportions of different variants as an approximation to the variant frequencies and to describe variant frequency dynamics, but frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2.
-We extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of several co-circulating SARS-CoV-2 variants using case data and genetic sequences across states in the US from Jan to Sep 2021.
+We extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of several co-circulating SARS-CoV-2 variants using case data and genetic sequences across states in the US from January to October 2021.
 Our method can be used to infer structured relationships between effective reproduction numbers across time series which may be amendable to various analyses including other features related to the effective reproductive number such as non-pharmaceutical interventions.
 We use this model to quantify growth advantages for various SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate the effect of vaccination on curbing the spread of different variants in the United States.
 %TODO: Sentence about growth advantages
@@ -58,7 +60,6 @@ We use this model to quantify growth advantages for various SARS-CoV-2 Variants 
 \end{abstract}
 
 \section{Introduction}%
-\label{sec:introduction}
 
 %TODO: Lead into the pandemic, thorough descriptions on how genetic differences in variants may lead to different outcomes at the level of transmission and clinical presentation.
 %TODO: Move into the specifics of SARS-CoV-2. What info does a reader 2 years from now need to know to be able to make sense of this work?
@@ -85,6 +86,8 @@ SARS-CoV-2 variants with different levels of transmissibility and immune escape 
 
 Understanding the growth and spread of different variants as jointly evolutionary and epidemiological leads us to estimate variant-specific effective reproduction numbers.
 
+%TODO: Mention the specific case of emergence of new variant during an epidemic which is declining on average.
+
 %TB: I believe a motivating use case worth highlighting in the introduction is we can an overall declining epidemic with Rt<1, but where a sublineage obviously has Rt>1 and we can predict a forthcoming epidemic due to this variant.
 
 After initial emergence in late 2020, over the course of 2021, Variant of Concern (VOC) and Variant of Interest (VOI) viruses spread throughout the world and replaced existing viral diversity.
@@ -96,11 +99,23 @@ Here, we develop joint epidemiological and population genetic model of SARS-CoV-
 
 %TODO: More lead in here?
 
+\paragraph{Model Overview}%
+
+Overview of the model without equations...
+
 We implement two models of variant effective reproduction number based on a renewal equation model of epidemic spread (see Methods).
 First, we introduce a free variant $R_{t}$ which infers the effective reproduction number of each variant independently from one another.
+
 The second model is a fixed growth advantage model of variant $R_{t}$ in which all variant viruses have their own growth advantage which acts as a scaling to a single non-variant $R_{t}$ trajectory.
 
-%TODO: Sentence mentioning that we find this model with generation time assumptions is equivalent to MLR
+We parameterize fitness of variants at the level of transmission by inferring variant specific effective reproduction numbers. This differs from previous work on variant effective reproduction numbers which only deal with pairwise comparison and often parameterize these differences by assuming logistic growth in variant frequencies \cite{Vhringer2021}. %TODO: I think there's more references here.
+
+Further, we can also model the effective reproductive numbers of variants without assuming a fixed advantage allowing the variant effective reproduction numbers to vary freely. 
+
+Though, in general, our method allows one to estimate variant growth in the frequency domain in terms of effective reproduction number differences, we find that assuming a fixed advantage for variants results in estimates which are qualitively similar to the aforementioned models which assume fixed growth advantages in frequency growth.
+This provides the additional benefit of the inferred parameters being interpretable as scalings of the effective reproduction number.
+
+We test this on synthetic data (\ref{fig:1}) and real data from the United States (\ref{fig:3}). %TODO: This will likely be updated with the free $R_{t}$ analysis. 
 
 \paragraph{Estimating growth advantages in the United States}
 
@@ -207,13 +222,7 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
   P(t) &= \sum_{\tau < t} I(\tau) o_{t-\tau}
 \end{align}
 
-We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020}.
-
-We parameterize the onset distribution $o$ as being LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}.
-
-%TODO: Re-run model with mean and sd as below
-% WE SHOULD USE gmean = 5.2, sd = 1.72 \cite{Ganyani2020}.
-% WE SHOULD USE omean = 6.9, sd = 2.0 which is in the ball park of \cite{Cheng2021}
+We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}.
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
 
@@ -291,6 +300,10 @@ We also implement a method for automatically generating Stan code for various ba
 
 Using our posterior estimates of $R_{t}$ in the United States, we model the effect of vaccination as function of the proportion of adults fully vaccinated using a mixed effect model with random effects for each state and lineage. We implement this model using the package lme4 \cite{Bates2015} in the R programming language \cite{RLang2017}.
 
+%MF: Personally, I find the vaccination analysis very weak. Perhaps, it would be more meaningful if run on a free $R_t$ model where the curves are allowed to vary in their actual shape.
+
+%TODO: Run two US state analyses. One with the fixed advantage model and one with the free model.
+
 %TODO: \paragraph{Simulated data}%
 %TODO: Should I include how I simulated the data for Fig. 1. using the free Rt model?
 %TODO: Having some sort of information about this model would probably be useful
@@ -329,7 +342,7 @@ T.B. is a Pew Biomedical Scholar.
 %TODO: The labeling on this one will be made consistent with 1 and 3
 \begin{figure}
   \centering
-  \includegraphics[width=\linewidth]{figs/fig_2_Michigan.png}
+  \includegraphics[width=\linewidth]{figs/fig_2_Washington.png}
   \caption{Fitting the fixed growth advantage model to Washington state data.
   (a) Posterior expected cases without weekly seasonality in reporting rate.
   (b) Posterior expected cases by lineage.
@@ -385,7 +398,7 @@ In order to see the connection between this above model and ours, we return to t
 \begin{equation}
   I(t) = R_{t}\int_{0}^{t} I(t-\tau) g(\tau).
 \end{equation}
-Assuming that $g$  is the Dirac delta centered at a mean generation time $T_{g}$, we have that
+Assuming that $g$  is a point mass at a mean generation time $T_{g}$, we have that
 \begin{equation}
   I(nT_{g}) = \left(\prod_{i=1}^{n} R_{iT_{g}}\right) I(0).
 \end{equation}
@@ -408,7 +421,7 @@ By fixing one pivot class so that $I_{u_{*}} = \delta_{u_{*}} / T_{g} = 1$, we c
   I_{v}(0) &= p_{v}.
 \end{align}
 
-This shows that the multinomial logistic regression functions similarly to our fixed growth advantage model except with the additional assumption that the generation time is Dirac-delta at $T_{g}$.
+This shows that the multinomial logistic regression functions similarly to our fixed growth advantage model except with the additional assumption that the generation time is a point mass at $T_{g}$.
 This assumption additionally allows us to relate the epidemic growth rate $r$ and the effective reproduction number as $R = \exp(r T_{g})$ \cite{Wallinga2006}.
 Further work is needed to directly quantify how making this assumption on the generation time affects the inferred growth advantages.
 
