@@ -5,53 +5,17 @@ date: "09/27/2021"
 output: html_document
 ---
 
-TODO: Remove all non-vaccination stuff
-TODO: Remake Rt plot and vaccination histogram in julia
-
 ```{r}
 library(tidyverse)
 ```
 
 ```{r}
-df <- read_tsv("../data/sims/results/inferred_lineage_rts_all-states-preprint_11_28_21.tsv") %>%
-  mutate(state = str_replace(state, "rt-lineages-", "")) %>%
-  mutate(state = str_replace(state, "_", " ")) %>%
-  filter(freq_median > 0.001) %>% # Filter lineages which median frequency less than 0.1%
-  filter(!state %in% c("California")) # Errors in California?
-```
-```{r, fig.width=7, fig.height=5}
-df %>%
-  ggplot(aes(x = date, id = state)) +
-  geom_hline(aes(yintercept = 1), linetype = "dashed") +
-  geom_ribbon(aes(ymin = rt_lower_95, ymax = rt_upper_95, fill = lineage), alpha = 0.2) + 
-  geom_ribbon(aes(ymin = rt_lower_80, ymax = rt_upper_80, fill = lineage), alpha = 0.3) + 
-  geom_ribbon(aes(ymin = rt_lower_50, ymax = rt_upper_50, fill = lineage), alpha = 0.4) + 
-  geom_line(aes(y = rt_median), color = "black", alpha = 0.4) +
-  facet_wrap(~lineage)  +
-  xlab("") +
-  ylab("Effective Reproductive Number (Rt)") +
-  theme_minimal() +
-  theme(legend.title = element_blank(),
-        legend.position = "none",
-        strip.text.x = element_text(size = 12)) 
-```
-
-
-```{r, fig.width=7, fig.height=5}
-df %>%
-  filter(state == "Washington") %>%
-  ggplot(aes(x = date, id = lineage)) +
-  geom_hline(aes(yintercept = 1), linetype = "dashed") +
-  geom_ribbon(aes(ymin = rt_lower_95, ymax = rt_upper_95, fill = lineage), alpha = 0.1) + 
-  geom_ribbon(aes(ymin = rt_lower_80, ymax = rt_upper_80, fill = lineage), alpha = 0.2) + 
-  geom_ribbon(aes(ymin = rt_lower_50, ymax = rt_upper_50, fill = lineage), alpha = 0.3) +
-  geom_line(aes(y = rt_median), color = "black") +
-  xlab("") +
-  ylab("Effective Reproductive Number (Rt)") +
-  theme_minimal() +
-  theme(legend.title = element_blank(),
-        legend.position="bottom",
-        strip.text.x = element_text(size = 12)) 
+df <- read_csv("../sims/all-states-preprint-free/Rt/Rt_combined.csv") %>%
+  mutate(location = str_replace(location, "_", " ")) %>%
+  #group_by(location, date) %>%
+  #mutate(relative_rt = median_R / median_R[variant == "other"]) %>%
+  #ungroup() %>%
+  filter(median_freq > 0.001) #Filter variants which median frequency less than 0.1
 ```
 
 ## Adding in vacc data
@@ -63,28 +27,25 @@ vacc <- read.csv("https://data.cdc.gov/api/views/unsk-b7fc/rows.csv?accessType=D
          Administered_Dose1_Pop_Pct, Series_Complete_Pop_Pct, 
          Administered_Dose1_Recip_18PlusPop_Pct, Series_Complete_18PlusPop_Pct, 
          Administered_Dose1_Recip_65PlusPop_Pct, Series_Complete_65PlusPop_Pct) %>%
-  rename(state = Location, date = Date) %>%
-  mutate(state = state.name[match(state, state.abb)],
+  rename(location = Location, date = Date) %>%
+  mutate(location = state.name[match(location, state.abb)],
          date = as.Date(date, format = "%m/%d/%Y"),
          date = date + 14) %>% # lag vaccination percentages by two weeks %>%
   mutate(second_dose_gap = (Administered_Dose1_Pop_Pct - Series_Complete_Pop_Pct) ) %>%
   mutate(Series_Complete_18PlusPop_Pct = Series_Complete_18PlusPop_Pct / 100) %>%
-  filter(!is.na(state))
+  filter(!is.na(location))
 
 ```
 
 ```{r}
 vacc %>%
-  ggplot(aes(x=date, id = state))+
+  ggplot(aes(x=date, id = location))+
   geom_line(aes(y = Series_Complete_18PlusPop_Pct)) +
-facet_wrap(~ state)
+facet_wrap(~ location)
 ```
 
 ## Vaccination modeling
-```{r}
-df %>% 
-  count(state, lineage, lineage_WHO)
-```
+
 ```{r}
 rt_vacc <- df %>% left_join(vacc)
 ```
@@ -93,31 +54,32 @@ rt_vacc <- df %>% left_join(vacc)
 library(lme4)
 
 #rt_vacc <- rt_vacc %>% filter(Series_Complete_18PlusPop_Pct > 0)
-rt_vacc$lineage <- relevel(as.factor(rt_vacc$lineage), ref = "other")
-rt_vacc$state <- as.factor(rt_vacc$state) 
+rt_vacc$variant <- relevel(as.factor(rt_vacc$variant), ref = "other")
+rt_vacc$location <- as.factor(rt_vacc$location) 
 
-# We fit a linear mixed model with fixed vaccination effect as well as random effects with lineage and state
-# For each lineage, we predict a random slope and intercept and for each state the same
-mixed.lmer <- lmer(rt_median ~  Series_Complete_18PlusPop_Pct + (1 + Series_Complete_18PlusPop_Pct|lineage) + (1+Series_Complete_18PlusPop_Pct|state), data = rt_vacc, REML = FALSE, lmerControl(optimizer ='optimx', optCtrl=list(method='nlminb')))
+# We fit a linear mixed model with fixed vaccination effect as well as random effects with variant and location
+# For each variant, we predict a random slope and intercept and for each location the same
+mixed.lmer <- lmer(log(median_R) ~  Series_Complete_18PlusPop_Pct + (1 + Series_Complete_18PlusPop_Pct|variant) + (1+Series_Complete_18PlusPop_Pct|location), data = rt_vacc, REML = FALSE, lmerControl(optimizer ='optimx', optCtrl=list(method='nlminb')))
 ```
+
 
 ```{r}
 overall_coefs <- coef(summary(mixed.lmer))[,"Estimate"]
-state_coefs <- coef(mixed.lmer)$state
-lineage_coefs <- coef(mixed.lmer)$lineage
+location_coefs <- coef(mixed.lmer)$location
+variant_coefs <- coef(mixed.lmer)$variant
 
-state_coefs$`(Intercept)` <- state_coefs$`(Intercept)` + overall_coefs[1]
-state_coefs$Series_Complete_18PlusPop_Pct <- state_coefs$`Series_Complete_18PlusPop_Pct` + overall_coefs[1]
+location_coefs$`(Intercept)` <- location_coefs$`(Intercept)` + overall_coefs[1]
+location_coefs$Series_Complete_18PlusPop_Pct <- location_coefs$`Series_Complete_18PlusPop_Pct` + overall_coefs[1]
 
-data_to_predict <- crossing(state =  unique(rt_vacc$state),
+data_to_predict <- crossing(location =  unique(rt_vacc$location),
          Series_Complete_18PlusPop_Pct = c(0., 1.),
-         lineage = unique(rt_vacc$lineage))
+         variant = unique(rt_vacc$variant))
 
-data_to_predict$lineage <- relevel(as.factor(data_to_predict$lineage), ref = "other")
-data_to_predict$state <- as.factor(data_to_predict$state) 
+data_to_predict$variant <- relevel(as.factor(data_to_predict$variant), ref = "other")
+data_to_predict$location <- as.factor(data_to_predict$location) 
 
 effects_to_plot <- cbind(data_to_predict, predicted_Rt = predict(mixed.lmer, newdata = data_to_predict, allow.new.levels = TRUE)) %>%
-  group_by(state, lineage) %>%
+  group_by(location, variant) %>%
   summarize(intercept = predicted_Rt[Series_Complete_18PlusPop_Pct == 0],
             slope = predicted_Rt[Series_Complete_18PlusPop_Pct == 1] - predicted_Rt[Series_Complete_18PlusPop_Pct == 0])
 
@@ -125,9 +87,9 @@ effects_to_plot %>%
   pivot_longer(cols = c("intercept", "slope"), names_to = "effect", values_to = "estimate") %>%
   filter(effect == "slope") %>%
   mutate(effect = "Vaccination Effect") %>%
-  ggplot(aes(y = state)) +
+  ggplot(aes(y = location)) +
   geom_vline(xintercept = 0., linetype = "dashed") +
-  geom_point(aes(x = estimate, color = lineage)) + 
+  geom_point(aes(x = estimate, color = variant)) + 
   scale_y_discrete(limits=rev) + 
   facet_wrap(~effect)
 ```
@@ -148,10 +110,10 @@ effects_to_plot %>%
   pivot_longer(cols = c("intercept", "slope"), names_to = "effect", values_to = "estimate") %>%
   filter(effect == "slope") %>%
   mutate(effect = "Vaccination Effect") %>%
-  ggplot(aes(fill = lineage)) +
+  ggplot(aes(fill = variant)) +
   geom_histogram(aes(x = estimate)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
-  facet_wrap(~lineage) + 
+  facet_wrap(~variant) + 
   theme_minimal() + 
   xlab("Estimated vaccination effect") +
   ylab("") +
@@ -160,9 +122,9 @@ effects_to_plot %>%
         strip.text.x = element_text(size = 12))
 ```
 ```{r}
-data_to_predict <- crossing(state =  unique(rt_vacc$state),
+data_to_predict <- crossing(location =  unique(rt_vacc$location),
          Series_Complete_18PlusPop_Pct = c(0., 1.),
-         lineage = unique(rt_vacc$lineage))
+         variant = unique(rt_vacc$variant))
 ```
 
 
@@ -171,10 +133,10 @@ library(lubridate)
 
 rt_vacc %>%
   filter(mday(date) == 1) %>%
-  ggplot(aes(x = Series_Complete_18PlusPop_Pct, color = lineage)) +
-  geom_point(aes(y = rt_median)) +
-  geom_smooth(aes(y=rt_median), color = "black", method = "lm") +
-  facet_grid(vars(date), vars(lineage))
+  ggplot(aes(x = Series_Complete_18PlusPop_Pct, color = variant)) +
+  geom_point(aes(y = median_R)) +
+  geom_smooth(aes(y=median_R), color = "black", method = "lm") +
+  facet_grid(vars(date), vars(variant))
 ```
 
 ```{r}
@@ -184,10 +146,10 @@ adding_pred <- rt_vacc %>%
   filter(mday(date) == 1)
 
 cbind(adding_pred, pred = predict(mixed.lmer, adding_pred)) %>%
-  ggplot(aes(x = Series_Complete_18PlusPop_Pct, color = lineage)) +
-  geom_point(aes(y = rt_median)) +
+  ggplot(aes(x = Series_Complete_18PlusPop_Pct, color = variant)) +
+  geom_point(aes(y = median_R)) +
   geom_line(aes(y=exp(pred)), color = "black", method = "lm") +
-  facet_grid(vars(date), vars(lineage))
+  facet_grid(vars(date), vars(variant))
 ```
 
 ```{r}
@@ -195,10 +157,10 @@ library(lubridate)
 
 rt_vacc %>%
   filter(mday(date) == 1) %>%
-  ggplot(aes(x = Series_Complete_18PlusPop_Pct, color = lineage)) +
-  geom_point(aes(y = log(rt_median))) +
-  geom_line(aes(y = log(rt_median), id = state)) +
-   facet_wrap(~state)
+  ggplot(aes(x = Series_Complete_18PlusPop_Pct, color = variant)) +
+  geom_point(aes(y = log(median_R))) +
+  geom_line(aes(y = log(median_R), id = location)) +
+   facet_wrap(~location)
 ```
 
 ```{r}
