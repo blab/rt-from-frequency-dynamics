@@ -323,24 +323,31 @@ Using our posterior estimates of $R_{t}$ in the United States, we model the effe
 
 \subsection*{Data and code accessibility.}
 
-[SENTENCE ABOUT DATA AVAILABILITY THROUGH GISAID AND CDC]
+Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated `open' dataset \cite{Hadfield2018} that pulls from sequences shared to NCBI GenBank.
+Raw sequence data is available from \href{https://docs.nextstrain.org/projects/ncov/en/latest/reference/remote_inputs.html}{data.nextstrain.org}.
+Case count data was obtained from the US CDC using the `United States COVID-19 Cases and Deaths by State over Time' dataset available from \href{https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36}{data.cdc.gov}.
 
-The source code for figures in this manuscript can be found at ...
-
-\subsection*{Author contributions}
-
-M.F. and T.B. did the science.
+Derived data of sequence counts and case counts, along with all source code used to analyze this data and produce figures is available via the GitHub repository \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
 
 \subsection*{Competing interests}%
 
 The authors declare no conflicting interests.
 
+\subsection*{Author contributions}
+
+MF, TB conceived the study.
+TB gathered sequence and case count data.
+MF designed and implemented inference model.
+MF performed the analysis.
+MF, TB interpreted the results.
+MF, TB wrote the paper.
+
 \subsection*{Acknowledgements}%
 
-%TODO: We have to thank all the laboratories in the USA which submitted data.
-%TODO: Trevor,  what's the actual funding info here? Is this under HHMI stuff?
-M.F. is an ARCS Foundation scholar and was supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-1762114.
-T.B. is a Pew Biomedical Scholar.
+We thank John Huddleston, Eslam Abousamra and other members of the Bedford Lab for helpful feedback.
+MF is an ARCS Foundation scholar and was supported by the National Science Foundation Graduate Research Fellowship Program under Grant No.\ DGE-1762114.
+TB is an Investigator of the Howard Hughes Medical Institute.
+This project was supported by funds from the HHMI COVID-19 Collaboration Initiative awarded to the Fred Hutchinson Cancer Research Center and the University of Washington.
 
 %TODO: Takeaway should be the general principle of the method as depicted in the caption.
 \begin{figure}
