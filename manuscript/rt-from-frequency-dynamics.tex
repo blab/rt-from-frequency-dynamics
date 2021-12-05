@@ -92,8 +92,8 @@ Relating genomic data of SARS-CoV-2 variants to epidemic surveillance data is di
 %TODO: What is really the point of meaning phylodynamics? To swat away comments on why we don't use them for this particular problem.
 
 Though it is typical to use phylodynamic methods to analyze genetic sequence data from epidemics, the sheer amount of data ([NUM OF SEQUENCES AS OF DATE]) makes these methods hard to use at the scale of interest due to computational constraints associated with the large numbers of sequences as well as a lack of methods for estimating the fitness of different genetic variants. 
-Other studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cites{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}. %TODO: Cite papers here? TB: There are some early B.1.1.7 papers worth citing. A self-cite of Annavajhala et al would also work in this context.
-Such methods often model the frequency of lineages using multinomial logistic regression \cites{Ito2021, Obermeyer2021} which often assume that genetic variants have a fitness advantage over one another which is fixed in time and acts as a estimate for the selective advantage of different variants at the level of frequencies.
+Other studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}. %TODO: Cite papers here? TB: There are some early B.1.1.7 papers worth citing. A self-cite of Annavajhala et al would also work in this context.
+Such methods often model the frequency of lineages using multinomial logistic regression \cite{Ito2021, Obermeyer2021} which often assume that genetic variants have a fitness advantage over one another which is fixed in time and acts as a estimate for the selective advantage of different variants at the level of frequencies.
 Multinomial logistic regression based methods have the advantage of being more scalable with increased sampling as individual sequences are reduced to a count of each variant for each day, but they do not directly account for the complicated infection and transmission dynamics which influence which variants succeed and are observed in real life.
 
 Growth of frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2 variant transmission.
@@ -104,7 +104,7 @@ Similarly, growth in frequency does not necessarily entail an increase in absolu
 
 To better capture epidemiological dynamics, there are methods which describe the growth of total infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates, during a given outbreak.
 
-Though, these methods are excellent for describing overall growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory \cites{Cori2013, Abbott2020} which is unrelated the genetic and phenotypic composition of the population. % Might be a couple other papers
+Though, these methods are excellent for describing overall growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020} which is unrelated the genetic and phenotypic composition of the population. % Might be a couple other papers
 
 SARS-CoV-2 variants with different levels of transmissibility and immune escape potential directly affect the underlying frequency dynamics which we often observe through genetic surveillance efforts.
 Understanding the growth and spread of different variants as jointly evolutionary and epidemiological leads us to estimate variant-specific effective reproduction numbers.
