@@ -1,6 +1,6 @@
 # Data
 
-## US variants dataset
+## Variants US dataset
 
 Data preparation followed:
 
@@ -11,9 +11,9 @@ Data preparation followed:
 tsv-select -H -f strain,date,country,division,Nextstrain_clade open_metadata.tsv > open_metadata_pruned.tsv
 ```
 
-3. This `open_metadata_pruned.tsv` is processed in Mathematica by running the notebook `variant-frequencies-case-counts-data-prep.nb`. This results in the export of files: `variants-us_location-variant-sequence-counts.tsv` and `variants-us_location-case-counts.tsv` versioned here. This keeps only sequences from the USA that were collected between Jan 1, 2021 and Oct 1, 2021 resulting in 952,091 entries. Additionally, only variants with greater than 2000 sequences and states with greater than 5000 sequences were kept.
+3. This `open_metadata_pruned.tsv` is processed in Mathematica by running the notebook `variants-us_data-prep.nb`. This results in the export of files: `variants-us_location-variant-sequence-counts.tsv` and `variants-us_location-case-counts.tsv` versioned here. This keeps only sequences from the USA that were collected between Jan 1, 2021 and Oct 1, 2021 resulting in 952,091 entries. Additionally, only variants with greater than 2000 sequences and states with greater than 5000 sequences were kept.
 
-`location-variant-sequence-counts.tsv` contains:
+`variants-us_location-variant-sequence-counts.tsv` contains:
 ```
 date	location	variant	sequences
 2021-01-02	Alabama	other	3
@@ -22,7 +22,7 @@ date	location	variant	sequences
 ...
 ```
 
-`location-case-counts.tsv` contains:
+`variants-us_location-case-counts.tsv` contains:
 ```
 date	location	cases
 2021-01-01	Alabama	3630
@@ -32,3 +32,18 @@ date	location	cases
 ```
 
 There will be dates that are missing sequence counts or case counts. These should be assumed to be 0.
+
+## Omicron countries dataset
+
+Data preparation followed:
+
+1. Nextstrain-curated metadata TSV of GISAID database was downloaded. Uncompressing and renaming this file resulted in `gisaid_metadata.tsv`.
+
+2. The metadata file was pruned to only relevant columns via:
+```
+tsv-select -H -f strain,date,country,division,Nextstrain_clade gisaid_metadata.tsv > gisaid_metadata_pruned.tsv
+```
+
+3. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `omicron-countries_data-prep.nb`. This results in the export of files: `omicron-countries_location-variant-sequence-counts.tsv` and `omicron-countries_location-case-counts.tsv` versioned here. This subsets between Sep 1, 2021 and recent samples. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
+
+As above, there will be dates that are missing sequence counts or case counts. These should be assumed to be 0.

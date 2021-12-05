@@ -13,6 +13,9 @@ data/open_metadata_pruned.tsv
 data/gisaid_metadata.tsv
 data/gisaid_metadata_pruned.tsv
 
+# Protect environment variables
+environment*
+
 # LaTeX Files
 *.aux
 *.lof
