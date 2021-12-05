@@ -282,13 +282,12 @@ The negative binomial likelihood is often used for modeling observation noise in
 \paragraph{Observation process for lineage annotations}%
 
 Suppose we're tracking the growth of $V$ variants, our data for a given day $t$ takes the form of daily counts $C_{t} = (C_{t,1}, \ldots, C_{t,V})$ of sequences of each variant with daily total $N_{t} = \sum_{1\leq v \leq V} C_{t, v}$.
-We then assume that the likelihood of observing these counts of each lineage is described by a multinomial distribution, so that
+We then assume that the likelihood of observing these counts of each lineage is described by a Dirichlet-multinomial distribution, so that
 \begin{equation}
-    C_{t} \sim \text{Multinomial}(N_{t}, f(t)),
+    C_{t} \sim \text{DirMultinomial}(N_{t}, f(t)\cdot \xi),
 \end{equation}
-given lineage frequencies $f(t) = (f_{1}(t), \ldots, f_{V}(t))$.
-
-We also attempted to use a Dirichlet-Multinomial distribution to account for possible over-dispersion in the counts relative to the Multinomial, but this did not make much difference in our inferences.
+given lineage frequencies $f(t) = (f_{1}(t), \ldots, f_{V}(t))$ and over-dispersion parameter $\xi>0$.
+Here, we use a Dirichlet-Multinomial distribution to account for possible over-dispersion in the counts relative to the standard Multinomial distribution.
 
 \paragraph{Basis expansions of log effective reproduction numbers}%
 
@@ -300,7 +299,6 @@ Each basis spline is written as a column in the design matrix $\vec{X}$, so that
 where the $\vec{\beta}$ are to be estimated to parameterize the effective reproduction number.
 We then use locally adaptive smoothing of order one with a Laplace prior on the coefficients $\vec{\beta}$ to promote smoothness on the inferred $R_t$ trajectory \cite{Faulkner2018}.
 This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity .etc.
-%TODO: Structured R_{t} approach is also flexible and extensible, mention NPIs and that one paper
 
 \paragraph{Modeling variant-specific effective reproduction numbers}%
 
@@ -346,12 +344,8 @@ Using this model, we can estimate the relative contribution of each component by
 
 \paragraph{Inference}
 
-The model is implemented in Numpyro [CITE] in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference [] using the ADAM optimizer [] with a learning rate of 0.01. 
-Each individual location in the data set was optimized for 50,000 iterations and 1000 posterior samples were produced under both the free $R_{t}$ model and fixed growth advantage model.
-
-% The model is implemented in Stan \cite{carpenter2017stan} and inference was done in a Markov Chain Monte Carlo framework using the No-U-Turn Sampler (NUTS) \cite{hoffman2011nouturn}.
-% For each model, we run 4 chains with 1000 warm-up samples and retain 1000 samples for a total of 4000 samples for each state.
-% We also implement a method for automatically generating Stan code for various basis expansions of $\ln R_{t}$ using Julia \cite{bezanson2017julia} and running the inference using Stan \cite{carpenter2017stan}.
+The model is implemented in Numpyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. 
+Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the free $R_{t}$ model and fixed growth advantage model.
 
 \subsection*{Data and code accessibility.}
 
@@ -408,7 +402,7 @@ This project was supported by funds from the HHMI COVID-19 Collaboration Initiat
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fig_3_growth_advantages.png}
-  \caption{Using structured model, we infer growth advantages for 7 variants in 46 US states.
+  \caption{Using structured model, we infer growth advantages for 7 variants in 39 US states.
   (a) State-wise growth advantages for variants of concern.
   (b) Same as (a) but visualized by variant.}%
   \label{fig:3}
@@ -426,6 +420,7 @@ This project was supported by funds from the HHMI COVID-19 Collaboration Initiat
 \bibliography{rt-from-frequency-dynamics}
 
 \newpage
+
 \appendix
 
 \section*{Supplemental Appendix}
@@ -472,7 +467,8 @@ This assumption additionally allows us to relate the epidemic growth rate $r$ an
 \begin{align*}
 \ln \left( \frac{R_{t,v}}{R_{t,u}} \right) = (r_{v} - r_{u}) T_{g}.
 \end{align*}
-Further work is needed to directly quantify how making this assumption on the generation time affects the inferred growth advantages.
+
+
 
 \begin{figure}
   \centering
@@ -482,6 +478,48 @@ Further work is needed to directly quantify how making this assumption on the ge
   (b) Same as (a) but grouped by variant.}%
   \label{fig:MLR_growth_advantages}
 \end{figure}
+
+\subsubsection*{Relating exponential growth rates to relative effective reproduction numbers}
+
+An important relationship of interest is between the exponential growth rate of an epidemic and its effective reproduction number. In the case of our analysis, we are particularly intersted in the ratios of variant-specific effective reproduction numbers. First, notice that the effective reproduction number and the exponential growth rate of an epidemic are related by
+\begin{align*}
+R_{t} = \frac{1}{\int_{0}^{\infty} \exp(-r\tau)g(\tau)d\tau} = \frac{1}{M_{g}(-r)}
+\end{align*}
+waccording to the Lotka-Euler equation \cite{Wallinga2006} where $r$ is the exponential growth rate and $M_{g}$ is the moment-generating function of the generation time $g$. 
+This allows us to write the relative reproduction number of two variants $v$ and $u$ as a function of their exponential growth rates, so that
+\begin{align*}
+\frac{R_{t,v}}{R_{t,u}} = \frac{M_{g}(-r_{u})}{M_{g}(-r_{v})}.
+\end{align*}
+
+We'll consider three common generation time assumptions. First, we consider the case where the generation time is a point mass at $T_{g}$. In which case, $M_{g}(-r) = \exp(-r T_{g})$ and we recover the relationship
+\begin{align*}
+\frac{R_{t,v}}{R_{t,u}} = \exp( (r_{v}-r_{u})T_{g}).
+\end{align*}
+
+In this case, the relative effective reproduction number depends on only the difference between the exponential growth rates and therefore, is commonly used when converting exponential growth rates to relative reproduction numbers in the case of logistic growth models.
+
+Second, we consider the case where the the generation time is an exponential distrubution with mean $T_{g}$. This assumption is often implicity and common in models of infectious diseases such as ODEs and their stochastic variants. Using the corresponding moment-generating function, we see that
+\begin{align*}
+\frac{R_{t,v}}{R_{t,u}} = \frac{1 + r_{v} T_{g}}{1 + r_{u} T_{g}}.
+\end{align*}
+
+
+Next, we consider the Gamma distributed generation times with mean $T_{g}$ and standard deviation $s$. This is often used in models of infectious diseases via the chain trick in which multiple compartments are chained together to obtain non-exponential generation or waiting times. Re-parmeterizing the Gamma distribution in terms of its mean and standard deviation, we have that
+\begin{align*}
+\frac{R_{t,v}}{R_{t,u}} = \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{u} \left(\frac{s^{2}}{T_{g}}\right) } \right)^{T_{g}^{2} / s^{2}}.
+\end{align*}
+
+From this equation, we can see that increases in the mean of the generation time lead to higher inferred variant advantages given the same growth rates. On the other hand, increases in the standard deviation lead to lower inferred variant advantages.
+
+Taking a logarithm, we can also evaluate the sensitivity of our inferred growth advantages from our fixed growth advantage model with respect to the generation time assuming it is Gamma distributed as
+\begin{align*}
+ \delta_{v}  = \ln \left( \frac{R_{t,v}}{R_{t,0}} \right) = \left( \frac{T_{g}^{2}}{s^{2}} \right)  \ln \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{u} \left(\frac{s^{2}}{T_{g}}\right) } \right).
+\end{align*}
+
+The behavior here is analogous to that discussed above when the mean $T_{g}$ and standard deviaion $s$ are changed.
+The cases of exponential and Gamma-distributed generation times highlight that for non-deterministic generation times there is no guarantee that the relative effective reproduction number depends on only the difference in exponential growth rates. 
+In fact, these estimates based on the determinstic generation times correspond to the case in which the standard deviation shrinks zero, they are likely overestimates of variant advantages given the observed variation in the serial interval of SARS-CoV-2 infections.
+
 
 %TODO: Any other supplemental sections necessary?
 
