@@ -80,43 +80,27 @@ We use this model to estimate the effective reproduction number of various SARS-
 %TODO: Mention that modeling efforts are useful for understanding what has happened over the course of the pandemic.
 %TODO: And will be useful for tackling the continued spread of SARS-CoV-2
 
-As SARS-CoV-2 evolves, extant lineages may increase in their ability to transmit and escape acquired immunity \cite{Tegally2020}. %TODO: MF Expand slightly.  %TODO: Reference here TB: Cite canonical B.1.1.7 paper and canonical B.351.1 paper. MF: Which B.1.1.7 paper, did you mean?
-
-Quantifying the observed growth advantages of SARS-CoV-2 variants of concern allow us to understand which variants are able to thrive in different locations.
-
-%TODO: Mention that GISAID exists and is relevant here.
-
-
-Relating genomic data of SARS-CoV-2 variants to epidemic surveillance data is difficult.
-
-%TODO: What is really the point of meaning phylodynamics? To swat away comments on why we don't use them for this particular problem.
-
-Though it is typical to use phylodynamic methods to analyze genetic sequence data from epidemics, the sheer amount of data ([NUM OF SEQUENCES AS OF DATE]) makes these methods hard to use at the scale of interest due to computational constraints associated with the large numbers of sequences as well as a lack of methods for estimating the fitness of different genetic variants. 
-Other studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}. %TODO: Cite papers here? TB: There are some early B.1.1.7 papers worth citing. A self-cite of Annavajhala et al would also work in this context.
+As SARS-CoV-2 evolves, variants may emerge that increase in their ability to transmit and escape acquired immunity \cite{tao2021biological}.
+Quantifying the observed growth advantages of SARS-CoV-2 variants allows us to understand which variants are able to thrive in different locations \cite{tegally2021detection, davies2021estimated}.
+Relating genomic data of SARS-CoV-2 lineages to epidemic surveillance data is difficult.
+Though it is typical to use phylodynamic methods to analyze genetic sequence data from epidemics, the sheer amount of data as well as challenges to describing fitness effects in phylodynamic models make these methods hard to apply to potential differences in transmission rate among circulating variants.
+In order to deal with the limitations of phylodynamic inference, previous studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}.
 Such methods often model the frequency of lineages using multinomial logistic regression \cite{Ito2021, Obermeyer2021} which often assume that genetic variants have a fitness advantage over one another which is fixed in time and acts as a estimate for the selective advantage of different variants at the level of frequencies.
-Multinomial logistic regression based methods have the advantage of being more scalable with increased sampling as individual sequences are reduced to a count of each variant for each day, but they do not directly account for the complicated infection and transmission dynamics which influence which variants succeed and are observed in real life.
-
-Growth of frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2 variant transmission.
+Although a consistent increase in frequency of one variant over another is expected to reflect differences in transmission rate, these models do not directly account for the complicated infection and transmission dynamics which influence which variants lead to local and regional epidemics.
 When dealing with competition between variants, variants which are declining in frequency can still lead to an increasing number of infections.
 Similarly, growth in frequency does not necessarily entail an increase in absolute infections.
 
-%TB: I find the "limitations of phylodynamic inference" aspect to be a bit of a distraction. Phylodynamic methods are actually quite poor at estimating fitnesses of different clades and are usually used for things like prevalence via skyline plots or geographic spread via phylogeography. So it's not just dataset size but a more foundemental lack of appropriate methods.
-
-To better capture epidemiological dynamics, there are methods which describe the growth of total infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates, during a given outbreak.
-
-Though, these methods are excellent for describing overall growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020} which is unrelated the genetic and phenotypic composition of the population. % Might be a couple other papers
-
-SARS-CoV-2 variants with different levels of transmissibility and immune escape potential directly affect the underlying frequency dynamics which we often observe through genetic surveillance efforts.
-Understanding the growth and spread of different variants as jointly evolutionary and epidemiological leads us to estimate variant-specific effective reproduction numbers.
+To better capture epidemiological dynamics, there are methods which describe the growth of number of infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates, during a given outbreak.
+Although these methods are excellent for describing overall epidemic growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020}, which internally is unrelated the genetic and phenotypic composition of the population. % Might be a couple other papers
 This is of particular importance in the analysis of decline epidemic in which a dominant lineage may be declining overall, but some sublineage is rapidly increasing in frequency, creating the potential for a secondary wave of infections that may noticed at first glance.
+To overcome this we require models that partition case counts into contribute from different variants to estimate variant-specific effective reproduction numbers.
 
-%TB: I believe a motivating use case worth highlighting in the introduction is we can an overall declining epidemic with Rt<1, but where a sublineage obviously has Rt>1 and we can predict a forthcoming epidemic due to this variant.
-
-The current COVID-19 pandemic serves as an recent example of this phenomenon.
+The current COVID-19 pandemic serves as an important example of this phenomenon.
 After initial emergence in late 2020, over the course of 2021, Variant of Concern (VOC) and Variant of Interest (VOI) viruses spread throughout the world and replaced existing viral diversity.
-In the United States, multiple WHO designated \cite{Konings2021} VOC and VOI circulated in spring and early summer 2021, but this diversity was subsequently replaced by the Delta which became dominate in late summer 2021.
+Multiple WHO designated \cite{Konings2021} VOC and VOI viruses circulated in spring and early summer 2021, but this diversity was largely replaced by Delta variant viruses which became globally dominate in late summer 2021.
 Although it's now clear that Delta had greater transmissibility than other variants, rigorous estimates of the relative fitness of circulating VOC and VOI viruses are of interest.
-Here, we develop joint epidemiological and population genetic model of SARS-CoV-2 to assess the growth of variants over time and infer differences in the effective reproduction numbers of SARS-CoV-2 variants as well as underlying frequency of variants under noisy sampling.
+Here, we develop a joint epidemiological and population genetic model of SARS-CoV-2 to assess the growth of different variants over time and infer differences in the effective reproduction numbers of SARS-CoV-2 variants as well as underlying frequency of variants under noisy sampling.
+We apply this model to sequence data and case count data from United States between Jan and Oct 2021 to estimate differences in transmissibility between circulating VOC and VOI viruses.
 
 \section*{Results}
 
