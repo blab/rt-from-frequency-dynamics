@@ -1,32 +1,46 @@
 %Preamble
-\documentclass[12pt]{article}
-\usepackage{preprint}
+\documentclass[11pt,oneside,letterpaper]{article}
+
+% text layout
+\usepackage{geometry}
+\geometry{textwidth=15cm} % 15.25cm for single-space, 16.25cm for double-space
+\geometry{textheight=22cm} % 22cm for single-space, 22.5cm for double-space
+
+% make links a more pleasing color and don't box them
+\usepackage{color}
+\definecolor{green}{rgb}{0.20,0.50,0.48}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=green}
+
+\usepackage{parskip}
+
 \usepackage{authblk}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{amsrefs}
 \usepackage{amsfonts}
 \usepackage{mathrsfs}
 \usepackage{mathtools}
 \usepackage{enumerate}
 \usepackage[shortlabels]{enumitem}
 \usepackage{verbatim} %% includes comment environment
-\usepackage{hyperref}
 \usepackage[capitalize]{cleveref}
 \crefformat{equation}{~(#2#1#3)}
 \usepackage{caption, subcaption}
 \usepackage{graphicx}
-\usepackage{fullpage} %%smaller margins
 \usepackage{mathrsfs}
-\usepackage{lineno}
-\linenumbers
+
+% cite package, to clean up citations in the main text
+\usepackage{cite}
+
+% can include this for journal submission to help with reviewer feedback, but don't include for preprint
+% \usepackage{lineno}
+% \linenumbers
+% \linespread{1.5} % Increase Line spread
 
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
-
-\linespread{1.5} % Increase Line spread
 
 \title{SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers}
 
@@ -59,7 +73,7 @@ We use this model to quantify growth advantages for various SARS-CoV-2 Variants 
 %TODO: Sentence about the applicability of this method generally
 \end{abstract}
 
-\section{Introduction}%
+\section*{Introduction}
 
 %TODO: Lead into the pandemic, thorough descriptions on how genetic differences in variants may lead to different outcomes at the level of transmission and clinical presentation.
 %TODO: Move into the specifics of SARS-CoV-2. What info does a reader 2 years from now need to know to be able to make sense of this work?
@@ -71,8 +85,8 @@ Quantifying the observed growth advantages of SARS-CoV-2 variants of concern all
 %TODO: Mention that GISAID exists and is relevant here.
 Relating genomic data of SARS-CoV-2 lineages to epidemic surveillance data is difficult.
 Though it is typical to use phylodynamic methods to analyze genetic sequence data from epidemics, the sheer amount of data ([NUM OF SEQUENCES AS OF DATE]) makes these methods hard to use at the scale of interest due to computational constraints associated with the large numbers of sequences.
-In order to deal with the limitations of phylodynamic inference in this large sample size regime, previous studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cites{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}. %TODO: Cite papers here? TB: There are some early B.1.1.7 papers worth citing. A self-cite of Annavajhala et al would also work in this context.
-These methods often model the frequency of lineages using multinomial logistic regression. \cites{Ito2021, Obermeyer2021}
+In order to deal with the limitations of phylodynamic inference in this large sample size regime, previous studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}. %TODO: Cite papers here? TB: There are some early B.1.1.7 papers worth citing. A self-cite of Annavajhala et al would also work in this context.
+These methods often model the frequency of lineages using multinomial logistic regression. \cite{Ito2021, Obermeyer2021}
 These methods have the advantage of being more scalable with increased sampling rate as individual sequences are reduced to a count of each lineage for each day, but they do not directly account for the complicated infection and transmission dynamics which influence which lineages succeed and are observed in real life.
 Growth of frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2 variant transmission.
 When dealing with competition between variants, variants which are declining in frequency can still lead to an increasing number of infections.
@@ -80,7 +94,7 @@ Similarly, growth in frequency does not necessarily entail an increase in absolu
 %TB: I find the "limitations of phylodynamic inference" aspect to be a bit of a distraction. Phylodynamic methods are actually quite poor at estimating fitnesses of different clades and are usually used for things like prevalence via skyline plots or geographic spread via phylogeography. So it's not just dataset size but a more foundemental lack of appropriate methods.
 
 To better capture epidemiological dynamics, there are methods which describe the growth of total infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates, during a given outbreak.
-Though, these methods are excellent for describing overall growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory. \cites{Cori2013, Abbott2020} % Might be a couple other papers
+Though, these methods are excellent for describing overall growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory. \cite{Cori2013, Abbott2020} % Might be a couple other papers
 
 SARS-CoV-2 variants with different levels of transmissibility and immune escape potential directly affect the underlying frequency dynamics which we often observe through genetic surveillance efforts.
 
@@ -95,11 +109,11 @@ In the United States, multiple WHO designated \cite{Konings2021} VOC and VOI cir
 Although it's now clear that Delta had greater transmissibility than other variants, rigorous estimates of the relative fitness of circulating VOC and VOI viruses are of interest.
 Here, we develop joint epidemiological and population genetic model of SARS-CoV-2 to assess the growth of different lineages over time and infer differences in the effective reproduction numbers of SARS-CoV-2 variants as well as underlying frequency of variants under noisy sampling.
 
-\section{Results}
+\section*{Results}
 
 %TODO: More lead in here?
 
-\paragraph{Model Overview}%
+\paragraph{Model Overview}
 
 Overview of the model without equations...
 
@@ -153,7 +167,7 @@ We attempted to estimate the rate of change of the effective reproduction number
 
 %TODO: Is this consistent with any other estimates we've seen on vaccine effectiveness?
 
-\section{Discussion}%
+\section*{Discussion}
 
 %TODO: Perhaps, main technical takeaway is that you can augment models of frequency dynamics with an epidemiological model of your choosing to relate frequency dynamics to transmission dynamics.
 %TODO: Reinforce that this is grounded in epidemiological modeling, requires no logistic growth assumption
@@ -193,7 +207,7 @@ Surveillance of variants should be folded into standard epidemiological surveill
 
 %TODO: Close on what?
 
-\section{Methods}
+\section*{Methods}
 
 Using sampled counts of sequences from different lineages as well as case data, we can infer jointly infer the proportion of variants in the larger population and the effective reproduction number of these variants.
 
@@ -378,15 +392,17 @@ T.B. is a Pew Biomedical Scholar.
   \label{fig:5}
 \end{figure}
 
-\bibliographystyle{ieeetr}
+\bibliographystyle{plos}
 \bibliography{rt-from-frequency-dynamics}
 
 \newpage
 \appendix
 
-\section*{Supplemental Results}
+\section*{Supplemental Appendix}
 
-\section{Relationship to multinomial logistic regression}
+\subsection*{Supplemental Results}
+
+\subsubsection*{Relationship to multinomial logistic regression}
 
 Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analysis is roughly equivalent to our fixed growth advantage model but with additional restrictions on the generation time.
 Multinomial logistic regression typically models the probability of a given observation belong to class $v$ as
