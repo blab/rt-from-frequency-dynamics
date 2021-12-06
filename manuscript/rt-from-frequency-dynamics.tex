@@ -300,9 +300,9 @@ The negative binomial likelihood is often used for modeling observation noise in
 Suppose we're tracking the growth of $V$ variants, our data for a given day $t$ takes the form of daily counts $C_{t} = (C_{t,1}, \ldots, C_{t,V})$ of sequences of each variant with daily total $N_{t} = \sum_{1\leq v \leq V} C_{t, v}$.
 We then assume that the likelihood of observing these counts of each lineage is described by a Dirichlet-multinomial distribution, so that
 \begin{equation}
-    C_{t} \sim \text{DirMultinomial}(N_{t}, f(t)\cdot \xi),
+    C_{t} \sim \text{DirMultinomial}\left(N_{t}, f(t)\cdot \left(\frac{1-\xi}{\xi}\right)\right),
 \end{equation}
-given lineage frequencies $f(t) = (f_{1}(t), \ldots, f_{V}(t))$ and over-dispersion parameter $\xi>0$.
+given lineage frequencies $f(t) = (f_{1}(t), \ldots, f_{V}(t))$ and over-dispersion parameter $0<\xi<1$.
 Here, we use a Dirichlet-Multinomial distribution to account for possible over-dispersion in the counts relative to the standard Multinomial distribution.
 
 \paragraph{Basis expansions of log effective reproduction numbers}%
@@ -351,11 +351,14 @@ Writing $S_{t}$ as $1 - \phi_{t}$, we have that
 
 Using this model, we can estimate the relative contribution of each component by estimating the fraction of the population with some immunity jointly with these to variant advantages.
 
-% We can have a model where we parameterize the difference in this way
-% A + B * phi where we assume a functional form to phi. Or just model explicitly? What would this phi need to be informed by? Cummulative cases?
+\paragraph{Priors for Bayesian Inference}%
 
-% THe point is that in the situation where this is a fixed growth advantage. We're not accounting for immune escape basically. Here, is where a free growth model is needed.
-% Basically your escape potential determines how quickly your R becomes similar to baseline as immunity increases.
+For both models, we provide a Laplace random walk prior on the spline coefficients $\vec{\beta}$ with scale parameter $\gamma$ which itself has a HalfCauchy$(0,0.5)$ prior distribution. 
+In the fixed growth advantage model, only a baseline $R_{t}$ trajectory is parameterized by $\vec{\beta}$ and the variant advantages $\delta_{v}$ are given a Normal$(0,1)$ prior.
+The initial infected individuals for each variant have a uniform prior between 0 and 300,000. 
+The weekly reporting rates $\rho_{[t]}$ each follow a Beta$(5, 5)$ prior, and the case observation over-dispersion is places a HalfNormal$(0, 10)$ prior on $\alpha^{-\frac{1}{2}}$.
+Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to penalize high levels of over-dispersion in sequencing.
+For the analyses presented, all models are fit using stochastic variational inference \cite{hoffman2013svi} using a Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which transforms the entire parameter space (with appropriate constraints on the individual parameter spaces) into a multivariate normal distribution for fitting purposes.
 
 
 \paragraph{Inference}
