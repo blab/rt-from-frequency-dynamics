@@ -15,6 +15,7 @@ scipy = "^1.7.3"
 patsy = "^0.5.2"
 numpyro = "^0.8.0"
 matplotlib = "^3.5.0"
+arviz = "^0.11.4"
 
 [tool.poetry.dev-dependencies]
 
