@@ -4,7 +4,8 @@ Desktop.ini
 */.ipyb_checkpoints/*n
 
 # Model Outputs
-/data/sims/
+posteriors/
+models/
 
 # Intermediate data prep files
 data/metadata.tsv.gz
