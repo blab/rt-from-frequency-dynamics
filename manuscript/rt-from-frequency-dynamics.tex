@@ -358,12 +358,11 @@ In the fixed growth advantage model, only a baseline $R_{t}$ trajectory is param
 The initial infected individuals for each variant have a uniform prior between 0 and 300,000. 
 The weekly reporting rates $\rho_{[t]}$ each follow a Beta$(5, 5)$ prior, and the case observation over-dispersion is places a HalfNormal$(0, 10)$ prior on $\alpha^{-\frac{1}{2}}$.
 Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to penalize high levels of over-dispersion in sequencing.
-For the analyses presented, all models are fit using stochastic variational inference \cite{hoffman2013svi} using a Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which transforms the entire parameter space (with appropriate constraints on the individual parameter spaces) into a multivariate normal distribution for fitting purposes.
-
 
 \paragraph{Inference}
 
-The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01.
+The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which transforms the entire parameter space (with appropriate constraints on the individual parameter spaces) into a multivariate normal distribution for fitting purposes.
+
 Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the free $R_{t}$ model and fixed growth advantage model.
 
 \subsection*{Data and code accessibility}
