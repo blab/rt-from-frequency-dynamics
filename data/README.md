@@ -37,7 +37,11 @@ There will be dates that are missing sequence counts or case counts. These shoul
 
 Data preparation followed:
 
-1. Nextstrain-curated metadata TSV of GISAID database was downloaded. Uncompressing and renaming this file resulted in `gisaid_metadata.tsv`.
+1. Nextstrain-curated metadata TSV of GISAID database was downloaded. Uncompressing and renaming this file resulted in `gisaid_metadata.tsv` via:
+```
+nextstrain remote download s3://nextstrain-ncov-private/metadata.tsv.gz
+gzip -d metadata.tsv.gz -c > gisaid_metadata.tsv
+```
 
 2. The metadata file was pruned to only relevant columns via:
 ```
