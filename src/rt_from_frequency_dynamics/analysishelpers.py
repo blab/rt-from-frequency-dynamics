@@ -69,13 +69,13 @@ def gather_growth_info(MP, ps, ga=False, path="."):
 
 def gather_free_Rt(MP, ps, path=".", name=""):
     R_df, _ = gather_growth_info(MP, ps, ga=False)
-    R_df.to_csv(f"{path}/{name}_Rt-combined-free.csv", encoding='utf-8', index=False)
+    R_df.to_csv(f"{path}/{name}_Rt-combined-free.tsv", encoding='utf-8', sep='\t', index=False)
     return R_df
 
 def gather_fixed_Rt(MP, ps, path=".", name=""):
     R_df, ga_df = gather_growth_info(MP, ps, ga=True) 
-    R_df.to_csv(f"{path}/{name}_Rt-combined-fixed.csv", encoding='utf-8', index=False)
-    ga_df.to_csv(f"{path}/{name}_ga-combined-fixed.csv", encoding='utf-8', index=False)
+    R_df.to_csv(f"{path}/{name}_Rt-combined-fixed.csv", encoding='utf-8', sep='\t', index=False)
+    ga_df.to_csv(f"{path}/{name}_ga-combined-fixed.csv", encoding='utf-8', sep='\t', index=False)
     return R_df, ga_df
 
 def get_state_posterior(LD, LM, num_samples = 1000, path = ".", name="Test"):
