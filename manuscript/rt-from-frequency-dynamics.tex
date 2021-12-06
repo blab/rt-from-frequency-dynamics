@@ -253,14 +253,14 @@ Using sampled counts of sequences from different lineages as well as case data, 
 
 \paragraph{Modeling the infection process}%
 
-We estimate the effective reproduction number of competing lineages using a deterministic renewal equation based framework. These equations arise as the expectation of a Bellman-Harris branching process \cite{Bellman1948} which is a type of Branching process in which offspring generation depends on the age of infection. 
+We estimate the effective reproduction number of competing lineages using a deterministic renewal equation based framework. These equations arise as the expectation of a Bellman-Harris branching process \cite{Bellman1948} which is a type of Branching process in which offspring generation depends on the age of infection.
 
 The renewal equation framework allows one to model infection processes in a way that is mathematically equivalent to standard epidemic models like the SEIR compartment model \cite{Champredon2018}, but in a way that can be more suitable for estimating the effective reproduction number and forecasting using arbitrary generation times. This renewal equation can be written as
 \begin{equation}
   I(t) = R_{t} \int_{0}^{t} I(\tau)g_{t-\tau} d\tau,
 \end{equation}
 where $g$ is the generation time.
-In addition, we also include onset distribution $o$ for symptoms which allows us to compute the prevalence as
+In addition, we also include onset distribution $o$ for symptoms which allows us to compute the prevalence, or the number of active infections, as
 \begin{equation}
   P(t) = \int_{0}^{t} I(\tau) o_{t-\tau} d \tau.
 \end{equation}
@@ -277,14 +277,12 @@ This method of using delays to represent lags between infection and observation 
 
 \paragraph{Modeling variant frequencies}%
 
-In the case there are multiple variants co-circulating in a population, we can additionally compute the frequency of variant $v$ in the population at time $t$ under the infection process outlined above as
-
+In the case of $V$ variants co-circulating in a population, we denote incidence of variant $v$ at time $t$ as $I_{v}(t)$ and prevalence as $P_{v}(t)$.
+In this case, we can compute the frequency of variant $v$ in the population at time $t$ under the infection process outlined above as
 \begin{equation}
-  f_{v}(t) = \frac{P_{v}(t)}{ \sum_{1\leq v \leq V} P_{v}(t)},
+  f_{v}(t) = \frac{P_{v}(t)}{ \sum_{1\leq v \leq V} P_{v}(t)}.
 \end{equation}
-
-where $P_{v}(t)$ represents the active infections of variant $v$ at time $t$.
-Since we've defined the frequency in terms of the transmission dynamics, the variant-specific effective reproduction numbers $R_{t,v}$ and initial infections $I_{0, v}$ determine the frequency dynamics directly.
+Since we've defined the frequency in terms of the transmission dynamics, the variant-specific effective reproduction numbers $R_{t,v}$ and initial infections $I_{v}(0)$ determine the frequency dynamics directly.
 Therefore, we do not need to impose a parametric form on $f_{v}(t)$ directly as in other models of variant frequency.
 
 \paragraph{Observation process for cases}%
@@ -316,7 +314,7 @@ Each basis spline is written as a column in the design matrix $\vec{X}$, so that
 \end{equation}
 where the $\vec{\beta}$ are to be estimated to parameterize the effective reproduction number.
 We then use locally adaptive smoothing of order one with a Laplace prior on the coefficients $\vec{\beta}$ to promote smoothness on the inferred $R_t$ trajectory \cite{Faulkner2018}.
-This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity .etc.
+This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity, etc...
 
 \paragraph{Modeling variant-specific effective reproduction numbers}%
 
@@ -325,7 +323,7 @@ To model the variant-specific reproduction numbers, we can infer individual inde
   \ln R_{t, v} = \vec{X} \vec{\beta}_{v},
 \end{equation}
 where each lineage $v$ gets its own vector of parameters $\vec{\beta}_{v}$ in this model.
-We use the same prior structure as above to promote smoothness on inferred trajectories. This is our ``free $R_{t}$'' model which is used to generate figure \ref{fig:free_rt_Washington}.
+We use the same prior structure as above to promote smoothness on inferred trajectories. This is our ``free $R_{t}$'' model which is used to generate Figure \ref{fig:free_rt_Washington}.
 
 \paragraph{Modeling variant-specific growth advantages}%
 
@@ -334,11 +332,11 @@ In order to use our model to infer growth advantages for specific variants, we c
 \ln R_{t,v} = \vec{X} \vec{\beta} + \delta_{v},
 \end{equation}
 where the parameters $\beta$ are shared between all variants and $\delta_{v}$ is the log-scale lineage-specific growth advantage of variant $v$.
-We consider $\Delta_{v} = \exp(\delta_{v})$ to be the lineage-specific growth advantage which can be seen in figure \ref{fig:growth_advantages}.
+We consider $\Delta_{v} = \exp(\delta_{v})$ to be the lineage-specific growth advantage which can be seen in Figure \ref{fig:growth_advantages}.
 
 \paragraph{Decomposing variant-specific growth advantages}%
 
-Under the free growth model, we can attempt to decompose the relative advantage of different lineages over time into increased transmissibility and immune escape. For example, given that a variant effective reproduction number can be written as an sum of these two contributions, we can write
+Under the free $R_{t}$ model, we can attempt to decompose the relative advantage of different lineages over time into increased transmissibility and immune escape. For example, given that a variant effective reproduction number can be written as an sum of these two contributions, we can write
 \begin{align*}
   R_{t,v} = (1+\eta_{T}) R_{0} S_{t} + \eta_{E} R_{0} \phi_{t},
 \end{align*}
@@ -348,7 +346,7 @@ where $R_{0}$ is the basic reproduction number of the baseline strain, $S_{t}$ i
 \end{align*}
 Writing $S_{t}$ as $1 - \phi_{t}$, we have that
 \begin{align*}
-  \frac{R_{t,v}-R_{t}}{R_{0}} &= \eta_{T} + (\eta_{E} - \eta_{T})\phi_{t}. 
+  \frac{R_{t,v}-R_{t}}{R_{0}} &= \eta_{T} + (\eta_{E} - \eta_{T})\phi_{t}.
 \end{align*}
 
 Using this model, we can estimate the relative contribution of each component by estimating the fraction of the population with some immunity jointly with these to variant advantages.
@@ -362,10 +360,10 @@ Using this model, we can estimate the relative contribution of each component by
 
 \paragraph{Inference}
 
-The model is implemented in Numpyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. 
+The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01.
 Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the free $R_{t}$ model and fixed growth advantage model.
 
-\subsection*{Data and code accessibility.}
+\subsection*{Data and code accessibility}
 
 Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated `open' dataset \cite{Hadfield2018} that pulls from sequences shared to NCBI GenBank.
 Raw sequence data is available from \href{https://docs.nextstrain.org/projects/ncov/en/latest/reference/remote_inputs.html}{data.nextstrain.org}.
