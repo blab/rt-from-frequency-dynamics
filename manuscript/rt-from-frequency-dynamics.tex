@@ -334,6 +334,14 @@ In order to use our model to infer growth advantages for specific variants, we c
 where the parameters $\beta$ are shared between all variants and $\delta_{v}$ is the log-scale variant-specific growth advantage of variant $v$.
 We consider $\Delta_{v} = \exp(\delta_{v})$ to be the variant-specific growth advantage which can be seen in Figure \ref{fig:growth_advantages}.
 
+\paragraph{Estimating an average effective reproduction number for an epidemic}
+
+Given variant-specific effective reproduction numbers $R_{t,v}$ and the frequency of variants in the population $f_{v}(t)$, we define the average efective reproduction number to be
+\begin{equation}
+  R_{t}^{\text{ave}} = \sum_{1\leq v \leq V} R_{t,v}f_{v}(t),
+\end{equation}
+which is the current effective reproduction numbers weighted by their frequency. This quantity can be seen in Figure \ref{fig:free_rt_Washington}.
+
 \paragraph{Decomposing variant-specific growth advantages}%
 
 Under the free $R_{t}$ model, we can attempt to decompose the relative advantage of different lineages over time into increased transmissibility and immune escape. For example, given that a variant effective reproduction number can be written as an sum of these two contributions, we can write
