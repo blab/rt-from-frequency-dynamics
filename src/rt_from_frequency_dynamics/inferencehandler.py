@@ -1,6 +1,6 @@
 from jax import random, lax
 from jax import jit
-from jax.experimental import optimizers
+from jax.example_libraries import optimizers
 import jax.numpy as jnp
 
 from numpyro.infer import SVI, NUTS, MCMC, Predictive, Trace_ELBO

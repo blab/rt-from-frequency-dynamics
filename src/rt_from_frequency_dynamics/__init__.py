@@ -20,4 +20,4 @@ from .posteriorhandler import PosteriorHandler, MultiPosterior
 
 from .plotfunctions import *
 
-from .analysishelpers import get_location_LineageData, fit_SVI, fit_SVI_locations, gather_growth_info
+from .analysishelpers import get_location_LineageData, fit_SVI, fit_SVI_locations, gather_growth_info, save_posteriors

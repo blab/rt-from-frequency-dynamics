@@ -1,6 +1,6 @@
 import pandas as pd
 
-from numpyro.infer.autoguide import AutoMulitvariateNormal
+from numpyro.infer.autoguide import AutoMultivariateNormal
 
 from rt_from_frequency_dynamics import LineageData
 from rt_from_frequency_dynamics import get_R, get_growth_advantage
@@ -14,7 +14,7 @@ def get_location_LineageData(rc, rs, loc):
 def fit_SVI(LD, LM, opt, iters=100_000, num_samples = 1000, path = ".", name="Test", load=False, save=False):
     # Defining optimization
     SVIH = SVIHandler(optimizer=opt)
-    guide = AutoMulitvariateNormal(LM.model)
+    guide = AutoMultivariateNormal(LM.model)
 
     # Upacking data
     data = LD.make_numpyro_input()
@@ -40,26 +40,47 @@ def fit_SVI_locations(rc, rs, locations, LM, opt, **fit_kwargs):
     MP = MultiPosterior()
     for i, loc in enumerate(locations):
         LD = get_location_LineageData(rc, rs, loc)
-        PH = fit_SVI(LD, LM, opt, **fit_kwargs)
+        PH = fit_SVI(LD, LM, opt, name=loc, **fit_kwargs)
         MP.add_posterior(PH)
         print(f'Location {loc} finished ({i+1}/{n_locations}).')
     return MP
 
 def save_posteriors(MP, path):
     for name, p in MP.locator.items():
-        p.save_posterior(f"{path}/{name}_samples.json")
+        p.save_posterior(f"{path}/posteriors/{name}_samples.json")
     return None
 
-def gather_growth_info(MP, ps, ga=False):
+def gather_growth_info(MP, ps, ga=False, path="."):
     R_dfs = []
     for name, p in MP.locator.items():
         R_dfs.append(pd.DataFrame(get_R(p.dataset, p.LD, ps, name)))
 
+    R_df = pd.concat(R_dfs)
+    R_df.to_csv(f"{path}/R_combined.csv", encoding='utf-8', index=False)
+
     if not ga:
-        return pd.concat(R_dfs), None
+        return R_df, None
 
     ga_dfs = []
     for name, p in MP.locator.items():
         ga_dfs.append(pd.DataFrame(get_growth_advantage(p.dataset, p.LD, ps, name)))
 
+    ga_df = pd.concat(ga_dfs)
+    ga_df.to_csv(f"{path}/ga_combined.csv", encoding='utf-8', index=False)
+
     return pd.concat(R_dfs), pd.concat(ga_dfs)
+
+def get_state_posterior(LD, LM, num_samples = 1000, path = ".", name="Test"):
+    # Defining optimization
+    SVIH = SVIHandler(optimizer=None)
+    guide = AutoMultivariateNormal(LM.model)
+
+    # Upacking data
+    data = LD.make_numpyro_input()
+    
+    # Loading past state
+    file_name = name.replace(" ", "-")
+    SVIH.load_state(f"{path}/models/{file_name}_svi.p")
+
+    dataset = SVIH.predict(LM.model, guide, data, num_samples = num_samples)
+    return PosteriorHandler(dataset=dataset, LD=LD, name=name)
