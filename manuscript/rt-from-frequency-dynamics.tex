@@ -215,25 +215,31 @@ The signficant growth advantage observed in Delta is recapitulated in other stud
 %TODO: Perhaps, main technical takeaway is that you can augment models of frequency dynamics with an epidemiological model of your choosing to relate frequency dynamics to transmission dynamics.
 %TODO: Towards composable modeling of genetic variants
 
-%% LIMITATIONS
+We find that a model that partitions case count data based on variant frequency in sequence data works well to describe SARS-CoV-2 variant dynamics in the United States from Sep to Oct 2021.
+In each state, spring waves are primarily driven by the arrival of Alpha, Beta, Gamma, and Iota variants.
+However, as these waves are subsiding, the arrival of Delta with a significantly greater growth advantage, drives a large summer wave.
+Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticable in overall case counts.
+We imagine that this general approach could provide early warning of imminent epidemics driven by low-frequency but highly transmissible variants.
+
 With this mind, this work is not without limitations.
 The underlying transmission model for this work is deterministic and does not account for demographic stochasticity and over-dispersion in transmission which has been documented in SARS-CoV-2 transmission \cite{Wong29416}.
-
 As with all methods which depend on parameterizations of the generation time, misspecification of the generation time can be lead to biased estimates of the effective reproduction number or growth advantages \cite{Gostic2020}.
-In order to quantify this source of error, we derive a equation relating our inferred growth advantages, the epidemic growth rates, and the mean and standard deviation of the generation time distribution.
-There is also a needed to account for biases in the case data which may not faithfully describe the infection dynamics of SARS-CoV-2 due to changes in case ascertainment rate, as possibly caused by differences in testing intensity, infection severity among other reasons.
+In order to quantify this source of error, we derive an equation relating our inferred growth advantages, the epidemic growth rates, and the mean and standard deviation of the generation time distribution.
+There is also a need to account for biases in the case data which may not faithfully describe the infection dynamics of SARS-CoV-2 due to changes in case ascertainment rate, as possibly caused by differences in testing intensity, infection severity among other reasons.
 
 We do not explicitly model multiple introductions of variants which can play an important role in variants establishing themselves in different geographies at low infection counts and could bias our estimates of the effective reproduction number if not properly accounted for \cite{Cori2013, MullerWagner2021}.
-Using hierarchical models of variants to jointly estimate growth advantages and pool estimates across locations could be a useful approach for analyzing consistency between growth advantages of lineages geographically and beginning to combat the issue of multiple introduction events.
-Though, to fully combat this issue, would likely involve incorporating demographic stochastic into the model at the level of transmission and reduce its speed of inference, scalability, and limit available inference options.
+This could be especially impactful early on when variant cases are driven by multiple importations from a large epidemic elsewhere in the world.
+However, we expect once local transmission is predominant that estimated $R_{t}$ will reflect characteristics intrinsic to the variant in the local geography.
+Using hierarchical models of variants to jointly estimate growth advantages and pool estimates across locations could be a useful approach for analyzing consistency between growth advantages of variants geographically and beginning to combat the issue of multiple introduction events.
+Although fully combatting this issue would likely involve incorporating demographic stochastic into the model at the level of transmission and reduce its speed of inference, scalability, and limit available inference options.
 
-Though there are several ways to improve these methods and expand their applicability, our current model does have use as a way of assessing early claims of variant advantages and is able to show there is evidence of consistent variant advantages shared between different geographies.
-Additional work is needed to attribute these inferred advantages to biological mechanisms like immune escape and transmissibility using [HERE].
-Modeling the effect of changes in other factors such as contact patterns or non-pharmaceutical interventions can be done with the current formulation of the model by including quantities of interest as features in the $R_{t}$ model as in \cite{Sharma2021}.
+Though there are several ways to improve these methods and expand their applicability, our current model does have utility as a way of assessing early claims of variant advantages and is able to show there is evidence of consistent variant advantages shared between different geographies.
+Additional work is needed to attribute these inferred advantages to biological mechanisms like immune escape and transmissibility \cite{tao2021biological}.
+Modeling the effect of changes in other factors such as contact patterns or non-pharmaceutical interventions can be done with the current formulation of the model by including quantities of interest as features in the $R_{t}$ model as in Sharma et al.\ \cite{Sharma2021}.
 
 In general, the development of methods which can account for fitness differences between genetic variants is much needed in order for proper epidemic preparedness.
 Our method provides one way of analyzing the growth rates of SARS-CoV-2 variants without directly parameterizing how variants grow in terms of frequency by instead focusing on differences in the effective reproduction number.
-In cases where the assumption of a fixed growth advantage is warranted and justified, our fixed growth advantage model provides a way of quantifying variant growth advantages at the level of transmission which allow for various delays between infection, transmission, and sampling. 
+In cases where the assumption of a fixed growth advantage is warranted and justified, our fixed growth advantage model provides a way of quantifying variant growth advantages at the level of transmission which allow for various delays between infection, transmission, and sampling.
 
 Our method can be extended to analyze the role of specific constituent mutations defining a variant or lineage in changing the effective reproduction number of specific variants directly.
 With this in mind, our method potentially has use for evolutionary forecasting of variants for SARS-CoV-2 as we inform the frequency dynamics of co-circulating variants by describing their population-level transmission dynamics.
