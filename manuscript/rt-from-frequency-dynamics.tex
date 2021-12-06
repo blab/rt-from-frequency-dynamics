@@ -135,7 +135,7 @@ We apply this model to sequence data and case count data from United States betw
   Each colored lines is a different variant with intervals of varying opacity showing 50\%, 80\% and 95\% credible intervals.
   (c) Posterior lineage frequency against observed sample frequency.
   Dots represent observed weekly frequencies in sequence data and each colored line is a different variant with shaded CIs.
-  (d) Lineage-specific effective reproduction number across variants.
+  (d) Variant-specific effective reproduction numbers.
   (e) Posterior growth advantage by variant.}
   \label{fig:fixed_growth_Washington}
 \end{figure}
@@ -331,8 +331,8 @@ In order to use our model to infer growth advantages for specific variants, we c
 \begin{equation}
 \ln R_{t,v} = \vec{X} \vec{\beta} + \delta_{v},
 \end{equation}
-where the parameters $\beta$ are shared between all variants and $\delta_{v}$ is the log-scale lineage-specific growth advantage of variant $v$.
-We consider $\Delta_{v} = \exp(\delta_{v})$ to be the lineage-specific growth advantage which can be seen in Figure \ref{fig:growth_advantages}.
+where the parameters $\beta$ are shared between all variants and $\delta_{v}$ is the log-scale variant-specific growth advantage of variant $v$.
+We consider $\Delta_{v} = \exp(\delta_{v})$ to be the variant-specific growth advantage which can be seen in Figure \ref{fig:growth_advantages}.
 
 \paragraph{Decomposing variant-specific growth advantages}%
 
