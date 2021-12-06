@@ -56,7 +56,6 @@ def gather_growth_info(MP, ps, ga=False, path="."):
         R_dfs.append(pd.DataFrame(get_R(p.dataset, p.LD, ps, name)))
 
     R_df = pd.concat(R_dfs)
-    R_df.to_csv(f"{path}/R_combined.csv", encoding='utf-8', index=False)
 
     if not ga:
         return R_df, None
@@ -66,9 +65,18 @@ def gather_growth_info(MP, ps, ga=False, path="."):
         ga_dfs.append(pd.DataFrame(get_growth_advantage(p.dataset, p.LD, ps, name)))
 
     ga_df = pd.concat(ga_dfs)
-    ga_df.to_csv(f"{path}/ga_combined.csv", encoding='utf-8', index=False)
+    return R_df, ga_df
 
-    return pd.concat(R_dfs), pd.concat(ga_dfs)
+def gather_free_Rt(MP, ps, path=".", name=""):
+    R_df, _ = gather_growth_info(MP, ps, ga=False)
+    R_df.to_csv(f"{path}/{name}_Rt-combined-free.csv", encoding='utf-8', index=False)
+    return R_df
+
+def gather_fixed_Rt(MP, ps, path=".", name=""):
+    R_df, ga_df = gather_growth_info(MP, ps, ga=True) 
+    R_df.to_csv(f"{path}/{name}_Rt-combined-fixed.csv", encoding='utf-8', index=False)
+    ga_df.to_csv(f"{path}/{name}_ga-combined-fixed.csv", encoding='utf-8', index=False)
+    return R_df, ga_df
 
 def get_state_posterior(LD, LM, num_samples = 1000, path = ".", name="Test"):
     # Defining optimization
