@@ -150,3 +150,29 @@ def plot_growth_advantage(ax, dataset, LD, ps, alphas, colors):
     
     ax.set_xticks(inds)
     ax.set_xticklabels(LD.seq_names[:-1])
+
+def plot_total_by_obs_frequency(ax, dataset, LD, total, colors):
+    T, D = LD.seq_counts.shape
+    t = jnp.arange(0, T, 1)
+    obs_freq = jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None])
+    
+    # Make figure
+    ax.axhline(y=1.0, color='k', linestyle='--')
+    bottom = jnp.zeros(t.shape)
+    for lineage in range(D):
+        ax.bar(t, obs_freq[:, lineage] * total, bottom = bottom,
+                color=colors[lineage])
+        bottom = obs_freq[:, lineage] * total + bottom
+        
+def plot_total_by_median_frequency(ax, dataset, LD, total, colors):
+    T, D = LD.seq_counts.shape
+    t = jnp.arange(0, T, 1)
+    med_freq = get_median(dataset, "freq")
+    
+    # Make figure
+    ax.axhline(y=1.0, color='k', linestyle='--')
+    bottom = jnp.zeros(t.shape)
+    for lineage in range(D):
+        ax.bar(t, med_freq[:, lineage] * total, bottom = bottom,
+                color=colors[lineage])
+        bottom = med_freq[:, lineage] * total + bottom

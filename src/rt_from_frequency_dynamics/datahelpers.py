@@ -16,7 +16,7 @@ def prep_cases(raw_cases: pd.DataFrame):  # List if dates, cases
     dates, date_to_index = prep_dates(raw_cases)
 
     C = np.zeros(len(dates))
-    for index, row in raw_cases.iterrows():
+    for _, row in raw_cases.iterrows():
         C[date_to_index[row.date]] += row.cases
 
     return dates, C
@@ -29,7 +29,8 @@ def format_seq_names(raw_names):
             if s != "other":
                 names.append(s)
         names.append("other")
-    return names
+        return names
+    return raw_names
 
 
 def counts_to_matrix(raw_seqs, seq_names):
@@ -47,3 +48,10 @@ def prep_sequence_counts(raw_seqs: pd.DataFrame):
     seq_names = format_seq_names(raw_seq_names)
     dates, C = counts_to_matrix(raw_seqs, seq_names)
     return seq_names, dates, C
+
+def prep_vaccination(raw_vacc: pd.DataFrame):
+    dates, date_to_index = prep_dates(raw_vacc)
+    C = np.zeros(len(dates))
+    for _, row in raw_vacc.iterrows():
+        C[date_to_index[row.date]] += row.percent_complete
+    return dates, C

@@ -4,7 +4,7 @@ import jax.numpy as jnp
 
 def reshape_for_arviz(samples):
     new_samples = dict()
-    for key, value in samples.items():
+    for key, _ in samples.items():
         new_samples[key] = jnp.expand_dims(samples[key], 0)
     return new_samples
 
@@ -27,16 +27,16 @@ def get_growth_advantage(dataset, LD, ps, name):
     v_dict["variant"] = []
     v_dict["median_ga"] = []
     for p in ps:
-        v_dict[f"ga_{round(p * 100)}"] = []
-        v_dict[f"ga_{round((1-p) * 100)}"] = []
+        v_dict[f"ga_upper_{round(p * 100)}"] = []
+        v_dict[f"ga_lower_{round(p * 100)}"] = []
 
     for variant in range(N_variant):
         v_dict["location"].append(name)
         v_dict["variant"].append(seq_names[variant])
         v_dict["median_ga"].append(medians[variant])
-        for i in range(len(ps)):
-            v_dict[f"ga_{round(ps[i] * 100)}"].append(ga[i][variant, 1])
-            v_dict[f"ga_{round((1-ps[i]) * 100)}"].append(ga[i][variant, 0])
+        for i,p in enumerate(ps):
+            v_dict[f"ga_upper_{round(p * 100)}"].append(ga[i][variant, 1])
+            v_dict[f"ga_lower_{round(p * 100)}"].append(ga[i][variant, 0])
         
     return v_dict
 
@@ -59,9 +59,10 @@ def get_R(dataset, LD, ps, name):
     R_dict["variant"] = []
     R_dict["median_R"] = []
     R_dict["median_freq"] = []
+    
     for p in ps:
-        R_dict[f"R_{round(p * 100)}"] = []
-        R_dict[f"R_{round((1-p) * 100)}"] = []
+        R_dict[f"R_upper_{round(p * 100)}"] = []
+        R_dict[f"R_lower_{round(p * 100)}"] = []
         
     for variant in range(N_variant):
         R_dict["date"] += list(dates)
@@ -69,8 +70,8 @@ def get_R(dataset, LD, ps, name):
         R_dict["variant"] += [seq_names[variant]] * T
         R_dict["median_R"] += list(R_medians[:, variant])
         R_dict["median_freq"] += list(freq_medians[:, variant])
-        for i in range(len(ps)):
-            R_dict[f"R_{round(ps[i] * 100)}"] += list(R[i][:, variant, 1])
-            R_dict[f"R_{round((1-ps[i]) * 100)}"] += list(R[i][:, variant, 0])
+        for i,p in enumerate(ps):
+            R_dict[f"R_upper_{round(ps[i] * 100)}"] += list(R[i][:, variant, 1])
+            R_dict[f"R_lower_{round(ps[i] * 100)}"] += list(R[i][:, variant, 0])
 
     return R_dict

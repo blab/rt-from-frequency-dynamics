@@ -6,11 +6,13 @@ import jax.numpy as jnp
 from numpyro.infer import SVI, NUTS, MCMC, Predictive, Trace_ELBO
 from numpyro.infer.svi import SVIState
 
+from .posteriorhelpers import to_arviz
+
 import pickle
 
 
 class SVIHandler():
-    def __init__(self, rng_key=1, loss=Trace_ELBO(), optimizer = None):
+    def __init__(self, rng_key=1, loss=Trace_ELBO(num_particles=2), optimizer = None):
         self.rng_key = random.PRNGKey(rng_key) 
         self.loss = loss
         self.optimizer = optimizer
@@ -30,7 +32,7 @@ class SVIHandler():
         def train(svi_state, n_epochs):
             def _train_single(_, val):
                 loss, svi_state = val
-                svi_state, loss = self.svi.update(svi_state, **data)
+                svi_state, loss = self.svi.stable_update(svi_state, **data)
                 return loss, svi_state
             return lax.fori_loop(0, n_epochs, _train_single, (0., svi_state))
         loss, self.svi_state = train(self.svi_state, n_epochs)
@@ -73,7 +75,7 @@ class SVIHandler():
         predictive = Predictive(model, samples)
 
         self.rng_key, rng_key_ = random.split(rng_key)
-        return predictive(rng_key, **data)
+        return  to_arviz(predictive(rng_key, **data))
     
     def reset_state(self):
         return SVIHandler(self.rng_key, self.loss, self.optimizer)
@@ -92,7 +94,6 @@ class SVIHandler():
         with open(fp, "rb") as f:
             optim_state = (0, optimizers.pack_optimizer_state(pickle.load(f)))
         self.svi_state = SVIState(optim_state, None, self.rng_key)
-
 
 class MCMCHandler():
     def __init__(self, 
