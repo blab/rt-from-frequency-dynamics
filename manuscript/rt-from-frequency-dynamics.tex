@@ -466,8 +466,6 @@ This assumption additionally allows us to relate the epidemic growth rate $r$ an
 \ln \left( \frac{R_{t,v}}{R_{t,u}} \right) = (r_{v} - r_{u}) T_{g}.
 \end{align*}
 
-
-
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fig_MLR_growth_advantages_supp.png}
@@ -520,10 +518,61 @@ The behavior here is analogous to that discussed above when the mean $T_{g}$ and
 The cases of exponential and Gamma-distributed generation times highlight that for non-deterministic generation times there is no guarantee that the relative effective reproduction number depends on only the difference in exponential growth rates.
 In fact, these estimates based on the deterministic generation times correspond to the case in which the standard deviation shrinks zero, they are likely overestimates of variant advantages given the observed variation in the serial interval of SARS-CoV-2 infections.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/free_rt_California.png}
+  \caption{\textbf{Fitting the free $R_{t}$ model to California data.}}%
+  \label{fig:free_rt_California}
+\end{figure}
 
-%TODO: Any other supplemental sections necessary?
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_California.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to California data.}}%
+  \label{fig:fixed_growth_California}
+\end{figure}
 
-%TODO: Supplemental version of fig 2 for different states
-%TODO: Might want to include posterior predictive of observed sequences of each variant type.
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/free_rt_Florida.png}
+  \caption{\textbf{Fitting the free $R_{t}$ model to Florida data.}}%
+  \label{fig:free_rt_Florida}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Florida.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Florida data.}}%
+  \label{fig:fixed_growth_Florida}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/free_rt_Michigan.png}
+  \caption{\textbf{Fitting the free $R_{t}$ model to Michigan data.}}%
+  \label{fig:free_rt_Michigan}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Michigan.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Michigan data.}}%
+  \label{fig:fixed_growth_Michigan}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/free_rt_New-York.png}
+  \caption{\textbf{Fitting the free $R_{t}$ model to New York state data.}}%
+  \label{fig:free_rt_New-York}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_New-York.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to New York state data.}}%
+  \label{fig:fixed_growth_New-York}
+\end{figure}
 
 \end{document}
