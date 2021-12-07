@@ -1,5 +1,6 @@
 import pandas as pd
 
+import numpyro
 from numpyro.infer.autoguide import AutoMultivariateNormal
 
 from rt_from_frequency_dynamics import LineageData
@@ -30,7 +31,7 @@ def fit_SVI(LD, LM, opt, iters=100_000, num_samples = 1000, path = ".", name="Te
     
     if save:
         file_name = name.replace(" ", "-")
-        SVIH.save_state(f"{path}/models/{name}_svi.p")
+        SVIH.save_state(f"{path}/models/{file_name}_svi.p")
 
     dataset = SVIH.predict(LM.model, guide, data, num_samples = num_samples)
     return PosteriorHandler(dataset=dataset,LD=LD, name=name)  
@@ -74,13 +75,13 @@ def gather_free_Rt(MP, ps, path=".", name=""):
 
 def gather_fixed_Rt(MP, ps, path=".", name=""):
     R_df, ga_df = gather_growth_info(MP, ps, ga=True) 
-    R_df.to_csv(f"{path}/{name}_Rt-combined-fixed.csv", encoding='utf-8', sep='\t', index=False)
-    ga_df.to_csv(f"{path}/{name}_ga-combined-fixed.csv", encoding='utf-8', sep='\t', index=False)
+    R_df.to_csv(f"{path}/{name}_Rt-combined-fixed.tsv", encoding='utf-8', sep='\t', index=False)
+    ga_df.to_csv(f"{path}/{name}_ga-combined-fixed.tsv", encoding='utf-8', sep='\t', index=False)
     return R_df, ga_df
 
-def get_state_posterior(LD, LM, num_samples = 1000, path = ".", name="Test"):
+def sample_loaded_posterior(LD, LM, num_samples = 1000, path = ".", name="Test"):
     # Defining optimization
-    SVIH = SVIHandler(optimizer=None)
+    SVIH = SVIHandler(optimizer=numpyro.optim.Adam(step_size=1e-2))
     guide = AutoMultivariateNormal(LM.model)
 
     # Upacking data

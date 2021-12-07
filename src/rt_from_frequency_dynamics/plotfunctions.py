@@ -9,6 +9,10 @@ class DefaultAes():
     alphas = [0.2, 0.4, 0.6]
     lineage_colors = ["#2e5eaa", "#5adbff",  "#56e39f","#b4c5e4", "#f03a47",  "#f5bb00", "#9e4244", "#808080"]
 
+
+def define_color_map(color, seq_names):
+    return {s:c for c,s in zip(color, seq_names)}
+
 def get_quantile(dataset, p, var):
     return jnp.array(az.hdi(dataset, var_names=var, hdi_prob=p)[var])
 
@@ -151,7 +155,7 @@ def plot_growth_advantage(ax, dataset, LD, ps, alphas, colors):
     ax.set_xticks(inds)
     ax.set_xticklabels(LD.seq_names[:-1])
 
-def plot_total_by_obs_frequency(ax, dataset, LD, total, colors):
+def plot_total_by_obs_frequency(ax, LD, total, colors):
     T, D = LD.seq_counts.shape
     t = jnp.arange(0, T, 1)
     obs_freq = jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None])

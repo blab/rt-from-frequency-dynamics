@@ -2,70 +2,17 @@ import jax.numpy as jnp
 from jax.scipy.special import logit, expit
 import numpyro
 import numpyro.distributions as dist
-from numpyro.distributions import constraints
-from numpyro.distributions.constraints import Constraint
 from .modelfunctions import v_fs_I, reporting_to_vec
-from .LAS import LAS_Laplace
+from .LAS import LaplaceRandomWalk
 
-
-# def _fixed_lineage_model_factory(g_rev, delays, seed_L):
-#     def _lineage_model(cases, seq_counts, N, X):
-#         L, N_variant = seq_counts.shape
-#         T, k = X.shape
-
-#         # This is where priors would come in 
-#         # beta_priors(self.priors)
-#         # with numpyro.plate("k", k):
-#         #     beta = numpyro.sample("beta", dist.Normal(0.0, 1.0))
-
-#         beta = LAS_Laplace("beta", k)
-
-#         with numpyro.plate("N_variant_m1", N_variant-1):
-#             v = numpyro.sample("v", dist.Normal(0.0, 1.0))
-#         ga = numpyro.deterministic("ga", jnp.exp(v))
-
-#         R = numpyro.deterministic("R", jnp.exp((X@beta + jnp.append(v, 0.0)[:, None])).T)
-#         with numpyro.plate("N_variant", N_variant):
-#             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
-            
-#         with numpyro.plate("rho_parms", 7):
-#             rho = numpyro.sample("rho", dist.Beta(5., 5.))
-#         rho_vec = reporting_to_vec(rho, T)
-
-#         I_prev = v_fs_I(I0, R, g_rev, delays, seed_L)
-#         I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * I_prev[seed_L:,:])
-
-#         # Compute expected cases
-#         total_prev = I_prev.sum(axis=1)
-#         total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * I_prev.sum(axis=1)[seed_L:])
-#         EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
-
-#         # NegativeBinomial sampling per region
-#         sqrt_inv_phi = numpyro.sample("raw_phi", dist.HalfNormal(10.))
-#         numpyro.sample("cases",
-#                         dist.NegativeBinomial2(mean=EC, concentration=1/sqrt_inv_phi**2),
-#                         obs=cases)
-
-#         # Compute frequency
-#         freq = numpyro.deterministic("freq", jnp.divide(I_prev, total_prev[:, None])[seed_L:, :])
-#         R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
-
-#         numpyro.sample("Y",
-#                         dist.Multinomial(total_count=N, probs=freq),
-#                         obs=seq_counts)               
-#     return _lineage_model
 
 def _fixed_lineage_model_factory(g_rev, delays, seed_L):
     def _lineage_model(cases, seq_counts, N, X):
         L, N_variant = seq_counts.shape
         T, k = X.shape
 
-        # This is where priors would come in 
-        # beta_priors(self.priors)
-        # with numpyro.plate("k", k):
-        #     beta = numpyro.sample("beta", dist.Normal(0.0, 1.0))
-
-        beta = LAS_Laplace("beta", k)
+        gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
+        beta = numpyro.sample("beta", LaplaceRandomWalk(scale=gam, num_steps=k))
 
         with numpyro.plate("N_variant_m1", N_variant-1):
             v = numpyro.sample("v", dist.Normal(0.0, 1.0))
@@ -79,12 +26,12 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
         rho_vec = reporting_to_vec(rho, T)
 
-        I_prev = v_fs_I(I0, R, g_rev, delays, seed_L)
+        I_prev = jnp.clip(v_fs_I(I0, R, g_rev, delays, seed_L),  a_min=0., a_max=1e25)
         I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * I_prev[seed_L:,:])
 
         # Compute expected cases
         total_prev = I_prev.sum(axis=1)
-        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * I_prev.sum(axis=1)[seed_L:])
+        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * total_prev[seed_L:])
         EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
 
         # NegativeBinomial sampling per region
@@ -102,7 +49,7 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         trans_xi = 1 / xi - 1
 
         numpyro.sample("Y",
-                        dist.DirichletMultinomial(total_count=N, concentration=trans_xi*freq),
+                        dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
                         obs=seq_counts)               
     return _lineage_model
 
@@ -189,8 +136,10 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
     def _lineage_model(cases, seq_counts, N, X):
         L, N_variant = seq_counts.shape
         T, k = X.shape
+
+        gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
         with numpyro.plate("variant_beta", N_variant):
-            beta = LAS_Laplace("beta", k)
+            beta = numpyro.sample("beta", LaplaceRandomWalk(scale=gam, num_steps=k))
         
         R = numpyro.deterministic("R", jnp.exp(X@beta.T))
         with numpyro.plate("N_variant", N_variant):
@@ -205,7 +154,7 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
 
         # Compute expected cases
         total_prev = I_prev.sum(axis=1)
-        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * I_prev.sum(axis=1)[seed_L:])
+        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * total_prev[seed_L:])
         EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
 
         # NegativeBinomial sampling per region
@@ -218,16 +167,12 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         freq = numpyro.deterministic("freq", jnp.divide(I_prev, total_prev[:, None])[seed_L:, :])
         R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
 
-        # numpyro.sample("Y",
-        #                 dist.Multinomial(total_count=N, probs=freq),
-        #                 obs=seq_counts)   
-
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(concentration0=1, concentration1=99))
         trans_xi = 1 / xi - 1
 
         numpyro.sample("Y",
-                        dist.DirichletMultinomial(total_count=N, concentration=trans_xi*freq),
+                        dist.DirichletMultinomial(total_count=N, concentration=1e-8+trans_xi*freq),
                         obs=seq_counts)               
     return _lineage_model
 

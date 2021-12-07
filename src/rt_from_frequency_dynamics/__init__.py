@@ -20,6 +20,8 @@ from .posteriorhandler import PosteriorHandler, MultiPosterior
 
 from .plotfunctions import *
 
-from .analysishelpers import get_location_LineageData, fit_SVI, fit_SVI_locations, gather_growth_info, save_posteriors, gather_fixed_Rt, gather_free_Rt
+from .analysishelpers import get_location_LineageData, fit_SVI, fit_SVI_locations 
+from .analysishelpers import save_posteriors, sample_loaded_posterior
+from .analysishelpers import gather_growth_info, gather_fixed_Rt, gather_free_Rt
 
 from .pipelinehelpers import make_path_if_absent, make_model_directories
