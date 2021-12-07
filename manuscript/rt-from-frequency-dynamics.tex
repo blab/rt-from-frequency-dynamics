@@ -205,7 +205,8 @@ We imagine that this general approach could provide early warning of imminent ep
 With this mind, this work is not without limitations.
 The underlying transmission model is deterministic and does not account for demographic stochasticity and over-dispersion in transmission which has been documented in SARS-CoV-2 transmission \cite{Wong29416}.
 As with all methods which depend on parameterizations of the generation time, misspecification of the generation time can be lead to biased estimates of the effective reproduction number or growth advantages \cite{Gostic2020}.
-In order to quantify this source of error, we derive an equation relating our inferred growth advantages, the epidemic growth rates, and the mean and standard deviation of the generation time distribution (see Supplemental Appendix).
+In order to quantify this source of error, we derive an equation relating our inferred growth advantages, the epidemic growth rates, and the mean and standard deviation of the generation time distribution.
+This source of error can be partially combatted by converting effective reproduction numbers to their corresponding epidemic growth rates under the generation time assumption. (see Supplement Appendix)
 There is also a general need to account for biases in the case data which may not faithfully describe the infection dynamics of SARS-CoV-2 due to changes in case ascertainment rate, as possibly caused by differences in testing intensity, infection severity among other reasons.
 However, we suspect that case ascertainment remained largely consistent from January to October 2021.
 
@@ -254,7 +255,9 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
 \end{align}
 
 We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}. 
-We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental results (see Relating exponential growth rates to relative effective reproduction numbers).
+We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. 
+The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental results (see Relating exponential growth rates to relative effective reproduction numbers). 
+Though converting the posterior effective reproduction numbers to exponential growth rates may be more robust to changes in generation time as can be seen in Figure \ref{fig:little_r_sensitivity}.
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
 
@@ -501,6 +504,7 @@ Taking a logarithm, we can also evaluate the sensitivity of our inferred growth 
  \delta_{v}  = \ln \left( \frac{R_{t,v}}{R_{t,0}} \right) = \left( \frac{T_{g}^{2}}{s^{2}} \right)  \ln \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{0} \left(\frac{s^{2}}{T_{g}}\right) } \right).
 \end{align*}
 The behavior here is analogous to that discussed above when the mean $T_{g}$ and standard deviation $s$ are changed although these growth advantages appear to relatively stable under varying standard deviation in Figure \ref{fig:growth_advantage_sensitivity}.
+Although the effective reproduction number and the growth advantage appear to have strong dependence on generation time parameters, we find that the exponential growth rate $r$ is more robust to changes in generation time (see Figure \ref{fig:little_r_sensitivity}).
 
 The cases of exponential and Gamma-distributed generation times highlight that for non-deterministic generation times there is no guarantee that the relative effective reproduction number depends on only the difference in exponential growth rates.
 In fact, these estimates based on the deterministic generation times correspond to the case in which the standard deviation shrinks zero, they are likely overestimates of variant advantages given the observed variation in the serial interval of SARS-CoV-2 infections.
