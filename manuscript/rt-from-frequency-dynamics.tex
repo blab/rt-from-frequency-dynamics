@@ -272,7 +272,7 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
   P(t) &= \sum_{\tau < t} I(\tau) o_{t-\tau}
 \end{align}
 
-We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}.
+We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}. We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity, fig:growth_advantage_sensitivity} and supplemental results Relating exponential growth rates to relative effective reproduction numbers.
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
 
@@ -427,7 +427,7 @@ This project was supported by funds from the HHMI COVID-19 Collaboration Initiat
 
 \subsubsection*{Relationship to multinomial logistic regression}
 
-Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analysis is roughly equivalent to our fixed growth advantage model but with additional restrictions on the generation time.
+Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analysis is roughly equivalent to our fixed growth advantage model, but that inferring relative effective reproduction numbers between variants using multinomial logistic regression requires additional restrictions on the generation time.
 Multinomial logistic regression typically models the probability of a given observation belong to class $v$ as
 \begin{equation}
   \text{Prob}(X = v) = f_{v} = \frac{p_{v}\exp(r_{v} t)}{\sum_{1\leq u\leq V} p_{u}\exp(r_{u} t)}.
