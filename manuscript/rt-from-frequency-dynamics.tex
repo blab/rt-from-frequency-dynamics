@@ -255,7 +255,7 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
 
 We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}. 
 We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. 
-The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental results (see Relating epidemic growth rates to relative effective reproduction numbers). 
+The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental appendix (see Relating epidemic growth rates to relative effective reproduction numbers). 
 Though converting the posterior effective reproduction numbers to epidemic growth rates may be more robust to changes in generation time as can be seen in Figure \ref{fig:little_r_sensitivity}.
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
@@ -278,7 +278,7 @@ We then define the observation likelihood using a negative binomial distribution
   Y_{t} \sim \text{NegBinom}(\rho_{[t]} P(t),  \alpha),
 \end{equation}
 where $[t] = t \mod 7 + 1$, $\alpha$ is an over-dispersion parameter relative to the Poisson distribution and $\text{NegBinom}(\mu, \alpha)$ is the negative binomial distribution with mean $\mu$ and variance  $\mu + \alpha\mu^{2}$. In the case of multiple variants, we use $P(t) = \sum_{1\leq v \leq V} P_{v}(t)$.
-The negative binomial likelihood is often used for modeling observation noise for count data such as epidemic time series which are often over-dispersed relative to a Poisson distribution. %TODO: Citation here?
+The negative binomial likelihood is often used for modeling observation noise for count data such as epidemic time series which are often over-dispersed relative to a Poisson distribution.
 
 \paragraph{Observation process for lineage annotations}%
 
