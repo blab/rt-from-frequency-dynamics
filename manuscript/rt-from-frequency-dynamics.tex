@@ -507,16 +507,38 @@ Next, we consider the Gamma distributed generation times with mean $T_{g}$ and s
 \frac{R_{t,v}}{R_{t,u}} = \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{u} \left(\frac{s^{2}}{T_{g}}\right) } \right)^{T_{g}^{2} / s^{2}}.
 \end{align*}
 
-From this equation, we can see that increases in the mean of the generation time lead to higher inferred variant advantages given the same growth rates. On the other hand, increases in the standard deviation lead to lower inferred variant advantages.
+From this equation, we can see that increases in the mean of the generation time lead to higher inferred variant advantages given the same growth rates. On the other hand, increases in the standard deviation lead to lower inferred variant advantages. This effect is also visualized in Figure \ref{fig:generation_time_sensitivity}.
 
 Taking a logarithm, we can also evaluate the sensitivity of our inferred growth advantages from our fixed growth advantage model with respect to the generation time assuming it is Gamma distributed as
 \begin{align*}
  \delta_{v}  = \ln \left( \frac{R_{t,v}}{R_{t,0}} \right) = \left( \frac{T_{g}^{2}}{s^{2}} \right)  \ln \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{0} \left(\frac{s^{2}}{T_{g}}\right) } \right).
 \end{align*}
-The behavior here is analogous to that discussed above when the mean $T_{g}$ and standard deviation $s$ are changed.
+The behavior here is analogous to that discussed above when the mean $T_{g}$ and standard deviation $s$ are changed although these growth advantages appear to relatively stable under varying standard deviation in Figure \ref{fig:growth_advantage_sensitivity}.
 
 The cases of exponential and Gamma-distributed generation times highlight that for non-deterministic generation times there is no guarantee that the relative effective reproduction number depends on only the difference in exponential growth rates.
 In fact, these estimates based on the deterministic generation times correspond to the case in which the standard deviation shrinks zero, they are likely overestimates of variant advantages given the observed variation in the serial interval of SARS-CoV-2 infections.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/generation_time_sensitivity.png}
+  \caption{\textbf{Sensitivity of effective reproduction number to changes in generation time.} (a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against effective reproduction number estimates for Delta in Washington state on July 1st, 2021 using our free $R_{t}$ model.  (b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2.}%
+  \label{fig:generation_time_sensitivity}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/little_r_sensitivity.png}
+  \caption{\textbf{Sensitivity of exponential growth rates to changes in generation time.} (a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our free $R_{t}$ model and assuming a Gamma-distributed generation time.  (b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2. }%
+  \label{fig:little_r_sensitivity}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/growth_advantage_sensitivity.png}
+  \caption{\textbf{Sensitivity of growth advantages to changes in generation time.} (a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our fixed growth model.  (b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2.}%
+  \label{fig:growth_advantage_sensitivity}
+\end{figure}
+
 
 \begin{figure}
   \centering
