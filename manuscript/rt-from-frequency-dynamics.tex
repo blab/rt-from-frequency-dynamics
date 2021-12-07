@@ -145,8 +145,7 @@ This provides the additional benefit of the inferred parameters being interpreta
 In cases where a singular fixed growth advantage is insufficient to describe the data, we return to our first model in which the effective reproduction numbers of variants are modeled without assuming a fixed advantage, accounting for possible variation in variants' advantages over one another over time.
 
 We demonstrate these models on data from Washington State.
-The free $R_{t}$ model is shown in Figure \ref{fig:free_rt_Washington} and the fixed growth advantage model is shown in Figure \ref{fig:fixed_growth_Washington}.
-% Example model output from several other states is provided in the supplemental materials. TB: Will add this back once there are references to supp figures in Supp Materials.
+The free $R_{t}$ model is shown in Figure \ref{fig:free_rt_Washington} and the fixed growth advantage model is shown in Figure \ref{fig:fixed_growth_Washington}. Example model output from several other states is provided in the supplemental appendix.
 
 \begin{figure}[t]
   \centering
@@ -256,8 +255,8 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
 
 We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}. 
 We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. 
-The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental results (see Relating exponential growth rates to relative effective reproduction numbers). 
-Though converting the posterior effective reproduction numbers to exponential growth rates may be more robust to changes in generation time as can be seen in Figure \ref{fig:little_r_sensitivity}.
+The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental results (see Relating epidemic growth rates to relative effective reproduction numbers). 
+Though converting the posterior effective reproduction numbers to epidemic growth rates may be more robust to changes in generation time as can be seen in Figure \ref{fig:little_r_sensitivity}.
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
 
@@ -462,16 +461,16 @@ This assumption additionally allows us to relate the epidemic growth rate $r$ an
 
 \newpage
 
-\subsubsection*{Relating exponential growth rates to relative effective reproduction numbers}
+\subsubsection*{Relating epidemic growth rates to relative effective reproduction numbers}
 
-An important relationship of interest is between the exponential growth rate of an epidemic and its effective reproduction number.
+An important relationship of interest is between the epidemic growth rate of an epidemic and its effective reproduction number.
 In the case of our analysis, we are particularly interested in the ratios of variant-specific effective reproduction numbers.
-First, notice that the effective reproduction number and the exponential growth rate of an epidemic are related by
+First, notice that the effective reproduction number and the epidemic growth rate of an epidemic are related by
 \begin{align*}
 R_{t} = \frac{1}{\int_{0}^{\infty} \exp(-r\tau)g(\tau)d\tau} = \frac{1}{M_{g}(-r)}
 \end{align*}
-according to the Lotka-Euler equation \cite{Wallinga2006} where $r$ is the exponential growth rate and $M_{g}$ is the moment-generating function of the generation time $g$.
-This allows us to write the relative reproduction number of two variants $v$ and $u$ as a function of their exponential growth rates, so that
+according to the Lotka-Euler equation \cite{Wallinga2006} where $r$ is the epidemic growth rate and $M_{g}$ is the moment-generating function of the generation time $g$.
+This allows us to write the relative reproduction number of two variants $v$ and $u$ as a function of their epidemic growth rates, so that
 \begin{align*}
 \frac{R_{t,v}}{R_{t,u}} = \frac{M_{g}(-r_{u})}{M_{g}(-r_{v})}.
 \end{align*}
@@ -481,7 +480,7 @@ We'll consider three common generation time assumptions. First, we consider the 
 \frac{R_{t,v}}{R_{t,u}} = \exp( (r_{v}-r_{u})T_{g}).
 \end{align*}
 
-In this case, the relative effective reproduction number depends on only the difference between the exponential growth rates and therefore, is commonly used when converting exponential growth rates to relative reproduction numbers in the case of logistic growth models.
+In this case, the relative effective reproduction number depends on only the difference between the epidemic growth rates and therefore, is commonly used when converting epidemic growth rates to relative reproduction numbers in the case of logistic growth models.
 
 Second, we consider the case where the the generation time is an exponential distribution with mean $T_{g}$. This assumption is often implicit and common in models of infectious diseases such as ODEs and their stochastic variants. Using the corresponding moment-generating function, we see that
 \begin{align*}
@@ -504,9 +503,9 @@ Taking a logarithm, we can also evaluate the sensitivity of our inferred growth 
  \delta_{v}  = \ln \left( \frac{R_{t,v}}{R_{t,0}} \right) = \left( \frac{T_{g}^{2}}{s^{2}} \right)  \ln \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{0} \left(\frac{s^{2}}{T_{g}}\right) } \right).
 \end{align*}
 The behavior here is analogous to that discussed above when the mean $T_{g}$ and standard deviation $s$ are changed although these growth advantages appear to relatively stable under varying standard deviation in Figure \ref{fig:growth_advantage_sensitivity}.
-Although the effective reproduction number and the growth advantage appear to have strong dependence on generation time parameters, we find that the exponential growth rate $r$ is more robust to changes in generation time (see Figure \ref{fig:little_r_sensitivity}).
+Although the effective reproduction number and the growth advantage appear to have strong dependence on generation time parameters, we find that the epidemic growth rate $r$ is more robust to changes in generation time (see Figure \ref{fig:little_r_sensitivity}).
 
-The cases of exponential and Gamma-distributed generation times highlight that for non-deterministic generation times there is no guarantee that the relative effective reproduction number depends on only the difference in exponential growth rates.
+The cases of exponential and Gamma-distributed generation times highlight that for non-deterministic generation times there is no guarantee that the relative effective reproduction number depends on only the difference in epidemic growth rates.
 In fact, these estimates based on the deterministic generation times correspond to the case in which the standard deviation shrinks zero, they are likely overestimates of variant advantages given the observed variation in the serial interval of SARS-CoV-2 infections.
 
 \begin{figure}
