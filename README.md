@@ -6,7 +6,7 @@
 
 ## Abstract
 Accurately estimating relative transmission rates of SARS-CoV-2 Variant of Concern and Variant of Interest viruses remains a scientific and public health priority.
-Recent studies have used the sample proportions of different variants from sequence data as an approximation to the variant frequencies and to describe variant frequency dynamics and relative transmission rates, but frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2.
-Here, we extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of co-circulating SARS-CoV-2 variants using case data and genetic sequences across states in the US from January to October 2021.
-Our method can be used to infer structured relationships between effective reproduction numbers across time series which may be amendable to various analyses including other features related to the effective reproductive number such as non-pharmaceutical interventions or build up of population immunity.
-We use this model to estimate the effective reproduction number of various SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages shared between these variants across different locations.
+Recent studies have used the sample proportions of different variants from sequence data to describe variant frequency dynamics and relative transmission rates, but frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2.
+Here, we extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of co-circulating variants using case data and genetic sequences across states in the US from January to October 2021.
+Our method can be used to infer structured relationships between effective reproduction numbers across time series allowing us to estimate fixed variant-specific growth advantages.
+We use this model to estimate the effective reproduction number of SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages of particular variants across different locations.
