@@ -109,8 +109,6 @@ We apply this model to sequence data and case count data from United States betw
 
 \paragraph{Model Overview}%
 
-% TB: This figure needs a legend showing mapping of variant (Alpha, Beta, etc...) to color
-% Text in the figure (frame labels and tick labels) needs to be bigger
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{figs/free_rt_Washington.png}
@@ -122,9 +120,6 @@ We apply this model to sequence data and case count data from United States betw
   \label{fig:free_rt_Washington}
 \end{figure}
 
-% TB: This figure needs a legend showing mapping of variant (Alpha, Beta, etc...) to color
-% I know this should be inferable from the bottom right panel, but I'm assuming people will expect a legend at the top
-% Text in the figure (frame labels and tick labels) needs to be bigger
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{figs/fixed_growth_Washington.png}
@@ -154,7 +149,7 @@ Each variant effective reproduction number is parameterized using an exponentiat
 
 The second model is a fixed growth advantage model of variant $R_{t}$ in which each variants has its own multiplicative growth advantage which acts as a scaling to a single non-variant $R_{t}$ trajectory.
 With this fixed growth advantage model, we parameterize fitness of variants at the level of transmission by inferring variant-specific effective reproduction numbers.
-This differs from previous work on variant effective reproduction numbers which often parameterize these differences by assuming logistic growth of frequencies \cite{Earnest2021, Vhringer2021}. %TODO: I think there's more references here.
+This differs from previous work on variant effective reproduction numbers which often parameterize these differences by assuming logistic growth of frequencies \cite{Earnest2021, Vhringer2021}.
 Though, in general, our method allows one to estimate variant growth in the frequency domain in terms of effective reproduction number differences, we find that assuming a fixed advantage for variants results in estimates which are qualitatively similar to the aforementioned models which assume fixed growth advantages in frequency growth.
 This provides the additional benefit of the inferred parameters being interpretable as scaling the effective reproduction number.
 
@@ -164,7 +159,6 @@ We demonstrate these models on data from Washington State.
 The free $R_{t}$ model is shown in Figure \ref{fig:free_rt_Washington} and the fixed growth advantage model is shown in Figure \ref{fig:fixed_growth_Washington}.
 % Example model output from several other states is provided in the supplemental materials. TB: Will add this back once there are references to supp figures in Supp Materials.
 
-% TB: Each panel needs a variant label
 \begin{figure}[t]
   \centering
   \includegraphics[width=\linewidth]{figs/rt_consensus.png}
@@ -192,7 +186,7 @@ This cutoff left 39 states available for inference.
   \centering
   \includegraphics[width=\linewidth]{figs/growth_advantages.png}
   \caption{\textbf{Using fixed growth advantage model, we infer growth advantages for 7 variants in 39 US states.}
-  (a) State-wise growth advantages for variants of concern.
+  (a) Growth advantages for variants of concern. Each point is the median growth advantage inferred from a single state.
   (b) Same as (a) but visualized by variant.}
   \label{fig:growth_advantages}
 \end{figure}
