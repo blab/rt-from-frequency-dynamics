@@ -45,7 +45,7 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
         
         # Over-dispersion parameter for multinomial
-        xi = numpyro.sample("xi", dist.Beta(concentration0=1, concentration1=99))
+        xi = numpyro.sample("xi", dist.Beta(1, 50))
         trans_xi = 1 / xi - 1
 
         numpyro.sample("Y",
@@ -168,8 +168,8 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
 
         # Over-dispersion parameter for multinomial
-        xi = numpyro.sample("xi", dist.Beta(concentration0=1, concentration1=99))
-        trans_xi = 1 / xi - 1
+        xi = numpyro.sample("xi", dist.Beta(1, 50))
+        trans_xi = numpyro.deterministic("trans_xi", 1 / xi - 1)
 
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration=1e-8+trans_xi*freq),

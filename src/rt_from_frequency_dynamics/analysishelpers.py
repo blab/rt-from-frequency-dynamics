@@ -93,3 +93,7 @@ def sample_loaded_posterior(LD, LM, num_samples = 1000, path = ".", name="Test")
 
     dataset = SVIH.predict(LM.model, guide, data, num_samples = num_samples)
     return PosteriorHandler(dataset=dataset, LD=LD, name=name)
+
+def unpack_model(MP, name):
+    posterior = MP.get(name)
+    return posterior.dataset, posterior.LD
