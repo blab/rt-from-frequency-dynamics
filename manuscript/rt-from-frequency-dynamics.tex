@@ -59,9 +59,6 @@
 
 \begin{document}
 
-%TODO: Focus on synthesizing literature in the discussion to discuss limitations and future directions
-%TODO: What should two sentence takeaway be if I had to explain this to someone who was familiar with this line of work?
-
 \maketitle
 
 \begin{abstract}
@@ -71,17 +68,9 @@ Here, we extend methods for inferring the effective reproduction number of an ep
 Our method can be used to infer structured relationships between effective reproduction numbers across time series which may be amendable to various analyses including other features related to the effective reproductive number such as non-pharmaceutical interventions or build up of population immunity.
 We use this model to estimate the effective reproduction number of SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages of particular variants across different locations.
 
-%TODO: Sentence about growth advantages
-%TODO: Sentence about the applicability of this method generally
 \end{abstract}
 
 \section*{Introduction}
-
-
-%TODO: Lead into the pandemic, thorough descriptions on how genetic differences in variants may lead to different outcomes at the level of transmission and clinical presentation.
-%TODO: Move into the specifics of SARS-CoV-2. What info does a reader 2 years from now need to know to be able to make sense of this work?
-%TODO: Mention that modeling efforts are useful for understanding what has happened over the course of the pandemic.
-%TODO: And will be useful for tackling the continued spread of SARS-CoV-2
 
 As SARS-CoV-2 evolves, variants may emerge that increase in their ability to transmit and escape acquired immunity \cite{tao2021biological}.
 Quantifying the observed growth advantages of SARS-CoV-2 variants allows us to understand which variants are able to thrive in different locations \cite{tegally2021detection, davies2021estimated}.
@@ -205,13 +194,7 @@ Delta's advantage of 1.6--2.0 across states is particularly significant.
 Given this large growth advantage was evident in May (Fig.\ \ref{fig:rt_consensus}), Delta's rapid rise in frequency and sizable epidemic should have been clear at the time.
 The significant growth advantage observed in Delta is recapitulated in other studies including Obermeyer et al.\ \cite{Obermeyer2021} and V\"ohringer et al.\ \cite{vohringer2021genomic}.
 
-%TODO: Include particulars about what we learned about individual variants above
-%TODO: What are the actual numbers?
-
 \section*{Discussion}
-
-%TODO: Perhaps, main technical takeaway is that you can augment models of frequency dynamics with an epidemiological model of your choosing to relate frequency dynamics to transmission dynamics.
-%TODO: Towards composable modeling of genetic variants
 
 We find that a model that partitions case count data based on variant frequency in sequence data works well to describe SARS-CoV-2 variant dynamics in the United States from January to October 2021.
 In each state, spring waves are primarily driven by the arrival of Alpha, Beta, Gamma, and Iota variants.
@@ -270,7 +253,8 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
   P(t) &= \sum_{\tau < t} I(\tau) o_{t-\tau}
 \end{align}
 
-We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}. We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity, fig:growth_advantage_sensitivity} and supplemental results Relating exponential growth rates to relative effective reproduction numbers.
+We parameterize the generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.72 in line with the estimates of \cite{Ganyani2020} and onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}. 
+We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental results (see Relating exponential growth rates to relative effective reproduction numbers).
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
 
@@ -292,7 +276,7 @@ We then define the observation likelihood using a negative binomial distribution
   Y_{t} \sim \text{NegBinom}(\rho_{[t]} P(t),  \alpha),
 \end{equation}
 where $[t] = t \mod 7 + 1$, $\alpha$ is an over-dispersion parameter relative to the Poisson distribution and $\text{NegBinom}(\mu, \alpha)$ is the negative binomial distribution with mean $\mu$ and variance  $\mu + \alpha\mu^{2}$. In the case of multiple variants, we use $P(t) = \sum_{1\leq v \leq V} P_{v}(t)$.
-The negative binomial likelihood is often used for modeling observation noise in epidemic time series which are often over-dispersed relative to a Poisson distribution. %TODO: Citation here?
+The negative binomial likelihood is often used for modeling observation noise for count data such as epidemic time series which are often over-dispersed relative to a Poisson distribution. %TODO: Citation here?
 
 \paragraph{Observation process for lineage annotations}%
 
@@ -477,7 +461,9 @@ This assumption additionally allows us to relate the epidemic growth rate $r$ an
 
 \subsubsection*{Relating exponential growth rates to relative effective reproduction numbers}
 
-An important relationship of interest is between the exponential growth rate of an epidemic and its effective reproduction number. In the case of our analysis, we are particularly interested in the ratios of variant-specific effective reproduction numbers. First, notice that the effective reproduction number and the exponential growth rate of an epidemic are related by
+An important relationship of interest is between the exponential growth rate of an epidemic and its effective reproduction number.
+In the case of our analysis, we are particularly interested in the ratios of variant-specific effective reproduction numbers.
+First, notice that the effective reproduction number and the exponential growth rate of an epidemic are related by
 \begin{align*}
 R_{t} = \frac{1}{\int_{0}^{\infty} \exp(-r\tau)g(\tau)d\tau} = \frac{1}{M_{g}(-r)}
 \end{align*}
@@ -500,12 +486,15 @@ Second, we consider the case where the the generation time is an exponential dis
 \end{align*}
 
 
-Next, we consider the Gamma distributed generation times with mean $T_{g}$ and standard deviation $s$. This is often used in models of infectious diseases via the chain trick in which multiple compartments are chained together to obtain non-exponential generation or waiting times. Re-parameterizing the Gamma distribution in terms of its mean and standard deviation, we have that
+Next, we consider the Gamma distributed generation times with mean $T_{g}$ and standard deviation $s$.
+This is often used in models of infectious diseases via the chain trick in which multiple compartments are chained together to obtain non-exponential generation or waiting times.
+Re-parameterizing the Gamma distribution in terms of its mean and standard deviation, we have that
 \begin{align*}
 \frac{R_{t,v}}{R_{t,u}} = \left( \frac{1 + r_{v}  \left(\frac{s^{2}}{T_{g}}\right)}{1 + r_{u} \left(\frac{s^{2}}{T_{g}}\right) } \right)^{T_{g}^{2} / s^{2}}.
 \end{align*}
 
-From this equation, we can see that increases in the mean of the generation time lead to higher inferred variant advantages given the same growth rates. On the other hand, increases in the standard deviation lead to lower inferred variant advantages. This effect is also visualized in Figure \ref{fig:generation_time_sensitivity}.
+From this equation, we can see that increases in the mean of the generation time lead to higher inferred variant advantages given the same growth rates.
+On the other hand, increases in the standard deviation lead to lower inferred variant advantages. This effect is also visualized in Figure \ref{fig:generation_time_sensitivity}.
 
 Taking a logarithm, we can also evaluate the sensitivity of our inferred growth advantages from our fixed growth advantage model with respect to the generation time assuming it is Gamma distributed as
 \begin{align*}
@@ -519,21 +508,27 @@ In fact, these estimates based on the deterministic generation times correspond 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/generation_time_sensitivity.png}
-  \caption{\textbf{Sensitivity of effective reproduction number to changes in generation time.} (a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against effective reproduction number estimates for Delta in Washington state on July 1st, 2021 using our free $R_{t}$ model.  (b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2.}%
+  \caption{\textbf{Sensitivity of effective reproduction number to changes in generation time.} 
+(a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against effective reproduction number estimates for Delta in Washington state on July 1st, 2021 using our free $R_{t}$ model.
+(b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2.}%
   \label{fig:generation_time_sensitivity}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/little_r_sensitivity.png}
-  \caption{\textbf{Sensitivity of exponential growth rates to changes in generation time.} (a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our free $R_{t}$ model and assuming a Gamma-distributed generation time.  (b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2. }%
+  \caption{\textbf{Sensitivity of exponential growth rates to changes in generation time.} 
+(a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our free $R_{t}$ model and assuming a Gamma-distributed generation time.
+(b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2. }%
   \label{fig:little_r_sensitivity}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/growth_advantage_sensitivity.png}
-  \caption{\textbf{Sensitivity of growth advantages to changes in generation time.} (a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our fixed growth model.  (b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2.}%
+  \caption{\textbf{Sensitivity of growth advantages to changes in generation time.} 
+(a) We vary the mean of the generation time keeping a constant standard deviation 1.72 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our fixed growth model.
+(b) The same as (a), but we instead vary the standard deviation of the generation time keeping a constant mean 5.2.}%
   \label{fig:growth_advantage_sensitivity}
 \end{figure}
 
