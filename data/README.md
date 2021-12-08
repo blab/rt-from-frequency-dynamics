@@ -33,6 +33,18 @@ date	location	cases
 
 There will be dates that are missing sequence counts or case counts. These should be assumed to be 0.
 
+### Analysis with Jupyter notebook
+
+Create a conda environment for the analysis and load the Jupyter notebook.
+
+``` bash
+conda create -n rt python jupyterlab pandas
+conda activate rt
+jupyter lab variants-us_data-prep.py.ipynb
+```
+
+Run all cells in the Jupyter notebook.
+
 ## Omicron countries dataset
 
 Data preparation followed:
