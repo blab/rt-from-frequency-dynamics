@@ -50,5 +50,5 @@ if __name__ == "__main__":
 
     # Exporting growth info
     ps = [0.95, 0.8, 0.5] # Which credible intevals to save
-    R_free = gather_free_Rt(MP_free, ps, path=path_base, name=data_name)
-    R_fixed, ga_fixed = gather_fixed_Rt(MP_fixed, ps, path=path_base, name=data_name)
+    R_free, r_free = gather_free_Rt(MP_free, ps, path=path_base, name=data_name, g = g)
+    R_fixed, r_free, ga_fixed = gather_fixed_Rt(MP_fixed, ps, path=path_base, name=data_name, g = g)
