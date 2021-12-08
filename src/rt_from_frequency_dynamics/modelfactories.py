@@ -11,9 +11,13 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         L, N_variant = seq_counts.shape
         T, k = X.shape
 
+        # Locally adaptive smoothing on base R trajectories
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
-        beta = numpyro.sample("beta", LaplaceRandomWalk(scale=gam, num_steps=k))
+        beta_0 = numpyro.sample("beta_0", dist.Normal(0., 1.))
+        beta_rw = numpyro.sample("beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k))
+        beta = beta_0 + beta_rw
 
+        # Getting growth variant growth advantages
         with numpyro.plate("N_variant_m1", N_variant-1):
             v = numpyro.sample("v", dist.Normal(0.0, 1.0))
         ga = numpyro.deterministic("ga", jnp.exp(v))
@@ -137,11 +141,14 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         L, N_variant = seq_counts.shape
         T, k = X.shape
 
+        # Locally adaptive smoothing on all R trajectories
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
         with numpyro.plate("variant_beta", N_variant):
-            beta = numpyro.sample("beta", LaplaceRandomWalk(scale=gam, num_steps=k))
+            beta_0 = numpyro.sample("beta_0", dist.Normal(0., 1.))
+            beta_rw = numpyro.sample("beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k))
+            beta = beta_0 + beta_rw.T
         
-        R = numpyro.deterministic("R", jnp.exp(X@beta.T))
+        R = numpyro.deterministic("R", jnp.exp(X@beta))
         with numpyro.plate("N_variant", N_variant):
             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
             
