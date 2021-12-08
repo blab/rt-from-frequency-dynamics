@@ -10,7 +10,7 @@ from .modelfunctions import get_infections, apply_delay, forward_simulate_I, rep
 
 from .LAS import LaplaceRandomWalk, LAS_Laplace
 
-from .lineagemodel import LineageModel, FixedGrowthModel, FreeGrowthModel
+from .lineagemodel import LineageModel, FixedGrowthModel, FreeGrowthModel, GARandomWalkModel
 
 from .inferencehandler import SVIHandler, MCMCHandler
 
