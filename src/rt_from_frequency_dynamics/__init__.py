@@ -14,7 +14,7 @@ from .lineagemodel import LineageModel, FixedGrowthModel, FreeGrowthModel
 
 from .inferencehandler import SVIHandler, MCMCHandler
 
-from .posteriorhelpers import get_R, get_growth_advantage
+from .posteriorhelpers import get_R, get_growth_advantage, get_little_r
 
 from .posteriorhandler import PosteriorHandler, MultiPosterior
 
