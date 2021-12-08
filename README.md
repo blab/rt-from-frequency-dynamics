@@ -10,11 +10,3 @@ Recent studies have used the sample proportions of different variants from seque
 Here, we extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of co-circulating variants using case data and genetic sequences across states in the US from January to October 2021.
 Our method can be used to infer structured relationships between effective reproduction numbers across time series allowing us to estimate fixed variant-specific growth advantages.
 We use this model to estimate the effective reproduction number of SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages of particular variants across different locations.
-
-
-## Installation
-
-To install the `rt_from_frequency_dynamics` package locally, please run:
-```
-pip install .
-```
