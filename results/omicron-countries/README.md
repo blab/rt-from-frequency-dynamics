@@ -26,6 +26,16 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 ![](figures/omicron-countries_partitioned-log-cases.png)
 
+## Model outputs
+
+#### Variant-specific Rt
+
+![](figures/omicron-countries_variant-rt.png)
+
+#### Variant-specific epidemic growth rate r
+
+![](figures/omicron-countries_variant-little-r.png)
+
 ## Updating
 
 These results can be updated via:
