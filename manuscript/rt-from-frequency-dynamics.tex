@@ -350,7 +350,7 @@ For both models, we provide a Laplace random walk prior on the spline coefficien
 In the fixed growth advantage model, only a baseline $R_{t}$ trajectory is parameterized by $\vec{\beta}$ and the variant advantages $\delta_{v}$ are given a Normal$(0,1)$ prior.
 The initial infected individuals for each variant have a uniform prior between 0 and 300,000.
 The weekly reporting rates $\rho_{[t]}$ each follow a Beta$(5, 5)$ prior, and the case observation over-dispersion is given a HalfNormal$(0, 10)$ prior on $\alpha^{-\frac{1}{2}}$.
-Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 50)$ prior to penalize high levels of over-dispersion in sequencing.
+Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to penalize high levels of over-dispersion in sequencing.
 
 \paragraph{Inference}
 
