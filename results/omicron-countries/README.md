@@ -28,6 +28,8 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 ## Model outputs
 
+These outputs are using the "fixed growth" model.
+
 #### Variant-specific Rt
 
 ![](figures/omicron-countries_variant-rt.png)
