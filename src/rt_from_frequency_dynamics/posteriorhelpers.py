@@ -14,31 +14,45 @@ def to_arviz(samples):
     dataset = az.convert_to_inference_data(reshape_for_arviz(samples))
     return dataset
 
-def get_growth_advantage(dataset, LD, ps, name):
-    medians = dataset.posterior["ga"].median(dim="draw").values[0]
-    N_variant = medians.shape[0]
+def get_growth_advantage(dataset, LD, ps, name, rel_to="other"):
+    ga = jnp.squeeze(dataset.posterior["ga"].values)
+    ga = jnp.concatenate((ga, jnp.ones(ga.shape[0])[:,None]), axis=1)
+    
     seq_names = LD.seq_names
+    N_variant = len(seq_names)
+    
+    # Loop over ga and make relative rel_to
+    for i,s in enumerate(seq_names):
+        if s == rel_to:
+            ga = jnp.divide(ga, ga[:,i][:, None])
 
-    ga = []
-    for i in range(len(ps)):
-        ga.append(jnp.array(az.hdi(dataset, var_names="ga", hdi_prob=ps[i])["ga"]))
-
+    # Compute medians and quantiles
+    meds = jnp.median(ga, axis=0)
+    gas = []
+    for i,p in enumerate(ps):
+        up = 0.5 + p/2
+        lp = 0.5 - p/2
+        gas.append(jnp.quantile(ga, jnp.array([lp, up]), axis=0).T)
+    
+    # Make empty dictionary
     v_dict = dict()
     v_dict["location"] = []
     v_dict["variant"] = []
     v_dict["median_ga"] = []
+    
     for p in ps:
         v_dict[f"ga_upper_{round(p * 100)}"] = []
         v_dict[f"ga_lower_{round(p * 100)}"] = []
 
     for variant in range(N_variant):
-        v_dict["location"].append(name)
-        v_dict["variant"].append(seq_names[variant])
-        v_dict["median_ga"].append(medians[variant])
-        for i,p in enumerate(ps):
-            v_dict[f"ga_upper_{round(p * 100)}"].append(ga[i][variant, 1])
-            v_dict[f"ga_lower_{round(p * 100)}"].append(ga[i][variant, 0])
-        
+        if seq_names[variant] != rel_to:
+            v_dict["location"].append(name)
+            v_dict["variant"].append(seq_names[variant])
+            v_dict["median_ga"].append(meds[variant])
+            for i,p in enumerate(ps):
+                v_dict[f"ga_upper_{round(p * 100)}"].append(gas[i][variant, 1])
+                v_dict[f"ga_lower_{round(p * 100)}"].append(gas[i][variant, 0])
+
     return v_dict
 
 def get_R(dataset, LD, ps, name):
@@ -122,3 +136,36 @@ def get_little_r(dataset, g, LD, ps, name):
             r_dict[f"r_lower_{round(ps[i] * 100)}"] += list(_to_little_r(R[i][:, variant, 0]))
 
     return r_dict
+
+def get_I(dataset, LD, ps, name):
+    medians = jnp.round(dataset.posterior["I_smooth"].median(dim="draw").values[0])
+    N_variant = medians.shape[1]
+    T = medians.shape[0]
+
+    seq_names = LD.seq_names
+    dates = LD.dates
+
+    I = []
+    for i in range(len(ps)):
+        I.append(jnp.rint(jnp.array(az.hdi(dataset, var_names="I_smooth", hdi_prob=ps[i])["I_smooth"])))
+
+    I_dict = dict()
+    I_dict["date"] = []
+    I_dict["location"] = []
+    I_dict["variant"] = []
+    I_dict["median_I"] = []
+        
+    for p in ps:
+        I_dict[f"I_upper_{round(p * 100)}"] = []
+        I_dict[f"I_lower_{round(p * 100)}"] = []
+        
+    for variant in range(N_variant):
+        I_dict["date"] += list(dates)
+        I_dict["location"] += [name] * T
+        I_dict["variant"] += [seq_names[variant]] * T
+        I_dict["median_I"] += list(medians[:, variant])
+        for i,p in enumerate(ps):
+            I_dict[f"I_upper_{round(ps[i] * 100)}"] += list(I[i][:, variant, 1])
+            I_dict[f"I_lower_{round(ps[i] * 100)}"] += list(I[i][:, variant, 0])
+
+    return I_dict

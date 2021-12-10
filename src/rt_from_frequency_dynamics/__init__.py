@@ -14,7 +14,7 @@ from .lineagemodel import LineageModel, FixedGrowthModel, FreeGrowthModel, GARan
 
 from .inferencehandler import SVIHandler, MCMCHandler
 
-from .posteriorhelpers import get_R, get_growth_advantage, get_little_r
+from .posteriorhelpers import get_R, get_growth_advantage, get_little_r, get_I
 
 from .posteriorhandler import PosteriorHandler, MultiPosterior
 
@@ -22,6 +22,6 @@ from .plotfunctions import *
 
 from .analysishelpers import get_location_LineageData, fit_SVI, fit_SVI_locations 
 from .analysishelpers import save_posteriors, sample_loaded_posterior, unpack_model
-from .analysishelpers import gather_growth_info, gather_fixed_Rt, gather_free_Rt
+from .analysishelpers import gather_R, gather_little_r, gather_ga, gather_I
 
 from .pipelinehelpers import make_path_if_absent, make_model_directories

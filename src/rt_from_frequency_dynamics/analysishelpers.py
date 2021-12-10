@@ -4,7 +4,7 @@ import numpyro
 from numpyro.infer.autoguide import AutoMultivariateNormal
 
 from rt_from_frequency_dynamics import LineageData
-from rt_from_frequency_dynamics import get_R, get_growth_advantage, get_little_r
+from rt_from_frequency_dynamics import get_R, get_growth_advantage, get_little_r, get_I
 from rt_from_frequency_dynamics import SVIHandler, PosteriorHandler, MultiPosterior
 
 def get_location_LineageData(rc, rs, loc):
@@ -51,45 +51,6 @@ def save_posteriors(MP, path):
         p.save_posterior(f"{path}/posteriors/{name}_samples.json")
     return None
 
-def gather_growth_info(MP, ps, ga=False, g=None):
-    R_dfs = []
-    for name, p in MP.locator.items():
-        R_dfs.append(pd.DataFrame(get_R(p.dataset, p.LD, ps, name)))
-
-    R_df = pd.concat(R_dfs)
-    
-    r_df = None
-    if g is not None: # If generation time provided, return little r
-        r_dfs = []
-        for name, p in MP.locator.items():
-            r_dfs.append(pd.DataFrame(get_little_r(p.dataset, g, p.LD, ps, name)))
-        r_df = pd.concat(r_dfs)
-
-    ga_df = None
-    if ga: # If growth advantage wanted, get it
-        ga_dfs = []
-        for name, p in MP.locator.items():
-            ga_dfs.append(pd.DataFrame(get_growth_advantage(p.dataset, p.LD, ps, name)))
-
-        ga_df = pd.concat(ga_dfs)
-    return R_df, r_df, ga_df
-
-def gather_free_Rt(MP, ps, g=None, path=".", name=""):
-    R_df, r_df, _ = gather_growth_info(MP, ps, ga=False, g=g)
-    R_df.to_csv(f"{path}/{name}_Rt-combined-free.tsv", encoding='utf-8', sep='\t', index=False)
-    if r_df is not None:
-        r_df.to_csv(f"{path}/{name}_little-r-combined-free.tsv", encoding='utf-8', sep='\t', index=False)
-    return R_df, r_df
-
-def gather_fixed_Rt(MP, ps, g=None, path=".", name=""):
-    R_df, r_df, ga_df = gather_growth_info(MP, ps, ga=True, g=g) 
-    R_df.to_csv(f"{path}/{name}_Rt-combined-fixed.tsv", encoding='utf-8', sep='\t', index=False)
-    ga_df.to_csv(f"{path}/{name}_ga-combined-fixed.tsv", encoding='utf-8', sep='\t', index=False)
-    if r_df is not None:
-        r_df.to_csv(f"{path}/{name}_little-r-combined-fixed.tsv", encoding='utf-8', sep='\t', index=False)
-
-    return R_df, r_df, ga_df
-
 def sample_loaded_posterior(LD, LM, num_samples = 1000, path = ".", name="Test"):
     # Defining optimization
     SVIH = SVIHandler(optimizer=numpyro.optim.Adam(step_size=1e-2))
@@ -108,3 +69,27 @@ def sample_loaded_posterior(LD, LM, num_samples = 1000, path = ".", name="Test")
 def unpack_model(MP, name):
     posterior = MP.get(name)
     return posterior.dataset, posterior.LD
+
+def gather_R(MP, ps):
+    R_dfs = []
+    for name, p in MP.locator.items():
+        R_dfs.append(pd.DataFrame(get_R(p.dataset, p.LD, ps, name)))
+    return pd.concat(R_dfs)
+
+def gather_little_r(MP, ps, g):
+    r_dfs = []
+    for name, p in MP.locator.items():
+        r_dfs.append(pd.DataFrame(get_little_r(p.dataset, g, p.LD, ps, name)))
+    return pd.concat(r_dfs)
+
+def gather_ga(MP, ps, rel_to="other"):
+    ga_dfs = []
+    for name, p in MP.locator.items():
+        ga_dfs.append(pd.DataFrame(get_growth_advantage(p.dataset, p.LD, ps, name, rel_to=rel_to)))
+    return pd.concat(ga_dfs)
+
+def gather_I(MP, ps):
+    I_dfs = []
+    for name, p in MP.locator.items():
+        I_dfs.append(pd.DataFrame(get_I(p.dataset, p.LD, ps, name)))
+    return pd.concat(I_dfs)
