@@ -66,6 +66,33 @@ def plot_posterior_average_R(ax, dataset, ps, alphas, color):
         ax.fill_between(t, V[i][:, 0], V[i][:, 1], color=color, alpha = alphas[i])
     ax.plot(t, med, color=color)
 
+def plot_little_r_censored(ax, dataset, g, ps, alphas, colors, thres=0.001):
+    med, R =  get_quants(dataset, ps, "R")
+    t = jnp.arange(0, R[-1].shape[0], 1)
+    N_lineage = R[-1].shape[1]
+    med_freq = get_median(dataset, "freq")
+    
+    # Get generation time
+    mn = np.sum([p * (x+1) for x, p in enumerate(g)]) # Get mean of discretized generation time
+    sd = np.sqrt(np.sum([p * (x+1) **2 for x, p in enumerate(g)])-mn**2) # Get sd of discretized generation time
+    e_ = sd**2 / mn**2
+    l = mn / (sd**2)
+    
+    def _to_little_r(R):
+        return (jnp.float_power(R, e_) - 1) * l
+        
+    # Make figure
+    ax.axhline(y=0.0, color='k', linestyle='--')
+    for lineage in range(N_lineage):
+        include = med_freq[:, lineage] > thres
+        for i in range(len(ps)):
+            ax.fill_between(t[include], 
+                            _to_little_r(R[i][include, lineage, 0]), 
+                            _to_little_r(R[i][include, lineage, 1]),
+                            color=colors[lineage], alpha=alphas[i])
+        ax.plot(t[include], _to_little_r(med[include, lineage]),
+                color=colors[lineage])   
+
 def plot_posterior_frequency(ax, dataset, ps, alphas, colors):
     med, V =  get_quants(dataset, ps, "freq")
     t = jnp.arange(0, V[-1].shape[0], 1)
