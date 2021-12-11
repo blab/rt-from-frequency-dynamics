@@ -38,6 +38,10 @@ These outputs are using the "fixed growth" model.
 
 ![](figures/omicron-countries_variant-little-r.png)
 
+#### Variant-specific daily case counts
+
+![](figures/omicron-countries_variant-estimated-log-cases.png)
+
 ## Updating
 
 These results can be updated via:
