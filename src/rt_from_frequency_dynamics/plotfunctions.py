@@ -161,7 +161,6 @@ def plot_total_by_obs_frequency(ax, LD, total, colors):
     obs_freq = jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None])
     
     # Make figure
-    ax.axhline(y=1.0, color='k', linestyle='--')
     bottom = jnp.zeros(t.shape)
     for lineage in range(D):
         ax.bar(t, obs_freq[:, lineage] * total, bottom = bottom,
@@ -174,7 +173,6 @@ def plot_total_by_median_frequency(ax, dataset, LD, total, colors):
     med_freq = get_median(dataset, "freq")
     
     # Make figure
-    ax.axhline(y=1.0, color='k', linestyle='--')
     bottom = jnp.zeros(t.shape)
     for lineage in range(D):
         ax.bar(t, med_freq[:, lineage] * total, bottom = bottom,
