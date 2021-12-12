@@ -1,5 +1,6 @@
 import arviz as az
 import jax.numpy as jnp
+import numpy as np
 import matplotlib.pyplot as plt
 
 
