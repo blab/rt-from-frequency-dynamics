@@ -63,3 +63,13 @@ tsv-select -H -f strain,date,country,division,Nextstrain_clade gisaid_metadata.t
 3. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `omicron-countries_data-prep.nb`. This results in the export of files: `omicron-countries_location-variant-sequence-counts.tsv` and `omicron-countries_location-case-counts.tsv` versioned here. This subsets between Sep 1, 2021 and recent samples. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
 
 As above, there will be dates that are missing sequence counts or case counts. These should be assumed to be 0.
+
+## SGTF King County dataset
+
+Data preparation followed:
+
+1. UW Virology data on SGTF counts from https://github.com/proychou/sgtf
+
+2. King County cases from https://github.com/nytimes/covid-19-data/blob/master/rolling-averages/us-counties-recent.csv
+
+3. Processed in Mathematica by running the notebook `sgtf-king-county_data-prep.nb`. This results in the export of files: `sgtf-king-county_location-variant-sequence-counts.tsv` and `sgtf-king-county_location-case-counts.tsv`.
