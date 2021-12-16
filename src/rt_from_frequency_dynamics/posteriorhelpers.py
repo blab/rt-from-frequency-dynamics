@@ -15,7 +15,7 @@ def to_arviz(samples):
     return dataset
 
 def get_growth_advantage(dataset, LD, ps, name, rel_to="other"):
-    ga = jnp.squeeze(dataset.posterior["ga"].values)
+    ga = jnp.squeeze(dataset.posterior["ga"].values, axis=0)
     ga = jnp.concatenate((ga, jnp.ones(ga.shape[0])[:,None]), axis=1)
     
     seq_names = LD.seq_names

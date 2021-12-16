@@ -24,7 +24,7 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
 
         R = numpyro.deterministic("R", jnp.exp((X@beta + jnp.append(v, 0.0)[:, None])).T)
         with numpyro.plate("N_variant", N_variant):
-            I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
+            I0 = numpyro.sample("I0", dist.Uniform(1.0, 300_000.0))
             
         with numpyro.plate("rho_parms", 7):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
@@ -39,9 +39,9 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
 
         # NegativeBinomial sampling per region
-        sqrt_inv_phi = numpyro.sample("raw_phi", dist.HalfNormal(10.))
+        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
         numpyro.sample("cases",
-                        dist.NegativeBinomial2(mean=EC, concentration=1/sqrt_inv_phi**2),
+                        dist.NegativeBinomial2(mean=EC, concentration=jnp.power(raw_alpha, -2)),
                         obs=cases)
 
         # Compute frequency
@@ -50,7 +50,7 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(1, 99))
-        trans_xi = 1 / xi - 1
+        trans_xi = jnp.reciprocal(xi) - 1
 
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
@@ -150,7 +150,7 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         
         R = numpyro.deterministic("R", jnp.exp(X@beta))
         with numpyro.plate("N_variant", N_variant):
-            I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
+            I0 = numpyro.sample("I0", dist.Uniform(1.0, 300_000.0))
             
         with numpyro.plate("rho_parms", 7):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
@@ -165,9 +165,9 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
 
         # NegativeBinomial sampling per region
-        sqrt_inv_phi = numpyro.sample("raw_phi", dist.HalfNormal(10.))
+        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
         numpyro.sample("cases",
-                        dist.NegativeBinomial2(mean=EC, concentration=1/sqrt_inv_phi**2),
+                        dist.NegativeBinomial2(mean=EC, concentration=jnp.power(raw_alpha, -2)),
                         obs=cases)
 
         # Compute frequency
@@ -176,7 +176,7 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
 
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(1, 99))
-        trans_xi = numpyro.deterministic("trans_xi", 1 / xi - 1)
+        trans_xi = jnp.reciprocal(xi) - 1
 
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration=1e-8+trans_xi*freq),
@@ -297,9 +297,9 @@ def _GARW_model_factory(g_rev, delays, seed_L):
         EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
 
         # NegativeBinomial sampling per region
-        sqrt_inv_phi = numpyro.sample("raw_phi", dist.HalfNormal(10.))
+        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
         numpyro.sample("cases",
-                        dist.NegativeBinomial2(mean=EC, concentration=1/sqrt_inv_phi**2),
+                        dist.NegativeBinomial2(mean=EC, concentration=jnp.power(raw_alpha, -2)),
                         obs=cases)
 
         # Compute frequency
@@ -308,7 +308,7 @@ def _GARW_model_factory(g_rev, delays, seed_L):
         
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(1, 99))
-        trans_xi = 1 / xi - 1
+        trans_xi = jnp.reciprocal(xi) - 1
 
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
