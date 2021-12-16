@@ -159,6 +159,16 @@ def add_dates(ax, dates, sep=1):
     ax.set_xticks(t[::sep])
     ax.set_xticklabels(labels[::sep])
 
+def add_dates_sep(ax, dates, sep=7):
+    t = []
+    labels = []
+    for (i, date) in enumerate(dates):
+        if (i%sep) == 0:
+            labels.append(date.strftime("%b %d"))
+            t.append(i)
+    ax.set_xticks(t)
+    ax.set_xticklabels(labels)
+
 def plot_growth_advantage(ax, dataset, LD, ps, alphas, colors):
     ga = jnp.array(dataset.posterior["ga"])[1]
     
