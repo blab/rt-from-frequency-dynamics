@@ -1,5 +1,5 @@
 import jax.numpy as jnp
-from jax.scipy.special import logit, expit
+from jax.scipy.special import expit
 import numpyro
 import numpyro.distributions as dist
 from .modelfunctions import v_fs_I, reporting_to_vec
@@ -24,7 +24,7 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
 
         R = numpyro.deterministic("R", jnp.exp((X@beta + jnp.append(v, 0.0)[:, None])).T)
         with numpyro.plate("N_variant", N_variant):
-            I0 = numpyro.sample("I0", dist.Uniform(1.0, 300_000.0))
+            I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
             
         with numpyro.plate("rho_parms", 7):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
@@ -150,7 +150,7 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         
         R = numpyro.deterministic("R", jnp.exp(X@beta))
         with numpyro.plate("N_variant", N_variant):
-            I0 = numpyro.sample("I0", dist.Uniform(1.0, 300_000.0))
+            I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
             
         with numpyro.plate("rho_parms", 7):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
