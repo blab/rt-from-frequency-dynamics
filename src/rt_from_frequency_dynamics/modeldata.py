@@ -21,7 +21,7 @@ class LineageData():
         self.seq_counts = seq_counts[idx_retain_s, :]
         self.cases = cases[idx_retain_c]
 
-    def make_numpyro_input(self, k=20):
+    def make_numpyro_input(self, k=20): # Eventually want to seperate this k out into r_model
         data = dict()
         data["cases"] = self.cases
         data["seq_counts"] = self.seq_counts
