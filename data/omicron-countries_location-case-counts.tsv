@@ -66,6 +66,7 @@ date	location	cases
 2021-12-04	Denmark	4325
 2021-12-05	Denmark	3026
 2021-12-06	Denmark	7146
+2021-12-07	Denmark	6324
 2021-10-01	Germany	9288
 2021-10-02	Germany	6482
 2021-10-03	Germany	4951
@@ -133,6 +134,7 @@ date	location	cases
 2021-12-04	Germany	43500
 2021-12-05	Germany	22945
 2021-12-06	Germany	18322
+2021-12-07	Germany	93087
 2021-10-01	South Africa	1635
 2021-10-02	South Africa	1306
 2021-10-03	South Africa	809
@@ -200,73 +202,143 @@ date	location	cases
 2021-12-04	South Africa	16366
 2021-12-05	South Africa	11125
 2021-12-06	South Africa	6381
-2021-10-01	United Kingdom	34684
-2021-10-02	United Kingdom	29520
-2021-10-03	United Kingdom	29719
-2021-10-04	United Kingdom	34502
-2021-10-05	United Kingdom	33190
-2021-10-06	United Kingdom	38922
-2021-10-07	United Kingdom	39898
-2021-10-08	United Kingdom	35120
-2021-10-09	United Kingdom	39493
-2021-10-10	United Kingdom	33654
-2021-10-11	United Kingdom	39738
-2021-10-12	United Kingdom	37855
-2021-10-13	United Kingdom	41669
-2021-10-14	United Kingdom	44745
-2021-10-15	United Kingdom	44387
-2021-10-16	United Kingdom	42899
-2021-10-17	United Kingdom	44803
-2021-10-18	United Kingdom	48965
-2021-10-19	United Kingdom	43628
-2021-10-20	United Kingdom	48798
-2021-10-21	United Kingdom	51719
-2021-10-22	United Kingdom	48992
-2021-10-23	United Kingdom	45102
-2021-10-24	United Kingdom	38846
-2021-10-25	United Kingdom	36369
-2021-10-26	United Kingdom	43739
-2021-10-27	United Kingdom	44122
-2021-10-28	United Kingdom	39478
-2021-10-29	United Kingdom	43258
-2021-10-30	United Kingdom	41009
-2021-10-31	United Kingdom	37732
-2021-11-01	United Kingdom	39999
-2021-11-02	United Kingdom	33712
-2021-11-03	United Kingdom	41530
-2021-11-04	United Kingdom	36963
-2021-11-05	United Kingdom	33972
-2021-11-06	United Kingdom	30454
-2021-11-07	United Kingdom	29889
-2021-11-08	United Kingdom	32325
-2021-11-09	United Kingdom	32899
-2021-11-10	United Kingdom	39699
-2021-11-11	United Kingdom	43511
-2021-11-12	United Kingdom	39149
-2021-11-13	United Kingdom	37807
-2021-11-14	United Kingdom	36217
-2021-11-15	United Kingdom	40665
-2021-11-16	United Kingdom	37130
-2021-11-17	United Kingdom	38254
-2021-11-18	United Kingdom	48053
-2021-11-19	United Kingdom	44835
-2021-11-20	United Kingdom	40153
-2021-11-21	United Kingdom	39548
-2021-11-22	United Kingdom	45653
-2021-11-23	United Kingdom	43020
-2021-11-24	United Kingdom	42950
-2021-11-25	United Kingdom	47287
-2021-11-26	United Kingdom	49829
-2021-11-27	United Kingdom	39834
-2021-11-28	United Kingdom	36591
-2021-11-29	United Kingdom	42874
-2021-11-30	United Kingdom	40501
-2021-12-01	United Kingdom	47927
-2021-12-02	United Kingdom	53528
-2021-12-03	United Kingdom	51181
-2021-12-04	United Kingdom	41574
-2021-12-05	United Kingdom	43361
-2021-12-06	United Kingdom	51746
+2021-12-07	South Africa	13147
+2021-10-01	Switzerland	1210
+2021-10-02	Switzerland	0
+2021-10-03	Switzerland	0
+2021-10-04	Switzerland	2636
+2021-10-05	Switzerland	1025
+2021-10-06	Switzerland	1093
+2021-10-07	Switzerland	1125
+2021-10-08	Switzerland	966
+2021-10-09	Switzerland	0
+2021-10-10	Switzerland	0
+2021-10-11	Switzerland	2266
+2021-10-12	Switzerland	926
+2021-10-13	Switzerland	1048
+2021-10-14	Switzerland	979
+2021-10-15	Switzerland	954
+2021-10-16	Switzerland	0
+2021-10-17	Switzerland	0
+2021-10-18	Switzerland	2366
+2021-10-19	Switzerland	1241
+2021-10-20	Switzerland	1448
+2021-10-21	Switzerland	1477
+2021-10-22	Switzerland	1288
+2021-10-23	Switzerland	0
+2021-10-24	Switzerland	0
+2021-10-25	Switzerland	3297
+2021-10-26	Switzerland	0
+2021-10-27	Switzerland	3336
+2021-10-28	Switzerland	1793
+2021-10-29	Switzerland	1721
+2021-10-30	Switzerland	0
+2021-10-31	Switzerland	0
+2021-11-01	Switzerland	4540
+2021-11-02	Switzerland	1953
+2021-11-03	Switzerland	2609
+2021-11-04	Switzerland	2937
+2021-11-05	Switzerland	2849
+2021-11-06	Switzerland	0
+2021-11-07	Switzerland	0
+2021-11-08	Switzerland	6647
+2021-11-09	Switzerland	2985
+2021-11-10	Switzerland	4150
+2021-11-11	Switzerland	3884
+2021-11-12	Switzerland	3926
+2021-11-13	Switzerland	0
+2021-11-14	Switzerland	0
+2021-11-15	Switzerland	9712
+2021-11-16	Switzerland	4297
+2021-11-17	Switzerland	5984
+2021-11-18	Switzerland	6016
+2021-11-19	Switzerland	6171
+2021-11-20	Switzerland	0
+2021-11-21	Switzerland	0
+2021-11-22	Switzerland	14592
+2021-11-23	Switzerland	6355
+2021-11-24	Switzerland	8588
+2021-11-25	Switzerland	8048
+2021-11-26	Switzerland	8033
+2021-11-27	Switzerland	0
+2021-11-28	Switzerland	0
+2021-11-29	Switzerland	19405
+2021-11-30	Switzerland	8423
+2021-12-01	Switzerland	10467
+2021-12-02	Switzerland	9546
+2021-12-03	Switzerland	9958
+2021-12-04	Switzerland	0
+2021-12-05	Switzerland	0
+2021-12-06	Switzerland	23895
+2021-12-07	Switzerland	9975
+2021-10-01	United Kingdom	34610
+2021-10-02	United Kingdom	29389
+2021-10-03	United Kingdom	29666
+2021-10-04	United Kingdom	34306
+2021-10-05	United Kingdom	33079
+2021-10-06	United Kingdom	38713
+2021-10-07	United Kingdom	39767
+2021-10-08	United Kingdom	34941
+2021-10-09	United Kingdom	39413
+2021-10-10	United Kingdom	33593
+2021-10-11	United Kingdom	39588
+2021-10-12	United Kingdom	37717
+2021-10-13	United Kingdom	41501
+2021-10-14	United Kingdom	44619
+2021-10-15	United Kingdom	44251
+2021-10-16	United Kingdom	42818
+2021-10-17	United Kingdom	44696
+2021-10-18	United Kingdom	48855
+2021-10-19	United Kingdom	43411
+2021-10-20	United Kingdom	48599
+2021-10-21	United Kingdom	51548
+2021-10-22	United Kingdom	48791
+2021-10-23	United Kingdom	44985
+2021-10-24	United Kingdom	38740
+2021-10-25	United Kingdom	36283
+2021-10-26	United Kingdom	43503
+2021-10-27	United Kingdom	44000
+2021-10-28	United Kingdom	39091
+2021-10-29	United Kingdom	43161
+2021-10-30	United Kingdom	40726
+2021-10-31	United Kingdom	37667
+2021-11-01	United Kingdom	39935
+2021-11-02	United Kingdom	33615
+2021-11-03	United Kingdom	40803
+2021-11-04	United Kingdom	36738
+2021-11-05	United Kingdom	33810
+2021-11-06	United Kingdom	30150
+2021-11-07	United Kingdom	29843
+2021-11-08	United Kingdom	32266
+2021-11-09	United Kingdom	32785
+2021-11-10	United Kingdom	39547
+2021-11-11	United Kingdom	42590
+2021-11-12	United Kingdom	39040
+2021-11-13	United Kingdom	37669
+2021-11-14	United Kingdom	36128
+2021-11-15	United Kingdom	39796
+2021-11-16	United Kingdom	36956
+2021-11-17	United Kingdom	38073
+2021-11-18	United Kingdom	46991
+2021-11-19	United Kingdom	44411
+2021-11-20	United Kingdom	39881
+2021-11-21	United Kingdom	39458
+2021-11-22	United Kingdom	45021
+2021-11-23	United Kingdom	42832
+2021-11-24	United Kingdom	42621
+2021-11-25	United Kingdom	46955
+2021-11-26	United Kingdom	49554
+2021-11-27	United Kingdom	39567
+2021-11-28	United Kingdom	36507
+2021-11-29	United Kingdom	42702
+2021-11-30	United Kingdom	40011
+2021-12-01	United Kingdom	47454
+2021-12-02	United Kingdom	53322
+2021-12-03	United Kingdom	50810
+2021-12-04	United Kingdom	41457
+2021-12-05	United Kingdom	43285
+2021-12-06	United Kingdom	51432
+2021-12-07	United Kingdom	45333
 2021-10-01	USA	152878
 2021-10-02	USA	42489
 2021-10-03	USA	40578
@@ -334,3 +406,4 @@ date	location	cases
 2021-12-04	USA	61223
 2021-12-05	USA	47573
 2021-12-06	USA	182337
+2021-12-07	USA	111850
