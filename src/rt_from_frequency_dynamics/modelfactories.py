@@ -2,14 +2,17 @@ import jax.numpy as jnp
 from jax.scipy.special import expit
 import numpyro
 import numpyro.distributions as dist
+from numpyro.primitives import deterministic
 from .modelfunctions import v_fs_I, reporting_to_vec
 from .LAS import LaplaceRandomWalk
 
 
-def _fixed_lineage_model_factory(g_rev, delays, seed_L):
+def _fixed_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
     def _lineage_model(cases, seq_counts, N, X):
         L, N_variant = seq_counts.shape
         T, k = X.shape
+
+        obs_range = jnp.arange(seed_L, seed_L+T, 1)
 
         # Locally adaptive smoothing on base R trajectories
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
@@ -22,7 +25,17 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
             v = numpyro.sample("v", dist.Normal(0.0, 1.0))
         ga = numpyro.deterministic("ga", jnp.exp(v))
 
-        R = numpyro.deterministic("R", jnp.exp((X@beta + jnp.append(v, 0.0)[:, None])).T)
+        _R = numpyro.deterministic("R", jnp.exp((X@beta + jnp.append(v, 0.0)[:, None])).T)
+        # Add forecasted R
+        if forecast_L > 0:
+            R_forecast = numpyro.deterministic(
+                "R_forecast",
+                jnp.vstack((_R[-1,:],)*forecast_L)
+                 )
+            R = jnp.vstack((_R, R_forecast))
+        else:
+            R = _R
+
         with numpyro.plate("N_variant", N_variant):
             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
             
@@ -31,12 +44,12 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         rho_vec = reporting_to_vec(rho, T)
 
         I_prev = jnp.clip(v_fs_I(I0, R, g_rev, delays, seed_L),  a_min=0., a_max=1e25)
-        I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * I_prev[seed_L:,:])
+        I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * jnp.take(I_prev, obs_range, axis=0))
 
         # Compute expected cases
         total_prev = I_prev.sum(axis=1)
-        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * total_prev[seed_L:])
-        EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
+        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * jnp.take(total_prev, obs_range))
+        EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # NegativeBinomial sampling per region
         raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
@@ -45,8 +58,9 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
                         obs=cases)
 
         # Compute frequency
-        freq = numpyro.deterministic("freq", jnp.divide(I_prev, total_prev[:, None])[seed_L:, :])
-        R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
+        _freq = jnp.divide(I_prev, total_prev[:, None])
+        freq = numpyro.deterministic("freq", jnp.take(_freq, obs_range, axis=0))
+        R_ave = numpyro.deterministic("R_ave", (_R * freq).sum(axis=1))
         
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(1, 99))
@@ -55,6 +69,10 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
                         obs=seq_counts)               
+        if forecast_L > 0:
+             numpyro.deterministic("freq_forecast", _freq[(seed_L+T):, :])
+             numpyro.deterministic("I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L+T):,:])
+
     return _lineage_model
 
 # def _fixed_lineage_guide_factory(g_rev, delays, seed_L):
@@ -136,10 +154,12 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L):
 #                 ) 
 #     return _lineage_guide
 
-def _free_lineage_model_factory(g_rev, delays, seed_L):
+def _free_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
     def _lineage_model(cases, seq_counts, N, X):
         L, N_variant = seq_counts.shape
         T, k = X.shape
+
+        obs_range = jnp.arange(seed_L, seed_L+T, 1)
 
         # Locally adaptive smoothing on all R trajectories
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
@@ -148,7 +168,18 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
             beta_rw = numpyro.sample("beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k))
             beta = beta_0 + beta_rw.T
         
-        R = numpyro.deterministic("R", jnp.exp(X@beta))
+        _R = numpyro.deterministic("R", jnp.exp(X@beta))
+
+        # Add forecasted R
+        if forecast_L > 0:
+            R_forecast = numpyro.deterministic(
+                "R_forecast",
+                jnp.vstack((_R[-1,:],)*forecast_L)
+                 )
+            R = jnp.vstack((_R, R_forecast))
+        else:
+            R = _R
+        
         with numpyro.plate("N_variant", N_variant):
             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
             
@@ -157,12 +188,12 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         rho_vec = reporting_to_vec(rho, T)
 
         I_prev = v_fs_I(I0, R, g_rev, delays, seed_L)
-        I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * I_prev[seed_L:,:])
+        I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * jnp.take(I_prev, obs_range, axis=0))
 
         # Compute expected cases
         total_prev = I_prev.sum(axis=1)
-        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * total_prev[seed_L:])
-        EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
+        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * jnp.take(total_prev, obs_range))
+        EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # NegativeBinomial sampling per region
         raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
@@ -171,8 +202,9 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
                         obs=cases)
 
         # Compute frequency
-        freq = numpyro.deterministic("freq", jnp.divide(I_prev, total_prev[:, None])[seed_L:, :])
-        R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
+        _freq = jnp.divide(I_prev, total_prev[:, None])
+        freq = numpyro.deterministic("freq", jnp.take(_freq, obs_range, axis=0))
+        R_ave = numpyro.deterministic("R_ave", (_R * freq).sum(axis=1))
 
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(1, 99))
@@ -181,6 +213,9 @@ def _free_lineage_model_factory(g_rev, delays, seed_L):
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration=1e-8+trans_xi*freq),
                         obs=seq_counts)               
+        if forecast_L > 0:
+             numpyro.deterministic("freq_forecast", _freq[(seed_L+T):, :])
+             numpyro.deterministic("I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L+T):,:])        
     return _lineage_model
 
 
@@ -259,10 +294,12 @@ def _decomp_lineage_model_factory(g_rev, delays, phi_0, seed_L):
                         obs=seq_counts)               
     return _lineage_model
 
-def _GARW_model_factory(g_rev, delays, seed_L):
+def _GARW_model_factory(g_rev, delays, seed_L, forecast_L):
     def _lineage_model(cases, seq_counts, N, X):
         L, N_variant = seq_counts.shape
         T, k = X.shape
+
+        obs_range = jnp.arange(seed_L, seed_L+T, 1)
 
         # Time varying base trajectory
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
@@ -278,8 +315,20 @@ def _GARW_model_factory(g_rev, delays, seed_L):
             delta_rw = numpyro.sample("delta_rw", dist.GaussianRandomWalk(scale=gam_delta, num_steps=k))
             delta = delta_0 + delta_rw.T
         
+        ga = numpyro.deterministic("ga", jnp.exp(X@delta))
+
         beta_mat = beta[:, None] + jnp.hstack((delta, jnp.zeros((k,1))))
-        R = numpyro.deterministic("R", jnp.exp((X@beta_mat)))
+        _R = numpyro.deterministic("R", jnp.exp((X@beta_mat)))
+
+        # Add forecasted R
+        if forecast_L > 0:
+            R_forecast = numpyro.deterministic(
+                "R_forecast",
+                jnp.vstack((_R[-1,:],)*forecast_L)
+                 )
+            R = jnp.vstack((_R, R_forecast))
+        else:
+            R = _R
 
         with numpyro.plate("N_variant", N_variant):
             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
@@ -289,12 +338,12 @@ def _GARW_model_factory(g_rev, delays, seed_L):
         rho_vec = reporting_to_vec(rho, T)
 
         I_prev = jnp.clip(v_fs_I(I0, R, g_rev, delays, seed_L),  a_min=0., a_max=1e25)
-        I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * I_prev[seed_L:,:])
+        I_smooth = numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * jnp.take(I_prev, obs_range, axis=0))
 
         # Compute expected cases
         total_prev = I_prev.sum(axis=1)
-        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * total_prev[seed_L:])
-        EC = numpyro.deterministic("EC", total_prev[seed_L:] * rho_vec)
+        total_smooth_prev = numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * jnp.take(total_prev, obs_range))
+        EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # NegativeBinomial sampling per region
         raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
@@ -303,8 +352,9 @@ def _GARW_model_factory(g_rev, delays, seed_L):
                         obs=cases)
 
         # Compute frequency
-        freq = numpyro.deterministic("freq", jnp.divide(I_prev, total_prev[:, None])[seed_L:, :])
-        R_ave = numpyro.deterministic("R_ave", (R * freq).sum(axis=1))
+        _freq = jnp.divide(I_prev, total_prev[:, None])
+        freq = numpyro.deterministic("freq", jnp.take(_freq, obs_range, axis=0))
+        R_ave = numpyro.deterministic("R_ave", (_R * freq).sum(axis=1))
         
         # Over-dispersion parameter for multinomial
         xi = numpyro.sample("xi", dist.Beta(1, 99))
@@ -313,5 +363,8 @@ def _GARW_model_factory(g_rev, delays, seed_L):
         numpyro.sample("Y",
                         dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
                         obs=seq_counts)               
-
+        if forecast_L > 0:
+             numpyro.deterministic("freq_forecast", _freq[(seed_L+T):, :])
+             numpyro.deterministic("I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L+T):,:])
+                                         
     return _lineage_model
