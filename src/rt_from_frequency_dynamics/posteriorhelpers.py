@@ -55,6 +55,52 @@ def get_growth_advantage(dataset, LD, ps, name, rel_to="other"):
 
     return v_dict
 
+def get_growth_advantage_time(dataset, LD, ps, name, rel_to="other"):
+    ga = jnp.squeeze(dataset.posterior["ga"].values, axis=0)
+    freq_medians = dataset.posterior["freq"].median(dim="draw").values[0]
+    ga = jnp.concatenate((ga, jnp.ones(ga.shape[:2])[:, :, None]), axis=-1)
+
+    seq_names = LD.seq_names
+    N_variant = len(seq_names)
+    T = len(LD.dates)
+    
+    # Loop over ga and make relative rel_to
+    for i,s in enumerate(seq_names):
+        if s == rel_to:
+            ga = jnp.divide(ga, ga[:,:, i][:, :, None])
+
+    # Compute medians and quantiles
+    ga_meds = jnp.median(ga,axis=0)
+    gas = []
+    for i,p in enumerate(ps):
+        up = 0.5 + p/2
+        lp = 0.5 - p/2
+        gas.append(jnp.quantile(ga, jnp.array([lp, up]), axis=0).T)
+    
+    # Make empty dictionary
+    v_dict = dict()
+    v_dict["date"] = []
+    v_dict["location"] = []
+    v_dict["variant"] = []
+    v_dict["median_ga"] = []
+    v_dict["median_freq"] = []
+   
+    for p in ps:
+        v_dict[f"ga_upper_{round(p * 100)}"] = []
+        v_dict[f"ga_lower_{round(p * 100)}"] = []
+
+    for variant in range(N_variant):
+        if seq_names[variant] != rel_to:
+            v_dict["date"] += LD.dates
+            v_dict["location"] += [name]*T
+            v_dict["variant"] += [seq_names[variant]] * T
+            v_dict["median_ga"] += list(ga_meds[:,variant])
+            v_dict["median_freq"] += list(freq_medians[:,variant])
+            for i,p in enumerate(ps):
+                v_dict[f"ga_upper_{round(p * 100)}"] += list(gas[i][variant, :, 1])
+                v_dict[f"ga_lower_{round(p * 100)}"] += list(gas[i][variant, :, 0])
+    return v_dict
+
 def get_R(dataset, LD, ps, name):
     R_medians = dataset.posterior["R"].median(dim="draw").values[0]
     freq_medians = dataset.posterior["freq"].median(dim="draw").values[0]

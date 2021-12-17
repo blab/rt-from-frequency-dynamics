@@ -27,11 +27,20 @@ def get_quants(dataset, ps, var):
     med = get_median(dataset, var)
     return med, V
 
-def plot_R(ax, dataset, ps, alphas, colors):
+def plot_R(ax, dataset, ps, alphas, colors, forecast=False):
     med, R =  get_quants(dataset, ps, "R")
     t = jnp.arange(0, R[-1].shape[0], 1)
     N_lineage = R[-1].shape[1]
     
+    if forecast:
+        med_f, R_f = get_quants(dataset, ps, "R_forecast")
+        t_f = jnp.arange(0, R_f[-1].shape[0], 1) + t[-1] + 1
+        
+        t = jnp.concatenate((t,t_f))
+        med = jnp.concatenate((med, med_f))
+        for i in range(len(ps)):
+            R[i] = jnp.concatenate([R[i], R_f[i]])
+
     # Make figure
     ax.axhline(y=1.0, color='k', linestyle='--')
     for lineage in range(N_lineage):
@@ -41,12 +50,23 @@ def plot_R(ax, dataset, ps, alphas, colors):
         ax.plot(t, med[:, lineage],
                 color=colors[lineage])
 
-def plot_R_censored(ax, dataset, ps, alphas, colors, thres=0.001):
+def plot_R_censored(ax, dataset, ps, alphas, colors, forecast=False, thres=0.001):
     med, R =  get_quants(dataset, ps, "R")
     t = jnp.arange(0, R[-1].shape[0], 1)
     N_lineage = R[-1].shape[1]
     med_freq = get_median(dataset, "freq")
     
+    if forecast:
+        med_f, R_f = get_quants(dataset, ps, "R_forecast")
+        med_freq_f = get_median(dataset, "freq_forecast")
+        t_f = jnp.arange(0, R_f[-1].shape[0], 1) + t[-1] + 1
+        
+        t = jnp.concatenate((t,t_f))
+        med = jnp.concatenate((med, med_f))
+        med_freq = jnp.concatenate((med_freq, med_freq_f))
+        for i in range(len(ps)):
+            R[i] = jnp.concatenate([R[i], R_f[i]])
+
     # Make figure
     ax.axhline(y=1.0, color='k', linestyle='--')
     for lineage in range(N_lineage):
@@ -67,12 +87,23 @@ def plot_posterior_average_R(ax, dataset, ps, alphas, color):
         ax.fill_between(t, V[i][:, 0], V[i][:, 1], color=color, alpha = alphas[i])
     ax.plot(t, med, color=color)
 
-def plot_little_r_censored(ax, dataset, g, ps, alphas, colors, thres=0.001):
+def plot_little_r_censored(ax, dataset, g, ps, alphas, colors, forecast=False, thres=0.001):
     med, R =  get_quants(dataset, ps, "R")
     t = jnp.arange(0, R[-1].shape[0], 1)
     N_lineage = R[-1].shape[1]
     med_freq = get_median(dataset, "freq")
     
+    if forecast:
+        med_f, R_f = get_quants(dataset, ps, "R_forecast")
+        med_freq_f = get_median(dataset, "freq_forecast")
+        t_f = jnp.arange(0, R_f[-1].shape[0], 1) + t[-1] + 1
+        
+        t = jnp.concatenate((t,t_f))
+        med = jnp.concatenate((med, med_f))
+        med_freq = jnp.concatenate((med_freq, med_freq_f))
+        for i in range(len(ps)):
+            R[i] = jnp.concatenate([R[i], R_f[i]])
+
     # Get generation time
     mn = np.sum([p * (x+1) for x, p in enumerate(g)]) # Get mean of discretized generation time
     sd = np.sqrt(np.sum([p * (x+1) **2 for x, p in enumerate(g)])-mn**2) # Get sd of discretized generation time
@@ -94,10 +125,19 @@ def plot_little_r_censored(ax, dataset, g, ps, alphas, colors, thres=0.001):
         ax.plot(t[include], _to_little_r(med[include, lineage]),
                 color=colors[lineage])   
 
-def plot_posterior_frequency(ax, dataset, ps, alphas, colors):
+def plot_posterior_frequency(ax, dataset, ps, alphas, colors, forecast=False):
     med, V =  get_quants(dataset, ps, "freq")
     t = jnp.arange(0, V[-1].shape[0], 1)
     N_lineage = V[-1].shape[1]
+    
+    if forecast:
+        med_f, V_f = get_quants(dataset, ps, "freq_forecast")
+        t_f = jnp.arange(0, V_f[-1].shape[0], 1) + t[-1] + 1
+        
+        t = jnp.concatenate((t,t_f))
+        med = jnp.concatenate((med, med_f))
+        for i in range(len(ps)):
+            V[i] = jnp.concatenate([V[i], V_f[i]])
     
     # Make figure
     for lineage in range(N_lineage):
@@ -123,11 +163,20 @@ def plot_observed_frequency_size(ax, LD, colors, size):
     for lineage in range(N_lineage):
         ax.scatter(t, obs_freq[:, lineage], color=colors[lineage], s=sizes, edgecolor="black")
 
-def plot_posterior_I(ax, dataset, ps, alphas, colors):
+def plot_posterior_I(ax, dataset, ps, alphas, colors, forecast=False):
     med, V =  get_quants(dataset, ps, "I_smooth")
     t = jnp.arange(0, V[-1].shape[0], 1)
     N_lineage = V[-1].shape[1]
     
+    if forecast:
+        med_f, V_f = get_quants(dataset, ps, "I_forecast")
+        t_f = jnp.arange(0, V_f[-1].shape[0], 1) + t[-1] + 1
+        
+        t = jnp.concatenate((t,t_f))
+        med = jnp.concatenate((med, med_f))
+        for i in range(len(ps)):
+            V[i] = jnp.concatenate([V[i], V_f[i]])
+
     # Make figure
     for lineage in range(N_lineage):
         for i in range(len(ps)):

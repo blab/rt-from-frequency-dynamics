@@ -23,7 +23,7 @@ class FixedGrowthModel(LineageModel):
     
     def make_model(self):
         # Model factory which inputs the desired thingy
-        self.model = _fixed_lineage_model_factory(self.g_rev, self.delays, self.seed_L)
+        self.model = _fixed_lineage_model_factory(self.g_rev, self.delays, self.seed_L, self.forecast_L)
         # self.guide = _fixed_lineage_guide_factory(self.g_rev, self.delays, self.seed_L)
 
 
@@ -39,7 +39,7 @@ class FreeGrowthModel(LineageModel):
         self.make_model()
     
     def make_model(self):
-        self.model = _free_lineage_model_factory(self.g_rev, self.delays, self.seed_L)
+        self.model = _free_lineage_model_factory(self.g_rev, self.delays, self.seed_L, self.forecast_L)
 
 class DecompGrowthModel(LineageModel):
     def __init__(self, g, delays, phi_0, seed_L, forecast_L):
@@ -66,4 +66,4 @@ class GARandomWalkModel(LineageModel):
         self.make_model()
 
     def make_model(self):
-        self.model = _GARW_model_factory(self.g_rev, self.delays, self.seed_L)
+        self.model = _GARW_model_factory(self.g_rev, self.delays, self.seed_L, self.forecast_L)
