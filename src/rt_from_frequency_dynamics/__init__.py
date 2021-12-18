@@ -3,8 +3,8 @@ from .datahelpers import prep_dates, prep_cases, prep_sequence_counts
 
 from .modeldata import LineageData
 
-from .modelhelpers import continuous_dist_to_pmf, discretise_gamma, discretise_lognorm,pad_delays, get_standard_delays
-from .modelhelpers import make_breakpoint_splines
+from .modelhelpers import continuous_dist_to_pmf, discretise_gamma, discretise_lognorm, is_obs_idx,pad_delays, get_standard_delays
+from .modelhelpers import make_breakpoint_splines, is_obs_idx, pad_to_obs
 
 from .modelfunctions import get_infections, apply_delay, forward_simulate_I, reporting_to_vec 
 
