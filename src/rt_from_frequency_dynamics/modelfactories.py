@@ -2,7 +2,7 @@ import jax.numpy as jnp
 from jax.scipy.special import expit
 import numpyro
 import numpyro.distributions as dist
-from numpyro.primitives import deterministic
+from .modelhelpers import is_obs_idx, pad_to_obs 
 from .modelfunctions import v_fs_I, reporting_to_vec
 from .LAS import LaplaceRandomWalk
 
@@ -13,6 +13,13 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
         T, k = X.shape
 
         obs_range = jnp.arange(seed_L, seed_L+T, 1)
+
+        # Getting observed values
+        is_obs_c = is_obs_idx(cases)
+        _cases = jnp.nan_to_num(cases)
+
+        _seq_counts = jnp.nan_to_num(seq_counts)
+        _N = jnp.nan_to_num(N)
 
         # Locally adaptive smoothing on base R trajectories
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
@@ -52,10 +59,10 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
         EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # NegativeBinomial sampling per region
-        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
+        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.01))
         numpyro.sample("cases",
-                        dist.NegativeBinomial2(mean=EC, concentration=jnp.power(raw_alpha, -2)),
-                        obs=cases)
+                        dist.NegativeBinomial2(mean=pad_to_obs(EC, is_obs_c), concentration=jnp.power(raw_alpha, -2)),
+                        obs=_cases)
 
         # Compute frequency
         _freq = jnp.divide(I_prev, total_prev[:, None])
@@ -67,8 +74,8 @@ def _fixed_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
         trans_xi = jnp.reciprocal(xi) - 1
 
         numpyro.sample("Y",
-                        dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
-                        obs=seq_counts)               
+                        dist.DirichletMultinomial(total_count=_N, concentration= 1e-8 + trans_xi*freq),
+                        obs=_seq_counts)               
         if forecast_L > 0:
              numpyro.deterministic("freq_forecast", _freq[(seed_L+T):, :])
              numpyro.deterministic("I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L+T):,:])
@@ -161,6 +168,13 @@ def _free_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
 
         obs_range = jnp.arange(seed_L, seed_L+T, 1)
 
+        # Getting observed values
+        is_obs_c = is_obs_idx(cases)
+        _cases = jnp.nan_to_num(cases)
+
+        _seq_counts = jnp.nan_to_num(seq_counts)
+        _N = jnp.nan_to_num(N)
+
         # Locally adaptive smoothing on all R trajectories
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
         with numpyro.plate("variant_beta", N_variant):
@@ -196,10 +210,10 @@ def _free_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
         EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # NegativeBinomial sampling per region
-        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
+        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.01))
         numpyro.sample("cases",
-                        dist.NegativeBinomial2(mean=EC, concentration=jnp.power(raw_alpha, -2)),
-                        obs=cases)
+                        dist.NegativeBinomial2(mean=pad_to_obs(EC,is_obs_c), concentration=jnp.power(raw_alpha, -2)),
+                        obs=_cases)
 
         # Compute frequency
         _freq = jnp.divide(I_prev, total_prev[:, None])
@@ -211,8 +225,8 @@ def _free_lineage_model_factory(g_rev, delays, seed_L, forecast_L):
         trans_xi = jnp.reciprocal(xi) - 1
 
         numpyro.sample("Y",
-                        dist.DirichletMultinomial(total_count=N, concentration=1e-8+trans_xi*freq),
-                        obs=seq_counts)               
+                        dist.DirichletMultinomial(total_count=_N, concentration=1e-8+trans_xi*freq),
+                        obs=_seq_counts)               
         if forecast_L > 0:
              numpyro.deterministic("freq_forecast", _freq[(seed_L+T):, :])
              numpyro.deterministic("I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L+T):,:])        
@@ -301,6 +315,13 @@ def _GARW_model_factory(g_rev, delays, seed_L, forecast_L):
 
         obs_range = jnp.arange(seed_L, seed_L+T, 1)
 
+        # Getting observed values
+        is_obs_c = is_obs_idx(cases)
+        _cases = jnp.nan_to_num(cases)
+
+        _seq_counts = jnp.nan_to_num(seq_counts)
+        _N = jnp.nan_to_num(N)
+
         # Time varying base trajectory
         gam = numpyro.sample("gam", dist.HalfCauchy(0.5))
         beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
@@ -346,10 +367,10 @@ def _GARW_model_factory(g_rev, delays, seed_L, forecast_L):
         EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # NegativeBinomial sampling per region
-        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.1))
+        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(0.01))
         numpyro.sample("cases",
-                        dist.NegativeBinomial2(mean=EC, concentration=jnp.power(raw_alpha, -2)),
-                        obs=cases)
+                        dist.NegativeBinomial2(mean=pad_to_obs(EC, is_obs_c), concentration=jnp.power(raw_alpha, -2)),
+                        obs=_cases)
 
         # Compute frequency
         _freq = jnp.divide(I_prev, total_prev[:, None])
@@ -361,8 +382,8 @@ def _GARW_model_factory(g_rev, delays, seed_L, forecast_L):
         trans_xi = jnp.reciprocal(xi) - 1
 
         numpyro.sample("Y",
-                        dist.DirichletMultinomial(total_count=N, concentration= 1e-8 + trans_xi*freq),
-                        obs=seq_counts)               
+                        dist.DirichletMultinomial(total_count=_N, concentration= 1e-8 + trans_xi*freq),
+                        obs=_seq_counts)               
         if forecast_L > 0:
              numpyro.deterministic("freq_forecast", _freq[(seed_L+T):, :])
              numpyro.deterministic("I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L+T):,:])

@@ -1,4 +1,5 @@
-from .datahelpers import prep_cases, prep_sequence_counts, prep_vaccination
+import pandas as pd
+from .datahelpers import prep_dates, prep_cases, prep_sequence_counts, prep_vaccination
 from .modelhelpers import make_breakpoint_splines
 # Abstract class ModelData
 
@@ -11,15 +12,9 @@ class AggregateData():
 
 class LineageData():
     def __init__(self, raw_cases, raw_seqs):
-        self.seq_names, dates_s, seq_counts = prep_sequence_counts(raw_seqs)
-        dates_c, cases = prep_cases(raw_cases)
-
-        idx_retain_s = [i for i,d in enumerate(dates_s) if d in dates_c] 
-        idx_retain_c = [i for i,d in enumerate(dates_c) if d in dates_s]
-
-        self.dates = [dates_s[i] for i in idx_retain_s]
-        self.seq_counts = seq_counts[idx_retain_s, :]
-        self.cases = cases[idx_retain_c]
+        self.dates, date_to_index = prep_dates(pd.concat((raw_cases.date, raw_seqs.date)))
+        self.cases = prep_cases(raw_cases, date_to_index=date_to_index)
+        self.seq_names, self.seq_counts = prep_sequence_counts(raw_seqs, date_to_index=date_to_index)
 
     def make_numpyro_input(self, k=20): # Eventually want to seperate this k out into r_model
         data = dict()
