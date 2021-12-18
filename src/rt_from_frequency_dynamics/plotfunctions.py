@@ -1,8 +1,7 @@
 import arviz as az
 import jax.numpy as jnp
 import numpy as np
-import matplotlib.pyplot as plt
-
+import datetime
 
 # Plot aes
 class DefaultAes():
@@ -13,6 +12,12 @@ class DefaultAes():
 
 def define_color_map(color, seq_names):
     return {s:c for c,s in zip(color, seq_names)}
+
+def expand_dates(dates, T_forecast):
+    x_dates = dates.copy()
+    for d in range(T_forecast):
+        x_dates.append(dates[-1] + datetime.timedelta(days=d))
+    return x_dates
 
 def get_quantile(dataset, p, var):
     return jnp.array(az.hdi(dataset, var_names=var, hdi_prob=p)[var])
