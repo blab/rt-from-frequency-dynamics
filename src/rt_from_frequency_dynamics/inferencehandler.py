@@ -127,8 +127,8 @@ class MCMCHandler():
 
 
     def predict(self, model, data, **kwargs):
-        predictive = Predictive(model, params=self.params, **kwargs)
+        predictive = Predictive(model, self.params)
         self.rng_key, rng_key_ = random.split(self.rng_key)
-        return predictive(rng_key_, **data)
+        return to_arviz(predictive(rng_key_, **data))
 
     
