@@ -16,7 +16,7 @@ def define_color_map(color, seq_names):
 def expand_dates(dates, T_forecast):
     x_dates = dates.copy()
     for d in range(T_forecast):
-        x_dates.append(dates[-1] + datetime.timedelta(days=d))
+        x_dates.append(dates[-1] + datetime.timedelta(days=d+1))
     return x_dates
 
 def get_quantile(dataset, p, var):

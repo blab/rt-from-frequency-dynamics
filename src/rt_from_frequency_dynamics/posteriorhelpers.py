@@ -2,13 +2,13 @@ import arviz as az
 import jax.numpy as jnp
 import numpy as np
 
+from .datahelpers import forecast_dates
 
 def reshape_for_arviz(samples):
     new_samples = dict()
     for key, _ in samples.items():
         new_samples[key] = jnp.expand_dims(samples[key], 0)
     return new_samples
-
 
 def to_arviz(samples):
     dataset = az.convert_to_inference_data(reshape_for_arviz(samples))
@@ -101,18 +101,26 @@ def get_growth_advantage_time(dataset, LD, ps, name, rel_to="other"):
                 v_dict[f"ga_lower_{round(p * 100)}"] += list(gas[i][variant, :, 0])
     return v_dict
 
-def get_R(dataset, LD, ps, name):
-    R_medians = dataset.posterior["R"].median(dim="draw").values[0]
-    freq_medians = dataset.posterior["freq"].median(dim="draw").values[0]
+def get_R(dataset, LD, ps, name, forecast=False):
+    var_name = "R"
+    f_name = "freq"
+    if forecast:
+        var_name += "_forecast"
+        f_name += "_forecast"
+
+    R_medians = dataset.posterior[var_name].median(dim="draw").values[0]
+    freq_medians = dataset.posterior[f_name].median(dim="draw").values[0]
     N_variant = R_medians.shape[1]
     T = R_medians.shape[0]
 
     seq_names = LD.seq_names
     dates = LD.dates
+    if forecast:
+        dates = forecast_dates(dates, T)
 
     R = []
     for i in range(len(ps)):
-        R.append(jnp.array(az.hdi(dataset, var_names="R", hdi_prob=ps[i])["R"]))
+        R.append(jnp.array(az.hdi(dataset, var_names=var_name, hdi_prob=ps[i])[var_name]))
 
     R_dict = dict()
     R_dict["date"] = []
@@ -137,7 +145,13 @@ def get_R(dataset, LD, ps, name):
 
     return R_dict
 
-def get_little_r(dataset, g, LD, ps, name):
+def get_little_r(dataset, g, LD, ps, name, forecast=False):
+    var_name = "R"
+    f_name = "freq"
+    if forecast:
+        var_name += "_forecast"
+        f_name += "_forecast"
+
     # Get generation time
     mn = np.sum([p * (x+1) for x, p in enumerate(g)]) # Get mean of discretized generation time
     sd = np.sqrt(np.sum([p * (x+1) **2 for x, p in enumerate(g)])-mn**2) # Get sd of discretized generation time
@@ -148,17 +162,19 @@ def get_little_r(dataset, g, LD, ps, name):
     def _to_little_r(R):
         return (jnp.float_power(R, e_) - 1) * l
     
-    R_medians = dataset.posterior["R"].median(dim="draw").values[0]
-    freq_medians = dataset.posterior["freq"].median(dim="draw").values[0]
+    R_medians = dataset.posterior[var_name].median(dim="draw").values[0]
+    freq_medians = dataset.posterior[f_name].median(dim="draw").values[0]
     N_variant = R_medians.shape[1]
     T = R_medians.shape[0]
 
     seq_names = LD.seq_names
     dates = LD.dates
+    if forecast:
+        dates = forecast_dates(LD.dates, T)
     
     R = []
     for i in range(len(ps)):
-        R.append(jnp.array(az.hdi(dataset, var_names="R", hdi_prob=ps[i])["R"]))
+        R.append(jnp.array(az.hdi(dataset, var_names=var_name, hdi_prob=ps[i])[var_name]))
 
     r_dict = dict()
     r_dict["date"] = []
@@ -183,17 +199,23 @@ def get_little_r(dataset, g, LD, ps, name):
 
     return r_dict
 
-def get_I(dataset, LD, ps, name):
-    medians = jnp.round(dataset.posterior["I_smooth"].median(dim="draw").values[0])
+def get_I(dataset, LD, ps, name, forecast=False):
+    var_name = "I_smooth"
+    if forecast:
+        var_name = "I_forecast"
+
+    medians = jnp.round(dataset.posterior[var_name].median(dim="draw").values[0])
     N_variant = medians.shape[1]
     T = medians.shape[0]
 
     seq_names = LD.seq_names
     dates = LD.dates
+    if forecast:
+        dates = forecast_dates(LD.dates, T)
 
     I = []
     for i in range(len(ps)):
-        I.append(jnp.rint(jnp.array(az.hdi(dataset, var_names="I_smooth", hdi_prob=ps[i])["I_smooth"])))
+        I.append(jnp.rint(jnp.array(az.hdi(dataset, var_names=var_name, hdi_prob=ps[i])[var_name])))
 
     I_dict = dict()
     I_dict["date"] = []

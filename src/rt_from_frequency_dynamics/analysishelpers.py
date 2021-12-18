@@ -70,16 +70,16 @@ def unpack_model(MP, name):
     posterior = MP.get(name)
     return posterior.dataset, posterior.LD
 
-def gather_R(MP, ps):
+def gather_R(MP, ps, forecast=False):
     R_dfs = []
     for name, p in MP.locator.items():
-        R_dfs.append(pd.DataFrame(get_R(p.dataset, p.LD, ps, name)))
+        R_dfs.append(pd.DataFrame(get_R(p.dataset, p.LD, ps, name, forecast=forecast)))
     return pd.concat(R_dfs)
 
-def gather_little_r(MP, ps, g):
+def gather_little_r(MP, ps, g, forecast=False):
     r_dfs = []
     for name, p in MP.locator.items():
-        r_dfs.append(pd.DataFrame(get_little_r(p.dataset, g, p.LD, ps, name)))
+        r_dfs.append(pd.DataFrame(get_little_r(p.dataset, g, p.LD, ps, name, forecast=forecast)))
     return pd.concat(r_dfs)
 
 def gather_ga(MP, ps, rel_to="other"):
@@ -94,8 +94,8 @@ def gather_ga_time(MP, ps, rel_to="other"):
         ga_dfs.append(pd.DataFrame(get_growth_advantage_time(p.dataset, p.LD, ps, name, rel_to=rel_to)))
     return pd.concat(ga_dfs)
 
-def gather_I(MP, ps):
+def gather_I(MP, ps, forecast=False):
     I_dfs = []
     for name, p in MP.locator.items():
-        I_dfs.append(pd.DataFrame(get_I(p.dataset, p.LD, ps, name)))
+        I_dfs.append(pd.DataFrame(get_I(p.dataset, p.LD, ps, name, forecast=forecast)))
     return pd.concat(I_dfs)
