@@ -2,9 +2,11 @@
 
 ## Growth advantage random walk (GARW) $R_{t}$ model
 
+All projections are 7-day projections assuming no change in underlying growth rates. Projection period begins with gray dotted line.
+
 ### Case estimates and projections
 
-This figure shows posterior variant-specific incidence obtained from our GARW model. This includes a 7 day forward projection assuming growth rates are unchanged.
+This figure shows posterior variant-specific incidence obtained from our GARW model. 
 
 ![](figures/omicron-countries_cases-estimates-GARW.png)
 
