@@ -1,6 +1,6 @@
 # Results for SGTF in King County
 
-This is using SGTF as a proxy for "probable Omicron". [SGTF data](https://github.com/proychou/sgtf) was generously shared by UW Virology.
+This is using SGTF as a proxy for "probable Omicron". SGTF data from [UW Virology](https://github.com/proychou/sgtf) and Seattle Flu Study.
 
 ## Variant frequencies
 
@@ -42,7 +42,13 @@ These outputs are using the "fixed growth" model.
 
 #### Variant-specific daily case counts
 
+#### Log y-axis
+
 ![](figures/sgtf-king-county_variant-estimated-log-cases.png)
+
+#### Natural y-axis
+
+![](figures/sgtf-king-county_variant-estimated-cases.png)
 
 ## Updating
 
