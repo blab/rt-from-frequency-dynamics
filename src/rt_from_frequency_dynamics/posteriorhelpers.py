@@ -237,3 +237,42 @@ def get_I(dataset, LD, ps, name, forecast=False):
             I_dict[f"I_lower_{round(ps[i] * 100)}"] += list(I[i][:, variant, 0])
 
     return I_dict
+
+def get_freq(dataset, LD, ps, name, forecast=False):
+    var_name = "freq"
+    if forecast:
+        var_name = "freq_forecast"
+
+    medians = dataset.posterior[var_name].median(dim="draw").values[0]
+    N_variant = medians.shape[1]
+    T = medians.shape[0]
+
+    seq_names = LD.seq_names
+    dates = LD.dates
+    if forecast:
+        dates = forecast_dates(LD.dates, T)
+
+    P = []
+    for i in range(len(ps)):
+        P.append(jnp.array(az.hdi(dataset, var_names=var_name, hdi_prob=ps[i])[var_name]))
+
+    freq_dict = dict()
+    freq_dict["date"] = []
+    freq_dict["location"] = []
+    freq_dict["variant"] = []
+    freq_dict["median_freq"] = []
+        
+    for p in ps:
+        freq_dict[f"freq_upper_{round(p * 100)}"] = []
+        freq_dict[f"freq_lower_{round(p * 100)}"] = []
+        
+    for variant in range(N_variant):
+        freq_dict["date"] += list(dates)
+        freq_dict["location"] += [name] * T
+        freq_dict["variant"] += [seq_names[variant]] * T
+        freq_dict["median_freq"] += list(medians[:, variant])
+        for i,p in enumerate(ps):
+            freq_dict[f"freq_upper_{round(ps[i] * 100)}"] += list(P[i][:, variant, 1])
+            freq_dict[f"freq_lower_{round(ps[i] * 100)}"] += list(P[i][:, variant, 0])
+
+    return freq_dict

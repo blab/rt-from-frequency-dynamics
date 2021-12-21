@@ -4,7 +4,7 @@ import numpyro
 from numpyro.infer.autoguide import AutoMultivariateNormal
 
 from rt_from_frequency_dynamics import LineageData
-from rt_from_frequency_dynamics import get_R, get_growth_advantage, get_growth_advantage_time, get_little_r, get_I
+from rt_from_frequency_dynamics import get_R, get_growth_advantage, get_growth_advantage_time, get_little_r, get_I, get_freq
 from rt_from_frequency_dynamics import SVIHandler, PosteriorHandler, MultiPosterior
 
 def get_location_LineageData(rc, rs, loc):
@@ -99,3 +99,9 @@ def gather_I(MP, ps, forecast=False):
     for name, p in MP.locator.items():
         I_dfs.append(pd.DataFrame(get_I(p.dataset, p.LD, ps, name, forecast=forecast)))
     return pd.concat(I_dfs)
+
+def gather_freq(MP, ps, forecast=False):
+    freq_dfs = []
+    for name, p in MP.locator.items():
+        freq_dfs.append(pd.DataFrame(get_freq(p.dataset, p.LD, ps, name, forecast=forecast)))
+    return pd.concat(freq_dfs)
