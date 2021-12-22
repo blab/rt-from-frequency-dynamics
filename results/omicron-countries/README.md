@@ -28,7 +28,7 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 ## Model outputs
 
-These outputs are using the "fixed growth" model.
+These outputs are using the growth advantage random walk (GARW) model.
 
 #### Variant-specific Rt
 
@@ -47,6 +47,20 @@ These outputs are using the "fixed growth" model.
 ##### Natural y axis
 
 ![](figures/omicron-countries_variant-estimated-cases.png)
+
+## "Ecological" comparisons
+
+#### Omicron epidemic growth rate _r_ vs fraction vaccinated
+
+![](figures/omicron-countries_r-vs-vaccinated-fraction.png)
+
+#### Omicron epidemic growth rate _r_ vs fraction boosted
+
+![](figures/omicron-countries_r-vs-boosted-fraction.png)
+
+#### Omicron epidemic growth rate _r_ vs cumulative cases
+
+![](figures/omicron-countries_r-vs-infected-fraction.png)
 
 ## Updating
 
