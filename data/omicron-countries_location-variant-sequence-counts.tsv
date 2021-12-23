@@ -40,7 +40,7 @@ date	location	variant	sequences
 2021-11-02	Australia	Delta	138
 2021-11-03	Australia	Delta	170
 2021-11-04	Australia	Delta	148
-2021-11-05	Australia	Delta	115
+2021-11-05	Australia	Delta	116
 2021-11-06	Australia	Delta	91
 2021-11-07	Australia	Delta	146
 2021-11-08	Australia	Delta	166
@@ -79,6 +79,7 @@ date	location	variant	sequences
 2021-12-11	Australia	Delta	49
 2021-12-12	Australia	Delta	32
 2021-12-13	Australia	Delta	6
+2021-12-14	Australia	Delta	3
 2021-11-26	Australia	Omicron	1
 2021-11-27	Australia	Omicron	3
 2021-11-28	Australia	Omicron	4
@@ -93,9 +94,10 @@ date	location	variant	sequences
 2021-12-08	Australia	Omicron	15
 2021-12-09	Australia	Omicron	28
 2021-12-10	Australia	Omicron	25
-2021-12-11	Australia	Omicron	21
+2021-12-11	Australia	Omicron	22
 2021-12-12	Australia	Omicron	141
-2021-12-13	Australia	Omicron	18
+2021-12-13	Australia	Omicron	19
+2021-12-14	Australia	Omicron	19
 2021-10-02	Canada	other	2
 2021-10-05	Canada	other	1
 2021-10-07	Canada	other	2
@@ -108,8 +110,7 @@ date	location	variant	sequences
 2021-11-15	Canada	other	1
 2021-11-29	Canada	other	2
 2021-11-30	Canada	other	4
-2021-12-02	Canada	other	1
-2021-12-03	Canada	other	2
+2021-12-07	Canada	other	1
 2021-10-02	Canada	other	2
 2021-10-05	Canada	other	1
 2021-10-07	Canada	other	2
@@ -122,8 +123,7 @@ date	location	variant	sequences
 2021-11-15	Canada	other	1
 2021-11-29	Canada	other	2
 2021-11-30	Canada	other	4
-2021-12-02	Canada	other	1
-2021-12-03	Canada	other	2
+2021-12-07	Canada	other	1
 2021-10-01	Canada	Delta	558
 2021-10-02	Canada	Delta	374
 2021-10-03	Canada	Delta	585
@@ -169,52 +169,54 @@ date	location	variant	sequences
 2021-11-12	Canada	Delta	316
 2021-11-13	Canada	Delta	199
 2021-11-14	Canada	Delta	275
-2021-11-15	Canada	Delta	445
-2021-11-16	Canada	Delta	373
-2021-11-17	Canada	Delta	336
-2021-11-18	Canada	Delta	354
-2021-11-19	Canada	Delta	452
-2021-11-20	Canada	Delta	227
-2021-11-21	Canada	Delta	180
-2021-11-22	Canada	Delta	378
-2021-11-23	Canada	Delta	373
-2021-11-24	Canada	Delta	437
-2021-11-25	Canada	Delta	298
-2021-11-26	Canada	Delta	353
-2021-11-27	Canada	Delta	221
-2021-11-28	Canada	Delta	244
-2021-11-29	Canada	Delta	581
-2021-11-30	Canada	Delta	527
-2021-12-01	Canada	Delta	501
-2021-12-02	Canada	Delta	293
-2021-12-03	Canada	Delta	102
-2021-12-04	Canada	Delta	146
-2021-12-05	Canada	Delta	81
-2021-12-06	Canada	Delta	142
-2021-12-07	Canada	Delta	55
+2021-11-15	Canada	Delta	448
+2021-11-16	Canada	Delta	383
+2021-11-17	Canada	Delta	340
+2021-11-18	Canada	Delta	359
+2021-11-19	Canada	Delta	458
+2021-11-20	Canada	Delta	235
+2021-11-21	Canada	Delta	184
+2021-11-22	Canada	Delta	393
+2021-11-23	Canada	Delta	388
+2021-11-24	Canada	Delta	449
+2021-11-25	Canada	Delta	302
+2021-11-26	Canada	Delta	355
+2021-11-27	Canada	Delta	222
+2021-11-28	Canada	Delta	245
+2021-11-29	Canada	Delta	593
+2021-11-30	Canada	Delta	536
+2021-12-01	Canada	Delta	518
+2021-12-02	Canada	Delta	309
+2021-12-03	Canada	Delta	149
+2021-12-04	Canada	Delta	192
+2021-12-05	Canada	Delta	121
+2021-12-06	Canada	Delta	197
+2021-12-07	Canada	Delta	56
 2021-12-08	Canada	Delta	61
 2021-12-09	Canada	Delta	25
 2021-12-10	Canada	Delta	22
 2021-12-11	Canada	Delta	17
+2021-12-12	Canada	Delta	6
 2021-11-23	Canada	Omicron	3
 2021-11-24	Canada	Omicron	2
 2021-11-25	Canada	Omicron	2
 2021-11-26	Canada	Omicron	5
 2021-11-27	Canada	Omicron	4
-2021-11-28	Canada	Omicron	6
+2021-11-28	Canada	Omicron	7
 2021-11-29	Canada	Omicron	5
-2021-11-30	Canada	Omicron	7
+2021-11-30	Canada	Omicron	8
 2021-12-01	Canada	Omicron	4
-2021-12-02	Canada	Omicron	8
-2021-12-03	Canada	Omicron	9
+2021-12-02	Canada	Omicron	9
+2021-12-03	Canada	Omicron	11
 2021-12-04	Canada	Omicron	24
 2021-12-05	Canada	Omicron	12
 2021-12-06	Canada	Omicron	47
 2021-12-07	Canada	Omicron	63
-2021-12-08	Canada	Omicron	99
-2021-12-09	Canada	Omicron	119
+2021-12-08	Canada	Omicron	101
+2021-12-09	Canada	Omicron	120
 2021-12-10	Canada	Omicron	30
 2021-12-11	Canada	Omicron	12
+2021-12-12	Canada	Omicron	6
 2021-10-20	Denmark	other	1
 2021-10-26	Denmark	other	1
 2021-11-12	Denmark	other	1
@@ -223,6 +225,7 @@ date	location	variant	sequences
 2021-12-02	Denmark	other	2
 2021-12-05	Denmark	other	1
 2021-12-06	Denmark	other	1
+2021-12-07	Denmark	other	1
 2021-12-08	Denmark	other	1
 2021-10-20	Denmark	other	1
 2021-10-26	Denmark	other	1
@@ -232,19 +235,20 @@ date	location	variant	sequences
 2021-12-02	Denmark	other	2
 2021-12-05	Denmark	other	1
 2021-12-06	Denmark	other	1
+2021-12-07	Denmark	other	1
 2021-12-08	Denmark	other	1
 2021-10-01	Denmark	Delta	359
 2021-10-02	Denmark	Delta	311
 2021-10-03	Denmark	Delta	368
 2021-10-04	Denmark	Delta	469
 2021-10-05	Denmark	Delta	451
-2021-10-06	Denmark	Delta	553
-2021-10-07	Denmark	Delta	477
+2021-10-06	Denmark	Delta	559
+2021-10-07	Denmark	Delta	478
 2021-10-08	Denmark	Delta	545
 2021-10-09	Denmark	Delta	408
 2021-10-10	Denmark	Delta	508
 2021-10-11	Denmark	Delta	610
-2021-10-12	Denmark	Delta	665
+2021-10-12	Denmark	Delta	666
 2021-10-13	Denmark	Delta	660
 2021-10-14	Denmark	Delta	655
 2021-10-15	Denmark	Delta	583
@@ -252,80 +256,82 @@ date	location	variant	sequences
 2021-10-17	Denmark	Delta	677
 2021-10-18	Denmark	Delta	781
 2021-10-19	Denmark	Delta	887
-2021-10-20	Denmark	Delta	1055
+2021-10-20	Denmark	Delta	1056
 2021-10-21	Denmark	Delta	1257
 2021-10-22	Denmark	Delta	1044
 2021-10-23	Denmark	Delta	1089
-2021-10-24	Denmark	Delta	1145
+2021-10-24	Denmark	Delta	1147
 2021-10-25	Denmark	Delta	1263
 2021-10-26	Denmark	Delta	1078
 2021-10-27	Denmark	Delta	1494
-2021-10-28	Denmark	Delta	1291
-2021-10-29	Denmark	Delta	1151
-2021-10-30	Denmark	Delta	835
+2021-10-28	Denmark	Delta	1305
+2021-10-29	Denmark	Delta	1157
+2021-10-30	Denmark	Delta	838
 2021-10-31	Denmark	Delta	1117
 2021-11-01	Denmark	Delta	1232
-2021-11-02	Denmark	Delta	1602
-2021-11-03	Denmark	Delta	1755
-2021-11-04	Denmark	Delta	1539
-2021-11-05	Denmark	Delta	1640
+2021-11-02	Denmark	Delta	1605
+2021-11-03	Denmark	Delta	1760
+2021-11-04	Denmark	Delta	1540
+2021-11-05	Denmark	Delta	1641
 2021-11-06	Denmark	Delta	1351
-2021-11-07	Denmark	Delta	1882
-2021-11-08	Denmark	Delta	1828
-2021-11-09	Denmark	Delta	2300
-2021-11-10	Denmark	Delta	2246
-2021-11-11	Denmark	Delta	1660
-2021-11-12	Denmark	Delta	1009
-2021-11-13	Denmark	Delta	1078
-2021-11-14	Denmark	Delta	1148
-2021-11-15	Denmark	Delta	2036
-2021-11-16	Denmark	Delta	1434
-2021-11-17	Denmark	Delta	1409
-2021-11-18	Denmark	Delta	1538
-2021-11-19	Denmark	Delta	1818
-2021-11-20	Denmark	Delta	1598
-2021-11-21	Denmark	Delta	1537
-2021-11-22	Denmark	Delta	2146
-2021-11-23	Denmark	Delta	2125
-2021-11-24	Denmark	Delta	1731
-2021-11-25	Denmark	Delta	1707
-2021-11-26	Denmark	Delta	1568
-2021-11-27	Denmark	Delta	1427
-2021-11-28	Denmark	Delta	1484
-2021-11-29	Denmark	Delta	1824
-2021-11-30	Denmark	Delta	1630
-2021-12-01	Denmark	Delta	2298
-2021-12-02	Denmark	Delta	2656
-2021-12-03	Denmark	Delta	2350
-2021-12-04	Denmark	Delta	2864
-2021-12-05	Denmark	Delta	3363
-2021-12-06	Denmark	Delta	4056
-2021-12-07	Denmark	Delta	1418
-2021-12-08	Denmark	Delta	1150
-2021-12-09	Denmark	Delta	376
-2021-12-10	Denmark	Delta	570
-2021-12-11	Denmark	Delta	458
-2021-12-12	Denmark	Delta	216
-2021-12-13	Denmark	Delta	349
+2021-11-07	Denmark	Delta	1885
+2021-11-08	Denmark	Delta	1830
+2021-11-09	Denmark	Delta	2314
+2021-11-10	Denmark	Delta	2248
+2021-11-11	Denmark	Delta	1661
+2021-11-12	Denmark	Delta	1014
+2021-11-13	Denmark	Delta	1083
+2021-11-14	Denmark	Delta	1149
+2021-11-15	Denmark	Delta	2043
+2021-11-16	Denmark	Delta	1440
+2021-11-17	Denmark	Delta	1420
+2021-11-18	Denmark	Delta	1544
+2021-11-19	Denmark	Delta	1823
+2021-11-20	Denmark	Delta	1602
+2021-11-21	Denmark	Delta	1544
+2021-11-22	Denmark	Delta	2151
+2021-11-23	Denmark	Delta	2128
+2021-11-24	Denmark	Delta	1746
+2021-11-25	Denmark	Delta	1732
+2021-11-26	Denmark	Delta	1608
+2021-11-27	Denmark	Delta	1453
+2021-11-28	Denmark	Delta	1517
+2021-11-29	Denmark	Delta	1828
+2021-11-30	Denmark	Delta	1633
+2021-12-01	Denmark	Delta	2306
+2021-12-02	Denmark	Delta	2691
+2021-12-03	Denmark	Delta	2399
+2021-12-04	Denmark	Delta	2921
+2021-12-05	Denmark	Delta	3429
+2021-12-06	Denmark	Delta	4214
+2021-12-07	Denmark	Delta	1605
+2021-12-08	Denmark	Delta	1263
+2021-12-09	Denmark	Delta	465
+2021-12-10	Denmark	Delta	572
+2021-12-11	Denmark	Delta	459
+2021-12-12	Denmark	Delta	217
+2021-12-13	Denmark	Delta	351
+2021-12-14	Denmark	Delta	14
 2021-11-22	Denmark	Omicron	1
 2021-11-23	Denmark	Omicron	1
 2021-11-26	Denmark	Omicron	1
-2021-11-28	Denmark	Omicron	4
+2021-11-28	Denmark	Omicron	5
 2021-11-29	Denmark	Omicron	3
 2021-11-30	Denmark	Omicron	4
-2021-12-01	Denmark	Omicron	31
-2021-12-02	Denmark	Omicron	38
-2021-12-03	Denmark	Omicron	31
-2021-12-04	Denmark	Omicron	60
-2021-12-05	Denmark	Omicron	92
-2021-12-06	Denmark	Omicron	173
-2021-12-07	Denmark	Omicron	100
-2021-12-08	Denmark	Omicron	107
-2021-12-09	Denmark	Omicron	58
+2021-12-01	Denmark	Omicron	32
+2021-12-02	Denmark	Omicron	41
+2021-12-03	Denmark	Omicron	32
+2021-12-04	Denmark	Omicron	61
+2021-12-05	Denmark	Omicron	103
+2021-12-06	Denmark	Omicron	203
+2021-12-07	Denmark	Omicron	147
+2021-12-08	Denmark	Omicron	147
+2021-12-09	Denmark	Omicron	79
 2021-12-10	Denmark	Omicron	59
 2021-12-11	Denmark	Omicron	82
 2021-12-12	Denmark	Omicron	35
 2021-12-13	Denmark	Omicron	90
+2021-12-14	Denmark	Omicron	25
 2021-10-05	France	other	1
 2021-10-07	France	other	1
 2021-10-10	France	other	1
@@ -372,15 +378,15 @@ date	location	variant	sequences
 2021-11-26	France	other	10
 2021-11-28	France	other	5
 2021-11-29	France	other	23
-2021-11-30	France	other	11
-2021-12-01	France	other	9
+2021-11-30	France	other	12
+2021-12-01	France	other	10
 2021-12-02	France	other	8
 2021-12-03	France	other	15
 2021-12-04	France	other	4
 2021-12-05	France	other	4
-2021-12-06	France	other	8
-2021-12-07	France	other	7
-2021-12-08	France	other	4
+2021-12-06	France	other	9
+2021-12-07	France	other	11
+2021-12-08	France	other	7
 2021-12-09	France	other	1
 2021-12-10	France	other	2
 2021-12-11	France	other	2
@@ -430,15 +436,15 @@ date	location	variant	sequences
 2021-11-26	France	other	10
 2021-11-28	France	other	5
 2021-11-29	France	other	23
-2021-11-30	France	other	11
-2021-12-01	France	other	9
+2021-11-30	France	other	12
+2021-12-01	France	other	10
 2021-12-02	France	other	8
 2021-12-03	France	other	15
 2021-12-04	France	other	4
 2021-12-05	France	other	4
-2021-12-06	France	other	8
-2021-12-07	France	other	7
-2021-12-08	France	other	4
+2021-12-06	France	other	9
+2021-12-07	France	other	11
+2021-12-08	France	other	7
 2021-12-09	France	other	1
 2021-12-10	France	other	2
 2021-12-11	France	other	2
@@ -487,33 +493,34 @@ date	location	variant	sequences
 2021-11-12	France	Delta	269
 2021-11-13	France	Delta	110
 2021-11-14	France	Delta	98
-2021-11-15	France	Delta	1602
-2021-11-16	France	Delta	1026
-2021-11-17	France	Delta	856
-2021-11-18	France	Delta	97
-2021-11-19	France	Delta	174
-2021-11-20	France	Delta	147
+2021-11-15	France	Delta	1608
+2021-11-16	France	Delta	1027
+2021-11-17	France	Delta	858
+2021-11-18	France	Delta	107
+2021-11-19	France	Delta	176
+2021-11-20	France	Delta	151
 2021-11-21	France	Delta	166
-2021-11-22	France	Delta	2033
-2021-11-23	France	Delta	411
-2021-11-24	France	Delta	181
-2021-11-25	France	Delta	97
-2021-11-26	France	Delta	122
-2021-11-27	France	Delta	79
-2021-11-28	France	Delta	150
-2021-11-29	France	Delta	3015
-2021-11-30	France	Delta	280
-2021-12-01	France	Delta	111
+2021-11-22	France	Delta	2078
+2021-11-23	France	Delta	413
+2021-11-24	France	Delta	187
+2021-11-25	France	Delta	98
+2021-11-26	France	Delta	126
+2021-11-27	France	Delta	81
+2021-11-28	France	Delta	153
+2021-11-29	France	Delta	3250
+2021-11-30	France	Delta	281
+2021-12-01	France	Delta	112
 2021-12-02	France	Delta	140
-2021-12-03	France	Delta	172
-2021-12-04	France	Delta	91
-2021-12-05	France	Delta	114
-2021-12-06	France	Delta	1336
-2021-12-07	France	Delta	146
-2021-12-08	France	Delta	85
-2021-12-09	France	Delta	56
+2021-12-03	France	Delta	175
+2021-12-04	France	Delta	94
+2021-12-05	France	Delta	126
+2021-12-06	France	Delta	1687
+2021-12-07	France	Delta	169
+2021-12-08	France	Delta	88
+2021-12-09	France	Delta	58
 2021-12-10	France	Delta	39
 2021-12-11	France	Delta	20
+2021-12-12	France	Delta	16
 2021-11-12	France	Omicron	1
 2021-11-22	France	Omicron	1
 2021-11-25	France	Omicron	2
@@ -526,11 +533,13 @@ date	location	variant	sequences
 2021-12-03	France	Omicron	4
 2021-12-04	France	Omicron	4
 2021-12-05	France	Omicron	6
-2021-12-06	France	Omicron	31
-2021-12-07	France	Omicron	15
-2021-12-08	France	Omicron	12
-2021-12-09	France	Omicron	3
-2021-12-10	France	Omicron	3
+2021-12-06	France	Omicron	33
+2021-12-07	France	Omicron	21
+2021-12-08	France	Omicron	14
+2021-12-09	France	Omicron	8
+2021-12-10	France	Omicron	6
+2021-12-11	France	Omicron	3
+2021-12-12	France	Omicron	3
 2021-10-04	Germany	other	2
 2021-10-11	Germany	other	1
 2021-10-12	Germany	other	1
@@ -617,34 +626,35 @@ date	location	variant	sequences
 2021-11-13	Germany	Delta	793
 2021-11-14	Germany	Delta	304
 2021-11-15	Germany	Delta	2345
-2021-11-16	Germany	Delta	2733
-2021-11-17	Germany	Delta	1299
-2021-11-18	Germany	Delta	2526
-2021-11-19	Germany	Delta	1165
-2021-11-20	Germany	Delta	958
+2021-11-16	Germany	Delta	2734
+2021-11-17	Germany	Delta	1300
+2021-11-18	Germany	Delta	2527
+2021-11-19	Germany	Delta	1166
+2021-11-20	Germany	Delta	959
 2021-11-21	Germany	Delta	311
 2021-11-22	Germany	Delta	2110
-2021-11-23	Germany	Delta	1728
-2021-11-24	Germany	Delta	1670
-2021-11-25	Germany	Delta	1547
-2021-11-26	Germany	Delta	2060
-2021-11-27	Germany	Delta	684
-2021-11-28	Germany	Delta	273
-2021-11-29	Germany	Delta	2503
-2021-11-30	Germany	Delta	2115
-2021-12-01	Germany	Delta	1287
-2021-12-02	Germany	Delta	1471
+2021-11-23	Germany	Delta	1735
+2021-11-24	Germany	Delta	1688
+2021-11-25	Germany	Delta	1552
+2021-11-26	Germany	Delta	2069
+2021-11-27	Germany	Delta	685
+2021-11-28	Germany	Delta	285
+2021-11-29	Germany	Delta	2529
+2021-11-30	Germany	Delta	2123
+2021-12-01	Germany	Delta	1297
+2021-12-02	Germany	Delta	1482
 2021-12-03	Germany	Delta	1219
-2021-12-04	Germany	Delta	1027
-2021-12-05	Germany	Delta	263
-2021-12-06	Germany	Delta	1696
-2021-12-07	Germany	Delta	1015
-2021-12-08	Germany	Delta	399
-2021-12-09	Germany	Delta	1305
-2021-12-10	Germany	Delta	735
-2021-12-11	Germany	Delta	306
-2021-12-12	Germany	Delta	39
-2021-12-13	Germany	Delta	14
+2021-12-04	Germany	Delta	1028
+2021-12-05	Germany	Delta	264
+2021-12-06	Germany	Delta	1708
+2021-12-07	Germany	Delta	1035
+2021-12-08	Germany	Delta	407
+2021-12-09	Germany	Delta	1317
+2021-12-10	Germany	Delta	745
+2021-12-11	Germany	Delta	310
+2021-12-12	Germany	Delta	46
+2021-12-13	Germany	Delta	20
+2021-12-14	Germany	Delta	61
 2021-11-22	Germany	Omicron	1
 2021-11-23	Germany	Omicron	1
 2021-11-24	Germany	Omicron	3
@@ -657,16 +667,17 @@ date	location	variant	sequences
 2021-12-01	Germany	Omicron	16
 2021-12-02	Germany	Omicron	18
 2021-12-03	Germany	Omicron	14
-2021-12-04	Germany	Omicron	22
+2021-12-04	Germany	Omicron	23
 2021-12-05	Germany	Omicron	5
 2021-12-06	Germany	Omicron	17
 2021-12-07	Germany	Omicron	24
-2021-12-08	Germany	Omicron	6
-2021-12-09	Germany	Omicron	20
+2021-12-08	Germany	Omicron	11
+2021-12-09	Germany	Omicron	22
 2021-12-10	Germany	Omicron	12
-2021-12-11	Germany	Omicron	10
-2021-12-12	Germany	Omicron	1
-2021-12-13	Germany	Omicron	2
+2021-12-11	Germany	Omicron	14
+2021-12-12	Germany	Omicron	2
+2021-12-13	Germany	Omicron	6
+2021-12-14	Germany	Omicron	6
 2021-12-11	Ireland	other	1
 2021-12-11	Ireland	other	1
 2021-10-01	Ireland	Delta	20
@@ -748,6 +759,7 @@ date	location	variant	sequences
 2021-12-07	Ireland	Omicron	1
 2021-12-10	Ireland	Omicron	6
 2021-12-11	Ireland	Omicron	51
+2021-12-12	Ireland	Omicron	49
 2021-10-03	Israel	other	1
 2021-10-04	Israel	other	6
 2021-10-05	Israel	other	1
@@ -906,6 +918,7 @@ date	location	variant	sequences
 2021-12-07	Israel	Omicron	13
 2021-12-08	Israel	Omicron	12
 2021-12-09	Israel	Omicron	2
+2021-12-12	Israel	Omicron	4
 2021-10-11	Netherlands	other	4
 2021-10-13	Netherlands	other	1
 2021-10-26	Netherlands	other	1
@@ -961,7 +974,7 @@ date	location	variant	sequences
 2021-11-14	Netherlands	Delta	228
 2021-11-15	Netherlands	Delta	253
 2021-11-16	Netherlands	Delta	267
-2021-11-17	Netherlands	Delta	260
+2021-11-17	Netherlands	Delta	261
 2021-11-18	Netherlands	Delta	207
 2021-11-19	Netherlands	Delta	227
 2021-11-20	Netherlands	Delta	174
@@ -973,7 +986,7 @@ date	location	variant	sequences
 2021-11-26	Netherlands	Delta	204
 2021-11-27	Netherlands	Delta	170
 2021-11-28	Netherlands	Delta	202
-2021-11-29	Netherlands	Delta	201
+2021-11-29	Netherlands	Delta	202
 2021-11-30	Netherlands	Delta	169
 2021-12-01	Netherlands	Delta	206
 2021-12-02	Netherlands	Delta	219
@@ -983,9 +996,10 @@ date	location	variant	sequences
 2021-12-06	Netherlands	Delta	93
 2021-12-07	Netherlands	Delta	36
 2021-12-08	Netherlands	Delta	40
-2021-12-09	Netherlands	Delta	83
-2021-12-10	Netherlands	Delta	30
+2021-12-09	Netherlands	Delta	85
+2021-12-10	Netherlands	Delta	31
 2021-12-11	Netherlands	Delta	13
+2021-12-12	Netherlands	Delta	69
 2021-11-18	Netherlands	Omicron	1
 2021-11-23	Netherlands	Omicron	2
 2021-11-24	Netherlands	Omicron	2
@@ -1006,6 +1020,7 @@ date	location	variant	sequences
 2021-12-09	Netherlands	Omicron	11
 2021-12-10	Netherlands	Omicron	1
 2021-12-11	Netherlands	Omicron	3
+2021-12-12	Netherlands	Omicron	8
 2021-10-08	Norway	other	1
 2021-10-08	Norway	other	1
 2021-10-01	Norway	Delta	100
@@ -1051,35 +1066,36 @@ date	location	variant	sequences
 2021-11-10	Norway	Delta	114
 2021-11-11	Norway	Delta	110
 2021-11-12	Norway	Delta	134
-2021-11-13	Norway	Delta	74
+2021-11-13	Norway	Delta	75
 2021-11-14	Norway	Delta	65
-2021-11-15	Norway	Delta	148
-2021-11-16	Norway	Delta	127
+2021-11-15	Norway	Delta	149
+2021-11-16	Norway	Delta	130
 2021-11-17	Norway	Delta	91
-2021-11-18	Norway	Delta	69
-2021-11-19	Norway	Delta	48
+2021-11-18	Norway	Delta	71
+2021-11-19	Norway	Delta	50
 2021-11-20	Norway	Delta	59
-2021-11-21	Norway	Delta	59
-2021-11-22	Norway	Delta	193
-2021-11-23	Norway	Delta	56
-2021-11-24	Norway	Delta	46
-2021-11-25	Norway	Delta	39
-2021-11-26	Norway	Delta	54
-2021-11-27	Norway	Delta	34
-2021-11-28	Norway	Delta	64
-2021-11-29	Norway	Delta	120
-2021-11-30	Norway	Delta	65
-2021-12-01	Norway	Delta	62
+2021-11-21	Norway	Delta	60
+2021-11-22	Norway	Delta	205
+2021-11-23	Norway	Delta	65
+2021-11-24	Norway	Delta	53
+2021-11-25	Norway	Delta	64
+2021-11-26	Norway	Delta	78
+2021-11-27	Norway	Delta	41
+2021-11-28	Norway	Delta	77
+2021-11-29	Norway	Delta	121
+2021-11-30	Norway	Delta	66
+2021-12-01	Norway	Delta	63
 2021-12-02	Norway	Delta	40
-2021-12-03	Norway	Delta	52
-2021-12-04	Norway	Delta	31
-2021-12-05	Norway	Delta	23
-2021-12-06	Norway	Delta	18
+2021-12-03	Norway	Delta	56
+2021-12-04	Norway	Delta	34
+2021-12-05	Norway	Delta	37
+2021-12-06	Norway	Delta	28
 2021-12-07	Norway	Delta	10
 2021-12-08	Norway	Delta	6
-2021-12-09	Norway	Delta	4
+2021-12-09	Norway	Delta	5
 2021-12-10	Norway	Delta	8
 2021-12-11	Norway	Delta	5
+2021-12-12	Norway	Delta	2
 2021-11-26	Norway	Omicron	2
 2021-11-27	Norway	Omicron	3
 2021-11-29	Norway	Omicron	13
@@ -1089,12 +1105,13 @@ date	location	variant	sequences
 2021-12-03	Norway	Omicron	24
 2021-12-04	Norway	Omicron	13
 2021-12-05	Norway	Omicron	20
-2021-12-06	Norway	Omicron	45
-2021-12-07	Norway	Omicron	24
-2021-12-08	Norway	Omicron	11
-2021-12-09	Norway	Omicron	7
+2021-12-06	Norway	Omicron	48
+2021-12-07	Norway	Omicron	27
+2021-12-08	Norway	Omicron	17
+2021-12-09	Norway	Omicron	9
 2021-12-10	Norway	Omicron	2
 2021-12-11	Norway	Omicron	2
+2021-12-12	Norway	Omicron	1
 2021-10-01	South Africa	other	1
 2021-10-02	South Africa	other	2
 2021-10-03	South Africa	other	1
@@ -1106,7 +1123,7 @@ date	location	variant	sequences
 2021-10-09	South Africa	other	6
 2021-10-10	South Africa	other	1
 2021-10-11	South Africa	other	5
-2021-10-12	South Africa	other	7
+2021-10-12	South Africa	other	8
 2021-10-13	South Africa	other	1
 2021-10-15	South Africa	other	4
 2021-10-16	South Africa	other	1
@@ -1123,24 +1140,22 @@ date	location	variant	sequences
 2021-11-08	South Africa	other	1
 2021-11-09	South Africa	other	3
 2021-11-12	South Africa	other	2
+2021-11-13	South Africa	other	1
 2021-11-15	South Africa	other	1
-2021-11-16	South Africa	other	1
 2021-11-17	South Africa	other	2
 2021-11-18	South Africa	other	2
 2021-11-19	South Africa	other	1
 2021-11-21	South Africa	other	2
 2021-11-22	South Africa	other	1
 2021-11-24	South Africa	other	1
-2021-11-25	South Africa	other	3
+2021-11-25	South Africa	other	2
 2021-11-26	South Africa	other	1
 2021-11-29	South Africa	other	2
-2021-11-30	South Africa	other	4
+2021-11-30	South Africa	other	3
 2021-12-01	South Africa	other	1
-2021-12-02	South Africa	other	3
+2021-12-02	South Africa	other	1
+2021-12-03	South Africa	other	1
 2021-12-06	South Africa	other	1
-2021-12-07	South Africa	other	4
-2021-12-09	South Africa	other	8
-2021-12-10	South Africa	other	4
 2021-10-01	South Africa	other	1
 2021-10-02	South Africa	other	2
 2021-10-03	South Africa	other	1
@@ -1152,7 +1167,7 @@ date	location	variant	sequences
 2021-10-09	South Africa	other	6
 2021-10-10	South Africa	other	1
 2021-10-11	South Africa	other	5
-2021-10-12	South Africa	other	7
+2021-10-12	South Africa	other	8
 2021-10-13	South Africa	other	1
 2021-10-15	South Africa	other	4
 2021-10-16	South Africa	other	1
@@ -1169,36 +1184,34 @@ date	location	variant	sequences
 2021-11-08	South Africa	other	1
 2021-11-09	South Africa	other	3
 2021-11-12	South Africa	other	2
+2021-11-13	South Africa	other	1
 2021-11-15	South Africa	other	1
-2021-11-16	South Africa	other	1
 2021-11-17	South Africa	other	2
 2021-11-18	South Africa	other	2
 2021-11-19	South Africa	other	1
 2021-11-21	South Africa	other	2
 2021-11-22	South Africa	other	1
 2021-11-24	South Africa	other	1
-2021-11-25	South Africa	other	3
+2021-11-25	South Africa	other	2
 2021-11-26	South Africa	other	1
 2021-11-29	South Africa	other	2
-2021-11-30	South Africa	other	4
+2021-11-30	South Africa	other	3
 2021-12-01	South Africa	other	1
-2021-12-02	South Africa	other	3
+2021-12-02	South Africa	other	1
+2021-12-03	South Africa	other	1
 2021-12-06	South Africa	other	1
-2021-12-07	South Africa	other	4
-2021-12-09	South Africa	other	8
-2021-12-10	South Africa	other	4
-2021-10-01	South Africa	Delta	20
-2021-10-02	South Africa	Delta	9
+2021-10-01	South Africa	Delta	24
+2021-10-02	South Africa	Delta	11
 2021-10-03	South Africa	Delta	5
-2021-10-04	South Africa	Delta	37
+2021-10-04	South Africa	Delta	40
 2021-10-05	South Africa	Delta	30
-2021-10-06	South Africa	Delta	30
-2021-10-07	South Africa	Delta	49
-2021-10-08	South Africa	Delta	41
+2021-10-06	South Africa	Delta	33
+2021-10-07	South Africa	Delta	53
+2021-10-08	South Africa	Delta	45
 2021-10-09	South Africa	Delta	11
-2021-10-10	South Africa	Delta	7
-2021-10-11	South Africa	Delta	45
-2021-10-12	South Africa	Delta	27
+2021-10-10	South Africa	Delta	8
+2021-10-11	South Africa	Delta	47
+2021-10-12	South Africa	Delta	28
 2021-10-13	South Africa	Delta	41
 2021-10-14	South Africa	Delta	36
 2021-10-15	South Africa	Delta	29
@@ -1208,10 +1221,10 @@ date	location	variant	sequences
 2021-10-19	South Africa	Delta	19
 2021-10-20	South Africa	Delta	25
 2021-10-21	South Africa	Delta	23
-2021-10-22	South Africa	Delta	20
+2021-10-22	South Africa	Delta	22
 2021-10-23	South Africa	Delta	4
 2021-10-24	South Africa	Delta	5
-2021-10-25	South Africa	Delta	15
+2021-10-25	South Africa	Delta	18
 2021-10-26	South Africa	Delta	12
 2021-10-27	South Africa	Delta	9
 2021-10-28	South Africa	Delta	14
@@ -1227,7 +1240,7 @@ date	location	variant	sequences
 2021-11-07	South Africa	Delta	3
 2021-11-08	South Africa	Delta	6
 2021-11-09	South Africa	Delta	10
-2021-11-10	South Africa	Delta	4
+2021-11-10	South Africa	Delta	5
 2021-11-11	South Africa	Delta	4
 2021-11-12	South Africa	Delta	6
 2021-11-13	South Africa	Delta	1
@@ -1246,9 +1259,10 @@ date	location	variant	sequences
 2021-11-26	South Africa	Delta	7
 2021-11-27	South Africa	Delta	2
 2021-11-28	South Africa	Delta	2
-2021-11-30	South Africa	Delta	4
-2021-12-01	South Africa	Delta	2
+2021-11-30	South Africa	Delta	5
+2021-12-01	South Africa	Delta	3
 2021-12-02	South Africa	Delta	1
+2021-10-12	South Africa	Omicron	1
 2021-10-24	South Africa	Omicron	1
 2021-11-05	South Africa	Omicron	1
 2021-11-08	South Africa	Omicron	1
@@ -1259,32 +1273,33 @@ date	location	variant	sequences
 2021-11-13	South Africa	Omicron	2
 2021-11-14	South Africa	Omicron	4
 2021-11-15	South Africa	Omicron	18
-2021-11-16	South Africa	Omicron	53
+2021-11-16	South Africa	Omicron	54
 2021-11-17	South Africa	Omicron	56
 2021-11-18	South Africa	Omicron	35
 2021-11-19	South Africa	Omicron	36
 2021-11-20	South Africa	Omicron	18
 2021-11-21	South Africa	Omicron	15
-2021-11-22	South Africa	Omicron	58
-2021-11-23	South Africa	Omicron	68
-2021-11-24	South Africa	Omicron	104
-2021-11-25	South Africa	Omicron	66
+2021-11-22	South Africa	Omicron	60
+2021-11-23	South Africa	Omicron	70
+2021-11-24	South Africa	Omicron	114
+2021-11-25	South Africa	Omicron	80
 2021-11-26	South Africa	Omicron	67
 2021-11-27	South Africa	Omicron	17
-2021-11-28	South Africa	Omicron	17
-2021-11-29	South Africa	Omicron	135
-2021-11-30	South Africa	Omicron	133
-2021-12-01	South Africa	Omicron	114
-2021-12-02	South Africa	Omicron	78
-2021-12-03	South Africa	Omicron	71
-2021-12-04	South Africa	Omicron	22
-2021-12-05	South Africa	Omicron	9
-2021-12-06	South Africa	Omicron	56
-2021-12-07	South Africa	Omicron	33
+2021-11-28	South Africa	Omicron	19
+2021-11-29	South Africa	Omicron	144
+2021-11-30	South Africa	Omicron	160
+2021-12-01	South Africa	Omicron	145
+2021-12-02	South Africa	Omicron	101
+2021-12-03	South Africa	Omicron	91
+2021-12-04	South Africa	Omicron	29
+2021-12-05	South Africa	Omicron	13
+2021-12-06	South Africa	Omicron	60
+2021-12-07	South Africa	Omicron	37
 2021-12-08	South Africa	Omicron	20
-2021-12-09	South Africa	Omicron	36
-2021-12-10	South Africa	Omicron	45
+2021-12-09	South Africa	Omicron	44
+2021-12-10	South Africa	Omicron	49
 2021-12-11	South Africa	Omicron	21
+2021-12-12	South Africa	Omicron	4
 2021-10-01	Spain	other	1
 2021-10-02	Spain	other	1
 2021-10-04	Spain	other	1
@@ -1313,29 +1328,29 @@ date	location	variant	sequences
 2021-10-08	Spain	Delta	113
 2021-10-09	Spain	Delta	27
 2021-10-10	Spain	Delta	31
-2021-10-11	Spain	Delta	68
+2021-10-11	Spain	Delta	69
 2021-10-12	Spain	Delta	48
 2021-10-13	Spain	Delta	115
-2021-10-14	Spain	Delta	113
-2021-10-15	Spain	Delta	135
+2021-10-14	Spain	Delta	116
+2021-10-15	Spain	Delta	136
 2021-10-16	Spain	Delta	56
 2021-10-17	Spain	Delta	45
 2021-10-18	Spain	Delta	127
 2021-10-19	Spain	Delta	192
 2021-10-20	Spain	Delta	131
 2021-10-21	Spain	Delta	151
-2021-10-22	Spain	Delta	165
+2021-10-22	Spain	Delta	166
 2021-10-23	Spain	Delta	62
 2021-10-24	Spain	Delta	38
 2021-10-25	Spain	Delta	115
 2021-10-26	Spain	Delta	172
 2021-10-27	Spain	Delta	104
 2021-10-28	Spain	Delta	116
-2021-10-29	Spain	Delta	108
+2021-10-29	Spain	Delta	109
 2021-10-30	Spain	Delta	34
 2021-10-31	Spain	Delta	34
 2021-11-01	Spain	Delta	32
-2021-11-02	Spain	Delta	187
+2021-11-02	Spain	Delta	188
 2021-11-03	Spain	Delta	168
 2021-11-04	Spain	Delta	125
 2021-11-05	Spain	Delta	138
@@ -1348,47 +1363,49 @@ date	location	variant	sequences
 2021-11-12	Spain	Delta	199
 2021-11-13	Spain	Delta	92
 2021-11-14	Spain	Delta	55
-2021-11-15	Spain	Delta	160
-2021-11-16	Spain	Delta	190
+2021-11-15	Spain	Delta	161
+2021-11-16	Spain	Delta	192
 2021-11-17	Spain	Delta	164
-2021-11-18	Spain	Delta	119
+2021-11-18	Spain	Delta	121
 2021-11-19	Spain	Delta	179
 2021-11-20	Spain	Delta	49
 2021-11-21	Spain	Delta	49
 2021-11-22	Spain	Delta	173
-2021-11-23	Spain	Delta	160
+2021-11-23	Spain	Delta	161
 2021-11-24	Spain	Delta	138
 2021-11-25	Spain	Delta	81
 2021-11-26	Spain	Delta	153
 2021-11-27	Spain	Delta	37
 2021-11-28	Spain	Delta	16
 2021-11-29	Spain	Delta	105
-2021-11-30	Spain	Delta	127
-2021-12-01	Spain	Delta	208
-2021-12-02	Spain	Delta	105
-2021-12-03	Spain	Delta	185
-2021-12-04	Spain	Delta	62
-2021-12-05	Spain	Delta	30
-2021-12-06	Spain	Delta	26
-2021-12-07	Spain	Delta	83
-2021-12-08	Spain	Delta	72
-2021-12-09	Spain	Delta	39
-2021-12-10	Spain	Delta	78
-2021-12-11	Spain	Delta	31
+2021-11-30	Spain	Delta	133
+2021-12-01	Spain	Delta	211
+2021-12-02	Spain	Delta	106
+2021-12-03	Spain	Delta	189
+2021-12-04	Spain	Delta	64
+2021-12-05	Spain	Delta	31
+2021-12-06	Spain	Delta	29
+2021-12-07	Spain	Delta	129
+2021-12-08	Spain	Delta	74
+2021-12-09	Spain	Delta	54
+2021-12-10	Spain	Delta	124
+2021-12-11	Spain	Delta	34
+2021-12-12	Spain	Delta	4
 2021-11-28	Spain	Omicron	1
 2021-11-29	Spain	Omicron	1
 2021-11-30	Spain	Omicron	4
 2021-12-01	Spain	Omicron	6
-2021-12-02	Spain	Omicron	7
-2021-12-03	Spain	Omicron	12
+2021-12-02	Spain	Omicron	9
+2021-12-03	Spain	Omicron	15
 2021-12-04	Spain	Omicron	2
 2021-12-05	Spain	Omicron	5
 2021-12-06	Spain	Omicron	5
-2021-12-07	Spain	Omicron	17
+2021-12-07	Spain	Omicron	18
 2021-12-08	Spain	Omicron	20
-2021-12-09	Spain	Omicron	26
-2021-12-10	Spain	Omicron	10
-2021-12-11	Spain	Omicron	22
+2021-12-09	Spain	Omicron	27
+2021-12-10	Spain	Omicron	12
+2021-12-11	Spain	Omicron	24
+2021-12-12	Spain	Omicron	15
 2021-10-12	Sweden	other	1
 2021-10-27	Sweden	other	1
 2021-11-01	Sweden	other	1
@@ -1467,6 +1484,7 @@ date	location	variant	sequences
 2021-12-09	Sweden	Delta	81
 2021-12-10	Sweden	Delta	61
 2021-12-11	Sweden	Delta	42
+2021-12-12	Sweden	Delta	21
 2021-11-19	Sweden	Omicron	1
 2021-11-26	Sweden	Omicron	1
 2021-11-27	Sweden	Omicron	2
@@ -1479,11 +1497,12 @@ date	location	variant	sequences
 2021-12-04	Sweden	Omicron	3
 2021-12-05	Sweden	Omicron	4
 2021-12-06	Sweden	Omicron	13
-2021-12-07	Sweden	Omicron	8
-2021-12-08	Sweden	Omicron	18
-2021-12-09	Sweden	Omicron	15
-2021-12-10	Sweden	Omicron	17
+2021-12-07	Sweden	Omicron	9
+2021-12-08	Sweden	Omicron	21
+2021-12-09	Sweden	Omicron	22
+2021-12-10	Sweden	Omicron	20
 2021-12-11	Sweden	Omicron	24
+2021-12-12	Sweden	Omicron	6
 2021-10-06	Switzerland	other	1
 2021-10-21	Switzerland	other	1
 2021-10-23	Switzerland	other	3
@@ -1550,15 +1569,15 @@ date	location	variant	sequences
 2021-11-05	Switzerland	Delta	358
 2021-11-06	Switzerland	Delta	224
 2021-11-07	Switzerland	Delta	270
-2021-11-08	Switzerland	Delta	627
-2021-11-09	Switzerland	Delta	340
-2021-11-10	Switzerland	Delta	577
-2021-11-11	Switzerland	Delta	307
+2021-11-08	Switzerland	Delta	633
+2021-11-09	Switzerland	Delta	341
+2021-11-10	Switzerland	Delta	593
+2021-11-11	Switzerland	Delta	316
 2021-11-12	Switzerland	Delta	374
 2021-11-13	Switzerland	Delta	503
 2021-11-14	Switzerland	Delta	348
 2021-11-15	Switzerland	Delta	1092
-2021-11-16	Switzerland	Delta	431
+2021-11-16	Switzerland	Delta	433
 2021-11-17	Switzerland	Delta	370
 2021-11-18	Switzerland	Delta	651
 2021-11-19	Switzerland	Delta	359
@@ -1572,7 +1591,7 @@ date	location	variant	sequences
 2021-11-27	Switzerland	Delta	277
 2021-11-28	Switzerland	Delta	504
 2021-11-29	Switzerland	Delta	765
-2021-11-30	Switzerland	Delta	816
+2021-11-30	Switzerland	Delta	817
 2021-12-01	Switzerland	Delta	298
 2021-12-02	Switzerland	Delta	166
 2021-12-03	Switzerland	Delta	448
@@ -1584,6 +1603,7 @@ date	location	variant	sequences
 2021-12-09	Switzerland	Delta	114
 2021-12-10	Switzerland	Delta	71
 2021-12-11	Switzerland	Delta	75
+2021-12-12	Switzerland	Delta	78
 2021-11-21	Switzerland	Omicron	1
 2021-11-22	Switzerland	Omicron	4
 2021-11-23	Switzerland	Omicron	2
@@ -1605,6 +1625,7 @@ date	location	variant	sequences
 2021-12-09	Switzerland	Omicron	4
 2021-12-10	Switzerland	Omicron	8
 2021-12-11	Switzerland	Omicron	3
+2021-12-12	Switzerland	Omicron	15
 2021-10-01	United Kingdom	other	1
 2021-10-02	United Kingdom	other	2
 2021-10-04	United Kingdom	other	2
@@ -1631,7 +1652,7 @@ date	location	variant	sequences
 2021-11-12	United Kingdom	other	4
 2021-11-17	United Kingdom	other	3
 2021-11-19	United Kingdom	other	1
-2021-11-20	United Kingdom	other	2
+2021-11-20	United Kingdom	other	3
 2021-11-22	United Kingdom	other	2
 2021-11-23	United Kingdom	other	2
 2021-11-24	United Kingdom	other	3
@@ -1646,12 +1667,13 @@ date	location	variant	sequences
 2021-12-05	United Kingdom	other	2
 2021-12-06	United Kingdom	other	8
 2021-12-07	United Kingdom	other	4
-2021-12-08	United Kingdom	other	3
-2021-12-09	United Kingdom	other	7
+2021-12-08	United Kingdom	other	5
+2021-12-09	United Kingdom	other	6
 2021-12-10	United Kingdom	other	6
-2021-12-11	United Kingdom	other	4
-2021-12-12	United Kingdom	other	6
-2021-12-13	United Kingdom	other	4
+2021-12-11	United Kingdom	other	5
+2021-12-12	United Kingdom	other	7
+2021-12-13	United Kingdom	other	5
+2021-12-14	United Kingdom	other	8
 2021-10-01	United Kingdom	other	1
 2021-10-02	United Kingdom	other	2
 2021-10-04	United Kingdom	other	2
@@ -1678,7 +1700,7 @@ date	location	variant	sequences
 2021-11-12	United Kingdom	other	4
 2021-11-17	United Kingdom	other	3
 2021-11-19	United Kingdom	other	1
-2021-11-20	United Kingdom	other	2
+2021-11-20	United Kingdom	other	3
 2021-11-22	United Kingdom	other	2
 2021-11-23	United Kingdom	other	2
 2021-11-24	United Kingdom	other	3
@@ -1693,16 +1715,17 @@ date	location	variant	sequences
 2021-12-05	United Kingdom	other	2
 2021-12-06	United Kingdom	other	8
 2021-12-07	United Kingdom	other	4
-2021-12-08	United Kingdom	other	3
-2021-12-09	United Kingdom	other	7
+2021-12-08	United Kingdom	other	5
+2021-12-09	United Kingdom	other	6
 2021-12-10	United Kingdom	other	6
-2021-12-11	United Kingdom	other	4
-2021-12-12	United Kingdom	other	6
-2021-12-13	United Kingdom	other	4
+2021-12-11	United Kingdom	other	5
+2021-12-12	United Kingdom	other	7
+2021-12-13	United Kingdom	other	5
+2021-12-14	United Kingdom	other	8
 2021-10-01	United Kingdom	Delta	3946
 2021-10-02	United Kingdom	Delta	3668
 2021-10-03	United Kingdom	Delta	5032
-2021-10-04	United Kingdom	Delta	6610
+2021-10-04	United Kingdom	Delta	6611
 2021-10-05	United Kingdom	Delta	5342
 2021-10-06	United Kingdom	Delta	5503
 2021-10-07	United Kingdom	Delta	6791
@@ -1722,10 +1745,10 @@ date	location	variant	sequences
 2021-10-21	United Kingdom	Delta	5346
 2021-10-22	United Kingdom	Delta	5066
 2021-10-23	United Kingdom	Delta	6050
-2021-10-24	United Kingdom	Delta	5588
-2021-10-25	United Kingdom	Delta	6394
-2021-10-26	United Kingdom	Delta	6192
-2021-10-27	United Kingdom	Delta	6650
+2021-10-24	United Kingdom	Delta	5601
+2021-10-25	United Kingdom	Delta	6398
+2021-10-26	United Kingdom	Delta	6210
+2021-10-27	United Kingdom	Delta	6658
 2021-10-28	United Kingdom	Delta	5850
 2021-10-29	United Kingdom	Delta	5186
 2021-10-30	United Kingdom	Delta	6133
@@ -1740,39 +1763,41 @@ date	location	variant	sequences
 2021-11-08	United Kingdom	Delta	9533
 2021-11-09	United Kingdom	Delta	7273
 2021-11-10	United Kingdom	Delta	7807
-2021-11-11	United Kingdom	Delta	7875
+2021-11-11	United Kingdom	Delta	7876
 2021-11-12	United Kingdom	Delta	7304
 2021-11-13	United Kingdom	Delta	6266
 2021-11-14	United Kingdom	Delta	5774
-2021-11-15	United Kingdom	Delta	8392
+2021-11-15	United Kingdom	Delta	8393
 2021-11-16	United Kingdom	Delta	8263
-2021-11-17	United Kingdom	Delta	8298
-2021-11-18	United Kingdom	Delta	7190
-2021-11-19	United Kingdom	Delta	6721
-2021-11-20	United Kingdom	Delta	7775
-2021-11-21	United Kingdom	Delta	7065
-2021-11-22	United Kingdom	Delta	10155
-2021-11-23	United Kingdom	Delta	8335
-2021-11-24	United Kingdom	Delta	8456
-2021-11-25	United Kingdom	Delta	7427
-2021-11-26	United Kingdom	Delta	9507
-2021-11-27	United Kingdom	Delta	5578
-2021-11-28	United Kingdom	Delta	7900
-2021-11-29	United Kingdom	Delta	12455
-2021-11-30	United Kingdom	Delta	10929
-2021-12-01	United Kingdom	Delta	8734
-2021-12-02	United Kingdom	Delta	7229
-2021-12-03	United Kingdom	Delta	6453
-2021-12-04	United Kingdom	Delta	5676
-2021-12-05	United Kingdom	Delta	6528
-2021-12-06	United Kingdom	Delta	9012
-2021-12-07	United Kingdom	Delta	9457
-2021-12-08	United Kingdom	Delta	7091
-2021-12-09	United Kingdom	Delta	5286
-2021-12-10	United Kingdom	Delta	4448
-2021-12-11	United Kingdom	Delta	3011
-2021-12-12	United Kingdom	Delta	3200
-2021-12-13	United Kingdom	Delta	1717
+2021-11-17	United Kingdom	Delta	8299
+2021-11-18	United Kingdom	Delta	7194
+2021-11-19	United Kingdom	Delta	6725
+2021-11-20	United Kingdom	Delta	7778
+2021-11-21	United Kingdom	Delta	7066
+2021-11-22	United Kingdom	Delta	10166
+2021-11-23	United Kingdom	Delta	8346
+2021-11-24	United Kingdom	Delta	8497
+2021-11-25	United Kingdom	Delta	7457
+2021-11-26	United Kingdom	Delta	9529
+2021-11-27	United Kingdom	Delta	5605
+2021-11-28	United Kingdom	Delta	7912
+2021-11-29	United Kingdom	Delta	12485
+2021-11-30	United Kingdom	Delta	10960
+2021-12-01	United Kingdom	Delta	8778
+2021-12-02	United Kingdom	Delta	7263
+2021-12-03	United Kingdom	Delta	6528
+2021-12-04	United Kingdom	Delta	5772
+2021-12-05	United Kingdom	Delta	6642
+2021-12-06	United Kingdom	Delta	9173
+2021-12-07	United Kingdom	Delta	9591
+2021-12-08	United Kingdom	Delta	7272
+2021-12-09	United Kingdom	Delta	5478
+2021-12-10	United Kingdom	Delta	4800
+2021-12-11	United Kingdom	Delta	3982
+2021-12-12	United Kingdom	Delta	4117
+2021-12-13	United Kingdom	Delta	3018
+2021-12-14	United Kingdom	Delta	1947
+2021-10-29	United Kingdom	Omicron	1
 2021-11-20	United Kingdom	Omicron	1
 2021-11-21	United Kingdom	Omicron	1
 2021-11-22	United Kingdom	Omicron	4
@@ -1783,20 +1808,21 @@ date	location	variant	sequences
 2021-11-27	United Kingdom	Omicron	70
 2021-11-28	United Kingdom	Omicron	31
 2021-11-29	United Kingdom	Omicron	89
-2021-11-30	United Kingdom	Omicron	102
-2021-12-01	United Kingdom	Omicron	116
-2021-12-02	United Kingdom	Omicron	151
-2021-12-03	United Kingdom	Omicron	167
-2021-12-04	United Kingdom	Omicron	242
-2021-12-05	United Kingdom	Omicron	307
-2021-12-06	United Kingdom	Omicron	671
-2021-12-07	United Kingdom	Omicron	962
-2021-12-08	United Kingdom	Omicron	904
-2021-12-09	United Kingdom	Omicron	1110
-2021-12-10	United Kingdom	Omicron	1731
-2021-12-11	United Kingdom	Omicron	1179
-2021-12-12	United Kingdom	Omicron	2181
-2021-12-13	United Kingdom	Omicron	2010
+2021-11-30	United Kingdom	Omicron	104
+2021-12-01	United Kingdom	Omicron	117
+2021-12-02	United Kingdom	Omicron	155
+2021-12-03	United Kingdom	Omicron	171
+2021-12-04	United Kingdom	Omicron	246
+2021-12-05	United Kingdom	Omicron	313
+2021-12-06	United Kingdom	Omicron	691
+2021-12-07	United Kingdom	Omicron	990
+2021-12-08	United Kingdom	Omicron	930
+2021-12-09	United Kingdom	Omicron	1146
+2021-12-10	United Kingdom	Omicron	1779
+2021-12-11	United Kingdom	Omicron	1420
+2021-12-12	United Kingdom	Omicron	2670
+2021-12-13	United Kingdom	Omicron	3272
+2021-12-14	United Kingdom	Omicron	2468
 2021-10-01	USA	other	21
 2021-10-02	USA	other	55
 2021-10-03	USA	other	27
@@ -1809,7 +1835,7 @@ date	location	variant	sequences
 2021-10-10	USA	other	17
 2021-10-11	USA	other	21
 2021-10-12	USA	other	29
-2021-10-13	USA	other	28
+2021-10-13	USA	other	29
 2021-10-14	USA	other	36
 2021-10-15	USA	other	43
 2021-10-16	USA	other	32
@@ -1821,8 +1847,8 @@ date	location	variant	sequences
 2021-10-22	USA	other	28
 2021-10-23	USA	other	16
 2021-10-24	USA	other	22
-2021-10-25	USA	other	50
-2021-10-26	USA	other	36
+2021-10-25	USA	other	51
+2021-10-26	USA	other	37
 2021-10-27	USA	other	24
 2021-10-28	USA	other	16
 2021-10-29	USA	other	35
@@ -1835,37 +1861,39 @@ date	location	variant	sequences
 2021-11-05	USA	other	82
 2021-11-06	USA	other	32
 2021-11-07	USA	other	27
-2021-11-08	USA	other	49
-2021-11-09	USA	other	44
-2021-11-10	USA	other	47
-2021-11-11	USA	other	48
-2021-11-12	USA	other	34
-2021-11-13	USA	other	57
-2021-11-14	USA	other	59
-2021-11-15	USA	other	79
-2021-11-16	USA	other	124
-2021-11-17	USA	other	106
-2021-11-18	USA	other	101
-2021-11-19	USA	other	62
+2021-11-08	USA	other	58
+2021-11-09	USA	other	49
+2021-11-10	USA	other	61
+2021-11-11	USA	other	66
+2021-11-12	USA	other	48
+2021-11-13	USA	other	65
+2021-11-14	USA	other	66
+2021-11-15	USA	other	82
+2021-11-16	USA	other	127
+2021-11-17	USA	other	110
+2021-11-18	USA	other	102
+2021-11-19	USA	other	66
 2021-11-20	USA	other	38
-2021-11-21	USA	other	22
-2021-11-22	USA	other	10
-2021-11-23	USA	other	5
-2021-11-24	USA	other	2
-2021-11-26	USA	other	3
-2021-11-28	USA	other	1
-2021-11-29	USA	other	4
+2021-11-21	USA	other	34
+2021-11-22	USA	other	48
+2021-11-23	USA	other	10
+2021-11-24	USA	other	4
+2021-11-26	USA	other	20
+2021-11-27	USA	other	7
+2021-11-28	USA	other	3
+2021-11-29	USA	other	5
 2021-11-30	USA	other	3
-2021-12-01	USA	other	6
+2021-12-01	USA	other	5
 2021-12-02	USA	other	1
-2021-12-03	USA	other	6
+2021-12-03	USA	other	7
 2021-12-04	USA	other	2
-2021-12-06	USA	other	5
-2021-12-07	USA	other	1
-2021-12-08	USA	other	10
-2021-12-09	USA	other	5
-2021-12-10	USA	other	1
-2021-12-11	USA	other	2
+2021-12-06	USA	other	6
+2021-12-07	USA	other	2
+2021-12-08	USA	other	11
+2021-12-09	USA	other	10
+2021-12-10	USA	other	16
+2021-12-11	USA	other	7
+2021-12-12	USA	other	1
 2021-10-01	USA	other	21
 2021-10-02	USA	other	55
 2021-10-03	USA	other	27
@@ -1878,7 +1906,7 @@ date	location	variant	sequences
 2021-10-10	USA	other	17
 2021-10-11	USA	other	21
 2021-10-12	USA	other	29
-2021-10-13	USA	other	28
+2021-10-13	USA	other	29
 2021-10-14	USA	other	36
 2021-10-15	USA	other	43
 2021-10-16	USA	other	32
@@ -1890,8 +1918,8 @@ date	location	variant	sequences
 2021-10-22	USA	other	28
 2021-10-23	USA	other	16
 2021-10-24	USA	other	22
-2021-10-25	USA	other	50
-2021-10-26	USA	other	36
+2021-10-25	USA	other	51
+2021-10-26	USA	other	37
 2021-10-27	USA	other	24
 2021-10-28	USA	other	16
 2021-10-29	USA	other	35
@@ -1904,109 +1932,112 @@ date	location	variant	sequences
 2021-11-05	USA	other	82
 2021-11-06	USA	other	32
 2021-11-07	USA	other	27
-2021-11-08	USA	other	49
-2021-11-09	USA	other	44
-2021-11-10	USA	other	47
-2021-11-11	USA	other	48
-2021-11-12	USA	other	34
-2021-11-13	USA	other	57
-2021-11-14	USA	other	59
-2021-11-15	USA	other	79
-2021-11-16	USA	other	124
-2021-11-17	USA	other	106
-2021-11-18	USA	other	101
-2021-11-19	USA	other	62
+2021-11-08	USA	other	58
+2021-11-09	USA	other	49
+2021-11-10	USA	other	61
+2021-11-11	USA	other	66
+2021-11-12	USA	other	48
+2021-11-13	USA	other	65
+2021-11-14	USA	other	66
+2021-11-15	USA	other	82
+2021-11-16	USA	other	127
+2021-11-17	USA	other	110
+2021-11-18	USA	other	102
+2021-11-19	USA	other	66
 2021-11-20	USA	other	38
-2021-11-21	USA	other	22
-2021-11-22	USA	other	10
-2021-11-23	USA	other	5
-2021-11-24	USA	other	2
-2021-11-26	USA	other	3
-2021-11-28	USA	other	1
-2021-11-29	USA	other	4
+2021-11-21	USA	other	34
+2021-11-22	USA	other	48
+2021-11-23	USA	other	10
+2021-11-24	USA	other	4
+2021-11-26	USA	other	20
+2021-11-27	USA	other	7
+2021-11-28	USA	other	3
+2021-11-29	USA	other	5
 2021-11-30	USA	other	3
-2021-12-01	USA	other	6
+2021-12-01	USA	other	5
 2021-12-02	USA	other	1
-2021-12-03	USA	other	6
+2021-12-03	USA	other	7
 2021-12-04	USA	other	2
-2021-12-06	USA	other	5
-2021-12-07	USA	other	1
-2021-12-08	USA	other	10
-2021-12-09	USA	other	5
-2021-12-10	USA	other	1
-2021-12-11	USA	other	2
-2021-10-01	USA	Delta	8391
-2021-10-02	USA	Delta	5283
-2021-10-03	USA	Delta	4533
-2021-10-04	USA	Delta	10254
-2021-10-05	USA	Delta	10250
-2021-10-06	USA	Delta	9364
-2021-10-07	USA	Delta	8824
-2021-10-08	USA	Delta	8244
+2021-12-06	USA	other	6
+2021-12-07	USA	other	2
+2021-12-08	USA	other	11
+2021-12-09	USA	other	10
+2021-12-10	USA	other	16
+2021-12-11	USA	other	7
+2021-12-12	USA	other	1
+2021-10-01	USA	Delta	8410
+2021-10-02	USA	Delta	5288
+2021-10-03	USA	Delta	4539
+2021-10-04	USA	Delta	10263
+2021-10-05	USA	Delta	10252
+2021-10-06	USA	Delta	9367
+2021-10-07	USA	Delta	8827
+2021-10-08	USA	Delta	8245
 2021-10-09	USA	Delta	5477
 2021-10-10	USA	Delta	4649
-2021-10-11	USA	Delta	9312
-2021-10-12	USA	Delta	8086
-2021-10-13	USA	Delta	7898
-2021-10-14	USA	Delta	8358
-2021-10-15	USA	Delta	7858
-2021-10-16	USA	Delta	4378
-2021-10-17	USA	Delta	3753
-2021-10-18	USA	Delta	9644
-2021-10-19	USA	Delta	8209
-2021-10-20	USA	Delta	7809
-2021-10-21	USA	Delta	7810
-2021-10-22	USA	Delta	8198
-2021-10-23	USA	Delta	5453
-2021-10-24	USA	Delta	4188
-2021-10-25	USA	Delta	9995
-2021-10-26	USA	Delta	8551
-2021-10-27	USA	Delta	8297
-2021-10-28	USA	Delta	8151
-2021-10-29	USA	Delta	7496
-2021-10-30	USA	Delta	5026
-2021-10-31	USA	Delta	4066
-2021-11-01	USA	Delta	8367
-2021-11-02	USA	Delta	9692
-2021-11-03	USA	Delta	9991
-2021-11-04	USA	Delta	9008
-2021-11-05	USA	Delta	8131
-2021-11-06	USA	Delta	5568
-2021-11-07	USA	Delta	5192
-2021-11-08	USA	Delta	8598
-2021-11-09	USA	Delta	9308
-2021-11-10	USA	Delta	9705
-2021-11-11	USA	Delta	7056
-2021-11-12	USA	Delta	8207
-2021-11-13	USA	Delta	6102
-2021-11-14	USA	Delta	4014
-2021-11-15	USA	Delta	8865
-2021-11-16	USA	Delta	9567
-2021-11-17	USA	Delta	8082
-2021-11-18	USA	Delta	6911
-2021-11-19	USA	Delta	6261
-2021-11-20	USA	Delta	4135
-2021-11-21	USA	Delta	4364
-2021-11-22	USA	Delta	6530
-2021-11-23	USA	Delta	5634
-2021-11-24	USA	Delta	5516
-2021-11-25	USA	Delta	783
-2021-11-26	USA	Delta	3981
-2021-11-27	USA	Delta	4516
-2021-11-28	USA	Delta	3580
-2021-11-29	USA	Delta	8785
-2021-11-30	USA	Delta	7497
-2021-12-01	USA	Delta	6593
-2021-12-02	USA	Delta	5576
-2021-12-03	USA	Delta	4381
-2021-12-04	USA	Delta	2510
-2021-12-05	USA	Delta	1326
-2021-12-06	USA	Delta	4105
-2021-12-07	USA	Delta	2381
-2021-12-08	USA	Delta	2331
-2021-12-09	USA	Delta	1794
-2021-12-10	USA	Delta	1478
-2021-12-11	USA	Delta	732
+2021-10-11	USA	Delta	9316
+2021-10-12	USA	Delta	8100
+2021-10-13	USA	Delta	7920
+2021-10-14	USA	Delta	8380
+2021-10-15	USA	Delta	7881
+2021-10-16	USA	Delta	4383
+2021-10-17	USA	Delta	3767
+2021-10-18	USA	Delta	9658
+2021-10-19	USA	Delta	8227
+2021-10-20	USA	Delta	7821
+2021-10-21	USA	Delta	7826
+2021-10-22	USA	Delta	8213
+2021-10-23	USA	Delta	5464
+2021-10-24	USA	Delta	4193
+2021-10-25	USA	Delta	10017
+2021-10-26	USA	Delta	8575
+2021-10-27	USA	Delta	8313
+2021-10-28	USA	Delta	8164
+2021-10-29	USA	Delta	7513
+2021-10-30	USA	Delta	5038
+2021-10-31	USA	Delta	4079
+2021-11-01	USA	Delta	8398
+2021-11-02	USA	Delta	9708
+2021-11-03	USA	Delta	10027
+2021-11-04	USA	Delta	9038
+2021-11-05	USA	Delta	8166
+2021-11-06	USA	Delta	5590
+2021-11-07	USA	Delta	5211
+2021-11-08	USA	Delta	9537
+2021-11-09	USA	Delta	10087
+2021-11-10	USA	Delta	10524
+2021-11-11	USA	Delta	8010
+2021-11-12	USA	Delta	8891
+2021-11-13	USA	Delta	6594
+2021-11-14	USA	Delta	4258
+2021-11-15	USA	Delta	9390
+2021-11-16	USA	Delta	10095
+2021-11-17	USA	Delta	9302
+2021-11-18	USA	Delta	8038
+2021-11-19	USA	Delta	6940
+2021-11-20	USA	Delta	4434
+2021-11-21	USA	Delta	4629
+2021-11-22	USA	Delta	8194
+2021-11-23	USA	Delta	6098
+2021-11-24	USA	Delta	6068
+2021-11-25	USA	Delta	901
+2021-11-26	USA	Delta	4969
+2021-11-27	USA	Delta	5141
+2021-11-28	USA	Delta	4183
+2021-11-29	USA	Delta	9374
+2021-11-30	USA	Delta	8297
+2021-12-01	USA	Delta	7436
+2021-12-02	USA	Delta	6538
+2021-12-03	USA	Delta	5635
+2021-12-04	USA	Delta	3937
+2021-12-05	USA	Delta	2029
+2021-12-06	USA	Delta	4992
+2021-12-07	USA	Delta	3327
+2021-12-08	USA	Delta	3037
+2021-12-09	USA	Delta	2139
+2021-12-10	USA	Delta	2173
+2021-12-11	USA	Delta	1201
+2021-12-12	USA	Delta	480
 2021-11-21	USA	Omicron	1
 2021-11-22	USA	Omicron	1
 2021-11-24	USA	Omicron	4
@@ -2015,15 +2046,16 @@ date	location	variant	sequences
 2021-11-27	USA	Omicron	7
 2021-11-28	USA	Omicron	10
 2021-11-29	USA	Omicron	34
-2021-11-30	USA	Omicron	45
-2021-12-01	USA	Omicron	56
-2021-12-02	USA	Omicron	56
-2021-12-03	USA	Omicron	70
-2021-12-04	USA	Omicron	39
-2021-12-05	USA	Omicron	40
-2021-12-06	USA	Omicron	119
-2021-12-07	USA	Omicron	121
-2021-12-08	USA	Omicron	191
-2021-12-09	USA	Omicron	114
-2021-12-10	USA	Omicron	116
-2021-12-11	USA	Omicron	77
+2021-11-30	USA	Omicron	46
+2021-12-01	USA	Omicron	58
+2021-12-02	USA	Omicron	58
+2021-12-03	USA	Omicron	71
+2021-12-04	USA	Omicron	40
+2021-12-05	USA	Omicron	41
+2021-12-06	USA	Omicron	132
+2021-12-07	USA	Omicron	135
+2021-12-08	USA	Omicron	211
+2021-12-09	USA	Omicron	149
+2021-12-10	USA	Omicron	192
+2021-12-11	USA	Omicron	124
+2021-12-12	USA	Omicron	111
