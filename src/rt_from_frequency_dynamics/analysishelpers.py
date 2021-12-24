@@ -19,8 +19,9 @@ def fit_SVI(LD, LM, opt, iters=100_000, num_samples = 1000, path = ".", name="Te
 
     # Upacking data
     data = LD.make_numpyro_input()
-    # Loading past state
+    LM.augment_data(data)
 
+    # Loading past state
     if load:
         file_name = name.replace(" ", "-")
         SVIH.load_state(f"{path}/models/{file_name}_svi.p")
