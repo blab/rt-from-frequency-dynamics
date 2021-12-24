@@ -16,12 +16,11 @@ class LineageData():
         self.cases = prep_cases(raw_cases, date_to_index=date_to_index)
         self.seq_names, self.seq_counts = prep_sequence_counts(raw_seqs, date_to_index=date_to_index)
 
-    def make_numpyro_input(self, k=20): # Eventually want to seperate this k out into r_model
+    def make_numpyro_input(self):
         data = dict()
         data["cases"] = self.cases
         data["seq_counts"] = self.seq_counts
         data["N"] = self.seq_counts.sum(axis=1)
-        data["X"] = make_breakpoint_splines(self.cases, k)
         return data
 
 class LineageVaccinationData():

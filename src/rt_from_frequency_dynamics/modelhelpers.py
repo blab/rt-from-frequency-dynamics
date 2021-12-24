@@ -1,7 +1,7 @@
 # Discretize pmf
+from jax import vmap
 import jax.numpy as jnp
 import numpy as np
-from patsy import dmatrix, bs
 from scipy.stats import gamma, lognorm
 
 
@@ -55,15 +55,39 @@ def make_breakpoint_matrix(cases, k):
     X = break_points_to_mat(break_points, T)
     return X.T
 
-
-def make_breakpoint_splines(cases, k):
-    T = len(cases)
-    t = jnp.linspace(0, 1., T)
-    X = dmatrix(f"bs(t, df={k}, degree=4, include_intercept=True)-1", {"t": t})
-    return jnp.array(X)
-
 def is_obs_idx(v):
     return jnp.where(jnp.isnan(v), jnp.zeros_like(v), jnp.ones_like(v))
 
 def pad_to_obs(v, obs_idx, eps=1e-12):
     return v * obs_idx + (1-obs_idx)*eps
+
+def _omega(s1, s2, t):
+    return jnp.where(s1==s2, jnp.zeros_like(t), (t-s1)/(s2-s1))
+
+def _spline_basis(t, s, order, i):
+    if order == 1:
+        return jnp.where(
+            (t>=s[i])*(t<s[i+1]), 
+            jnp.ones_like(t),
+            jnp.zeros_like(t))
+    
+    # Recurse left
+    w1 = _omega(s[i], s[i+order-1], t)
+    B1 = _spline_basis(t, s, order-1, i)
+    
+    # Recurse right
+    w2 = _omega(s[i+1], s[i+order], t)
+    B2 = _spline_basis(t, s, order-1, i+1)
+    return w1*B1 + (1-w2)*B2
+
+def spline_matrix(t, s, order):
+    _s = jnp.pad(s, mode="edge", pad_width=(order-1)) # Extend knots
+    _sb = lambda i: _spline_basis(t,_s, order, i)
+    X = vmap(_sb)(jnp.arange(0,len(s)+order-2)) # Make spline basis
+    return X.T
+
+def make_breakpoint_splines(T, k):
+    t = jnp.arange(0, T)
+    s = jnp.linspace(0, T, k)
+    X = spline_matrix(t, s, 4)
+    return jnp.array(X)
