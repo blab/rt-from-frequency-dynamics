@@ -50,8 +50,8 @@ date	location	variant	sequences
 2021-12-07	Arizona	other	1
 2021-12-08	Arizona	other	1
 2021-12-10	Arizona	other	1
-2021-12-13	Arizona	other	2
-2021-12-14	Arizona	other	1
+2021-12-13	Arizona	other	3
+2021-12-14	Arizona	other	3
 2021-10-03	Arizona	other	1
 2021-10-04	Arizona	other	3
 2021-10-05	Arizona	other	2
@@ -103,8 +103,8 @@ date	location	variant	sequences
 2021-12-07	Arizona	other	1
 2021-12-08	Arizona	other	1
 2021-12-10	Arizona	other	1
-2021-12-13	Arizona	other	2
-2021-12-14	Arizona	other	1
+2021-12-13	Arizona	other	3
+2021-12-14	Arizona	other	3
 2021-10-01	Arizona	Delta	235
 2021-10-02	Arizona	Delta	124
 2021-10-03	Arizona	Delta	139
@@ -168,31 +168,37 @@ date	location	variant	sequences
 2021-11-30	Arizona	Delta	332
 2021-12-01	Arizona	Delta	222
 2021-12-02	Arizona	Delta	162
-2021-12-03	Arizona	Delta	150
-2021-12-04	Arizona	Delta	167
-2021-12-05	Arizona	Delta	84
-2021-12-06	Arizona	Delta	255
-2021-12-07	Arizona	Delta	138
-2021-12-08	Arizona	Delta	110
-2021-12-09	Arizona	Delta	115
-2021-12-10	Arizona	Delta	101
-2021-12-11	Arizona	Delta	71
-2021-12-12	Arizona	Delta	34
-2021-12-13	Arizona	Delta	106
-2021-12-14	Arizona	Delta	68
-2021-12-15	Arizona	Delta	53
-2021-12-16	Arizona	Delta	63
+2021-12-03	Arizona	Delta	153
+2021-12-04	Arizona	Delta	190
+2021-12-05	Arizona	Delta	108
+2021-12-06	Arizona	Delta	324
+2021-12-07	Arizona	Delta	171
+2021-12-08	Arizona	Delta	126
+2021-12-09	Arizona	Delta	121
+2021-12-10	Arizona	Delta	124
+2021-12-11	Arizona	Delta	72
+2021-12-12	Arizona	Delta	44
+2021-12-13	Arizona	Delta	118
+2021-12-14	Arizona	Delta	141
+2021-12-15	Arizona	Delta	77
+2021-12-16	Arizona	Delta	70
+2021-12-17	Arizona	Delta	47
+2021-12-18	Arizona	Delta	60
+2021-12-19	Arizona	Delta	14
 2021-12-05	Arizona	Omicron	2
 2021-12-06	Arizona	Omicron	3
 2021-12-07	Arizona	Omicron	3
 2021-12-08	Arizona	Omicron	8
-2021-12-09	Arizona	Omicron	2
-2021-12-10	Arizona	Omicron	4
+2021-12-09	Arizona	Omicron	3
+2021-12-10	Arizona	Omicron	5
 2021-12-11	Arizona	Omicron	2
-2021-12-13	Arizona	Omicron	8
-2021-12-14	Arizona	Omicron	22
-2021-12-15	Arizona	Omicron	17
-2021-12-16	Arizona	Omicron	24
+2021-12-13	Arizona	Omicron	9
+2021-12-14	Arizona	Omicron	28
+2021-12-15	Arizona	Omicron	18
+2021-12-16	Arizona	Omicron	28
+2021-12-17	Arizona	Omicron	32
+2021-12-18	Arizona	Omicron	31
+2021-12-19	Arizona	Omicron	21
 2021-10-01	California	other	1
 2021-10-02	California	other	2
 2021-10-03	California	other	1
@@ -249,9 +255,12 @@ date	location	variant	sequences
 2021-12-06	California	other	3
 2021-12-11	California	other	2
 2021-12-13	California	other	1
-2021-12-14	California	other	3
+2021-12-14	California	other	4
 2021-12-15	California	other	3
 2021-12-16	California	other	4
+2021-12-17	California	other	1
+2021-12-18	California	other	3
+2021-12-19	California	other	1
 2021-10-01	California	other	1
 2021-10-02	California	other	2
 2021-10-03	California	other	1
@@ -308,9 +317,12 @@ date	location	variant	sequences
 2021-12-06	California	other	3
 2021-12-11	California	other	2
 2021-12-13	California	other	1
-2021-12-14	California	other	3
+2021-12-14	California	other	4
 2021-12-15	California	other	3
 2021-12-16	California	other	4
+2021-12-17	California	other	1
+2021-12-18	California	other	3
+2021-12-19	California	other	1
 2021-10-01	California	Delta	1268
 2021-10-02	California	Delta	646
 2021-10-03	California	Delta	416
@@ -327,67 +339,70 @@ date	location	variant	sequences
 2021-10-14	California	Delta	932
 2021-10-15	California	Delta	1022
 2021-10-16	California	Delta	561
-2021-10-17	California	Delta	350
+2021-10-17	California	Delta	368
 2021-10-18	California	Delta	1586
 2021-10-19	California	Delta	1382
-2021-10-20	California	Delta	1144
-2021-10-21	California	Delta	1163
+2021-10-20	California	Delta	1145
+2021-10-21	California	Delta	1164
 2021-10-22	California	Delta	1066
-2021-10-23	California	Delta	751
-2021-10-24	California	Delta	543
+2021-10-23	California	Delta	752
+2021-10-24	California	Delta	570
 2021-10-25	California	Delta	2080
 2021-10-26	California	Delta	1841
 2021-10-27	California	Delta	1446
-2021-10-28	California	Delta	1229
-2021-10-29	California	Delta	1073
+2021-10-28	California	Delta	1230
+2021-10-29	California	Delta	1075
 2021-10-30	California	Delta	844
 2021-10-31	California	Delta	363
 2021-11-01	California	Delta	1501
-2021-11-02	California	Delta	1880
-2021-11-03	California	Delta	1672
+2021-11-02	California	Delta	1882
+2021-11-03	California	Delta	1674
 2021-11-04	California	Delta	1555
-2021-11-05	California	Delta	1317
+2021-11-05	California	Delta	1319
 2021-11-06	California	Delta	810
-2021-11-07	California	Delta	550
+2021-11-07	California	Delta	617
 2021-11-08	California	Delta	1754
-2021-11-09	California	Delta	1686
-2021-11-10	California	Delta	1653
+2021-11-09	California	Delta	1687
+2021-11-10	California	Delta	1658
 2021-11-11	California	Delta	881
-2021-11-12	California	Delta	1615
+2021-11-12	California	Delta	1621
 2021-11-13	California	Delta	853
-2021-11-14	California	Delta	442
+2021-11-14	California	Delta	465
 2021-11-15	California	Delta	1354
-2021-11-16	California	Delta	1461
+2021-11-16	California	Delta	1463
 2021-11-17	California	Delta	1336
-2021-11-18	California	Delta	1238
-2021-11-19	California	Delta	1172
-2021-11-20	California	Delta	746
-2021-11-21	California	Delta	394
-2021-11-22	California	Delta	1383
-2021-11-23	California	Delta	1174
-2021-11-24	California	Delta	1157
-2021-11-25	California	Delta	185
-2021-11-26	California	Delta	634
-2021-11-27	California	Delta	666
-2021-11-28	California	Delta	331
-2021-11-29	California	Delta	1224
-2021-11-30	California	Delta	1538
-2021-12-01	California	Delta	1318
-2021-12-02	California	Delta	1132
-2021-12-03	California	Delta	884
-2021-12-04	California	Delta	558
-2021-12-05	California	Delta	279
-2021-12-06	California	Delta	1238
-2021-12-07	California	Delta	1152
-2021-12-08	California	Delta	775
-2021-12-09	California	Delta	683
-2021-12-10	California	Delta	646
-2021-12-11	California	Delta	492
-2021-12-12	California	Delta	149
-2021-12-13	California	Delta	731
-2021-12-14	California	Delta	464
-2021-12-15	California	Delta	593
-2021-12-16	California	Delta	514
+2021-11-18	California	Delta	1241
+2021-11-19	California	Delta	1176
+2021-11-20	California	Delta	750
+2021-11-21	California	Delta	423
+2021-11-22	California	Delta	1393
+2021-11-23	California	Delta	1183
+2021-11-24	California	Delta	1163
+2021-11-25	California	Delta	194
+2021-11-26	California	Delta	651
+2021-11-27	California	Delta	677
+2021-11-28	California	Delta	367
+2021-11-29	California	Delta	1257
+2021-11-30	California	Delta	1565
+2021-12-01	California	Delta	1569
+2021-12-02	California	Delta	1430
+2021-12-03	California	Delta	1382
+2021-12-04	California	Delta	813
+2021-12-05	California	Delta	392
+2021-12-06	California	Delta	1578
+2021-12-07	California	Delta	1338
+2021-12-08	California	Delta	837
+2021-12-09	California	Delta	745
+2021-12-10	California	Delta	728
+2021-12-11	California	Delta	517
+2021-12-12	California	Delta	174
+2021-12-13	California	Delta	801
+2021-12-14	California	Delta	610
+2021-12-15	California	Delta	697
+2021-12-16	California	Delta	524
+2021-12-17	California	Delta	534
+2021-12-18	California	Delta	392
+2021-12-19	California	Delta	85
 2021-11-26	California	Omicron	1
 2021-11-27	California	Omicron	1
 2021-11-28	California	Omicron	1
@@ -398,17 +413,218 @@ date	location	variant	sequences
 2021-12-03	California	Omicron	2
 2021-12-04	California	Omicron	3
 2021-12-05	California	Omicron	2
-2021-12-06	California	Omicron	13
-2021-12-07	California	Omicron	18
-2021-12-08	California	Omicron	25
-2021-12-09	California	Omicron	7
-2021-12-10	California	Omicron	5
-2021-12-11	California	Omicron	7
-2021-12-12	California	Omicron	23
-2021-12-13	California	Omicron	121
-2021-12-14	California	Omicron	189
-2021-12-15	California	Omicron	458
-2021-12-16	California	Omicron	589
+2021-12-06	California	Omicron	14
+2021-12-07	California	Omicron	19
+2021-12-08	California	Omicron	27
+2021-12-09	California	Omicron	9
+2021-12-10	California	Omicron	9
+2021-12-11	California	Omicron	9
+2021-12-12	California	Omicron	25
+2021-12-13	California	Omicron	134
+2021-12-14	California	Omicron	230
+2021-12-15	California	Omicron	516
+2021-12-16	California	Omicron	601
+2021-12-17	California	Omicron	668
+2021-12-18	California	Omicron	715
+2021-12-19	California	Omicron	243
+2021-10-01	Colorado	other	1
+2021-10-04	Colorado	other	2
+2021-10-05	Colorado	other	3
+2021-10-07	Colorado	other	2
+2021-10-09	Colorado	other	1
+2021-10-12	Colorado	other	1
+2021-10-14	Colorado	other	1
+2021-10-16	Colorado	other	1
+2021-10-18	Colorado	other	3
+2021-10-19	Colorado	other	1
+2021-10-20	Colorado	other	2
+2021-10-21	Colorado	other	5
+2021-10-22	Colorado	other	1
+2021-10-23	Colorado	other	1
+2021-10-24	Colorado	other	2
+2021-10-25	Colorado	other	1
+2021-10-26	Colorado	other	1
+2021-10-27	Colorado	other	1
+2021-10-28	Colorado	other	1
+2021-10-29	Colorado	other	2
+2021-10-30	Colorado	other	1
+2021-10-31	Colorado	other	2
+2021-11-01	Colorado	other	2
+2021-11-02	Colorado	other	2
+2021-11-03	Colorado	other	3
+2021-11-04	Colorado	other	3
+2021-11-05	Colorado	other	7
+2021-11-07	Colorado	other	1
+2021-11-08	Colorado	other	5
+2021-11-09	Colorado	other	4
+2021-11-11	Colorado	other	3
+2021-11-12	Colorado	other	5
+2021-11-13	Colorado	other	2
+2021-11-14	Colorado	other	2
+2021-11-15	Colorado	other	5
+2021-11-16	Colorado	other	6
+2021-11-17	Colorado	other	2
+2021-11-18	Colorado	other	5
+2021-11-19	Colorado	other	1
+2021-11-20	Colorado	other	1
+2021-11-22	Colorado	other	1
+2021-11-23	Colorado	other	1
+2021-11-26	Colorado	other	1
+2021-12-01	Colorado	other	1
+2021-12-07	Colorado	other	1
+2021-12-09	Colorado	other	1
+2021-12-10	Colorado	other	2
+2021-12-13	Colorado	other	1
+2021-12-14	Colorado	other	2
+2021-10-01	Colorado	other	1
+2021-10-04	Colorado	other	2
+2021-10-05	Colorado	other	3
+2021-10-07	Colorado	other	2
+2021-10-09	Colorado	other	1
+2021-10-12	Colorado	other	1
+2021-10-14	Colorado	other	1
+2021-10-16	Colorado	other	1
+2021-10-18	Colorado	other	3
+2021-10-19	Colorado	other	1
+2021-10-20	Colorado	other	2
+2021-10-21	Colorado	other	5
+2021-10-22	Colorado	other	1
+2021-10-23	Colorado	other	1
+2021-10-24	Colorado	other	2
+2021-10-25	Colorado	other	1
+2021-10-26	Colorado	other	1
+2021-10-27	Colorado	other	1
+2021-10-28	Colorado	other	1
+2021-10-29	Colorado	other	2
+2021-10-30	Colorado	other	1
+2021-10-31	Colorado	other	2
+2021-11-01	Colorado	other	2
+2021-11-02	Colorado	other	2
+2021-11-03	Colorado	other	3
+2021-11-04	Colorado	other	3
+2021-11-05	Colorado	other	7
+2021-11-07	Colorado	other	1
+2021-11-08	Colorado	other	5
+2021-11-09	Colorado	other	4
+2021-11-11	Colorado	other	3
+2021-11-12	Colorado	other	5
+2021-11-13	Colorado	other	2
+2021-11-14	Colorado	other	2
+2021-11-15	Colorado	other	5
+2021-11-16	Colorado	other	6
+2021-11-17	Colorado	other	2
+2021-11-18	Colorado	other	5
+2021-11-19	Colorado	other	1
+2021-11-20	Colorado	other	1
+2021-11-22	Colorado	other	1
+2021-11-23	Colorado	other	1
+2021-11-26	Colorado	other	1
+2021-12-01	Colorado	other	1
+2021-12-07	Colorado	other	1
+2021-12-09	Colorado	other	1
+2021-12-10	Colorado	other	2
+2021-12-13	Colorado	other	1
+2021-12-14	Colorado	other	2
+2021-10-01	Colorado	Delta	551
+2021-10-02	Colorado	Delta	319
+2021-10-03	Colorado	Delta	257
+2021-10-04	Colorado	Delta	1125
+2021-10-05	Colorado	Delta	922
+2021-10-06	Colorado	Delta	916
+2021-10-07	Colorado	Delta	962
+2021-10-08	Colorado	Delta	884
+2021-10-09	Colorado	Delta	441
+2021-10-10	Colorado	Delta	378
+2021-10-11	Colorado	Delta	869
+2021-10-12	Colorado	Delta	836
+2021-10-13	Colorado	Delta	867
+2021-10-14	Colorado	Delta	832
+2021-10-15	Colorado	Delta	670
+2021-10-16	Colorado	Delta	378
+2021-10-17	Colorado	Delta	391
+2021-10-18	Colorado	Delta	1055
+2021-10-19	Colorado	Delta	924
+2021-10-20	Colorado	Delta	921
+2021-10-21	Colorado	Delta	830
+2021-10-22	Colorado	Delta	979
+2021-10-23	Colorado	Delta	559
+2021-10-24	Colorado	Delta	572
+2021-10-25	Colorado	Delta	1055
+2021-10-26	Colorado	Delta	995
+2021-10-27	Colorado	Delta	1031
+2021-10-28	Colorado	Delta	902
+2021-10-29	Colorado	Delta	659
+2021-10-30	Colorado	Delta	521
+2021-10-31	Colorado	Delta	399
+2021-11-01	Colorado	Delta	643
+2021-11-02	Colorado	Delta	1874
+2021-11-03	Colorado	Delta	2078
+2021-11-04	Colorado	Delta	1229
+2021-11-05	Colorado	Delta	991
+2021-11-06	Colorado	Delta	662
+2021-11-07	Colorado	Delta	609
+2021-11-08	Colorado	Delta	754
+2021-11-09	Colorado	Delta	1421
+2021-11-10	Colorado	Delta	1680
+2021-11-11	Colorado	Delta	1441
+2021-11-12	Colorado	Delta	1545
+2021-11-13	Colorado	Delta	895
+2021-11-14	Colorado	Delta	591
+2021-11-15	Colorado	Delta	965
+2021-11-16	Colorado	Delta	1155
+2021-11-17	Colorado	Delta	1234
+2021-11-18	Colorado	Delta	1012
+2021-11-19	Colorado	Delta	227
+2021-11-20	Colorado	Delta	158
+2021-11-21	Colorado	Delta	1179
+2021-11-22	Colorado	Delta	587
+2021-11-23	Colorado	Delta	1160
+2021-11-24	Colorado	Delta	1197
+2021-11-25	Colorado	Delta	247
+2021-11-26	Colorado	Delta	1051
+2021-11-27	Colorado	Delta	879
+2021-11-28	Colorado	Delta	911
+2021-11-29	Colorado	Delta	1027
+2021-11-30	Colorado	Delta	427
+2021-12-01	Colorado	Delta	609
+2021-12-02	Colorado	Delta	518
+2021-12-03	Colorado	Delta	634
+2021-12-04	Colorado	Delta	356
+2021-12-05	Colorado	Delta	279
+2021-12-06	Colorado	Delta	620
+2021-12-07	Colorado	Delta	466
+2021-12-08	Colorado	Delta	323
+2021-12-09	Colorado	Delta	434
+2021-12-10	Colorado	Delta	357
+2021-12-11	Colorado	Delta	156
+2021-12-12	Colorado	Delta	252
+2021-12-13	Colorado	Delta	183
+2021-12-14	Colorado	Delta	245
+2021-12-15	Colorado	Delta	259
+2021-12-16	Colorado	Delta	210
+2021-12-17	Colorado	Delta	136
+2021-12-18	Colorado	Delta	62
+2021-10-15	Colorado	Omicron	1
+2021-11-26	Colorado	Omicron	14
+2021-11-27	Colorado	Omicron	2
+2021-11-28	Colorado	Omicron	2
+2021-11-29	Colorado	Omicron	1
+2021-11-30	Colorado	Omicron	3
+2021-12-02	Colorado	Omicron	1
+2021-12-06	Colorado	Omicron	3
+2021-12-07	Colorado	Omicron	2
+2021-12-08	Colorado	Omicron	8
+2021-12-09	Colorado	Omicron	21
+2021-12-10	Colorado	Omicron	16
+2021-12-11	Colorado	Omicron	18
+2021-12-12	Colorado	Omicron	19
+2021-12-13	Colorado	Omicron	58
+2021-12-14	Colorado	Omicron	124
+2021-12-15	Colorado	Omicron	204
+2021-12-16	Colorado	Omicron	78
+2021-12-17	Colorado	Omicron	109
+2021-12-18	Colorado	Omicron	74
+2021-12-19	Colorado	Omicron	2
 2021-10-04	Connecticut	other	1
 2021-10-05	Connecticut	other	1
 2021-10-12	Connecticut	other	1
@@ -429,7 +645,10 @@ date	location	variant	sequences
 2021-11-22	Connecticut	other	1
 2021-11-26	Connecticut	other	1
 2021-11-28	Connecticut	other	1
+2021-12-07	Connecticut	other	1
 2021-12-08	Connecticut	other	2
+2021-12-10	Connecticut	other	1
+2021-12-14	Connecticut	other	1
 2021-10-04	Connecticut	other	1
 2021-10-05	Connecticut	other	1
 2021-10-12	Connecticut	other	1
@@ -450,7 +669,10 @@ date	location	variant	sequences
 2021-11-22	Connecticut	other	1
 2021-11-26	Connecticut	other	1
 2021-11-28	Connecticut	other	1
+2021-12-07	Connecticut	other	1
 2021-12-08	Connecticut	other	2
+2021-12-10	Connecticut	other	1
+2021-12-14	Connecticut	other	1
 2021-10-01	Connecticut	Delta	76
 2021-10-02	Connecticut	Delta	48
 2021-10-03	Connecticut	Delta	49
@@ -484,13 +706,13 @@ date	location	variant	sequences
 2021-10-31	Connecticut	Delta	71
 2021-11-01	Connecticut	Delta	136
 2021-11-02	Connecticut	Delta	108
-2021-11-03	Connecticut	Delta	102
+2021-11-03	Connecticut	Delta	103
 2021-11-04	Connecticut	Delta	122
 2021-11-05	Connecticut	Delta	181
 2021-11-06	Connecticut	Delta	117
 2021-11-07	Connecticut	Delta	103
 2021-11-08	Connecticut	Delta	165
-2021-11-09	Connecticut	Delta	129
+2021-11-09	Connecticut	Delta	130
 2021-11-10	Connecticut	Delta	157
 2021-11-11	Connecticut	Delta	152
 2021-11-12	Connecticut	Delta	132
@@ -503,31 +725,33 @@ date	location	variant	sequences
 2021-11-19	Connecticut	Delta	149
 2021-11-20	Connecticut	Delta	112
 2021-11-21	Connecticut	Delta	88
-2021-11-22	Connecticut	Delta	133
-2021-11-23	Connecticut	Delta	144
-2021-11-24	Connecticut	Delta	137
+2021-11-22	Connecticut	Delta	134
+2021-11-23	Connecticut	Delta	145
+2021-11-24	Connecticut	Delta	140
 2021-11-25	Connecticut	Delta	28
 2021-11-26	Connecticut	Delta	125
-2021-11-27	Connecticut	Delta	78
-2021-11-28	Connecticut	Delta	97
-2021-11-29	Connecticut	Delta	191
-2021-11-30	Connecticut	Delta	153
-2021-12-01	Connecticut	Delta	171
-2021-12-02	Connecticut	Delta	150
-2021-12-03	Connecticut	Delta	121
-2021-12-04	Connecticut	Delta	110
-2021-12-05	Connecticut	Delta	102
-2021-12-06	Connecticut	Delta	136
-2021-12-07	Connecticut	Delta	114
-2021-12-08	Connecticut	Delta	135
-2021-12-09	Connecticut	Delta	111
-2021-12-10	Connecticut	Delta	125
-2021-12-11	Connecticut	Delta	50
-2021-12-12	Connecticut	Delta	19
-2021-12-13	Connecticut	Delta	61
-2021-12-14	Connecticut	Delta	43
-2021-12-15	Connecticut	Delta	46
-2021-12-16	Connecticut	Delta	38
+2021-11-27	Connecticut	Delta	84
+2021-11-28	Connecticut	Delta	99
+2021-11-29	Connecticut	Delta	203
+2021-11-30	Connecticut	Delta	170
+2021-12-01	Connecticut	Delta	180
+2021-12-02	Connecticut	Delta	167
+2021-12-03	Connecticut	Delta	135
+2021-12-04	Connecticut	Delta	124
+2021-12-05	Connecticut	Delta	105
+2021-12-06	Connecticut	Delta	151
+2021-12-07	Connecticut	Delta	157
+2021-12-08	Connecticut	Delta	173
+2021-12-09	Connecticut	Delta	134
+2021-12-10	Connecticut	Delta	164
+2021-12-11	Connecticut	Delta	92
+2021-12-12	Connecticut	Delta	47
+2021-12-13	Connecticut	Delta	137
+2021-12-14	Connecticut	Delta	109
+2021-12-15	Connecticut	Delta	101
+2021-12-16	Connecticut	Delta	76
+2021-12-17	Connecticut	Delta	55
+2021-12-18	Connecticut	Delta	7
 2021-11-28	Connecticut	Omicron	1
 2021-11-30	Connecticut	Omicron	1
 2021-12-01	Connecticut	Omicron	1
@@ -538,13 +762,15 @@ date	location	variant	sequences
 2021-12-07	Connecticut	Omicron	6
 2021-12-08	Connecticut	Omicron	3
 2021-12-09	Connecticut	Omicron	10
-2021-12-10	Connecticut	Omicron	18
-2021-12-11	Connecticut	Omicron	19
-2021-12-12	Connecticut	Omicron	5
-2021-12-13	Connecticut	Omicron	15
-2021-12-14	Connecticut	Omicron	21
-2021-12-15	Connecticut	Omicron	12
-2021-12-16	Connecticut	Omicron	10
+2021-12-10	Connecticut	Omicron	20
+2021-12-11	Connecticut	Omicron	20
+2021-12-12	Connecticut	Omicron	7
+2021-12-13	Connecticut	Omicron	24
+2021-12-14	Connecticut	Omicron	27
+2021-12-15	Connecticut	Omicron	31
+2021-12-16	Connecticut	Omicron	32
+2021-12-17	Connecticut	Omicron	18
+2021-12-18	Connecticut	Omicron	9
 2021-10-01	Florida	other	1
 2021-10-02	Florida	other	2
 2021-10-03	Florida	other	6
@@ -591,6 +817,8 @@ date	location	variant	sequences
 2021-11-21	Florida	other	2
 2021-11-22	Florida	other	3
 2021-11-27	Florida	other	1
+2021-12-09	Florida	other	1
+2021-12-15	Florida	other	1
 2021-10-01	Florida	other	1
 2021-10-02	Florida	other	2
 2021-10-03	Florida	other	6
@@ -637,6 +865,8 @@ date	location	variant	sequences
 2021-11-21	Florida	other	2
 2021-11-22	Florida	other	3
 2021-11-27	Florida	other	1
+2021-12-09	Florida	other	1
+2021-12-15	Florida	other	1
 2021-10-01	Florida	Delta	307
 2021-10-02	Florida	Delta	214
 2021-10-03	Florida	Delta	184
@@ -668,23 +898,23 @@ date	location	variant	sequences
 2021-10-29	Florida	Delta	128
 2021-10-30	Florida	Delta	81
 2021-10-31	Florida	Delta	89
-2021-11-01	Florida	Delta	153
-2021-11-02	Florida	Delta	116
-2021-11-03	Florida	Delta	139
-2021-11-04	Florida	Delta	158
-2021-11-05	Florida	Delta	145
+2021-11-01	Florida	Delta	157
+2021-11-02	Florida	Delta	130
+2021-11-03	Florida	Delta	145
+2021-11-04	Florida	Delta	173
+2021-11-05	Florida	Delta	148
 2021-11-06	Florida	Delta	123
 2021-11-07	Florida	Delta	117
-2021-11-08	Florida	Delta	119
+2021-11-08	Florida	Delta	121
 2021-11-09	Florida	Delta	125
-2021-11-10	Florida	Delta	104
-2021-11-11	Florida	Delta	117
-2021-11-12	Florida	Delta	111
-2021-11-13	Florida	Delta	87
-2021-11-14	Florida	Delta	67
-2021-11-15	Florida	Delta	138
-2021-11-16	Florida	Delta	171
-2021-11-17	Florida	Delta	121
+2021-11-10	Florida	Delta	105
+2021-11-11	Florida	Delta	120
+2021-11-12	Florida	Delta	115
+2021-11-13	Florida	Delta	95
+2021-11-14	Florida	Delta	71
+2021-11-15	Florida	Delta	140
+2021-11-16	Florida	Delta	175
+2021-11-17	Florida	Delta	122
 2021-11-18	Florida	Delta	141
 2021-11-19	Florida	Delta	113
 2021-11-20	Florida	Delta	83
@@ -704,32 +934,195 @@ date	location	variant	sequences
 2021-12-04	Florida	Delta	83
 2021-12-05	Florida	Delta	64
 2021-12-06	Florida	Delta	45
-2021-12-07	Florida	Delta	40
-2021-12-08	Florida	Delta	50
-2021-12-09	Florida	Delta	20
-2021-12-10	Florida	Delta	9
-2021-12-11	Florida	Delta	14
-2021-12-12	Florida	Delta	23
-2021-12-13	Florida	Delta	37
-2021-12-14	Florida	Delta	4
-2021-12-15	Florida	Delta	3
+2021-12-07	Florida	Delta	41
+2021-12-08	Florida	Delta	110
+2021-12-09	Florida	Delta	125
+2021-12-10	Florida	Delta	74
+2021-12-11	Florida	Delta	41
+2021-12-12	Florida	Delta	30
+2021-12-13	Florida	Delta	48
+2021-12-14	Florida	Delta	57
+2021-12-15	Florida	Delta	47
+2021-12-16	Florida	Delta	11
+2021-12-17	Florida	Delta	2
 2021-11-26	Florida	Omicron	1
 2021-11-29	Florida	Omicron	1
 2021-11-30	Florida	Omicron	1
 2021-12-02	Florida	Omicron	5
 2021-12-03	Florida	Omicron	3
-2021-12-04	Florida	Omicron	3
+2021-12-04	Florida	Omicron	5
 2021-12-06	Florida	Omicron	2
 2021-12-07	Florida	Omicron	1
-2021-12-08	Florida	Omicron	3
-2021-12-09	Florida	Omicron	6
-2021-12-10	Florida	Omicron	3
-2021-12-11	Florida	Omicron	10
-2021-12-12	Florida	Omicron	39
-2021-12-13	Florida	Omicron	39
-2021-12-14	Florida	Omicron	33
-2021-12-15	Florida	Omicron	10
-2021-12-16	Florida	Omicron	1
+2021-12-08	Florida	Omicron	33
+2021-12-09	Florida	Omicron	41
+2021-12-10	Florida	Omicron	39
+2021-12-11	Florida	Omicron	34
+2021-12-12	Florida	Omicron	45
+2021-12-13	Florida	Omicron	55
+2021-12-14	Florida	Omicron	129
+2021-12-15	Florida	Omicron	178
+2021-12-16	Florida	Omicron	54
+2021-12-17	Florida	Omicron	8
+2021-12-18	Florida	Omicron	1
+2021-10-04	Georgia	other	1
+2021-10-05	Georgia	other	1
+2021-10-07	Georgia	other	1
+2021-10-13	Georgia	other	1
+2021-10-14	Georgia	other	2
+2021-10-19	Georgia	other	1
+2021-10-20	Georgia	other	1
+2021-10-22	Georgia	other	1
+2021-10-24	Georgia	other	1
+2021-10-25	Georgia	other	1
+2021-10-29	Georgia	other	1
+2021-10-31	Georgia	other	1
+2021-11-01	Georgia	other	1
+2021-11-02	Georgia	other	1
+2021-11-04	Georgia	other	1
+2021-11-05	Georgia	other	1
+2021-11-08	Georgia	other	1
+2021-11-09	Georgia	other	1
+2021-11-10	Georgia	other	1
+2021-11-12	Georgia	other	1
+2021-11-13	Georgia	other	1
+2021-11-14	Georgia	other	2
+2021-11-15	Georgia	other	1
+2021-11-17	Georgia	other	1
+2021-11-18	Georgia	other	1
+2021-11-19	Georgia	other	1
+2021-11-20	Georgia	other	1
+2021-11-22	Georgia	other	1
+2021-11-23	Georgia	other	1
+2021-11-27	Georgia	other	1
+2021-11-30	Georgia	other	1
+2021-12-02	Georgia	other	1
+2021-12-05	Georgia	other	1
+2021-10-04	Georgia	other	1
+2021-10-05	Georgia	other	1
+2021-10-07	Georgia	other	1
+2021-10-13	Georgia	other	1
+2021-10-14	Georgia	other	2
+2021-10-19	Georgia	other	1
+2021-10-20	Georgia	other	1
+2021-10-22	Georgia	other	1
+2021-10-24	Georgia	other	1
+2021-10-25	Georgia	other	1
+2021-10-29	Georgia	other	1
+2021-10-31	Georgia	other	1
+2021-11-01	Georgia	other	1
+2021-11-02	Georgia	other	1
+2021-11-04	Georgia	other	1
+2021-11-05	Georgia	other	1
+2021-11-08	Georgia	other	1
+2021-11-09	Georgia	other	1
+2021-11-10	Georgia	other	1
+2021-11-12	Georgia	other	1
+2021-11-13	Georgia	other	1
+2021-11-14	Georgia	other	2
+2021-11-15	Georgia	other	1
+2021-11-17	Georgia	other	1
+2021-11-18	Georgia	other	1
+2021-11-19	Georgia	other	1
+2021-11-20	Georgia	other	1
+2021-11-22	Georgia	other	1
+2021-11-23	Georgia	other	1
+2021-11-27	Georgia	other	1
+2021-11-30	Georgia	other	1
+2021-12-02	Georgia	other	1
+2021-12-05	Georgia	other	1
+2021-10-01	Georgia	Delta	118
+2021-10-02	Georgia	Delta	71
+2021-10-03	Georgia	Delta	80
+2021-10-04	Georgia	Delta	175
+2021-10-05	Georgia	Delta	164
+2021-10-06	Georgia	Delta	178
+2021-10-07	Georgia	Delta	127
+2021-10-08	Georgia	Delta	141
+2021-10-09	Georgia	Delta	99
+2021-10-10	Georgia	Delta	74
+2021-10-11	Georgia	Delta	136
+2021-10-12	Georgia	Delta	102
+2021-10-13	Georgia	Delta	97
+2021-10-14	Georgia	Delta	95
+2021-10-15	Georgia	Delta	115
+2021-10-16	Georgia	Delta	76
+2021-10-17	Georgia	Delta	51
+2021-10-18	Georgia	Delta	136
+2021-10-19	Georgia	Delta	93
+2021-10-20	Georgia	Delta	64
+2021-10-21	Georgia	Delta	102
+2021-10-22	Georgia	Delta	89
+2021-10-23	Georgia	Delta	60
+2021-10-24	Georgia	Delta	40
+2021-10-25	Georgia	Delta	106
+2021-10-26	Georgia	Delta	84
+2021-10-27	Georgia	Delta	61
+2021-10-28	Georgia	Delta	64
+2021-10-29	Georgia	Delta	66
+2021-10-30	Georgia	Delta	46
+2021-10-31	Georgia	Delta	44
+2021-11-01	Georgia	Delta	51
+2021-11-02	Georgia	Delta	61
+2021-11-03	Georgia	Delta	85
+2021-11-04	Georgia	Delta	51
+2021-11-05	Georgia	Delta	65
+2021-11-06	Georgia	Delta	41
+2021-11-07	Georgia	Delta	46
+2021-11-08	Georgia	Delta	49
+2021-11-09	Georgia	Delta	59
+2021-11-10	Georgia	Delta	104
+2021-11-11	Georgia	Delta	48
+2021-11-12	Georgia	Delta	60
+2021-11-13	Georgia	Delta	57
+2021-11-14	Georgia	Delta	38
+2021-11-15	Georgia	Delta	49
+2021-11-16	Georgia	Delta	76
+2021-11-17	Georgia	Delta	38
+2021-11-18	Georgia	Delta	42
+2021-11-19	Georgia	Delta	40
+2021-11-20	Georgia	Delta	51
+2021-11-21	Georgia	Delta	23
+2021-11-22	Georgia	Delta	32
+2021-11-23	Georgia	Delta	54
+2021-11-24	Georgia	Delta	48
+2021-11-25	Georgia	Delta	2
+2021-11-26	Georgia	Delta	55
+2021-11-27	Georgia	Delta	68
+2021-11-28	Georgia	Delta	49
+2021-11-29	Georgia	Delta	78
+2021-11-30	Georgia	Delta	38
+2021-12-01	Georgia	Delta	52
+2021-12-02	Georgia	Delta	56
+2021-12-03	Georgia	Delta	42
+2021-12-04	Georgia	Delta	47
+2021-12-05	Georgia	Delta	51
+2021-12-06	Georgia	Delta	31
+2021-12-07	Georgia	Delta	27
+2021-12-08	Georgia	Delta	43
+2021-12-09	Georgia	Delta	34
+2021-12-10	Georgia	Delta	15
+2021-12-11	Georgia	Delta	47
+2021-12-12	Georgia	Delta	15
+2021-12-13	Georgia	Delta	20
+2021-12-14	Georgia	Delta	44
+2021-12-15	Georgia	Delta	43
+2021-12-16	Georgia	Delta	8
+2021-12-17	Georgia	Delta	3
+2021-11-30	Georgia	Omicron	3
+2021-12-01	Georgia	Omicron	2
+2021-12-02	Georgia	Omicron	1
+2021-12-03	Georgia	Omicron	2
+2021-12-07	Georgia	Omicron	1
+2021-12-08	Georgia	Omicron	9
+2021-12-09	Georgia	Omicron	12
+2021-12-10	Georgia	Omicron	11
+2021-12-11	Georgia	Omicron	11
+2021-12-12	Georgia	Omicron	9
+2021-12-13	Georgia	Omicron	44
+2021-12-14	Georgia	Omicron	97
+2021-12-15	Georgia	Omicron	188
+2021-12-16	Georgia	Omicron	30
+2021-12-17	Georgia	Omicron	3
 2021-10-01	Illinois	other	1
 2021-10-03	Illinois	other	2
 2021-10-04	Illinois	other	2
@@ -781,6 +1174,7 @@ date	location	variant	sequences
 2021-12-06	Illinois	other	1
 2021-12-09	Illinois	other	1
 2021-12-13	Illinois	other	1
+2021-12-14	Illinois	other	5
 2021-10-01	Illinois	other	1
 2021-10-03	Illinois	other	2
 2021-10-04	Illinois	other	2
@@ -832,6 +1226,7 @@ date	location	variant	sequences
 2021-12-06	Illinois	other	1
 2021-12-09	Illinois	other	1
 2021-12-13	Illinois	other	1
+2021-12-14	Illinois	other	5
 2021-10-01	Illinois	Delta	162
 2021-10-02	Illinois	Delta	155
 2021-10-03	Illinois	Delta	153
@@ -885,30 +1280,33 @@ date	location	variant	sequences
 2021-11-20	Illinois	Delta	148
 2021-11-21	Illinois	Delta	133
 2021-11-22	Illinois	Delta	247
-2021-11-23	Illinois	Delta	243
+2021-11-23	Illinois	Delta	244
 2021-11-24	Illinois	Delta	158
 2021-11-25	Illinois	Delta	18
-2021-11-26	Illinois	Delta	208
+2021-11-26	Illinois	Delta	209
 2021-11-27	Illinois	Delta	175
 2021-11-28	Illinois	Delta	178
-2021-11-29	Illinois	Delta	410
+2021-11-29	Illinois	Delta	411
 2021-11-30	Illinois	Delta	123
 2021-12-01	Illinois	Delta	180
 2021-12-02	Illinois	Delta	105
-2021-12-03	Illinois	Delta	156
-2021-12-04	Illinois	Delta	181
-2021-12-05	Illinois	Delta	91
-2021-12-06	Illinois	Delta	197
+2021-12-03	Illinois	Delta	157
+2021-12-04	Illinois	Delta	191
+2021-12-05	Illinois	Delta	102
+2021-12-06	Illinois	Delta	236
 2021-12-07	Illinois	Delta	160
-2021-12-08	Illinois	Delta	164
-2021-12-09	Illinois	Delta	126
-2021-12-10	Illinois	Delta	75
-2021-12-11	Illinois	Delta	89
-2021-12-12	Illinois	Delta	55
-2021-12-13	Illinois	Delta	67
-2021-12-14	Illinois	Delta	39
-2021-12-15	Illinois	Delta	15
-2021-12-16	Illinois	Delta	13
+2021-12-08	Illinois	Delta	181
+2021-12-09	Illinois	Delta	163
+2021-12-10	Illinois	Delta	180
+2021-12-11	Illinois	Delta	116
+2021-12-12	Illinois	Delta	64
+2021-12-13	Illinois	Delta	81
+2021-12-14	Illinois	Delta	197
+2021-12-15	Illinois	Delta	150
+2021-12-16	Illinois	Delta	19
+2021-12-17	Illinois	Delta	13
+2021-12-18	Illinois	Delta	2
+2021-12-19	Illinois	Delta	4
 2021-11-30	Illinois	Omicron	1
 2021-12-01	Illinois	Omicron	2
 2021-12-02	Illinois	Omicron	6
@@ -916,15 +1314,172 @@ date	location	variant	sequences
 2021-12-04	Illinois	Omicron	5
 2021-12-06	Illinois	Omicron	13
 2021-12-07	Illinois	Omicron	7
-2021-12-08	Illinois	Omicron	10
-2021-12-09	Illinois	Omicron	8
-2021-12-10	Illinois	Omicron	4
-2021-12-11	Illinois	Omicron	9
-2021-12-12	Illinois	Omicron	47
-2021-12-13	Illinois	Omicron	38
-2021-12-14	Illinois	Omicron	18
-2021-12-15	Illinois	Omicron	3
-2021-12-16	Illinois	Omicron	2
+2021-12-08	Illinois	Omicron	12
+2021-12-09	Illinois	Omicron	9
+2021-12-10	Illinois	Omicron	15
+2021-12-11	Illinois	Omicron	12
+2021-12-12	Illinois	Omicron	49
+2021-12-13	Illinois	Omicron	46
+2021-12-14	Illinois	Omicron	83
+2021-12-15	Illinois	Omicron	93
+2021-12-16	Illinois	Omicron	5
+2021-12-17	Illinois	Omicron	6
+2021-12-18	Illinois	Omicron	2
+2021-10-03	Indiana	other	1
+2021-10-05	Indiana	other	3
+2021-10-07	Indiana	other	1
+2021-10-10	Indiana	other	1
+2021-10-11	Indiana	other	1
+2021-10-15	Indiana	other	2
+2021-10-18	Indiana	other	1
+2021-10-21	Indiana	other	6
+2021-10-22	Indiana	other	1
+2021-10-28	Indiana	other	1
+2021-10-30	Indiana	other	1
+2021-10-31	Indiana	other	2
+2021-11-02	Indiana	other	2
+2021-11-04	Indiana	other	3
+2021-11-05	Indiana	other	1
+2021-11-06	Indiana	other	2
+2021-11-08	Indiana	other	1
+2021-11-11	Indiana	other	1
+2021-11-13	Indiana	other	2
+2021-11-15	Indiana	other	3
+2021-11-16	Indiana	other	4
+2021-11-17	Indiana	other	1
+2021-11-18	Indiana	other	4
+2021-11-19	Indiana	other	1
+2021-11-20	Indiana	other	1
+2021-11-21	Indiana	other	1
+2021-11-22	Indiana	other	1
+2021-11-26	Indiana	other	1
+2021-12-01	Indiana	other	1
+2021-12-05	Indiana	other	1
+2021-12-08	Indiana	other	1
+2021-12-14	Indiana	other	2
+2021-10-03	Indiana	other	1
+2021-10-05	Indiana	other	3
+2021-10-07	Indiana	other	1
+2021-10-10	Indiana	other	1
+2021-10-11	Indiana	other	1
+2021-10-15	Indiana	other	2
+2021-10-18	Indiana	other	1
+2021-10-21	Indiana	other	6
+2021-10-22	Indiana	other	1
+2021-10-28	Indiana	other	1
+2021-10-30	Indiana	other	1
+2021-10-31	Indiana	other	2
+2021-11-02	Indiana	other	2
+2021-11-04	Indiana	other	3
+2021-11-05	Indiana	other	1
+2021-11-06	Indiana	other	2
+2021-11-08	Indiana	other	1
+2021-11-11	Indiana	other	1
+2021-11-13	Indiana	other	2
+2021-11-15	Indiana	other	3
+2021-11-16	Indiana	other	4
+2021-11-17	Indiana	other	1
+2021-11-18	Indiana	other	4
+2021-11-19	Indiana	other	1
+2021-11-20	Indiana	other	1
+2021-11-21	Indiana	other	1
+2021-11-22	Indiana	other	1
+2021-11-26	Indiana	other	1
+2021-12-01	Indiana	other	1
+2021-12-05	Indiana	other	1
+2021-12-08	Indiana	other	1
+2021-12-14	Indiana	other	2
+2021-10-01	Indiana	Delta	177
+2021-10-02	Indiana	Delta	130
+2021-10-03	Indiana	Delta	140
+2021-10-04	Indiana	Delta	213
+2021-10-05	Indiana	Delta	249
+2021-10-06	Indiana	Delta	218
+2021-10-07	Indiana	Delta	239
+2021-10-08	Indiana	Delta	260
+2021-10-09	Indiana	Delta	147
+2021-10-10	Indiana	Delta	125
+2021-10-11	Indiana	Delta	231
+2021-10-12	Indiana	Delta	140
+2021-10-13	Indiana	Delta	150
+2021-10-14	Indiana	Delta	164
+2021-10-15	Indiana	Delta	162
+2021-10-16	Indiana	Delta	97
+2021-10-17	Indiana	Delta	81
+2021-10-18	Indiana	Delta	147
+2021-10-19	Indiana	Delta	171
+2021-10-20	Indiana	Delta	168
+2021-10-21	Indiana	Delta	170
+2021-10-22	Indiana	Delta	166
+2021-10-23	Indiana	Delta	100
+2021-10-24	Indiana	Delta	100
+2021-10-25	Indiana	Delta	161
+2021-10-26	Indiana	Delta	185
+2021-10-27	Indiana	Delta	192
+2021-10-28	Indiana	Delta	183
+2021-10-29	Indiana	Delta	155
+2021-10-30	Indiana	Delta	91
+2021-10-31	Indiana	Delta	82
+2021-11-01	Indiana	Delta	172
+2021-11-02	Indiana	Delta	199
+2021-11-03	Indiana	Delta	154
+2021-11-04	Indiana	Delta	137
+2021-11-05	Indiana	Delta	146
+2021-11-06	Indiana	Delta	128
+2021-11-07	Indiana	Delta	128
+2021-11-08	Indiana	Delta	190
+2021-11-09	Indiana	Delta	146
+2021-11-10	Indiana	Delta	161
+2021-11-11	Indiana	Delta	164
+2021-11-12	Indiana	Delta	154
+2021-11-13	Indiana	Delta	132
+2021-11-14	Indiana	Delta	117
+2021-11-15	Indiana	Delta	156
+2021-11-16	Indiana	Delta	239
+2021-11-17	Indiana	Delta	248
+2021-11-18	Indiana	Delta	167
+2021-11-19	Indiana	Delta	150
+2021-11-20	Indiana	Delta	104
+2021-11-21	Indiana	Delta	92
+2021-11-22	Indiana	Delta	169
+2021-11-23	Indiana	Delta	144
+2021-11-24	Indiana	Delta	203
+2021-11-25	Indiana	Delta	3
+2021-11-26	Indiana	Delta	204
+2021-11-27	Indiana	Delta	155
+2021-11-28	Indiana	Delta	137
+2021-11-29	Indiana	Delta	173
+2021-11-30	Indiana	Delta	177
+2021-12-01	Indiana	Delta	180
+2021-12-02	Indiana	Delta	155
+2021-12-03	Indiana	Delta	161
+2021-12-04	Indiana	Delta	135
+2021-12-05	Indiana	Delta	124
+2021-12-06	Indiana	Delta	242
+2021-12-07	Indiana	Delta	93
+2021-12-08	Indiana	Delta	134
+2021-12-09	Indiana	Delta	177
+2021-12-10	Indiana	Delta	144
+2021-12-11	Indiana	Delta	84
+2021-12-12	Indiana	Delta	28
+2021-12-13	Indiana	Delta	31
+2021-12-14	Indiana	Delta	120
+2021-12-15	Indiana	Delta	89
+2021-12-16	Indiana	Delta	38
+2021-12-17	Indiana	Delta	33
+2021-12-18	Indiana	Delta	23
+2021-12-19	Indiana	Delta	4
+2021-12-08	Indiana	Omicron	1
+2021-12-09	Indiana	Omicron	1
+2021-12-10	Indiana	Omicron	6
+2021-12-11	Indiana	Omicron	3
+2021-12-13	Indiana	Omicron	4
+2021-12-14	Indiana	Omicron	14
+2021-12-15	Indiana	Omicron	19
+2021-12-16	Indiana	Omicron	15
+2021-12-17	Indiana	Omicron	21
+2021-12-18	Indiana	Omicron	20
+2021-12-19	Indiana	Omicron	4
 2021-10-02	Maryland	other	1
 2021-10-04	Maryland	other	3
 2021-10-05	Maryland	other	3
@@ -950,6 +1505,8 @@ date	location	variant	sequences
 2021-11-21	Maryland	other	1
 2021-11-22	Maryland	other	1
 2021-12-06	Maryland	other	1
+2021-12-10	Maryland	other	1
+2021-12-14	Maryland	other	1
 2021-10-02	Maryland	other	1
 2021-10-04	Maryland	other	3
 2021-10-05	Maryland	other	3
@@ -975,6 +1532,8 @@ date	location	variant	sequences
 2021-11-21	Maryland	other	1
 2021-11-22	Maryland	other	1
 2021-12-06	Maryland	other	1
+2021-12-10	Maryland	other	1
+2021-12-14	Maryland	other	1
 2021-10-01	Maryland	Delta	184
 2021-10-02	Maryland	Delta	148
 2021-10-03	Maryland	Delta	103
@@ -1010,68 +1569,76 @@ date	location	variant	sequences
 2021-11-02	Maryland	Delta	143
 2021-11-03	Maryland	Delta	138
 2021-11-04	Maryland	Delta	120
-2021-11-05	Maryland	Delta	122
-2021-11-06	Maryland	Delta	69
-2021-11-07	Maryland	Delta	94
-2021-11-08	Maryland	Delta	169
-2021-11-09	Maryland	Delta	156
-2021-11-10	Maryland	Delta	154
-2021-11-11	Maryland	Delta	141
-2021-11-12	Maryland	Delta	211
-2021-11-13	Maryland	Delta	93
-2021-11-14	Maryland	Delta	58
-2021-11-15	Maryland	Delta	67
-2021-11-16	Maryland	Delta	127
-2021-11-17	Maryland	Delta	159
-2021-11-18	Maryland	Delta	138
-2021-11-19	Maryland	Delta	152
-2021-11-20	Maryland	Delta	72
-2021-11-21	Maryland	Delta	73
-2021-11-22	Maryland	Delta	86
-2021-11-23	Maryland	Delta	102
-2021-11-24	Maryland	Delta	122
-2021-11-25	Maryland	Delta	42
-2021-11-26	Maryland	Delta	117
-2021-11-27	Maryland	Delta	57
-2021-11-28	Maryland	Delta	35
-2021-11-29	Maryland	Delta	49
-2021-11-30	Maryland	Delta	67
+2021-11-05	Maryland	Delta	123
+2021-11-06	Maryland	Delta	70
+2021-11-07	Maryland	Delta	96
+2021-11-08	Maryland	Delta	174
+2021-11-09	Maryland	Delta	162
+2021-11-10	Maryland	Delta	161
+2021-11-11	Maryland	Delta	149
+2021-11-12	Maryland	Delta	222
+2021-11-13	Maryland	Delta	106
+2021-11-14	Maryland	Delta	77
+2021-11-15	Maryland	Delta	87
+2021-11-16	Maryland	Delta	155
+2021-11-17	Maryland	Delta	194
+2021-11-18	Maryland	Delta	151
+2021-11-19	Maryland	Delta	178
+2021-11-20	Maryland	Delta	99
+2021-11-21	Maryland	Delta	107
+2021-11-22	Maryland	Delta	126
+2021-11-23	Maryland	Delta	142
+2021-11-24	Maryland	Delta	168
+2021-11-25	Maryland	Delta	64
+2021-11-26	Maryland	Delta	150
+2021-11-27	Maryland	Delta	76
+2021-11-28	Maryland	Delta	58
+2021-11-29	Maryland	Delta	115
+2021-11-30	Maryland	Delta	74
 2021-12-01	Maryland	Delta	131
 2021-12-02	Maryland	Delta	114
-2021-12-03	Maryland	Delta	84
-2021-12-04	Maryland	Delta	77
-2021-12-05	Maryland	Delta	41
-2021-12-06	Maryland	Delta	100
-2021-12-07	Maryland	Delta	142
-2021-12-08	Maryland	Delta	141
-2021-12-09	Maryland	Delta	78
-2021-12-10	Maryland	Delta	21
-2021-12-11	Maryland	Delta	34
-2021-12-12	Maryland	Delta	20
-2021-12-13	Maryland	Delta	15
-2021-12-14	Maryland	Delta	26
-2021-12-15	Maryland	Delta	5
-2021-12-16	Maryland	Delta	9
+2021-12-03	Maryland	Delta	85
+2021-12-04	Maryland	Delta	78
+2021-12-05	Maryland	Delta	42
+2021-12-06	Maryland	Delta	101
+2021-12-07	Maryland	Delta	145
+2021-12-08	Maryland	Delta	146
+2021-12-09	Maryland	Delta	85
+2021-12-10	Maryland	Delta	78
+2021-12-11	Maryland	Delta	42
+2021-12-12	Maryland	Delta	37
+2021-12-13	Maryland	Delta	108
+2021-12-14	Maryland	Delta	158
+2021-12-15	Maryland	Delta	47
+2021-12-16	Maryland	Delta	25
+2021-12-17	Maryland	Delta	16
+2021-12-18	Maryland	Delta	19
+2021-12-19	Maryland	Delta	13
 2021-11-21	Maryland	Omicron	1
+2021-11-24	Maryland	Omicron	1
 2021-11-26	Maryland	Omicron	1
 2021-11-27	Maryland	Omicron	1
-2021-11-28	Maryland	Omicron	1
+2021-11-28	Maryland	Omicron	2
+2021-11-29	Maryland	Omicron	1
 2021-11-30	Maryland	Omicron	1
 2021-12-01	Maryland	Omicron	1
 2021-12-02	Maryland	Omicron	3
 2021-12-03	Maryland	Omicron	4
 2021-12-04	Maryland	Omicron	2
-2021-12-06	Maryland	Omicron	13
+2021-12-06	Maryland	Omicron	14
 2021-12-07	Maryland	Omicron	8
-2021-12-08	Maryland	Omicron	10
-2021-12-09	Maryland	Omicron	11
-2021-12-10	Maryland	Omicron	5
-2021-12-11	Maryland	Omicron	4
-2021-12-12	Maryland	Omicron	5
-2021-12-13	Maryland	Omicron	8
-2021-12-14	Maryland	Omicron	15
-2021-12-15	Maryland	Omicron	3
-2021-12-16	Maryland	Omicron	3
+2021-12-08	Maryland	Omicron	12
+2021-12-09	Maryland	Omicron	16
+2021-12-10	Maryland	Omicron	22
+2021-12-11	Maryland	Omicron	16
+2021-12-12	Maryland	Omicron	18
+2021-12-13	Maryland	Omicron	65
+2021-12-14	Maryland	Omicron	143
+2021-12-15	Maryland	Omicron	60
+2021-12-16	Maryland	Omicron	27
+2021-12-17	Maryland	Omicron	22
+2021-12-18	Maryland	Omicron	19
+2021-12-19	Maryland	Omicron	19
 2021-10-01	Massachusetts	other	2
 2021-10-03	Massachusetts	other	1
 2021-10-04	Massachusetts	other	2
@@ -1092,11 +1659,12 @@ date	location	variant	sequences
 2021-10-29	Massachusetts	other	1
 2021-10-30	Massachusetts	other	1
 2021-10-31	Massachusetts	other	1
-2021-11-02	Massachusetts	other	2
+2021-11-02	Massachusetts	other	3
 2021-11-04	Massachusetts	other	1
 2021-11-05	Massachusetts	other	1
+2021-11-06	Massachusetts	other	1
 2021-11-07	Massachusetts	other	1
-2021-11-08	Massachusetts	other	1
+2021-11-08	Massachusetts	other	4
 2021-11-10	Massachusetts	other	2
 2021-11-11	Massachusetts	other	5
 2021-11-12	Massachusetts	other	5
@@ -1105,19 +1673,24 @@ date	location	variant	sequences
 2021-11-15	Massachusetts	other	3
 2021-11-16	Massachusetts	other	7
 2021-11-17	Massachusetts	other	3
-2021-11-18	Massachusetts	other	5
+2021-11-18	Massachusetts	other	6
 2021-11-19	Massachusetts	other	7
-2021-11-20	Massachusetts	other	7
+2021-11-20	Massachusetts	other	8
 2021-11-21	Massachusetts	other	3
 2021-11-22	Massachusetts	other	1
+2021-11-23	Massachusetts	other	1
 2021-11-24	Massachusetts	other	1
 2021-11-30	Massachusetts	other	2
 2021-12-01	Massachusetts	other	2
 2021-12-02	Massachusetts	other	1
+2021-12-03	Massachusetts	other	1
 2021-12-07	Massachusetts	other	1
 2021-12-08	Massachusetts	other	1
+2021-12-12	Massachusetts	other	1
 2021-12-13	Massachusetts	other	1
 2021-12-14	Massachusetts	other	1
+2021-12-15	Massachusetts	other	2
+2021-12-16	Massachusetts	other	1
 2021-10-01	Massachusetts	other	2
 2021-10-03	Massachusetts	other	1
 2021-10-04	Massachusetts	other	2
@@ -1138,11 +1711,12 @@ date	location	variant	sequences
 2021-10-29	Massachusetts	other	1
 2021-10-30	Massachusetts	other	1
 2021-10-31	Massachusetts	other	1
-2021-11-02	Massachusetts	other	2
+2021-11-02	Massachusetts	other	3
 2021-11-04	Massachusetts	other	1
 2021-11-05	Massachusetts	other	1
+2021-11-06	Massachusetts	other	1
 2021-11-07	Massachusetts	other	1
-2021-11-08	Massachusetts	other	1
+2021-11-08	Massachusetts	other	4
 2021-11-10	Massachusetts	other	2
 2021-11-11	Massachusetts	other	5
 2021-11-12	Massachusetts	other	5
@@ -1151,19 +1725,24 @@ date	location	variant	sequences
 2021-11-15	Massachusetts	other	3
 2021-11-16	Massachusetts	other	7
 2021-11-17	Massachusetts	other	3
-2021-11-18	Massachusetts	other	5
+2021-11-18	Massachusetts	other	6
 2021-11-19	Massachusetts	other	7
-2021-11-20	Massachusetts	other	7
+2021-11-20	Massachusetts	other	8
 2021-11-21	Massachusetts	other	3
 2021-11-22	Massachusetts	other	1
+2021-11-23	Massachusetts	other	1
 2021-11-24	Massachusetts	other	1
 2021-11-30	Massachusetts	other	2
 2021-12-01	Massachusetts	other	2
 2021-12-02	Massachusetts	other	1
+2021-12-03	Massachusetts	other	1
 2021-12-07	Massachusetts	other	1
 2021-12-08	Massachusetts	other	1
+2021-12-12	Massachusetts	other	1
 2021-12-13	Massachusetts	other	1
 2021-12-14	Massachusetts	other	1
+2021-12-15	Massachusetts	other	2
+2021-12-16	Massachusetts	other	1
 2021-10-01	Massachusetts	Delta	388
 2021-10-02	Massachusetts	Delta	249
 2021-10-03	Massachusetts	Delta	278
@@ -1184,66 +1763,69 @@ date	location	variant	sequences
 2021-10-18	Massachusetts	Delta	493
 2021-10-19	Massachusetts	Delta	371
 2021-10-20	Massachusetts	Delta	360
-2021-10-21	Massachusetts	Delta	456
+2021-10-21	Massachusetts	Delta	457
 2021-10-22	Massachusetts	Delta	398
 2021-10-23	Massachusetts	Delta	288
 2021-10-24	Massachusetts	Delta	234
 2021-10-25	Massachusetts	Delta	502
-2021-10-26	Massachusetts	Delta	338
+2021-10-26	Massachusetts	Delta	339
 2021-10-27	Massachusetts	Delta	323
 2021-10-28	Massachusetts	Delta	519
 2021-10-29	Massachusetts	Delta	411
 2021-10-30	Massachusetts	Delta	226
-2021-10-31	Massachusetts	Delta	294
+2021-10-31	Massachusetts	Delta	295
 2021-11-01	Massachusetts	Delta	536
-2021-11-02	Massachusetts	Delta	432
-2021-11-03	Massachusetts	Delta	498
-2021-11-04	Massachusetts	Delta	593
-2021-11-05	Massachusetts	Delta	489
-2021-11-06	Massachusetts	Delta	338
+2021-11-02	Massachusetts	Delta	446
+2021-11-03	Massachusetts	Delta	508
+2021-11-04	Massachusetts	Delta	601
+2021-11-05	Massachusetts	Delta	500
+2021-11-06	Massachusetts	Delta	339
 2021-11-07	Massachusetts	Delta	326
-2021-11-08	Massachusetts	Delta	661
-2021-11-09	Massachusetts	Delta	625
-2021-11-10	Massachusetts	Delta	587
+2021-11-08	Massachusetts	Delta	668
+2021-11-09	Massachusetts	Delta	633
+2021-11-10	Massachusetts	Delta	589
 2021-11-11	Massachusetts	Delta	573
-2021-11-12	Massachusetts	Delta	556
+2021-11-12	Massachusetts	Delta	557
 2021-11-13	Massachusetts	Delta	474
 2021-11-14	Massachusetts	Delta	429
-2021-11-15	Massachusetts	Delta	989
-2021-11-16	Massachusetts	Delta	852
-2021-11-17	Massachusetts	Delta	664
+2021-11-15	Massachusetts	Delta	990
+2021-11-16	Massachusetts	Delta	854
+2021-11-17	Massachusetts	Delta	665
 2021-11-18	Massachusetts	Delta	806
-2021-11-19	Massachusetts	Delta	610
-2021-11-20	Massachusetts	Delta	502
-2021-11-21	Massachusetts	Delta	403
-2021-11-22	Massachusetts	Delta	1041
-2021-11-23	Massachusetts	Delta	535
-2021-11-24	Massachusetts	Delta	114
+2021-11-19	Massachusetts	Delta	611
+2021-11-20	Massachusetts	Delta	506
+2021-11-21	Massachusetts	Delta	412
+2021-11-22	Massachusetts	Delta	1070
+2021-11-23	Massachusetts	Delta	566
+2021-11-24	Massachusetts	Delta	137
 2021-11-25	Massachusetts	Delta	10
 2021-11-26	Massachusetts	Delta	243
-2021-11-27	Massachusetts	Delta	535
-2021-11-28	Massachusetts	Delta	486
-2021-11-29	Massachusetts	Delta	1868
-2021-11-30	Massachusetts	Delta	1603
-2021-12-01	Massachusetts	Delta	1330
-2021-12-02	Massachusetts	Delta	1397
-2021-12-03	Massachusetts	Delta	1156
-2021-12-04	Massachusetts	Delta	718
-2021-12-05	Massachusetts	Delta	498
-2021-12-06	Massachusetts	Delta	1294
-2021-12-07	Massachusetts	Delta	730
-2021-12-08	Massachusetts	Delta	991
-2021-12-09	Massachusetts	Delta	354
-2021-12-10	Massachusetts	Delta	565
-2021-12-11	Massachusetts	Delta	309
-2021-12-12	Massachusetts	Delta	218
-2021-12-13	Massachusetts	Delta	61
-2021-12-14	Massachusetts	Delta	38
-2021-12-15	Massachusetts	Delta	9
-2021-12-16	Massachusetts	Delta	1
+2021-11-27	Massachusetts	Delta	536
+2021-11-28	Massachusetts	Delta	487
+2021-11-29	Massachusetts	Delta	1869
+2021-11-30	Massachusetts	Delta	1605
+2021-12-01	Massachusetts	Delta	1338
+2021-12-02	Massachusetts	Delta	1401
+2021-12-03	Massachusetts	Delta	1197
+2021-12-04	Massachusetts	Delta	742
+2021-12-05	Massachusetts	Delta	502
+2021-12-06	Massachusetts	Delta	1296
+2021-12-07	Massachusetts	Delta	732
+2021-12-08	Massachusetts	Delta	1006
+2021-12-09	Massachusetts	Delta	389
+2021-12-10	Massachusetts	Delta	697
+2021-12-11	Massachusetts	Delta	392
+2021-12-12	Massachusetts	Delta	273
+2021-12-13	Massachusetts	Delta	103
+2021-12-14	Massachusetts	Delta	154
+2021-12-15	Massachusetts	Delta	81
+2021-12-16	Massachusetts	Delta	27
+2021-12-17	Massachusetts	Delta	18
+2021-12-18	Massachusetts	Delta	3
+2021-12-19	Massachusetts	Delta	4
 2021-11-27	Massachusetts	Omicron	1
 2021-11-29	Massachusetts	Omicron	2
-2021-11-30	Massachusetts	Omicron	6
+2021-11-30	Massachusetts	Omicron	7
 2021-12-01	Massachusetts	Omicron	5
 2021-12-02	Massachusetts	Omicron	5
 2021-12-03	Massachusetts	Omicron	9
@@ -1252,13 +1834,197 @@ date	location	variant	sequences
 2021-12-06	Massachusetts	Omicron	7
 2021-12-07	Massachusetts	Omicron	8
 2021-12-08	Massachusetts	Omicron	22
-2021-12-09	Massachusetts	Omicron	11
-2021-12-10	Massachusetts	Omicron	17
+2021-12-09	Massachusetts	Omicron	12
+2021-12-10	Massachusetts	Omicron	23
 2021-12-11	Massachusetts	Omicron	10
 2021-12-12	Massachusetts	Omicron	12
-2021-12-13	Massachusetts	Omicron	18
-2021-12-14	Massachusetts	Omicron	26
-2021-12-15	Massachusetts	Omicron	22
+2021-12-13	Massachusetts	Omicron	24
+2021-12-14	Massachusetts	Omicron	29
+2021-12-15	Massachusetts	Omicron	36
+2021-12-16	Massachusetts	Omicron	23
+2021-12-17	Massachusetts	Omicron	18
+2021-12-18	Massachusetts	Omicron	26
+2021-12-19	Massachusetts	Omicron	23
+2021-10-01	New Jersey	other	1
+2021-10-02	New Jersey	other	3
+2021-10-04	New Jersey	other	2
+2021-10-05	New Jersey	other	3
+2021-10-06	New Jersey	other	1
+2021-10-08	New Jersey	other	2
+2021-10-09	New Jersey	other	2
+2021-10-12	New Jersey	other	1
+2021-10-17	New Jersey	other	1
+2021-10-18	New Jersey	other	3
+2021-10-19	New Jersey	other	1
+2021-10-22	New Jersey	other	1
+2021-10-25	New Jersey	other	2
+2021-10-26	New Jersey	other	2
+2021-10-29	New Jersey	other	2
+2021-10-30	New Jersey	other	1
+2021-11-03	New Jersey	other	1
+2021-11-05	New Jersey	other	2
+2021-11-06	New Jersey	other	1
+2021-11-08	New Jersey	other	2
+2021-11-09	New Jersey	other	2
+2021-11-10	New Jersey	other	4
+2021-11-11	New Jersey	other	4
+2021-11-12	New Jersey	other	1
+2021-11-13	New Jersey	other	4
+2021-11-14	New Jersey	other	7
+2021-11-15	New Jersey	other	2
+2021-11-16	New Jersey	other	3
+2021-11-17	New Jersey	other	4
+2021-11-18	New Jersey	other	4
+2021-11-19	New Jersey	other	2
+2021-11-20	New Jersey	other	3
+2021-11-21	New Jersey	other	1
+2021-11-22	New Jersey	other	2
+2021-11-23	New Jersey	other	2
+2021-11-24	New Jersey	other	1
+2021-11-27	New Jersey	other	1
+2021-12-01	New Jersey	other	1
+2021-12-06	New Jersey	other	1
+2021-12-08	New Jersey	other	3
+2021-12-09	New Jersey	other	5
+2021-12-10	New Jersey	other	1
+2021-10-01	New Jersey	other	1
+2021-10-02	New Jersey	other	3
+2021-10-04	New Jersey	other	2
+2021-10-05	New Jersey	other	3
+2021-10-06	New Jersey	other	1
+2021-10-08	New Jersey	other	2
+2021-10-09	New Jersey	other	2
+2021-10-12	New Jersey	other	1
+2021-10-17	New Jersey	other	1
+2021-10-18	New Jersey	other	3
+2021-10-19	New Jersey	other	1
+2021-10-22	New Jersey	other	1
+2021-10-25	New Jersey	other	2
+2021-10-26	New Jersey	other	2
+2021-10-29	New Jersey	other	2
+2021-10-30	New Jersey	other	1
+2021-11-03	New Jersey	other	1
+2021-11-05	New Jersey	other	2
+2021-11-06	New Jersey	other	1
+2021-11-08	New Jersey	other	2
+2021-11-09	New Jersey	other	2
+2021-11-10	New Jersey	other	4
+2021-11-11	New Jersey	other	4
+2021-11-12	New Jersey	other	1
+2021-11-13	New Jersey	other	4
+2021-11-14	New Jersey	other	7
+2021-11-15	New Jersey	other	2
+2021-11-16	New Jersey	other	3
+2021-11-17	New Jersey	other	4
+2021-11-18	New Jersey	other	4
+2021-11-19	New Jersey	other	2
+2021-11-20	New Jersey	other	3
+2021-11-21	New Jersey	other	1
+2021-11-22	New Jersey	other	2
+2021-11-23	New Jersey	other	2
+2021-11-24	New Jersey	other	1
+2021-11-27	New Jersey	other	1
+2021-12-01	New Jersey	other	1
+2021-12-06	New Jersey	other	1
+2021-12-08	New Jersey	other	3
+2021-12-09	New Jersey	other	5
+2021-12-10	New Jersey	other	1
+2021-10-01	New Jersey	Delta	186
+2021-10-02	New Jersey	Delta	122
+2021-10-03	New Jersey	Delta	96
+2021-10-04	New Jersey	Delta	108
+2021-10-05	New Jersey	Delta	126
+2021-10-06	New Jersey	Delta	237
+2021-10-07	New Jersey	Delta	186
+2021-10-08	New Jersey	Delta	196
+2021-10-09	New Jersey	Delta	122
+2021-10-10	New Jersey	Delta	97
+2021-10-11	New Jersey	Delta	133
+2021-10-12	New Jersey	Delta	99
+2021-10-13	New Jersey	Delta	236
+2021-10-14	New Jersey	Delta	215
+2021-10-15	New Jersey	Delta	194
+2021-10-16	New Jersey	Delta	64
+2021-10-17	New Jersey	Delta	60
+2021-10-18	New Jersey	Delta	120
+2021-10-19	New Jersey	Delta	115
+2021-10-20	New Jersey	Delta	192
+2021-10-21	New Jersey	Delta	182
+2021-10-22	New Jersey	Delta	205
+2021-10-23	New Jersey	Delta	152
+2021-10-24	New Jersey	Delta	96
+2021-10-25	New Jersey	Delta	112
+2021-10-26	New Jersey	Delta	122
+2021-10-27	New Jersey	Delta	195
+2021-10-28	New Jersey	Delta	191
+2021-10-29	New Jersey	Delta	248
+2021-10-30	New Jersey	Delta	158
+2021-10-31	New Jersey	Delta	119
+2021-11-01	New Jersey	Delta	116
+2021-11-02	New Jersey	Delta	109
+2021-11-03	New Jersey	Delta	202
+2021-11-04	New Jersey	Delta	179
+2021-11-05	New Jersey	Delta	179
+2021-11-06	New Jersey	Delta	104
+2021-11-07	New Jersey	Delta	123
+2021-11-08	New Jersey	Delta	144
+2021-11-09	New Jersey	Delta	156
+2021-11-10	New Jersey	Delta	337
+2021-11-11	New Jersey	Delta	280
+2021-11-12	New Jersey	Delta	133
+2021-11-13	New Jersey	Delta	117
+2021-11-14	New Jersey	Delta	119
+2021-11-15	New Jersey	Delta	100
+2021-11-16	New Jersey	Delta	181
+2021-11-17	New Jersey	Delta	324
+2021-11-18	New Jersey	Delta	120
+2021-11-19	New Jersey	Delta	228
+2021-11-20	New Jersey	Delta	145
+2021-11-21	New Jersey	Delta	120
+2021-11-22	New Jersey	Delta	146
+2021-11-23	New Jersey	Delta	250
+2021-11-24	New Jersey	Delta	195
+2021-11-25	New Jersey	Delta	37
+2021-11-26	New Jersey	Delta	148
+2021-11-27	New Jersey	Delta	94
+2021-11-28	New Jersey	Delta	93
+2021-11-29	New Jersey	Delta	219
+2021-11-30	New Jersey	Delta	254
+2021-12-01	New Jersey	Delta	431
+2021-12-02	New Jersey	Delta	203
+2021-12-03	New Jersey	Delta	108
+2021-12-04	New Jersey	Delta	90
+2021-12-05	New Jersey	Delta	53
+2021-12-06	New Jersey	Delta	127
+2021-12-07	New Jersey	Delta	241
+2021-12-08	New Jersey	Delta	412
+2021-12-09	New Jersey	Delta	160
+2021-12-10	New Jersey	Delta	55
+2021-12-11	New Jersey	Delta	30
+2021-12-12	New Jersey	Delta	28
+2021-12-13	New Jersey	Delta	41
+2021-12-14	New Jersey	Delta	82
+2021-12-15	New Jersey	Delta	45
+2021-12-16	New Jersey	Delta	45
+2021-12-17	New Jersey	Delta	82
+2021-11-26	New Jersey	Omicron	1
+2021-11-29	New Jersey	Omicron	1
+2021-11-30	New Jersey	Omicron	1
+2021-12-01	New Jersey	Omicron	2
+2021-12-02	New Jersey	Omicron	1
+2021-12-03	New Jersey	Omicron	2
+2021-12-06	New Jersey	Omicron	5
+2021-12-07	New Jersey	Omicron	10
+2021-12-08	New Jersey	Omicron	17
+2021-12-09	New Jersey	Omicron	7
+2021-12-10	New Jersey	Omicron	4
+2021-12-11	New Jersey	Omicron	4
+2021-12-12	New Jersey	Omicron	7
+2021-12-13	New Jersey	Omicron	21
+2021-12-14	New Jersey	Omicron	50
+2021-12-15	New Jersey	Omicron	33
+2021-12-16	New Jersey	Omicron	44
+2021-12-17	New Jersey	Omicron	49
 2021-10-02	New York	other	1
 2021-10-04	New York	other	2
 2021-10-06	New York	other	1
@@ -1301,17 +2067,18 @@ date	location	variant	sequences
 2021-11-30	New York	other	2
 2021-12-01	New York	other	4
 2021-12-02	New York	other	1
-2021-12-03	New York	other	5
+2021-12-03	New York	other	7
 2021-12-04	New York	other	1
 2021-12-05	New York	other	1
 2021-12-06	New York	other	6
-2021-12-07	New York	other	3
-2021-12-08	New York	other	5
-2021-12-09	New York	other	7
-2021-12-10	New York	other	3
-2021-12-13	New York	other	1
-2021-12-14	New York	other	2
-2021-12-15	New York	other	1
+2021-12-07	New York	other	6
+2021-12-08	New York	other	7
+2021-12-09	New York	other	10
+2021-12-10	New York	other	6
+2021-12-11	New York	other	1
+2021-12-13	New York	other	2
+2021-12-14	New York	other	3
+2021-12-15	New York	other	3
 2021-10-02	New York	other	1
 2021-10-04	New York	other	2
 2021-10-06	New York	other	1
@@ -1354,17 +2121,18 @@ date	location	variant	sequences
 2021-11-30	New York	other	2
 2021-12-01	New York	other	4
 2021-12-02	New York	other	1
-2021-12-03	New York	other	5
+2021-12-03	New York	other	7
 2021-12-04	New York	other	1
 2021-12-05	New York	other	1
 2021-12-06	New York	other	6
-2021-12-07	New York	other	3
-2021-12-08	New York	other	5
-2021-12-09	New York	other	7
-2021-12-10	New York	other	3
-2021-12-13	New York	other	1
-2021-12-14	New York	other	2
-2021-12-15	New York	other	1
+2021-12-07	New York	other	6
+2021-12-08	New York	other	7
+2021-12-09	New York	other	10
+2021-12-10	New York	other	6
+2021-12-11	New York	other	1
+2021-12-13	New York	other	2
+2021-12-14	New York	other	3
+2021-12-15	New York	other	3
 2021-10-01	New York	Delta	400
 2021-10-02	New York	Delta	226
 2021-10-03	New York	Delta	236
@@ -1386,7 +2154,7 @@ date	location	variant	sequences
 2021-10-19	New York	Delta	280
 2021-10-20	New York	Delta	392
 2021-10-21	New York	Delta	408
-2021-10-22	New York	Delta	375
+2021-10-22	New York	Delta	377
 2021-10-23	New York	Delta	252
 2021-10-24	New York	Delta	173
 2021-10-25	New York	Delta	318
@@ -1396,52 +2164,54 @@ date	location	variant	sequences
 2021-10-29	New York	Delta	407
 2021-10-30	New York	Delta	209
 2021-10-31	New York	Delta	172
-2021-11-01	New York	Delta	241
-2021-11-02	New York	Delta	242
-2021-11-03	New York	Delta	376
-2021-11-04	New York	Delta	389
-2021-11-05	New York	Delta	277
-2021-11-06	New York	Delta	161
-2021-11-07	New York	Delta	182
-2021-11-08	New York	Delta	350
-2021-11-09	New York	Delta	460
-2021-11-10	New York	Delta	579
-2021-11-11	New York	Delta	396
-2021-11-12	New York	Delta	350
-2021-11-13	New York	Delta	206
-2021-11-14	New York	Delta	145
-2021-11-15	New York	Delta	288
-2021-11-16	New York	Delta	339
-2021-11-17	New York	Delta	472
-2021-11-18	New York	Delta	356
-2021-11-19	New York	Delta	466
-2021-11-20	New York	Delta	245
-2021-11-21	New York	Delta	172
-2021-11-22	New York	Delta	395
-2021-11-23	New York	Delta	436
-2021-11-24	New York	Delta	357
+2021-11-01	New York	Delta	254
+2021-11-02	New York	Delta	257
+2021-11-03	New York	Delta	424
+2021-11-04	New York	Delta	422
+2021-11-05	New York	Delta	319
+2021-11-06	New York	Delta	187
+2021-11-07	New York	Delta	195
+2021-11-08	New York	Delta	359
+2021-11-09	New York	Delta	491
+2021-11-10	New York	Delta	647
+2021-11-11	New York	Delta	477
+2021-11-12	New York	Delta	418
+2021-11-13	New York	Delta	224
+2021-11-14	New York	Delta	162
+2021-11-15	New York	Delta	300
+2021-11-16	New York	Delta	377
+2021-11-17	New York	Delta	539
+2021-11-18	New York	Delta	447
+2021-11-19	New York	Delta	547
+2021-11-20	New York	Delta	295
+2021-11-21	New York	Delta	190
+2021-11-22	New York	Delta	415
+2021-11-23	New York	Delta	472
+2021-11-24	New York	Delta	421
 2021-11-25	New York	Delta	78
-2021-11-26	New York	Delta	346
-2021-11-27	New York	Delta	173
-2021-11-28	New York	Delta	211
-2021-11-29	New York	Delta	585
-2021-11-30	New York	Delta	573
-2021-12-01	New York	Delta	719
-2021-12-02	New York	Delta	589
-2021-12-03	New York	Delta	345
-2021-12-04	New York	Delta	210
-2021-12-05	New York	Delta	169
-2021-12-06	New York	Delta	368
-2021-12-07	New York	Delta	330
-2021-12-08	New York	Delta	387
-2021-12-09	New York	Delta	267
-2021-12-10	New York	Delta	137
-2021-12-11	New York	Delta	45
-2021-12-12	New York	Delta	26
-2021-12-13	New York	Delta	64
-2021-12-14	New York	Delta	70
-2021-12-15	New York	Delta	8
-2021-12-16	New York	Delta	3
+2021-11-26	New York	Delta	387
+2021-11-27	New York	Delta	191
+2021-11-28	New York	Delta	213
+2021-11-29	New York	Delta	609
+2021-11-30	New York	Delta	629
+2021-12-01	New York	Delta	721
+2021-12-02	New York	Delta	594
+2021-12-03	New York	Delta	349
+2021-12-04	New York	Delta	215
+2021-12-05	New York	Delta	170
+2021-12-06	New York	Delta	375
+2021-12-07	New York	Delta	504
+2021-12-08	New York	Delta	640
+2021-12-09	New York	Delta	422
+2021-12-10	New York	Delta	342
+2021-12-11	New York	Delta	177
+2021-12-12	New York	Delta	143
+2021-12-13	New York	Delta	266
+2021-12-14	New York	Delta	205
+2021-12-15	New York	Delta	118
+2021-12-16	New York	Delta	78
+2021-12-17	New York	Delta	44
+2021-12-18	New York	Delta	8
 2021-11-22	New York	Omicron	1
 2021-11-24	New York	Omicron	1
 2021-11-25	New York	Omicron	2
@@ -1452,20 +2222,192 @@ date	location	variant	sequences
 2021-11-30	New York	Omicron	11
 2021-12-01	New York	Omicron	22
 2021-12-02	New York	Omicron	16
-2021-12-03	New York	Omicron	22
-2021-12-04	New York	Omicron	7
+2021-12-03	New York	Omicron	24
+2021-12-04	New York	Omicron	9
 2021-12-05	New York	Omicron	13
-2021-12-06	New York	Omicron	45
-2021-12-07	New York	Omicron	80
-2021-12-08	New York	Omicron	136
-2021-12-09	New York	Omicron	144
-2021-12-10	New York	Omicron	72
-2021-12-11	New York	Omicron	22
-2021-12-12	New York	Omicron	17
-2021-12-13	New York	Omicron	82
-2021-12-14	New York	Omicron	172
-2021-12-15	New York	Omicron	48
-2021-12-16	New York	Omicron	10
+2021-12-06	New York	Omicron	54
+2021-12-07	New York	Omicron	110
+2021-12-08	New York	Omicron	219
+2021-12-09	New York	Omicron	199
+2021-12-10	New York	Omicron	126
+2021-12-11	New York	Omicron	76
+2021-12-12	New York	Omicron	78
+2021-12-13	New York	Omicron	287
+2021-12-14	New York	Omicron	297
+2021-12-15	New York	Omicron	265
+2021-12-16	New York	Omicron	213
+2021-12-17	New York	Omicron	179
+2021-12-18	New York	Omicron	67
+2021-12-19	New York	Omicron	2
+2021-10-01	North Carolina	other	1
+2021-10-04	North Carolina	other	1
+2021-10-05	North Carolina	other	3
+2021-10-07	North Carolina	other	1
+2021-10-14	North Carolina	other	2
+2021-10-15	North Carolina	other	1
+2021-10-16	North Carolina	other	2
+2021-10-17	North Carolina	other	1
+2021-10-18	North Carolina	other	1
+2021-10-19	North Carolina	other	1
+2021-10-21	North Carolina	other	1
+2021-10-22	North Carolina	other	1
+2021-10-25	North Carolina	other	3
+2021-10-28	North Carolina	other	1
+2021-10-30	North Carolina	other	1
+2021-11-01	North Carolina	other	1
+2021-11-02	North Carolina	other	2
+2021-11-03	North Carolina	other	2
+2021-11-05	North Carolina	other	3
+2021-11-06	North Carolina	other	2
+2021-11-09	North Carolina	other	1
+2021-11-10	North Carolina	other	1
+2021-11-11	North Carolina	other	1
+2021-11-12	North Carolina	other	1
+2021-11-14	North Carolina	other	2
+2021-11-15	North Carolina	other	1
+2021-11-16	North Carolina	other	3
+2021-11-17	North Carolina	other	1
+2021-11-18	North Carolina	other	7
+2021-11-20	North Carolina	other	2
+2021-11-21	North Carolina	other	1
+2021-11-22	North Carolina	other	2
+2021-11-29	North Carolina	other	1
+2021-11-30	North Carolina	other	1
+2021-12-01	North Carolina	other	2
+2021-12-12	North Carolina	other	1
+2021-12-13	North Carolina	other	1
+2021-12-15	North Carolina	other	1
+2021-10-01	North Carolina	other	1
+2021-10-04	North Carolina	other	1
+2021-10-05	North Carolina	other	3
+2021-10-07	North Carolina	other	1
+2021-10-14	North Carolina	other	2
+2021-10-15	North Carolina	other	1
+2021-10-16	North Carolina	other	2
+2021-10-17	North Carolina	other	1
+2021-10-18	North Carolina	other	1
+2021-10-19	North Carolina	other	1
+2021-10-21	North Carolina	other	1
+2021-10-22	North Carolina	other	1
+2021-10-25	North Carolina	other	3
+2021-10-28	North Carolina	other	1
+2021-10-30	North Carolina	other	1
+2021-11-01	North Carolina	other	1
+2021-11-02	North Carolina	other	2
+2021-11-03	North Carolina	other	2
+2021-11-05	North Carolina	other	3
+2021-11-06	North Carolina	other	2
+2021-11-09	North Carolina	other	1
+2021-11-10	North Carolina	other	1
+2021-11-11	North Carolina	other	1
+2021-11-12	North Carolina	other	1
+2021-11-14	North Carolina	other	2
+2021-11-15	North Carolina	other	1
+2021-11-16	North Carolina	other	3
+2021-11-17	North Carolina	other	1
+2021-11-18	North Carolina	other	7
+2021-11-20	North Carolina	other	2
+2021-11-21	North Carolina	other	1
+2021-11-22	North Carolina	other	2
+2021-11-29	North Carolina	other	1
+2021-11-30	North Carolina	other	1
+2021-12-01	North Carolina	other	2
+2021-12-12	North Carolina	other	1
+2021-12-13	North Carolina	other	1
+2021-12-15	North Carolina	other	1
+2021-10-01	North Carolina	Delta	207
+2021-10-02	North Carolina	Delta	102
+2021-10-03	North Carolina	Delta	114
+2021-10-04	North Carolina	Delta	252
+2021-10-05	North Carolina	Delta	383
+2021-10-06	North Carolina	Delta	278
+2021-10-07	North Carolina	Delta	214
+2021-10-08	North Carolina	Delta	203
+2021-10-09	North Carolina	Delta	91
+2021-10-10	North Carolina	Delta	143
+2021-10-11	North Carolina	Delta	267
+2021-10-12	North Carolina	Delta	224
+2021-10-13	North Carolina	Delta	305
+2021-10-14	North Carolina	Delta	247
+2021-10-15	North Carolina	Delta	158
+2021-10-16	North Carolina	Delta	84
+2021-10-17	North Carolina	Delta	108
+2021-10-18	North Carolina	Delta	257
+2021-10-19	North Carolina	Delta	312
+2021-10-20	North Carolina	Delta	248
+2021-10-21	North Carolina	Delta	88
+2021-10-22	North Carolina	Delta	139
+2021-10-23	North Carolina	Delta	69
+2021-10-24	North Carolina	Delta	96
+2021-10-25	North Carolina	Delta	204
+2021-10-26	North Carolina	Delta	163
+2021-10-27	North Carolina	Delta	233
+2021-10-28	North Carolina	Delta	223
+2021-10-29	North Carolina	Delta	174
+2021-10-30	North Carolina	Delta	47
+2021-10-31	North Carolina	Delta	60
+2021-11-01	North Carolina	Delta	145
+2021-11-02	North Carolina	Delta	161
+2021-11-03	North Carolina	Delta	165
+2021-11-04	North Carolina	Delta	175
+2021-11-05	North Carolina	Delta	158
+2021-11-06	North Carolina	Delta	65
+2021-11-07	North Carolina	Delta	119
+2021-11-08	North Carolina	Delta	217
+2021-11-09	North Carolina	Delta	183
+2021-11-10	North Carolina	Delta	213
+2021-11-11	North Carolina	Delta	150
+2021-11-12	North Carolina	Delta	109
+2021-11-13	North Carolina	Delta	136
+2021-11-14	North Carolina	Delta	68
+2021-11-15	North Carolina	Delta	148
+2021-11-16	North Carolina	Delta	261
+2021-11-17	North Carolina	Delta	158
+2021-11-18	North Carolina	Delta	117
+2021-11-19	North Carolina	Delta	88
+2021-11-20	North Carolina	Delta	48
+2021-11-21	North Carolina	Delta	36
+2021-11-22	North Carolina	Delta	75
+2021-11-23	North Carolina	Delta	243
+2021-11-24	North Carolina	Delta	160
+2021-11-25	North Carolina	Delta	16
+2021-11-26	North Carolina	Delta	82
+2021-11-27	North Carolina	Delta	51
+2021-11-28	North Carolina	Delta	54
+2021-11-29	North Carolina	Delta	105
+2021-11-30	North Carolina	Delta	211
+2021-12-01	North Carolina	Delta	244
+2021-12-02	North Carolina	Delta	77
+2021-12-03	North Carolina	Delta	41
+2021-12-04	North Carolina	Delta	29
+2021-12-05	North Carolina	Delta	16
+2021-12-06	North Carolina	Delta	158
+2021-12-07	North Carolina	Delta	331
+2021-12-08	North Carolina	Delta	135
+2021-12-09	North Carolina	Delta	132
+2021-12-10	North Carolina	Delta	52
+2021-12-11	North Carolina	Delta	35
+2021-12-12	North Carolina	Delta	52
+2021-12-13	North Carolina	Delta	165
+2021-12-14	North Carolina	Delta	338
+2021-12-15	North Carolina	Delta	70
+2021-12-16	North Carolina	Delta	21
+2021-12-17	North Carolina	Delta	22
+2021-12-18	North Carolina	Delta	8
+2021-12-02	North Carolina	Omicron	1
+2021-12-07	North Carolina	Omicron	4
+2021-12-08	North Carolina	Omicron	4
+2021-12-09	North Carolina	Omicron	4
+2021-12-10	North Carolina	Omicron	7
+2021-12-11	North Carolina	Omicron	2
+2021-12-12	North Carolina	Omicron	6
+2021-12-13	North Carolina	Omicron	13
+2021-12-14	North Carolina	Omicron	41
+2021-12-15	North Carolina	Omicron	36
+2021-12-16	North Carolina	Omicron	16
+2021-12-17	North Carolina	Omicron	8
+2021-12-18	North Carolina	Omicron	4
+2021-12-19	North Carolina	Omicron	4
 2021-10-01	Ohio	other	1
 2021-10-03	Ohio	other	2
 2021-10-05	Ohio	other	1
@@ -1506,6 +2448,7 @@ date	location	variant	sequences
 2021-12-02	Ohio	other	1
 2021-12-06	Ohio	other	1
 2021-12-08	Ohio	other	1
+2021-12-14	Ohio	other	2
 2021-10-01	Ohio	other	1
 2021-10-03	Ohio	other	2
 2021-10-05	Ohio	other	1
@@ -1546,23 +2489,24 @@ date	location	variant	sequences
 2021-12-02	Ohio	other	1
 2021-12-06	Ohio	other	1
 2021-12-08	Ohio	other	1
-2021-10-01	Ohio	Delta	111
-2021-10-02	Ohio	Delta	73
-2021-10-03	Ohio	Delta	83
+2021-12-14	Ohio	other	2
+2021-10-01	Ohio	Delta	113
+2021-10-02	Ohio	Delta	74
+2021-10-03	Ohio	Delta	84
 2021-10-04	Ohio	Delta	148
-2021-10-05	Ohio	Delta	263
-2021-10-06	Ohio	Delta	284
+2021-10-05	Ohio	Delta	265
+2021-10-06	Ohio	Delta	285
 2021-10-07	Ohio	Delta	252
 2021-10-08	Ohio	Delta	181
 2021-10-09	Ohio	Delta	82
 2021-10-10	Ohio	Delta	92
 2021-10-11	Ohio	Delta	159
 2021-10-12	Ohio	Delta	97
-2021-10-13	Ohio	Delta	135
-2021-10-14	Ohio	Delta	154
+2021-10-13	Ohio	Delta	136
+2021-10-14	Ohio	Delta	156
 2021-10-15	Ohio	Delta	156
-2021-10-16	Ohio	Delta	108
-2021-10-17	Ohio	Delta	94
+2021-10-16	Ohio	Delta	111
+2021-10-17	Ohio	Delta	98
 2021-10-18	Ohio	Delta	200
 2021-10-19	Ohio	Delta	181
 2021-10-20	Ohio	Delta	160
@@ -1571,14 +2515,14 @@ date	location	variant	sequences
 2021-10-23	Ohio	Delta	115
 2021-10-24	Ohio	Delta	103
 2021-10-25	Ohio	Delta	115
-2021-10-26	Ohio	Delta	140
+2021-10-26	Ohio	Delta	141
 2021-10-27	Ohio	Delta	137
 2021-10-28	Ohio	Delta	130
 2021-10-29	Ohio	Delta	144
 2021-10-30	Ohio	Delta	139
 2021-10-31	Ohio	Delta	97
-2021-11-01	Ohio	Delta	163
-2021-11-02	Ohio	Delta	183
+2021-11-01	Ohio	Delta	164
+2021-11-02	Ohio	Delta	184
 2021-11-03	Ohio	Delta	184
 2021-11-04	Ohio	Delta	193
 2021-11-05	Ohio	Delta	134
@@ -1599,13 +2543,13 @@ date	location	variant	sequences
 2021-11-20	Ohio	Delta	57
 2021-11-21	Ohio	Delta	71
 2021-11-22	Ohio	Delta	158
-2021-11-23	Ohio	Delta	133
+2021-11-23	Ohio	Delta	154
 2021-11-24	Ohio	Delta	124
-2021-11-25	Ohio	Delta	8
-2021-11-26	Ohio	Delta	180
-2021-11-27	Ohio	Delta	103
-2021-11-28	Ohio	Delta	116
-2021-11-29	Ohio	Delta	216
+2021-11-25	Ohio	Delta	9
+2021-11-26	Ohio	Delta	197
+2021-11-27	Ohio	Delta	105
+2021-11-28	Ohio	Delta	119
+2021-11-29	Ohio	Delta	246
 2021-11-30	Ohio	Delta	114
 2021-12-01	Ohio	Delta	140
 2021-12-02	Ohio	Delta	162
@@ -1614,31 +2558,222 @@ date	location	variant	sequences
 2021-12-05	Ohio	Delta	19
 2021-12-06	Ohio	Delta	70
 2021-12-07	Ohio	Delta	62
-2021-12-08	Ohio	Delta	162
-2021-12-09	Ohio	Delta	161
-2021-12-10	Ohio	Delta	84
-2021-12-11	Ohio	Delta	63
-2021-12-12	Ohio	Delta	28
-2021-12-13	Ohio	Delta	66
-2021-12-14	Ohio	Delta	52
-2021-12-15	Ohio	Delta	18
-2021-12-16	Ohio	Delta	20
+2021-12-08	Ohio	Delta	166
+2021-12-09	Ohio	Delta	181
+2021-12-10	Ohio	Delta	202
+2021-12-11	Ohio	Delta	68
+2021-12-12	Ohio	Delta	29
+2021-12-13	Ohio	Delta	72
+2021-12-14	Ohio	Delta	140
+2021-12-15	Ohio	Delta	82
+2021-12-16	Ohio	Delta	28
+2021-12-17	Ohio	Delta	12
+2021-12-18	Ohio	Delta	1
 2021-11-26	Ohio	Omicron	1
 2021-11-29	Ohio	Omicron	1
 2021-12-01	Ohio	Omicron	2
 2021-12-04	Ohio	Omicron	1
 2021-12-05	Ohio	Omicron	2
 2021-12-06	Ohio	Omicron	1
-2021-12-07	Ohio	Omicron	2
+2021-12-07	Ohio	Omicron	3
 2021-12-08	Ohio	Omicron	5
-2021-12-09	Ohio	Omicron	7
-2021-12-10	Ohio	Omicron	4
-2021-12-11	Ohio	Omicron	7
-2021-12-12	Ohio	Omicron	15
-2021-12-13	Ohio	Omicron	40
-2021-12-14	Ohio	Omicron	31
-2021-12-15	Ohio	Omicron	11
-2021-12-16	Ohio	Omicron	11
+2021-12-09	Ohio	Omicron	15
+2021-12-10	Ohio	Omicron	20
+2021-12-11	Ohio	Omicron	10
+2021-12-12	Ohio	Omicron	17
+2021-12-13	Ohio	Omicron	63
+2021-12-14	Ohio	Omicron	87
+2021-12-15	Ohio	Omicron	66
+2021-12-16	Ohio	Omicron	18
+2021-12-17	Ohio	Omicron	26
+2021-12-18	Ohio	Omicron	13
+2021-12-19	Ohio	Omicron	7
+2021-10-04	Pennsylvania	other	1
+2021-10-05	Pennsylvania	other	2
+2021-10-06	Pennsylvania	other	1
+2021-10-07	Pennsylvania	other	1
+2021-10-08	Pennsylvania	other	1
+2021-10-11	Pennsylvania	other	1
+2021-10-12	Pennsylvania	other	1
+2021-10-13	Pennsylvania	other	2
+2021-10-14	Pennsylvania	other	2
+2021-10-15	Pennsylvania	other	1
+2021-10-16	Pennsylvania	other	3
+2021-10-17	Pennsylvania	other	3
+2021-10-19	Pennsylvania	other	1
+2021-10-21	Pennsylvania	other	4
+2021-10-22	Pennsylvania	other	1
+2021-10-24	Pennsylvania	other	1
+2021-10-25	Pennsylvania	other	2
+2021-10-26	Pennsylvania	other	1
+2021-10-30	Pennsylvania	other	1
+2021-11-01	Pennsylvania	other	1
+2021-11-02	Pennsylvania	other	2
+2021-11-04	Pennsylvania	other	4
+2021-11-05	Pennsylvania	other	2
+2021-11-07	Pennsylvania	other	1
+2021-11-08	Pennsylvania	other	1
+2021-11-09	Pennsylvania	other	1
+2021-11-10	Pennsylvania	other	1
+2021-11-11	Pennsylvania	other	3
+2021-11-13	Pennsylvania	other	3
+2021-11-14	Pennsylvania	other	3
+2021-11-15	Pennsylvania	other	6
+2021-11-16	Pennsylvania	other	2
+2021-11-17	Pennsylvania	other	3
+2021-11-18	Pennsylvania	other	7
+2021-11-19	Pennsylvania	other	2
+2021-11-20	Pennsylvania	other	2
+2021-11-21	Pennsylvania	other	1
+2021-11-22	Pennsylvania	other	4
+2021-11-23	Pennsylvania	other	4
+2021-11-24	Pennsylvania	other	1
+2021-11-29	Pennsylvania	other	1
+2021-11-30	Pennsylvania	other	1
+2021-12-01	Pennsylvania	other	1
+2021-12-07	Pennsylvania	other	3
+2021-12-09	Pennsylvania	other	2
+2021-12-14	Pennsylvania	other	2
+2021-10-04	Pennsylvania	other	1
+2021-10-05	Pennsylvania	other	2
+2021-10-06	Pennsylvania	other	1
+2021-10-07	Pennsylvania	other	1
+2021-10-08	Pennsylvania	other	1
+2021-10-11	Pennsylvania	other	1
+2021-10-12	Pennsylvania	other	1
+2021-10-13	Pennsylvania	other	2
+2021-10-14	Pennsylvania	other	2
+2021-10-15	Pennsylvania	other	1
+2021-10-16	Pennsylvania	other	3
+2021-10-17	Pennsylvania	other	3
+2021-10-19	Pennsylvania	other	1
+2021-10-21	Pennsylvania	other	4
+2021-10-22	Pennsylvania	other	1
+2021-10-24	Pennsylvania	other	1
+2021-10-25	Pennsylvania	other	2
+2021-10-26	Pennsylvania	other	1
+2021-10-30	Pennsylvania	other	1
+2021-11-01	Pennsylvania	other	1
+2021-11-02	Pennsylvania	other	2
+2021-11-04	Pennsylvania	other	4
+2021-11-05	Pennsylvania	other	2
+2021-11-07	Pennsylvania	other	1
+2021-11-08	Pennsylvania	other	1
+2021-11-09	Pennsylvania	other	1
+2021-11-10	Pennsylvania	other	1
+2021-11-11	Pennsylvania	other	3
+2021-11-13	Pennsylvania	other	3
+2021-11-14	Pennsylvania	other	3
+2021-11-15	Pennsylvania	other	6
+2021-11-16	Pennsylvania	other	2
+2021-11-17	Pennsylvania	other	3
+2021-11-18	Pennsylvania	other	7
+2021-11-19	Pennsylvania	other	2
+2021-11-20	Pennsylvania	other	2
+2021-11-21	Pennsylvania	other	1
+2021-11-22	Pennsylvania	other	4
+2021-11-23	Pennsylvania	other	4
+2021-11-24	Pennsylvania	other	1
+2021-11-29	Pennsylvania	other	1
+2021-11-30	Pennsylvania	other	1
+2021-12-01	Pennsylvania	other	1
+2021-12-07	Pennsylvania	other	3
+2021-12-09	Pennsylvania	other	2
+2021-12-14	Pennsylvania	other	2
+2021-10-01	Pennsylvania	Delta	168
+2021-10-02	Pennsylvania	Delta	76
+2021-10-03	Pennsylvania	Delta	65
+2021-10-04	Pennsylvania	Delta	155
+2021-10-05	Pennsylvania	Delta	216
+2021-10-06	Pennsylvania	Delta	257
+2021-10-07	Pennsylvania	Delta	203
+2021-10-08	Pennsylvania	Delta	236
+2021-10-09	Pennsylvania	Delta	134
+2021-10-10	Pennsylvania	Delta	148
+2021-10-11	Pennsylvania	Delta	170
+2021-10-12	Pennsylvania	Delta	157
+2021-10-13	Pennsylvania	Delta	210
+2021-10-14	Pennsylvania	Delta	247
+2021-10-15	Pennsylvania	Delta	266
+2021-10-16	Pennsylvania	Delta	165
+2021-10-17	Pennsylvania	Delta	200
+2021-10-18	Pennsylvania	Delta	210
+2021-10-19	Pennsylvania	Delta	182
+2021-10-20	Pennsylvania	Delta	200
+2021-10-21	Pennsylvania	Delta	206
+2021-10-22	Pennsylvania	Delta	185
+2021-10-23	Pennsylvania	Delta	157
+2021-10-24	Pennsylvania	Delta	224
+2021-10-25	Pennsylvania	Delta	200
+2021-10-26	Pennsylvania	Delta	195
+2021-10-27	Pennsylvania	Delta	229
+2021-10-28	Pennsylvania	Delta	216
+2021-10-29	Pennsylvania	Delta	237
+2021-10-30	Pennsylvania	Delta	136
+2021-10-31	Pennsylvania	Delta	149
+2021-11-01	Pennsylvania	Delta	162
+2021-11-02	Pennsylvania	Delta	176
+2021-11-03	Pennsylvania	Delta	261
+2021-11-04	Pennsylvania	Delta	249
+2021-11-05	Pennsylvania	Delta	257
+2021-11-06	Pennsylvania	Delta	145
+2021-11-07	Pennsylvania	Delta	143
+2021-11-08	Pennsylvania	Delta	168
+2021-11-09	Pennsylvania	Delta	217
+2021-11-10	Pennsylvania	Delta	265
+2021-11-11	Pennsylvania	Delta	271
+2021-11-12	Pennsylvania	Delta	230
+2021-11-13	Pennsylvania	Delta	187
+2021-11-14	Pennsylvania	Delta	192
+2021-11-15	Pennsylvania	Delta	184
+2021-11-16	Pennsylvania	Delta	243
+2021-11-17	Pennsylvania	Delta	266
+2021-11-18	Pennsylvania	Delta	235
+2021-11-19	Pennsylvania	Delta	198
+2021-11-20	Pennsylvania	Delta	138
+2021-11-21	Pennsylvania	Delta	148
+2021-11-22	Pennsylvania	Delta	184
+2021-11-23	Pennsylvania	Delta	207
+2021-11-24	Pennsylvania	Delta	221
+2021-11-25	Pennsylvania	Delta	12
+2021-11-26	Pennsylvania	Delta	244
+2021-11-27	Pennsylvania	Delta	196
+2021-11-28	Pennsylvania	Delta	123
+2021-11-29	Pennsylvania	Delta	193
+2021-11-30	Pennsylvania	Delta	188
+2021-12-01	Pennsylvania	Delta	236
+2021-12-02	Pennsylvania	Delta	248
+2021-12-03	Pennsylvania	Delta	225
+2021-12-04	Pennsylvania	Delta	142
+2021-12-05	Pennsylvania	Delta	78
+2021-12-06	Pennsylvania	Delta	109
+2021-12-07	Pennsylvania	Delta	126
+2021-12-08	Pennsylvania	Delta	244
+2021-12-09	Pennsylvania	Delta	187
+2021-12-10	Pennsylvania	Delta	123
+2021-12-11	Pennsylvania	Delta	57
+2021-12-12	Pennsylvania	Delta	12
+2021-12-13	Pennsylvania	Delta	29
+2021-12-14	Pennsylvania	Delta	93
+2021-12-15	Pennsylvania	Delta	97
+2021-12-16	Pennsylvania	Delta	44
+2021-12-17	Pennsylvania	Delta	22
+2021-12-18	Pennsylvania	Delta	13
+2021-11-28	Pennsylvania	Omicron	2
+2021-11-29	Pennsylvania	Omicron	1
+2021-12-01	Pennsylvania	Omicron	2
+2021-12-04	Pennsylvania	Omicron	1
+2021-12-05	Pennsylvania	Omicron	1
+2021-12-08	Pennsylvania	Omicron	5
+2021-12-09	Pennsylvania	Omicron	3
+2021-12-10	Pennsylvania	Omicron	5
+2021-12-11	Pennsylvania	Omicron	1
+2021-12-13	Pennsylvania	Omicron	12
+2021-12-14	Pennsylvania	Omicron	27
+2021-12-15	Pennsylvania	Omicron	43
+2021-12-16	Pennsylvania	Omicron	15
+2021-12-17	Pennsylvania	Omicron	3
+2021-12-18	Pennsylvania	Omicron	4
 2021-10-01	Texas	other	3
 2021-10-02	Texas	other	3
 2021-10-03	Texas	other	4
@@ -1658,7 +2793,7 @@ date	location	variant	sequences
 2021-10-20	Texas	other	5
 2021-10-21	Texas	other	4
 2021-10-22	Texas	other	3
-2021-10-23	Texas	other	3
+2021-10-23	Texas	other	4
 2021-10-24	Texas	other	2
 2021-10-25	Texas	other	3
 2021-10-26	Texas	other	1
@@ -1701,8 +2836,9 @@ date	location	variant	sequences
 2021-12-11	Texas	other	5
 2021-12-12	Texas	other	1
 2021-12-13	Texas	other	2
-2021-12-14	Texas	other	6
-2021-12-15	Texas	other	2
+2021-12-14	Texas	other	10
+2021-12-15	Texas	other	3
+2021-12-18	Texas	other	1
 2021-10-01	Texas	other	3
 2021-10-02	Texas	other	3
 2021-10-03	Texas	other	4
@@ -1722,7 +2858,7 @@ date	location	variant	sequences
 2021-10-20	Texas	other	5
 2021-10-21	Texas	other	4
 2021-10-22	Texas	other	3
-2021-10-23	Texas	other	3
+2021-10-23	Texas	other	4
 2021-10-24	Texas	other	2
 2021-10-25	Texas	other	3
 2021-10-26	Texas	other	1
@@ -1765,85 +2901,89 @@ date	location	variant	sequences
 2021-12-11	Texas	other	5
 2021-12-12	Texas	other	1
 2021-12-13	Texas	other	2
-2021-12-14	Texas	other	6
-2021-12-15	Texas	other	2
+2021-12-14	Texas	other	10
+2021-12-15	Texas	other	3
+2021-12-18	Texas	other	1
 2021-10-01	Texas	Delta	407
 2021-10-02	Texas	Delta	284
 2021-10-03	Texas	Delta	324
 2021-10-04	Texas	Delta	443
-2021-10-05	Texas	Delta	411
-2021-10-06	Texas	Delta	414
+2021-10-05	Texas	Delta	417
+2021-10-06	Texas	Delta	429
 2021-10-07	Texas	Delta	301
 2021-10-08	Texas	Delta	358
-2021-10-09	Texas	Delta	323
-2021-10-10	Texas	Delta	253
-2021-10-11	Texas	Delta	399
-2021-10-12	Texas	Delta	247
-2021-10-13	Texas	Delta	301
-2021-10-14	Texas	Delta	275
-2021-10-15	Texas	Delta	271
-2021-10-16	Texas	Delta	180
-2021-10-17	Texas	Delta	179
-2021-10-18	Texas	Delta	255
-2021-10-19	Texas	Delta	242
-2021-10-20	Texas	Delta	240
-2021-10-21	Texas	Delta	284
-2021-10-22	Texas	Delta	340
-2021-10-23	Texas	Delta	294
-2021-10-24	Texas	Delta	197
-2021-10-25	Texas	Delta	339
-2021-10-26	Texas	Delta	289
-2021-10-27	Texas	Delta	228
-2021-10-28	Texas	Delta	261
-2021-10-29	Texas	Delta	279
-2021-10-30	Texas	Delta	230
-2021-10-31	Texas	Delta	197
-2021-11-01	Texas	Delta	201
-2021-11-02	Texas	Delta	204
-2021-11-03	Texas	Delta	223
-2021-11-04	Texas	Delta	244
-2021-11-05	Texas	Delta	274
-2021-11-06	Texas	Delta	248
-2021-11-07	Texas	Delta	189
-2021-11-08	Texas	Delta	225
-2021-11-09	Texas	Delta	223
-2021-11-10	Texas	Delta	250
-2021-11-11	Texas	Delta	217
-2021-11-12	Texas	Delta	267
-2021-11-13	Texas	Delta	335
-2021-11-14	Texas	Delta	183
-2021-11-15	Texas	Delta	206
-2021-11-16	Texas	Delta	285
-2021-11-17	Texas	Delta	345
-2021-11-18	Texas	Delta	266
-2021-11-19	Texas	Delta	222
-2021-11-20	Texas	Delta	134
-2021-11-21	Texas	Delta	130
-2021-11-22	Texas	Delta	184
-2021-11-23	Texas	Delta	177
-2021-11-24	Texas	Delta	113
+2021-10-09	Texas	Delta	325
+2021-10-10	Texas	Delta	255
+2021-10-11	Texas	Delta	404
+2021-10-12	Texas	Delta	258
+2021-10-13	Texas	Delta	313
+2021-10-14	Texas	Delta	285
+2021-10-15	Texas	Delta	277
+2021-10-16	Texas	Delta	192
+2021-10-17	Texas	Delta	192
+2021-10-18	Texas	Delta	266
+2021-10-19	Texas	Delta	245
+2021-10-20	Texas	Delta	250
+2021-10-21	Texas	Delta	293
+2021-10-22	Texas	Delta	342
+2021-10-23	Texas	Delta	306
+2021-10-24	Texas	Delta	211
+2021-10-25	Texas	Delta	344
+2021-10-26	Texas	Delta	292
+2021-10-27	Texas	Delta	237
+2021-10-28	Texas	Delta	267
+2021-10-29	Texas	Delta	289
+2021-10-30	Texas	Delta	235
+2021-10-31	Texas	Delta	205
+2021-11-01	Texas	Delta	207
+2021-11-02	Texas	Delta	207
+2021-11-03	Texas	Delta	227
+2021-11-04	Texas	Delta	253
+2021-11-05	Texas	Delta	282
+2021-11-06	Texas	Delta	256
+2021-11-07	Texas	Delta	197
+2021-11-08	Texas	Delta	226
+2021-11-09	Texas	Delta	227
+2021-11-10	Texas	Delta	256
+2021-11-11	Texas	Delta	227
+2021-11-12	Texas	Delta	273
+2021-11-13	Texas	Delta	341
+2021-11-14	Texas	Delta	191
+2021-11-15	Texas	Delta	209
+2021-11-16	Texas	Delta	288
+2021-11-17	Texas	Delta	354
+2021-11-18	Texas	Delta	274
+2021-11-19	Texas	Delta	228
+2021-11-20	Texas	Delta	138
+2021-11-21	Texas	Delta	133
+2021-11-22	Texas	Delta	188
+2021-11-23	Texas	Delta	182
+2021-11-24	Texas	Delta	114
 2021-11-25	Texas	Delta	30
 2021-11-26	Texas	Delta	228
 2021-11-27	Texas	Delta	226
-2021-11-28	Texas	Delta	176
-2021-11-29	Texas	Delta	169
-2021-11-30	Texas	Delta	170
+2021-11-28	Texas	Delta	177
+2021-11-29	Texas	Delta	170
+2021-11-30	Texas	Delta	173
 2021-12-01	Texas	Delta	117
-2021-12-02	Texas	Delta	130
+2021-12-02	Texas	Delta	132
 2021-12-03	Texas	Delta	122
-2021-12-04	Texas	Delta	127
-2021-12-05	Texas	Delta	87
-2021-12-06	Texas	Delta	119
-2021-12-07	Texas	Delta	135
-2021-12-08	Texas	Delta	91
-2021-12-09	Texas	Delta	78
-2021-12-10	Texas	Delta	38
-2021-12-11	Texas	Delta	37
-2021-12-12	Texas	Delta	27
-2021-12-13	Texas	Delta	44
-2021-12-14	Texas	Delta	42
-2021-12-15	Texas	Delta	25
-2021-12-16	Texas	Delta	6
+2021-12-04	Texas	Delta	129
+2021-12-05	Texas	Delta	94
+2021-12-06	Texas	Delta	136
+2021-12-07	Texas	Delta	157
+2021-12-08	Texas	Delta	110
+2021-12-09	Texas	Delta	102
+2021-12-10	Texas	Delta	66
+2021-12-11	Texas	Delta	61
+2021-12-12	Texas	Delta	36
+2021-12-13	Texas	Delta	51
+2021-12-14	Texas	Delta	89
+2021-12-15	Texas	Delta	74
+2021-12-16	Texas	Delta	16
+2021-12-17	Texas	Delta	11
+2021-12-18	Texas	Delta	12
+2021-12-19	Texas	Delta	4
 2021-11-27	Texas	Omicron	1
 2021-11-28	Texas	Omicron	1
 2021-11-30	Texas	Omicron	3
@@ -1852,17 +2992,148 @@ date	location	variant	sequences
 2021-12-03	Texas	Omicron	10
 2021-12-04	Texas	Omicron	9
 2021-12-05	Texas	Omicron	8
-2021-12-06	Texas	Omicron	15
-2021-12-07	Texas	Omicron	10
-2021-12-08	Texas	Omicron	19
-2021-12-09	Texas	Omicron	28
-2021-12-10	Texas	Omicron	42
-2021-12-11	Texas	Omicron	41
-2021-12-12	Texas	Omicron	55
-2021-12-13	Texas	Omicron	165
-2021-12-14	Texas	Omicron	202
-2021-12-15	Texas	Omicron	228
-2021-12-16	Texas	Omicron	47
+2021-12-06	Texas	Omicron	16
+2021-12-07	Texas	Omicron	12
+2021-12-08	Texas	Omicron	25
+2021-12-09	Texas	Omicron	31
+2021-12-10	Texas	Omicron	53
+2021-12-11	Texas	Omicron	80
+2021-12-12	Texas	Omicron	68
+2021-12-13	Texas	Omicron	171
+2021-12-14	Texas	Omicron	267
+2021-12-15	Texas	Omicron	337
+2021-12-16	Texas	Omicron	72
+2021-12-17	Texas	Omicron	60
+2021-12-18	Texas	Omicron	78
+2021-12-19	Texas	Omicron	6
+2021-10-02	Virginia	other	1
+2021-10-07	Virginia	other	1
+2021-10-09	Virginia	other	1
+2021-10-14	Virginia	other	1
+2021-10-16	Virginia	other	1
+2021-10-18	Virginia	other	1
+2021-10-20	Virginia	other	1
+2021-10-27	Virginia	other	1
+2021-11-02	Virginia	other	1
+2021-11-04	Virginia	other	1
+2021-11-08	Virginia	other	3
+2021-11-11	Virginia	other	1
+2021-11-15	Virginia	other	2
+2021-11-17	Virginia	other	1
+2021-11-18	Virginia	other	1
+2021-11-23	Virginia	other	1
+2021-12-02	Virginia	other	1
+2021-10-02	Virginia	other	1
+2021-10-07	Virginia	other	1
+2021-10-09	Virginia	other	1
+2021-10-14	Virginia	other	1
+2021-10-16	Virginia	other	1
+2021-10-18	Virginia	other	1
+2021-10-20	Virginia	other	1
+2021-10-27	Virginia	other	1
+2021-11-02	Virginia	other	1
+2021-11-04	Virginia	other	1
+2021-11-08	Virginia	other	3
+2021-11-11	Virginia	other	1
+2021-11-15	Virginia	other	2
+2021-11-17	Virginia	other	1
+2021-11-18	Virginia	other	1
+2021-11-23	Virginia	other	1
+2021-12-02	Virginia	other	1
+2021-10-01	Virginia	Delta	62
+2021-10-02	Virginia	Delta	60
+2021-10-03	Virginia	Delta	40
+2021-10-04	Virginia	Delta	156
+2021-10-05	Virginia	Delta	228
+2021-10-06	Virginia	Delta	151
+2021-10-07	Virginia	Delta	80
+2021-10-08	Virginia	Delta	84
+2021-10-09	Virginia	Delta	33
+2021-10-10	Virginia	Delta	29
+2021-10-11	Virginia	Delta	97
+2021-10-12	Virginia	Delta	98
+2021-10-13	Virginia	Delta	161
+2021-10-14	Virginia	Delta	110
+2021-10-15	Virginia	Delta	110
+2021-10-16	Virginia	Delta	16
+2021-10-17	Virginia	Delta	27
+2021-10-18	Virginia	Delta	75
+2021-10-19	Virginia	Delta	127
+2021-10-20	Virginia	Delta	125
+2021-10-21	Virginia	Delta	94
+2021-10-22	Virginia	Delta	58
+2021-10-23	Virginia	Delta	51
+2021-10-24	Virginia	Delta	43
+2021-10-25	Virginia	Delta	75
+2021-10-26	Virginia	Delta	52
+2021-10-27	Virginia	Delta	100
+2021-10-28	Virginia	Delta	94
+2021-10-29	Virginia	Delta	129
+2021-10-30	Virginia	Delta	92
+2021-10-31	Virginia	Delta	68
+2021-11-01	Virginia	Delta	57
+2021-11-02	Virginia	Delta	48
+2021-11-03	Virginia	Delta	85
+2021-11-04	Virginia	Delta	80
+2021-11-05	Virginia	Delta	122
+2021-11-06	Virginia	Delta	35
+2021-11-07	Virginia	Delta	115
+2021-11-08	Virginia	Delta	103
+2021-11-09	Virginia	Delta	119
+2021-11-10	Virginia	Delta	118
+2021-11-11	Virginia	Delta	58
+2021-11-12	Virginia	Delta	47
+2021-11-13	Virginia	Delta	42
+2021-11-14	Virginia	Delta	15
+2021-11-15	Virginia	Delta	77
+2021-11-16	Virginia	Delta	140
+2021-11-17	Virginia	Delta	113
+2021-11-18	Virginia	Delta	104
+2021-11-19	Virginia	Delta	77
+2021-11-20	Virginia	Delta	23
+2021-11-21	Virginia	Delta	9
+2021-11-22	Virginia	Delta	40
+2021-11-23	Virginia	Delta	105
+2021-11-24	Virginia	Delta	83
+2021-11-25	Virginia	Delta	19
+2021-11-26	Virginia	Delta	86
+2021-11-27	Virginia	Delta	39
+2021-11-28	Virginia	Delta	20
+2021-11-29	Virginia	Delta	59
+2021-11-30	Virginia	Delta	94
+2021-12-01	Virginia	Delta	151
+2021-12-02	Virginia	Delta	75
+2021-12-03	Virginia	Delta	33
+2021-12-04	Virginia	Delta	47
+2021-12-05	Virginia	Delta	6
+2021-12-06	Virginia	Delta	52
+2021-12-07	Virginia	Delta	101
+2021-12-08	Virginia	Delta	61
+2021-12-09	Virginia	Delta	81
+2021-12-10	Virginia	Delta	20
+2021-12-11	Virginia	Delta	6
+2021-12-12	Virginia	Delta	9
+2021-12-13	Virginia	Delta	82
+2021-12-14	Virginia	Delta	100
+2021-12-15	Virginia	Delta	29
+2021-12-16	Virginia	Delta	10
+2021-11-24	Virginia	Omicron	1
+2021-11-29	Virginia	Omicron	1
+2021-11-30	Virginia	Omicron	1
+2021-12-01	Virginia	Omicron	1
+2021-12-04	Virginia	Omicron	1
+2021-12-05	Virginia	Omicron	1
+2021-12-06	Virginia	Omicron	2
+2021-12-07	Virginia	Omicron	1
+2021-12-08	Virginia	Omicron	4
+2021-12-09	Virginia	Omicron	6
+2021-12-10	Virginia	Omicron	1
+2021-12-12	Virginia	Omicron	1
+2021-12-13	Virginia	Omicron	14
+2021-12-14	Virginia	Omicron	50
+2021-12-15	Virginia	Omicron	18
+2021-12-16	Virginia	Omicron	8
+2021-12-17	Virginia	Omicron	3
 2021-10-03	Washington	other	1
 2021-10-05	Washington	other	1
 2021-10-09	Washington	other	2
@@ -1870,6 +3141,7 @@ date	location	variant	sequences
 2021-11-19	Washington	other	1
 2021-12-09	Washington	other	1
 2021-12-13	Washington	other	1
+2021-12-18	Washington	other	1
 2021-10-03	Washington	other	1
 2021-10-05	Washington	other	1
 2021-10-09	Washington	other	2
@@ -1877,6 +3149,7 @@ date	location	variant	sequences
 2021-11-19	Washington	other	1
 2021-12-09	Washington	other	1
 2021-12-13	Washington	other	1
+2021-12-18	Washington	other	1
 2021-10-01	Washington	Delta	449
 2021-10-02	Washington	Delta	372
 2021-10-03	Washington	Delta	155
@@ -1902,9 +3175,9 @@ date	location	variant	sequences
 2021-10-23	Washington	Delta	182
 2021-10-24	Washington	Delta	50
 2021-10-25	Washington	Delta	275
-2021-10-26	Washington	Delta	172
-2021-10-27	Washington	Delta	123
-2021-10-28	Washington	Delta	277
+2021-10-26	Washington	Delta	173
+2021-10-27	Washington	Delta	125
+2021-10-28	Washington	Delta	278
 2021-10-29	Washington	Delta	310
 2021-10-30	Washington	Delta	113
 2021-10-31	Washington	Delta	43
@@ -1930,45 +3203,154 @@ date	location	variant	sequences
 2021-11-20	Washington	Delta	105
 2021-11-21	Washington	Delta	48
 2021-11-22	Washington	Delta	176
-2021-11-23	Washington	Delta	269
-2021-11-24	Washington	Delta	151
+2021-11-23	Washington	Delta	270
+2021-11-24	Washington	Delta	152
 2021-11-25	Washington	Delta	20
-2021-11-26	Washington	Delta	105
-2021-11-27	Washington	Delta	72
+2021-11-26	Washington	Delta	114
+2021-11-27	Washington	Delta	75
 2021-11-28	Washington	Delta	66
-2021-11-29	Washington	Delta	296
-2021-11-30	Washington	Delta	236
-2021-12-01	Washington	Delta	228
-2021-12-02	Washington	Delta	276
-2021-12-03	Washington	Delta	257
-2021-12-04	Washington	Delta	129
+2021-11-29	Washington	Delta	308
+2021-11-30	Washington	Delta	250
+2021-12-01	Washington	Delta	232
+2021-12-02	Washington	Delta	342
+2021-12-03	Washington	Delta	265
+2021-12-04	Washington	Delta	132
 2021-12-05	Washington	Delta	62
-2021-12-06	Washington	Delta	94
-2021-12-07	Washington	Delta	91
-2021-12-08	Washington	Delta	162
-2021-12-09	Washington	Delta	192
-2021-12-10	Washington	Delta	222
-2021-12-11	Washington	Delta	153
-2021-12-12	Washington	Delta	41
-2021-12-13	Washington	Delta	102
-2021-12-14	Washington	Delta	24
-2021-12-15	Washington	Delta	3
-2021-12-16	Washington	Delta	7
+2021-12-06	Washington	Delta	120
+2021-12-07	Washington	Delta	116
+2021-12-08	Washington	Delta	163
+2021-12-09	Washington	Delta	211
+2021-12-10	Washington	Delta	264
+2021-12-11	Washington	Delta	179
+2021-12-12	Washington	Delta	59
+2021-12-13	Washington	Delta	159
+2021-12-14	Washington	Delta	151
+2021-12-15	Washington	Delta	80
+2021-12-16	Washington	Delta	78
+2021-12-17	Washington	Delta	49
+2021-12-18	Washington	Delta	24
+2021-12-19	Washington	Delta	5
 2021-11-27	Washington	Omicron	1
 2021-11-29	Washington	Omicron	1
 2021-11-30	Washington	Omicron	2
 2021-12-01	Washington	Omicron	3
 2021-12-06	Washington	Omicron	6
-2021-12-07	Washington	Omicron	15
+2021-12-07	Washington	Omicron	16
 2021-12-08	Washington	Omicron	42
-2021-12-09	Washington	Omicron	37
-2021-12-10	Washington	Omicron	71
+2021-12-09	Washington	Omicron	40
+2021-12-10	Washington	Omicron	77
 2021-12-11	Washington	Omicron	44
-2021-12-12	Washington	Omicron	18
-2021-12-13	Washington	Omicron	64
-2021-12-14	Washington	Omicron	19
-2021-12-15	Washington	Omicron	18
-2021-12-16	Washington	Omicron	14
+2021-12-12	Washington	Omicron	19
+2021-12-13	Washington	Omicron	99
+2021-12-14	Washington	Omicron	136
+2021-12-15	Washington	Omicron	84
+2021-12-16	Washington	Omicron	127
+2021-12-17	Washington	Omicron	101
+2021-12-18	Washington	Omicron	40
+2021-12-19	Washington	Omicron	12
+2021-10-25	Washington DC	other	1
+2021-11-19	Washington DC	other	1
+2021-11-24	Washington DC	other	1
+2021-10-25	Washington DC	other	1
+2021-11-19	Washington DC	other	1
+2021-11-24	Washington DC	other	1
+2021-10-01	Washington DC	Delta	47
+2021-10-02	Washington DC	Delta	22
+2021-10-03	Washington DC	Delta	18
+2021-10-04	Washington DC	Delta	35
+2021-10-05	Washington DC	Delta	32
+2021-10-06	Washington DC	Delta	27
+2021-10-07	Washington DC	Delta	40
+2021-10-08	Washington DC	Delta	18
+2021-10-09	Washington DC	Delta	26
+2021-10-10	Washington DC	Delta	10
+2021-10-11	Washington DC	Delta	18
+2021-10-12	Washington DC	Delta	14
+2021-10-13	Washington DC	Delta	25
+2021-10-14	Washington DC	Delta	23
+2021-10-15	Washington DC	Delta	20
+2021-10-16	Washington DC	Delta	19
+2021-10-17	Washington DC	Delta	13
+2021-10-18	Washington DC	Delta	18
+2021-10-19	Washington DC	Delta	13
+2021-10-20	Washington DC	Delta	23
+2021-10-21	Washington DC	Delta	18
+2021-10-22	Washington DC	Delta	10
+2021-10-23	Washington DC	Delta	15
+2021-10-24	Washington DC	Delta	5
+2021-10-25	Washington DC	Delta	38
+2021-10-26	Washington DC	Delta	20
+2021-10-27	Washington DC	Delta	33
+2021-10-28	Washington DC	Delta	19
+2021-10-29	Washington DC	Delta	6
+2021-10-30	Washington DC	Delta	13
+2021-10-31	Washington DC	Delta	8
+2021-11-01	Washington DC	Delta	22
+2021-11-02	Washington DC	Delta	26
+2021-11-03	Washington DC	Delta	28
+2021-11-04	Washington DC	Delta	26
+2021-11-05	Washington DC	Delta	25
+2021-11-06	Washington DC	Delta	17
+2021-11-07	Washington DC	Delta	5
+2021-11-08	Washington DC	Delta	12
+2021-11-09	Washington DC	Delta	21
+2021-11-10	Washington DC	Delta	29
+2021-11-11	Washington DC	Delta	16
+2021-11-12	Washington DC	Delta	35
+2021-11-13	Washington DC	Delta	14
+2021-11-14	Washington DC	Delta	3
+2021-11-15	Washington DC	Delta	20
+2021-11-16	Washington DC	Delta	35
+2021-11-17	Washington DC	Delta	31
+2021-11-18	Washington DC	Delta	37
+2021-11-19	Washington DC	Delta	35
+2021-11-20	Washington DC	Delta	16
+2021-11-21	Washington DC	Delta	7
+2021-11-22	Washington DC	Delta	44
+2021-11-23	Washington DC	Delta	27
+2021-11-24	Washington DC	Delta	34
+2021-11-25	Washington DC	Delta	3
+2021-11-26	Washington DC	Delta	20
+2021-11-27	Washington DC	Delta	34
+2021-11-28	Washington DC	Delta	8
+2021-11-29	Washington DC	Delta	39
+2021-11-30	Washington DC	Delta	52
+2021-12-01	Washington DC	Delta	53
+2021-12-02	Washington DC	Delta	35
+2021-12-03	Washington DC	Delta	39
+2021-12-04	Washington DC	Delta	26
+2021-12-05	Washington DC	Delta	20
+2021-12-06	Washington DC	Delta	64
+2021-12-07	Washington DC	Delta	58
+2021-12-08	Washington DC	Delta	40
+2021-12-09	Washington DC	Delta	23
+2021-12-10	Washington DC	Delta	28
+2021-12-11	Washington DC	Delta	28
+2021-12-12	Washington DC	Delta	11
+2021-12-13	Washington DC	Delta	6
+2021-12-14	Washington DC	Delta	24
+2021-12-15	Washington DC	Delta	10
+2021-12-16	Washington DC	Delta	3
+2021-12-17	Washington DC	Delta	2
+2021-11-29	Washington DC	Omicron	2
+2021-11-30	Washington DC	Omicron	2
+2021-12-01	Washington DC	Omicron	1
+2021-12-02	Washington DC	Omicron	3
+2021-12-03	Washington DC	Omicron	1
+2021-12-04	Washington DC	Omicron	1
+2021-12-06	Washington DC	Omicron	4
+2021-12-07	Washington DC	Omicron	19
+2021-12-08	Washington DC	Omicron	11
+2021-12-09	Washington DC	Omicron	11
+2021-12-10	Washington DC	Omicron	10
+2021-12-11	Washington DC	Omicron	8
+2021-12-12	Washington DC	Omicron	7
+2021-12-13	Washington DC	Omicron	26
+2021-12-14	Washington DC	Omicron	68
+2021-12-15	Washington DC	Omicron	50
+2021-12-16	Washington DC	Omicron	74
+2021-12-17	Washington DC	Omicron	49
+2021-12-19	Washington DC	Omicron	1
 2021-10-02	Wisconsin	other	2
 2021-10-03	Wisconsin	other	2
 2021-10-04	Wisconsin	other	3
@@ -2016,9 +3398,10 @@ date	location	variant	sequences
 2021-12-04	Wisconsin	other	1
 2021-12-08	Wisconsin	other	2
 2021-12-13	Wisconsin	other	1
-2021-12-14	Wisconsin	other	1
+2021-12-14	Wisconsin	other	3
 2021-12-15	Wisconsin	other	2
 2021-12-16	Wisconsin	other	1
+2021-12-17	Wisconsin	other	3
 2021-10-02	Wisconsin	other	2
 2021-10-03	Wisconsin	other	2
 2021-10-04	Wisconsin	other	3
@@ -2066,9 +3449,10 @@ date	location	variant	sequences
 2021-12-04	Wisconsin	other	1
 2021-12-08	Wisconsin	other	2
 2021-12-13	Wisconsin	other	1
-2021-12-14	Wisconsin	other	1
+2021-12-14	Wisconsin	other	3
 2021-12-15	Wisconsin	other	2
 2021-12-16	Wisconsin	other	1
+2021-12-17	Wisconsin	other	3
 2021-10-01	Wisconsin	Delta	236
 2021-10-02	Wisconsin	Delta	145
 2021-10-03	Wisconsin	Delta	170
@@ -2120,44 +3504,52 @@ date	location	variant	sequences
 2021-11-18	Wisconsin	Delta	237
 2021-11-19	Wisconsin	Delta	149
 2021-11-20	Wisconsin	Delta	144
-2021-11-21	Wisconsin	Delta	116
-2021-11-22	Wisconsin	Delta	269
-2021-11-23	Wisconsin	Delta	225
-2021-11-24	Wisconsin	Delta	234
-2021-11-25	Wisconsin	Delta	16
-2021-11-26	Wisconsin	Delta	137
-2021-11-27	Wisconsin	Delta	99
-2021-11-28	Wisconsin	Delta	148
-2021-11-29	Wisconsin	Delta	258
-2021-11-30	Wisconsin	Delta	202
-2021-12-01	Wisconsin	Delta	142
-2021-12-02	Wisconsin	Delta	128
-2021-12-03	Wisconsin	Delta	77
-2021-12-04	Wisconsin	Delta	74
-2021-12-05	Wisconsin	Delta	40
-2021-12-06	Wisconsin	Delta	108
-2021-12-07	Wisconsin	Delta	85
-2021-12-08	Wisconsin	Delta	105
-2021-12-09	Wisconsin	Delta	140
-2021-12-10	Wisconsin	Delta	63
-2021-12-11	Wisconsin	Delta	52
-2021-12-12	Wisconsin	Delta	42
-2021-12-13	Wisconsin	Delta	137
-2021-12-14	Wisconsin	Delta	121
-2021-12-15	Wisconsin	Delta	134
-2021-12-16	Wisconsin	Delta	105
+2021-11-21	Wisconsin	Delta	117
+2021-11-22	Wisconsin	Delta	271
+2021-11-23	Wisconsin	Delta	239
+2021-11-24	Wisconsin	Delta	237
+2021-11-25	Wisconsin	Delta	18
+2021-11-26	Wisconsin	Delta	155
+2021-11-27	Wisconsin	Delta	103
+2021-11-28	Wisconsin	Delta	150
+2021-11-29	Wisconsin	Delta	273
+2021-11-30	Wisconsin	Delta	206
+2021-12-01	Wisconsin	Delta	150
+2021-12-02	Wisconsin	Delta	132
+2021-12-03	Wisconsin	Delta	79
+2021-12-04	Wisconsin	Delta	85
+2021-12-05	Wisconsin	Delta	54
+2021-12-06	Wisconsin	Delta	152
+2021-12-07	Wisconsin	Delta	143
+2021-12-08	Wisconsin	Delta	146
+2021-12-09	Wisconsin	Delta	180
+2021-12-10	Wisconsin	Delta	153
+2021-12-11	Wisconsin	Delta	66
+2021-12-12	Wisconsin	Delta	50
+2021-12-13	Wisconsin	Delta	160
+2021-12-14	Wisconsin	Delta	205
+2021-12-15	Wisconsin	Delta	182
+2021-12-16	Wisconsin	Delta	113
+2021-12-17	Wisconsin	Delta	110
+2021-12-18	Wisconsin	Delta	30
+2021-12-19	Wisconsin	Delta	2
 2021-11-27	Wisconsin	Omicron	1
 2021-12-01	Wisconsin	Omicron	2
 2021-12-02	Wisconsin	Omicron	6
 2021-12-03	Wisconsin	Omicron	1
-2021-12-05	Wisconsin	Omicron	1
+2021-12-04	Wisconsin	Omicron	1
+2021-12-05	Wisconsin	Omicron	2
 2021-12-06	Wisconsin	Omicron	4
-2021-12-07	Wisconsin	Omicron	2
+2021-12-07	Wisconsin	Omicron	5
+2021-12-08	Wisconsin	Omicron	1
 2021-12-09	Wisconsin	Omicron	4
-2021-12-10	Wisconsin	Omicron	11
+2021-12-10	Wisconsin	Omicron	12
 2021-12-11	Wisconsin	Omicron	2
 2021-12-12	Wisconsin	Omicron	21
-2021-12-13	Wisconsin	Omicron	13
-2021-12-14	Wisconsin	Omicron	34
-2021-12-15	Wisconsin	Omicron	90
-2021-12-16	Wisconsin	Omicron	70
+2021-12-13	Wisconsin	Omicron	14
+2021-12-14	Wisconsin	Omicron	42
+2021-12-15	Wisconsin	Omicron	106
+2021-12-16	Wisconsin	Omicron	77
+2021-12-17	Wisconsin	Omicron	41
+2021-12-18	Wisconsin	Omicron	25
+2021-12-19	Wisconsin	Omicron	6
