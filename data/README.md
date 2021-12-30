@@ -33,6 +33,41 @@ date	location	cases
 
 There will be dates that are missing sequence counts or case counts. These should be assumed to be 0.
 
+### Automated data preparation for US variants
+
+Working from a Python environment with pandas installed (e.g., `nextstrain` or `rt` environment below), run the following command to generate variant sequence counts and case counts for US locations.
+This command downloads the latest "open" ncov metadata (hosted on https://data.nextstrain.org) and writes out the results as local, uncompressed TSV files.
+
+``` bash
+python3 variants-us_data-prep.py
+```
+
+To see a list of all arguments and their default values, run the same command with the help flag.
+
+``` bash
+python3 variants-us_data-prep.py -h
+```
+
+Optionally, write compressed results out to a public S3 bucket, for downstream consumption by models.
+
+``` bash
+python3 variants-us_data-prep.py \
+  --output-sequences s3://nextstrain-data/variants-us_location-variant-sequence-counts.tsv.gz \
+  --output-cases s3://nextstrain-data/variants-us_location-case-counts.tsv.gz
+```
+
+Alternately, use private GISAID metadata as an input and write results to a private S3 bucket.
+
+``` bash
+python3 variants-us_data-prep.py \
+  --metadata s3://nextstrain-ncov-private/metadata.tsv.gz \
+  --output-sequences s3://nextstrain-ncov-private/variants-us_location-variant-sequence-counts.tsv.gz \
+  --output-cases s3://nextstrain-ncov-private/variants-us_location-case-counts.tsv.gz
+```
+
+To define clades to consider for this data preparation, edit `variants-us_data-prep.clades.tsv`.
+To add or modify state names and abbreviations, edit `variants-us_data-prep.states.tsv`.
+
 ### Analysis with Jupyter notebook
 
 Create a conda environment for the analysis and load the Jupyter notebook.
