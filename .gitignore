@@ -8,11 +8,12 @@ posteriors/
 models/
 
 # Intermediate data prep files
-data/metadata.tsv.gz
-data/open_metadata.tsv
-data/open_metadata_pruned.tsv
-data/gisaid_metadata.tsv
-data/gisaid_metadata_pruned.tsv
+metadata.tsv.gz
+open_metadata.tsv
+open_metadata_pruned.tsv
+gisaid_metadata.tsv
+gisaid_metadata_pruned.tsv
+sfs_counts.csv
 
 # Protect environment variables
 environment*
