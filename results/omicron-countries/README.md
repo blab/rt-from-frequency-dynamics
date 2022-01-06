@@ -48,6 +48,14 @@ These outputs are using the growth advantage random walk (GARW) model.
 
 ![](figures/omicron-countries_variant-estimated-cases.png)
 
+#### Variant-specific frequencies
+
+![](figures/omicron-countries_variant-estimated-frequency.png)
+
+#### Phase plots of epidemic growth rate vs per-capita incidence
+
+![](figures/omicron-countries_variant-cases-vs-rt.png)
+
 ## "Ecological" comparisons
 
 #### Omicron epidemic growth rate _r_ vs fraction vaccinated
