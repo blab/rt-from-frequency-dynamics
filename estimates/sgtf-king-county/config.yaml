@@ -1,0 +1,39 @@
+data:
+  name: "sgtf-king-county" # Model name
+  case_path: "../data/sgtf-king-county/sgtf-king-county_location-case-counts.tsv" # Relative to run script
+  seq_path: "../data/sgtf-king-county/sgtf-king-county_location-variant-sequence-counts.tsv"
+
+settings:
+  fit: true # Fit the model?
+  load: false # Load old model?
+  export_tsv: true  # Export model results as tsv
+  export_path: "../estimates/sgtf-king-county" # Where to put estimates
+  export_fig: true # Update figures?
+
+model:
+  seed_L: 14
+  forecast_L: 7
+  R_likelihood: "GARW" # Options: GARW, Free, Fixed, Spline
+  C_likelihood: "NegBinom" # Options: NegBinom and Poisson
+  S_likelihood: "DirMultinomial" # Options: DirMultinomial and Multinomial
+  prior_case_dispersion: 0.01 # Ignored if using Poisson
+  prior_seq_dispersion: 100.0 #  Ignored if using Multinomial
+  k: 10 # Number of spline knots to use
+  generation_time: # Specify mean and standard deviation for delay
+    mean: 5.2
+    sd: 1.2
+    family: "Gamma"
+  delays: # Specify the delays between infection and sampling
+    incub:
+      mean: 3.2
+      sd: 1.72
+      family: "LogNormal"
+
+inference:
+  optim:
+    iters: 100000 # Number of iterations for SVI
+    lr: 1e-2 # Learning rate for the model
+
+exports:
+  path: 
+  figures: true
