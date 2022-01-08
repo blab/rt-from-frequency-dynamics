@@ -145,7 +145,51 @@ def get_R(dataset, LD, ps, name, forecast=False):
 
     return R_dict
 
-def get_little_r(dataset, g, LD, ps, name, forecast=False):
+def get_little_r(dataset, LD, ps, name, forecast=False):
+    var_name = "r"
+    f_name = "freq"
+    if forecast:
+        var_name += "_forecast"
+        f_name += "_forecast"
+
+    r_medians = dataset.posterior[var_name].median(dim="draw").values[0]
+    freq_medians = dataset.posterior[f_name].median(dim="draw").values[0]
+    N_variant = r_medians.shape[1]
+    T = r_medians.shape[0]
+
+    seq_names = LD.seq_names
+    dates = LD.dates
+    if forecast:
+        dates = forecast_dates(dates, T)
+
+    r = []
+    for i in range(len(ps)):
+        r.append(jnp.array(az.hdi(dataset, var_names=var_name, hdi_prob=ps[i])[var_name]))
+
+    r_dict = dict()
+    r_dict["date"] = []
+    r_dict["location"] = []
+    r_dict["variant"] = []
+    r_dict["median_r"] = []
+    r_dict["median_freq"] = []
+    
+    for p in ps:
+        r_dict[f"r_upper_{round(p * 100)}"] = []
+        r_dict[f"r_lower_{round(p * 100)}"] = []
+        
+    for variant in range(N_variant):
+        r_dict["date"] += list(dates)
+        r_dict["location"] += [name] * T
+        r_dict["variant"] += [seq_names[variant]] * T
+        r_dict["median_r"] += list(r_medians[:, variant])
+        r_dict["median_freq"] += list(freq_medians[:, variant])
+        for i,p in enumerate(ps):
+            r_dict[f"r_upper_{round(ps[i] * 100)}"] += list(r[i][:, variant, 1])
+            r_dict[f"r_lower_{round(ps[i] * 100)}"] += list(r[i][:, variant, 0])
+
+    return r_dict
+
+def get_little_r_gen(dataset, g, LD, ps, name, forecast=False):
     var_name = "R"
     f_name = "freq"
     if forecast:

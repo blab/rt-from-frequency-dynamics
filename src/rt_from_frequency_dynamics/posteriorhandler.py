@@ -1,9 +1,9 @@
 import arviz
 
 class PosteriorHandler():
-    def __init__(self, dataset=None, LD=None, name=None):
+    def __init__(self, dataset=None, data=None, name=None):
         self.dataset = dataset
-        self.LD = LD
+        self.data = data
         self.name = name
 
     def save_posterior(self, filename):
@@ -14,7 +14,7 @@ class PosteriorHandler():
         self.dataset = arviz.from_json(filename)
 
     def unpack_posterior(self):
-        return self.dataset, self.LD
+        return self.dataset, self.data
 
 class MultiPosterior():
     def __init__(self, posteriors=None, posterior=None):
