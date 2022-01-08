@@ -1,11 +1,11 @@
 import jax.numpy as jnp
 
-from rt_from_frequency_dynamics.modelhelpers import make_breakpoint_splines
 from .modeloptions import GARW, FixedGA, FreeGrowth
-from .modelfactories  import _model_factory
+from .modelfactories  import _renewal_model_factory
+from .Splines import Spline
 
 # Abstract lineage model
-class LineageModel():
+class RenewalModel():
     def __init__(self, g, delays, seed_L, forecast_L, 
                  k=None,
                  RLik=None, 
@@ -26,7 +26,7 @@ class LineageModel():
         self.make_model()
 
     def make_model(self):
-        self.model = _model_factory(
+        self.model = _renewal_model_factory(
             self.g_rev, 
             self.delays, 
             self.seed_L, 
@@ -36,20 +36,22 @@ class LineageModel():
             self.SLik
         )
 
-    def augment_data(self, data):
-        data["X"] = make_breakpoint_splines(len(data["cases"]), self.k)
+    def augment_data(self, data, order=4):
+        T = len(data["cases"])
+        s = jnp.linspace(0, T, self.k)
+        data["X"] = Spline.matrix(jnp.arange(T), s, order=order)
 
-class GARandomWalkModel(LineageModel):
+class GARandomWalkModel(RenewalModel):
     def __init__(self, g, delays, seed_L, forecast_L, k=None, CLik=None, SLik=None):
         super().__init__(g, delays, seed_L, forecast_L, k, GARW(), CLik, SLik)
         super().make_model()
 
-class FreeGrowthModel(LineageModel):
+class FreeGrowthModel(RenewalModel):
     def __init__(self, g, delays, seed_L, forecast_L, k=None, CLik=None, SLik=None):
         super().__init__(g, delays, seed_L, forecast_L, k, FreeGrowth(), CLik, SLik)
         super().make_model()
 
-class FixedGrowthModel(LineageModel):
+class FixedGrowthModel(RenewalModel):
     def __init__(self, g, delays, seed_L, forecast_L, k=None, CLik=None, SLik=None):
         super().__init__(g, delays, seed_L, forecast_L, k, FixedGA(), CLik, SLik)
         super().make_model()
