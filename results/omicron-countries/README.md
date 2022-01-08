@@ -30,10 +30,6 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 These outputs are using the growth advantage random walk (GARW) model.
 
-#### Variant-specific Rt
-
-![](figures/omicron-countries_variant-rt.png)
-
 #### Variant-specific epidemic growth rate r
 
 ![](figures/omicron-countries_variant-little-r.png)
@@ -55,20 +51,6 @@ These outputs are using the growth advantage random walk (GARW) model.
 #### Phase plots of epidemic growth rate vs per-capita incidence
 
 ![](figures/omicron-countries_variant-cases-vs-rt.png)
-
-## "Ecological" comparisons
-
-#### Omicron epidemic growth rate _r_ vs fraction vaccinated
-
-![](figures/omicron-countries_r-vs-vaccinated-fraction.png)
-
-#### Omicron epidemic growth rate _r_ vs fraction boosted
-
-![](figures/omicron-countries_r-vs-boosted-fraction.png)
-
-#### Omicron epidemic growth rate _r_ vs cumulative cases
-
-![](figures/omicron-countries_r-vs-infected-fraction.png)
 
 ## Updating
 

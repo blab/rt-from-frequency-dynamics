@@ -30,10 +30,6 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 These outputs are using the growth advantage random walk (GARW) model.
 
-#### Variant-specific Rt
-
-![](figures/omicron-us_variant-rt.png)
-
 #### Variant-specific epidemic growth rate r
 
 ![](figures/omicron-us_variant-little-r.png)

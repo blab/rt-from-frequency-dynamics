@@ -2,6 +2,8 @@
 
 This is using SGTF as a proxy for "probable Omicron". SGTF data from [UW Virology](https://github.com/proychou/sgtf) and Seattle Flu Study.
 
+_Results below appear to show a relative rise in Delta after Jan 1. This is likely artifactual based on post Jan 1 SGTF plateauing at ~90% S dropout indicative of Omicron. If a small fraction of Omicron is resulting in S positive assays this would create this pattern as well. Genomic follow up on these post Jan 1 samples will make this more clear._
+
 ## Variant frequencies
 
 This shows 7-day smoothed variant frequencies. This includes a logistic growth rate from regression of logit transformed Omicron frequencies.
