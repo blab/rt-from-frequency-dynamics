@@ -7,7 +7,7 @@ import datetime
 class DefaultAes():
     ps = [0.95, 0.8, 0.5]
     alphas = [0.2, 0.4, 0.6]
-    lineage_colors = ["#2e5eaa", "#5adbff",  "#56e39f","#b4c5e4", "#f03a47",  "#f5bb00", "#9e4244", "#808080"]
+    variant_colors = ["#2e5eaa", "#5adbff",  "#56e39f","#b4c5e4", "#f03a47",  "#f5bb00", "#9e4244", "#808080"]
 
 
 def define_color_map(color, seq_names):
@@ -35,7 +35,7 @@ def get_quants(dataset, ps, var):
 def plot_R(ax, dataset, ps, alphas, colors, forecast=False):
     med, R =  get_quants(dataset, ps, "R")
     t = jnp.arange(0, R[-1].shape[0], 1)
-    N_lineage = R[-1].shape[1]
+    N_variant = R[-1].shape[1]
     
     if forecast:
         med_f, R_f = get_quants(dataset, ps, "R_forecast")
@@ -48,17 +48,17 @@ def plot_R(ax, dataset, ps, alphas, colors, forecast=False):
 
     # Make figure
     ax.axhline(y=1.0, color='k', linestyle='--')
-    for lineage in range(N_lineage):
+    for variant in range(N_variant):
         for i in range(len(ps)):
-            ax.fill_between(t, R[i][:, lineage, 0], R[i][:, lineage, 1],
-                            color=colors[lineage], alpha=alphas[i])
-        ax.plot(t, med[:, lineage],
-                color=colors[lineage])
+            ax.fill_between(t, R[i][:, variant, 0], R[i][:, variant, 1],
+                            color=colors[variant], alpha=alphas[i])
+        ax.plot(t, med[:, variant],
+                color=colors[variant])
 
 def plot_R_censored(ax, dataset, ps, alphas, colors, forecast=False, thres=0.001):
     med, R =  get_quants(dataset, ps, "R")
     t = jnp.arange(0, R[-1].shape[0], 1)
-    N_lineage = R[-1].shape[1]
+    N_variant = R[-1].shape[1]
     med_freq = get_median(dataset, "freq")
     
     if forecast:
@@ -74,13 +74,13 @@ def plot_R_censored(ax, dataset, ps, alphas, colors, forecast=False, thres=0.001
 
     # Make figure
     ax.axhline(y=1.0, color='k', linestyle='--')
-    for lineage in range(N_lineage):
-        include = med_freq[:, lineage] > thres
+    for variant in range(N_variant):
+        include = med_freq[:, variant] > thres
         for i in range(len(ps)):
-            ax.fill_between(t[include], R[i][include, lineage, 0], R[i][include, lineage, 1],
-                            color=colors[lineage], alpha=alphas[i])
-        ax.plot(t[include], med[include, lineage],
-                color=colors[lineage])                
+            ax.fill_between(t[include], R[i][include, variant, 0], R[i][include, variant, 1],
+                            color=colors[variant], alpha=alphas[i])
+        ax.plot(t[include], med[include, variant],
+                color=colors[variant])                
 
 def plot_posterior_average_R(ax, dataset, ps, alphas, color):
     med, V =  get_quants(dataset, ps, "R_ave")
@@ -92,48 +92,77 @@ def plot_posterior_average_R(ax, dataset, ps, alphas, color):
         ax.fill_between(t, V[i][:, 0], V[i][:, 1], color=color, alpha = alphas[i])
     ax.plot(t, med, color=color)
 
-def plot_little_r_censored(ax, dataset, g, ps, alphas, colors, forecast=False, thres=0.001):
-    med, R =  get_quants(dataset, ps, "R")
-    t = jnp.arange(0, R[-1].shape[0], 1)
-    N_lineage = R[-1].shape[1]
+# def plot_little_r_censored_gen(ax, dataset, g, ps, alphas, colors, forecast=False, thres=0.001):
+#     med, R =  get_quants(dataset, ps, "R")
+#     t = jnp.arange(0, R[-1].shape[0], 1)
+#     N_variant = R[-1].shape[1]
+#     med_freq = get_median(dataset, "freq")
+    
+#     if forecast:
+#         med_f, R_f = get_quants(dataset, ps, "R_forecast")
+#         med_freq_f = get_median(dataset, "freq_forecast")
+#         t_f = jnp.arange(0, R_f[-1].shape[0], 1) + t[-1] + 1
+        
+#         t = jnp.concatenate((t,t_f))
+#         med = jnp.concatenate((med, med_f))
+#         med_freq = jnp.concatenate((med_freq, med_freq_f))
+#         for i in range(len(ps)):
+#             R[i] = jnp.concatenate([R[i], R_f[i]])
+
+#     # Get generation time
+#     mn = np.sum([p * (x+1) for x, p in enumerate(g)]) # Get mean of discretized generation time
+#     sd = np.sqrt(np.sum([p * (x+1) **2 for x, p in enumerate(g)])-mn**2) # Get sd of discretized generation time
+#     e_ = sd**2 / mn**2
+#     l = mn / (sd**2)
+    
+#     def _to_little_r(R):
+#         return (jnp.float_power(R, e_) - 1) * l
+        
+#     # Make figure
+#     ax.axhline(y=0.0, color='k', linestyle='--')
+#     for variant in range(N_variant):
+#         include = med_freq[:, variant] > thres
+#         for i in range(len(ps)):
+#             ax.fill_between(t[include], 
+#                             _to_little_r(R[i][include, variant, 0]), 
+#                             _to_little_r(R[i][include, variant, 1]),
+#                             color=colors[variant], alpha=alphas[i])
+#         ax.plot(t[include], _to_little_r(med[include, variant]),
+#                 color=colors[variant])   
+
+def plot_little_r_censored(ax, dataset, ps, alphas, colors, forecast=False, thres=0.001):
+    med, r =  get_quants(dataset, ps, "r")
+    t = jnp.arange(0, r[-1].shape[0], 1)
+    N_variant = r[-1].shape[1]
     med_freq = get_median(dataset, "freq")
     
     if forecast:
-        med_f, R_f = get_quants(dataset, ps, "R_forecast")
+        med_f, r_f = get_quants(dataset, ps, "r_forecast")
         med_freq_f = get_median(dataset, "freq_forecast")
-        t_f = jnp.arange(0, R_f[-1].shape[0], 1) + t[-1] + 1
+        t_f = jnp.arange(0, r_f[-1].shape[0], 1) + t[-1] + 1
         
         t = jnp.concatenate((t,t_f))
         med = jnp.concatenate((med, med_f))
         med_freq = jnp.concatenate((med_freq, med_freq_f))
         for i in range(len(ps)):
-            R[i] = jnp.concatenate([R[i], R_f[i]])
+            r[i] = jnp.concatenate([r[i], r_f[i]])
 
-    # Get generation time
-    mn = np.sum([p * (x+1) for x, p in enumerate(g)]) # Get mean of discretized generation time
-    sd = np.sqrt(np.sum([p * (x+1) **2 for x, p in enumerate(g)])-mn**2) # Get sd of discretized generation time
-    e_ = sd**2 / mn**2
-    l = mn / (sd**2)
-    
-    def _to_little_r(R):
-        return (jnp.float_power(R, e_) - 1) * l
-        
     # Make figure
     ax.axhline(y=0.0, color='k', linestyle='--')
-    for lineage in range(N_lineage):
-        include = med_freq[:, lineage] > thres
+    for variant in range(N_variant):
+        include = med_freq[:, variant] > thres
         for i in range(len(ps)):
             ax.fill_between(t[include], 
-                            _to_little_r(R[i][include, lineage, 0]), 
-                            _to_little_r(R[i][include, lineage, 1]),
-                            color=colors[lineage], alpha=alphas[i])
-        ax.plot(t[include], _to_little_r(med[include, lineage]),
-                color=colors[lineage])   
+                            r[i][include, variant, 0], 
+                            r[i][include, variant, 1],
+                            color=colors[variant], alpha=alphas[i])
+        ax.plot(t[include], med[include, variant],
+                color=colors[variant])   
 
 def plot_posterior_frequency(ax, dataset, ps, alphas, colors, forecast=False):
     med, V =  get_quants(dataset, ps, "freq")
     t = jnp.arange(0, V[-1].shape[0], 1)
-    N_lineage = V[-1].shape[1]
+    N_variant = V[-1].shape[1]
     
     if forecast:
         med_f, V_f = get_quants(dataset, ps, "freq_forecast")
@@ -145,33 +174,33 @@ def plot_posterior_frequency(ax, dataset, ps, alphas, colors, forecast=False):
             V[i] = jnp.concatenate([V[i], V_f[i]])
     
     # Make figure
-    for lineage in range(N_lineage):
+    for variant in range(N_variant):
         for i in range(len(ps)):
-            ax.fill_between(t, V[i][:, lineage, 0], V[i][:, lineage, 1],
-                            color=colors[lineage], alpha=alphas[i])
-        ax.plot(t, med[:, lineage],
-                color=colors[lineage])
+            ax.fill_between(t, V[i][:, variant, 0], V[i][:, variant, 1],
+                            color=colors[variant], alpha=alphas[i])
+        ax.plot(t, med[:, variant],
+                color=colors[variant])
 
 def plot_observed_frequency(ax, LD, colors):
     obs_freq = jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None])
-    N_lineage = obs_freq.shape[-1]
+    N_variant = obs_freq.shape[-1]
     t = jnp.arange(0, obs_freq.shape[0])
-    for lineage in range(N_lineage):
-        ax.scatter(t, obs_freq[:, lineage], color=colors[lineage],  edgecolor="black")
+    for variant in range(N_variant):
+        ax.scatter(t, obs_freq[:, variant], color=colors[variant],  edgecolor="black")
 
 def plot_observed_frequency_size(ax, LD, colors, size):
     N = LD.seq_counts.sum(axis=1)[:, None] 
     sizes = [size(n) for n in N]
     obs_freq = jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None])
-    N_lineage = obs_freq.shape[-1]
+    N_variant = obs_freq.shape[-1]
     t = jnp.arange(0, obs_freq.shape[0])
-    for lineage in range(N_lineage):
-        ax.scatter(t, obs_freq[:, lineage], color=colors[lineage], s=sizes, edgecolor="black")
+    for variant in range(N_variant):
+        ax.scatter(t, obs_freq[:, variant], color=colors[variant], s=sizes, edgecolor="black")
 
 def plot_posterior_I(ax, dataset, ps, alphas, colors, forecast=False):
     med, V =  get_quants(dataset, ps, "I_smooth")
     t = jnp.arange(0, V[-1].shape[0], 1)
-    N_lineage = V[-1].shape[1]
+    N_variant = V[-1].shape[1]
     
     if forecast:
         med_f, V_f = get_quants(dataset, ps, "I_forecast")
@@ -183,12 +212,12 @@ def plot_posterior_I(ax, dataset, ps, alphas, colors, forecast=False):
             V[i] = jnp.concatenate([V[i], V_f[i]])
 
     # Make figure
-    for lineage in range(N_lineage):
+    for variant in range(N_variant):
         for i in range(len(ps)):
-            ax.fill_between(t, V[i][:, lineage, 0], V[i][:, lineage, 1],
-                            color=colors[lineage], alpha=alphas[i])
-        ax.plot(t, med[:, lineage],
-                color=colors[lineage])
+            ax.fill_between(t, V[i][:, variant, 0], V[i][:, variant, 1],
+                            color=colors[variant], alpha=alphas[i])
+        ax.plot(t, med[:, variant],
+                color=colors[variant])
 
 def plot_posterior_smooth_EC(ax, dataset, ps, alphas, color):
     med, V =  get_quants(dataset, ps, "total_smooth_prev")
@@ -250,14 +279,14 @@ def plot_growth_advantage(ax, dataset, LD, ps, alphas, colors):
 def plot_total_by_obs_frequency(ax, LD, total, colors):
     T, D = LD.seq_counts.shape
     t = jnp.arange(0, T, 1)
-    obs_freq = jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None])
+    obs_freq = jnp.nan_to_num(jnp.divide(LD.seq_counts, LD.seq_counts.sum(axis=1)[:, None]))
     
     # Make figure
     bottom = jnp.zeros(t.shape)
-    for lineage in range(D):
-        ax.bar(t, obs_freq[:, lineage] * total, bottom = bottom,
-                color=colors[lineage])
-        bottom = obs_freq[:, lineage] * total + bottom
+    for variant in range(D):
+        ax.bar(t, obs_freq[:, variant] * total, bottom = bottom,
+                color=colors[variant])
+        bottom = obs_freq[:, variant] * total + bottom
         
 def plot_total_by_median_frequency(ax, dataset, LD, total, colors):
     T, D = LD.seq_counts.shape
@@ -266,7 +295,7 @@ def plot_total_by_median_frequency(ax, dataset, LD, total, colors):
     
     # Make figure
     bottom = jnp.zeros(t.shape)
-    for lineage in range(D):
-        ax.bar(t, med_freq[:, lineage] * total, bottom = bottom,
-                color=colors[lineage])
-        bottom = med_freq[:, lineage] * total + bottom
+    for variant in range(D):
+        ax.bar(t, med_freq[:, variant] * total, bottom = bottom,
+                color=colors[variant])
+        bottom = med_freq[:, variant] * total + bottom
