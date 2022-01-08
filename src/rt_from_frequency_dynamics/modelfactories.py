@@ -4,7 +4,7 @@ import numpyro.distributions as dist
 from .modelfunctions import v_fs_I, reporting_to_vec
 from .modeloptions import GARW, NegBinomCases, DirMultinomialSeq
 
-def _model_factory(g_rev, 
+def _renewal_model_factory(g_rev, 
                    delays, 
                    seed_L, 
                    forecast_L, 
@@ -18,7 +18,7 @@ def _model_factory(g_rev,
     if SeqLik is None:
         SeqLik = DirMultinomialSeq()
 
-    def _lineage_model(cases, seq_counts, N, X):
+    def _variant_model(cases, seq_counts, N, X):
         T, N_variant = seq_counts.shape
         obs_range = jnp.arange(seed_L, seed_L+T, 1)
 
@@ -50,6 +50,14 @@ def _model_factory(g_rev,
         # Smooth trajectory for plotting
         numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * jnp.take(I_prev, obs_range, axis=0))
 
+        # Compute growth rate assuming I_{t+1} = I_t exp(r_t)
+        numpyro.deterministic(
+            "r", 
+            jnp.diff(
+                jnp.log(jnp.take(I_prev, obs_range, axis=0)),
+                prepend=jnp.nan, axis=0
+            ))
+
         # Compute expected cases
         total_prev = I_prev.sum(axis=1)
         numpyro.deterministic("total_smooth_prev", jnp.mean(rho_vec) * jnp.take(total_prev, obs_range))
@@ -75,4 +83,59 @@ def _model_factory(g_rev,
             numpyro.deterministic("I_forecast", 
                                   jnp.mean(rho_vec) * I_prev[(seed_L+T):,:]
                                   )
-    return _lineage_model
+    return _variant_model
+
+
+def _exp_model_factory(g_rev, 
+                       delays,  # Should be encoded into data tbh, so X, Xprime, Xdelay
+                       CaseLik=None, 
+                       SeqLik=None):
+    if CaseLik is None:
+        CaseLik = NegBinomCases()
+    if SeqLik is None:
+        SeqLik = DirMultinomialSeq()
+
+    def _variant_model(cases, seq_counts, N, X, X_prime):
+        _, N_variant = seq_counts.shape
+        T, k = X.shape
+
+        # Need some way of making the R parameter formations a bit more usable
+        # Time varying base trajectory
+        gam = numpyro.sample("gam", dist.HalfCauchy(0.1))
+
+        beta_rw = numpyro.sample("beta_rw", dist.GaussianRandomWalk(scale=gam, num_steps=k-1))
+        beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 10.0))
+        beta = numpyro.deterministic("beta", beta_0 + jnp.concatenate([jnp.array([0.0]), beta_rw]))
+
+
+        # Time varying growth advantage as random walk
+        # Regularizes changes in growth advantage of variants
+        gam_delta = numpyro.sample("gam_delta", dist.Exponential(rate=50))
+        with numpyro.plate("N_variant_m1", N_variant-1):
+            delta_rw = numpyro.sample("delta_rw", dist.GaussianRandomWalk(scale=gam_delta, num_steps=k))
+        
+        delta = delta_rw.T
+        beta_mat = beta[:,None] + jnp.hstack((delta, jnp.zeros((k,1))))
+
+        I = jnp.exp(jnp.dot(X, beta_mat))
+        r = numpyro.deterministic("r", X_prime@beta_mat)
+        
+        with numpyro.plate("rho_parms", 7):
+            rho = numpyro.sample("rho", dist.Beta(5., 5.))
+        rho_vec = reporting_to_vec(rho, T) 
+        numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * I)
+
+        #Evaluate case likelihood
+        CaseLik.model(cases, rho_vec * I.sum(axis=1))
+
+        # Compute frequency
+        freq = numpyro.deterministic("freq", jnp.divide(I, I.sum(axis=1)[:, None]))
+        
+        # Evaluate frequency likelihood
+        SeqLik.model( seq_counts, N, freq)
+
+        # Getting average R
+        numpyro.deterministic("r_ave", (r * freq).sum(axis=1))
+
+    return _variant_model
+
