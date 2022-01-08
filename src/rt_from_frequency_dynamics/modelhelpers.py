@@ -40,20 +40,20 @@ def get_standard_delays():
     return gen, delays
 
 
-def break_points_to_mat(break_points, L):
-    t = jnp.arange(0, L)
-    X = []
-    X.append(t > -1)
-    for i in range(len(break_points)-1):
-        X.append((t > break_points[i]) & (t <= break_points[i+1]))
-    return jnp.stack(X, axis=0)
+# def break_points_to_mat(break_points, L):
+#     t = jnp.arange(0, L)
+#     X = []
+#     X.append(t > -1)
+#     for i in range(len(break_points)-1):
+#         X.append((t > break_points[i]) & (t <= break_points[i+1]))
+#     return jnp.stack(X, axis=0)
 
 
-def make_breakpoint_matrix(cases, k):
-    T = len(cases)
-    break_points = jnp.linspace(0, T, k + 1)
-    X = break_points_to_mat(break_points, T)
-    return X.T
+# def make_breakpoint_matrix(cases, k):
+#     T = len(cases)
+#     break_points = jnp.linspace(0, T, k + 1)
+#     X = break_points_to_mat(break_points, T)
+#     return X.T
 
 def is_obs_idx(v):
     return jnp.where(jnp.isnan(v), jnp.zeros_like(v), jnp.ones_like(v))
@@ -86,8 +86,8 @@ def spline_matrix(t, s, order):
     X = vmap(_sb)(jnp.arange(0,len(s)+order-2)) # Make spline basis
     return X.T
 
-def make_breakpoint_splines(T, k):
-    t = jnp.arange(0, T)
-    s = jnp.linspace(0, T, k)
-    X = spline_matrix(t, s, 4)
-    return jnp.array(X)
+# def make_breakpoint_splines(T, k):
+#     t = jnp.arange(0, T)
+#     s = jnp.linspace(0, T, k)
+#     X = spline_matrix(t, s, 4)
+#     return jnp.array(X)
