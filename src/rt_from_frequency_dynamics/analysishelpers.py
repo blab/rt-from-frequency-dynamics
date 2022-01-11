@@ -59,7 +59,8 @@ def sample_loaded_posterior(VD, LM, num_samples = 1000, path = ".", name="Test")
 
     # Upacking data
     data = VD.make_numpyro_input()
-    
+    LM.augment_data(data)
+
     # Loading past state
     file_name = name.replace(" ", "-")
     SVIH.load_state(f"{path}/models/{file_name}_svi.p")
