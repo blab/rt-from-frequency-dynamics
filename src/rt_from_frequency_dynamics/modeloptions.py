@@ -69,9 +69,9 @@ class GARW():
 
         # Time varying growth advantage as random walk
         # Regularizes changes in growth advantage of variants
-        gam_delta = numpyro.sample("gam_delta", dist.Exponential(rate=10))
         with numpyro.plate("N_variant_m1", N_variant-1):
-            delta_0 = numpyro.sample("delta_0", dist.Normal(0.0, 1.0))
+            delta_0 = numpyro.sample("delta_0", dist.Normal(0.0, 0.5))
+            gam_delta = numpyro.sample("gam_delta", dist.Exponential(rate=self.gam_delta_prior))
             delta_rw = numpyro.sample("delta_rw", 
                                       dist.GaussianRandomWalk(
                                           scale=gam_delta, 
