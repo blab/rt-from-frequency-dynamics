@@ -88,6 +88,8 @@ date	location	cases
 2022-01-09	Arizona	15850
 2022-01-10	Arizona	13937
 2022-01-11	Arizona	14160
+2022-01-12	Arizona	18783
+2022-01-13	Arizona	18573
 2021-10-15	California	6188
 2021-10-16	California	0
 2021-10-17	California	0
@@ -177,6 +179,8 @@ date	location	cases
 2022-01-09	California	0
 2022-01-10	California	308820
 2022-01-11	California	143380
+2022-01-12	California	102310
+2022-01-13	California	167819
 2021-10-15	Colorado	2850
 2021-10-16	Colorado	1767
 2021-10-17	Colorado	1767
@@ -266,6 +270,8 @@ date	location	cases
 2022-01-09	Colorado	0
 2022-01-10	Colorado	51101
 2022-01-11	Colorado	22058
+2022-01-12	Colorado	12547
+2022-01-13	Colorado	14379
 2021-10-15	Connecticut	494
 2021-10-16	Connecticut	382
 2021-10-17	Connecticut	382
@@ -355,19 +361,21 @@ date	location	cases
 2022-01-09	Connecticut	0
 2022-01-10	Connecticut	31405
 2022-01-11	Connecticut	6751
+2022-01-12	Connecticut	7318
+2022-01-13	Connecticut	9604
 2021-10-15	Florida	2634
 2021-10-16	Florida	1507
 2021-10-17	Florida	1833
 2021-10-18	Florida	2154
 2021-10-19	Florida	2661
-2021-10-20	Florida	2436
+2021-10-20	Florida	2437
 2021-10-21	Florida	2068
-2021-10-22	Florida	2646
-2021-10-23	Florida	1781
+2021-10-22	Florida	2678
+2021-10-23	Florida	1802
 2021-10-24	Florida	945
 2021-10-25	Florida	2038
 2021-10-26	Florida	1898
-2021-10-27	Florida	2352
+2021-10-27	Florida	2353
 2021-10-28	Florida	2073
 2021-10-29	Florida	1754
 2021-10-30	Florida	937
@@ -380,13 +388,13 @@ date	location	cases
 2021-11-06	Florida	1378
 2021-11-07	Florida	271
 2021-11-08	Florida	1810
-2021-11-09	Florida	1515
+2021-11-09	Florida	1513
 2021-11-10	Florida	2527
 2021-11-11	Florida	1508
 2021-11-12	Florida	1607
 2021-11-13	Florida	1144
 2021-11-14	Florida	1034
-2021-11-15	Florida	1687
+2021-11-15	Florida	1686
 2021-11-16	Florida	1717
 2021-11-17	Florida	1998
 2021-11-18	Florida	1702
@@ -416,34 +424,36 @@ date	location	cases
 2021-12-12	Florida	1947
 2021-12-13	Florida	3029
 2021-12-14	Florida	4104
-2021-12-15	Florida	6832
-2021-12-16	Florida	8785
+2021-12-15	Florida	6831
+2021-12-16	Florida	8786
 2021-12-17	Florida	10138
 2021-12-18	Florida	10940
 2021-12-19	Florida	10940
 2021-12-20	Florida	14974
-2021-12-21	Florida	21004
-2021-12-22	Florida	27969
+2021-12-21	Florida	21003
+2021-12-22	Florida	27963
 2021-12-23	Florida	32182
-2021-12-24	Florida	27936
-2021-12-25	Florida	20972
-2021-12-26	Florida	29048
-2021-12-27	Florida	33493
-2021-12-28	Florida	52816
-2021-12-29	Florida	57896
-2021-12-30	Florida	75705
-2021-12-31	Florida	56439
-2022-01-01	Florida	45690
-2022-01-02	Florida	39626
-2022-01-03	Florida	51506
-2022-01-04	Florida	59346
-2022-01-05	Florida	67282
-2022-01-06	Florida	76809
-2022-01-07	Florida	69902
-2022-01-08	Florida	77156
-2022-01-09	Florida	49548
-2022-01-10	Florida	47709
-2022-01-11	Florida	71742
+2021-12-24	Florida	27931
+2021-12-25	Florida	20970
+2021-12-26	Florida	29046
+2021-12-27	Florida	33489
+2021-12-28	Florida	52814
+2021-12-29	Florida	57893
+2021-12-30	Florida	75700
+2021-12-31	Florida	56376
+2022-01-01	Florida	45682
+2022-01-02	Florida	39622
+2022-01-03	Florida	51498
+2022-01-04	Florida	59294
+2022-01-05	Florida	67146
+2022-01-06	Florida	76791
+2022-01-07	Florida	69864
+2022-01-08	Florida	77097
+2022-01-09	Florida	49462
+2022-01-10	Florida	47699
+2022-01-11	Florida	71746
+2022-01-12	Florida	55573
+2022-01-13	Florida	59061
 2021-10-15	Georgia	1905
 2021-10-16	Georgia	1105
 2021-10-17	Georgia	1105
@@ -533,6 +543,8 @@ date	location	cases
 2022-01-09	Georgia	0
 2022-01-10	Georgia	46474
 2022-01-11	Georgia	24865
+2022-01-12	Georgia	18939
+2022-01-13	Georgia	24310
 2021-10-15	Illinois	2413
 2021-10-16	Illinois	1832
 2021-10-17	Illinois	1832
@@ -622,6 +634,8 @@ date	location	cases
 2022-01-09	Illinois	0
 2022-01-10	Illinois	77833
 2022-01-11	Illinois	28110
+2022-01-12	Illinois	34573
+2022-01-13	Illinois	37048
 2021-10-15	Indiana	2262
 2021-10-16	Indiana	1274
 2021-10-17	Indiana	1274
@@ -711,95 +725,8 @@ date	location	cases
 2022-01-09	Indiana	0
 2022-01-10	Indiana	37331
 2022-01-11	Indiana	11808
-2021-10-15	Kentucky	1629
-2021-10-16	Kentucky	1429
-2021-10-17	Kentucky	727
-2021-10-18	Kentucky	564
-2021-10-19	Kentucky	1397
-2021-10-20	Kentucky	1557
-2021-10-21	Kentucky	1426
-2021-10-22	Kentucky	1275
-2021-10-23	Kentucky	1066
-2021-10-24	Kentucky	838
-2021-10-25	Kentucky	523
-2021-10-26	Kentucky	1102
-2021-10-27	Kentucky	1438
-2021-10-28	Kentucky	1376
-2021-10-29	Kentucky	1177
-2021-10-30	Kentucky	985
-2021-10-31	Kentucky	556
-2021-11-01	Kentucky	531
-2021-11-02	Kentucky	1203
-2021-11-03	Kentucky	1357
-2021-11-04	Kentucky	1271
-2021-11-05	Kentucky	1257
-2021-11-06	Kentucky	1105
-2021-11-07	Kentucky	615
-2021-11-08	Kentucky	518
-2021-11-09	Kentucky	1703
-2021-11-10	Kentucky	1708
-2021-11-11	Kentucky	1565
-2021-11-12	Kentucky	1274
-2021-11-13	Kentucky	1548
-2021-11-14	Kentucky	784
-2021-11-15	Kentucky	647
-2021-11-16	Kentucky	1694
-2021-11-17	Kentucky	1980
-2021-11-18	Kentucky	1546
-2021-11-19	Kentucky	1947
-2021-11-20	Kentucky	1693
-2021-11-21	Kentucky	1078
-2021-11-22	Kentucky	799
-2021-11-23	Kentucky	1996
-2021-11-24	Kentucky	1988
-2021-11-25	Kentucky	1924
-2021-11-26	Kentucky	799
-2021-11-27	Kentucky	856
-2021-11-28	Kentucky	1144
-2021-11-29	Kentucky	892
-2021-11-30	Kentucky	2606
-2021-12-01	Kentucky	3143
-2021-12-02	Kentucky	2788
-2021-12-03	Kentucky	2816
-2021-12-04	Kentucky	2218
-2021-12-05	Kentucky	1335
-2021-12-06	Kentucky	1308
-2021-12-07	Kentucky	2489
-2021-12-08	Kentucky	2655
-2021-12-09	Kentucky	2490
-2021-12-10	Kentucky	2648
-2021-12-11	Kentucky	2103
-2021-12-12	Kentucky	1149
-2021-12-13	Kentucky	1072
-2021-12-14	Kentucky	2358
-2021-12-15	Kentucky	2678
-2021-12-16	Kentucky	2410
-2021-12-17	Kentucky	2581
-2021-12-18	Kentucky	2004
-2021-12-19	Kentucky	1605
-2021-12-20	Kentucky	1232
-2021-12-21	Kentucky	2283
-2021-12-22	Kentucky	2901
-2021-12-23	Kentucky	2890
-2021-12-24	Kentucky	2721
-2021-12-25	Kentucky	2080
-2021-12-26	Kentucky	976
-2021-12-27	Kentucky	1282
-2021-12-28	Kentucky	3990
-2021-12-29	Kentucky	5442
-2021-12-30	Kentucky	6196
-2021-12-31	Kentucky	5753
-2022-01-01	Kentucky	4429
-2022-01-02	Kentucky	2806
-2022-01-03	Kentucky	3370
-2022-01-04	Kentucky	6209
-2022-01-05	Kentucky	9692
-2022-01-06	Kentucky	9546
-2022-01-07	Kentucky	10965
-2022-01-08	Kentucky	0
-2022-01-09	Kentucky	0
-2022-01-10	Kentucky	16671
-2022-01-11	Kentucky	9434
+2022-01-12	Indiana	15012
+2022-01-13	Indiana	16447
 2021-10-15	Louisiana	559
 2021-10-16	Louisiana	358
 2021-10-17	Louisiana	358
@@ -889,6 +816,8 @@ date	location	cases
 2022-01-09	Louisiana	0
 2022-01-10	Louisiana	29019
 2022-01-11	Louisiana	12494
+2022-01-12	Louisiana	17592
+2022-01-13	Louisiana	14932
 2021-10-15	Maryland	936
 2021-10-16	Maryland	435
 2021-10-17	Maryland	436
@@ -978,6 +907,8 @@ date	location	cases
 2022-01-09	Maryland	9683
 2022-01-10	Maryland	9693
 2022-01-11	Maryland	11033
+2022-01-12	Maryland	10587
+2022-01-13	Maryland	9986
 2021-10-15	Massachusetts	1649
 2021-10-16	Massachusetts	996
 2021-10-17	Massachusetts	996
@@ -1067,6 +998,8 @@ date	location	cases
 2022-01-09	Massachusetts	0
 2022-01-10	Massachusetts	64715
 2022-01-11	Massachusetts	20965
+2022-01-12	Massachusetts	24296
+2022-01-13	Massachusetts	21709
 2021-10-15	Michigan	5469
 2021-10-16	Michigan	3113
 2021-10-17	Michigan	3113
@@ -1156,6 +1089,8 @@ date	location	cases
 2022-01-09	Michigan	0
 2022-01-10	Michigan	49291
 2022-01-11	Michigan	18447
+2022-01-12	Michigan	17312
+2022-01-13	Michigan	17788
 2021-10-15	Minnesota	3341
 2021-10-16	Minnesota	950
 2021-10-17	Minnesota	950
@@ -1245,6 +1180,8 @@ date	location	cases
 2022-01-09	Minnesota	0
 2022-01-10	Minnesota	10963
 2022-01-11	Minnesota	29466
+2022-01-12	Minnesota	10704
+2022-01-13	Minnesota	11499
 2021-10-15	Nebraska	661
 2021-10-16	Nebraska	152
 2021-10-17	Nebraska	152
@@ -1334,6 +1271,8 @@ date	location	cases
 2022-01-09	Nebraska	0
 2022-01-10	Nebraska	7557
 2022-01-11	Nebraska	3776
+2022-01-12	Nebraska	5041
+2022-01-13	Nebraska	7220
 2021-10-15	Nevada	521
 2021-10-16	Nevada	465
 2021-10-17	Nevada	465
@@ -1423,6 +1362,8 @@ date	location	cases
 2022-01-09	Nevada	0
 2022-01-10	Nevada	17950
 2022-01-11	Nevada	5417
+2022-01-12	Nevada	6270
+2022-01-13	Nevada	7382
 2021-10-15	New Jersey	1383
 2021-10-16	New Jersey	1452
 2021-10-17	New Jersey	896
@@ -1512,6 +1453,8 @@ date	location	cases
 2022-01-09	New Jersey	28514
 2022-01-10	New Jersey	23060
 2022-01-11	New Jersey	25405
+2022-01-12	New Jersey	23275
+2022-01-13	New Jersey	23672
 2021-10-15	New Mexico	801
 2021-10-16	New Mexico	625
 2021-10-17	New Mexico	625
@@ -1601,6 +1544,8 @@ date	location	cases
 2022-01-09	New Mexico	0
 2022-01-10	New Mexico	9250
 2022-01-11	New Mexico	2932
+2022-01-12	New Mexico	6920
+2022-01-13	New Mexico	5521
 2021-10-15	New York	5138
 2021-10-16	New York	4849
 2021-10-17	New York	3981
@@ -1690,6 +1635,8 @@ date	location	cases
 2022-01-09	New York	162708
 2022-01-10	New York	50390
 2022-01-11	New York	47923
+2022-01-12	New York	62936
+2022-01-13	New York	40999
 2021-10-15	North Carolina	3054
 2021-10-16	North Carolina	2578
 2021-10-17	North Carolina	1958
@@ -1779,6 +1726,8 @@ date	location	cases
 2022-01-09	North Carolina	19688
 2022-01-10	North Carolina	16277
 2022-01-11	North Carolina	8408
+2022-01-12	North Carolina	25445
+2022-01-13	North Carolina	34042
 2021-10-15	North Dakota	522
 2021-10-16	North Dakota	108
 2021-10-17	North Dakota	108
@@ -1868,6 +1817,8 @@ date	location	cases
 2022-01-09	North Dakota	962
 2022-01-10	North Dakota	2075
 2022-01-11	North Dakota	2135
+2022-01-12	North Dakota	2678
+2022-01-13	North Dakota	2813
 2021-10-15	Ohio	4937
 2021-10-16	Ohio	3709
 2021-10-17	Ohio	2515
@@ -1957,6 +1908,8 @@ date	location	cases
 2022-01-09	Ohio	19089
 2022-01-10	Ohio	18042
 2022-01-11	Ohio	19611
+2022-01-12	Ohio	20093
+2022-01-13	Ohio	19262
 2021-10-15	Oregon	1150
 2021-10-16	Oregon	1086
 2021-10-17	Oregon	1086
@@ -2046,6 +1999,8 @@ date	location	cases
 2022-01-09	Oregon	0
 2022-01-10	Oregon	18503
 2022-01-11	Oregon	7999
+2022-01-12	Oregon	8743
+2022-01-13	Oregon	9787
 2021-10-15	Pennsylvania	5725
 2021-10-16	Pennsylvania	4485
 2021-10-17	Pennsylvania	3821
@@ -2135,6 +2090,8 @@ date	location	cases
 2022-01-09	Pennsylvania	24683
 2022-01-10	Pennsylvania	29060
 2022-01-11	Pennsylvania	22245
+2022-01-12	Pennsylvania	31739
+2022-01-13	Pennsylvania	26795
 2021-10-15	Tennessee	2058
 2021-10-16	Tennessee	1781
 2021-10-17	Tennessee	842
@@ -2224,6 +2181,8 @@ date	location	cases
 2022-01-09	Tennessee	11690
 2022-01-10	Tennessee	9347
 2022-01-11	Tennessee	13462
+2022-01-12	Tennessee	17281
+2022-01-13	Tennessee	16397
 2021-10-15	Texas	6033
 2021-10-16	Texas	5065
 2021-10-17	Texas	630
@@ -2313,6 +2272,8 @@ date	location	cases
 2022-01-09	Texas	42791
 2022-01-10	Texas	47237
 2022-01-11	Texas	56659
+2022-01-12	Texas	75817
+2022-01-13	Texas	74491
 2021-10-15	Utah	1493
 2021-10-16	Utah	1012
 2021-10-17	Utah	1012
@@ -2402,6 +2363,8 @@ date	location	cases
 2022-01-09	Utah	0
 2022-01-10	Utah	24147
 2022-01-11	Utah	9813
+2022-01-12	Utah	10220
+2022-01-13	Utah	12990
 2021-10-15	Vermont	208
 2021-10-16	Vermont	323
 2021-10-17	Vermont	231
@@ -2428,15 +2391,15 @@ date	location	cases
 2021-11-07	Vermont	358
 2021-11-08	Vermont	223
 2021-11-09	Vermont	174
-2021-11-10	Vermont	191
+2021-11-10	Vermont	190
 2021-11-11	Vermont	555
 2021-11-12	Vermont	480
 2021-11-13	Vermont	426
-2021-11-14	Vermont	272
+2021-11-14	Vermont	271
 2021-11-15	Vermont	202
 2021-11-16	Vermont	171
 2021-11-17	Vermont	234
-2021-11-18	Vermont	484
+2021-11-18	Vermont	485
 2021-11-19	Vermont	441
 2021-11-20	Vermont	403
 2021-11-21	Vermont	450
@@ -2448,8 +2411,8 @@ date	location	cases
 2021-11-27	Vermont	93
 2021-11-28	Vermont	337
 2021-11-29	Vermont	220
-2021-11-30	Vermont	203
-2021-12-01	Vermont	435
+2021-11-30	Vermont	204
+2021-12-01	Vermont	436
 2021-12-02	Vermont	583
 2021-12-03	Vermont	478
 2021-12-04	Vermont	509
@@ -2458,39 +2421,41 @@ date	location	cases
 2021-12-07	Vermont	276
 2021-12-08	Vermont	379
 2021-12-09	Vermont	440
-2021-12-10	Vermont	682
-2021-12-11	Vermont	239
-2021-12-12	Vermont	502
+2021-12-10	Vermont	683
+2021-12-11	Vermont	240
+2021-12-12	Vermont	503
 2021-12-13	Vermont	219
 2021-12-14	Vermont	222
-2021-12-15	Vermont	318
+2021-12-15	Vermont	319
 2021-12-16	Vermont	611
-2021-12-17	Vermont	404
-2021-12-18	Vermont	414
-2021-12-19	Vermont	434
-2021-12-20	Vermont	223
-2021-12-21	Vermont	217
-2021-12-22	Vermont	619
-2021-12-23	Vermont	408
-2021-12-24	Vermont	573
+2021-12-17	Vermont	405
+2021-12-18	Vermont	413
+2021-12-19	Vermont	435
+2021-12-20	Vermont	224
+2021-12-21	Vermont	216
+2021-12-22	Vermont	620
+2021-12-23	Vermont	410
+2021-12-24	Vermont	574
 2021-12-25	Vermont	276
-2021-12-26	Vermont	222
-2021-12-27	Vermont	210
-2021-12-28	Vermont	405
-2021-12-29	Vermont	865
-2021-12-30	Vermont	1157
-2021-12-31	Vermont	1309
-2022-01-01	Vermont	495
-2022-01-02	Vermont	417
+2021-12-26	Vermont	223
+2021-12-27	Vermont	214
+2021-12-28	Vermont	406
+2021-12-29	Vermont	869
+2021-12-30	Vermont	1164
+2021-12-31	Vermont	1301
+2022-01-01	Vermont	506
+2022-01-02	Vermont	415
 2022-01-03	Vermont	216
-2022-01-04	Vermont	1460
-2022-01-05	Vermont	801
-2022-01-06	Vermont	2086
-2022-01-07	Vermont	1770
-2022-01-08	Vermont	0
-2022-01-09	Vermont	0
-2022-01-10	Vermont	0
-2022-01-11	Vermont	0
+2022-01-04	Vermont	1476
+2022-01-05	Vermont	789
+2022-01-06	Vermont	2042
+2022-01-07	Vermont	1804
+2022-01-08	Vermont	2636
+2022-01-09	Vermont	2241
+2022-01-10	Vermont	987
+2022-01-11	Vermont	843
+2022-01-12	Vermont	739
+2022-01-13	Vermont	1893
 2021-10-15	Virginia	1359
 2021-10-16	Virginia	1733
 2021-10-17	Virginia	1733
@@ -2580,6 +2545,8 @@ date	location	cases
 2022-01-09	Virginia	0
 2022-01-10	Virginia	48209
 2022-01-11	Virginia	19836
+2022-01-12	Virginia	18945
+2022-01-13	Virginia	17218
 2021-10-15	Washington	2679
 2021-10-16	Washington	1851
 2021-10-17	Washington	1851
@@ -2669,6 +2636,8 @@ date	location	cases
 2022-01-09	Washington	0
 2022-01-10	Washington	47609
 2022-01-11	Washington	13158
+2022-01-12	Washington	17349
+2022-01-13	Washington	16135
 2021-10-15	Wisconsin	2740
 2021-10-16	Wisconsin	2545
 2021-10-17	Wisconsin	1421
@@ -2758,3 +2727,5 @@ date	location	cases
 2022-01-09	Wisconsin	0
 2022-01-10	Wisconsin	33404
 2022-01-11	Wisconsin	14811
+2022-01-12	Wisconsin	18610
+2022-01-13	Wisconsin	17008
