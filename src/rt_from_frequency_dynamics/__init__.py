@@ -13,7 +13,7 @@ from .modelfunctions import get_infections, apply_delay, forward_simulate_I, rep
 from .LAS import LaplaceRandomWalk, LAS_Laplace
 
 from .modeloptions import GARW, FixedGA, FreeGrowth
-from .modeloptions import PoisCases, NegBinomCases
+from .modeloptions import PoisCases, NegBinomCases, ZIPoisCases, ZINegBinomCases
 from .modeloptions import MultinomialSeq, DirMultinomialSeq
 
 from .renewalmodel import RenewalModel, FixedGrowthModel, FreeGrowthModel, GARandomWalkModel

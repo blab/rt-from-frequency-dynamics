@@ -96,6 +96,17 @@ class PoisCases():
         numpyro.sample("cases",
                        dist.Poisson(pad_to_obs(EC, is_obs)),
                        obs=jnp.nan_to_num(cases))
+class ZIPoisCases():
+    def __init__(self):
+        pass
+
+    def model(self, cases, EC):
+        T = cases.shape[0]
+        with numpyro.plate("obs_day", T):
+            zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
+        numpyro.sample("cases",
+                       dist.ZeroInflatedPoisson(rate=EC, gate=zp),
+                       obs=jnp.nan_to_num(cases))
 
 class NegBinomCases():
     def __init__(self, raw_alpha_sd=0.01):
@@ -109,6 +120,25 @@ class NegBinomCases():
         numpyro.sample("cases",
                        dist.NegativeBinomial2(
                            mean=pad_to_obs(EC, is_obs), 
+                           concentration=jnp.power(raw_alpha, -2)),
+                       obs=jnp.nan_to_num(cases))
+
+class ZINegBinomCases():
+    def __init__(self, raw_alpha_sd=0.01):
+        self.raw_alpha_sd = raw_alpha_sd
+
+    def model(self, cases, EC):
+        # NegativeBinomial sampling
+        T = cases.shape[0]
+        raw_alpha = numpyro.sample("raw_alpha", 
+                                   dist.HalfNormal(self.raw_alpha_sd))
+        with numpyro.plate("obs_day", T):
+            zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
+
+        numpyro.sample("cases",
+                       dist.ZeroInflatedNegativeBinomial2(
+                           mean=EC, 
+                           gate=zp,
                            concentration=jnp.power(raw_alpha, -2)),
                        obs=jnp.nan_to_num(cases))
 
