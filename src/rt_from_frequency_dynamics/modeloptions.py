@@ -1,4 +1,6 @@
 import jax.numpy as jnp
+from jax import ops
+import numpy as np
 import numpyro
 import numpyro.distributions as dist
 
@@ -101,11 +103,18 @@ class ZIPoisCases():
         pass
 
     def model(self, cases, EC):
-        T = cases.shape[0]
-        with numpyro.plate("obs_day", T):
+
+        # Finding zero locations and making only parameters for zero observation
+        is_zero = (cases == 0)
+        zero_idx = np.nonzero(is_zero)[0]
+
+        gate = jnp.zeros_like(cases) + 1e-12
+        with numpyro.plate("n_zero", zero_idx.shape[0]):
             zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
+        gate = ops.index_update(gate, zero_idx, zp)
+
         numpyro.sample("cases",
-                       dist.ZeroInflatedPoisson(rate=EC, gate=zp),
+                       dist.ZeroInflatedPoisson(rate=EC, gate=gate),
                        obs=jnp.nan_to_num(cases))
 
 class NegBinomCases():
@@ -132,13 +141,20 @@ class ZINegBinomCases():
         T = cases.shape[0]
         raw_alpha = numpyro.sample("raw_alpha", 
                                    dist.HalfNormal(self.raw_alpha_sd))
-        with numpyro.plate("obs_day", T):
+
+        # Finding zero locations and making only parameters for zero observation
+        is_zero = (cases == 0)
+        zero_idx = np.nonzero(is_zero)[0]
+
+        gate = jnp.zeros_like(cases) + 1e-12
+        with numpyro.plate("n_zero", zero_idx.shape[0]):
             zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
+        gate = ops.index_update(gate, zero_idx, zp)
 
         numpyro.sample("cases",
                        dist.ZeroInflatedNegativeBinomial2(
                            mean=EC, 
-                           gate=zp,
+                           gate=gate,
                            concentration=jnp.power(raw_alpha, -2)),
                        obs=jnp.nan_to_num(cases))
 
