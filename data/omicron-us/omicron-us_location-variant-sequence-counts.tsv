@@ -186,6 +186,8 @@ date	location	variant	sequences
 2022-01-07	Arizona	Delta	3
 2022-01-08	Arizona	Delta	2
 2022-01-09	Arizona	Delta	8
+2022-01-10	Arizona	Delta	8
+2022-01-11	Arizona	Delta	3
 2021-12-05	Arizona	Omicron	2
 2021-12-06	Arizona	Omicron	3
 2021-12-07	Arizona	Omicron	3
@@ -222,6 +224,9 @@ date	location	variant	sequences
 2022-01-07	Arizona	Omicron	162
 2022-01-08	Arizona	Omicron	170
 2022-01-09	Arizona	Omicron	321
+2022-01-10	Arizona	Omicron	307
+2022-01-11	Arizona	Omicron	295
+2022-01-12	Arizona	Omicron	16
 2021-10-15	California	other	4
 2021-10-16	California	other	4
 2021-10-17	California	other	3
@@ -429,6 +434,7 @@ date	location	variant	sequences
 2022-01-05	California	Delta	13
 2022-01-06	California	Delta	1
 2022-01-09	California	Delta	1
+2022-01-10	California	Delta	1
 2021-11-26	California	Omicron	1
 2021-11-27	California	Omicron	1
 2021-11-28	California	Omicron	1
@@ -474,6 +480,8 @@ date	location	variant	sequences
 2022-01-07	California	Omicron	85
 2022-01-08	California	Omicron	6
 2022-01-09	California	Omicron	18
+2022-01-10	California	Omicron	13
+2022-01-11	California	Omicron	15
 2021-10-16	Colorado	other	1
 2021-10-18	Colorado	other	3
 2021-10-19	Colorado	other	1
@@ -698,6 +706,7 @@ date	location	variant	sequences
 2022-01-07	Colorado	Omicron	7
 2022-01-08	Colorado	Omicron	3
 2022-01-09	Colorado	Omicron	2
+2022-01-10	Colorado	Omicron	2
 2021-10-15	Connecticut	other	1
 2021-10-19	Connecticut	other	1
 2021-10-26	Connecticut	other	1
@@ -1083,6 +1092,7 @@ date	location	variant	sequences
 2022-01-07	Florida	Omicron	15
 2022-01-08	Florida	Omicron	17
 2022-01-09	Florida	Omicron	15
+2022-01-11	Florida	Omicron	1
 2021-10-19	Georgia	other	1
 2021-10-20	Georgia	other	1
 2021-10-22	Georgia	other	1
@@ -1458,6 +1468,7 @@ date	location	variant	sequences
 2022-01-04	Illinois	Delta	6
 2022-01-06	Illinois	Delta	1
 2022-01-07	Illinois	Delta	1
+2022-01-11	Illinois	Delta	1
 2021-11-30	Illinois	Omicron	1
 2021-12-01	Illinois	Omicron	2
 2021-12-02	Illinois	Omicron	6
@@ -1498,6 +1509,8 @@ date	location	variant	sequences
 2022-01-07	Illinois	Omicron	15
 2022-01-08	Illinois	Omicron	16
 2022-01-09	Illinois	Omicron	18
+2022-01-10	Illinois	Omicron	16
+2022-01-11	Illinois	Omicron	9
 2021-10-15	Indiana	other	2
 2021-10-18	Indiana	other	1
 2021-10-21	Indiana	other	6
@@ -1530,6 +1543,7 @@ date	location	variant	sequences
 2021-12-26	Indiana	other	1
 2021-12-27	Indiana	other	1
 2022-01-03	Indiana	other	1
+2022-01-12	Indiana	other	1
 2021-10-15	Indiana	other	2
 2021-10-18	Indiana	other	1
 2021-10-21	Indiana	other	6
@@ -1562,6 +1576,7 @@ date	location	variant	sequences
 2021-12-26	Indiana	other	1
 2021-12-27	Indiana	other	1
 2022-01-03	Indiana	other	1
+2022-01-12	Indiana	other	1
 2021-10-15	Indiana	Delta	162
 2021-10-16	Indiana	Delta	97
 2021-10-17	Indiana	Delta	81
@@ -1643,6 +1658,8 @@ date	location	variant	sequences
 2022-01-06	Indiana	Delta	3
 2022-01-07	Indiana	Delta	6
 2022-01-09	Indiana	Delta	1
+2022-01-10	Indiana	Delta	3
+2022-01-12	Indiana	Delta	1
 2021-12-08	Indiana	Omicron	2
 2021-12-09	Indiana	Omicron	1
 2021-12-10	Indiana	Omicron	6
@@ -1670,6 +1687,9 @@ date	location	variant	sequences
 2022-01-05	Indiana	Omicron	11
 2022-01-06	Indiana	Omicron	26
 2022-01-07	Indiana	Omicron	13
+2022-01-10	Indiana	Omicron	22
+2022-01-11	Indiana	Omicron	13
+2022-01-12	Indiana	Omicron	9
 2021-10-29	Louisiana	other	1
 2021-10-30	Louisiana	other	2
 2021-11-09	Louisiana	other	2
@@ -1801,6 +1821,8 @@ date	location	variant	sequences
 2022-01-04	Louisiana	Omicron	8
 2022-01-05	Louisiana	Omicron	8
 2022-01-06	Louisiana	Omicron	25
+2022-01-10	Louisiana	Omicron	13
+2022-01-12	Louisiana	Omicron	1
 2021-10-16	Maryland	other	1
 2021-10-17	Maryland	other	1
 2021-10-18	Maryland	other	2
@@ -1948,6 +1970,8 @@ date	location	variant	sequences
 2022-01-07	Maryland	Delta	1
 2022-01-08	Maryland	Delta	2
 2022-01-09	Maryland	Delta	3
+2022-01-10	Maryland	Delta	1
+2022-01-11	Maryland	Delta	1
 2021-11-21	Maryland	Omicron	1
 2021-11-24	Maryland	Omicron	1
 2021-11-26	Maryland	Omicron	1
@@ -1994,6 +2018,10 @@ date	location	variant	sequences
 2022-01-07	Maryland	Omicron	49
 2022-01-08	Maryland	Omicron	59
 2022-01-09	Maryland	Omicron	33
+2022-01-10	Maryland	Omicron	51
+2022-01-11	Maryland	Omicron	36
+2022-01-12	Maryland	Omicron	24
+2022-01-13	Maryland	Omicron	25
 2021-10-15	Massachusetts	other	1
 2021-10-16	Massachusetts	other	1
 2021-10-17	Massachusetts	other	3
@@ -2448,6 +2476,8 @@ date	location	variant	sequences
 2022-01-04	Michigan	Omicron	10
 2022-01-06	Michigan	Omicron	5
 2022-01-09	Michigan	Omicron	2
+2022-01-10	Michigan	Omicron	1
+2022-01-11	Michigan	Omicron	2
 2021-10-16	Minnesota	other	2
 2021-10-18	Minnesota	other	2
 2021-10-19	Minnesota	other	1
@@ -2660,6 +2690,7 @@ date	location	variant	sequences
 2022-01-04	Minnesota	Omicron	21
 2022-01-05	Minnesota	Omicron	1
 2022-01-09	Minnesota	Omicron	2
+2022-01-11	Minnesota	Omicron	1
 2021-10-21	Nebraska	other	1
 2021-10-22	Nebraska	other	3
 2021-10-27	Nebraska	other	1
@@ -2678,6 +2709,8 @@ date	location	variant	sequences
 2021-12-31	Nebraska	other	1
 2022-01-04	Nebraska	other	2
 2022-01-05	Nebraska	other	1
+2022-01-10	Nebraska	other	1
+2022-01-11	Nebraska	other	1
 2021-10-21	Nebraska	other	1
 2021-10-22	Nebraska	other	3
 2021-10-27	Nebraska	other	1
@@ -2696,6 +2729,8 @@ date	location	variant	sequences
 2021-12-31	Nebraska	other	1
 2022-01-04	Nebraska	other	2
 2022-01-05	Nebraska	other	1
+2022-01-10	Nebraska	other	1
+2022-01-11	Nebraska	other	1
 2021-10-15	Nebraska	Delta	70
 2021-10-16	Nebraska	Delta	36
 2021-10-17	Nebraska	Delta	31
@@ -2783,6 +2818,9 @@ date	location	variant	sequences
 2022-01-07	Nebraska	Delta	5
 2022-01-08	Nebraska	Delta	1
 2022-01-09	Nebraska	Delta	2
+2022-01-10	Nebraska	Delta	3
+2022-01-11	Nebraska	Delta	2
+2022-01-12	Nebraska	Delta	1
 2021-11-29	Nebraska	Omicron	6
 2021-12-12	Nebraska	Omicron	3
 2021-12-14	Nebraska	Omicron	2
@@ -2812,6 +2850,10 @@ date	location	variant	sequences
 2022-01-07	Nebraska	Omicron	47
 2022-01-08	Nebraska	Omicron	41
 2022-01-09	Nebraska	Omicron	17
+2022-01-10	Nebraska	Omicron	65
+2022-01-11	Nebraska	Omicron	50
+2022-01-12	Nebraska	Omicron	68
+2022-01-13	Nebraska	Omicron	34
 2021-10-21	Nevada	other	1
 2021-11-04	Nevada	other	3
 2021-11-08	Nevada	other	1
@@ -2951,6 +2993,8 @@ date	location	variant	sequences
 2022-01-07	Nevada	Omicron	18
 2022-01-08	Nevada	Omicron	9
 2022-01-09	Nevada	Omicron	10
+2022-01-10	Nevada	Omicron	46
+2022-01-11	Nevada	Omicron	10
 2021-10-17	New Jersey	other	1
 2021-10-18	New Jersey	other	3
 2021-10-19	New Jersey	other	1
@@ -3159,6 +3203,7 @@ date	location	variant	sequences
 2022-01-05	New Jersey	Omicron	123
 2022-01-07	New Jersey	Omicron	1
 2022-01-09	New Jersey	Omicron	1
+2022-01-10	New Jersey	Omicron	1
 2021-10-18	New Mexico	other	1
 2021-10-20	New Mexico	other	1
 2021-10-22	New Mexico	other	1
@@ -3576,6 +3621,7 @@ date	location	variant	sequences
 2022-01-06	New York	Omicron	55
 2022-01-07	New York	Omicron	25
 2022-01-08	New York	Omicron	17
+2022-01-10	New York	Omicron	4
 2021-10-15	North Carolina	other	1
 2021-10-16	North Carolina	other	3
 2021-10-17	North Carolina	other	1
@@ -3865,6 +3911,7 @@ date	location	variant	sequences
 2022-01-05	North Dakota	Delta	10
 2022-01-06	North Dakota	Delta	3
 2022-01-07	North Dakota	Delta	4
+2022-01-10	North Dakota	Delta	1
 2021-12-13	North Dakota	Omicron	2
 2021-12-14	North Dakota	Omicron	4
 2021-12-15	North Dakota	Omicron	9
@@ -3892,6 +3939,7 @@ date	location	variant	sequences
 2022-01-06	North Dakota	Omicron	8
 2022-01-07	North Dakota	Omicron	17
 2022-01-09	North Dakota	Omicron	4
+2022-01-10	North Dakota	Omicron	2
 2021-10-15	Ohio	other	1
 2021-10-16	Ohio	other	1
 2021-10-17	Ohio	other	1
@@ -4251,6 +4299,7 @@ date	location	variant	sequences
 2022-01-07	Oregon	Omicron	131
 2022-01-08	Oregon	Omicron	71
 2022-01-09	Oregon	Omicron	8
+2022-01-11	Oregon	Omicron	1
 2021-10-15	Pennsylvania	other	1
 2021-10-16	Pennsylvania	other	3
 2021-10-17	Pennsylvania	other	3
@@ -5056,6 +5105,8 @@ date	location	variant	sequences
 2022-01-05	Texas	Omicron	81
 2022-01-06	Texas	Omicron	39
 2022-01-07	Texas	Omicron	8
+2022-01-10	Texas	Omicron	1
+2022-01-11	Texas	Omicron	1
 2021-10-15	Utah	other	2
 2021-10-18	Utah	other	2
 2021-10-19	Utah	other	1
@@ -5609,6 +5660,8 @@ date	location	variant	sequences
 2022-01-07	Washington	Omicron	108
 2022-01-08	Washington	Omicron	2
 2022-01-09	Washington	Omicron	3
+2022-01-10	Washington	Omicron	24
+2022-01-11	Washington	Omicron	2
 2021-10-15	Wisconsin	other	2
 2021-10-17	Wisconsin	other	1
 2021-10-18	Wisconsin	other	2
@@ -5834,3 +5887,5 @@ date	location	variant	sequences
 2022-01-07	Wisconsin	Omicron	80
 2022-01-08	Wisconsin	Omicron	2
 2022-01-09	Wisconsin	Omicron	1
+2022-01-10	Wisconsin	Omicron	6
+2022-01-11	Wisconsin	Omicron	3
