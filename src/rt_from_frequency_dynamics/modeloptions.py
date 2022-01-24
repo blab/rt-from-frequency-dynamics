@@ -109,9 +109,10 @@ class ZIPoisCases():
         zero_idx = np.nonzero(is_zero)[0]
 
         gate = jnp.zeros_like(cases) + 1e-12
-        with numpyro.plate("n_zero", zero_idx.shape[0]):
-            zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
-        gate = ops.index_update(gate, zero_idx, zp)
+        if zero_idx.shape[0] > 0:
+            with numpyro.plate("n_zero", zero_idx.shape[0]):
+                zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
+            gate = ops.index_update(gate, zero_idx, zp)
 
         numpyro.sample("cases",
                        dist.ZeroInflatedPoisson(rate=EC, gate=gate),
@@ -147,9 +148,10 @@ class ZINegBinomCases():
         zero_idx = np.nonzero(is_zero)[0]
 
         gate = jnp.zeros_like(cases) + 1e-12
-        with numpyro.plate("n_zero", zero_idx.shape[0]):
-            zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
-        gate = ops.index_update(gate, zero_idx, zp)
+        if zero_idx.shape[0] > 0:
+            with numpyro.plate("n_zero", zero_idx.shape[0]):
+                zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
+            gate = ops.index_update(gate, zero_idx, zp)
 
         numpyro.sample("cases",
                        dist.ZeroInflatedNegativeBinomial2(
