@@ -5,35 +5,35 @@ data:
 
 settings:
   fit: true # Fit the model?
+  save: true # Save model state?
   load: false # Load old model?
   export_tsv: true  # Export model results as tsv
   export_path: "../estimates/sgtf-king-county" # Where to put estimates
-  export_fig: true # Update figures?
+  export_fig: false # Update figures? Not implemented yet.
+  ps: [0.5, 0.8, 0.95] # HPDI intervals to be exported
 
 model:
-  seed_L: 14
+  seed_L: 3
   forecast_L: 7
-  R_likelihood: "GARW" # Options: GARW, Free, Fixed, Spline
-  C_likelihood: "NegBinom" # Options: NegBinom and Poisson
+  R_likelihood: "GARW" # Options: GARW, Free, Fixed
+  # C_likelihood: "ZINegBinom" # Options: NegBinom, Poisson, ZINegBinom, ZIPoisson
+  # S_likelihood: "Multinomial" # Options: DirMultinomial and Multinomial
+  C_likelihood: "ZINegBinom" # Options: NegBinom, Poisson, ZINegBinom, ZIPoisson
   S_likelihood: "DirMultinomial" # Options: DirMultinomial and Multinomial
   prior_case_dispersion: 0.01 # Ignored if using Poisson
-  prior_seq_dispersion: 100.0 #  Ignored if using Multinomial
-  k: 10 # Number of spline knots to use
+  prior_seq_dispersion: 100.0 # Ignored if using Multinomial
+  k: 7 # Number of spline knots to use
   generation_time: # Specify mean and standard deviation for delay
-    mean: 5.2
+    mean: 3.2
     sd: 1.2
-    family: "Gamma"
+    family: "Gamma" # Options: Gamma and LogNormal
   delays: # Specify the delays between infection and sampling
     incub:
-      mean: 3.2
-      sd: 1.72
+      mean: 2.1
+      sd: 1.2
       family: "LogNormal"
 
 inference:
-  optim:
-    iters: 100000 # Number of iterations for SVI
-    lr: 1e-2 # Learning rate for the model
-
-exports:
-  path: 
-  figures: true
+  iters: 100000 # Number of iterations for SVI
+  lr: 1e-2 # Learning rate for the model
+  num_samples: 1500
