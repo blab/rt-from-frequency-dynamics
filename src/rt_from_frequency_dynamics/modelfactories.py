@@ -1,4 +1,6 @@
 import jax.numpy as jnp
+import numpy as np
+import jax
 import numpyro
 import numpyro.distributions as dist
 from .modelfunctions import v_fs_I, reporting_to_vec
@@ -21,6 +23,12 @@ def _renewal_model_factory(g_rev,
     def _variant_model(cases, seq_counts, N, X):
         T, N_variant = seq_counts.shape
         obs_range = jnp.arange(seed_L, seed_L+T, 1)
+        
+        # Computing first introduction dates
+        first_obs = (np.array(seq_counts) != 0).argmax(axis=0)
+        intro_dates = np.append(first_obs, [first_obs + d for d in np.arange(1,seed_L)])
+        # intro_idx = (first_obs, np.arange(N_variant)) # Single introduction
+        intro_idx = (intro_dates, np.tile(np.arange(N_variant), seed_L)) # Multiple introductions
 
         _R = RLik.model(N_variant, X)
 
@@ -35,15 +43,17 @@ def _renewal_model_factory(g_rev,
             R = _R
 
         # Getting initial conditions
+        intros = jnp.zeros((T+seed_L+forecast_L, N_variant))
         with numpyro.plate("N_variant", N_variant):
             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
+        intros = jax.ops.index_update(intros, intro_idx, jnp.tile(I0, seed_L))
             
         with numpyro.plate("rho_parms", 7):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
         rho_vec = reporting_to_vec(rho, T)
 
         I_prev = jnp.clip(
-            v_fs_I(I0, R, g_rev, delays, seed_L),  
+            v_fs_I(intros, R, g_rev, delays, seed_L),  
             a_min=0., 
             a_max=1e25)
         
