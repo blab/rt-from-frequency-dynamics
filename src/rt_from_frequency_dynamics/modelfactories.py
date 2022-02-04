@@ -1,9 +1,10 @@
 import jax.numpy as jnp
 import numpy as np
 import jax
+from jax import jit, vmap
 import numpyro
 import numpyro.distributions as dist
-from .modelfunctions import v_fs_I, reporting_to_vec
+from .modelfunctions import forward_simulate_I, reporting_to_vec
 from .modeloptions import GARW, NegBinomCases, DirMultinomialSeq
 
 def _renewal_model_factory(g_rev, 
@@ -19,6 +20,17 @@ def _renewal_model_factory(g_rev,
         CaseLik = NegBinomCases()
     if SeqLik is None:
         SeqLik = DirMultinomialSeq()
+
+    # If single generation time
+    if g_rev.ndim == 1:
+        gmap_dim = None # Use same generation time
+    else:
+        gmap_dim = 0 # Use each row
+
+    v_fs_I = jit(vmap(forward_simulate_I,
+                      in_axes=(-1, -1, gmap_dim, None, None),
+                      out_axes=-1), static_argnums=4)
+
 
     def _variant_model(cases, seq_counts, N, X):
         T, N_variant = seq_counts.shape

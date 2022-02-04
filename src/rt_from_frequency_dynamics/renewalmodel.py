@@ -11,7 +11,7 @@ class RenewalModel():
                  RLik=None, 
                  CLik=None, 
                  SLik=None):
-        self.g_rev = jnp.flip(g)
+        self.g_rev = jnp.flip(g, axis=-1)
         self.delays = delays
         self.seed_L = seed_L
         self.forecast_L = forecast_L
