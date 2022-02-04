@@ -13,7 +13,8 @@ def _renewal_model_factory(g_rev,
                    forecast_L, 
                    RLik=None, 
                    CaseLik=None, 
-                   SeqLik=None):
+                   SeqLik=None,
+                   v_names=None):
     if RLik is None:
         RLik = GARW() 
     if CaseLik is None:
@@ -26,15 +27,19 @@ def _renewal_model_factory(g_rev,
         gmap_dim = None # Use same generation time
     else:
         gmap_dim = 0 # Use each row
+        # Specifying variant name map to column
+        if v_names is not None:
+            which_col = {s : i for i,s in enumerate(v_names)}
 
     v_fs_I = jit(vmap(forward_simulate_I,
                       in_axes=(-1, -1, gmap_dim, None, None),
                       out_axes=-1), static_argnums=4)
 
 
-    def _variant_model(cases, seq_counts, N, X):
+    def _variant_model(cases, seq_counts, N, X, seq_names):
         T, N_variant = seq_counts.shape
         obs_range = jnp.arange(seed_L, seed_L+T, 1)
+
         
         # Computing first introduction dates
         first_obs = (np.array(seq_counts) != 0).argmax(axis=0)
@@ -42,7 +47,7 @@ def _renewal_model_factory(g_rev,
         # intro_idx = (first_obs, np.arange(N_variant)) # Single introduction
         intro_idx = (intro_dates, np.tile(np.arange(N_variant), seed_L)) # Multiple introductions
 
-        _R = RLik.model(N_variant, X)
+        _R = RLik.model(N_variant, X) # likelihood on effective reproduction number
 
         # Add forecasted R
         if forecast_L > 0:
@@ -64,15 +69,20 @@ def _renewal_model_factory(g_rev,
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
         rho_vec = reporting_to_vec(rho, T)
 
+        _g_rev = g_rev # Assume we're using original g_rev
+        if gmap_dim is not None: # Match variants to correct generation time
+            v_idx = [which_col[s] for s in seq_names] # Find which variants present
+            _g_rev = _g_rev[v_idx,:] 
+
         I_prev = jnp.clip(
-            v_fs_I(intros, R, g_rev, delays, seed_L),  
-            a_min=0., 
-            a_max=1e25)
+                v_fs_I(intros, R, _g_rev, delays, seed_L),  
+                a_min=0., 
+                a_max=1e25)
         
         # Smooth trajectory for plotting
         numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * jnp.take(I_prev, obs_range, axis=0))
 
-        # Compute growth rate assuming I_{t+1} = I_t exp(r_t)
+        # Compute growth rate assuming I_{t+1} = I_{t} \exp(r_{t})
         numpyro.deterministic(
             "r", 
             jnp.diff(

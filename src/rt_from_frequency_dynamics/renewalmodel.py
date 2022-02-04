@@ -10,11 +10,13 @@ class RenewalModel():
                  k=None,
                  RLik=None, 
                  CLik=None, 
-                 SLik=None):
+                 SLik=None,
+                 v_names=None):
         self.g_rev = jnp.flip(g, axis=-1)
         self.delays = delays
         self.seed_L = seed_L
         self.forecast_L = forecast_L
+        self.v_names = v_names
 
         if k is None:
             k = 20
@@ -33,7 +35,8 @@ class RenewalModel():
             self.forecast_L,
             self.RLik,
             self.CLik,
-            self.SLik
+            self.SLik,
+            self.v_names
         )
 
     def augment_data(self, data, order=4):
