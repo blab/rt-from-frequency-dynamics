@@ -30,9 +30,15 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 These outputs are using the growth advantage random walk (GARW) model.
 
-#### Variant-specific epidemic growth rate r
+#### Variant-specific growth rate
+
+##### Epidemic growth rate _r_ per day
 
 ![](figures/omicron-countries_variant-little-r.png)
+
+##### Reproductive number _Rt_
+
+![](figures/omicron-countries_variant-rt.png)
 
 #### Variant-specific daily case counts
 
