@@ -2,18 +2,18 @@
 
 Data preparation followed:
 
-1. Nextstrain-curated metadata TSV of GISAID database was downloaded. Uncompressing and renaming this file resulted in `gisaid_metadata.tsv` via:
+1. Nextstrain-curated metadata TSV of open data in the GenBank database was downloaded. Uncompressing and renaming this file resulted in `open_metadata.tsv` via:
 ```
-nextstrain remote download s3://nextstrain-ncov-private/metadata.tsv.gz
-gzip -d metadata.tsv.gz -c > gisaid_metadata.tsv
+curl https://data.nextstrain.org/files/ncov/open/metadata.tsv.gz --output metadata.tsv.gz
+gzip -d metadata.tsv.gz -c > open_metadata.tsv
 ```
 
 2. The metadata file was pruned to only relevant columns via:
 ```
-tsv-select -H -f strain,date,country,division,Nextstrain_clade gisaid_metadata.tsv > gisaid_metadata_pruned.tsv
+tsv-select -H -f strain,date,country,division,Nextstrain_clade open_metadata.tsv > open_metadata_pruned.tsv
 ```
 
-3. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `variants-us_data-prep.nb`. This results in the export of files: `variants-us_location-variant-sequence-counts.tsv` and `variants-us_location-case-counts.tsv` versioned here. This keeps only sequences from the USA that were collected between Jan 1, 2021 and Jan 1, 2022 resulting in 2,028,289 entries. Additionally, only variants with greater than 2000 sequences and states with greater than 10,000 sequences were kept.
+3. This `open_metadata_pruned.tsv` is processed in Mathematica by running the notebook `variants-us_data-prep.nb`. This results in the export of files: `variants-us_location-variant-sequence-counts.tsv` and `variants-us_location-case-counts.tsv` versioned here. This keeps only sequences from the USA that were collected between Jan 1, 2021 and Jan 1, 2022 resulting in 1,312,651 entries. Additionally, only variants with greater than 2000 sequences and states with greater than 10,000 sequences were kept.
 
 `variants-us_location-variant-sequence-counts.tsv` contains:
 ```
