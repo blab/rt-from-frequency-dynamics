@@ -10,7 +10,7 @@ This directory includes various scripts to run models for estimating variant $R_
 One can run this script using a command like
 
 ```
-poetry run python3 run_config.yaml --config <path-to-config>
+poetry run python3 run_config.py --config <path-to-config>
 ```
 
 
