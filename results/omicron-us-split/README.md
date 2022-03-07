@@ -54,10 +54,6 @@ These outputs are using the growth advantage random walk (GARW) model.
 
 ![](figures/omicron-us-split_variant-estimated-frequency.png)
 
-#### Phase plots of epidemic growth rate vs per-capita incidence
-
-![](figures/omicron-us-split_variant-cases-vs-rt.png)
-
 ## Updating
 
 These results can be updated via:
