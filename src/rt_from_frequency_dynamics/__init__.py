@@ -18,6 +18,7 @@ from .modeloptions import MultinomialSeq, DirMultinomialSeq
 
 from .renewalmodel import RenewalModel, FixedGrowthModel, FreeGrowthModel, GARandomWalkModel
 from .exponentialmodel import ExpModel
+from .mlr import MLRData, MultinomialLogisticRegression
 
 from .inferencehandler import SVIHandler, MCMCHandler
 
