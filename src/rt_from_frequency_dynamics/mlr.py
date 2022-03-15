@@ -6,7 +6,7 @@ import numpyro.distributions as dist
 from .datahelpers import prep_dates, prep_sequence_counts
 
 
-class MLRData():
+class MLRData:
     def __init__(self, raw_seqs):
         self.dates, date_to_index = prep_dates(raw_seqs.date)
         self.seq_names, self.seq_counts = prep_sequence_counts(raw_seqs, date_to_index=date_to_index)
@@ -30,7 +30,7 @@ def MLR_numpyro(seq_counts, N, X, tau):
 
     beta = numpyro.deterministic(
         "beta",
-        jnp.column_stack((raw_beta, jnp.zeros(N_features))) # Use zeros so that last column is pivot
+        jnp.column_stack((raw_beta, jnp.zeros(N_features))) # All parameters are relative to last column / variant
     )
 
     logits = jnp.dot(X, beta) # Logit frequencies by variant
@@ -46,10 +46,10 @@ def MLR_numpyro(seq_counts, N, X, tau):
     numpyro.deterministic("freq", softmax(logits, axis=-1))
 
     # Compute growth advantage from model
-    numpyro.deterministic("ga", jnp.exp(beta[-1, :] * tau)) # Last row corresponds to coefficient for linear predictor
+    numpyro.deterministic("ga", jnp.exp(beta[-1, :] * tau)) # Last row corresponds to linar predictor / growth advantage
 
 
-class MultinomialLogisticRegression():
+class MultinomialLogisticRegression:
     def __init__(self, tau) -> None:
         self.tau = tau # Fixed generation time
         self.make_model()
