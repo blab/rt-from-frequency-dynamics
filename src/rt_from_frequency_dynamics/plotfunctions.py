@@ -1,6 +1,5 @@
 import arviz as az
 import jax.numpy as jnp
-import numpy as np
 import datetime
 
 # Plot aes
