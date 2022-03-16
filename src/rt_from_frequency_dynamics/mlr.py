@@ -17,7 +17,7 @@ class MLRData:
         data["N"] = self.seq_counts.sum(axis=1)
         return data
 
-def MLR_numpyro(seq_counts, N, X, tau):
+def MLR_numpyro(seq_counts, N, X, tau=None):
     _, N_variants = seq_counts.shape
     _, N_features = X.shape
 
@@ -46,7 +46,8 @@ def MLR_numpyro(seq_counts, N, X, tau):
     numpyro.deterministic("freq", softmax(logits, axis=-1))
 
     # Compute growth advantage from model
-    numpyro.deterministic("ga", jnp.exp(beta[-1, :] * tau)) # Last row corresponds to linar predictor / growth advantage
+    if tau is not None:
+        numpyro.deterministic("ga", jnp.exp(beta[-1, :] * tau)) # Last row corresponds to linar predictor / growth advantage
 
 
 class MultinomialLogisticRegression:
@@ -70,3 +71,14 @@ class MultinomialLogisticRegression:
         T = len(data["N"])
         data["tau"] = self.tau
         data["X"] = self.make_ols_feature(0, T) # Use intercept and time as predictors
+
+class MLR_General:
+    def __init__(self, X) -> None:
+        self.X = X # Feature matrix. shape: N_time x N_strain
+        self.make_model()
+    
+    def make_model(self):
+        self.model = MLR_numpyro
+
+    def augment_data(self, data):
+        data["X"] = self.X
