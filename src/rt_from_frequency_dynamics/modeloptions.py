@@ -55,7 +55,7 @@ class FreeGrowth():
         return R
 
 class GARW():
-    def __init__(self, gam_prior=0.5, gam_delta_prior=10):
+    def __init__(self, gam_prior=0.5, gam_delta_prior=0.5):
         self.gam_prior = gam_prior
         self.gam_delta_prior = gam_delta_prior
 
@@ -73,9 +73,9 @@ class GARW():
         # Regularizes changes in growth advantage of variants
         with numpyro.plate("N_variant_m1", N_variant-1):
             delta_0 = numpyro.sample("delta_0", dist.Normal(0.0, 0.5))
-            gam_delta = numpyro.sample("gam_delta", dist.Exponential(rate=self.gam_delta_prior))
+            gam_delta = numpyro.sample("gam_delta", dist.HalfCauchy(self.gam_delta_prior))
             delta_rw = numpyro.sample("delta_rw", 
-                                      dist.GaussianRandomWalk(
+                                      LaplaceRandomWalk(
                                           scale=gam_delta, 
                                           num_steps=k)
                                       )
