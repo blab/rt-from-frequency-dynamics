@@ -42,8 +42,8 @@ def _renewal_model_factory(g_rev,
 
         
         # Computing first introduction dates
-        first_obs = (np.array(seq_counts) != 0).argmax(axis=0)
-        intro_dates = np.append(first_obs, [first_obs + d for d in np.arange(1,seed_L)])
+        first_obs = (np.ma.masked_invalid(np.array(seq_counts)) != 0).argmax(axis=0)
+        intro_dates = np.concatenate([first_obs + d for d in np.arange(0,seed_L)])
         # intro_idx = (first_obs, np.arange(N_variant)) # Single introduction
         intro_idx = (intro_dates, np.tile(np.arange(N_variant), seed_L)) # Multiple introductions
 
@@ -63,8 +63,8 @@ def _renewal_model_factory(g_rev,
         intros = jnp.zeros((T+seed_L+forecast_L, N_variant))
         with numpyro.plate("N_variant", N_variant):
             I0 = numpyro.sample("I0", dist.Uniform(0.0, 300_000.0))
-        intros = jax.ops.index_update(intros, intro_idx, jnp.tile(I0, seed_L))
-            
+        intros = intros.at[intro_idx].set(jnp.tile(I0, seed_L))
+
         with numpyro.plate("rho_parms", 7):
             rho = numpyro.sample("rho", dist.Beta(5., 5.))
         rho_vec = reporting_to_vec(rho, T)
