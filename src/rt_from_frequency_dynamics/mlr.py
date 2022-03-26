@@ -39,7 +39,7 @@ def MLR_numpyro(seq_counts, N, X, tau=None):
     numpyro.sample(
         "obs", 
         dist.MultinomialLogits(logits= logits, total_count=jnp.nan_to_num(N)),
-        obs=seq_counts
+        obs=jnp.nan_to_num(seq_counts)
     )
 
     # Compute frequency
