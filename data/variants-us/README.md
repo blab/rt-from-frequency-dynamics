@@ -10,10 +10,10 @@ gzip -d metadata.tsv.gz -c > open_metadata.tsv
 
 2. The metadata file was pruned to only relevant columns via:
 ```
-tsv-select -H -f strain,date,country,division,Nextstrain_clade open_metadata.tsv > open_metadata_pruned.tsv
+tsv-select -H -f strain,date,country,division,QC_overall_status,Nextstrain_clade open_metadata.tsv > open_metadata_pruned.tsv
 ```
 
-3. This `open_metadata_pruned.tsv` is processed in Mathematica by running the notebook `variants-us_data-prep.nb`. This results in the export of files: `variants-us_location-variant-sequence-counts.tsv` and `variants-us_location-case-counts.tsv` versioned here. This keeps only sequences from the USA that were collected between Jan 1, 2021 and Jan 1, 2022 resulting in 1,312,651 entries. Additionally, only variants with greater than 2000 sequences and states with greater than 10,000 sequences were kept.
+3. This `open_metadata_pruned.tsv` is processed in Mathematica by running the notebook `variants-us_data-prep.nb`. This results in the export of files: `variants-us_location-variant-sequence-counts.tsv` and `variants-us_location-case-counts.tsv` versioned here. This keeps only sequences from the USA that were collected between Jan 1, 2021 and Mar 1, 2022. Additionally, only variants with greater than 4000 sequences and states with greater than 12,000 sequences were kept. Samples labeled as `bad` in Nextclade QC were removed. This processing resulted in 1,541,099 entries.
 
 `variants-us_location-variant-sequence-counts.tsv` contains:
 ```
