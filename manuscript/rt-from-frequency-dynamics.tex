@@ -346,15 +346,15 @@ Using this model, we can estimate the relative contribution of each component by
 
 \paragraph{Priors for Bayesian Inference}%
 
-For both models, we provide a Laplace random walk prior on the spline coefficients $\vec{\beta}$ with scale parameter $\gamma$ which itself has a HalfCauchy$(0,0.5)$ prior distribution.
+For both models, we provide a Laplace random walk prior on the spline coefficients $\vec{\beta}$ with scale parameter $\gamma$ which itself has a HalfCauchy$(0, 0.5)$ prior distribution.
 In the fixed growth advantage model, only a baseline $R_{t}$ trajectory is parameterized by $\vec{\beta}$ and the variant advantages $\delta_{v}$ are given a Normal$(0,1)$ prior.
 The initial infected individuals for each variant have a uniform prior between 0 and 300,000.
-The weekly reporting rates $\rho_{[t]}$ each follow a Beta$(5, 5)$ prior, and the case observation over-dispersion is given a HalfNormal$(0, 10)$ prior on $\alpha^{-\frac{1}{2}}$.
+The weekly reporting rates $\rho_{[t]}$ each follow a Beta$(5, 5)$ prior, and the case observation over-dispersion is given a HalfNormal$(0, 0.05)$ prior on $\alpha^{\frac{1}{2}}$.
 Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to penalize high levels of over-dispersion in sequencing.
 
 \paragraph{Inference}
 
-The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which transforms the entire parameter space (with appropriate constraints on the individual parameter spaces) into a multivariate normal distribution for fitting purposes.
+The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a full-rank Gaussian variational distribution / Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which approximates the posterior (with appropriate constraints on the individual parameter spaces) as a multivariate normal distribution.
 
 Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the free $R_{t}$ model and fixed growth advantage model.
 
