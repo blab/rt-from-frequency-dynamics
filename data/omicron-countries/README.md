@@ -1,5 +1,7 @@
 ## Omicron countries dataset
 
+_As of April 7, 2022, these datasets are no longer being updated. Instead all updates are occurring with `omicron-countries-split` that partitions "Omicron" into "Omicron BA.1" and "Omicron BA.2"._
+
 Data preparation followed:
 
 1. Nextstrain-curated metadata TSV of GISAID database was downloaded. Uncompressing and renaming this file resulted in `gisaid_metadata.tsv` via:
