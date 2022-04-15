@@ -1,5 +1,7 @@
 # Results for Omicron across countries
 
+_As of April 7, 2022, these datasets are no longer being updated. Instead all updates are occurring with `omicron-countries-split` that partitions "Omicron" into "Omicron BA.1" and "Omicron BA.2"._
+
 ## Variant frequencies
 
 This shows 7-day smoothed variant frequencies. This includes a logistic growth rate from regression of logit transformed Omicron frequencies.
