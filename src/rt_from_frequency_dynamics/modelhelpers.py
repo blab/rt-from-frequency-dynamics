@@ -1,5 +1,3 @@
-# Discretize pmf
-from jax import vmap
 import jax.numpy as jnp
 import numpy as np
 from scipy.stats import gamma, lognorm
@@ -10,18 +8,18 @@ def continuous_dist_to_pmf(dist):
     max_dist = dist.ppf(0.9999)
     xs = jnp.linspace(0.5, max_dist + 0.5, int(max_dist + 1))
     pmf = jnp.diff(dist.cdf(xs), prepend=0)
-    return (pmf / pmf.sum())
+    return pmf / pmf.sum()
 
 
 def discretise_gamma(mn, std):
-    a = (mn / std)**2
-    scale = std ** 2 / mn
+    a = (mn / std) ** 2
+    scale = std**2 / mn
     return continuous_dist_to_pmf(gamma(a=a, scale=scale))
 
 
 def discretise_lognorm(mn, std):
     gam = 1 + std**2 / mn**2
-    LN = lognorm(scale=mn/np.sqrt(gam), s=np.sqrt(np.log(gam)))
+    LN = lognorm(scale=mn / np.sqrt(gam), s=np.sqrt(np.log(gam)))
     return continuous_dist_to_pmf(LN)
 
 
@@ -40,54 +38,9 @@ def get_standard_delays():
     return gen, delays
 
 
-# def break_points_to_mat(break_points, L):
-#     t = jnp.arange(0, L)
-#     X = []
-#     X.append(t > -1)
-#     for i in range(len(break_points)-1):
-#         X.append((t > break_points[i]) & (t <= break_points[i+1]))
-#     return jnp.stack(X, axis=0)
-
-
-# def make_breakpoint_matrix(cases, k):
-#     T = len(cases)
-#     break_points = jnp.linspace(0, T, k + 1)
-#     X = break_points_to_mat(break_points, T)
-#     return X.T
-
 def is_obs_idx(v):
     return jnp.where(jnp.isnan(v), jnp.zeros_like(v), jnp.ones_like(v))
 
+
 def pad_to_obs(v, obs_idx, eps=1e-12):
-    return v * obs_idx + (1-obs_idx)*eps
-
-def _omega(s1, s2, t):
-    return jnp.where(s1==s2, jnp.zeros_like(t), (t-s1)/(s2-s1))
-
-def _spline_basis(t, s, order, i):
-    if order == 1:
-        return jnp.where(
-            (t>=s[i])*(t<s[i+1]), 
-            jnp.ones_like(t),
-            jnp.zeros_like(t))
-    
-    # Recurse left
-    w1 = _omega(s[i], s[i+order-1], t)
-    B1 = _spline_basis(t, s, order-1, i)
-    
-    # Recurse right
-    w2 = _omega(s[i+1], s[i+order], t)
-    B2 = _spline_basis(t, s, order-1, i+1)
-    return w1*B1 + (1-w2)*B2
-
-def spline_matrix(t, s, order):
-    _s = jnp.pad(s, mode="edge", pad_width=(order-1)) # Extend knots
-    _sb = lambda i: _spline_basis(t,_s, order, i)
-    X = vmap(_sb)(jnp.arange(0,len(s)+order-2)) # Make spline basis
-    return X.T
-
-# def make_breakpoint_splines(T, k):
-#     t = jnp.arange(0, T)
-#     s = jnp.linspace(0, T, k)
-#     X = spline_matrix(t, s, 4)
-#     return jnp.array(X)
+    return v * obs_idx + (1 - obs_idx) * eps

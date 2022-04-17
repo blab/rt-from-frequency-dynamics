@@ -9,6 +9,7 @@ from numpyro.distributions.util import (
     validate_sample,
 )
 
+
 class LaplaceRandomWalk(Distribution):
     arg_constraints = {"scale": constraints.positive}
     support = constraints.real_vector
@@ -30,7 +31,6 @@ class LaplaceRandomWalk(Distribution):
         shape = sample_shape + self.batch_shape + self.event_shape
         walks = random.laplace(key, shape=shape)
         return jnp.cumsum(walks, axis=-1) * jnp.expand_dims(self.scale, axis=-1)
-
 
     @validate_sample
     def log_prob(self, value):
@@ -57,7 +57,8 @@ class LaplaceRandomWalk(Distribution):
     def tree_unflatten(cls, aux_data, params):
         return cls(*params, num_steps=aux_data)
 
+
 def LAS_Laplace(beta_name, k):
     gam = numpyro.sample("gam", HalfCauchy(0.5))
     beta = numpyro.sample(beta_name, LaplaceRandomWalk(scale=gam, num_steps=k))
-    return beta 
+    return beta

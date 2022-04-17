@@ -3,7 +3,8 @@ import jax.numpy as jnp
 from .modelfactories import _exp_model_factory
 from .Splines import Spline, SplineDeriv
 
-class ExpModel():
+
+class ExpModel:
     def __init__(self, g=None, delays=None, k=None, CLik=None, SLik=None):
         if g is not None:
             self.g_rev = jnp.flip(g)
@@ -19,11 +20,9 @@ class ExpModel():
 
     def make_model(self):
         self.model = _exp_model_factory(
-            g_rev=self.g_rev,
-            delays=self.delays,
-            CaseLik=self.CLik,
-            SeqLik=self.SLik
+            g_rev=self.g_rev, delays=self.delays, CaseLik=self.CLik, SeqLik=self.SLik
         )
+
     def augment_data(self, data, order=4):
         T = len(data["cases"])
         s = jnp.linspace(0, T, self.k)
