@@ -54,7 +54,7 @@ def prep_posterior_for_plot(var, dataset, ps, forecast=False):
 
     if forecast:
         med_f, quants_f = get_quantiles(dataset, ps, var + "_forecast")
-        t_f = jnp.arange(0, med_f.shape[0], 1)
+        t_f = med.shape[0] + jnp.arange(0, med_f.shape[0], 1)
         t = jnp.concatenate((t, t_f))
         med = jnp.concatenate((med, med_f))
         for i in range(len(ps)):
@@ -94,7 +94,7 @@ def plot_R_censored(ax, dataset, ps, alphas, colors, forecast=False, thres=0.001
     ax.axhline(y=1.0, color="k", linestyle="--")
 
     # Plot only variants at high enough frequency
-    freq_median = get_median(dataset, "freq")
+    _, freq_median, _ = prep_posterior_for_plot("freq", dataset, ps, forecast=forecast)
     included = freq_median > thres
 
     plot_posterior_time(ax, t, med, quants, alphas, colors, included=included)
@@ -118,7 +118,7 @@ def plot_little_r_censored(
     ax.axhline(y=0.0, color="k", linestyle="--")
 
     # Plot only variants at high enough frequency
-    freq_median = get_median(dataset, "freq")
+    _, freq_median, _ = prep_posterior_for_plot("freq", dataset, ps, forecast=forecast)
     included = freq_median > thres
 
     plot_posterior_time(ax, t, med, quants, alphas, colors, included=included)

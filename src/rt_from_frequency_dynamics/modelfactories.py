@@ -115,7 +115,7 @@ def _renewal_model_factory(
         if forecast_L > 0:
             numpyro.deterministic("freq_forecast", _freq[(seed_L + T) :, :])
             I_forecast = numpyro.deterministic(
-                "I_forecast", jnp.mean(rho_vec) * I_prev[(seed_L + T) :, :]
+                "I_smooth_forecast", jnp.mean(rho_vec) * I_prev[(seed_L + T) :, :]
             )
             numpyro.deterministic(
                 "r_forecast", jnp.diff(jnp.log(I_forecast), prepend=jnp.nan, axis=0)

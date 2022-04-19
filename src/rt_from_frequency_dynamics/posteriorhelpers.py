@@ -10,13 +10,12 @@ def get_site_by_variant(dataset, LD, ps, name, site, forecast=False):
     dates = LD.dates
 
     # Unpack posterior
-    var_name = site
+    var_name = site + "_forecast" if forecast else site
     var = dataset[var_name]
     N_variant = var.shape[-1]
     T = var.shape[-2]
 
     if forecast:
-        var_name += "_forecast"
         dates = forecast_dates(dates, T)
 
     # Compute medians and hdis for ps
