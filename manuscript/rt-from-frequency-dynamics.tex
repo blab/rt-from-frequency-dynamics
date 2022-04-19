@@ -43,6 +43,11 @@
 % \linenumbers
 % \linespread{1.5} % Increase Line spread
 
+% comments
+\definecolor{purple}{rgb}{0.459,0.109,0.538}
+\def\tb#1#2{\sout{#1} \textcolor{purple}{#2}}
+\def\tbc#1{\textcolor{purple}{[#1]}}
+
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 
 \title{SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers}
@@ -62,9 +67,9 @@
 \maketitle
 
 \begin{abstract}
-Accurately estimating relative transmission rates of SARS-CoV-2 Variant of Concern and Variant of Interest viruses remains a scientific and public health priority.
-Recent studies have used the sample proportions of different variants from sequence data to describe variant frequency dynamics and relative transmission rates, but frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2.
-Here, we extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of co-circulating variants using case data and genetic sequences across states in the US from January to October 2021.
+Accurately estimating relative transmission rates of SARS-CoV-2 variants remains a scientific and public health priority.
+Recent studies have used the sample proportions of different variants from genetic sequence data to describe variant frequency dynamics and relative transmission rates, but frequencies alone cannot capture the rich epidemiological behavior of SARS-CoV-2.
+Here, we extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of co-circulating variants using cases and sequences across states in the US from January 2021 to March 2022.
 Our method can be used to infer structured relationships between effective reproduction numbers across time series allowing us to estimate fixed variant-specific growth advantages.
 We use this model to estimate the effective reproduction number of SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages of particular variants across different locations.
 
@@ -73,59 +78,34 @@ We use this model to estimate the effective reproduction number of SARS-CoV-2 Va
 \section*{Introduction}
 
 As SARS-CoV-2 evolves, variants may emerge that increase in their ability to transmit and escape acquired immunity \cite{tao2021biological}.
-Quantifying the observed growth advantages of SARS-CoV-2 variants allows us to understand which variants are able to thrive in different locations \cite{tegally2021detection, davies2021estimated}.
-Relating genomic data of SARS-CoV-2 lineages to epidemic surveillance data is difficult.
+Quantifying the observed growth advantages of SARS-CoV-2 variants allows us to better understand biological differences between circulating viruses \cite{tegally2021detection, davies2021estimated}.
+Relating genomic data of SARS-CoV-2 variants to epidemic surveillance data is difficult.
 Although it is typical to use phylodynamic methods to analyze genetic sequence data from epidemics, the sheer amount of data as well as challenges to describing fitness effects in phylodynamic models make these methods hard to apply to potential differences in transmission rate among circulating variants.
-In order to deal with the limitations of phylodynamic inference, previous studies have estimated the growth of lineages using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}.
-Such methods often model the frequency of lineages using multinomial logistic regression \cite{Annavajhala2021, Obermeyer2021}, which generally assumes that genetic variants have a fitness advantage over one another which is fixed in time and acts as a estimate for the selective advantage of different variants at the level of frequencies.
+In order to deal with the limitations of phylodynamic inference, previous studies have estimated the growth of variants using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}.
+Such methods often model the frequency of variants using multinomial logistic regression \cite{Annavajhala2021, Obermeyer2021}, which generally assumes that genetic variants have a fitness advantage over one another which is fixed in time and acts as a estimate for the selective advantage of different variants at the level of frequencies.
 Although a consistent increase in frequency of one variant over another is expected to reflect differences in transmission rate, these models do not directly account for the complicated infection and transmission dynamics which influence which variants lead to local and regional epidemics.
 When dealing with competition between variants, variants which are declining in frequency can still lead to an increasing number of infections.
 Similarly, growth in frequency does not necessarily entail an increase in absolute infections.
 
-To better capture epidemiological dynamics, there are methods which describe the growth in number of infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates, during a given outbreak.
-Although these methods are excellent for describing overall epidemic growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they often assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020}, which internally is unrelated to the genetic and phenotypic composition of the population.
-This is of particular importance in the analysis of an epidemic in which a dominant lineage may be declining overall, but some sublineage is rapidly increasing in frequency and absolute prevalence, creating the potential for a secondary wave of infections that may go unnoticed at first glance.
+To more fully capture epidemiological dynamics, there are methods which describe the growth in number of infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates at a given point of time $t$.
+Although these methods are excellent for describing overall epidemic growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they generally assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020}, which internally is unrelated to the genetic and phenotypic composition of the population.
+This is of particular importance in the analysis of an epidemic in which a dominant variant may be declining overall, but a minor variant is rapidly increasing in frequency and absolute prevalence, creating the potential for a secondary wave of infections that may go unnoticed at first glance.
 To overcome this we require models that partition case counts into contributions from different variants to estimate variant-specific effective reproduction numbers.
 
-The current COVID-19 pandemic serves as an important example of this phenomenon.
+Ongoing SARS-CoV-2 evolution serves as an important example of this phenomenon.
 After initial emergence in late 2020, over the course of 2021, Variant of Concern (VOC) and Variant of Interest (VOI) viruses spread throughout the world and replaced existing viral diversity.
 Multiple WHO designated \cite{Konings2021} VOC and VOI viruses circulated in spring and early summer 2021, but this diversity was largely replaced by Delta variant viruses which became globally dominant in late summer 2021.
-Although it's now clear that Delta had greater transmissibility than other variants, rigorous estimates of the relative fitness of circulating VOC and VOI viruses are of interest.
+Subsequently Delta variant viruses were rapidly eclipsed by Omicron variant viruses after Omicron's emergence in October 2021 \cite{viana2022rapid}.
+Although it's now clear that Delta had greater transmissibility than other co-circulating variants and Omicron had rapid spread due to escape from existing population immunity, rigorous estimates of the relative fitness of circulating VOC and VOI viruses are of interest.
 Here, we develop a joint epidemiological and population genetic model of SARS-CoV-2 to assess the growth of different variants over time and infer differences in the effective reproduction numbers of SARS-CoV-2 variants as well as underlying frequency of variants under noisy sampling.
-We apply this model to sequence data and case count data from United States between January and October 2021 to estimate differences in transmissibility between circulating VOC and VOI viruses.
+We apply this model to sequence data and case count data from United States between January 2021 and March 2022 to estimate differences in transmissibility between circulating VOC and VOI viruses.
 
 \section*{Results}
 
 \paragraph{Model Overview}%
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth]{figs/GARW_rt_Washington.png}
-  \caption{\textbf{Fitting the GARW model to Washington state data.}
-    (a) When assessing epidemic growth rates, we often compute a single effective reproduction number trajectory which is effectively an average over the all viruses in population.
-    Gray bars are observed daily case counts, while blue lines are model inferences with 50\%, 80\% and 95\% credible intervals.
-    (b) Epidemics are made of different variants which may differ in fitness. Using case counts alongside sequences of different lineages allows us to understand the proportion of different variants in the population.
-(c) Using both case count and frequency data, we can estimate the effective reproduction numbers of different lineages.}%
-  \label{fig:GARW_rt_Washington}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth]{figs/fixed_growth_Washington.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to Washington state data.}
-  (a) Posterior expected cases without weekly seasonality in reporting rate.
-  Gray bars are observed daily case counts, while blue lines are model inferences with 50\%, 80\% and 95\% credible intervals.
-  (b) Posterior expected cases by lineage.
-  Each colored lines is a different variant with intervals of varying opacity showing 50\%, 80\% and 95\% credible intervals.
-  (c) Posterior lineage frequency against observed sample frequency.
-  Dots represent observed weekly frequencies in sequence data and each colored line is a different variant with shaded CIs.
-  (d) Variant-specific effective reproduction numbers.
-  (e) Posterior growth advantage by variant.}
-  \label{fig:fixed_growth_Washington}
-\end{figure}
-
-We implement two models of variant-specific effective reproduction number based on a renewal equation framework of epidemic spread (see Methods), a fixed growth advantage model and a time-varying growth advantage model (GARW).
-These models assume that new infections are determined by two essential parameters: the effective reproduction number which determines the average number of secondary infections generated over the course of a primary infection and the generation time which determines length of infection as well as their relative transmissibility over the course of their infection.
+We implement two models of variant-specific effective reproduction number based on a renewal equation framework of epidemic spread (see Methods), a fixed growth advantage model and a time-varying growth advantage model (growth advantage random walk --- GARW).
+These models assume that new infections are determined by two essential parameters: the effective reproduction number which determines the average number of secondary infections generated over the course of a primary infection and the generation time which determines length of infection and relative transmissibility over the course of the infection.
 In both models, variants generate infections independently of one another, but the sum of infections across variants is observed through surveillance data like case counts or hospitalizations.
 In order to disaggregate infections by variant we rely on frequency estimates which are informed by counts of sequenced samples using a Dirichlet-multinomial likelihood.
 
@@ -133,20 +113,70 @@ The transmission of each variant is modeled using a deterministic renewal equati
 With this approach, we need only to determine the initial number of infections and the variant-specific effective reproduction numbers to estimate the frequency of each variant in the population over time.
 Due to this, the differences between the two models is determined in how each parameterizes variant-specific effective reproduction numbers.
 
-%TODO: Update model descriptions
-In the first model, we introduce a free variant $R_{t}$ which infers the effective reproduction number of each variant independently from one another to allow for non-linear relationships between the growth rates of different variants over time.
-Each variant effective reproduction number is parameterized using an exponentiated spline basis, so that the log effective reproduction numbers are described by a linear basis expansion.
-
-The second model is a fixed growth advantage model of variant $R_{t}$ in which each variants has its own multiplicative growth advantage which acts as a scaling to a single non-variant $R_{t}$ trajectory.
+Each variant in the fixed growth advantage model has its own multiplicative growth advantage which acts as a scaling to a single non-variant $R_{t}$ trajectory (Fig.~\ref{fig:fixed_growth_Washington}).
 With this fixed growth advantage model, we parameterize fitness of variants at the level of transmission by inferring variant-specific effective reproduction numbers.
 This differs from previous work on variant effective reproduction numbers which often parameterize these differences by assuming logistic growth of frequencies \cite{Earnest2021, Vhringer2021}.
 Though, in general, our method allows one to estimate variant growth in the frequency domain in terms of effective reproduction number differences, we find that assuming a fixed advantage for variants results in estimates which are qualitatively similar to the aforementioned models which assume fixed growth advantages in frequency growth.
-This provides the additional benefit of the inferred parameters being interpretable as scaling the effective reproduction number.
+This model provides the benefit of the inferred parameters being interpretable as scaling the effective reproduction number.
 
-In cases where a singular fixed growth advantage is insufficient to describe the data, we return to our first model in which the effective reproduction numbers of variants are modeled without assuming a fixed advantage, accounting for possible variation in variants' advantages over one another over time.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Washington.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Washington state data.}
+  (a) Posterior expected cases without weekly seasonality in reporting rate.
+  Gray bars are observed daily case counts, while blue lines are model inferences with 50\%, 80\% and 95\% credible intervals.
+  (b) Posterior expected cases by variant.
+  Each colored lines is a different variant with intervals of varying opacity showing 50\%, 80\% and 95\% credible intervals.
+  (c) Posterior variant frequency against observed sample frequency.
+  Dots represent observed weekly frequencies in sequence data and each colored line is a different variant with shaded CIs.
+  (d) Variant-specific effective reproduction numbers.
+  (e) Posterior growth advantage by variant.}
+  \label{fig:fixed_growth_Washington}
+\end{figure}
 
-We demonstrate these models on data from Washington State.
-The GARW model is shown in Figure \ref{fig:GARW_rt_Washington} and the fixed growth advantage model is shown in Figure \ref{fig:fixed_growth_Washington}. Example model output from several other states is provided in the supplemental appendix.
+In cases where a singular fixed growth advantage is insufficient to describe the data, we extend our model to allow time-varying growth advantages (Fig.~\ref{fig:GARW_rt_Washington}).
+In the GARW model, we introduce a free variant $R_{t}$ which infers the effective reproduction number of each variant independently from one another to allow for non-linear relationships between the growth rates of different variants over time.
+Each variant effective reproduction number is parameterized using an exponentiated spline basis, so that the log effective reproduction numbers are described by a linear basis expansion.
+\tbc{Revise this paragraph to describe GARW model as extension of fixed growth model.}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_Washington.png}
+  \caption{\textbf{Fitting the GARW model to Washington state data.}
+    (a) When assessing epidemic growth rates, we often compute a single effective reproduction number trajectory which is effectively an average over the all viruses in population.
+    Gray bars are observed daily case counts, while blue lines are model inferences with 50\%, 80\% and 95\% credible intervals.
+    \tbc{Describe Rt panel}
+    (b) Epidemics are made of different variants which may differ in fitness. Using case counts alongside sequences of different variants allows us to understand the proportion of different variants in the population.
+    \tbc{Describe Rt panel}
+    (c) Using both case count and frequency data, we can estimate the effective reproduction numbers of different variants.
+    \tbc{Y-axis ticks are a little sparse. Rt should have ticks at 0, 1, 2, etc... Frequencies in lower left should have ticks at 0\%, 50\% and 100\%. Mean variant cases in lower right should at least have 0.}
+    \tbc{I don't understand what top left panel in (c) is showing. Is it sequenced cases? If so, I think I'd drop in favor of the middle panel clearly showing sequenced proportions. Just feels too confusing for what it adds currently.}
+    \tbc{Similar story for bottom left panel in (c). I know I'm generally a fan of streamplots, but this feels too duplicative relative to the larger center panel in (c). I'd just keep the larger central panel in (c) showing sequenced proportions and inferred proportions alongside the larger right hand panel in (c) showing case breakdown. This will also align x-axis in the columns for easier viewing.}
+    }
+  \label{fig:GARW_rt_Washington}
+\end{figure}
+
+We demonstrate these models on data from Washington State with results from the fixed growth advantage model shown in Figure \ref{fig:fixed_growth_Washington} and results from the GARW model is shown in Figure \ref{fig:GARW_rt_Washington}.
+\tbc{Shouldn't figures here be swapped? All through above you start with fixed growth and then switch to GARW. Figure order should reflect order discussed in text. I've gone ahead and made this change.}
+Example model output from several other states is provided in the supplemental appendix \tbc{reference specific supp figures}.
+
+\paragraph{Estimating growth advantages in the United States}
+
+We estimate the effective reproduction numbers of SARS-CoV-2 Variant of Concern and Variant of Interest viruses in the United States using daily confirmed case counts obtained from the US CDC and sequence counts annotated by variant obtained from the Nextstrain-curated `open' dataset \cite{Hadfield2018} (see Data and code accessibility).
+Each sequence is labeled with a Nextstrain clade \cite{Hadfield2018} and we partition clades into variants based on designated WHO VOC/VOI status \cite{Konings2021}.
+Nextstrain clades annotated in the fashion correspond to a subset of major lineages designated by Pango \cite{Rambaut2020}.
+We consider the following 8 variants which have been flagged as variants of interest or concern and which circulated in the US during 2021 and early 2022: Alpha (Pango lineage B.1.1.7, Nextstrain clade 20I), Beta (lineage B.1.351, clade 20H), Gamma (lineage P.1, clade 20J), Delta (lineage B.1.617.2, clade 21A), Epsilon (lineage B.1.427/429, clade 21C), Iota (lineage B.1.526, clade 21F), Mu (lineage B.1.621, clade 21H) and Omicron (lineage B.1.1.529, clade 21M).
+We use a cutoff of 2000 sequences from a particular variant across states to determine threshold of circulation.
+This eliminates Eta, Theta, Kappa and Lambda from consideration and groups these variants along with ancestral `non-variant' viruses into a single `other' category.
+We use a cutoff of 12,000 sequences from a particular state as basis for including the state in the dataset.
+This cutoff left 34 states available for inference.
+
+In order to inform our estimates of the frequency of genetic variants, we divide sequences from each state into daily sample counts for each of the 8 variants above and a single `other' category.
+We then use these counts alongside the daily case counts in each state to estimate the effective reproduction number for individual variants using the GARW $R_{t}$ model.
+We find that overall there appears to be consistent trends in the effective reproduction numbers of variants across the United States (Fig.\ \ref{fig:rt_consensus}).
+We see that early VOCs Alpha and Gamma initially had $R_t>1$, but saw $R_t$ decline below one across most states in April and May respectively.
+Upon arrival in May, Delta shows significantly higher values of $R_t$ that don't decline below 1 until September.
+\tbc{Describe Omicron.}
 
 \begin{figure}[t]
   \centering
@@ -158,26 +188,15 @@ The GARW model is shown in Figure \ref{fig:GARW_rt_Washington} and the fixed gro
   \label{fig:rt_consensus}
 \end{figure}
 
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\linewidth]{figs/ga_consensus.png}
-  \caption{\textbf{Estimating variant growth advantages in 34 states using GARW model.}
-  Each panel shows a series of 34 trajectories, representing $\Delta_{v}$ through time for variants across states. %TODO: Mention histograms
-  Shaded intervals show 50\%, 80\% and 95\% credible intervals.
-  }
-  \label{fig:ga_consensus}
-\end{figure}
-
-\paragraph{Estimating growth advantages in the United States}
-
-We estimate the effective reproduction numbers of SARS-CoV-2 Variant of Concern and Variant of Interest viruses in the United States using daily confirmed case counts obtained from the US CDC and sequence counts annotated by variant obtained from the Nextstrain-curated `open' dataset \cite{Hadfield2018} (see Data and code accessibility).
-Each sequence is labeled with a Nextstrain clade \cite{Hadfield2018} and we partition clades into variants based on designated WHO VOC/VOI status \cite{Konings2021}.
-Nextstrain clades annotated in the fashion correspond to a subset of major lineages designated by PANGO \cite{Rambaut2020}.
-We consider the following 8 variants which have been flagged as variants of interest or concern and which circulated in the US during 2021: Alpha (PANGO lineage B.1.1.7, Nextstrain clade 20I), Beta (lineage B.1.351, clade 20H), Gamma (lineage P.1, clade 20J), Delta (lineage B.1.617.2, clade 21A), Epsilon (lineage B.1.427/429, clade 21C), Iota (lineage B.1.526, clade 21F), and Mu (lineage B.1.621, clade 21H).
-We use a cutoff of 2000 sequences from a particular variant across states to determine threshold of circulation. %TODO: Update clades and sequence cut off.
-This eliminates Eta, Lambda, Kappa and Theta from consideration and groups these variants along with ancestral `non-variant' viruses into a single `other' category.
-We use a cutoff of 5000 sequences from a particular state as basis for including the state in the dataset. %TODO: Update cut off and number of states
-This cutoff left 34 states available for inference.
+In order to transform these observed trends to a variant-specific growth advantage, we rely on our fixed growth advantage model which infers a fixed variant-specific growth advantage as a multiplicative scaling of the effective reproduction number.
+Using the fixed growth advantage model, we find that most variants identified share some positive growth advantage with the exception of Epsilon (Fig.\ \ref{fig:growth_advantages}).
+Further, these growth advantages appear to be consistent between the states analyzed.
+Alpha, Beta, Gamma and Iota show modest growth advantage over largely ancestral `other' viruses, while Mu and Delta show larger growth advantages.
+Mu has previously been associated with increased neutralization resistance to convalescent serum \cite{Uriu2021}, and its advantage of 1.2--1.8 across states is perhaps partially driven by immune escape.
+Despite this, Mu's growth advantage whether from immune escape or otherwise was insufficient to outcompete Delta in any of the states analyzed.
+Delta's advantage of 1.6--2.0 across states is particularly significant.
+Given this large growth advantage was evident in May (Fig.\ \ref{fig:rt_consensus}), Delta's rapid rise in frequency and sizable epidemic should have been clear at the time.
+The significant growth advantage observed in Delta is recapitulated in other studies including Obermeyer et al.\ \cite{Obermeyer2021} and V\"ohringer et al.\ \cite{vohringer2021genomic}.
 
 \begin{figure}[t]
   \centering
@@ -188,23 +207,18 @@ This cutoff left 34 states available for inference.
   \label{fig:growth_advantages}
 \end{figure}
 
-In order to inform our estimates of the frequency of genetic variants, we divide sequences from each state into daily sample counts for each of the 8 variants above and a single `other' category.
-We then use these counts alongside the daily case counts in each state to estimate the effective reproduction number for individual variants using our free $R_{t}$ model.
-We find that overall there appears to be consistent trends in the effective reproduction numbers of variants across the United States (Fig.\ \ref{fig:rt_consensus}).
-We see that non-variant viruses were declining from January onwards, while initial VOCs Alpha and Gamma initially had $R_t>1$, but saw $R_t$ decline below one across most states in April and May respectively.
-Upon arrival in May, Delta shows significantly higher values of $R_t$ that don't decline below 1 until September.
-
-In order to transform these observed trends to a variant-specific growth advantage, we rely on our fixed growth advantage model which infers a fixed variant-specific growth advantage as a multiplicative scaling of the effective reproduction number.
-Using the fixed growth advantage model, we find that most variants identified share some positive growth advantage with the exception of Epsilon.
-Further, these growth advantages appear to be consistent between the states analyzed (Fig.\ \ref{fig:growth_advantages}).
-Alpha, Beta, Gamma and Iota show modest growth advantage over largely ancestral `other' viruses, while Mu and Delta show larger growth advantages.
-Mu has previously been associated with increased neutralization resistance to convalescent serum \cite{Uriu2021}, and its advantage of 1.2--1.8 across states is perhaps partially driven by immune escape.
-Despite this, Mu's growth advantage whether from immune escape or otherwise was insufficient to outcompete Delta in any of the states analyzed.
-Delta's advantage of 1.6--2.0 across states is particularly significant.
-Given this large growth advantage was evident in May (Fig.\ \ref{fig:rt_consensus}), Delta's rapid rise in frequency and sizable epidemic should have been clear at the time.
-The significant growth advantage observed in Delta is recapitulated in other studies including Obermeyer et al.\ \cite{Obermeyer2021} and V\"ohringer et al.\ \cite{vohringer2021genomic}.
-
 %TODO: Add discussion on Omicron and citations.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figs/ga_consensus.png}
+  \caption{\textbf{Estimating variant growth advantages in 34 states using GARW model.}
+  Each panel shows a series of 34 trajectories, representing $\Delta_{v}$ through time for variants across states. %TODO: Mention histograms
+  Shaded intervals show 50\%, 80\% and 95\% credible intervals.
+  \tbc{This figure needs to be referenced in the text and results described.}
+  }
+  \label{fig:ga_consensus}
+\end{figure}
 
 %TODO: Put in new figures. Here goes time varying growth advantages
 \begin{figure}[t]
@@ -223,8 +237,8 @@ The significant growth advantage observed in Delta is recapitulated in other stu
   \centering
   \includegraphics[width=\linewidth]{figs/wave_size_to_wave_size.png}
   \caption{\textbf{Comparing sizes of subsequent waves.}
-    (a) Plotting estimated Alpha wave size agaist Delta wave size in individual states. Error bars denote 80\% credible intervals.
-    (b) Plotting estimated Delta wave size agaist Omicron wave size in individual states. Error bars denote 80\% credible intervals.
+    (a) Plotting estimated Alpha wave size against Delta wave size in individual states. Error bars denote 80\% credible intervals.
+    (b) Plotting estimated Delta wave size against Omicron wave size in individual states. Error bars denote 80\% credible intervals.
   }
   \label{fig:wave_size_to_wave_size}
 \end{figure}
@@ -259,7 +273,7 @@ With this mind, this work is not without limitations.
 The underlying transmission model is deterministic and does not account for demographic stochasticity and over-dispersion in transmission which has been documented in SARS-CoV-2 transmission \cite{Wong29416}.
 As with all methods which depend on parameterizations of the generation time, misspecification of the generation time can be lead to biased estimates of the effective reproduction number or growth advantages \cite{Gostic2020}.
 In order to quantify this source of error, we derive an equation relating our inferred growth advantages, the epidemic growth rates, and the mean and standard deviation of the generation time distribution.
-This source of error can be partially combatted by converting effective reproduction numbers to their corresponding epidemic growth rates under the generation time assumption. (see Supplement Appendix)
+This source of error can be partially combated by converting effective reproduction numbers to their corresponding epidemic growth rates under the generation time assumption. (see Supplement Appendix)
 There is also a general need to account for biases in the case data which may not faithfully describe the infection dynamics of SARS-CoV-2 due to changes in case ascertainment rate, as possibly caused by differences in testing intensity, infection severity among other reasons.
 However, we suspect that case ascertainment remained largely consistent from January to October 2021.
 
@@ -310,8 +324,8 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
 We parameterize all variants excluding Delta and Omicron as having generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.2 in line with the estimates of \cite{Ganyani2020}.
 Due observed shorter serial intervals for Delta and Omicron, we instead use a mean generation time of 3.6 for Delta and a mean of 3.2 for Omicron\ \cite{Backer2022, Ryu2022, Song2022}.
 For all variants, we parameterize the onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}.
-We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model. 
-The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental appendix (see Relating epidemic growth rates to relative effective reproduction numbers). 
+We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model.
+The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity} \ref{fig:growth_advantage_sensitivity} and supplemental appendix (see Relating epidemic growth rates to relative effective reproduction numbers).
 Though converting the posterior effective reproduction numbers to epidemic growth rates may be more robust to changes in generation time as can be seen in Figure \ref{fig:little_r_sensitivity}.
 
 This method of using delays to represent lags between infection and observation can be extended to use multiple delays to better fit other data sources such as hospitalization or deaths.
@@ -376,7 +390,7 @@ where the parameters $\beta$ are shared between all variants and $\delta_{v}$ is
 We consider $\Delta_{v} = \exp(\delta_{v})$ to be the variant-specific growth advantage which can be seen in Figure \ref{fig:growth_advantages}.
 This model is refered to as the ``fixed growth advantage model'' throughout the paper.
 
-\paragraph{Estimating time varing growth advantages}
+\paragraph{Estimating time varying growth advantages}
 In reality, the growth advantage of a variant may vary in time due to factors like cross-immunity between variants, overall immune escape, .etc.
 This can additionally occur under variant generation time misspecification \cite{Park2021.05.03.21256545}.
 
@@ -430,14 +444,16 @@ Models for each individual state in the United States variants data set were fit
 
 \subsection*{Data and code accessibility}
 
+Case counts and sequence data was obtained March 26, 2022.
 Case count data was obtained from the US CDC using the `United States COVID-19 Cases and Deaths by State over Time' dataset available from \href{https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36}{data.cdc.gov}.
 Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated `open' dataset \cite{Hadfield2018} that pulls from sequences shared to NCBI GenBank.
 Raw sequence data is available from \href{https://docs.nextstrain.org/projects/ncov/en/latest/reference/remote_inputs.html}{data.nextstrain.org}.
-Here, we subsetted to sequences with specimens collected from the USA between January 1, 2021 and October 1, 2021. %TODO:  Update this section.
-We additionally dropped 80 sequences without an assigned Nextstrain clade.
-This subsetting resulted in 952,091 sequences for analysis.
-However, we reduced dataset to just the 34 states with more 5000 sequences available in this timeframe.
-Doing so reduced the full dataset to 801,435 sequences for analysis.
+Clades in this dataset are assigned via Nextclade annotation \cite{aksamentov2021nextclade}.
+Here, we subsetted to sequences with specimens collected from the USA between January 1, 2021 and March 1, 2022.
+We additionally filtered to sequences with known collection date, assigned Nextstrain clade and dropped samples that were flagged as `bad' by Nextclade QC.
+This subsetting resulted in 1,906,759 sequences for analysis.
+However, we reduced dataset to just the 34 states with more 12,000 sequences available in this timeframe.
+Doing so reduced the full dataset to 1,541,099 sequences for analysis.
 
 Derived data of sequence counts and case counts, along with all source code used to analyze this data and produce figures is available via the GitHub repository \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
 
@@ -592,7 +608,7 @@ In fact, these estimates based on the deterministic generation times correspond 
 \paragraph{Fixed growth advantages become time-varying under generation time misspecification}
 
 We'll now consider the case where there is a true fixed-variant growth advantage. Suppose for a two-variant system that $\delta$ is the constant (log) growth advantage of the variant virus over the wildtype under the variant generation time $g_{T}$, so that $\delta = \ln \left( R_{t,v}^{g_{T}} / R_{t, wt}^{g_{T}} \right)$.
-Here subsripts denote the generation time used when computing $R_{t}$.
+Here subscripts denote the generation time used when computing $R_{t}$.
 
 Under the misspecified variant generation time $g_{M}$, we can then write the inferred growth advantage as
 \begin{align*}
