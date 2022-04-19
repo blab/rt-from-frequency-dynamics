@@ -15,6 +15,7 @@ date	location	variant	sequences
 2022-02-22	Gauteng	other	1
 2022-02-24	Gauteng	other	1
 2022-02-25	Gauteng	other	1
+2022-03-08	Gauteng	other	1
 2022-03-12	Gauteng	other	1
 2022-03-14	Gauteng	other	1
 2022-03-18	Gauteng	other	1
@@ -60,6 +61,9 @@ date	location	variant	sequences
 2022-03-08	Gauteng	Omicron BA.1	2
 2022-03-14	Gauteng	Omicron BA.1	1
 2022-03-17	Gauteng	Omicron BA.1	1
+2022-03-26	Gauteng	Omicron BA.1	1
+2022-03-29	Gauteng	Omicron BA.1	1
+2022-04-01	Gauteng	Omicron BA.1	2
 2022-01-02	Gauteng	Omicron BA.2	13
 2022-01-03	Gauteng	Omicron BA.2	9
 2022-01-04	Gauteng	Omicron BA.2	13
@@ -133,11 +137,15 @@ date	location	variant	sequences
 2022-03-19	Gauteng	Omicron BA.2	2
 2022-03-20	Gauteng	Omicron BA.2	2
 2022-03-21	Gauteng	Omicron BA.2	4
-2022-03-22	Gauteng	Omicron BA.2	10
-2022-03-23	Gauteng	Omicron BA.2	2
-2022-03-25	Gauteng	Omicron BA.2	1
-2022-03-29	Gauteng	Omicron BA.2	2
-2022-03-30	Gauteng	Omicron BA.2	2
+2022-03-22	Gauteng	Omicron BA.2	11
+2022-03-23	Gauteng	Omicron BA.2	3
+2022-03-25	Gauteng	Omicron BA.2	4
+2022-03-28	Gauteng	Omicron BA.2	1
+2022-03-29	Gauteng	Omicron BA.2	4
+2022-03-30	Gauteng	Omicron BA.2	3
+2022-03-31	Gauteng	Omicron BA.2	6
+2022-04-01	Gauteng	Omicron BA.2	1
+2022-04-07	Gauteng	Omicron BA.2	1
 2022-01-26	Gauteng	Omicron BA.4	1
 2022-03-01	Gauteng	Omicron BA.4	1
 2022-03-02	Gauteng	Omicron BA.4	2
@@ -156,18 +164,24 @@ date	location	variant	sequences
 2022-03-17	Gauteng	Omicron BA.4	2
 2022-03-19	Gauteng	Omicron BA.4	1
 2022-03-21	Gauteng	Omicron BA.4	1
-2022-03-22	Gauteng	Omicron BA.4	10
-2022-03-23	Gauteng	Omicron BA.4	5
-2022-03-24	Gauteng	Omicron BA.4	5
-2022-03-25	Gauteng	Omicron BA.4	1
-2022-03-29	Gauteng	Omicron BA.4	7
-2022-03-30	Gauteng	Omicron BA.4	3
+2022-03-22	Gauteng	Omicron BA.4	11
+2022-03-23	Gauteng	Omicron BA.4	6
+2022-03-24	Gauteng	Omicron BA.4	9
+2022-03-25	Gauteng	Omicron BA.4	8
+2022-03-29	Gauteng	Omicron BA.4	10
+2022-03-30	Gauteng	Omicron BA.4	6
+2022-03-31	Gauteng	Omicron BA.4	11
+2022-04-01	Gauteng	Omicron BA.4	9
+2022-04-02	Gauteng	Omicron BA.4	1
+2022-04-07	Gauteng	Omicron BA.4	4
 2022-03-02	Gauteng	Omicron BA.5	1
 2022-03-08	Gauteng	Omicron BA.5	1
 2022-03-18	Gauteng	Omicron BA.5	1
 2022-03-21	Gauteng	Omicron BA.5	1
 2022-03-24	Gauteng	Omicron BA.5	1
 2022-03-30	Gauteng	Omicron BA.5	1
+2022-03-31	Gauteng	Omicron BA.5	1
+2022-04-01	Gauteng	Omicron BA.5	1
 2022-01-08	Western Cape Province	other	1
 2022-01-11	Western Cape Province	other	1
 2022-01-14	Western Cape Province	other	1
@@ -315,10 +329,19 @@ date	location	variant	sequences
 2022-04-02	Western Cape Province	Omicron BA.2	4
 2022-04-03	Western Cape Province	Omicron BA.2	6
 2022-04-04	Western Cape Province	Omicron BA.2	19
+2022-04-05	Western Cape Province	Omicron BA.2	13
+2022-04-06	Western Cape Province	Omicron BA.2	8
+2022-04-07	Western Cape Province	Omicron BA.2	14
+2022-04-08	Western Cape Province	Omicron BA.2	1
 2022-03-07	Western Cape Province	Omicron BA.4	1
 2022-03-30	Western Cape Province	Omicron BA.4	1
 2022-04-02	Western Cape Province	Omicron BA.4	1
 2022-04-03	Western Cape Province	Omicron BA.4	1
+2022-04-05	Western Cape Province	Omicron BA.4	3
+2022-04-06	Western Cape Province	Omicron BA.4	5
+2022-04-07	Western Cape Province	Omicron BA.4	3
+2022-04-05	Western Cape Province	Omicron BA.5	2
+2022-04-06	Western Cape Province	Omicron BA.5	2
 2022-01-02	Mpumalanga	other	1
 2022-01-03	Mpumalanga	other	1
 2022-01-04	Mpumalanga	other	1
