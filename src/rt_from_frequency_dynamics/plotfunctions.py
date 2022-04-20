@@ -102,12 +102,12 @@ def plot_R_censored(ax, dataset, ps, alphas, colors, forecast=False, thres=0.001
 
 def plot_posterior_average_R(ax, dataset, ps, alphas, color):
     med, V = get_quantiles(dataset, ps, "R_ave")
-    t = jnp.arange(0, V[-1].shape[0], 1)
+    t = jnp.arange(0, V[-1].shape[-1], 1)
 
     # Make figure
     ax.axhline(y=1.0, color="k", linestyle="--")
     for i in range(len(ps)):
-        ax.fill_between(t, V[i][:, 0], V[i][:, 1], color=color, alpha=alphas[i])
+        ax.fill_between(t, V[i][0, :], V[i][1, :], color=color, alpha=alphas[i])
     ax.plot(t, med, color=color)
 
 
@@ -156,11 +156,11 @@ def plot_posterior_I(ax, dataset, ps, alphas, colors, forecast=False):
 
 def plot_posterior_smooth_EC(ax, dataset, ps, alphas, color):
     med, V = get_quantiles(dataset, ps, "total_smooth_prev")
-    t = jnp.arange(0, V[-1].shape[0], 1)
+    t = jnp.arange(0, V[-1].shape[-1], 1)
 
     # Make figure
     for i in range(len(ps)):
-        ax.fill_between(t, V[i][:, 0], V[i][:, 1], color=color, alpha=alphas[i])
+        ax.fill_between(t, V[i][0, :], V[i][1, :], color=color, alpha=alphas[i])
     ax.plot(t, med, color=color)
 
 
