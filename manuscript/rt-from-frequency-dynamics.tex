@@ -148,9 +148,9 @@ Therefore, we can use smoothing priors on the coefficients of these basis expans
     (b) Epidemics are made of different variants which may differ in fitness. Using case counts alongside sequences of different variants allows us to understand the proportion of different variants in the population.
     We show the posterior variant-specific smoothed incidence as well as the posterior effective reproduction number.
     (c) Using both case count and frequency data, we can estimate the effective reproduction numbers of different variants.
-    \tbc{Y-axis ticks are a little sparse. Rt should have ticks at 0, 1, 2, etc... Frequencies in lower left should have ticks at 0\%, 50\% and 100\%. Mean variant cases in lower right should at least have 0.}
-    \tbc{I don't understand what top left panel in (c) is showing. Is it sequenced cases? If so, I think I'd drop in favor of the middle panel clearly showing sequenced proportions. Just feels too confusing for what it adds currently.}
-    \tbc{Similar story for bottom left panel in (c). I know I'm generally a fan of streamplots, but this feels too duplicative relative to the larger center panel in (c). I'd just keep the larger central panel in (c) showing sequenced proportions and inferred proportions alongside the larger right hand panel in (c) showing case breakdown. This will also align x-axis in the columns for easier viewing.}
+    % \tbc{Y-axis ticks are a little sparse. Rt should have ticks at 0, 1, 2, etc... Frequencies in lower left should have ticks at 0\%, 50\% and 100\%. Mean variant cases in lower right should at least have 0.}
+    % \tbc{I don't understand what top left panel in (c) is showing. Is it sequenced cases? If so, I think I'd drop in favor of the middle panel clearly showing sequenced proportions. Just feels too confusing for what it adds currently.}
+    % \tbc{Similar story for bottom left panel in (c). I know I'm generally a fan of streamplots, but this feels too duplicative relative to the larger center panel in (c). I'd just keep the larger central panel in (c) showing sequenced proportions and inferred proportions alongside the larger right hand panel in (c) showing case breakdown. This will also align x-axis in the columns for easier viewing.}
     }
   \label{fig:GARW_rt_Washington}
 \end{figure}
@@ -183,7 +183,6 @@ After Omicron's introduction in November, $R_{t}$ climbs significantly, but begi
   \caption{\textbf{Inferred effective reproduction numbers from GARW model in 34 states show consistent trends of variants across states.}
   Each panel shows a series of 34 trajectories, representing $R_t$ through time for this variant across states.
   Shaded intervals show 50\%, 80\% and 95\% credible intervals.
-  \tbc{Add more y ticks.}
   }
   \label{fig:rt_consensus}
 \end{figure}
