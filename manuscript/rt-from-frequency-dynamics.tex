@@ -156,7 +156,7 @@ Therefore, we can use smoothing priors on the coefficients of these basis expans
 \end{figure}
 
 We demonstrate these models on data from Washington State with results from the fixed growth advantage model shown in Figure \ref{fig:fixed_growth_Washington} and results from the GARW model is shown in Figure \ref{fig:GARW_rt_Washington}.
-\tbc{Shouldn't figures here be swapped? All through above you start with fixed growth and then switch to GARW. Figure order should reflect order discussed in text. I've gone ahead and made this change.}
+% \tbc{Shouldn't figures here be swapped? All through above you start with fixed growth and then switch to GARW. Figure order should reflect order discussed in text. I've gone ahead and made this change.}
 Example model output from several other states is provided in the supplemental appendix \tbc{reference specific supp figures}.
 
 \paragraph{Estimating growth advantages in the United States}
@@ -469,7 +469,7 @@ Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to p
 
 The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a full-rank Gaussian variational distribution / Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which approximates the posterior (with appropriate constraints on the individual parameter spaces) as a multivariate normal distribution.
 
-Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the free $R_{t}$ model and fixed growth advantage model.
+Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the fixed growth advantage model and the GARW model.
 
 \subsection*{Data and code accessibility}
 
