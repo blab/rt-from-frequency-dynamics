@@ -23,7 +23,7 @@ class FixedGA:
 
         # Getting log variant growth advantages
         with numpyro.plate("N_variant_m1", N_variant - 1):
-            v = numpyro.sample("v", dist.Normal(0.0, 1.0))
+            v = numpyro.sample("v", dist.Normal(0.0, 2.0))
 
         numpyro.deterministic("ga", jnp.exp(v))  # Transform to growth advantage
 
