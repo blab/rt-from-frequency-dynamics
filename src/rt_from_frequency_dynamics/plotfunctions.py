@@ -192,7 +192,7 @@ def add_dates_sep(ax, dates, sep=7):
 
 
 def plot_growth_advantage(ax, dataset, LD, ps, alphas, colors):
-    ga = jnp.array(dataset.posterior["ga"])[1]
+    ga = jnp.array(dataset["ga"])
 
     inds = jnp.arange(0, ga.shape[-1], 1)
 
