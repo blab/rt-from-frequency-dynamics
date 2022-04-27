@@ -1,4 +1,834 @@
 date	location	variant	sequences
+2022-01-01	California	other	1
+2022-01-02	California	other	3
+2022-01-03	California	other	3
+2022-01-04	California	other	4
+2022-01-05	California	other	5
+2022-01-06	California	other	7
+2022-01-07	California	other	4
+2022-01-08	California	other	1
+2022-01-09	California	other	3
+2022-01-10	California	other	2
+2022-01-11	California	other	1
+2022-01-12	California	other	3
+2022-01-14	California	other	1
+2022-01-21	California	other	1
+2022-01-24	California	other	1
+2022-01-27	California	other	1
+2022-01-31	California	other	29
+2022-02-01	California	other	33
+2022-02-02	California	other	22
+2022-02-03	California	other	1
+2022-02-04	California	other	8
+2022-02-05	California	other	1
+2022-02-06	California	other	3
+2022-02-11	California	other	1
+2022-02-15	California	other	1
+2022-02-16	California	other	2
+2022-02-17	California	other	1
+2022-02-18	California	other	1
+2022-02-19	California	other	1
+2022-02-22	California	other	2
+2022-02-23	California	other	1
+2022-02-26	California	other	1
+2022-02-27	California	other	3
+2022-02-28	California	other	1
+2022-03-01	California	other	2
+2022-03-02	California	other	8
+2022-03-03	California	other	1
+2022-03-08	California	other	1
+2022-03-09	California	other	2
+2022-03-13	California	other	2
+2022-03-14	California	other	2
+2022-03-15	California	other	3
+2022-03-16	California	other	1
+2022-03-18	California	other	5
+2022-03-19	California	other	1
+2022-03-21	California	other	4
+2022-03-23	California	other	1
+2022-03-24	California	other	1
+2022-03-28	California	other	1
+2022-03-29	California	other	1
+2022-03-30	California	other	1
+2022-04-02	California	other	1
+2022-04-03	California	other	1
+2022-04-11	California	other	1
+2022-01-01	California	Delta	34
+2022-01-02	California	Delta	71
+2022-01-03	California	Delta	102
+2022-01-04	California	Delta	86
+2022-01-05	California	Delta	59
+2022-01-06	California	Delta	39
+2022-01-07	California	Delta	51
+2022-01-08	California	Delta	24
+2022-01-09	California	Delta	17
+2022-01-10	California	Delta	29
+2022-01-11	California	Delta	24
+2022-01-12	California	Delta	22
+2022-01-13	California	Delta	16
+2022-01-14	California	Delta	27
+2022-01-15	California	Delta	14
+2022-01-16	California	Delta	13
+2022-01-17	California	Delta	26
+2022-01-18	California	Delta	21
+2022-01-19	California	Delta	2
+2022-01-20	California	Delta	12
+2022-01-21	California	Delta	6
+2022-01-22	California	Delta	6
+2022-01-23	California	Delta	7
+2022-01-24	California	Delta	9
+2022-01-25	California	Delta	6
+2022-01-26	California	Delta	5
+2022-01-27	California	Delta	3
+2022-01-28	California	Delta	4
+2022-01-29	California	Delta	4
+2022-01-30	California	Delta	3
+2022-01-31	California	Delta	13
+2022-02-01	California	Delta	10
+2022-02-02	California	Delta	2
+2022-02-03	California	Delta	2
+2022-02-04	California	Delta	2
+2022-02-05	California	Delta	3
+2022-02-06	California	Delta	1
+2022-02-07	California	Delta	4
+2022-02-08	California	Delta	2
+2022-02-14	California	Delta	2
+2022-02-15	California	Delta	3
+2022-02-18	California	Delta	1
+2022-02-22	California	Delta	2
+2022-02-23	California	Delta	1
+2022-02-24	California	Delta	2
+2022-03-01	California	Delta	1
+2022-03-04	California	Delta	1
+2022-03-10	California	Delta	1
+2022-03-12	California	Delta	1
+2022-03-14	California	Delta	2
+2022-03-24	California	Delta	1
+2022-01-01	California	Omicron BA.1	521
+2022-01-02	California	Omicron BA.1	1960
+2022-01-03	California	Omicron BA.1	3851
+2022-01-04	California	Omicron BA.1	3461
+2022-01-05	California	Omicron BA.1	1872
+2022-01-06	California	Omicron BA.1	1683
+2022-01-07	California	Omicron BA.1	1764
+2022-01-08	California	Omicron BA.1	1163
+2022-01-09	California	Omicron BA.1	774
+2022-01-10	California	Omicron BA.1	1500
+2022-01-11	California	Omicron BA.1	1367
+2022-01-12	California	Omicron BA.1	1190
+2022-01-13	California	Omicron BA.1	1406
+2022-01-14	California	Omicron BA.1	1452
+2022-01-15	California	Omicron BA.1	1456
+2022-01-16	California	Omicron BA.1	1685
+2022-01-17	California	Omicron BA.1	2835
+2022-01-18	California	Omicron BA.1	2296
+2022-01-19	California	Omicron BA.1	1432
+2022-01-20	California	Omicron BA.1	1230
+2022-01-21	California	Omicron BA.1	1326
+2022-01-22	California	Omicron BA.1	1572
+2022-01-23	California	Omicron BA.1	971
+2022-01-24	California	Omicron BA.1	2145
+2022-01-25	California	Omicron BA.1	1940
+2022-01-26	California	Omicron BA.1	1114
+2022-01-27	California	Omicron BA.1	1019
+2022-01-28	California	Omicron BA.1	907
+2022-01-29	California	Omicron BA.1	2251
+2022-01-30	California	Omicron BA.1	1746
+2022-01-31	California	Omicron BA.1	3059
+2022-02-01	California	Omicron BA.1	3214
+2022-02-02	California	Omicron BA.1	1943
+2022-02-03	California	Omicron BA.1	896
+2022-02-04	California	Omicron BA.1	1848
+2022-02-05	California	Omicron BA.1	925
+2022-02-06	California	Omicron BA.1	1346
+2022-02-07	California	Omicron BA.1	2892
+2022-02-08	California	Omicron BA.1	3051
+2022-02-09	California	Omicron BA.1	2368
+2022-02-10	California	Omicron BA.1	1997
+2022-02-11	California	Omicron BA.1	1975
+2022-02-12	California	Omicron BA.1	1450
+2022-02-13	California	Omicron BA.1	816
+2022-02-14	California	Omicron BA.1	1681
+2022-02-15	California	Omicron BA.1	1852
+2022-02-16	California	Omicron BA.1	2314
+2022-02-17	California	Omicron BA.1	1182
+2022-02-18	California	Omicron BA.1	1186
+2022-02-19	California	Omicron BA.1	964
+2022-02-20	California	Omicron BA.1	509
+2022-02-21	California	Omicron BA.1	686
+2022-02-22	California	Omicron BA.1	2306
+2022-02-23	California	Omicron BA.1	756
+2022-02-24	California	Omicron BA.1	611
+2022-02-25	California	Omicron BA.1	716
+2022-02-26	California	Omicron BA.1	469
+2022-02-27	California	Omicron BA.1	289
+2022-02-28	California	Omicron BA.1	572
+2022-03-01	California	Omicron BA.1	1087
+2022-03-02	California	Omicron BA.1	427
+2022-03-03	California	Omicron BA.1	337
+2022-03-04	California	Omicron BA.1	358
+2022-03-05	California	Omicron BA.1	216
+2022-03-06	California	Omicron BA.1	156
+2022-03-07	California	Omicron BA.1	330
+2022-03-08	California	Omicron BA.1	385
+2022-03-09	California	Omicron BA.1	311
+2022-03-10	California	Omicron BA.1	222
+2022-03-11	California	Omicron BA.1	225
+2022-03-12	California	Omicron BA.1	125
+2022-03-13	California	Omicron BA.1	149
+2022-03-14	California	Omicron BA.1	205
+2022-03-15	California	Omicron BA.1	138
+2022-03-16	California	Omicron BA.1	147
+2022-03-17	California	Omicron BA.1	125
+2022-03-18	California	Omicron BA.1	165
+2022-03-19	California	Omicron BA.1	133
+2022-03-20	California	Omicron BA.1	90
+2022-03-21	California	Omicron BA.1	150
+2022-03-22	California	Omicron BA.1	103
+2022-03-23	California	Omicron BA.1	108
+2022-03-24	California	Omicron BA.1	72
+2022-03-25	California	Omicron BA.1	56
+2022-03-26	California	Omicron BA.1	52
+2022-03-27	California	Omicron BA.1	58
+2022-03-28	California	Omicron BA.1	76
+2022-03-29	California	Omicron BA.1	53
+2022-03-30	California	Omicron BA.1	41
+2022-03-31	California	Omicron BA.1	29
+2022-04-01	California	Omicron BA.1	42
+2022-04-02	California	Omicron BA.1	30
+2022-04-03	California	Omicron BA.1	31
+2022-04-04	California	Omicron BA.1	39
+2022-04-05	California	Omicron BA.1	35
+2022-04-06	California	Omicron BA.1	16
+2022-04-07	California	Omicron BA.1	14
+2022-04-08	California	Omicron BA.1	4
+2022-04-09	California	Omicron BA.1	4
+2022-04-10	California	Omicron BA.1	3
+2022-04-11	California	Omicron BA.1	1
+2022-04-12	California	Omicron BA.1	3
+2022-01-01	California	Omicron BA.2	2
+2022-01-02	California	Omicron BA.2	3
+2022-01-03	California	Omicron BA.2	4
+2022-01-04	California	Omicron BA.2	4
+2022-01-05	California	Omicron BA.2	6
+2022-01-06	California	Omicron BA.2	4
+2022-01-07	California	Omicron BA.2	6
+2022-01-08	California	Omicron BA.2	5
+2022-01-09	California	Omicron BA.2	7
+2022-01-10	California	Omicron BA.2	5
+2022-01-11	California	Omicron BA.2	2
+2022-01-12	California	Omicron BA.2	4
+2022-01-13	California	Omicron BA.2	4
+2022-01-14	California	Omicron BA.2	11
+2022-01-15	California	Omicron BA.2	9
+2022-01-16	California	Omicron BA.2	11
+2022-01-17	California	Omicron BA.2	20
+2022-01-18	California	Omicron BA.2	10
+2022-01-19	California	Omicron BA.2	10
+2022-01-20	California	Omicron BA.2	5
+2022-01-21	California	Omicron BA.2	13
+2022-01-22	California	Omicron BA.2	12
+2022-01-23	California	Omicron BA.2	6
+2022-01-24	California	Omicron BA.2	16
+2022-01-25	California	Omicron BA.2	9
+2022-01-26	California	Omicron BA.2	19
+2022-01-27	California	Omicron BA.2	15
+2022-01-28	California	Omicron BA.2	10
+2022-01-29	California	Omicron BA.2	26
+2022-01-30	California	Omicron BA.2	24
+2022-01-31	California	Omicron BA.2	40
+2022-02-01	California	Omicron BA.2	27
+2022-02-02	California	Omicron BA.2	21
+2022-02-03	California	Omicron BA.2	13
+2022-02-04	California	Omicron BA.2	29
+2022-02-05	California	Omicron BA.2	19
+2022-02-06	California	Omicron BA.2	27
+2022-02-07	California	Omicron BA.2	73
+2022-02-08	California	Omicron BA.2	76
+2022-02-09	California	Omicron BA.2	68
+2022-02-10	California	Omicron BA.2	55
+2022-02-11	California	Omicron BA.2	65
+2022-02-12	California	Omicron BA.2	38
+2022-02-13	California	Omicron BA.2	46
+2022-02-14	California	Omicron BA.2	91
+2022-02-15	California	Omicron BA.2	92
+2022-02-16	California	Omicron BA.2	91
+2022-02-17	California	Omicron BA.2	68
+2022-02-18	California	Omicron BA.2	60
+2022-02-19	California	Omicron BA.2	62
+2022-02-20	California	Omicron BA.2	41
+2022-02-21	California	Omicron BA.2	44
+2022-02-22	California	Omicron BA.2	174
+2022-02-23	California	Omicron BA.2	102
+2022-02-24	California	Omicron BA.2	89
+2022-02-25	California	Omicron BA.2	61
+2022-02-26	California	Omicron BA.2	51
+2022-02-27	California	Omicron BA.2	38
+2022-02-28	California	Omicron BA.2	77
+2022-03-01	California	Omicron BA.2	107
+2022-03-02	California	Omicron BA.2	88
+2022-03-03	California	Omicron BA.2	83
+2022-03-04	California	Omicron BA.2	104
+2022-03-05	California	Omicron BA.2	65
+2022-03-06	California	Omicron BA.2	42
+2022-03-07	California	Omicron BA.2	107
+2022-03-08	California	Omicron BA.2	135
+2022-03-09	California	Omicron BA.2	133
+2022-03-10	California	Omicron BA.2	93
+2022-03-11	California	Omicron BA.2	111
+2022-03-12	California	Omicron BA.2	82
+2022-03-13	California	Omicron BA.2	88
+2022-03-14	California	Omicron BA.2	130
+2022-03-15	California	Omicron BA.2	91
+2022-03-16	California	Omicron BA.2	87
+2022-03-17	California	Omicron BA.2	141
+2022-03-18	California	Omicron BA.2	153
+2022-03-19	California	Omicron BA.2	137
+2022-03-20	California	Omicron BA.2	101
+2022-03-21	California	Omicron BA.2	221
+2022-03-22	California	Omicron BA.2	269
+2022-03-23	California	Omicron BA.2	177
+2022-03-24	California	Omicron BA.2	187
+2022-03-25	California	Omicron BA.2	160
+2022-03-26	California	Omicron BA.2	184
+2022-03-27	California	Omicron BA.2	181
+2022-03-28	California	Omicron BA.2	253
+2022-03-29	California	Omicron BA.2	192
+2022-03-30	California	Omicron BA.2	168
+2022-03-31	California	Omicron BA.2	123
+2022-04-01	California	Omicron BA.2	200
+2022-04-02	California	Omicron BA.2	157
+2022-04-03	California	Omicron BA.2	137
+2022-04-04	California	Omicron BA.2	204
+2022-04-05	California	Omicron BA.2	143
+2022-04-06	California	Omicron BA.2	115
+2022-04-07	California	Omicron BA.2	137
+2022-04-08	California	Omicron BA.2	82
+2022-04-09	California	Omicron BA.2	30
+2022-04-10	California	Omicron BA.2	26
+2022-04-11	California	Omicron BA.2	49
+2022-04-12	California	Omicron BA.2	56
+2022-04-13	California	Omicron BA.2	1
+2022-03-08	California	Omicron BA.2.12.1	1
+2022-03-14	California	Omicron BA.2.12.1	1
+2022-03-18	California	Omicron BA.2.12.1	1
+2022-03-19	California	Omicron BA.2.12.1	1
+2022-03-21	California	Omicron BA.2.12.1	2
+2022-03-22	California	Omicron BA.2.12.1	1
+2022-03-23	California	Omicron BA.2.12.1	5
+2022-03-24	California	Omicron BA.2.12.1	1
+2022-03-25	California	Omicron BA.2.12.1	6
+2022-03-26	California	Omicron BA.2.12.1	2
+2022-03-27	California	Omicron BA.2.12.1	4
+2022-03-28	California	Omicron BA.2.12.1	8
+2022-03-29	California	Omicron BA.2.12.1	6
+2022-03-30	California	Omicron BA.2.12.1	1
+2022-03-31	California	Omicron BA.2.12.1	7
+2022-04-01	California	Omicron BA.2.12.1	6
+2022-04-02	California	Omicron BA.2.12.1	8
+2022-04-03	California	Omicron BA.2.12.1	11
+2022-04-04	California	Omicron BA.2.12.1	11
+2022-04-05	California	Omicron BA.2.12.1	11
+2022-04-06	California	Omicron BA.2.12.1	9
+2022-04-07	California	Omicron BA.2.12.1	10
+2022-04-08	California	Omicron BA.2.12.1	5
+2022-04-09	California	Omicron BA.2.12.1	2
+2022-04-10	California	Omicron BA.2.12.1	2
+2022-04-11	California	Omicron BA.2.12.1	5
+2022-04-12	California	Omicron BA.2.12.1	10
+2022-04-02	Connecticut	other	1
+2022-04-03	Connecticut	other	1
+2022-04-06	Connecticut	other	1
+2022-01-02	Connecticut	Delta	4
+2022-01-03	Connecticut	Delta	17
+2022-01-04	Connecticut	Delta	17
+2022-01-05	Connecticut	Delta	11
+2022-01-06	Connecticut	Delta	10
+2022-01-07	Connecticut	Delta	4
+2022-01-08	Connecticut	Delta	4
+2022-01-09	Connecticut	Delta	3
+2022-01-10	Connecticut	Delta	1
+2022-01-11	Connecticut	Delta	4
+2022-01-12	Connecticut	Delta	2
+2022-01-13	Connecticut	Delta	1
+2022-01-14	Connecticut	Delta	2
+2022-01-15	Connecticut	Delta	1
+2022-01-16	Connecticut	Delta	3
+2022-01-17	Connecticut	Delta	4
+2022-01-18	Connecticut	Delta	2
+2022-01-19	Connecticut	Delta	3
+2022-01-20	Connecticut	Delta	4
+2022-01-21	Connecticut	Delta	2
+2022-01-22	Connecticut	Delta	1
+2022-01-23	Connecticut	Delta	3
+2022-01-24	Connecticut	Delta	1
+2022-01-25	Connecticut	Delta	1
+2022-01-26	Connecticut	Delta	1
+2022-01-27	Connecticut	Delta	1
+2022-01-28	Connecticut	Delta	1
+2022-02-02	Connecticut	Delta	2
+2022-02-06	Connecticut	Delta	1
+2022-02-08	Connecticut	Delta	1
+2022-02-10	Connecticut	Delta	1
+2022-02-16	Connecticut	Delta	1
+2022-02-23	Connecticut	Delta	1
+2022-03-16	Connecticut	Delta	1
+2022-01-01	Connecticut	Omicron BA.1	24
+2022-01-02	Connecticut	Omicron BA.1	185
+2022-01-03	Connecticut	Omicron BA.1	383
+2022-01-04	Connecticut	Omicron BA.1	292
+2022-01-05	Connecticut	Omicron BA.1	206
+2022-01-06	Connecticut	Omicron BA.1	230
+2022-01-07	Connecticut	Omicron BA.1	184
+2022-01-08	Connecticut	Omicron BA.1	110
+2022-01-09	Connecticut	Omicron BA.1	153
+2022-01-10	Connecticut	Omicron BA.1	91
+2022-01-11	Connecticut	Omicron BA.1	137
+2022-01-12	Connecticut	Omicron BA.1	140
+2022-01-13	Connecticut	Omicron BA.1	99
+2022-01-14	Connecticut	Omicron BA.1	199
+2022-01-15	Connecticut	Omicron BA.1	70
+2022-01-16	Connecticut	Omicron BA.1	140
+2022-01-17	Connecticut	Omicron BA.1	149
+2022-01-18	Connecticut	Omicron BA.1	147
+2022-01-19	Connecticut	Omicron BA.1	186
+2022-01-20	Connecticut	Omicron BA.1	157
+2022-01-21	Connecticut	Omicron BA.1	276
+2022-01-22	Connecticut	Omicron BA.1	143
+2022-01-23	Connecticut	Omicron BA.1	153
+2022-01-24	Connecticut	Omicron BA.1	251
+2022-01-25	Connecticut	Omicron BA.1	159
+2022-01-26	Connecticut	Omicron BA.1	163
+2022-01-27	Connecticut	Omicron BA.1	191
+2022-01-28	Connecticut	Omicron BA.1	197
+2022-01-29	Connecticut	Omicron BA.1	10
+2022-01-30	Connecticut	Omicron BA.1	81
+2022-01-31	Connecticut	Omicron BA.1	195
+2022-02-01	Connecticut	Omicron BA.1	108
+2022-02-02	Connecticut	Omicron BA.1	104
+2022-02-03	Connecticut	Omicron BA.1	108
+2022-02-04	Connecticut	Omicron BA.1	117
+2022-02-05	Connecticut	Omicron BA.1	59
+2022-02-06	Connecticut	Omicron BA.1	68
+2022-02-07	Connecticut	Omicron BA.1	107
+2022-02-08	Connecticut	Omicron BA.1	124
+2022-02-09	Connecticut	Omicron BA.1	115
+2022-02-10	Connecticut	Omicron BA.1	105
+2022-02-11	Connecticut	Omicron BA.1	80
+2022-02-12	Connecticut	Omicron BA.1	60
+2022-02-13	Connecticut	Omicron BA.1	65
+2022-02-14	Connecticut	Omicron BA.1	175
+2022-02-15	Connecticut	Omicron BA.1	222
+2022-02-16	Connecticut	Omicron BA.1	162
+2022-02-17	Connecticut	Omicron BA.1	207
+2022-02-18	Connecticut	Omicron BA.1	143
+2022-02-19	Connecticut	Omicron BA.1	52
+2022-02-20	Connecticut	Omicron BA.1	68
+2022-02-21	Connecticut	Omicron BA.1	184
+2022-02-22	Connecticut	Omicron BA.1	128
+2022-02-23	Connecticut	Omicron BA.1	90
+2022-02-24	Connecticut	Omicron BA.1	93
+2022-02-25	Connecticut	Omicron BA.1	65
+2022-02-26	Connecticut	Omicron BA.1	40
+2022-02-27	Connecticut	Omicron BA.1	24
+2022-02-28	Connecticut	Omicron BA.1	59
+2022-03-01	Connecticut	Omicron BA.1	47
+2022-03-02	Connecticut	Omicron BA.1	31
+2022-03-03	Connecticut	Omicron BA.1	33
+2022-03-04	Connecticut	Omicron BA.1	29
+2022-03-05	Connecticut	Omicron BA.1	24
+2022-03-06	Connecticut	Omicron BA.1	13
+2022-03-07	Connecticut	Omicron BA.1	52
+2022-03-08	Connecticut	Omicron BA.1	46
+2022-03-09	Connecticut	Omicron BA.1	37
+2022-03-10	Connecticut	Omicron BA.1	40
+2022-03-11	Connecticut	Omicron BA.1	43
+2022-03-12	Connecticut	Omicron BA.1	12
+2022-03-13	Connecticut	Omicron BA.1	21
+2022-03-14	Connecticut	Omicron BA.1	34
+2022-03-15	Connecticut	Omicron BA.1	21
+2022-03-16	Connecticut	Omicron BA.1	35
+2022-03-17	Connecticut	Omicron BA.1	20
+2022-03-18	Connecticut	Omicron BA.1	16
+2022-03-19	Connecticut	Omicron BA.1	20
+2022-03-20	Connecticut	Omicron BA.1	15
+2022-03-21	Connecticut	Omicron BA.1	15
+2022-03-22	Connecticut	Omicron BA.1	12
+2022-03-23	Connecticut	Omicron BA.1	16
+2022-03-24	Connecticut	Omicron BA.1	15
+2022-03-25	Connecticut	Omicron BA.1	12
+2022-03-26	Connecticut	Omicron BA.1	12
+2022-03-27	Connecticut	Omicron BA.1	31
+2022-03-28	Connecticut	Omicron BA.1	15
+2022-03-29	Connecticut	Omicron BA.1	12
+2022-03-30	Connecticut	Omicron BA.1	8
+2022-03-31	Connecticut	Omicron BA.1	10
+2022-04-01	Connecticut	Omicron BA.1	10
+2022-04-02	Connecticut	Omicron BA.1	5
+2022-04-03	Connecticut	Omicron BA.1	9
+2022-04-04	Connecticut	Omicron BA.1	6
+2022-04-05	Connecticut	Omicron BA.1	5
+2022-04-06	Connecticut	Omicron BA.1	8
+2022-04-07	Connecticut	Omicron BA.1	5
+2022-04-08	Connecticut	Omicron BA.1	15
+2022-04-09	Connecticut	Omicron BA.1	2
+2022-04-10	Connecticut	Omicron BA.1	7
+2022-04-11	Connecticut	Omicron BA.1	13
+2022-04-12	Connecticut	Omicron BA.1	2
+2022-04-13	Connecticut	Omicron BA.1	3
+2022-04-14	Connecticut	Omicron BA.1	1
+2022-01-08	Connecticut	Omicron BA.2	1
+2022-01-10	Connecticut	Omicron BA.2	1
+2022-01-18	Connecticut	Omicron BA.2	2
+2022-01-20	Connecticut	Omicron BA.2	1
+2022-01-21	Connecticut	Omicron BA.2	2
+2022-01-22	Connecticut	Omicron BA.2	1
+2022-01-24	Connecticut	Omicron BA.2	3
+2022-01-26	Connecticut	Omicron BA.2	1
+2022-01-28	Connecticut	Omicron BA.2	2
+2022-01-31	Connecticut	Omicron BA.2	4
+2022-02-01	Connecticut	Omicron BA.2	1
+2022-02-02	Connecticut	Omicron BA.2	3
+2022-02-03	Connecticut	Omicron BA.2	1
+2022-02-04	Connecticut	Omicron BA.2	4
+2022-02-05	Connecticut	Omicron BA.2	1
+2022-02-07	Connecticut	Omicron BA.2	1
+2022-02-08	Connecticut	Omicron BA.2	1
+2022-02-10	Connecticut	Omicron BA.2	2
+2022-02-11	Connecticut	Omicron BA.2	1
+2022-02-13	Connecticut	Omicron BA.2	2
+2022-02-14	Connecticut	Omicron BA.2	3
+2022-02-15	Connecticut	Omicron BA.2	1
+2022-02-16	Connecticut	Omicron BA.2	4
+2022-02-17	Connecticut	Omicron BA.2	6
+2022-02-19	Connecticut	Omicron BA.2	4
+2022-02-20	Connecticut	Omicron BA.2	2
+2022-02-21	Connecticut	Omicron BA.2	4
+2022-02-22	Connecticut	Omicron BA.2	4
+2022-02-23	Connecticut	Omicron BA.2	5
+2022-02-24	Connecticut	Omicron BA.2	9
+2022-02-25	Connecticut	Omicron BA.2	1
+2022-02-26	Connecticut	Omicron BA.2	8
+2022-02-28	Connecticut	Omicron BA.2	4
+2022-03-01	Connecticut	Omicron BA.2	4
+2022-03-02	Connecticut	Omicron BA.2	8
+2022-03-03	Connecticut	Omicron BA.2	7
+2022-03-04	Connecticut	Omicron BA.2	7
+2022-03-05	Connecticut	Omicron BA.2	14
+2022-03-06	Connecticut	Omicron BA.2	11
+2022-03-07	Connecticut	Omicron BA.2	40
+2022-03-08	Connecticut	Omicron BA.2	46
+2022-03-09	Connecticut	Omicron BA.2	35
+2022-03-10	Connecticut	Omicron BA.2	32
+2022-03-11	Connecticut	Omicron BA.2	32
+2022-03-12	Connecticut	Omicron BA.2	32
+2022-03-13	Connecticut	Omicron BA.2	27
+2022-03-14	Connecticut	Omicron BA.2	54
+2022-03-15	Connecticut	Omicron BA.2	65
+2022-03-16	Connecticut	Omicron BA.2	53
+2022-03-17	Connecticut	Omicron BA.2	45
+2022-03-18	Connecticut	Omicron BA.2	42
+2022-03-19	Connecticut	Omicron BA.2	31
+2022-03-20	Connecticut	Omicron BA.2	16
+2022-03-21	Connecticut	Omicron BA.2	41
+2022-03-22	Connecticut	Omicron BA.2	28
+2022-03-23	Connecticut	Omicron BA.2	31
+2022-03-24	Connecticut	Omicron BA.2	30
+2022-03-25	Connecticut	Omicron BA.2	32
+2022-03-26	Connecticut	Omicron BA.2	34
+2022-03-27	Connecticut	Omicron BA.2	43
+2022-03-28	Connecticut	Omicron BA.2	88
+2022-03-29	Connecticut	Omicron BA.2	46
+2022-03-30	Connecticut	Omicron BA.2	71
+2022-03-31	Connecticut	Omicron BA.2	57
+2022-04-01	Connecticut	Omicron BA.2	49
+2022-04-02	Connecticut	Omicron BA.2	52
+2022-04-03	Connecticut	Omicron BA.2	38
+2022-04-04	Connecticut	Omicron BA.2	69
+2022-04-05	Connecticut	Omicron BA.2	44
+2022-04-06	Connecticut	Omicron BA.2	41
+2022-04-07	Connecticut	Omicron BA.2	41
+2022-04-08	Connecticut	Omicron BA.2	36
+2022-04-09	Connecticut	Omicron BA.2	17
+2022-04-10	Connecticut	Omicron BA.2	27
+2022-04-11	Connecticut	Omicron BA.2	23
+2022-04-12	Connecticut	Omicron BA.2	3
+2022-04-13	Connecticut	Omicron BA.2	8
+2022-04-14	Connecticut	Omicron BA.2	9
+2022-04-15	Connecticut	Omicron BA.2	8
+2022-04-16	Connecticut	Omicron BA.2	2
+2022-03-03	Connecticut	Omicron BA.2.12.1	1
+2022-03-09	Connecticut	Omicron BA.2.12.1	1
+2022-03-16	Connecticut	Omicron BA.2.12.1	2
+2022-03-19	Connecticut	Omicron BA.2.12.1	1
+2022-03-20	Connecticut	Omicron BA.2.12.1	1
+2022-03-21	Connecticut	Omicron BA.2.12.1	1
+2022-03-22	Connecticut	Omicron BA.2.12.1	1
+2022-03-23	Connecticut	Omicron BA.2.12.1	1
+2022-03-24	Connecticut	Omicron BA.2.12.1	2
+2022-03-25	Connecticut	Omicron BA.2.12.1	3
+2022-03-26	Connecticut	Omicron BA.2.12.1	3
+2022-03-27	Connecticut	Omicron BA.2.12.1	5
+2022-03-28	Connecticut	Omicron BA.2.12.1	1
+2022-03-29	Connecticut	Omicron BA.2.12.1	4
+2022-03-30	Connecticut	Omicron BA.2.12.1	5
+2022-03-31	Connecticut	Omicron BA.2.12.1	6
+2022-04-01	Connecticut	Omicron BA.2.12.1	5
+2022-04-02	Connecticut	Omicron BA.2.12.1	7
+2022-04-03	Connecticut	Omicron BA.2.12.1	10
+2022-04-04	Connecticut	Omicron BA.2.12.1	20
+2022-04-05	Connecticut	Omicron BA.2.12.1	10
+2022-04-06	Connecticut	Omicron BA.2.12.1	9
+2022-04-07	Connecticut	Omicron BA.2.12.1	11
+2022-04-08	Connecticut	Omicron BA.2.12.1	10
+2022-04-09	Connecticut	Omicron BA.2.12.1	5
+2022-04-10	Connecticut	Omicron BA.2.12.1	6
+2022-04-11	Connecticut	Omicron BA.2.12.1	6
+2022-04-13	Connecticut	Omicron BA.2.12.1	1
+2022-04-14	Connecticut	Omicron BA.2.12.1	3
+2022-04-15	Connecticut	Omicron BA.2.12.1	1
+2022-01-06	Florida	other	2
+2022-02-24	Florida	other	2
+2022-02-25	Florida	other	3
+2022-02-28	Florida	other	1
+2022-03-04	Florida	other	1
+2022-03-05	Florida	other	1
+2022-03-06	Florida	other	1
+2022-03-29	Florida	other	1
+2022-03-31	Florida	other	1
+2022-04-01	Florida	other	1
+2022-01-01	Florida	Delta	2
+2022-01-02	Florida	Delta	6
+2022-01-03	Florida	Delta	12
+2022-01-04	Florida	Delta	3
+2022-01-05	Florida	Delta	3
+2022-01-06	Florida	Delta	9
+2022-01-07	Florida	Delta	2
+2022-01-08	Florida	Delta	1
+2022-01-09	Florida	Delta	2
+2022-01-10	Florida	Delta	6
+2022-01-11	Florida	Delta	3
+2022-01-12	Florida	Delta	3
+2022-01-13	Florida	Delta	1
+2022-01-14	Florida	Delta	2
+2022-01-18	Florida	Delta	2
+2022-01-20	Florida	Delta	1
+2022-01-21	Florida	Delta	1
+2022-01-24	Florida	Delta	1
+2022-01-27	Florida	Delta	1
+2022-02-09	Florida	Delta	2
+2022-02-11	Florida	Delta	1
+2022-02-18	Florida	Delta	1
+2022-01-01	Florida	Omicron BA.1	88
+2022-01-02	Florida	Omicron BA.1	306
+2022-01-03	Florida	Omicron BA.1	787
+2022-01-04	Florida	Omicron BA.1	388
+2022-01-05	Florida	Omicron BA.1	367
+2022-01-06	Florida	Omicron BA.1	429
+2022-01-07	Florida	Omicron BA.1	468
+2022-01-08	Florida	Omicron BA.1	243
+2022-01-09	Florida	Omicron BA.1	164
+2022-01-10	Florida	Omicron BA.1	822
+2022-01-11	Florida	Omicron BA.1	408
+2022-01-12	Florida	Omicron BA.1	260
+2022-01-13	Florida	Omicron BA.1	356
+2022-01-14	Florida	Omicron BA.1	428
+2022-01-15	Florida	Omicron BA.1	176
+2022-01-16	Florida	Omicron BA.1	173
+2022-01-17	Florida	Omicron BA.1	210
+2022-01-18	Florida	Omicron BA.1	283
+2022-01-19	Florida	Omicron BA.1	377
+2022-01-20	Florida	Omicron BA.1	203
+2022-01-21	Florida	Omicron BA.1	189
+2022-01-22	Florida	Omicron BA.1	232
+2022-01-23	Florida	Omicron BA.1	110
+2022-01-24	Florida	Omicron BA.1	315
+2022-01-25	Florida	Omicron BA.1	301
+2022-01-26	Florida	Omicron BA.1	336
+2022-01-27	Florida	Omicron BA.1	396
+2022-01-28	Florida	Omicron BA.1	279
+2022-01-29	Florida	Omicron BA.1	426
+2022-01-30	Florida	Omicron BA.1	49
+2022-01-31	Florida	Omicron BA.1	265
+2022-02-01	Florida	Omicron BA.1	248
+2022-02-02	Florida	Omicron BA.1	415
+2022-02-03	Florida	Omicron BA.1	222
+2022-02-04	Florida	Omicron BA.1	347
+2022-02-05	Florida	Omicron BA.1	391
+2022-02-06	Florida	Omicron BA.1	294
+2022-02-07	Florida	Omicron BA.1	555
+2022-02-08	Florida	Omicron BA.1	436
+2022-02-09	Florida	Omicron BA.1	462
+2022-02-10	Florida	Omicron BA.1	272
+2022-02-11	Florida	Omicron BA.1	279
+2022-02-12	Florida	Omicron BA.1	287
+2022-02-13	Florida	Omicron BA.1	247
+2022-02-14	Florida	Omicron BA.1	207
+2022-02-15	Florida	Omicron BA.1	235
+2022-02-16	Florida	Omicron BA.1	339
+2022-02-17	Florida	Omicron BA.1	280
+2022-02-18	Florida	Omicron BA.1	337
+2022-02-19	Florida	Omicron BA.1	194
+2022-02-20	Florida	Omicron BA.1	100
+2022-02-21	Florida	Omicron BA.1	129
+2022-02-22	Florida	Omicron BA.1	341
+2022-02-23	Florida	Omicron BA.1	230
+2022-02-24	Florida	Omicron BA.1	213
+2022-02-25	Florida	Omicron BA.1	263
+2022-02-26	Florida	Omicron BA.1	189
+2022-02-27	Florida	Omicron BA.1	111
+2022-02-28	Florida	Omicron BA.1	156
+2022-03-01	Florida	Omicron BA.1	154
+2022-03-02	Florida	Omicron BA.1	135
+2022-03-03	Florida	Omicron BA.1	122
+2022-03-04	Florida	Omicron BA.1	120
+2022-03-05	Florida	Omicron BA.1	99
+2022-03-06	Florida	Omicron BA.1	79
+2022-03-07	Florida	Omicron BA.1	136
+2022-03-08	Florida	Omicron BA.1	80
+2022-03-09	Florida	Omicron BA.1	75
+2022-03-10	Florida	Omicron BA.1	81
+2022-03-11	Florida	Omicron BA.1	73
+2022-03-12	Florida	Omicron BA.1	41
+2022-03-13	Florida	Omicron BA.1	47
+2022-03-14	Florida	Omicron BA.1	89
+2022-03-15	Florida	Omicron BA.1	77
+2022-03-16	Florida	Omicron BA.1	50
+2022-03-17	Florida	Omicron BA.1	42
+2022-03-18	Florida	Omicron BA.1	50
+2022-03-19	Florida	Omicron BA.1	45
+2022-03-20	Florida	Omicron BA.1	34
+2022-03-21	Florida	Omicron BA.1	38
+2022-03-22	Florida	Omicron BA.1	29
+2022-03-23	Florida	Omicron BA.1	42
+2022-03-24	Florida	Omicron BA.1	44
+2022-03-25	Florida	Omicron BA.1	30
+2022-03-26	Florida	Omicron BA.1	22
+2022-03-27	Florida	Omicron BA.1	16
+2022-03-28	Florida	Omicron BA.1	37
+2022-03-29	Florida	Omicron BA.1	17
+2022-03-30	Florida	Omicron BA.1	19
+2022-03-31	Florida	Omicron BA.1	21
+2022-04-01	Florida	Omicron BA.1	14
+2022-04-02	Florida	Omicron BA.1	7
+2022-04-03	Florida	Omicron BA.1	14
+2022-04-04	Florida	Omicron BA.1	17
+2022-04-05	Florida	Omicron BA.1	14
+2022-04-06	Florida	Omicron BA.1	13
+2022-04-07	Florida	Omicron BA.1	7
+2022-04-08	Florida	Omicron BA.1	8
+2022-04-09	Florida	Omicron BA.1	1
+2022-01-05	Florida	Omicron BA.2	4
+2022-01-06	Florida	Omicron BA.2	1
+2022-01-07	Florida	Omicron BA.2	12
+2022-01-11	Florida	Omicron BA.2	1
+2022-01-16	Florida	Omicron BA.2	1
+2022-01-19	Florida	Omicron BA.2	1
+2022-01-22	Florida	Omicron BA.2	1
+2022-01-23	Florida	Omicron BA.2	1
+2022-01-24	Florida	Omicron BA.2	3
+2022-01-25	Florida	Omicron BA.2	2
+2022-01-26	Florida	Omicron BA.2	1
+2022-01-27	Florida	Omicron BA.2	1
+2022-01-29	Florida	Omicron BA.2	3
+2022-01-31	Florida	Omicron BA.2	1
+2022-02-01	Florida	Omicron BA.2	1
+2022-02-02	Florida	Omicron BA.2	1
+2022-02-03	Florida	Omicron BA.2	1
+2022-02-04	Florida	Omicron BA.2	1
+2022-02-05	Florida	Omicron BA.2	3
+2022-02-06	Florida	Omicron BA.2	3
+2022-02-07	Florida	Omicron BA.2	4
+2022-02-08	Florida	Omicron BA.2	7
+2022-02-09	Florida	Omicron BA.2	6
+2022-02-10	Florida	Omicron BA.2	5
+2022-02-11	Florida	Omicron BA.2	8
+2022-02-12	Florida	Omicron BA.2	4
+2022-02-13	Florida	Omicron BA.2	4
+2022-02-14	Florida	Omicron BA.2	5
+2022-02-15	Florida	Omicron BA.2	10
+2022-02-16	Florida	Omicron BA.2	7
+2022-02-17	Florida	Omicron BA.2	17
+2022-02-18	Florida	Omicron BA.2	12
+2022-02-19	Florida	Omicron BA.2	8
+2022-02-20	Florida	Omicron BA.2	8
+2022-02-21	Florida	Omicron BA.2	4
+2022-02-22	Florida	Omicron BA.2	22
+2022-02-23	Florida	Omicron BA.2	24
+2022-02-24	Florida	Omicron BA.2	24
+2022-02-25	Florida	Omicron BA.2	17
+2022-02-26	Florida	Omicron BA.2	22
+2022-02-27	Florida	Omicron BA.2	11
+2022-02-28	Florida	Omicron BA.2	20
+2022-03-01	Florida	Omicron BA.2	31
+2022-03-02	Florida	Omicron BA.2	20
+2022-03-03	Florida	Omicron BA.2	26
+2022-03-04	Florida	Omicron BA.2	24
+2022-03-05	Florida	Omicron BA.2	24
+2022-03-06	Florida	Omicron BA.2	35
+2022-03-07	Florida	Omicron BA.2	41
+2022-03-08	Florida	Omicron BA.2	41
+2022-03-09	Florida	Omicron BA.2	55
+2022-03-10	Florida	Omicron BA.2	46
+2022-03-11	Florida	Omicron BA.2	48
+2022-03-12	Florida	Omicron BA.2	30
+2022-03-13	Florida	Omicron BA.2	36
+2022-03-14	Florida	Omicron BA.2	56
+2022-03-15	Florida	Omicron BA.2	65
+2022-03-16	Florida	Omicron BA.2	61
+2022-03-17	Florida	Omicron BA.2	67
+2022-03-18	Florida	Omicron BA.2	67
+2022-03-19	Florida	Omicron BA.2	60
+2022-03-20	Florida	Omicron BA.2	67
+2022-03-21	Florida	Omicron BA.2	98
+2022-03-22	Florida	Omicron BA.2	82
+2022-03-23	Florida	Omicron BA.2	90
+2022-03-24	Florida	Omicron BA.2	102
+2022-03-25	Florida	Omicron BA.2	96
+2022-03-26	Florida	Omicron BA.2	76
+2022-03-27	Florida	Omicron BA.2	84
+2022-03-28	Florida	Omicron BA.2	148
+2022-03-29	Florida	Omicron BA.2	124
+2022-03-30	Florida	Omicron BA.2	114
+2022-03-31	Florida	Omicron BA.2	105
+2022-04-01	Florida	Omicron BA.2	110
+2022-04-02	Florida	Omicron BA.2	88
+2022-04-03	Florida	Omicron BA.2	123
+2022-04-04	Florida	Omicron BA.2	102
+2022-04-05	Florida	Omicron BA.2	100
+2022-04-06	Florida	Omicron BA.2	87
+2022-04-07	Florida	Omicron BA.2	67
+2022-04-08	Florida	Omicron BA.2	43
+2022-04-09	Florida	Omicron BA.2	5
+2022-04-10	Florida	Omicron BA.2	1
+2022-03-06	Florida	Omicron BA.2.12.1	1
+2022-03-11	Florida	Omicron BA.2.12.1	1
+2022-03-12	Florida	Omicron BA.2.12.1	1
+2022-03-16	Florida	Omicron BA.2.12.1	2
+2022-03-17	Florida	Omicron BA.2.12.1	1
+2022-03-18	Florida	Omicron BA.2.12.1	1
+2022-03-19	Florida	Omicron BA.2.12.1	1
+2022-03-20	Florida	Omicron BA.2.12.1	2
+2022-03-21	Florida	Omicron BA.2.12.1	3
+2022-03-22	Florida	Omicron BA.2.12.1	3
+2022-03-23	Florida	Omicron BA.2.12.1	3
+2022-03-24	Florida	Omicron BA.2.12.1	5
+2022-03-25	Florida	Omicron BA.2.12.1	6
+2022-03-26	Florida	Omicron BA.2.12.1	3
+2022-03-27	Florida	Omicron BA.2.12.1	2
+2022-03-28	Florida	Omicron BA.2.12.1	18
+2022-03-29	Florida	Omicron BA.2.12.1	10
+2022-03-30	Florida	Omicron BA.2.12.1	10
+2022-03-31	Florida	Omicron BA.2.12.1	9
+2022-04-01	Florida	Omicron BA.2.12.1	7
+2022-04-02	Florida	Omicron BA.2.12.1	7
+2022-04-03	Florida	Omicron BA.2.12.1	14
+2022-04-04	Florida	Omicron BA.2.12.1	13
+2022-04-05	Florida	Omicron BA.2.12.1	13
+2022-04-06	Florida	Omicron BA.2.12.1	15
+2022-04-07	Florida	Omicron BA.2.12.1	10
+2022-04-08	Florida	Omicron BA.2.12.1	5
+2022-04-09	Florida	Omicron BA.2.12.1	3
 2022-01-02	Massachusetts	other	2
 2022-01-05	Massachusetts	other	1
 2022-01-06	Massachusetts	other	1
@@ -16,12 +846,22 @@ date	location	variant	sequences
 2022-03-20	Massachusetts	other	1
 2022-03-22	Massachusetts	other	5
 2022-03-23	Massachusetts	other	1
-2022-03-24	Massachusetts	other	2
+2022-03-24	Massachusetts	other	3
 2022-03-28	Massachusetts	other	1
 2022-03-29	Massachusetts	other	1
 2022-03-30	Massachusetts	other	2
-2022-04-02	Massachusetts	other	1
-2022-04-05	Massachusetts	other	1
+2022-03-31	Massachusetts	other	1
+2022-04-01	Massachusetts	other	1
+2022-04-02	Massachusetts	other	2
+2022-04-03	Massachusetts	other	1
+2022-04-04	Massachusetts	other	3
+2022-04-05	Massachusetts	other	6
+2022-04-06	Massachusetts	other	2
+2022-04-07	Massachusetts	other	5
+2022-04-08	Massachusetts	other	2
+2022-04-09	Massachusetts	other	3
+2022-04-10	Massachusetts	other	8
+2022-04-11	Massachusetts	other	4
 2022-01-01	Massachusetts	Delta	7
 2022-01-02	Massachusetts	Delta	50
 2022-01-03	Massachusetts	Delta	72
@@ -122,43 +962,47 @@ date	location	variant	sequences
 2022-02-27	Massachusetts	Omicron BA.1	136
 2022-02-28	Massachusetts	Omicron BA.1	303
 2022-03-01	Massachusetts	Omicron BA.1	226
-2022-03-02	Massachusetts	Omicron BA.1	161
-2022-03-03	Massachusetts	Omicron BA.1	98
-2022-03-04	Massachusetts	Omicron BA.1	46
+2022-03-02	Massachusetts	Omicron BA.1	162
+2022-03-03	Massachusetts	Omicron BA.1	99
+2022-03-04	Massachusetts	Omicron BA.1	47
 2022-03-05	Massachusetts	Omicron BA.1	73
 2022-03-06	Massachusetts	Omicron BA.1	75
-2022-03-07	Massachusetts	Omicron BA.1	151
+2022-03-07	Massachusetts	Omicron BA.1	152
 2022-03-08	Massachusetts	Omicron BA.1	136
 2022-03-09	Massachusetts	Omicron BA.1	86
 2022-03-10	Massachusetts	Omicron BA.1	104
-2022-03-11	Massachusetts	Omicron BA.1	109
+2022-03-11	Massachusetts	Omicron BA.1	110
 2022-03-12	Massachusetts	Omicron BA.1	62
 2022-03-13	Massachusetts	Omicron BA.1	51
-2022-03-14	Massachusetts	Omicron BA.1	138
-2022-03-15	Massachusetts	Omicron BA.1	91
-2022-03-16	Massachusetts	Omicron BA.1	116
+2022-03-14	Massachusetts	Omicron BA.1	139
+2022-03-15	Massachusetts	Omicron BA.1	92
+2022-03-16	Massachusetts	Omicron BA.1	117
 2022-03-17	Massachusetts	Omicron BA.1	86
 2022-03-18	Massachusetts	Omicron BA.1	84
 2022-03-19	Massachusetts	Omicron BA.1	52
 2022-03-20	Massachusetts	Omicron BA.1	59
 2022-03-21	Massachusetts	Omicron BA.1	66
-2022-03-22	Massachusetts	Omicron BA.1	64
-2022-03-23	Massachusetts	Omicron BA.1	80
-2022-03-24	Massachusetts	Omicron BA.1	76
-2022-03-25	Massachusetts	Omicron BA.1	56
+2022-03-22	Massachusetts	Omicron BA.1	71
+2022-03-23	Massachusetts	Omicron BA.1	86
+2022-03-24	Massachusetts	Omicron BA.1	78
+2022-03-25	Massachusetts	Omicron BA.1	59
 2022-03-26	Massachusetts	Omicron BA.1	42
-2022-03-27	Massachusetts	Omicron BA.1	26
-2022-03-28	Massachusetts	Omicron BA.1	54
+2022-03-27	Massachusetts	Omicron BA.1	41
+2022-03-28	Massachusetts	Omicron BA.1	56
 2022-03-29	Massachusetts	Omicron BA.1	51
-2022-03-30	Massachusetts	Omicron BA.1	64
-2022-03-31	Massachusetts	Omicron BA.1	41
-2022-04-01	Massachusetts	Omicron BA.1	16
-2022-04-02	Massachusetts	Omicron BA.1	4
-2022-04-03	Massachusetts	Omicron BA.1	2
-2022-04-04	Massachusetts	Omicron BA.1	10
-2022-04-05	Massachusetts	Omicron BA.1	8
-2022-04-06	Massachusetts	Omicron BA.1	6
-2022-04-07	Massachusetts	Omicron BA.1	2
+2022-03-30	Massachusetts	Omicron BA.1	66
+2022-03-31	Massachusetts	Omicron BA.1	57
+2022-04-01	Massachusetts	Omicron BA.1	40
+2022-04-02	Massachusetts	Omicron BA.1	29
+2022-04-03	Massachusetts	Omicron BA.1	12
+2022-04-04	Massachusetts	Omicron BA.1	46
+2022-04-05	Massachusetts	Omicron BA.1	29
+2022-04-06	Massachusetts	Omicron BA.1	26
+2022-04-07	Massachusetts	Omicron BA.1	27
+2022-04-08	Massachusetts	Omicron BA.1	19
+2022-04-09	Massachusetts	Omicron BA.1	9
+2022-04-10	Massachusetts	Omicron BA.1	12
+2022-04-11	Massachusetts	Omicron BA.1	9
 2022-01-01	Massachusetts	Omicron BA.2	1
 2022-01-04	Massachusetts	Omicron BA.2	1
 2022-01-05	Massachusetts	Omicron BA.2	1
@@ -213,7 +1057,7 @@ date	location	variant	sequences
 2022-02-26	Massachusetts	Omicron BA.2	48
 2022-02-27	Massachusetts	Omicron BA.2	35
 2022-02-28	Massachusetts	Omicron BA.2	102
-2022-03-01	Massachusetts	Omicron BA.2	89
+2022-03-01	Massachusetts	Omicron BA.2	90
 2022-03-02	Massachusetts	Omicron BA.2	86
 2022-03-03	Massachusetts	Omicron BA.2	38
 2022-03-04	Massachusetts	Omicron BA.2	39
@@ -233,24 +1077,29 @@ date	location	variant	sequences
 2022-03-18	Massachusetts	Omicron BA.2	106
 2022-03-19	Massachusetts	Omicron BA.2	99
 2022-03-20	Massachusetts	Omicron BA.2	87
-2022-03-21	Massachusetts	Omicron BA.2	136
-2022-03-22	Massachusetts	Omicron BA.2	208
-2022-03-23	Massachusetts	Omicron BA.2	268
-2022-03-24	Massachusetts	Omicron BA.2	256
-2022-03-25	Massachusetts	Omicron BA.2	197
-2022-03-26	Massachusetts	Omicron BA.2	152
-2022-03-27	Massachusetts	Omicron BA.2	104
-2022-03-28	Massachusetts	Omicron BA.2	237
+2022-03-21	Massachusetts	Omicron BA.2	138
+2022-03-22	Massachusetts	Omicron BA.2	215
+2022-03-23	Massachusetts	Omicron BA.2	280
+2022-03-24	Massachusetts	Omicron BA.2	264
+2022-03-25	Massachusetts	Omicron BA.2	208
+2022-03-26	Massachusetts	Omicron BA.2	153
+2022-03-27	Massachusetts	Omicron BA.2	136
+2022-03-28	Massachusetts	Omicron BA.2	243
 2022-03-29	Massachusetts	Omicron BA.2	288
-2022-03-30	Massachusetts	Omicron BA.2	316
-2022-03-31	Massachusetts	Omicron BA.2	221
-2022-04-01	Massachusetts	Omicron BA.2	77
-2022-04-02	Massachusetts	Omicron BA.2	29
-2022-04-03	Massachusetts	Omicron BA.2	32
-2022-04-04	Massachusetts	Omicron BA.2	38
-2022-04-05	Massachusetts	Omicron BA.2	37
-2022-04-06	Massachusetts	Omicron BA.2	25
-2022-04-07	Massachusetts	Omicron BA.2	19
+2022-03-30	Massachusetts	Omicron BA.2	332
+2022-03-31	Massachusetts	Omicron BA.2	280
+2022-04-01	Massachusetts	Omicron BA.2	216
+2022-04-02	Massachusetts	Omicron BA.2	163
+2022-04-03	Massachusetts	Omicron BA.2	159
+2022-04-04	Massachusetts	Omicron BA.2	304
+2022-04-05	Massachusetts	Omicron BA.2	194
+2022-04-06	Massachusetts	Omicron BA.2	168
+2022-04-07	Massachusetts	Omicron BA.2	228
+2022-04-08	Massachusetts	Omicron BA.2	210
+2022-04-09	Massachusetts	Omicron BA.2	99
+2022-04-10	Massachusetts	Omicron BA.2	124
+2022-04-11	Massachusetts	Omicron BA.2	240
+2022-04-12	Massachusetts	Omicron BA.2	3
 2022-02-20	Massachusetts	Omicron BA.2.12.1	1
 2022-03-02	Massachusetts	Omicron BA.2.12.1	1
 2022-03-04	Massachusetts	Omicron BA.2.12.1	1
@@ -272,17 +1121,23 @@ date	location	variant	sequences
 2022-03-23	Massachusetts	Omicron BA.2.12.1	5
 2022-03-24	Massachusetts	Omicron BA.2.12.1	11
 2022-03-25	Massachusetts	Omicron BA.2.12.1	7
-2022-03-26	Massachusetts	Omicron BA.2.12.1	3
-2022-03-27	Massachusetts	Omicron BA.2.12.1	6
+2022-03-26	Massachusetts	Omicron BA.2.12.1	5
+2022-03-27	Massachusetts	Omicron BA.2.12.1	7
 2022-03-28	Massachusetts	Omicron BA.2.12.1	16
-2022-03-29	Massachusetts	Omicron BA.2.12.1	21
-2022-03-30	Massachusetts	Omicron BA.2.12.1	25
-2022-03-31	Massachusetts	Omicron BA.2.12.1	18
-2022-04-01	Massachusetts	Omicron BA.2.12.1	10
-2022-04-04	Massachusetts	Omicron BA.2.12.1	2
-2022-04-05	Massachusetts	Omicron BA.2.12.1	1
-2022-04-06	Massachusetts	Omicron BA.2.12.1	5
-2022-04-07	Massachusetts	Omicron BA.2.12.1	3
+2022-03-29	Massachusetts	Omicron BA.2.12.1	23
+2022-03-30	Massachusetts	Omicron BA.2.12.1	28
+2022-03-31	Massachusetts	Omicron BA.2.12.1	25
+2022-04-01	Massachusetts	Omicron BA.2.12.1	20
+2022-04-02	Massachusetts	Omicron BA.2.12.1	12
+2022-04-03	Massachusetts	Omicron BA.2.12.1	11
+2022-04-04	Massachusetts	Omicron BA.2.12.1	47
+2022-04-05	Massachusetts	Omicron BA.2.12.1	27
+2022-04-06	Massachusetts	Omicron BA.2.12.1	36
+2022-04-07	Massachusetts	Omicron BA.2.12.1	44
+2022-04-08	Massachusetts	Omicron BA.2.12.1	35
+2022-04-09	Massachusetts	Omicron BA.2.12.1	35
+2022-04-10	Massachusetts	Omicron BA.2.12.1	34
+2022-04-11	Massachusetts	Omicron BA.2.12.1	85
 2022-01-02	New Jersey	other	2
 2022-01-04	New Jersey	other	1
 2022-01-10	New Jersey	other	1
@@ -403,20 +1258,24 @@ date	location	variant	sequences
 2022-03-21	New Jersey	Omicron BA.1	48
 2022-03-22	New Jersey	Omicron BA.1	43
 2022-03-23	New Jersey	Omicron BA.1	15
-2022-03-24	New Jersey	Omicron BA.1	18
+2022-03-24	New Jersey	Omicron BA.1	19
 2022-03-25	New Jersey	Omicron BA.1	18
-2022-03-26	New Jersey	Omicron BA.1	27
-2022-03-27	New Jersey	Omicron BA.1	14
+2022-03-26	New Jersey	Omicron BA.1	28
+2022-03-27	New Jersey	Omicron BA.1	16
 2022-03-28	New Jersey	Omicron BA.1	24
-2022-03-29	New Jersey	Omicron BA.1	19
-2022-03-30	New Jersey	Omicron BA.1	11
+2022-03-29	New Jersey	Omicron BA.1	20
+2022-03-30	New Jersey	Omicron BA.1	13
 2022-03-31	New Jersey	Omicron BA.1	11
-2022-04-01	New Jersey	Omicron BA.1	7
-2022-04-02	New Jersey	Omicron BA.1	7
-2022-04-03	New Jersey	Omicron BA.1	2
-2022-04-04	New Jersey	Omicron BA.1	6
-2022-04-05	New Jersey	Omicron BA.1	3
-2022-04-06	New Jersey	Omicron BA.1	1
+2022-04-01	New Jersey	Omicron BA.1	9
+2022-04-02	New Jersey	Omicron BA.1	10
+2022-04-03	New Jersey	Omicron BA.1	5
+2022-04-04	New Jersey	Omicron BA.1	23
+2022-04-05	New Jersey	Omicron BA.1	22
+2022-04-06	New Jersey	Omicron BA.1	5
+2022-04-07	New Jersey	Omicron BA.1	6
+2022-04-08	New Jersey	Omicron BA.1	8
+2022-04-09	New Jersey	Omicron BA.1	1
+2022-04-10	New Jersey	Omicron BA.1	1
 2022-01-02	New Jersey	Omicron BA.2	1
 2022-01-03	New Jersey	Omicron BA.2	1
 2022-01-04	New Jersey	Omicron BA.2	1
@@ -487,24 +1346,27 @@ date	location	variant	sequences
 2022-03-20	New Jersey	Omicron BA.2	90
 2022-03-21	New Jersey	Omicron BA.2	162
 2022-03-22	New Jersey	Omicron BA.2	124
-2022-03-23	New Jersey	Omicron BA.2	80
-2022-03-24	New Jersey	Omicron BA.2	89
-2022-03-25	New Jersey	Omicron BA.2	94
-2022-03-26	New Jersey	Omicron BA.2	95
-2022-03-27	New Jersey	Omicron BA.2	86
-2022-03-28	New Jersey	Omicron BA.2	142
-2022-03-29	New Jersey	Omicron BA.2	78
-2022-03-30	New Jersey	Omicron BA.2	107
-2022-03-31	New Jersey	Omicron BA.2	103
-2022-04-01	New Jersey	Omicron BA.2	105
-2022-04-02	New Jersey	Omicron BA.2	97
-2022-04-03	New Jersey	Omicron BA.2	34
-2022-04-04	New Jersey	Omicron BA.2	76
-2022-04-05	New Jersey	Omicron BA.2	54
-2022-04-06	New Jersey	Omicron BA.2	43
-2022-04-07	New Jersey	Omicron BA.2	11
-2022-04-08	New Jersey	Omicron BA.2	1
-2022-04-09	New Jersey	Omicron BA.2	2
+2022-03-23	New Jersey	Omicron BA.2	82
+2022-03-24	New Jersey	Omicron BA.2	90
+2022-03-25	New Jersey	Omicron BA.2	95
+2022-03-26	New Jersey	Omicron BA.2	97
+2022-03-27	New Jersey	Omicron BA.2	99
+2022-03-28	New Jersey	Omicron BA.2	159
+2022-03-29	New Jersey	Omicron BA.2	88
+2022-03-30	New Jersey	Omicron BA.2	133
+2022-03-31	New Jersey	Omicron BA.2	107
+2022-04-01	New Jersey	Omicron BA.2	158
+2022-04-02	New Jersey	Omicron BA.2	121
+2022-04-03	New Jersey	Omicron BA.2	68
+2022-04-04	New Jersey	Omicron BA.2	253
+2022-04-05	New Jersey	Omicron BA.2	191
+2022-04-06	New Jersey	Omicron BA.2	169
+2022-04-07	New Jersey	Omicron BA.2	111
+2022-04-08	New Jersey	Omicron BA.2	90
+2022-04-09	New Jersey	Omicron BA.2	56
+2022-04-10	New Jersey	Omicron BA.2	42
+2022-04-11	New Jersey	Omicron BA.2	31
+2022-04-12	New Jersey	Omicron BA.2	13
 2022-03-03	New Jersey	Omicron BA.2.12.1	1
 2022-03-11	New Jersey	Omicron BA.2.12.1	2
 2022-03-12	New Jersey	Omicron BA.2.12.1	1
@@ -522,19 +1384,23 @@ date	location	variant	sequences
 2022-03-24	New Jersey	Omicron BA.2.12.1	4
 2022-03-25	New Jersey	Omicron BA.2.12.1	5
 2022-03-26	New Jersey	Omicron BA.2.12.1	11
-2022-03-27	New Jersey	Omicron BA.2.12.1	13
-2022-03-28	New Jersey	Omicron BA.2.12.1	9
-2022-03-29	New Jersey	Omicron BA.2.12.1	15
-2022-03-30	New Jersey	Omicron BA.2.12.1	13
+2022-03-27	New Jersey	Omicron BA.2.12.1	15
+2022-03-28	New Jersey	Omicron BA.2.12.1	10
+2022-03-29	New Jersey	Omicron BA.2.12.1	16
+2022-03-30	New Jersey	Omicron BA.2.12.1	18
 2022-03-31	New Jersey	Omicron BA.2.12.1	12
-2022-04-01	New Jersey	Omicron BA.2.12.1	19
-2022-04-02	New Jersey	Omicron BA.2.12.1	10
-2022-04-03	New Jersey	Omicron BA.2.12.1	4
-2022-04-04	New Jersey	Omicron BA.2.12.1	12
-2022-04-05	New Jersey	Omicron BA.2.12.1	13
-2022-04-06	New Jersey	Omicron BA.2.12.1	10
-2022-04-07	New Jersey	Omicron BA.2.12.1	1
-2022-04-08	New Jersey	Omicron BA.2.12.1	1
+2022-04-01	New Jersey	Omicron BA.2.12.1	25
+2022-04-02	New Jersey	Omicron BA.2.12.1	13
+2022-04-03	New Jersey	Omicron BA.2.12.1	10
+2022-04-04	New Jersey	Omicron BA.2.12.1	39
+2022-04-05	New Jersey	Omicron BA.2.12.1	32
+2022-04-06	New Jersey	Omicron BA.2.12.1	34
+2022-04-07	New Jersey	Omicron BA.2.12.1	28
+2022-04-08	New Jersey	Omicron BA.2.12.1	30
+2022-04-09	New Jersey	Omicron BA.2.12.1	9
+2022-04-10	New Jersey	Omicron BA.2.12.1	9
+2022-04-11	New Jersey	Omicron BA.2.12.1	1
+2022-04-12	New Jersey	Omicron BA.2.12.1	2
 2022-01-01	New York	other	1
 2022-01-02	New York	other	1
 2022-01-07	New York	other	1
@@ -552,14 +1418,16 @@ date	location	variant	sequences
 2022-04-01	New York	other	1
 2022-04-03	New York	other	1
 2022-04-05	New York	other	2
+2022-04-06	New York	other	1
+2022-04-07	New York	other	1
 2022-04-08	New York	other	1
 2022-01-01	New York	Delta	14
 2022-01-02	New York	Delta	22
-2022-01-03	New York	Delta	29
-2022-01-04	New York	Delta	33
+2022-01-03	New York	Delta	30
+2022-01-04	New York	Delta	34
 2022-01-05	New York	Delta	23
 2022-01-06	New York	Delta	36
-2022-01-07	New York	Delta	25
+2022-01-07	New York	Delta	26
 2022-01-08	New York	Delta	22
 2022-01-09	New York	Delta	9
 2022-01-10	New York	Delta	28
@@ -592,35 +1460,38 @@ date	location	variant	sequences
 2022-02-17	New York	Delta	1
 2022-02-24	New York	Delta	1
 2022-02-28	New York	Delta	1
+2022-03-08	New York	Delta	1
+2022-03-10	New York	Delta	1
 2022-03-19	New York	Delta	1
+2022-03-22	New York	Delta	1
 2022-01-01	New York	Omicron BA.1	174
-2022-01-02	New York	Omicron BA.1	784
+2022-01-02	New York	Omicron BA.1	785
 2022-01-03	New York	Omicron BA.1	812
 2022-01-04	New York	Omicron BA.1	1134
 2022-01-05	New York	Omicron BA.1	1333
-2022-01-06	New York	Omicron BA.1	1217
-2022-01-07	New York	Omicron BA.1	921
+2022-01-06	New York	Omicron BA.1	1271
+2022-01-07	New York	Omicron BA.1	930
 2022-01-08	New York	Omicron BA.1	953
 2022-01-09	New York	Omicron BA.1	579
 2022-01-10	New York	Omicron BA.1	982
-2022-01-11	New York	Omicron BA.1	1227
-2022-01-12	New York	Omicron BA.1	1252
-2022-01-13	New York	Omicron BA.1	1202
-2022-01-14	New York	Omicron BA.1	1053
+2022-01-11	New York	Omicron BA.1	1228
+2022-01-12	New York	Omicron BA.1	1253
+2022-01-13	New York	Omicron BA.1	1203
+2022-01-14	New York	Omicron BA.1	1054
 2022-01-15	New York	Omicron BA.1	632
 2022-01-16	New York	Omicron BA.1	423
-2022-01-17	New York	Omicron BA.1	502
-2022-01-18	New York	Omicron BA.1	785
+2022-01-17	New York	Omicron BA.1	503
+2022-01-18	New York	Omicron BA.1	786
 2022-01-19	New York	Omicron BA.1	1164
 2022-01-20	New York	Omicron BA.1	985
 2022-01-21	New York	Omicron BA.1	701
-2022-01-22	New York	Omicron BA.1	459
+2022-01-22	New York	Omicron BA.1	460
 2022-01-23	New York	Omicron BA.1	230
 2022-01-24	New York	Omicron BA.1	509
 2022-01-25	New York	Omicron BA.1	603
-2022-01-26	New York	Omicron BA.1	629
+2022-01-26	New York	Omicron BA.1	630
 2022-01-27	New York	Omicron BA.1	600
-2022-01-28	New York	Omicron BA.1	496
+2022-01-28	New York	Omicron BA.1	497
 2022-01-29	New York	Omicron BA.1	182
 2022-01-30	New York	Omicron BA.1	190
 2022-01-31	New York	Omicron BA.1	397
@@ -633,7 +1504,7 @@ date	location	variant	sequences
 2022-02-07	New York	Omicron BA.1	287
 2022-02-08	New York	Omicron BA.1	311
 2022-02-09	New York	Omicron BA.1	311
-2022-02-10	New York	Omicron BA.1	348
+2022-02-10	New York	Omicron BA.1	349
 2022-02-11	New York	Omicron BA.1	275
 2022-02-12	New York	Omicron BA.1	212
 2022-02-13	New York	Omicron BA.1	173
@@ -648,23 +1519,23 @@ date	location	variant	sequences
 2022-02-22	New York	Omicron BA.1	167
 2022-02-23	New York	Omicron BA.1	232
 2022-02-24	New York	Omicron BA.1	148
-2022-02-25	New York	Omicron BA.1	114
+2022-02-25	New York	Omicron BA.1	116
 2022-02-26	New York	Omicron BA.1	117
-2022-02-27	New York	Omicron BA.1	109
+2022-02-27	New York	Omicron BA.1	110
 2022-02-28	New York	Omicron BA.1	148
-2022-03-01	New York	Omicron BA.1	123
+2022-03-01	New York	Omicron BA.1	124
 2022-03-02	New York	Omicron BA.1	92
-2022-03-03	New York	Omicron BA.1	94
-2022-03-04	New York	Omicron BA.1	83
+2022-03-03	New York	Omicron BA.1	95
+2022-03-04	New York	Omicron BA.1	85
 2022-03-05	New York	Omicron BA.1	64
-2022-03-06	New York	Omicron BA.1	67
-2022-03-07	New York	Omicron BA.1	105
-2022-03-08	New York	Omicron BA.1	102
+2022-03-06	New York	Omicron BA.1	68
+2022-03-07	New York	Omicron BA.1	110
+2022-03-08	New York	Omicron BA.1	105
 2022-03-09	New York	Omicron BA.1	124
-2022-03-10	New York	Omicron BA.1	95
-2022-03-11	New York	Omicron BA.1	91
+2022-03-10	New York	Omicron BA.1	99
+2022-03-11	New York	Omicron BA.1	94
 2022-03-12	New York	Omicron BA.1	48
-2022-03-13	New York	Omicron BA.1	54
+2022-03-13	New York	Omicron BA.1	59
 2022-03-14	New York	Omicron BA.1	114
 2022-03-15	New York	Omicron BA.1	85
 2022-03-16	New York	Omicron BA.1	85
@@ -674,25 +1545,27 @@ date	location	variant	sequences
 2022-03-20	New York	Omicron BA.1	50
 2022-03-21	New York	Omicron BA.1	97
 2022-03-22	New York	Omicron BA.1	88
-2022-03-23	New York	Omicron BA.1	62
-2022-03-24	New York	Omicron BA.1	54
-2022-03-25	New York	Omicron BA.1	41
-2022-03-26	New York	Omicron BA.1	35
-2022-03-27	New York	Omicron BA.1	29
-2022-03-28	New York	Omicron BA.1	34
-2022-03-29	New York	Omicron BA.1	42
-2022-03-30	New York	Omicron BA.1	29
-2022-03-31	New York	Omicron BA.1	30
-2022-04-01	New York	Omicron BA.1	22
+2022-03-23	New York	Omicron BA.1	63
+2022-03-24	New York	Omicron BA.1	55
+2022-03-25	New York	Omicron BA.1	43
+2022-03-26	New York	Omicron BA.1	37
+2022-03-27	New York	Omicron BA.1	30
+2022-03-28	New York	Omicron BA.1	48
+2022-03-29	New York	Omicron BA.1	48
+2022-03-30	New York	Omicron BA.1	32
+2022-03-31	New York	Omicron BA.1	33
+2022-04-01	New York	Omicron BA.1	30
 2022-04-02	New York	Omicron BA.1	13
-2022-04-03	New York	Omicron BA.1	16
-2022-04-04	New York	Omicron BA.1	24
-2022-04-05	New York	Omicron BA.1	21
-2022-04-06	New York	Omicron BA.1	14
-2022-04-07	New York	Omicron BA.1	9
-2022-04-08	New York	Omicron BA.1	8
-2022-04-09	New York	Omicron BA.1	5
-2022-04-10	New York	Omicron BA.1	5
+2022-04-03	New York	Omicron BA.1	27
+2022-04-04	New York	Omicron BA.1	37
+2022-04-05	New York	Omicron BA.1	34
+2022-04-06	New York	Omicron BA.1	23
+2022-04-07	New York	Omicron BA.1	13
+2022-04-08	New York	Omicron BA.1	12
+2022-04-09	New York	Omicron BA.1	6
+2022-04-10	New York	Omicron BA.1	10
+2022-04-11	New York	Omicron BA.1	1
+2022-04-13	New York	Omicron BA.1	1
 2022-01-06	New York	Omicron BA.2	1
 2022-01-07	New York	Omicron BA.2	1
 2022-01-08	New York	Omicron BA.2	1
@@ -748,43 +1621,47 @@ date	location	variant	sequences
 2022-03-02	New York	Omicron BA.2	49
 2022-03-03	New York	Omicron BA.2	30
 2022-03-04	New York	Omicron BA.2	30
-2022-03-05	New York	Omicron BA.2	30
+2022-03-05	New York	Omicron BA.2	32
 2022-03-06	New York	Omicron BA.2	31
-2022-03-07	New York	Omicron BA.2	87
-2022-03-08	New York	Omicron BA.2	85
-2022-03-09	New York	Omicron BA.2	96
-2022-03-10	New York	Omicron BA.2	87
-2022-03-11	New York	Omicron BA.2	79
+2022-03-07	New York	Omicron BA.2	90
+2022-03-08	New York	Omicron BA.2	86
+2022-03-09	New York	Omicron BA.2	98
+2022-03-10	New York	Omicron BA.2	90
+2022-03-11	New York	Omicron BA.2	80
 2022-03-12	New York	Omicron BA.2	43
 2022-03-13	New York	Omicron BA.2	66
 2022-03-14	New York	Omicron BA.2	160
 2022-03-15	New York	Omicron BA.2	134
 2022-03-16	New York	Omicron BA.2	163
 2022-03-17	New York	Omicron BA.2	135
-2022-03-18	New York	Omicron BA.2	147
-2022-03-19	New York	Omicron BA.2	114
+2022-03-18	New York	Omicron BA.2	148
+2022-03-19	New York	Omicron BA.2	116
 2022-03-20	New York	Omicron BA.2	138
-2022-03-21	New York	Omicron BA.2	252
-2022-03-22	New York	Omicron BA.2	234
-2022-03-23	New York	Omicron BA.2	239
-2022-03-24	New York	Omicron BA.2	163
-2022-03-25	New York	Omicron BA.2	209
-2022-03-26	New York	Omicron BA.2	173
-2022-03-27	New York	Omicron BA.2	179
-2022-03-28	New York	Omicron BA.2	234
-2022-03-29	New York	Omicron BA.2	212
-2022-03-30	New York	Omicron BA.2	229
-2022-03-31	New York	Omicron BA.2	228
-2022-04-01	New York	Omicron BA.2	166
-2022-04-02	New York	Omicron BA.2	149
-2022-04-03	New York	Omicron BA.2	127
-2022-04-04	New York	Omicron BA.2	241
-2022-04-05	New York	Omicron BA.2	216
-2022-04-06	New York	Omicron BA.2	199
-2022-04-07	New York	Omicron BA.2	156
-2022-04-08	New York	Omicron BA.2	162
-2022-04-09	New York	Omicron BA.2	112
-2022-04-10	New York	Omicron BA.2	77
+2022-03-21	New York	Omicron BA.2	253
+2022-03-22	New York	Omicron BA.2	239
+2022-03-23	New York	Omicron BA.2	243
+2022-03-24	New York	Omicron BA.2	164
+2022-03-25	New York	Omicron BA.2	210
+2022-03-26	New York	Omicron BA.2	179
+2022-03-27	New York	Omicron BA.2	192
+2022-03-28	New York	Omicron BA.2	286
+2022-03-29	New York	Omicron BA.2	246
+2022-03-30	New York	Omicron BA.2	243
+2022-03-31	New York	Omicron BA.2	243
+2022-04-01	New York	Omicron BA.2	228
+2022-04-02	New York	Omicron BA.2	180
+2022-04-03	New York	Omicron BA.2	160
+2022-04-04	New York	Omicron BA.2	387
+2022-04-05	New York	Omicron BA.2	344
+2022-04-06	New York	Omicron BA.2	292
+2022-04-07	New York	Omicron BA.2	252
+2022-04-08	New York	Omicron BA.2	228
+2022-04-09	New York	Omicron BA.2	136
+2022-04-10	New York	Omicron BA.2	101
+2022-04-11	New York	Omicron BA.2	11
+2022-04-12	New York	Omicron BA.2	2
+2022-04-13	New York	Omicron BA.2	3
+2022-04-14	New York	Omicron BA.2	1
 2022-02-09	New York	Omicron BA.2.12.1	1
 2022-02-10	New York	Omicron BA.2.12.1	1
 2022-02-13	New York	Omicron BA.2.12.1	1
@@ -817,45 +1694,52 @@ date	location	variant	sequences
 2022-03-19	New York	Omicron BA.2.12.1	30
 2022-03-20	New York	Omicron BA.2.12.1	27
 2022-03-21	New York	Omicron BA.2.12.1	59
-2022-03-22	New York	Omicron BA.2.12.1	67
+2022-03-22	New York	Omicron BA.2.12.1	68
 2022-03-23	New York	Omicron BA.2.12.1	39
 2022-03-24	New York	Omicron BA.2.12.1	56
 2022-03-25	New York	Omicron BA.2.12.1	61
-2022-03-26	New York	Omicron BA.2.12.1	54
-2022-03-27	New York	Omicron BA.2.12.1	55
-2022-03-28	New York	Omicron BA.2.12.1	86
-2022-03-29	New York	Omicron BA.2.12.1	116
-2022-03-30	New York	Omicron BA.2.12.1	92
-2022-03-31	New York	Omicron BA.2.12.1	101
-2022-04-01	New York	Omicron BA.2.12.1	55
-2022-04-02	New York	Omicron BA.2.12.1	61
-2022-04-03	New York	Omicron BA.2.12.1	40
-2022-04-04	New York	Omicron BA.2.12.1	100
-2022-04-05	New York	Omicron BA.2.12.1	110
-2022-04-06	New York	Omicron BA.2.12.1	66
-2022-04-07	New York	Omicron BA.2.12.1	51
-2022-04-08	New York	Omicron BA.2.12.1	50
-2022-04-09	New York	Omicron BA.2.12.1	27
-2022-04-10	New York	Omicron BA.2.12.1	26
+2022-03-26	New York	Omicron BA.2.12.1	57
+2022-03-27	New York	Omicron BA.2.12.1	56
+2022-03-28	New York	Omicron BA.2.12.1	106
+2022-03-29	New York	Omicron BA.2.12.1	119
+2022-03-30	New York	Omicron BA.2.12.1	96
+2022-03-31	New York	Omicron BA.2.12.1	105
+2022-04-01	New York	Omicron BA.2.12.1	74
+2022-04-02	New York	Omicron BA.2.12.1	79
+2022-04-03	New York	Omicron BA.2.12.1	69
+2022-04-04	New York	Omicron BA.2.12.1	184
+2022-04-05	New York	Omicron BA.2.12.1	173
+2022-04-06	New York	Omicron BA.2.12.1	137
+2022-04-07	New York	Omicron BA.2.12.1	140
+2022-04-08	New York	Omicron BA.2.12.1	121
+2022-04-09	New York	Omicron BA.2.12.1	42
+2022-04-10	New York	Omicron BA.2.12.1	51
+2022-04-11	New York	Omicron BA.2.12.1	34
+2022-04-12	New York	Omicron BA.2.12.1	8
+2022-04-13	New York	Omicron BA.2.12.1	2
 2022-01-01	North Carolina	other	2
 2022-01-02	North Carolina	other	2
 2022-01-03	North Carolina	other	1
 2022-01-05	North Carolina	other	1
+2022-01-07	North Carolina	other	1
 2022-01-08	North Carolina	other	1
 2022-01-15	North Carolina	other	1
 2022-01-23	North Carolina	other	1
+2022-03-29	North Carolina	other	1
 2022-03-30	North Carolina	other	1
 2022-04-06	North Carolina	other	1
+2022-04-08	North Carolina	other	1
+2022-04-11	North Carolina	other	1
 2022-01-01	North Carolina	Delta	24
 2022-01-02	North Carolina	Delta	16
 2022-01-03	North Carolina	Delta	35
 2022-01-04	North Carolina	Delta	47
 2022-01-05	North Carolina	Delta	17
 2022-01-06	North Carolina	Delta	5
-2022-01-07	North Carolina	Delta	18
-2022-01-08	North Carolina	Delta	16
-2022-01-09	North Carolina	Delta	7
-2022-01-10	North Carolina	Delta	17
+2022-01-07	North Carolina	Delta	30
+2022-01-08	North Carolina	Delta	19
+2022-01-09	North Carolina	Delta	22
+2022-01-10	North Carolina	Delta	28
 2022-01-11	North Carolina	Delta	7
 2022-01-12	North Carolina	Delta	2
 2022-01-13	North Carolina	Delta	6
@@ -884,7 +1768,7 @@ date	location	variant	sequences
 2022-03-09	North Carolina	Delta	1
 2022-03-16	North Carolina	Delta	2
 2022-03-18	North Carolina	Delta	1
-2022-04-06	North Carolina	Delta	1
+2022-04-06	North Carolina	Delta	2
 2022-01-01	North Carolina	Omicron BA.1	152
 2022-01-02	North Carolina	Omicron BA.1	129
 2022-01-03	North Carolina	Omicron BA.1	381
@@ -892,18 +1776,18 @@ date	location	variant	sequences
 2022-01-05	North Carolina	Omicron BA.1	230
 2022-01-06	North Carolina	Omicron BA.1	132
 2022-01-07	North Carolina	Omicron BA.1	230
-2022-01-08	North Carolina	Omicron BA.1	204
-2022-01-09	North Carolina	Omicron BA.1	201
-2022-01-10	North Carolina	Omicron BA.1	361
-2022-01-11	North Carolina	Omicron BA.1	274
-2022-01-12	North Carolina	Omicron BA.1	191
-2022-01-13	North Carolina	Omicron BA.1	136
+2022-01-08	North Carolina	Omicron BA.1	205
+2022-01-09	North Carolina	Omicron BA.1	202
+2022-01-10	North Carolina	Omicron BA.1	363
+2022-01-11	North Carolina	Omicron BA.1	278
+2022-01-12	North Carolina	Omicron BA.1	195
+2022-01-13	North Carolina	Omicron BA.1	139
 2022-01-14	North Carolina	Omicron BA.1	279
 2022-01-15	North Carolina	Omicron BA.1	161
 2022-01-16	North Carolina	Omicron BA.1	73
 2022-01-17	North Carolina	Omicron BA.1	252
-2022-01-18	North Carolina	Omicron BA.1	630
-2022-01-19	North Carolina	Omicron BA.1	886
+2022-01-18	North Carolina	Omicron BA.1	640
+2022-01-19	North Carolina	Omicron BA.1	897
 2022-01-20	North Carolina	Omicron BA.1	289
 2022-01-21	North Carolina	Omicron BA.1	156
 2022-01-22	North Carolina	Omicron BA.1	192
@@ -919,45 +1803,45 @@ date	location	variant	sequences
 2022-02-01	North Carolina	Omicron BA.1	546
 2022-02-02	North Carolina	Omicron BA.1	507
 2022-02-03	North Carolina	Omicron BA.1	532
-2022-02-04	North Carolina	Omicron BA.1	488
-2022-02-05	North Carolina	Omicron BA.1	202
-2022-02-06	North Carolina	Omicron BA.1	181
+2022-02-04	North Carolina	Omicron BA.1	492
+2022-02-05	North Carolina	Omicron BA.1	203
+2022-02-06	North Carolina	Omicron BA.1	184
 2022-02-07	North Carolina	Omicron BA.1	541
-2022-02-08	North Carolina	Omicron BA.1	510
-2022-02-09	North Carolina	Omicron BA.1	456
-2022-02-10	North Carolina	Omicron BA.1	452
-2022-02-11	North Carolina	Omicron BA.1	457
+2022-02-08	North Carolina	Omicron BA.1	514
+2022-02-09	North Carolina	Omicron BA.1	461
+2022-02-10	North Carolina	Omicron BA.1	455
+2022-02-11	North Carolina	Omicron BA.1	459
 2022-02-12	North Carolina	Omicron BA.1	282
 2022-02-13	North Carolina	Omicron BA.1	269
-2022-02-14	North Carolina	Omicron BA.1	527
-2022-02-15	North Carolina	Omicron BA.1	361
-2022-02-16	North Carolina	Omicron BA.1	347
-2022-02-17	North Carolina	Omicron BA.1	289
+2022-02-14	North Carolina	Omicron BA.1	535
+2022-02-15	North Carolina	Omicron BA.1	363
+2022-02-16	North Carolina	Omicron BA.1	348
+2022-02-17	North Carolina	Omicron BA.1	291
 2022-02-18	North Carolina	Omicron BA.1	206
 2022-02-19	North Carolina	Omicron BA.1	102
 2022-02-20	North Carolina	Omicron BA.1	131
-2022-02-21	North Carolina	Omicron BA.1	320
-2022-02-22	North Carolina	Omicron BA.1	230
-2022-02-23	North Carolina	Omicron BA.1	176
+2022-02-21	North Carolina	Omicron BA.1	321
+2022-02-22	North Carolina	Omicron BA.1	231
+2022-02-23	North Carolina	Omicron BA.1	178
 2022-02-24	North Carolina	Omicron BA.1	136
 2022-02-25	North Carolina	Omicron BA.1	148
 2022-02-26	North Carolina	Omicron BA.1	88
-2022-02-27	North Carolina	Omicron BA.1	89
+2022-02-27	North Carolina	Omicron BA.1	91
 2022-02-28	North Carolina	Omicron BA.1	181
-2022-03-01	North Carolina	Omicron BA.1	106
-2022-03-02	North Carolina	Omicron BA.1	83
+2022-03-01	North Carolina	Omicron BA.1	108
+2022-03-02	North Carolina	Omicron BA.1	84
 2022-03-03	North Carolina	Omicron BA.1	125
 2022-03-04	North Carolina	Omicron BA.1	91
 2022-03-05	North Carolina	Omicron BA.1	61
-2022-03-06	North Carolina	Omicron BA.1	58
+2022-03-06	North Carolina	Omicron BA.1	59
 2022-03-07	North Carolina	Omicron BA.1	95
-2022-03-08	North Carolina	Omicron BA.1	53
-2022-03-09	North Carolina	Omicron BA.1	39
+2022-03-08	North Carolina	Omicron BA.1	54
+2022-03-09	North Carolina	Omicron BA.1	41
 2022-03-10	North Carolina	Omicron BA.1	48
-2022-03-11	North Carolina	Omicron BA.1	36
+2022-03-11	North Carolina	Omicron BA.1	37
 2022-03-12	North Carolina	Omicron BA.1	27
 2022-03-13	North Carolina	Omicron BA.1	16
-2022-03-14	North Carolina	Omicron BA.1	53
+2022-03-14	North Carolina	Omicron BA.1	54
 2022-03-15	North Carolina	Omicron BA.1	43
 2022-03-16	North Carolina	Omicron BA.1	55
 2022-03-17	North Carolina	Omicron BA.1	33
@@ -968,20 +1852,21 @@ date	location	variant	sequences
 2022-03-22	North Carolina	Omicron BA.1	20
 2022-03-23	North Carolina	Omicron BA.1	20
 2022-03-24	North Carolina	Omicron BA.1	13
-2022-03-25	North Carolina	Omicron BA.1	8
+2022-03-25	North Carolina	Omicron BA.1	9
 2022-03-26	North Carolina	Omicron BA.1	7
-2022-03-27	North Carolina	Omicron BA.1	10
-2022-03-28	North Carolina	Omicron BA.1	17
-2022-03-29	North Carolina	Omicron BA.1	10
-2022-03-30	North Carolina	Omicron BA.1	5
+2022-03-27	North Carolina	Omicron BA.1	11
+2022-03-28	North Carolina	Omicron BA.1	21
+2022-03-29	North Carolina	Omicron BA.1	11
+2022-03-30	North Carolina	Omicron BA.1	7
 2022-03-31	North Carolina	Omicron BA.1	19
-2022-04-01	North Carolina	Omicron BA.1	7
-2022-04-02	North Carolina	Omicron BA.1	4
-2022-04-03	North Carolina	Omicron BA.1	3
-2022-04-04	North Carolina	Omicron BA.1	10
-2022-04-05	North Carolina	Omicron BA.1	5
-2022-04-06	North Carolina	Omicron BA.1	2
-2022-04-07	North Carolina	Omicron BA.1	3
+2022-04-01	North Carolina	Omicron BA.1	8
+2022-04-02	North Carolina	Omicron BA.1	10
+2022-04-03	North Carolina	Omicron BA.1	8
+2022-04-04	North Carolina	Omicron BA.1	13
+2022-04-05	North Carolina	Omicron BA.1	7
+2022-04-06	North Carolina	Omicron BA.1	7
+2022-04-07	North Carolina	Omicron BA.1	7
+2022-04-08	North Carolina	Omicron BA.1	8
 2022-01-05	North Carolina	Omicron BA.2	1
 2022-01-07	North Carolina	Omicron BA.2	1
 2022-01-14	North Carolina	Omicron BA.2	3
@@ -1005,7 +1890,7 @@ date	location	variant	sequences
 2022-02-06	North Carolina	Omicron BA.2	1
 2022-02-07	North Carolina	Omicron BA.2	4
 2022-02-08	North Carolina	Omicron BA.2	1
-2022-02-09	North Carolina	Omicron BA.2	4
+2022-02-09	North Carolina	Omicron BA.2	5
 2022-02-10	North Carolina	Omicron BA.2	3
 2022-02-11	North Carolina	Omicron BA.2	3
 2022-02-12	North Carolina	Omicron BA.2	3
@@ -1033,7 +1918,7 @@ date	location	variant	sequences
 2022-03-06	North Carolina	Omicron BA.2	6
 2022-03-07	North Carolina	Omicron BA.2	17
 2022-03-08	North Carolina	Omicron BA.2	13
-2022-03-09	North Carolina	Omicron BA.2	7
+2022-03-09	North Carolina	Omicron BA.2	8
 2022-03-10	North Carolina	Omicron BA.2	6
 2022-03-11	North Carolina	Omicron BA.2	9
 2022-03-12	North Carolina	Omicron BA.2	5
@@ -1051,19 +1936,24 @@ date	location	variant	sequences
 2022-03-24	North Carolina	Omicron BA.2	23
 2022-03-25	North Carolina	Omicron BA.2	20
 2022-03-26	North Carolina	Omicron BA.2	21
-2022-03-27	North Carolina	Omicron BA.2	18
-2022-03-28	North Carolina	Omicron BA.2	21
-2022-03-29	North Carolina	Omicron BA.2	22
-2022-03-30	North Carolina	Omicron BA.2	28
-2022-03-31	North Carolina	Omicron BA.2	26
-2022-04-01	North Carolina	Omicron BA.2	23
-2022-04-02	North Carolina	Omicron BA.2	6
-2022-04-03	North Carolina	Omicron BA.2	11
-2022-04-04	North Carolina	Omicron BA.2	20
-2022-04-05	North Carolina	Omicron BA.2	25
-2022-04-06	North Carolina	Omicron BA.2	16
-2022-04-07	North Carolina	Omicron BA.2	6
-2022-04-08	North Carolina	Omicron BA.2	4
+2022-03-27	North Carolina	Omicron BA.2	21
+2022-03-28	North Carolina	Omicron BA.2	30
+2022-03-29	North Carolina	Omicron BA.2	34
+2022-03-30	North Carolina	Omicron BA.2	32
+2022-03-31	North Carolina	Omicron BA.2	35
+2022-04-01	North Carolina	Omicron BA.2	35
+2022-04-02	North Carolina	Omicron BA.2	24
+2022-04-03	North Carolina	Omicron BA.2	31
+2022-04-04	North Carolina	Omicron BA.2	43
+2022-04-05	North Carolina	Omicron BA.2	37
+2022-04-06	North Carolina	Omicron BA.2	26
+2022-04-07	North Carolina	Omicron BA.2	41
+2022-04-08	North Carolina	Omicron BA.2	50
+2022-04-09	North Carolina	Omicron BA.2	15
+2022-04-10	North Carolina	Omicron BA.2	12
+2022-04-11	North Carolina	Omicron BA.2	13
+2022-04-12	North Carolina	Omicron BA.2	8
+2022-04-13	North Carolina	Omicron BA.2	11
 2022-03-07	North Carolina	Omicron BA.2.12.1	1
 2022-03-14	North Carolina	Omicron BA.2.12.1	2
 2022-03-17	North Carolina	Omicron BA.2.12.1	2
@@ -1076,17 +1966,22 @@ date	location	variant	sequences
 2022-03-26	North Carolina	Omicron BA.2.12.1	4
 2022-03-27	North Carolina	Omicron BA.2.12.1	2
 2022-03-28	North Carolina	Omicron BA.2.12.1	7
-2022-03-29	North Carolina	Omicron BA.2.12.1	10
-2022-03-30	North Carolina	Omicron BA.2.12.1	8
-2022-03-31	North Carolina	Omicron BA.2.12.1	5
-2022-04-01	North Carolina	Omicron BA.2.12.1	5
-2022-04-02	North Carolina	Omicron BA.2.12.1	3
-2022-04-03	North Carolina	Omicron BA.2.12.1	6
-2022-04-04	North Carolina	Omicron BA.2.12.1	11
-2022-04-05	North Carolina	Omicron BA.2.12.1	7
-2022-04-06	North Carolina	Omicron BA.2.12.1	11
-2022-04-07	North Carolina	Omicron BA.2.12.1	2
-2022-04-08	North Carolina	Omicron BA.2.12.1	2
+2022-03-29	North Carolina	Omicron BA.2.12.1	15
+2022-03-30	North Carolina	Omicron BA.2.12.1	9
+2022-03-31	North Carolina	Omicron BA.2.12.1	6
+2022-04-01	North Carolina	Omicron BA.2.12.1	7
+2022-04-02	North Carolina	Omicron BA.2.12.1	10
+2022-04-03	North Carolina	Omicron BA.2.12.1	9
+2022-04-04	North Carolina	Omicron BA.2.12.1	20
+2022-04-05	North Carolina	Omicron BA.2.12.1	11
+2022-04-06	North Carolina	Omicron BA.2.12.1	16
+2022-04-07	North Carolina	Omicron BA.2.12.1	12
+2022-04-08	North Carolina	Omicron BA.2.12.1	33
+2022-04-09	North Carolina	Omicron BA.2.12.1	9
+2022-04-10	North Carolina	Omicron BA.2.12.1	5
+2022-04-11	North Carolina	Omicron BA.2.12.1	11
+2022-04-12	North Carolina	Omicron BA.2.12.1	4
+2022-04-13	North Carolina	Omicron BA.2.12.1	5
 2022-01-11	Pennsylvania	other	1
 2022-01-19	Pennsylvania	other	1
 2022-01-26	Pennsylvania	other	1
@@ -1131,7 +2026,7 @@ date	location	variant	sequences
 2022-01-03	Pennsylvania	Omicron BA.1	83
 2022-01-04	Pennsylvania	Omicron BA.1	323
 2022-01-05	Pennsylvania	Omicron BA.1	54
-2022-01-06	Pennsylvania	Omicron BA.1	62
+2022-01-06	Pennsylvania	Omicron BA.1	63
 2022-01-07	Pennsylvania	Omicron BA.1	55
 2022-01-08	Pennsylvania	Omicron BA.1	54
 2022-01-09	Pennsylvania	Omicron BA.1	113
@@ -1211,18 +2106,20 @@ date	location	variant	sequences
 2022-03-24	Pennsylvania	Omicron BA.1	20
 2022-03-25	Pennsylvania	Omicron BA.1	20
 2022-03-26	Pennsylvania	Omicron BA.1	17
-2022-03-27	Pennsylvania	Omicron BA.1	12
-2022-03-28	Pennsylvania	Omicron BA.1	13
-2022-03-29	Pennsylvania	Omicron BA.1	7
-2022-03-30	Pennsylvania	Omicron BA.1	7
-2022-03-31	Pennsylvania	Omicron BA.1	8
-2022-04-01	Pennsylvania	Omicron BA.1	6
-2022-04-02	Pennsylvania	Omicron BA.1	4
-2022-04-03	Pennsylvania	Omicron BA.1	1
-2022-04-04	Pennsylvania	Omicron BA.1	2
-2022-04-05	Pennsylvania	Omicron BA.1	2
-2022-04-06	Pennsylvania	Omicron BA.1	2
-2022-04-07	Pennsylvania	Omicron BA.1	3
+2022-03-27	Pennsylvania	Omicron BA.1	14
+2022-03-28	Pennsylvania	Omicron BA.1	19
+2022-03-29	Pennsylvania	Omicron BA.1	12
+2022-03-30	Pennsylvania	Omicron BA.1	13
+2022-03-31	Pennsylvania	Omicron BA.1	13
+2022-04-01	Pennsylvania	Omicron BA.1	10
+2022-04-02	Pennsylvania	Omicron BA.1	7
+2022-04-03	Pennsylvania	Omicron BA.1	3
+2022-04-04	Pennsylvania	Omicron BA.1	10
+2022-04-05	Pennsylvania	Omicron BA.1	4
+2022-04-06	Pennsylvania	Omicron BA.1	4
+2022-04-07	Pennsylvania	Omicron BA.1	4
+2022-04-08	Pennsylvania	Omicron BA.1	1
+2022-04-09	Pennsylvania	Omicron BA.1	1
 2022-01-09	Pennsylvania	Omicron BA.2	1
 2022-01-14	Pennsylvania	Omicron BA.2	1
 2022-01-18	Pennsylvania	Omicron BA.2	1
@@ -1288,20 +2185,24 @@ date	location	variant	sequences
 2022-03-23	Pennsylvania	Omicron BA.2	55
 2022-03-24	Pennsylvania	Omicron BA.2	46
 2022-03-25	Pennsylvania	Omicron BA.2	50
-2022-03-26	Pennsylvania	Omicron BA.2	42
-2022-03-27	Pennsylvania	Omicron BA.2	51
-2022-03-28	Pennsylvania	Omicron BA.2	54
-2022-03-29	Pennsylvania	Omicron BA.2	34
-2022-03-30	Pennsylvania	Omicron BA.2	37
-2022-03-31	Pennsylvania	Omicron BA.2	30
-2022-04-01	Pennsylvania	Omicron BA.2	20
-2022-04-02	Pennsylvania	Omicron BA.2	20
-2022-04-03	Pennsylvania	Omicron BA.2	7
-2022-04-04	Pennsylvania	Omicron BA.2	23
-2022-04-05	Pennsylvania	Omicron BA.2	17
-2022-04-06	Pennsylvania	Omicron BA.2	6
-2022-04-07	Pennsylvania	Omicron BA.2	16
-2022-04-08	Pennsylvania	Omicron BA.2	5
+2022-03-26	Pennsylvania	Omicron BA.2	44
+2022-03-27	Pennsylvania	Omicron BA.2	52
+2022-03-28	Pennsylvania	Omicron BA.2	86
+2022-03-29	Pennsylvania	Omicron BA.2	41
+2022-03-30	Pennsylvania	Omicron BA.2	55
+2022-03-31	Pennsylvania	Omicron BA.2	60
+2022-04-01	Pennsylvania	Omicron BA.2	58
+2022-04-02	Pennsylvania	Omicron BA.2	52
+2022-04-03	Pennsylvania	Omicron BA.2	42
+2022-04-04	Pennsylvania	Omicron BA.2	67
+2022-04-05	Pennsylvania	Omicron BA.2	54
+2022-04-06	Pennsylvania	Omicron BA.2	27
+2022-04-07	Pennsylvania	Omicron BA.2	29
+2022-04-08	Pennsylvania	Omicron BA.2	29
+2022-04-09	Pennsylvania	Omicron BA.2	7
+2022-04-10	Pennsylvania	Omicron BA.2	7
+2022-04-11	Pennsylvania	Omicron BA.2	4
+2022-04-12	Pennsylvania	Omicron BA.2	1
 2022-03-09	Pennsylvania	Omicron BA.2.12.1	1
 2022-03-10	Pennsylvania	Omicron BA.2.12.1	1
 2022-03-12	Pennsylvania	Omicron BA.2.12.1	1
@@ -1319,13 +2220,269 @@ date	location	variant	sequences
 2022-03-26	Pennsylvania	Omicron BA.2.12.1	6
 2022-03-27	Pennsylvania	Omicron BA.2.12.1	2
 2022-03-28	Pennsylvania	Omicron BA.2.12.1	7
-2022-03-29	Pennsylvania	Omicron BA.2.12.1	3
-2022-03-30	Pennsylvania	Omicron BA.2.12.1	7
-2022-03-31	Pennsylvania	Omicron BA.2.12.1	7
-2022-04-01	Pennsylvania	Omicron BA.2.12.1	5
-2022-04-02	Pennsylvania	Omicron BA.2.12.1	1
-2022-04-03	Pennsylvania	Omicron BA.2.12.1	1
-2022-04-04	Pennsylvania	Omicron BA.2.12.1	1
-2022-04-05	Pennsylvania	Omicron BA.2.12.1	2
-2022-04-06	Pennsylvania	Omicron BA.2.12.1	5
-2022-04-07	Pennsylvania	Omicron BA.2.12.1	1
+2022-03-29	Pennsylvania	Omicron BA.2.12.1	5
+2022-03-30	Pennsylvania	Omicron BA.2.12.1	8
+2022-03-31	Pennsylvania	Omicron BA.2.12.1	9
+2022-04-01	Pennsylvania	Omicron BA.2.12.1	9
+2022-04-02	Pennsylvania	Omicron BA.2.12.1	6
+2022-04-03	Pennsylvania	Omicron BA.2.12.1	9
+2022-04-04	Pennsylvania	Omicron BA.2.12.1	16
+2022-04-05	Pennsylvania	Omicron BA.2.12.1	9
+2022-04-06	Pennsylvania	Omicron BA.2.12.1	17
+2022-04-07	Pennsylvania	Omicron BA.2.12.1	3
+2022-04-08	Pennsylvania	Omicron BA.2.12.1	4
+2022-04-09	Pennsylvania	Omicron BA.2.12.1	2
+2022-04-10	Pennsylvania	Omicron BA.2.12.1	3
+2022-04-11	Pennsylvania	Omicron BA.2.12.1	1
+2022-02-03	Vermont	other	1
+2022-02-11	Vermont	other	1
+2022-02-12	Vermont	other	2
+2022-02-14	Vermont	other	3
+2022-02-16	Vermont	other	2
+2022-02-17	Vermont	other	2
+2022-02-20	Vermont	other	2
+2022-02-21	Vermont	other	1
+2022-02-23	Vermont	other	1
+2022-02-25	Vermont	other	1
+2022-03-01	Vermont	other	1
+2022-03-02	Vermont	other	2
+2022-03-05	Vermont	other	1
+2022-03-07	Vermont	other	1
+2022-03-08	Vermont	other	1
+2022-03-10	Vermont	other	1
+2022-03-11	Vermont	other	1
+2022-03-14	Vermont	other	1
+2022-03-21	Vermont	other	7
+2022-03-22	Vermont	other	1
+2022-03-23	Vermont	other	3
+2022-03-29	Vermont	other	1
+2022-03-30	Vermont	other	1
+2022-03-31	Vermont	other	1
+2022-04-07	Vermont	other	1
+2022-01-03	Vermont	Delta	27
+2022-01-04	Vermont	Delta	6
+2022-01-05	Vermont	Delta	3
+2022-01-06	Vermont	Delta	7
+2022-01-07	Vermont	Delta	7
+2022-01-08	Vermont	Delta	9
+2022-01-09	Vermont	Delta	1
+2022-01-10	Vermont	Delta	1
+2022-01-11	Vermont	Delta	9
+2022-01-12	Vermont	Delta	2
+2022-01-13	Vermont	Delta	2
+2022-01-14	Vermont	Delta	6
+2022-01-15	Vermont	Delta	4
+2022-01-18	Vermont	Delta	2
+2022-01-20	Vermont	Delta	2
+2022-01-21	Vermont	Delta	1
+2022-01-22	Vermont	Delta	3
+2022-01-23	Vermont	Delta	1
+2022-01-24	Vermont	Delta	1
+2022-01-28	Vermont	Delta	1
+2022-01-31	Vermont	Delta	1
+2022-02-05	Vermont	Delta	3
+2022-02-07	Vermont	Delta	1
+2022-02-08	Vermont	Delta	1
+2022-02-21	Vermont	Delta	1
+2022-03-02	Vermont	Delta	1
+2022-01-02	Vermont	Omicron BA.1	4
+2022-01-03	Vermont	Omicron BA.1	242
+2022-01-04	Vermont	Omicron BA.1	97
+2022-01-05	Vermont	Omicron BA.1	59
+2022-01-06	Vermont	Omicron BA.1	85
+2022-01-07	Vermont	Omicron BA.1	177
+2022-01-08	Vermont	Omicron BA.1	245
+2022-01-09	Vermont	Omicron BA.1	57
+2022-01-10	Vermont	Omicron BA.1	28
+2022-01-11	Vermont	Omicron BA.1	448
+2022-01-12	Vermont	Omicron BA.1	88
+2022-01-13	Vermont	Omicron BA.1	63
+2022-01-14	Vermont	Omicron BA.1	184
+2022-01-15	Vermont	Omicron BA.1	83
+2022-01-16	Vermont	Omicron BA.1	46
+2022-01-17	Vermont	Omicron BA.1	182
+2022-01-18	Vermont	Omicron BA.1	243
+2022-01-19	Vermont	Omicron BA.1	144
+2022-01-20	Vermont	Omicron BA.1	129
+2022-01-21	Vermont	Omicron BA.1	126
+2022-01-22	Vermont	Omicron BA.1	204
+2022-01-23	Vermont	Omicron BA.1	79
+2022-01-24	Vermont	Omicron BA.1	166
+2022-01-25	Vermont	Omicron BA.1	93
+2022-01-26	Vermont	Omicron BA.1	117
+2022-01-27	Vermont	Omicron BA.1	29
+2022-01-28	Vermont	Omicron BA.1	109
+2022-01-29	Vermont	Omicron BA.1	121
+2022-01-30	Vermont	Omicron BA.1	11
+2022-01-31	Vermont	Omicron BA.1	180
+2022-02-01	Vermont	Omicron BA.1	107
+2022-02-02	Vermont	Omicron BA.1	103
+2022-02-03	Vermont	Omicron BA.1	110
+2022-02-04	Vermont	Omicron BA.1	76
+2022-02-05	Vermont	Omicron BA.1	89
+2022-02-06	Vermont	Omicron BA.1	53
+2022-02-07	Vermont	Omicron BA.1	182
+2022-02-08	Vermont	Omicron BA.1	155
+2022-02-09	Vermont	Omicron BA.1	66
+2022-02-10	Vermont	Omicron BA.1	119
+2022-02-11	Vermont	Omicron BA.1	47
+2022-02-12	Vermont	Omicron BA.1	61
+2022-02-13	Vermont	Omicron BA.1	32
+2022-02-14	Vermont	Omicron BA.1	194
+2022-02-15	Vermont	Omicron BA.1	93
+2022-02-16	Vermont	Omicron BA.1	96
+2022-02-17	Vermont	Omicron BA.1	119
+2022-02-18	Vermont	Omicron BA.1	112
+2022-02-19	Vermont	Omicron BA.1	54
+2022-02-20	Vermont	Omicron BA.1	17
+2022-02-21	Vermont	Omicron BA.1	119
+2022-02-22	Vermont	Omicron BA.1	87
+2022-02-23	Vermont	Omicron BA.1	105
+2022-02-24	Vermont	Omicron BA.1	66
+2022-02-25	Vermont	Omicron BA.1	32
+2022-02-26	Vermont	Omicron BA.1	25
+2022-02-27	Vermont	Omicron BA.1	26
+2022-02-28	Vermont	Omicron BA.1	99
+2022-03-01	Vermont	Omicron BA.1	40
+2022-03-02	Vermont	Omicron BA.1	49
+2022-03-03	Vermont	Omicron BA.1	11
+2022-03-04	Vermont	Omicron BA.1	29
+2022-03-05	Vermont	Omicron BA.1	15
+2022-03-06	Vermont	Omicron BA.1	7
+2022-03-07	Vermont	Omicron BA.1	61
+2022-03-08	Vermont	Omicron BA.1	26
+2022-03-09	Vermont	Omicron BA.1	31
+2022-03-10	Vermont	Omicron BA.1	54
+2022-03-11	Vermont	Omicron BA.1	32
+2022-03-12	Vermont	Omicron BA.1	8
+2022-03-13	Vermont	Omicron BA.1	4
+2022-03-14	Vermont	Omicron BA.1	71
+2022-03-15	Vermont	Omicron BA.1	30
+2022-03-16	Vermont	Omicron BA.1	28
+2022-03-17	Vermont	Omicron BA.1	47
+2022-03-18	Vermont	Omicron BA.1	31
+2022-03-19	Vermont	Omicron BA.1	18
+2022-03-21	Vermont	Omicron BA.1	35
+2022-03-22	Vermont	Omicron BA.1	17
+2022-03-23	Vermont	Omicron BA.1	23
+2022-03-24	Vermont	Omicron BA.1	31
+2022-03-25	Vermont	Omicron BA.1	17
+2022-03-26	Vermont	Omicron BA.1	13
+2022-03-27	Vermont	Omicron BA.1	7
+2022-03-28	Vermont	Omicron BA.1	32
+2022-03-29	Vermont	Omicron BA.1	23
+2022-03-30	Vermont	Omicron BA.1	14
+2022-03-31	Vermont	Omicron BA.1	24
+2022-04-01	Vermont	Omicron BA.1	17
+2022-04-02	Vermont	Omicron BA.1	9
+2022-04-03	Vermont	Omicron BA.1	4
+2022-04-04	Vermont	Omicron BA.1	17
+2022-04-05	Vermont	Omicron BA.1	3
+2022-04-06	Vermont	Omicron BA.1	2
+2022-04-07	Vermont	Omicron BA.1	3
+2022-04-08	Vermont	Omicron BA.1	7
+2022-04-09	Vermont	Omicron BA.1	5
+2022-04-11	Vermont	Omicron BA.1	2
+2022-01-08	Vermont	Omicron BA.2	2
+2022-01-15	Vermont	Omicron BA.2	1
+2022-01-17	Vermont	Omicron BA.2	1
+2022-01-22	Vermont	Omicron BA.2	3
+2022-01-24	Vermont	Omicron BA.2	3
+2022-01-25	Vermont	Omicron BA.2	1
+2022-01-27	Vermont	Omicron BA.2	1
+2022-01-28	Vermont	Omicron BA.2	1
+2022-01-29	Vermont	Omicron BA.2	5
+2022-01-31	Vermont	Omicron BA.2	11
+2022-02-01	Vermont	Omicron BA.2	1
+2022-02-02	Vermont	Omicron BA.2	3
+2022-02-03	Vermont	Omicron BA.2	3
+2022-02-04	Vermont	Omicron BA.2	1
+2022-02-05	Vermont	Omicron BA.2	2
+2022-02-06	Vermont	Omicron BA.2	2
+2022-02-07	Vermont	Omicron BA.2	2
+2022-02-08	Vermont	Omicron BA.2	1
+2022-02-10	Vermont	Omicron BA.2	4
+2022-02-11	Vermont	Omicron BA.2	3
+2022-02-12	Vermont	Omicron BA.2	4
+2022-02-13	Vermont	Omicron BA.2	2
+2022-02-14	Vermont	Omicron BA.2	9
+2022-02-15	Vermont	Omicron BA.2	4
+2022-02-16	Vermont	Omicron BA.2	1
+2022-02-18	Vermont	Omicron BA.2	3
+2022-02-20	Vermont	Omicron BA.2	1
+2022-02-21	Vermont	Omicron BA.2	8
+2022-02-22	Vermont	Omicron BA.2	7
+2022-02-23	Vermont	Omicron BA.2	32
+2022-02-24	Vermont	Omicron BA.2	4
+2022-02-25	Vermont	Omicron BA.2	2
+2022-02-26	Vermont	Omicron BA.2	1
+2022-02-28	Vermont	Omicron BA.2	71
+2022-03-01	Vermont	Omicron BA.2	18
+2022-03-02	Vermont	Omicron BA.2	55
+2022-03-03	Vermont	Omicron BA.2	2
+2022-03-04	Vermont	Omicron BA.2	10
+2022-03-05	Vermont	Omicron BA.2	3
+2022-03-07	Vermont	Omicron BA.2	43
+2022-03-08	Vermont	Omicron BA.2	18
+2022-03-09	Vermont	Omicron BA.2	40
+2022-03-10	Vermont	Omicron BA.2	23
+2022-03-11	Vermont	Omicron BA.2	11
+2022-03-12	Vermont	Omicron BA.2	6
+2022-03-13	Vermont	Omicron BA.2	10
+2022-03-14	Vermont	Omicron BA.2	25
+2022-03-15	Vermont	Omicron BA.2	28
+2022-03-16	Vermont	Omicron BA.2	18
+2022-03-17	Vermont	Omicron BA.2	24
+2022-03-18	Vermont	Omicron BA.2	26
+2022-03-19	Vermont	Omicron BA.2	14
+2022-03-21	Vermont	Omicron BA.2	36
+2022-03-22	Vermont	Omicron BA.2	19
+2022-03-23	Vermont	Omicron BA.2	30
+2022-03-24	Vermont	Omicron BA.2	26
+2022-03-25	Vermont	Omicron BA.2	20
+2022-03-26	Vermont	Omicron BA.2	12
+2022-03-27	Vermont	Omicron BA.2	3
+2022-03-28	Vermont	Omicron BA.2	56
+2022-03-29	Vermont	Omicron BA.2	33
+2022-03-30	Vermont	Omicron BA.2	33
+2022-03-31	Vermont	Omicron BA.2	44
+2022-04-01	Vermont	Omicron BA.2	18
+2022-04-02	Vermont	Omicron BA.2	22
+2022-04-03	Vermont	Omicron BA.2	8
+2022-04-04	Vermont	Omicron BA.2	57
+2022-04-05	Vermont	Omicron BA.2	23
+2022-04-06	Vermont	Omicron BA.2	11
+2022-04-07	Vermont	Omicron BA.2	31
+2022-04-08	Vermont	Omicron BA.2	33
+2022-04-09	Vermont	Omicron BA.2	36
+2022-04-10	Vermont	Omicron BA.2	13
+2022-04-11	Vermont	Omicron BA.2	5
+2022-03-11	Vermont	Omicron BA.2.12.1	1
+2022-03-13	Vermont	Omicron BA.2.12.1	1
+2022-03-14	Vermont	Omicron BA.2.12.1	1
+2022-03-15	Vermont	Omicron BA.2.12.1	2
+2022-03-16	Vermont	Omicron BA.2.12.1	2
+2022-03-18	Vermont	Omicron BA.2.12.1	3
+2022-03-19	Vermont	Omicron BA.2.12.1	1
+2022-03-21	Vermont	Omicron BA.2.12.1	3
+2022-03-22	Vermont	Omicron BA.2.12.1	3
+2022-03-23	Vermont	Omicron BA.2.12.1	6
+2022-03-24	Vermont	Omicron BA.2.12.1	6
+2022-03-25	Vermont	Omicron BA.2.12.1	6
+2022-03-26	Vermont	Omicron BA.2.12.1	5
+2022-03-27	Vermont	Omicron BA.2.12.1	3
+2022-03-28	Vermont	Omicron BA.2.12.1	8
+2022-03-29	Vermont	Omicron BA.2.12.1	7
+2022-03-30	Vermont	Omicron BA.2.12.1	15
+2022-03-31	Vermont	Omicron BA.2.12.1	11
+2022-04-01	Vermont	Omicron BA.2.12.1	8
+2022-04-02	Vermont	Omicron BA.2.12.1	15
+2022-04-03	Vermont	Omicron BA.2.12.1	3
+2022-04-04	Vermont	Omicron BA.2.12.1	20
+2022-04-05	Vermont	Omicron BA.2.12.1	4
+2022-04-06	Vermont	Omicron BA.2.12.1	3
+2022-04-07	Vermont	Omicron BA.2.12.1	19
+2022-04-08	Vermont	Omicron BA.2.12.1	11
+2022-04-09	Vermont	Omicron BA.2.12.1	19
+2022-04-10	Vermont	Omicron BA.2.12.1	15
+2022-04-11	Vermont	Omicron BA.2.12.1	9
