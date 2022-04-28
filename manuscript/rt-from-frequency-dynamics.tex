@@ -157,7 +157,7 @@ Therefore, we can use smoothing priors on the coefficients of these basis expans
 
 We demonstrate these models on data from Washington State with results from the fixed growth advantage model shown in Figure \ref{fig:fixed_growth_Washington} and results from the GARW model is shown in Figure \ref{fig:GARW_rt_Washington}.
 % \tbc{Shouldn't figures here be swapped? All through above you start with fixed growth and then switch to GARW. Figure order should reflect order discussed in text. I've gone ahead and made this change.}
-Example model output from several other states is provided in the supplemental appendix \tbc{reference specific supp figures}.
+Example model output from several other states is provided in the supplemental appendix in Figures \ref{fig:GARW_rt_California}, \ref{fig:GARW_rt_Florida}, \ref{fig:GARW_rt_Michigan}, and \ref{fig:GARW_rt_New-York}
 
 \paragraph{Estimating growth advantages in the United States}
 
@@ -217,23 +217,26 @@ For Omicron, we also observe a large variablity in the time-varying growth advan
   \centering
   \includegraphics[width=\linewidth]{figs/ga_consensus.png}
   \caption{\textbf{Estimating variant growth advantages in 34 states using GARW model.}
-  Each panel shows a series of 34 trajectories, representing $\Delta_{v}$ through time for variants across states. %TODO: Mention histograms
+  Each panel shows a series of 34 trajectories, representing $\Delta_{v}$ through time for variants across states. 
+  Histograms show the distribution of the variant's growth advantage over time.
   Shaded intervals show 50\%, 80\% and 95\% credible intervals.
-  \tbc{This figure needs to be referenced in the text and results described.}
-  \tbc{Adding more consistent yticks (Every 1.)}
   }
   \label{fig:ga_consensus}
 \end{figure}
 
+\paragraph{Analyzing variant-specific wave size}%
+
 Using the posterior estimates of variant-specific incidence, we can begin to analyze the total wave sizes attributable to specific variants.
+With these posterior estimates of wave size, we can begin to analyze patterns in these wave sizes and their potential relationships with post-infection and post-vaccination immunity.
 
-\tbc{Methods section describing what wave size is.}
+%TODO: Clean and correct this for updated posteiors.
+% \tbc{Methods section describing what wave size is.}
 
-We first began to look at the wave sizes attributable to subsequent major variants.
-It appears that individual US states with larger Alpha waves tended to have smaller Delta waves though there are two key outliers from this pattern are California and Michigan (Fig.\ \ref{fig:wave_size_to_wave_size} (a)).
+We first began to look at the wave sizes attributable to subsequent major variants as a crude look into potential effects of cross-immunity between variants.
 
-We can also see that states with larger Delta waves tended to have larger Omicron waves as well though once again California appears to defy this trend (Fig.\ \ref{fig:wave_size_to_wave_size} (b)).
-%TODO: Why are these outliers?
+It appears that individual US states with larger Alpha waves tended to have smaller Delta waves though this dependence appears to be weak (Fig.\ \ref{fig:wave_size_to_wave_size} (a)).
+
+We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size} (b)).
 
 \begin{figure}[t]
   \centering
@@ -245,14 +248,15 @@ We can also see that states with larger Delta waves tended to have larger Omicro
   \label{fig:wave_size_to_wave_size}
 \end{figure}
 
-We also assess the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size} (a)).
-For variant such as Gamma, Iota, and Mu, we see a decline in relative wave size as a function of vaccination. 
+Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes. [REF]
+In order to see if such an effect was observable between states, we examine the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size} (a)).
+For some variants such as Gamma, Iota, and Mu, we see a decline in relative wave size as a function of vaccination. 
 Largely, for Delta and Omicron, this effect is less clear.
-This analysis really doesn't say much about vaccination frankly. Mention that infection VE for Delta was still significant.
-Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron shows no trend.
-%TODO: To be clear, this is not evidence or even a statement about vaccine efficacy directly and we should be clear on this.
+Note that this analysis does not say much about vaccination itself and in fact vaccine-induced protection against infection has been shown for Delta [REF]. %TODO: What reference should go here?
+Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron shows no clear trend.
+These results highlight the complicated relationship between variant sucess and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in Omicron wave.
 
-Standard compartment models of epidemic suggest that a higher initial variant $R_{t}$ will lead to larger wave sizes. 
+Standard compartment models of epidemic suggest that a higher initial variant $R_{t}$ will lead to larger wave sizes assuming the mechanism for increase is due to intrinsic transmissibility. 
 In order to see if this trend held in our analyses, we plot the $R_{t}$ at introduction for all variants against their total wave sizes (Fig.\ \ref{fig:intro_R_to_wave_size}).
 We find that generally variants with higher $R_{t}$ values have higher waves sizes consistent with that theory though initial $R_{t}$ alone cannot be used to predict wave size wholly.
 
@@ -261,15 +265,18 @@ We find that generally variants with higher $R_{t}$ values have higher waves siz
   \centering
   \includegraphics[width=\linewidth]{figs/vaccination_to_wave_size.png}
   \caption{\textbf{Visualizing vaccination at introduction against posterior variant wave size.}
-  } %M: Should we combine the vaccination and intro_R figure? I think this would make it easier since we could also add a color label for each variants that would be shared by the plots?
+  (a) Posterior wave size as a function of the proportion vaccined at time of first sucessful variant introduction. Colors of points above correspond to each variant as shown in \ref{fig:GARW_rt_Washington}.
+  (b) Posterior wave size for Omicron as a function of the proportion of the population with a booster vaccine.
+}
   \label{fig:vaccination_to_wave_size}
 \end{figure}
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=\linewidth]{figs/intro_R_to_wave_size.png}
-  \caption{\textbf{Visualizing $R_{t}$ at introduction against posterior variant wave size}
+  \caption{\textbf{Visualizing $R_{t}$ at introduction against posterior variant-specific wave size}
   }
+  Posterior estimates of variant-specific wave size against $R_{t}$ at time of first sucessful introduction.
   \label{fig:intro_R_to_wave_size}
 \end{figure}
 
@@ -311,7 +318,7 @@ Currently, our GARW model can be used to assess claims of growth advantages of v
 This method can be extended further to analyze the role of specific constituent mutations defining a variant or lineage in changing the effective reproduction number of specific variants directly, similar to the model formulation of Obermeyer et al.\ \cite{Obermeyer2021}.
 With this in mind, our method potentially has use for evolutionary forecasting of variants for SARS-CoV-2 as we inform the frequency dynamics of co-circulating variants by describing their population-level transmission dynamics.
 
-Extending the model further towards this aim will likely require methods for quantifying population immunity as well as escape potential for circulating and emerging SARS-CoV-2 variants as a way to explain these growth advantages using data.
+Extending the model further towards this aim will likely require methods for quantifying various sources population immunity as well as escape potential for circulating and emerging SARS-CoV-2 variants as a way to explain these growth advantages using data.
 
 With these issues in mind, surveillance of variants should be folded into standard epidemiological surveillance as knowledge of variant-specific growth advantages will be useful for forecasting growth of cases, hospitalization, deaths, vaccine effectiveness among other key metrics related to epidemic response.
 
@@ -319,7 +326,7 @@ With these issues in mind, surveillance of variants should be folded into standa
   \centering
   \includegraphics[width=\linewidth]{figs/BA.2_growth_advantage.png}
   \caption{\textbf{Estimating variant growth advantages relative to BA.1 in 16 US states.}
-    (a) Time-varying growth advantages for Delta and BA.2 relative to BA.1 using GARW model. %TODO: Mention histogram
+    (a) Time-varying growth advantages for Delta and BA.2 relative to BA.1 using GARW model. Histograms denote the distribution of the variant growth advantages across all times.
     (b) Fixed growth advantages for Delta and BA.2 relative to BA.1 using fixed growth advantage model.
     (c) Same as (b) but with state medians visualized by variant.
   }
@@ -439,6 +446,17 @@ Given variant-specific effective reproduction numbers $R_{t,v}$ and the frequenc
   R_{t}^{\text{ave}} = \sum_{1\leq v \leq V} R_{t,v}f_{v}(t),
 \end{equation}
 which is the sum of the variant-specific effective reproduction numbers weighted by their frequency. This quantity can be seen in Figure \ref{fig:GARW_rt_Washington}.
+
+\paragraph{Variant-specific wave sizes}%
+
+We estimate variant-specific wave sizes using the posterior estimates of incidnce. We define that the wave size attributable to variant $v$ is
+ \begin{align*}
+   W_{v} = \sum_{t \geq } I_{v}(t).
+\end{align*}
+
+Given that we do not observe all new infections and assuming that all variants have an equal-reporting rate, this is really a relative wave size attributable to each variant.
+
+For the purposes of the wave size analyses in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first sucessful introduction to be the first time point at which variant $v$ is above a threshold frequency and have effective reproduction number greater than one.
 
 % \paragraph{Decomposing variant-specific growth advantages}%
 
@@ -677,61 +695,61 @@ In general, the term inside the log is non-constant meaning that fixed variant g
 \end{figure}
 
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/free_rt_California.png}
-%   \caption{\textbf{Fitting the free $R_{t}$ model to California data.}}%
-%   \label{fig:free_rt_California}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_California.png}
+  \caption{\textbf{Fitting the GARW model to California data.}}%
+  \label{fig:GARW_rt_California}
+\end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/fixed_growth_California.png}
-%   \caption{\textbf{Fitting the fixed growth advantage model to California data.}}%
-%   \label{fig:fixed_growth_California}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_California.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to California data.}}%
+  \label{fig:fixed_growth_California}
+\end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/free_rt_Florida.png}
-%   \caption{\textbf{Fitting the free $R_{t}$ model to Florida data.}}%
-%   \label{fig:free_rt_Florida}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_Florida.png}
+  \caption{\textbf{Fitting the GARW model to Florida data.}}%
+  \label{fig:GARW_rt_Florida}
+\end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/fixed_growth_Florida.png}
-%   \caption{\textbf{Fitting the fixed growth advantage model to Florida data.}}%
-%   \label{fig:fixed_growth_Florida}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Florida.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Florida data.}}%
+  \label{fig:fixed_growth_Florida}
+\end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/free_rt_Michigan.png}
-%   \caption{\textbf{Fitting the free $R_{t}$ model to Michigan data.}}%
-%   \label{fig:free_rt_Michigan}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_Michigan.png}
+  \caption{\textbf{Fitting the GARW model to Michigan data.}}%
+  \label{fig:GARW_rt_Michigan}
+\end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/fixed_growth_Michigan.png}
-%   \caption{\textbf{Fitting the fixed growth advantage model to Michigan data.}}%
-%   \label{fig:fixed_growth_Michigan}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Michigan.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Michigan data.}}%
+  \label{fig:fixed_growth_Michigan}
+\end{figure}
 
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/free_rt_New-York.png}
-%   \caption{\textbf{Fitting the free $R_{t}$ model to New York state data.}}%
-%   \label{fig:free_rt_New-York}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_New-York.png}
+  \caption{\textbf{Fitting the GARW model to New York state data.}}%
+  \label{fig:GARW_rt_New-York}
+\end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=\linewidth]{figs/fixed_growth_New-York.png}
-%   \caption{\textbf{Fitting the fixed growth advantage model to New York state data.}}%
-%   \label{fig:fixed_growth_New-York}
-% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_New-York.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to New York state data.}}%
+  \label{fig:fixed_growth_New-York}
+\end{figure}
 
 \end{document}
