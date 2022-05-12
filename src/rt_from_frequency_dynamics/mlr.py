@@ -42,7 +42,7 @@ def MLR_numpyro(seq_counts, N, X, tau=None, pred=False):
     # Evaluate likelihood
     obs = None if pred else np.nan_to_num(seq_counts)
     numpyro.sample(
-        "obs",
+        "seq_counts",
         dist.MultinomialLogits(logits=logits, total_count=np.nan_to_num(N)),
         obs=obs,
     )
