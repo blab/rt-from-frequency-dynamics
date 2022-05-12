@@ -94,18 +94,19 @@ class PoisCases:
     def __init__(self):
         pass
 
-    def model(self, cases, EC):
-        is_obs = is_obs_idx(cases)  # Find unoberserved case counts
-        numpyro.sample(
-            "cases", dist.Poisson(pad_to_obs(EC, is_obs)), obs=jnp.nan_to_num(cases)
-        )
+    def model(self, cases, EC, pred=False):
+        is_obs = is_obs_idx(cases)  # Find unobserved case counts
+        # Overwrite defaults for predictive checks
+        obs = None if pred else np.nan_to_num(cases)
+
+        numpyro.sample("cases", dist.Poisson(pad_to_obs(EC, is_obs)), obs=obs)
 
 
 class ZIPoisCases:
     def __init__(self):
         pass
 
-    def model(self, cases, EC):
+    def model(self, cases, EC, pred=False):
 
         # Finding zero locations and making only parameters for zero observation
         is_zero = cases == 0
@@ -117,27 +118,31 @@ class ZIPoisCases:
                 zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
             gate = ops.index_update(gate, zero_idx, zp)
 
-        numpyro.sample(
-            "cases",
-            dist.ZeroInflatedPoisson(rate=EC, gate=gate),
-            obs=jnp.nan_to_num(cases),
-        )
+        # Overwrite defaults for predictive checks
+        gate = jnp.zeros_like(cases) if pred else gate
+        obs = None if pred else np.nan_to_num(cases)
+
+        numpyro.sample("cases", dist.ZeroInflatedPoisson(rate=EC, gate=gate), obs=obs)
 
 
 class NegBinomCases:
     def __init__(self, raw_alpha_sd=0.01):
         self.raw_alpha_sd = raw_alpha_sd
 
-    def model(self, cases, EC):
-        is_obs = is_obs_idx(cases)  # Find unoberserved case counts
+    def model(self, cases, EC, pred=False):
         # NegativeBinomial sampling
         raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(self.raw_alpha_sd))
+        is_obs = is_obs_idx(cases)  # Find unobserved case counts
+
+        # Overwrite defaults for predictive checks
+        obs = None if pred else np.nan_to_num(cases)
+
         numpyro.sample(
             "cases",
             dist.NegativeBinomial2(
                 mean=pad_to_obs(EC, is_obs), concentration=jnp.power(raw_alpha, -2)
             ),
-            obs=jnp.nan_to_num(cases),
+            obs=obs,
         )
 
 
@@ -145,7 +150,7 @@ class ZINegBinomCases:
     def __init__(self, raw_alpha_sd=0.01):
         self.raw_alpha_sd = raw_alpha_sd
 
-    def model(self, cases, EC):
+    def model(self, cases, EC, pred=False):
         # NegativeBinomial sampling
         raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(self.raw_alpha_sd))
 
@@ -159,12 +164,16 @@ class ZINegBinomCases:
                 zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
             gate = ops.index_update(gate, zero_idx, zp)
 
+        # Overwrite defaults for predictive checks
+        gate = jnp.zeros_like(cases) if pred else gate
+        obs = None if pred else np.nan_to_num(cases)
+
         numpyro.sample(
             "cases",
             dist.ZeroInflatedNegativeBinomial2(
                 mean=EC, gate=gate, concentration=jnp.power(raw_alpha, -2)
             ),
-            obs=jnp.nan_to_num(cases),
+            obs=obs,
         )
 
 
@@ -172,12 +181,14 @@ class MultinomialSeq:
     def __init__(self):
         pass
 
-    def model(self, seq_counts, N, freq):
+    def model(self, seq_counts, N, freq, pred=False):
+
         # Sample with Multinomial
+        obs = None if pred else np.nan_to_num(seq_counts)
         numpyro.sample(
-            "Y",
-            dist.Multinomial(total_count=jnp.nan_to_num(N), probs=freq),
-            obs=jnp.nan_to_num(seq_counts),
+            "seq_counts",
+            dist.Multinomial(total_count=np.nan_to_num(N), probs=freq),
+            obs=obs,
         )
 
 
@@ -185,16 +196,18 @@ class DirMultinomialSeq:
     def __init__(self, xi_prior=99):
         self.xi_prior = xi_prior
 
-    def model(self, seq_counts, N, freq):
+    def model(self, seq_counts, N, freq, pred=False):
         # Overdispersion in sequence counts
         xi = numpyro.sample("xi", dist.Beta(1, self.xi_prior))
         trans_xi = jnp.reciprocal(xi) - 1
 
+        obs = None if pred else np.nan_to_num(seq_counts)
+
         # Sample with DirichletMultinomial
         numpyro.sample(
-            "Y",
+            "seq_counts",
             dist.DirichletMultinomial(
-                total_count=jnp.nan_to_num(N), concentration=1e-8 + trans_xi * freq
+                total_count=np.nan_to_num(N), concentration=1e-8 + trans_xi * freq
             ),
-            obs=jnp.nan_to_num(seq_counts),
+            obs=obs,
         )

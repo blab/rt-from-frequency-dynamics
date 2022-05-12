@@ -38,7 +38,7 @@ def _renewal_model_factory(
         static_argnums=4,
     )
 
-    def _variant_model(cases, seq_counts, N, X, seq_names):
+    def _variant_model(cases, seq_counts, N, X, seq_names, pred=False):
         T, N_variant = seq_counts.shape
         obs_range = jnp.arange(seed_L, seed_L + T, 1)
 
@@ -102,13 +102,13 @@ def _renewal_model_factory(
         EC = numpyro.deterministic("EC", jnp.take(total_prev, obs_range) * rho_vec)
 
         # Evaluate case likelihood
-        CaseLik.model(cases, EC)
+        CaseLik.model(cases, EC, pred=pred)
 
         # Compute frequency
         _freq = jnp.divide(I_prev, total_prev[:, None])
         freq = numpyro.deterministic("freq", jnp.take(_freq, obs_range, axis=0))
 
-        SeqLik.model(seq_counts, N, freq)  # Evaluate frequency likelihood
+        SeqLik.model(seq_counts, N, freq, pred)  # Evaluate frequency likelihood
 
         numpyro.deterministic("R_ave", (_R * freq).sum(axis=1))  # Getting average R
 
@@ -135,7 +135,7 @@ def _exp_model_factory(
     if SeqLik is None:
         SeqLik = DirMultinomialSeq()
 
-    def _variant_model(cases, seq_counts, N, X, X_prime):
+    def _variant_model(cases, seq_counts, N, X, X_prime, pred=False):
         _, N_variant = seq_counts.shape
         T, k = X.shape
 
@@ -171,7 +171,7 @@ def _exp_model_factory(
         numpyro.deterministic("I_smooth", jnp.mean(rho_vec) * incidence)
 
         # Evaluate case likelihood
-        CaseLik.model(cases, rho_vec * incidence.sum(axis=1))
+        CaseLik.model(cases, rho_vec * incidence.sum(axis=1), pred=pred)
 
         # Compute frequency
         freq = numpyro.deterministic(
@@ -182,6 +182,6 @@ def _exp_model_factory(
         SeqLik.model(seq_counts, N, freq)
 
         # Getting average R
-        numpyro.deterministic("r_ave", (r * freq).sum(axis=1))
+        numpyro.deterministic("r_ave", (r * freq).sum(axis=1), pred=pred)
 
     return _variant_model

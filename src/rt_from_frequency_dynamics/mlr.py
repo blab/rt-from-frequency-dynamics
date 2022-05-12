@@ -1,4 +1,5 @@
 import jax.numpy as jnp
+import numpy as np
 from jax.nn import softmax
 
 import numpyro
@@ -20,7 +21,7 @@ class MLRData:
         return data
 
 
-def MLR_numpyro(seq_counts, N, X, tau=None):
+def MLR_numpyro(seq_counts, N, X, tau=None, pred=False):
     _, N_variants = seq_counts.shape
     _, N_features = X.shape
 
@@ -39,10 +40,11 @@ def MLR_numpyro(seq_counts, N, X, tau=None):
     logits = jnp.dot(X, beta)  # Logit frequencies by variant
 
     # Evaluate likelihood
+    obs = None if pred else np.nan_to_num(seq_counts)
     numpyro.sample(
         "obs",
-        dist.MultinomialLogits(logits=logits, total_count=jnp.nan_to_num(N)),
-        obs=jnp.nan_to_num(seq_counts),
+        dist.MultinomialLogits(logits=logits, total_count=np.nan_to_num(N)),
+        obs=obs,
     )
 
     # Compute frequency
