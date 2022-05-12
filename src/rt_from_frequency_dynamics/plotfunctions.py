@@ -241,3 +241,30 @@ def plot_total_by_median_frequency(ax, dataset, LD, total, colors):
     for variant in range(D):
         ax.bar(t, med_freq[:, variant] * total, bottom=bottom, color=colors[variant])
         bottom = med_freq[:, variant] * total + bottom
+
+
+def plot_ppc_frequency(ax, dataset, LD, ps, alphas, colors, forecast=False):
+    N = LD.seq_counts.sum(axis=-1)
+    t, med, quants = prep_posterior_for_plot(
+        "seq_counts", dataset, ps, forecast=forecast
+    )
+    med = med / N[:, None]
+    quants = [q / N[:, None] for q in quants]
+    plot_posterior_time(ax, t, med, quants, alphas, colors)
+
+
+def plot_ppc_seq_counts(ax, dataset, ps, alphas, colors, forecast=False):
+    t, med, quants = prep_posterior_for_plot(
+        "seq_counts", dataset, ps, forecast=forecast
+    )
+    plot_posterior_time(ax, t, med, quants, alphas, colors)
+
+
+def plot_ppc_cases(ax, dataset, ps, alphas, color):
+    med, V = get_quantiles(dataset, ps, "cases")
+    t = jnp.arange(0, V[-1].shape[-1], 1)
+
+    # Make figure
+    for i in range(len(ps)):
+        ax.fill_between(t, V[i][0, :], V[i][1, :], color=color, alpha=alphas[i])
+    ax.plot(t, med, color=color)
