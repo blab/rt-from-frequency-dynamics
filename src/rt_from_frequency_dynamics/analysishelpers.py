@@ -12,7 +12,8 @@ from rt_from_frequency_dynamics import (
     get_I,
     get_freq,
 )
-from rt_from_frequency_dynamics import SVIHandler, PosteriorHandler, MultiPosterior
+from .inferencehandler import SVIHandler, MCMCHandler
+from .posteriorhandler import PosteriorHandler, MultiPosterior
 
 
 def get_location_VariantData(rc, rs, loc):
@@ -39,7 +40,6 @@ def fit_SVI(
     # Upacking data
     data = VD.make_numpyro_input()
     LM.augment_data(data)
-
     # Loading past state
     if load:
         file_name = name.replace(" ", "-")
@@ -53,7 +53,28 @@ def fit_SVI(
         file_name = name.replace(" ", "-")
         SVIH.save_state(f"{path}/models/{file_name}_svi.p")
 
-    dataset = SVIH.predict(LM.model, guide, data, num_samples=num_samples)
+    dataset = SVIH.predict(LM.model, guide, data=data, num_samples=num_samples)
+    return PosteriorHandler(dataset=dataset, data=VD, name=name)
+
+
+def fit_MCMC(
+    VD,
+    LM,
+    kernel=None,
+    num_samples=1000,
+    num_warmup=500,
+    path=".",
+    name="Test",
+    load=False,
+    save=False,
+):
+    # Defining MCMC algorithm
+    MC = MCMCHandler(kernel=kernel)
+    # Unpacking data
+    data = VD.make_numpyro_input()
+    LM.augment_data(data)
+    MC.fit(LM.model, data, num_warmup, num_samples)
+    dataset = MC.predict(LM.model, data=data, num_samples=num_samples)
     return PosteriorHandler(dataset=dataset, data=VD, name=name)
 
 
@@ -63,6 +84,17 @@ def fit_SVI_locations(rc, rs, locations, LM, opt, **fit_kwargs):
     for i, loc in enumerate(locations):
         VD = get_location_VariantData(rc, rs, loc)
         PH = fit_SVI(VD, LM, opt, name=loc, **fit_kwargs)
+        MP.add_posterior(PH)
+        print(f"Location {loc} finished ({i+1}/{n_locations}).")
+    return MP
+
+
+def fit_MCMC_locations(rc, rs, locations, LM, **fit_kwargs):
+    n_locations = len(locations)
+    MP = MultiPosterior()
+    for i, loc in enumerate(locations):
+        VD = get_location_VariantData(rc, rs, loc)
+        PH = fit_MCMC(VD, LM, name=loc, **fit_kwargs)
         MP.add_posterior(PH)
         print(f"Location {loc} finished ({i+1}/{n_locations}).")
     return MP

@@ -73,6 +73,8 @@ from .analysishelpers import (  # noqa
     get_location_VariantData,
     fit_SVI,
     fit_SVI_locations,
+    fit_MCMC,
+    fit_MCMC_locations,
 )
 
 from .analysishelpers import (  # noqa
