@@ -1,5 +1,4 @@
 import jax.numpy as jnp
-from jax import ops
 import numpy as np
 import numpyro
 import numpyro.distributions as dist
@@ -116,7 +115,7 @@ class ZIPoisCases:
         if zero_idx.shape[0] > 0:
             with numpyro.plate("n_zero", zero_idx.shape[0]):
                 zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
-            gate = ops.index_update(gate, zero_idx, zp)
+            gate = gate.at[zero_idx].set(zp)
 
         # Overwrite defaults for predictive checks
         gate = jnp.zeros_like(cases) if pred else gate
@@ -162,7 +161,7 @@ class ZINegBinomCases:
         if zero_idx.shape[0] > 0:
             with numpyro.plate("n_zero", zero_idx.shape[0]):
                 zp = numpyro.sample("zp", dist.Beta(0.1, 0.1))
-            gate = ops.index_update(gate, zero_idx, zp)
+            gate = gate.at[zero_idx].set(zp)
 
         # Overwrite defaults for predictive checks
         gate = jnp.zeros_like(cases) if pred else gate
