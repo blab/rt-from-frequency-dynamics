@@ -1,16 +1,18 @@
-# Results for Omicron across US states splitting out lineage BA.1 / clade 21K from lineage BA.2 / clade 21L
-
-## Variant frequencies
-
-This shows 7-day smoothed variant frequencies. This includes a logistic growth rate from regression of logit transformed Omicron frequencies.
-
-#### Variant frequencies on natural y axis
-
-![](figures/omicron-us-split_logistic-growth-natural-axis.png)
+# Results for Omicron across US states splitting out Omicron sublineages / subclades: BA.1 / 21K, BA.2 / 21L, BA.4 / 22A, BA.5 / 22B, BA.2.12.1 / 22C
 
 #### Variant frequencies on logit y axis
 
-![](figures/omicron-us-split_logistic-growth-transformed-axis.png)
+##### Focus on lineage BA.4 / clade 22A
+
+![](figures/omicron-us-split_logistic-growth-transformed-axis-22A.png)
+
+##### Focus on lineage BA.5 / clade 22B
+
+![](figures/omicron-us-split_logistic-growth-transformed-axis-22B.png)
+
+##### Focus on lineage BA.2.12.1 / clade 22C
+
+![](figures/omicron-us-split_logistic-growth-transformed-axis-22C.png)
 
 ## Partitioning case counts by variant
 
@@ -26,15 +28,23 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 ![](figures/omicron-us-split_partitioned-log-cases.png)
 
+##### Focus on lineage BA.4 / clade 22A
+
+![](figures/omicron-us-split_partitioned-log-cases-22A.png)
+
+##### Focus on lineage BA.5 / clade 22B
+
+![](figures/omicron-us-split_partitioned-log-cases-22B.png)
+
+##### Focus on lineage BA.2.12.1 / clade 22C
+
+![](figures/omicron-us-split_partitioned-log-cases-22C.png)
+
 ## Model outputs
 
 These outputs are using the growth advantage random walk (GARW) model.
 
 #### Variant-specific growth rate
-
-##### Epidemic growth rate _r_ per day
-
-![](figures/omicron-us-split_variant-little-r.png)
 
 ##### Reproductive number _Rt_
 
@@ -53,7 +63,6 @@ These outputs are using the growth advantage random walk (GARW) model.
 #### Variant-specific frequencies
 
 ![](figures/omicron-us-split_variant-estimated-frequency.png)
-
 ## Updating
 
 These results can be updated via:
