@@ -6,10 +6,9 @@ date	location	variant	sequences
 2022-04-25	Arizona	other	1
 2022-05-12	Arizona	other	1
 2022-05-15	Arizona	other	1
-2022-01-28	Arizona	Delta	2
-2022-01-29	Arizona	Delta	4
-2022-01-30	Arizona	Delta	1
-2022-01-31	Arizona	Delta	1
+2022-05-16	Arizona	other	2
+2022-05-17	Arizona	other	1
+2022-05-18	Arizona	other	2
 2022-02-02	Arizona	Delta	2
 2022-02-04	Arizona	Delta	2
 2022-02-06	Arizona	Delta	2
@@ -23,11 +22,6 @@ date	location	variant	sequences
 2022-03-02	Arizona	Delta	1
 2022-03-21	Arizona	Delta	1
 2022-04-08	Arizona	Delta	1
-2022-01-28	Arizona	Omicron 21K	405
-2022-01-29	Arizona	Omicron 21K	248
-2022-01-30	Arizona	Omicron 21K	167
-2022-01-31	Arizona	Omicron 21K	434
-2022-02-01	Arizona	Omicron 21K	344
 2022-02-02	Arizona	Omicron 21K	462
 2022-02-03	Arizona	Omicron 21K	328
 2022-02-04	Arizona	Omicron 21K	237
@@ -110,11 +104,8 @@ date	location	variant	sequences
 2022-05-01	Arizona	Omicron 21K	1
 2022-05-02	Arizona	Omicron 21K	1
 2022-05-11	Arizona	Omicron 21K	1
-2022-01-28	Arizona	Omicron 21L	10
-2022-01-29	Arizona	Omicron 21L	4
-2022-01-30	Arizona	Omicron 21L	2
-2022-01-31	Arizona	Omicron 21L	7
-2022-02-01	Arizona	Omicron 21L	11
+2022-05-19	Arizona	Omicron 21K	1
+2022-05-20	Arizona	Omicron 21K	1
 2022-02-02	Arizona	Omicron 21L	9
 2022-02-03	Arizona	Omicron 21L	4
 2022-02-04	Arizona	Omicron 21L	1
@@ -211,13 +202,18 @@ date	location	variant	sequences
 2022-05-06	Arizona	Omicron 21L	36
 2022-05-07	Arizona	Omicron 21L	28
 2022-05-08	Arizona	Omicron 21L	19
-2022-05-09	Arizona	Omicron 21L	64
+2022-05-09	Arizona	Omicron 21L	65
 2022-05-10	Arizona	Omicron 21L	38
-2022-05-11	Arizona	Omicron 21L	45
+2022-05-11	Arizona	Omicron 21L	46
 2022-05-12	Arizona	Omicron 21L	37
 2022-05-13	Arizona	Omicron 21L	17
-2022-05-14	Arizona	Omicron 21L	14
-2022-05-15	Arizona	Omicron 21L	10
+2022-05-14	Arizona	Omicron 21L	16
+2022-05-15	Arizona	Omicron 21L	12
+2022-05-16	Arizona	Omicron 21L	36
+2022-05-17	Arizona	Omicron 21L	43
+2022-05-18	Arizona	Omicron 21L	46
+2022-05-19	Arizona	Omicron 21L	67
+2022-05-20	Arizona	Omicron 21L	14
 2022-04-17	Arizona	Omicron 22A	1
 2022-04-30	Arizona	Omicron 22A	1
 2022-05-02	Arizona	Omicron 22A	1
@@ -226,12 +222,19 @@ date	location	variant	sequences
 2022-05-09	Arizona	Omicron 22A	3
 2022-05-11	Arizona	Omicron 22A	2
 2022-05-12	Arizona	Omicron 22A	3
+2022-05-16	Arizona	Omicron 22A	2
+2022-05-19	Arizona	Omicron 22A	3
+2022-05-20	Arizona	Omicron 22A	1
 2022-05-06	Arizona	Omicron 22B	1
 2022-05-08	Arizona	Omicron 22B	1
 2022-05-09	Arizona	Omicron 22B	1
 2022-05-12	Arizona	Omicron 22B	1
 2022-05-14	Arizona	Omicron 22B	1
-2022-02-26	Arizona	Omicron 22C	3
+2022-05-16	Arizona	Omicron 22B	2
+2022-05-18	Arizona	Omicron 22B	1
+2022-05-19	Arizona	Omicron 22B	3
+2022-05-20	Arizona	Omicron 22B	5
+2022-02-26	Arizona	Omicron 22C	4
 2022-03-13	Arizona	Omicron 22C	1
 2022-03-21	Arizona	Omicron 22C	1
 2022-03-23	Arizona	Omicron 22C	1
@@ -267,20 +270,25 @@ date	location	variant	sequences
 2022-04-29	Arizona	Omicron 22C	6
 2022-04-30	Arizona	Omicron 22C	6
 2022-05-01	Arizona	Omicron 22C	11
-2022-05-02	Arizona	Omicron 22C	30
+2022-05-02	Arizona	Omicron 22C	31
 2022-05-03	Arizona	Omicron 22C	19
 2022-05-04	Arizona	Omicron 22C	19
 2022-05-05	Arizona	Omicron 22C	25
 2022-05-06	Arizona	Omicron 22C	17
-2022-05-07	Arizona	Omicron 22C	6
+2022-05-07	Arizona	Omicron 22C	7
 2022-05-08	Arizona	Omicron 22C	20
 2022-05-09	Arizona	Omicron 22C	17
 2022-05-10	Arizona	Omicron 22C	28
 2022-05-11	Arizona	Omicron 22C	21
 2022-05-12	Arizona	Omicron 22C	52
 2022-05-13	Arizona	Omicron 22C	31
-2022-05-14	Arizona	Omicron 22C	20
-2022-05-15	Arizona	Omicron 22C	11
+2022-05-14	Arizona	Omicron 22C	22
+2022-05-15	Arizona	Omicron 22C	12
+2022-05-16	Arizona	Omicron 22C	38
+2022-05-17	Arizona	Omicron 22C	42
+2022-05-18	Arizona	Omicron 22C	37
+2022-05-19	Arizona	Omicron 22C	23
+2022-05-20	Arizona	Omicron 22C	40
 2022-02-11	California	other	1
 2022-02-15	California	other	1
 2022-02-16	California	other	2
@@ -330,32 +338,30 @@ date	location	variant	sequences
 2022-04-15	California	other	2
 2022-04-16	California	other	3
 2022-04-18	California	other	4
-2022-04-19	California	other	2
+2022-04-19	California	other	4
 2022-04-20	California	other	2
-2022-04-21	California	other	2
+2022-04-21	California	other	3
 2022-04-22	California	other	2
 2022-04-23	California	other	2
-2022-04-25	California	other	4
-2022-04-26	California	other	1
+2022-04-24	California	other	1
+2022-04-25	California	other	6
+2022-04-26	California	other	3
 2022-04-27	California	other	3
-2022-04-29	California	other	6
-2022-04-30	California	other	1
+2022-04-28	California	other	1
+2022-04-29	California	other	8
+2022-04-30	California	other	3
 2022-05-01	California	other	1
 2022-05-02	California	other	5
-2022-05-03	California	other	3
+2022-05-03	California	other	8
 2022-05-04	California	other	1
-2022-05-05	California	other	2
-2022-05-06	California	other	3
+2022-05-05	California	other	3
+2022-05-06	California	other	5
 2022-05-07	California	other	2
-2022-05-08	California	other	2
-2022-05-09	California	other	6
+2022-05-08	California	other	3
+2022-05-09	California	other	8
 2022-05-10	California	other	1
 2022-05-11	California	other	2
-2022-01-28	California	Delta	4
-2022-01-29	California	Delta	4
-2022-01-30	California	Delta	3
-2022-01-31	California	Delta	41
-2022-02-01	California	Delta	44
+2022-05-12	California	other	1
 2022-02-02	California	Delta	24
 2022-02-03	California	Delta	3
 2022-02-04	California	Delta	10
@@ -381,21 +387,16 @@ date	location	variant	sequences
 2022-04-09	California	Delta	1
 2022-04-17	California	Delta	1
 2022-04-18	California	Delta	1
-2022-01-28	California	Omicron 21K	917
-2022-01-29	California	Omicron 21K	2273
-2022-01-30	California	Omicron 21K	1772
-2022-01-31	California	Omicron 21K	3193
-2022-02-01	California	Omicron 21K	3252
 2022-02-02	California	Omicron 21K	1973
 2022-02-03	California	Omicron 21K	1013
-2022-02-04	California	Omicron 21K	1852
-2022-02-05	California	Omicron 21K	927
+2022-02-04	California	Omicron 21K	1853
+2022-02-05	California	Omicron 21K	928
 2022-02-06	California	Omicron 21K	1352
-2022-02-07	California	Omicron 21K	2905
+2022-02-07	California	Omicron 21K	2906
 2022-02-08	California	Omicron 21K	3080
 2022-02-09	California	Omicron 21K	2941
 2022-02-10	California	Omicron 21K	2356
-2022-02-11	California	Omicron 21K	2114
+2022-02-11	California	Omicron 21K	2115
 2022-02-12	California	Omicron 21K	1471
 2022-02-13	California	Omicron 21K	818
 2022-02-14	California	Omicron 21K	1735
@@ -413,7 +414,7 @@ date	location	variant	sequences
 2022-02-26	California	Omicron 21K	470
 2022-02-27	California	Omicron 21K	292
 2022-02-28	California	Omicron 21K	580
-2022-03-01	California	Omicron 21K	1090
+2022-03-01	California	Omicron 21K	1091
 2022-03-02	California	Omicron 21K	461
 2022-03-03	California	Omicron 21K	366
 2022-03-04	California	Omicron 21K	366
@@ -422,7 +423,7 @@ date	location	variant	sequences
 2022-03-07	California	Omicron 21K	478
 2022-03-08	California	Omicron 21K	402
 2022-03-09	California	Omicron 21K	379
-2022-03-10	California	Omicron 21K	280
+2022-03-10	California	Omicron 21K	281
 2022-03-11	California	Omicron 21K	235
 2022-03-12	California	Omicron 21K	148
 2022-03-13	California	Omicron 21K	154
@@ -443,13 +444,13 @@ date	location	variant	sequences
 2022-03-28	California	Omicron 21K	98
 2022-03-29	California	Omicron 21K	78
 2022-03-30	California	Omicron 21K	82
-2022-03-31	California	Omicron 21K	52
+2022-03-31	California	Omicron 21K	53
 2022-04-01	California	Omicron 21K	62
-2022-04-02	California	Omicron 21K	44
+2022-04-02	California	Omicron 21K	46
 2022-04-03	California	Omicron 21K	46
 2022-04-04	California	Omicron 21K	74
-2022-04-05	California	Omicron 21K	63
-2022-04-06	California	Omicron 21K	62
+2022-04-05	California	Omicron 21K	64
+2022-04-06	California	Omicron 21K	64
 2022-04-07	California	Omicron 21K	49
 2022-04-08	California	Omicron 21K	38
 2022-04-09	California	Omicron 21K	30
@@ -457,34 +458,29 @@ date	location	variant	sequences
 2022-04-11	California	Omicron 21K	41
 2022-04-12	California	Omicron 21K	29
 2022-04-13	California	Omicron 21K	34
-2022-04-14	California	Omicron 21K	20
-2022-04-15	California	Omicron 21K	28
+2022-04-14	California	Omicron 21K	21
+2022-04-15	California	Omicron 21K	29
 2022-04-16	California	Omicron 21K	20
 2022-04-17	California	Omicron 21K	7
-2022-04-18	California	Omicron 21K	48
+2022-04-18	California	Omicron 21K	49
 2022-04-19	California	Omicron 21K	36
-2022-04-20	California	Omicron 21K	43
-2022-04-21	California	Omicron 21K	38
-2022-04-22	California	Omicron 21K	38
-2022-04-23	California	Omicron 21K	29
-2022-04-24	California	Omicron 21K	31
-2022-04-25	California	Omicron 21K	4
-2022-04-26	California	Omicron 21K	6
-2022-04-27	California	Omicron 21K	1
-2022-04-28	California	Omicron 21K	5
-2022-04-29	California	Omicron 21K	3
-2022-05-02	California	Omicron 21K	4
-2022-05-03	California	Omicron 21K	4
-2022-05-04	California	Omicron 21K	2
-2022-05-05	California	Omicron 21K	3
-2022-05-06	California	Omicron 21K	2
-2022-05-07	California	Omicron 21K	2
-2022-05-09	California	Omicron 21K	1
-2022-01-28	California	Omicron 21L	10
-2022-01-29	California	Omicron 21L	27
-2022-01-30	California	Omicron 21L	25
-2022-01-31	California	Omicron 21L	41
-2022-02-01	California	Omicron 21L	28
+2022-04-20	California	Omicron 21K	45
+2022-04-21	California	Omicron 21K	39
+2022-04-22	California	Omicron 21K	40
+2022-04-23	California	Omicron 21K	31
+2022-04-24	California	Omicron 21K	32
+2022-04-25	California	Omicron 21K	9
+2022-04-26	California	Omicron 21K	10
+2022-04-27	California	Omicron 21K	4
+2022-04-28	California	Omicron 21K	7
+2022-04-29	California	Omicron 21K	4
+2022-05-02	California	Omicron 21K	8
+2022-05-03	California	Omicron 21K	5
+2022-05-04	California	Omicron 21K	3
+2022-05-05	California	Omicron 21K	5
+2022-05-06	California	Omicron 21K	3
+2022-05-07	California	Omicron 21K	3
+2022-05-09	California	Omicron 21K	3
 2022-02-02	California	Omicron 21L	22
 2022-02-03	California	Omicron 21L	16
 2022-02-04	California	Omicron 21L	29
@@ -540,54 +536,59 @@ date	location	variant	sequences
 2022-03-26	California	Omicron 21L	273
 2022-03-27	California	Omicron 21L	246
 2022-03-28	California	Omicron 21L	350
-2022-03-29	California	Omicron 21L	268
-2022-03-30	California	Omicron 21L	330
-2022-03-31	California	Omicron 21L	251
-2022-04-01	California	Omicron 21L	287
-2022-04-02	California	Omicron 21L	217
-2022-04-03	California	Omicron 21L	169
-2022-04-04	California	Omicron 21L	434
-2022-04-05	California	Omicron 21L	346
-2022-04-06	California	Omicron 21L	445
-2022-04-07	California	Omicron 21L	412
-2022-04-08	California	Omicron 21L	355
-2022-04-09	California	Omicron 21L	218
+2022-03-29	California	Omicron 21L	270
+2022-03-30	California	Omicron 21L	337
+2022-03-31	California	Omicron 21L	252
+2022-04-01	California	Omicron 21L	291
+2022-04-02	California	Omicron 21L	218
+2022-04-03	California	Omicron 21L	172
+2022-04-04	California	Omicron 21L	439
+2022-04-05	California	Omicron 21L	359
+2022-04-06	California	Omicron 21L	461
+2022-04-07	California	Omicron 21L	419
+2022-04-08	California	Omicron 21L	359
+2022-04-09	California	Omicron 21L	221
 2022-04-10	California	Omicron 21L	290
-2022-04-11	California	Omicron 21L	554
-2022-04-12	California	Omicron 21L	382
-2022-04-13	California	Omicron 21L	332
-2022-04-14	California	Omicron 21L	295
-2022-04-15	California	Omicron 21L	417
-2022-04-16	California	Omicron 21L	272
-2022-04-17	California	Omicron 21L	116
-2022-04-18	California	Omicron 21L	575
-2022-04-19	California	Omicron 21L	273
-2022-04-20	California	Omicron 21L	288
-2022-04-21	California	Omicron 21L	203
-2022-04-22	California	Omicron 21L	313
-2022-04-23	California	Omicron 21L	299
-2022-04-24	California	Omicron 21L	216
-2022-04-25	California	Omicron 21L	331
-2022-04-26	California	Omicron 21L	288
-2022-04-27	California	Omicron 21L	265
-2022-04-28	California	Omicron 21L	226
-2022-04-29	California	Omicron 21L	273
-2022-04-30	California	Omicron 21L	163
-2022-05-01	California	Omicron 21L	134
-2022-05-02	California	Omicron 21L	327
-2022-05-03	California	Omicron 21L	253
-2022-05-04	California	Omicron 21L	291
-2022-05-05	California	Omicron 21L	278
-2022-05-06	California	Omicron 21L	195
-2022-05-07	California	Omicron 21L	243
-2022-05-08	California	Omicron 21L	164
-2022-05-09	California	Omicron 21L	198
-2022-05-10	California	Omicron 21L	165
-2022-05-11	California	Omicron 21L	161
-2022-05-12	California	Omicron 21L	157
-2022-05-13	California	Omicron 21L	127
-2022-05-14	California	Omicron 21L	59
-2022-05-15	California	Omicron 21L	49
+2022-04-11	California	Omicron 21L	561
+2022-04-12	California	Omicron 21L	391
+2022-04-13	California	Omicron 21L	344
+2022-04-14	California	Omicron 21L	329
+2022-04-15	California	Omicron 21L	427
+2022-04-16	California	Omicron 21L	275
+2022-04-17	California	Omicron 21L	118
+2022-04-18	California	Omicron 21L	595
+2022-04-19	California	Omicron 21L	300
+2022-04-20	California	Omicron 21L	344
+2022-04-21	California	Omicron 21L	256
+2022-04-22	California	Omicron 21L	379
+2022-04-23	California	Omicron 21L	368
+2022-04-24	California	Omicron 21L	306
+2022-04-25	California	Omicron 21L	554
+2022-04-26	California	Omicron 21L	385
+2022-04-27	California	Omicron 21L	376
+2022-04-28	California	Omicron 21L	368
+2022-04-29	California	Omicron 21L	374
+2022-04-30	California	Omicron 21L	266
+2022-05-01	California	Omicron 21L	241
+2022-05-02	California	Omicron 21L	513
+2022-05-03	California	Omicron 21L	421
+2022-05-04	California	Omicron 21L	442
+2022-05-05	California	Omicron 21L	437
+2022-05-06	California	Omicron 21L	314
+2022-05-07	California	Omicron 21L	326
+2022-05-08	California	Omicron 21L	201
+2022-05-09	California	Omicron 21L	291
+2022-05-10	California	Omicron 21L	229
+2022-05-11	California	Omicron 21L	189
+2022-05-12	California	Omicron 21L	171
+2022-05-13	California	Omicron 21L	137
+2022-05-14	California	Omicron 21L	62
+2022-05-15	California	Omicron 21L	70
+2022-05-16	California	Omicron 21L	96
+2022-05-17	California	Omicron 21L	8
+2022-05-18	California	Omicron 21L	4
+2022-05-19	California	Omicron 21L	1
+2022-05-20	California	Omicron 21L	5
 2022-03-30	California	Omicron 22A	1
 2022-04-16	California	Omicron 22A	1
 2022-04-18	California	Omicron 22A	4
@@ -595,33 +596,41 @@ date	location	variant	sequences
 2022-04-20	California	Omicron 22A	2
 2022-04-21	California	Omicron 22A	3
 2022-04-22	California	Omicron 22A	1
-2022-04-24	California	Omicron 22A	2
+2022-04-24	California	Omicron 22A	4
+2022-04-25	California	Omicron 22A	3
 2022-04-26	California	Omicron 22A	1
-2022-04-28	California	Omicron 22A	5
-2022-04-29	California	Omicron 22A	4
-2022-05-02	California	Omicron 22A	1
-2022-05-03	California	Omicron 22A	3
-2022-05-04	California	Omicron 22A	3
-2022-05-05	California	Omicron 22A	3
-2022-05-07	California	Omicron 22A	3
-2022-05-08	California	Omicron 22A	1
-2022-05-09	California	Omicron 22A	4
-2022-05-10	California	Omicron 22A	6
-2022-05-11	California	Omicron 22A	5
-2022-05-12	California	Omicron 22A	7
+2022-04-28	California	Omicron 22A	6
+2022-04-29	California	Omicron 22A	6
+2022-04-30	California	Omicron 22A	2
+2022-05-01	California	Omicron 22A	2
+2022-05-02	California	Omicron 22A	3
+2022-05-03	California	Omicron 22A	7
+2022-05-04	California	Omicron 22A	7
+2022-05-05	California	Omicron 22A	4
+2022-05-07	California	Omicron 22A	4
+2022-05-08	California	Omicron 22A	4
+2022-05-09	California	Omicron 22A	7
+2022-05-10	California	Omicron 22A	10
+2022-05-11	California	Omicron 22A	6
+2022-05-12	California	Omicron 22A	8
 2022-05-13	California	Omicron 22A	2
 2022-05-14	California	Omicron 22A	1
 2022-05-15	California	Omicron 22A	1
+2022-05-16	California	Omicron 22A	4
 2022-04-11	California	Omicron 22B	1
-2022-05-03	California	Omicron 22B	1
+2022-04-28	California	Omicron 22B	1
+2022-05-03	California	Omicron 22B	2
 2022-05-04	California	Omicron 22B	1
-2022-05-05	California	Omicron 22B	2
-2022-05-09	California	Omicron 22B	1
-2022-05-10	California	Omicron 22B	2
-2022-05-11	California	Omicron 22B	2
+2022-05-05	California	Omicron 22B	3
+2022-05-09	California	Omicron 22B	2
+2022-05-10	California	Omicron 22B	9
+2022-05-11	California	Omicron 22B	3
 2022-05-12	California	Omicron 22B	3
-2022-05-13	California	Omicron 22B	4
+2022-05-13	California	Omicron 22B	5
 2022-05-14	California	Omicron 22B	1
+2022-05-15	California	Omicron 22B	4
+2022-05-16	California	Omicron 22B	7
+2022-05-18	California	Omicron 22B	1
 2022-03-08	California	Omicron 22C	1
 2022-03-14	California	Omicron 22C	1
 2022-03-18	California	Omicron 22C	1
@@ -647,43 +656,46 @@ date	location	variant	sequences
 2022-04-08	California	Omicron 22C	17
 2022-04-09	California	Omicron 22C	18
 2022-04-10	California	Omicron 22C	29
-2022-04-11	California	Omicron 22C	43
+2022-04-11	California	Omicron 22C	44
 2022-04-12	California	Omicron 22C	46
-2022-04-13	California	Omicron 22C	50
-2022-04-14	California	Omicron 22C	42
-2022-04-15	California	Omicron 22C	46
+2022-04-13	California	Omicron 22C	54
+2022-04-14	California	Omicron 22C	44
+2022-04-15	California	Omicron 22C	48
 2022-04-16	California	Omicron 22C	43
-2022-04-17	California	Omicron 22C	33
-2022-04-18	California	Omicron 22C	81
-2022-04-19	California	Omicron 22C	71
-2022-04-20	California	Omicron 22C	65
-2022-04-21	California	Omicron 22C	54
-2022-04-22	California	Omicron 22C	43
-2022-04-23	California	Omicron 22C	56
-2022-04-24	California	Omicron 22C	61
-2022-04-25	California	Omicron 22C	105
-2022-04-26	California	Omicron 22C	89
-2022-04-27	California	Omicron 22C	92
-2022-04-28	California	Omicron 22C	92
-2022-04-29	California	Omicron 22C	91
-2022-04-30	California	Omicron 22C	69
-2022-05-01	California	Omicron 22C	61
-2022-05-02	California	Omicron 22C	122
-2022-05-03	California	Omicron 22C	135
-2022-05-04	California	Omicron 22C	155
-2022-05-05	California	Omicron 22C	135
-2022-05-06	California	Omicron 22C	99
-2022-05-07	California	Omicron 22C	113
-2022-05-08	California	Omicron 22C	105
-2022-05-09	California	Omicron 22C	111
-2022-05-10	California	Omicron 22C	109
-2022-05-11	California	Omicron 22C	104
-2022-05-12	California	Omicron 22C	124
-2022-05-13	California	Omicron 22C	80
-2022-05-14	California	Omicron 22C	57
-2022-05-15	California	Omicron 22C	32
-2022-01-28	Colorado	other	1
-2022-02-01	Colorado	other	1
+2022-04-17	California	Omicron 22C	34
+2022-04-18	California	Omicron 22C	86
+2022-04-19	California	Omicron 22C	81
+2022-04-20	California	Omicron 22C	78
+2022-04-21	California	Omicron 22C	68
+2022-04-22	California	Omicron 22C	65
+2022-04-23	California	Omicron 22C	75
+2022-04-24	California	Omicron 22C	85
+2022-04-25	California	Omicron 22C	164
+2022-04-26	California	Omicron 22C	115
+2022-04-27	California	Omicron 22C	125
+2022-04-28	California	Omicron 22C	131
+2022-04-29	California	Omicron 22C	133
+2022-04-30	California	Omicron 22C	124
+2022-05-01	California	Omicron 22C	112
+2022-05-02	California	Omicron 22C	235
+2022-05-03	California	Omicron 22C	241
+2022-05-04	California	Omicron 22C	235
+2022-05-05	California	Omicron 22C	213
+2022-05-06	California	Omicron 22C	183
+2022-05-07	California	Omicron 22C	157
+2022-05-08	California	Omicron 22C	123
+2022-05-09	California	Omicron 22C	173
+2022-05-10	California	Omicron 22C	159
+2022-05-11	California	Omicron 22C	139
+2022-05-12	California	Omicron 22C	133
+2022-05-13	California	Omicron 22C	90
+2022-05-14	California	Omicron 22C	63
+2022-05-15	California	Omicron 22C	55
+2022-05-16	California	Omicron 22C	67
+2022-05-17	California	Omicron 22C	13
+2022-05-18	California	Omicron 22C	5
+2022-05-19	California	Omicron 22C	1
+2022-05-20	California	Omicron 22C	2
 2022-02-04	Colorado	other	1
 2022-02-09	Colorado	other	1
 2022-02-11	Colorado	other	1
@@ -717,9 +729,7 @@ date	location	variant	sequences
 2022-04-26	Colorado	other	1
 2022-04-29	Colorado	other	1
 2022-05-06	Colorado	other	1
-2022-01-28	Colorado	Delta	3
-2022-01-30	Colorado	Delta	2
-2022-01-31	Colorado	Delta	1
+2022-05-10	Colorado	other	4
 2022-02-04	Colorado	Delta	3
 2022-02-05	Colorado	Delta	1
 2022-02-08	Colorado	Delta	1
@@ -736,14 +746,9 @@ date	location	variant	sequences
 2022-03-21	Colorado	Delta	1
 2022-03-25	Colorado	Delta	5
 2022-04-06	Colorado	Delta	1
-2022-01-28	Colorado	Omicron 21K	742
-2022-01-29	Colorado	Omicron 21K	931
-2022-01-30	Colorado	Omicron 21K	701
-2022-01-31	Colorado	Omicron 21K	1633
-2022-02-01	Colorado	Omicron 21K	1174
 2022-02-02	Colorado	Omicron 21K	487
 2022-02-03	Colorado	Omicron 21K	1151
-2022-02-04	Colorado	Omicron 21K	929
+2022-02-04	Colorado	Omicron 21K	930
 2022-02-05	Colorado	Omicron 21K	496
 2022-02-06	Colorado	Omicron 21K	397
 2022-02-07	Colorado	Omicron 21K	1035
@@ -769,7 +774,7 @@ date	location	variant	sequences
 2022-02-27	Colorado	Omicron 21K	114
 2022-02-28	Colorado	Omicron 21K	267
 2022-03-01	Colorado	Omicron 21K	245
-2022-03-02	Colorado	Omicron 21K	155
+2022-03-02	Colorado	Omicron 21K	156
 2022-03-03	Colorado	Omicron 21K	209
 2022-03-04	Colorado	Omicron 21K	119
 2022-03-05	Colorado	Omicron 21K	81
@@ -782,10 +787,10 @@ date	location	variant	sequences
 2022-03-12	Colorado	Omicron 21K	57
 2022-03-13	Colorado	Omicron 21K	50
 2022-03-14	Colorado	Omicron 21K	142
-2022-03-15	Colorado	Omicron 21K	99
+2022-03-15	Colorado	Omicron 21K	100
 2022-03-16	Colorado	Omicron 21K	71
 2022-03-17	Colorado	Omicron 21K	81
-2022-03-18	Colorado	Omicron 21K	79
+2022-03-18	Colorado	Omicron 21K	80
 2022-03-19	Colorado	Omicron 21K	44
 2022-03-20	Colorado	Omicron 21K	41
 2022-03-21	Colorado	Omicron 21K	83
@@ -829,15 +834,13 @@ date	location	variant	sequences
 2022-04-29	Colorado	Omicron 21K	1
 2022-05-02	Colorado	Omicron 21K	1
 2022-05-04	Colorado	Omicron 21K	2
-2022-05-05	Colorado	Omicron 21K	1
-2022-05-06	Colorado	Omicron 21K	1
+2022-05-05	Colorado	Omicron 21K	3
+2022-05-06	Colorado	Omicron 21K	4
+2022-05-07	Colorado	Omicron 21K	2
 2022-05-08	Colorado	Omicron 21K	1
-2022-05-09	Colorado	Omicron 21K	1
-2022-01-28	Colorado	Omicron 21L	1
-2022-01-29	Colorado	Omicron 21L	4
-2022-01-30	Colorado	Omicron 21L	5
-2022-01-31	Colorado	Omicron 21L	5
-2022-02-01	Colorado	Omicron 21L	6
+2022-05-09	Colorado	Omicron 21K	2
+2022-05-11	Colorado	Omicron 21K	1
+2022-05-14	Colorado	Omicron 21K	2
 2022-02-02	Colorado	Omicron 21L	1
 2022-02-03	Colorado	Omicron 21L	10
 2022-02-04	Colorado	Omicron 21L	2
@@ -901,7 +904,7 @@ date	location	variant	sequences
 2022-04-03	Colorado	Omicron 21L	59
 2022-04-04	Colorado	Omicron 21L	156
 2022-04-05	Colorado	Omicron 21L	96
-2022-04-06	Colorado	Omicron 21L	119
+2022-04-06	Colorado	Omicron 21L	120
 2022-04-07	Colorado	Omicron 21L	93
 2022-04-08	Colorado	Omicron 21L	81
 2022-04-09	Colorado	Omicron 21L	64
@@ -909,8 +912,8 @@ date	location	variant	sequences
 2022-04-11	Colorado	Omicron 21L	125
 2022-04-12	Colorado	Omicron 21L	124
 2022-04-13	Colorado	Omicron 21L	173
-2022-04-14	Colorado	Omicron 21L	129
-2022-04-15	Colorado	Omicron 21L	137
+2022-04-14	Colorado	Omicron 21L	130
+2022-04-15	Colorado	Omicron 21L	138
 2022-04-16	Colorado	Omicron 21L	91
 2022-04-17	Colorado	Omicron 21L	50
 2022-04-18	Colorado	Omicron 21L	157
@@ -921,23 +924,28 @@ date	location	variant	sequences
 2022-04-23	Colorado	Omicron 21L	63
 2022-04-24	Colorado	Omicron 21L	55
 2022-04-25	Colorado	Omicron 21L	148
-2022-04-26	Colorado	Omicron 21L	63
-2022-04-27	Colorado	Omicron 21L	39
-2022-04-28	Colorado	Omicron 21L	25
-2022-04-29	Colorado	Omicron 21L	26
-2022-04-30	Colorado	Omicron 21L	30
-2022-05-01	Colorado	Omicron 21L	13
-2022-05-02	Colorado	Omicron 21L	33
-2022-05-03	Colorado	Omicron 21L	23
-2022-05-04	Colorado	Omicron 21L	57
-2022-05-05	Colorado	Omicron 21L	46
-2022-05-06	Colorado	Omicron 21L	44
-2022-05-07	Colorado	Omicron 21L	32
-2022-05-08	Colorado	Omicron 21L	25
-2022-05-09	Colorado	Omicron 21L	37
-2022-05-10	Colorado	Omicron 21L	25
-2022-05-11	Colorado	Omicron 21L	20
-2022-05-12	Colorado	Omicron 21L	4
+2022-04-26	Colorado	Omicron 21L	65
+2022-04-27	Colorado	Omicron 21L	75
+2022-04-28	Colorado	Omicron 21L	30
+2022-04-29	Colorado	Omicron 21L	27
+2022-04-30	Colorado	Omicron 21L	31
+2022-05-01	Colorado	Omicron 21L	15
+2022-05-02	Colorado	Omicron 21L	34
+2022-05-03	Colorado	Omicron 21L	31
+2022-05-04	Colorado	Omicron 21L	98
+2022-05-05	Colorado	Omicron 21L	89
+2022-05-06	Colorado	Omicron 21L	77
+2022-05-07	Colorado	Omicron 21L	51
+2022-05-08	Colorado	Omicron 21L	55
+2022-05-09	Colorado	Omicron 21L	70
+2022-05-10	Colorado	Omicron 21L	86
+2022-05-11	Colorado	Omicron 21L	82
+2022-05-12	Colorado	Omicron 21L	15
+2022-05-13	Colorado	Omicron 21L	14
+2022-05-14	Colorado	Omicron 21L	46
+2022-05-15	Colorado	Omicron 21L	14
+2022-05-16	Colorado	Omicron 21L	4
+2022-05-17	Colorado	Omicron 21L	5
 2022-04-22	Colorado	Omicron 22A	1
 2022-04-23	Colorado	Omicron 22A	2
 2022-04-27	Colorado	Omicron 22A	2
@@ -946,13 +954,20 @@ date	location	variant	sequences
 2022-04-30	Colorado	Omicron 22A	1
 2022-05-04	Colorado	Omicron 22A	1
 2022-05-05	Colorado	Omicron 22A	3
-2022-05-06	Colorado	Omicron 22A	2
-2022-05-07	Colorado	Omicron 22A	1
-2022-05-09	Colorado	Omicron 22A	2
-2022-05-10	Colorado	Omicron 22A	1
-2022-05-11	Colorado	Omicron 22A	2
+2022-05-06	Colorado	Omicron 22A	8
+2022-05-07	Colorado	Omicron 22A	2
+2022-05-08	Colorado	Omicron 22A	2
+2022-05-09	Colorado	Omicron 22A	4
+2022-05-10	Colorado	Omicron 22A	4
+2022-05-11	Colorado	Omicron 22A	4
+2022-05-12	Colorado	Omicron 22A	1
+2022-05-13	Colorado	Omicron 22A	2
+2022-05-14	Colorado	Omicron 22A	3
 2022-05-04	Colorado	Omicron 22B	1
-2022-05-05	Colorado	Omicron 22B	1
+2022-05-05	Colorado	Omicron 22B	2
+2022-05-12	Colorado	Omicron 22B	1
+2022-05-13	Colorado	Omicron 22B	1
+2022-05-15	Colorado	Omicron 22B	3
 2022-03-14	Colorado	Omicron 22C	1
 2022-03-15	Colorado	Omicron 22C	1
 2022-03-16	Colorado	Omicron 22C	1
@@ -983,7 +998,7 @@ date	location	variant	sequences
 2022-04-11	Colorado	Omicron 22C	21
 2022-04-12	Colorado	Omicron 22C	29
 2022-04-13	Colorado	Omicron 22C	24
-2022-04-14	Colorado	Omicron 22C	25
+2022-04-14	Colorado	Omicron 22C	28
 2022-04-15	Colorado	Omicron 22C	36
 2022-04-16	Colorado	Omicron 22C	19
 2022-04-17	Colorado	Omicron 22C	12
@@ -995,30 +1010,35 @@ date	location	variant	sequences
 2022-04-23	Colorado	Omicron 22C	30
 2022-04-24	Colorado	Omicron 22C	27
 2022-04-25	Colorado	Omicron 22C	39
-2022-04-26	Colorado	Omicron 22C	40
-2022-04-27	Colorado	Omicron 22C	14
-2022-04-28	Colorado	Omicron 22C	13
-2022-04-29	Colorado	Omicron 22C	23
-2022-04-30	Colorado	Omicron 22C	17
+2022-04-26	Colorado	Omicron 22C	41
+2022-04-27	Colorado	Omicron 22C	29
+2022-04-28	Colorado	Omicron 22C	15
+2022-04-29	Colorado	Omicron 22C	24
+2022-04-30	Colorado	Omicron 22C	18
 2022-05-01	Colorado	Omicron 22C	2
-2022-05-02	Colorado	Omicron 22C	20
-2022-05-03	Colorado	Omicron 22C	23
-2022-05-04	Colorado	Omicron 22C	36
-2022-05-05	Colorado	Omicron 22C	31
-2022-05-06	Colorado	Omicron 22C	30
-2022-05-07	Colorado	Omicron 22C	20
-2022-05-08	Colorado	Omicron 22C	18
-2022-05-09	Colorado	Omicron 22C	16
-2022-05-10	Colorado	Omicron 22C	33
-2022-05-11	Colorado	Omicron 22C	20
-2022-05-12	Colorado	Omicron 22C	6
+2022-05-02	Colorado	Omicron 22C	21
+2022-05-03	Colorado	Omicron 22C	28
+2022-05-04	Colorado	Omicron 22C	45
+2022-05-05	Colorado	Omicron 22C	58
+2022-05-06	Colorado	Omicron 22C	60
+2022-05-07	Colorado	Omicron 22C	38
+2022-05-08	Colorado	Omicron 22C	35
+2022-05-09	Colorado	Omicron 22C	42
+2022-05-10	Colorado	Omicron 22C	93
+2022-05-11	Colorado	Omicron 22C	71
+2022-05-12	Colorado	Omicron 22C	23
+2022-05-13	Colorado	Omicron 22C	20
+2022-05-14	Colorado	Omicron 22C	39
+2022-05-15	Colorado	Omicron 22C	22
+2022-05-16	Colorado	Omicron 22C	4
+2022-05-17	Colorado	Omicron 22C	12
 2022-04-02	Connecticut	other	1
 2022-04-03	Connecticut	other	1
 2022-04-23	Connecticut	other	1
 2022-05-04	Connecticut	other	1
 2022-05-08	Connecticut	other	1
 2022-05-15	Connecticut	other	1
-2022-01-28	Connecticut	Delta	1
+2022-05-17	Connecticut	other	1
 2022-02-02	Connecticut	Delta	2
 2022-02-06	Connecticut	Delta	1
 2022-02-08	Connecticut	Delta	1
@@ -1027,11 +1047,6 @@ date	location	variant	sequences
 2022-02-23	Connecticut	Delta	1
 2022-03-16	Connecticut	Delta	1
 2022-04-26	Connecticut	Delta	1
-2022-01-28	Connecticut	Omicron 21K	197
-2022-01-29	Connecticut	Omicron 21K	10
-2022-01-30	Connecticut	Omicron 21K	81
-2022-01-31	Connecticut	Omicron 21K	195
-2022-02-01	Connecticut	Omicron 21K	108
 2022-02-02	Connecticut	Omicron 21K	107
 2022-02-03	Connecticut	Omicron 21K	110
 2022-02-04	Connecticut	Omicron 21K	117
@@ -1121,9 +1136,7 @@ date	location	variant	sequences
 2022-05-04	Connecticut	Omicron 21K	2
 2022-05-05	Connecticut	Omicron 21K	2
 2022-05-08	Connecticut	Omicron 21K	1
-2022-01-28	Connecticut	Omicron 21L	2
-2022-01-31	Connecticut	Omicron 21L	4
-2022-02-01	Connecticut	Omicron 21L	1
+2022-05-12	Connecticut	Omicron 21K	1
 2022-02-02	Connecticut	Omicron 21L	3
 2022-02-03	Connecticut	Omicron 21L	1
 2022-02-04	Connecticut	Omicron 21L	4
@@ -1183,12 +1196,12 @@ date	location	variant	sequences
 2022-04-02	Connecticut	Omicron 21L	53
 2022-04-03	Connecticut	Omicron 21L	39
 2022-04-04	Connecticut	Omicron 21L	69
-2022-04-05	Connecticut	Omicron 21L	58
+2022-04-05	Connecticut	Omicron 21L	59
 2022-04-06	Connecticut	Omicron 21L	57
-2022-04-07	Connecticut	Omicron 21L	68
-2022-04-08	Connecticut	Omicron 21L	93
+2022-04-07	Connecticut	Omicron 21L	69
+2022-04-08	Connecticut	Omicron 21L	94
 2022-04-09	Connecticut	Omicron 21L	51
-2022-04-10	Connecticut	Omicron 21L	55
+2022-04-10	Connecticut	Omicron 21L	56
 2022-04-11	Connecticut	Omicron 21L	82
 2022-04-12	Connecticut	Omicron 21L	80
 2022-04-13	Connecticut	Omicron 21L	85
@@ -1204,26 +1217,28 @@ date	location	variant	sequences
 2022-04-23	Connecticut	Omicron 21L	76
 2022-04-24	Connecticut	Omicron 21L	77
 2022-04-25	Connecticut	Omicron 21L	72
-2022-04-26	Connecticut	Omicron 21L	83
+2022-04-26	Connecticut	Omicron 21L	84
 2022-04-27	Connecticut	Omicron 21L	69
-2022-04-28	Connecticut	Omicron 21L	73
-2022-04-29	Connecticut	Omicron 21L	69
+2022-04-28	Connecticut	Omicron 21L	75
+2022-04-29	Connecticut	Omicron 21L	70
 2022-04-30	Connecticut	Omicron 21L	72
 2022-05-01	Connecticut	Omicron 21L	30
 2022-05-02	Connecticut	Omicron 21L	77
-2022-05-03	Connecticut	Omicron 21L	81
-2022-05-04	Connecticut	Omicron 21L	78
+2022-05-03	Connecticut	Omicron 21L	82
+2022-05-04	Connecticut	Omicron 21L	79
 2022-05-05	Connecticut	Omicron 21L	81
 2022-05-06	Connecticut	Omicron 21L	66
 2022-05-07	Connecticut	Omicron 21L	43
 2022-05-08	Connecticut	Omicron 21L	35
 2022-05-09	Connecticut	Omicron 21L	76
-2022-05-10	Connecticut	Omicron 21L	55
+2022-05-10	Connecticut	Omicron 21L	56
 2022-05-11	Connecticut	Omicron 21L	36
-2022-05-12	Connecticut	Omicron 21L	27
-2022-05-13	Connecticut	Omicron 21L	16
-2022-05-14	Connecticut	Omicron 21L	19
+2022-05-12	Connecticut	Omicron 21L	56
+2022-05-13	Connecticut	Omicron 21L	38
+2022-05-14	Connecticut	Omicron 21L	27
 2022-05-15	Connecticut	Omicron 21L	5
+2022-05-16	Connecticut	Omicron 21L	7
+2022-05-17	Connecticut	Omicron 21L	15
 2022-04-26	Connecticut	Omicron 22A	1
 2022-04-27	Connecticut	Omicron 22A	1
 2022-05-01	Connecticut	Omicron 22A	1
@@ -1231,11 +1246,11 @@ date	location	variant	sequences
 2022-05-06	Connecticut	Omicron 22A	1
 2022-05-08	Connecticut	Omicron 22A	1
 2022-05-10	Connecticut	Omicron 22A	1
-2022-05-11	Connecticut	Omicron 22A	1
+2022-05-11	Connecticut	Omicron 22A	2
 2022-04-28	Connecticut	Omicron 22B	1
 2022-05-10	Connecticut	Omicron 22B	1
 2022-05-11	Connecticut	Omicron 22B	3
-2022-05-12	Connecticut	Omicron 22B	1
+2022-05-12	Connecticut	Omicron 22B	3
 2022-05-14	Connecticut	Omicron 22B	4
 2022-03-03	Connecticut	Omicron 22C	1
 2022-03-09	Connecticut	Omicron 22C	1
@@ -1258,8 +1273,8 @@ date	location	variant	sequences
 2022-04-03	Connecticut	Omicron 22C	12
 2022-04-04	Connecticut	Omicron 22C	20
 2022-04-05	Connecticut	Omicron 22C	14
-2022-04-06	Connecticut	Omicron 22C	9
-2022-04-07	Connecticut	Omicron 22C	14
+2022-04-06	Connecticut	Omicron 22C	10
+2022-04-07	Connecticut	Omicron 22C	17
 2022-04-08	Connecticut	Omicron 22C	39
 2022-04-09	Connecticut	Omicron 22C	8
 2022-04-10	Connecticut	Omicron 22C	13
@@ -1282,9 +1297,9 @@ date	location	variant	sequences
 2022-04-27	Connecticut	Omicron 22C	54
 2022-04-28	Connecticut	Omicron 22C	38
 2022-04-29	Connecticut	Omicron 22C	43
-2022-04-30	Connecticut	Omicron 22C	45
+2022-04-30	Connecticut	Omicron 22C	46
 2022-05-01	Connecticut	Omicron 22C	35
-2022-05-02	Connecticut	Omicron 22C	71
+2022-05-02	Connecticut	Omicron 22C	72
 2022-05-03	Connecticut	Omicron 22C	69
 2022-05-04	Connecticut	Omicron 22C	77
 2022-05-05	Connecticut	Omicron 22C	91
@@ -1292,12 +1307,14 @@ date	location	variant	sequences
 2022-05-07	Connecticut	Omicron 22C	59
 2022-05-08	Connecticut	Omicron 22C	63
 2022-05-09	Connecticut	Omicron 22C	77
-2022-05-10	Connecticut	Omicron 22C	69
-2022-05-11	Connecticut	Omicron 22C	49
-2022-05-12	Connecticut	Omicron 22C	45
-2022-05-13	Connecticut	Omicron 22C	25
-2022-05-14	Connecticut	Omicron 22C	15
-2022-05-15	Connecticut	Omicron 22C	5
+2022-05-10	Connecticut	Omicron 22C	71
+2022-05-11	Connecticut	Omicron 22C	50
+2022-05-12	Connecticut	Omicron 22C	89
+2022-05-13	Connecticut	Omicron 22C	56
+2022-05-14	Connecticut	Omicron 22C	23
+2022-05-15	Connecticut	Omicron 22C	6
+2022-05-16	Connecticut	Omicron 22C	15
+2022-05-17	Connecticut	Omicron 22C	14
 2022-02-22	Florida	other	1
 2022-02-24	Florida	other	2
 2022-02-25	Florida	other	3
@@ -1312,10 +1329,12 @@ date	location	variant	sequences
 2022-04-12	Florida	other	2
 2022-04-13	Florida	other	1
 2022-04-18	Florida	other	1
+2022-04-20	Florida	other	1
 2022-04-22	Florida	other	2
 2022-04-25	Florida	other	1
 2022-04-26	Florida	other	2
 2022-04-27	Florida	other	2
+2022-04-28	Florida	other	1
 2022-05-01	Florida	other	2
 2022-05-03	Florida	other	1
 2022-05-08	Florida	other	1
@@ -1324,11 +1343,6 @@ date	location	variant	sequences
 2022-02-09	Florida	Delta	2
 2022-02-11	Florida	Delta	1
 2022-02-18	Florida	Delta	1
-2022-01-28	Florida	Omicron 21K	298
-2022-01-29	Florida	Omicron 21K	433
-2022-01-30	Florida	Omicron 21K	49
-2022-01-31	Florida	Omicron 21K	267
-2022-02-01	Florida	Omicron 21K	248
 2022-02-02	Florida	Omicron 21K	416
 2022-02-03	Florida	Omicron 21K	222
 2022-02-04	Florida	Omicron 21K	348
@@ -1401,10 +1415,10 @@ date	location	variant	sequences
 2022-04-12	Florida	Omicron 21K	2
 2022-04-13	Florida	Omicron 21K	2
 2022-04-14	Florida	Omicron 21K	1
-2022-04-15	Florida	Omicron 21K	2
+2022-04-15	Florida	Omicron 21K	3
 2022-04-16	Florida	Omicron 21K	4
 2022-04-17	Florida	Omicron 21K	1
-2022-04-18	Florida	Omicron 21K	7
+2022-04-18	Florida	Omicron 21K	8
 2022-04-19	Florida	Omicron 21K	3
 2022-04-20	Florida	Omicron 21K	2
 2022-04-21	Florida	Omicron 21K	4
@@ -1414,14 +1428,13 @@ date	location	variant	sequences
 2022-04-25	Florida	Omicron 21K	1
 2022-04-26	Florida	Omicron 21K	6
 2022-04-27	Florida	Omicron 21K	1
+2022-04-28	Florida	Omicron 21K	1
 2022-05-01	Florida	Omicron 21K	1
 2022-05-02	Florida	Omicron 21K	1
 2022-05-05	Florida	Omicron 21K	3
-2022-05-06	Florida	Omicron 21K	2
+2022-05-06	Florida	Omicron 21K	3
 2022-05-07	Florida	Omicron 21K	2
-2022-01-29	Florida	Omicron 21L	3
-2022-01-31	Florida	Omicron 21L	1
-2022-02-01	Florida	Omicron 21L	1
+2022-05-16	Florida	Omicron 21K	1
 2022-02-02	Florida	Omicron 21L	1
 2022-02-03	Florida	Omicron 21L	1
 2022-02-04	Florida	Omicron 21L	1
@@ -1492,39 +1505,43 @@ date	location	variant	sequences
 2022-04-10	Florida	Omicron 21L	149
 2022-04-11	Florida	Omicron 21L	207
 2022-04-12	Florida	Omicron 21L	136
-2022-04-13	Florida	Omicron 21L	72
+2022-04-13	Florida	Omicron 21L	98
 2022-04-14	Florida	Omicron 21L	111
-2022-04-15	Florida	Omicron 21L	106
-2022-04-16	Florida	Omicron 21L	105
-2022-04-17	Florida	Omicron 21L	39
-2022-04-18	Florida	Omicron 21L	189
-2022-04-19	Florida	Omicron 21L	156
-2022-04-20	Florida	Omicron 21L	149
-2022-04-21	Florida	Omicron 21L	117
-2022-04-22	Florida	Omicron 21L	93
-2022-04-23	Florida	Omicron 21L	70
+2022-04-15	Florida	Omicron 21L	115
+2022-04-16	Florida	Omicron 21L	115
+2022-04-17	Florida	Omicron 21L	40
+2022-04-18	Florida	Omicron 21L	210
+2022-04-19	Florida	Omicron 21L	170
+2022-04-20	Florida	Omicron 21L	159
+2022-04-21	Florida	Omicron 21L	139
+2022-04-22	Florida	Omicron 21L	122
+2022-04-23	Florida	Omicron 21L	72
 2022-04-24	Florida	Omicron 21L	66
-2022-04-25	Florida	Omicron 21L	146
-2022-04-26	Florida	Omicron 21L	140
-2022-04-27	Florida	Omicron 21L	152
-2022-04-28	Florida	Omicron 21L	106
-2022-04-29	Florida	Omicron 21L	104
-2022-04-30	Florida	Omicron 21L	71
-2022-05-01	Florida	Omicron 21L	161
-2022-05-02	Florida	Omicron 21L	107
-2022-05-03	Florida	Omicron 21L	88
-2022-05-04	Florida	Omicron 21L	72
-2022-05-05	Florida	Omicron 21L	124
-2022-05-06	Florida	Omicron 21L	142
-2022-05-07	Florida	Omicron 21L	100
+2022-04-25	Florida	Omicron 21L	151
+2022-04-26	Florida	Omicron 21L	144
+2022-04-27	Florida	Omicron 21L	163
+2022-04-28	Florida	Omicron 21L	115
+2022-04-29	Florida	Omicron 21L	119
+2022-04-30	Florida	Omicron 21L	78
+2022-05-01	Florida	Omicron 21L	182
+2022-05-02	Florida	Omicron 21L	123
+2022-05-03	Florida	Omicron 21L	113
+2022-05-04	Florida	Omicron 21L	96
+2022-05-05	Florida	Omicron 21L	137
+2022-05-06	Florida	Omicron 21L	155
+2022-05-07	Florida	Omicron 21L	101
 2022-05-08	Florida	Omicron 21L	33
-2022-05-09	Florida	Omicron 21L	66
-2022-05-10	Florida	Omicron 21L	131
-2022-05-11	Florida	Omicron 21L	138
-2022-05-12	Florida	Omicron 21L	47
-2022-05-13	Florida	Omicron 21L	9
-2022-05-14	Florida	Omicron 21L	5
-2022-05-15	Florida	Omicron 21L	4
+2022-05-09	Florida	Omicron 21L	68
+2022-05-10	Florida	Omicron 21L	133
+2022-05-11	Florida	Omicron 21L	139
+2022-05-12	Florida	Omicron 21L	80
+2022-05-13	Florida	Omicron 21L	45
+2022-05-14	Florida	Omicron 21L	44
+2022-05-15	Florida	Omicron 21L	32
+2022-05-16	Florida	Omicron 21L	64
+2022-05-17	Florida	Omicron 21L	1
+2022-05-18	Florida	Omicron 21L	1
+2022-05-19	Florida	Omicron 21L	2
 2022-04-27	Florida	Omicron 22A	1
 2022-04-28	Florida	Omicron 22A	1
 2022-04-29	Florida	Omicron 22A	2
@@ -1533,8 +1550,8 @@ date	location	variant	sequences
 2022-05-06	Florida	Omicron 22A	2
 2022-05-08	Florida	Omicron 22A	1
 2022-05-10	Florida	Omicron 22A	2
-2022-05-11	Florida	Omicron 22A	5
-2022-05-12	Florida	Omicron 22A	1
+2022-05-11	Florida	Omicron 22A	6
+2022-05-12	Florida	Omicron 22A	2
 2022-05-13	Florida	Omicron 22A	1
 2022-04-27	Florida	Omicron 22B	3
 2022-05-02	Florida	Omicron 22B	1
@@ -1542,6 +1559,10 @@ date	location	variant	sequences
 2022-05-08	Florida	Omicron 22B	1
 2022-05-10	Florida	Omicron 22B	2
 2022-05-12	Florida	Omicron 22B	1
+2022-05-13	Florida	Omicron 22B	1
+2022-05-15	Florida	Omicron 22B	2
+2022-05-16	Florida	Omicron 22B	2
+2022-05-17	Florida	Omicron 22B	2
 2022-03-06	Florida	Omicron 22C	1
 2022-03-11	Florida	Omicron 22C	1
 2022-03-12	Florida	Omicron 22C	1
@@ -1573,39 +1594,43 @@ date	location	variant	sequences
 2022-04-10	Florida	Omicron 22C	18
 2022-04-11	Florida	Omicron 22C	43
 2022-04-12	Florida	Omicron 22C	27
-2022-04-13	Florida	Omicron 22C	13
+2022-04-13	Florida	Omicron 22C	15
 2022-04-14	Florida	Omicron 22C	15
-2022-04-15	Florida	Omicron 22C	11
-2022-04-16	Florida	Omicron 22C	20
+2022-04-15	Florida	Omicron 22C	13
+2022-04-16	Florida	Omicron 22C	22
 2022-04-17	Florida	Omicron 22C	8
-2022-04-18	Florida	Omicron 22C	53
-2022-04-19	Florida	Omicron 22C	37
-2022-04-20	Florida	Omicron 22C	36
-2022-04-21	Florida	Omicron 22C	36
-2022-04-22	Florida	Omicron 22C	33
-2022-04-23	Florida	Omicron 22C	25
+2022-04-18	Florida	Omicron 22C	59
+2022-04-19	Florida	Omicron 22C	44
+2022-04-20	Florida	Omicron 22C	43
+2022-04-21	Florida	Omicron 22C	40
+2022-04-22	Florida	Omicron 22C	51
+2022-04-23	Florida	Omicron 22C	26
 2022-04-24	Florida	Omicron 22C	28
-2022-04-25	Florida	Omicron 22C	58
-2022-04-26	Florida	Omicron 22C	54
-2022-04-27	Florida	Omicron 22C	79
-2022-04-28	Florida	Omicron 22C	40
-2022-04-29	Florida	Omicron 22C	33
-2022-04-30	Florida	Omicron 22C	51
-2022-05-01	Florida	Omicron 22C	47
-2022-05-02	Florida	Omicron 22C	62
-2022-05-03	Florida	Omicron 22C	45
-2022-05-04	Florida	Omicron 22C	67
-2022-05-05	Florida	Omicron 22C	76
-2022-05-06	Florida	Omicron 22C	109
-2022-05-07	Florida	Omicron 22C	59
-2022-05-08	Florida	Omicron 22C	25
+2022-04-25	Florida	Omicron 22C	61
+2022-04-26	Florida	Omicron 22C	56
+2022-04-27	Florida	Omicron 22C	84
+2022-04-28	Florida	Omicron 22C	57
+2022-04-29	Florida	Omicron 22C	50
+2022-04-30	Florida	Omicron 22C	59
+2022-05-01	Florida	Omicron 22C	55
+2022-05-02	Florida	Omicron 22C	71
+2022-05-03	Florida	Omicron 22C	55
+2022-05-04	Florida	Omicron 22C	76
+2022-05-05	Florida	Omicron 22C	91
+2022-05-06	Florida	Omicron 22C	113
+2022-05-07	Florida	Omicron 22C	60
+2022-05-08	Florida	Omicron 22C	26
 2022-05-09	Florida	Omicron 22C	69
 2022-05-10	Florida	Omicron 22C	114
-2022-05-11	Florida	Omicron 22C	130
-2022-05-12	Florida	Omicron 22C	48
-2022-05-13	Florida	Omicron 22C	10
-2022-05-14	Florida	Omicron 22C	5
-2022-05-15	Florida	Omicron 22C	7
+2022-05-11	Florida	Omicron 22C	132
+2022-05-12	Florida	Omicron 22C	72
+2022-05-13	Florida	Omicron 22C	52
+2022-05-14	Florida	Omicron 22C	60
+2022-05-15	Florida	Omicron 22C	40
+2022-05-16	Florida	Omicron 22C	65
+2022-05-17	Florida	Omicron 22C	8
+2022-05-18	Florida	Omicron 22C	3
+2022-05-20	Florida	Omicron 22C	2
 2022-02-23	Georgia	other	1
 2022-03-17	Georgia	other	1
 2022-04-13	Georgia	other	1
@@ -1614,11 +1639,6 @@ date	location	variant	sequences
 2022-05-02	Georgia	other	1
 2022-05-06	Georgia	other	1
 2022-03-10	Georgia	Delta	1
-2022-01-28	Georgia	Omicron 21K	444
-2022-01-29	Georgia	Omicron 21K	210
-2022-01-30	Georgia	Omicron 21K	64
-2022-01-31	Georgia	Omicron 21K	414
-2022-02-01	Georgia	Omicron 21K	457
 2022-02-02	Georgia	Omicron 21K	480
 2022-02-03	Georgia	Omicron 21K	369
 2022-02-04	Georgia	Omicron 21K	322
@@ -1700,10 +1720,7 @@ date	location	variant	sequences
 2022-04-26	Georgia	Omicron 21K	2
 2022-04-29	Georgia	Omicron 21K	1
 2022-05-04	Georgia	Omicron 21K	1
-2022-01-28	Georgia	Omicron 21L	1
-2022-01-29	Georgia	Omicron 21L	3
-2022-01-31	Georgia	Omicron 21L	1
-2022-02-01	Georgia	Omicron 21L	4
+2022-05-17	Georgia	Omicron 21K	1
 2022-02-02	Georgia	Omicron 21L	6
 2022-02-03	Georgia	Omicron 21L	2
 2022-02-04	Georgia	Omicron 21L	1
@@ -1783,13 +1800,13 @@ date	location	variant	sequences
 2022-04-24	Georgia	Omicron 21L	28
 2022-04-25	Georgia	Omicron 21L	39
 2022-04-26	Georgia	Omicron 21L	47
-2022-04-27	Georgia	Omicron 21L	26
+2022-04-27	Georgia	Omicron 21L	27
 2022-04-28	Georgia	Omicron 21L	11
 2022-04-29	Georgia	Omicron 21L	24
 2022-04-30	Georgia	Omicron 21L	21
 2022-05-01	Georgia	Omicron 21L	23
 2022-05-02	Georgia	Omicron 21L	20
-2022-05-03	Georgia	Omicron 21L	47
+2022-05-03	Georgia	Omicron 21L	48
 2022-05-04	Georgia	Omicron 21L	17
 2022-05-05	Georgia	Omicron 21L	23
 2022-05-06	Georgia	Omicron 21L	38
@@ -1797,9 +1814,12 @@ date	location	variant	sequences
 2022-05-08	Georgia	Omicron 21L	17
 2022-05-09	Georgia	Omicron 21L	24
 2022-05-10	Georgia	Omicron 21L	22
-2022-05-11	Georgia	Omicron 21L	10
-2022-05-12	Georgia	Omicron 21L	7
-2022-05-13	Georgia	Omicron 21L	8
+2022-05-11	Georgia	Omicron 21L	11
+2022-05-12	Georgia	Omicron 21L	12
+2022-05-13	Georgia	Omicron 21L	9
+2022-05-14	Georgia	Omicron 21L	1
+2022-05-15	Georgia	Omicron 21L	1
+2022-05-16	Georgia	Omicron 21L	5
 2022-04-19	Georgia	Omicron 22A	1
 2022-04-26	Georgia	Omicron 22A	2
 2022-05-01	Georgia	Omicron 22A	1
@@ -1807,6 +1827,7 @@ date	location	variant	sequences
 2022-05-06	Georgia	Omicron 22A	3
 2022-05-07	Georgia	Omicron 22A	1
 2022-05-11	Georgia	Omicron 22A	2
+2022-05-12	Georgia	Omicron 22A	1
 2022-04-19	Georgia	Omicron 22B	1
 2022-04-20	Georgia	Omicron 22B	1
 2022-05-03	Georgia	Omicron 22B	2
@@ -1858,10 +1879,13 @@ date	location	variant	sequences
 2022-05-07	Georgia	Omicron 22C	36
 2022-05-08	Georgia	Omicron 22C	18
 2022-05-09	Georgia	Omicron 22C	15
-2022-05-10	Georgia	Omicron 22C	30
-2022-05-11	Georgia	Omicron 22C	19
-2022-05-12	Georgia	Omicron 22C	3
-2022-05-13	Georgia	Omicron 22C	2
+2022-05-10	Georgia	Omicron 22C	31
+2022-05-11	Georgia	Omicron 22C	20
+2022-05-12	Georgia	Omicron 22C	5
+2022-05-13	Georgia	Omicron 22C	5
+2022-05-14	Georgia	Omicron 22C	2
+2022-05-15	Georgia	Omicron 22C	2
+2022-05-16	Georgia	Omicron 22C	6
 2022-03-15	Illinois	other	1
 2022-03-18	Illinois	other	1
 2022-03-23	Illinois	other	1
@@ -1882,9 +1906,6 @@ date	location	variant	sequences
 2022-05-05	Illinois	other	1
 2022-05-09	Illinois	other	1
 2022-05-10	Illinois	other	1
-2022-01-29	Illinois	Delta	2
-2022-01-31	Illinois	Delta	1
-2022-02-01	Illinois	Delta	1
 2022-02-02	Illinois	Delta	1
 2022-02-06	Illinois	Delta	1
 2022-02-11	Illinois	Delta	1
@@ -1896,11 +1917,6 @@ date	location	variant	sequences
 2022-03-14	Illinois	Delta	1
 2022-03-21	Illinois	Delta	1
 2022-03-28	Illinois	Delta	1
-2022-01-28	Illinois	Omicron 21K	75
-2022-01-29	Illinois	Omicron 21K	119
-2022-01-30	Illinois	Omicron 21K	72
-2022-01-31	Illinois	Omicron 21K	138
-2022-02-01	Illinois	Omicron 21K	214
 2022-02-02	Illinois	Omicron 21K	128
 2022-02-03	Illinois	Omicron 21K	184
 2022-02-04	Illinois	Omicron 21K	167
@@ -1989,9 +2005,7 @@ date	location	variant	sequences
 2022-04-30	Illinois	Omicron 21K	1
 2022-05-01	Illinois	Omicron 21K	1
 2022-05-02	Illinois	Omicron 21K	1
-2022-05-09	Illinois	Omicron 21K	1
-2022-01-30	Illinois	Omicron 21L	1
-2022-02-01	Illinois	Omicron 21L	3
+2022-05-09	Illinois	Omicron 21K	2
 2022-02-02	Illinois	Omicron 21L	1
 2022-02-03	Illinois	Omicron 21L	3
 2022-02-04	Illinois	Omicron 21L	2
@@ -2054,10 +2068,10 @@ date	location	variant	sequences
 2022-04-02	Illinois	Omicron 21L	81
 2022-04-03	Illinois	Omicron 21L	72
 2022-04-04	Illinois	Omicron 21L	137
-2022-04-05	Illinois	Omicron 21L	189
+2022-04-05	Illinois	Omicron 21L	190
 2022-04-06	Illinois	Omicron 21L	141
 2022-04-07	Illinois	Omicron 21L	175
-2022-04-08	Illinois	Omicron 21L	166
+2022-04-08	Illinois	Omicron 21L	167
 2022-04-09	Illinois	Omicron 21L	58
 2022-04-10	Illinois	Omicron 21L	55
 2022-04-11	Illinois	Omicron 21L	108
@@ -2075,29 +2089,34 @@ date	location	variant	sequences
 2022-04-23	Illinois	Omicron 21L	27
 2022-04-24	Illinois	Omicron 21L	105
 2022-04-25	Illinois	Omicron 21L	135
-2022-04-26	Illinois	Omicron 21L	112
+2022-04-26	Illinois	Omicron 21L	113
 2022-04-27	Illinois	Omicron 21L	57
 2022-04-28	Illinois	Omicron 21L	59
-2022-04-29	Illinois	Omicron 21L	65
+2022-04-29	Illinois	Omicron 21L	66
 2022-04-30	Illinois	Omicron 21L	96
 2022-05-01	Illinois	Omicron 21L	57
-2022-05-02	Illinois	Omicron 21L	93
+2022-05-02	Illinois	Omicron 21L	94
 2022-05-03	Illinois	Omicron 21L	59
-2022-05-04	Illinois	Omicron 21L	78
+2022-05-04	Illinois	Omicron 21L	79
 2022-05-05	Illinois	Omicron 21L	65
-2022-05-06	Illinois	Omicron 21L	85
-2022-05-07	Illinois	Omicron 21L	60
+2022-05-06	Illinois	Omicron 21L	87
+2022-05-07	Illinois	Omicron 21L	64
 2022-05-08	Illinois	Omicron 21L	33
-2022-05-09	Illinois	Omicron 21L	65
-2022-05-10	Illinois	Omicron 21L	49
-2022-05-11	Illinois	Omicron 21L	55
-2022-05-12	Illinois	Omicron 21L	23
-2022-05-13	Illinois	Omicron 21L	11
+2022-05-09	Illinois	Omicron 21L	74
+2022-05-10	Illinois	Omicron 21L	54
+2022-05-11	Illinois	Omicron 21L	61
+2022-05-12	Illinois	Omicron 21L	25
+2022-05-13	Illinois	Omicron 21L	12
+2022-05-14	Illinois	Omicron 21L	2
+2022-05-15	Illinois	Omicron 21L	4
+2022-05-16	Illinois	Omicron 21L	5
+2022-05-17	Illinois	Omicron 21L	2
 2022-04-24	Illinois	Omicron 22A	1
 2022-04-27	Illinois	Omicron 22A	1
 2022-05-02	Illinois	Omicron 22A	1
 2022-05-04	Illinois	Omicron 22A	1
 2022-05-06	Illinois	Omicron 22A	1
+2022-05-09	Illinois	Omicron 22A	1
 2022-05-12	Illinois	Omicron 22A	1
 2022-04-06	Illinois	Omicron 22B	1
 2022-04-16	Illinois	Omicron 22B	1
@@ -2108,16 +2127,19 @@ date	location	variant	sequences
 2022-04-27	Illinois	Omicron 22B	1
 2022-04-29	Illinois	Omicron 22B	3
 2022-04-30	Illinois	Omicron 22B	2
+2022-05-01	Illinois	Omicron 22B	1
 2022-05-03	Illinois	Omicron 22B	1
 2022-05-04	Illinois	Omicron 22B	1
 2022-05-05	Illinois	Omicron 22B	7
 2022-05-06	Illinois	Omicron 22B	2
-2022-05-07	Illinois	Omicron 22B	2
+2022-05-07	Illinois	Omicron 22B	5
 2022-05-08	Illinois	Omicron 22B	3
 2022-05-09	Illinois	Omicron 22B	2
-2022-05-10	Illinois	Omicron 22B	2
+2022-05-10	Illinois	Omicron 22B	3
 2022-05-11	Illinois	Omicron 22B	3
 2022-05-12	Illinois	Omicron 22B	2
+2022-05-15	Illinois	Omicron 22B	2
+2022-05-16	Illinois	Omicron 22B	1
 2022-03-14	Illinois	Omicron 22C	3
 2022-03-20	Illinois	Omicron 22C	2
 2022-03-21	Illinois	Omicron 22C	1
@@ -2164,251 +2186,19 @@ date	location	variant	sequences
 2022-05-02	Illinois	Omicron 22C	57
 2022-05-03	Illinois	Omicron 22C	25
 2022-05-04	Illinois	Omicron 22C	33
-2022-05-05	Illinois	Omicron 22C	54
+2022-05-05	Illinois	Omicron 22C	55
 2022-05-06	Illinois	Omicron 22C	34
-2022-05-07	Illinois	Omicron 22C	28
+2022-05-07	Illinois	Omicron 22C	33
 2022-05-08	Illinois	Omicron 22C	22
-2022-05-09	Illinois	Omicron 22C	37
-2022-05-10	Illinois	Omicron 22C	28
-2022-05-11	Illinois	Omicron 22C	42
-2022-05-12	Illinois	Omicron 22C	15
+2022-05-09	Illinois	Omicron 22C	46
+2022-05-10	Illinois	Omicron 22C	31
+2022-05-11	Illinois	Omicron 22C	47
+2022-05-12	Illinois	Omicron 22C	17
 2022-05-13	Illinois	Omicron 22C	7
-2022-02-24	Indiana	other	1
-2022-04-16	Indiana	other	1
-2022-05-12	Indiana	other	1
-2022-02-01	Indiana	Delta	3
-2022-02-07	Indiana	Delta	1
-2022-02-08	Indiana	Delta	1
-2022-03-17	Indiana	Delta	1
-2022-01-28	Indiana	Omicron 21K	69
-2022-01-29	Indiana	Omicron 21K	94
-2022-01-30	Indiana	Omicron 21K	37
-2022-01-31	Indiana	Omicron 21K	67
-2022-02-01	Indiana	Omicron 21K	70
-2022-02-02	Indiana	Omicron 21K	80
-2022-02-03	Indiana	Omicron 21K	26
-2022-02-04	Indiana	Omicron 21K	20
-2022-02-05	Indiana	Omicron 21K	62
-2022-02-06	Indiana	Omicron 21K	22
-2022-02-07	Indiana	Omicron 21K	180
-2022-02-08	Indiana	Omicron 21K	95
-2022-02-09	Indiana	Omicron 21K	91
-2022-02-10	Indiana	Omicron 21K	42
-2022-02-11	Indiana	Omicron 21K	52
-2022-02-12	Indiana	Omicron 21K	36
-2022-02-13	Indiana	Omicron 21K	43
-2022-02-14	Indiana	Omicron 21K	33
-2022-02-15	Indiana	Omicron 21K	44
-2022-02-16	Indiana	Omicron 21K	52
-2022-02-17	Indiana	Omicron 21K	42
-2022-02-18	Indiana	Omicron 21K	51
-2022-02-19	Indiana	Omicron 21K	45
-2022-02-20	Indiana	Omicron 21K	14
-2022-02-21	Indiana	Omicron 21K	48
-2022-02-22	Indiana	Omicron 21K	62
-2022-02-23	Indiana	Omicron 21K	25
-2022-02-24	Indiana	Omicron 21K	29
-2022-02-25	Indiana	Omicron 21K	45
-2022-02-26	Indiana	Omicron 21K	26
-2022-02-27	Indiana	Omicron 21K	16
-2022-02-28	Indiana	Omicron 21K	30
-2022-03-01	Indiana	Omicron 21K	26
-2022-03-02	Indiana	Omicron 21K	16
-2022-03-03	Indiana	Omicron 21K	20
-2022-03-04	Indiana	Omicron 21K	21
-2022-03-05	Indiana	Omicron 21K	10
-2022-03-06	Indiana	Omicron 21K	4
-2022-03-07	Indiana	Omicron 21K	36
-2022-03-08	Indiana	Omicron 21K	14
-2022-03-09	Indiana	Omicron 21K	6
-2022-03-10	Indiana	Omicron 21K	11
-2022-03-11	Indiana	Omicron 21K	7
-2022-03-12	Indiana	Omicron 21K	9
-2022-03-13	Indiana	Omicron 21K	2
-2022-03-14	Indiana	Omicron 21K	17
-2022-03-15	Indiana	Omicron 21K	9
-2022-03-16	Indiana	Omicron 21K	13
-2022-03-17	Indiana	Omicron 21K	11
-2022-03-18	Indiana	Omicron 21K	11
-2022-03-19	Indiana	Omicron 21K	3
-2022-03-20	Indiana	Omicron 21K	3
-2022-03-21	Indiana	Omicron 21K	10
-2022-03-22	Indiana	Omicron 21K	6
-2022-03-23	Indiana	Omicron 21K	2
-2022-03-24	Indiana	Omicron 21K	10
-2022-03-25	Indiana	Omicron 21K	7
-2022-03-26	Indiana	Omicron 21K	1
-2022-03-27	Indiana	Omicron 21K	2
-2022-03-28	Indiana	Omicron 21K	1
-2022-03-29	Indiana	Omicron 21K	8
-2022-03-30	Indiana	Omicron 21K	2
-2022-03-31	Indiana	Omicron 21K	2
-2022-04-01	Indiana	Omicron 21K	6
-2022-04-02	Indiana	Omicron 21K	1
-2022-04-04	Indiana	Omicron 21K	3
-2022-04-05	Indiana	Omicron 21K	4
-2022-04-06	Indiana	Omicron 21K	3
-2022-04-08	Indiana	Omicron 21K	1
-2022-04-09	Indiana	Omicron 21K	2
-2022-04-10	Indiana	Omicron 21K	1
-2022-04-11	Indiana	Omicron 21K	1
-2022-04-12	Indiana	Omicron 21K	3
-2022-04-13	Indiana	Omicron 21K	3
-2022-04-14	Indiana	Omicron 21K	1
-2022-04-27	Indiana	Omicron 21K	1
-2022-05-02	Indiana	Omicron 21K	1
-2022-05-03	Indiana	Omicron 21K	1
-2022-01-28	Indiana	Omicron 21L	1
-2022-01-31	Indiana	Omicron 21L	1
-2022-02-02	Indiana	Omicron 21L	1
-2022-02-06	Indiana	Omicron 21L	1
-2022-02-07	Indiana	Omicron 21L	3
-2022-02-10	Indiana	Omicron 21L	2
-2022-02-11	Indiana	Omicron 21L	2
-2022-02-12	Indiana	Omicron 21L	1
-2022-02-14	Indiana	Omicron 21L	1
-2022-02-15	Indiana	Omicron 21L	3
-2022-02-16	Indiana	Omicron 21L	5
-2022-02-17	Indiana	Omicron 21L	5
-2022-02-18	Indiana	Omicron 21L	4
-2022-02-19	Indiana	Omicron 21L	2
-2022-02-20	Indiana	Omicron 21L	2
-2022-02-21	Indiana	Omicron 21L	1
-2022-02-22	Indiana	Omicron 21L	3
-2022-02-23	Indiana	Omicron 21L	4
-2022-02-24	Indiana	Omicron 21L	2
-2022-02-25	Indiana	Omicron 21L	2
-2022-02-26	Indiana	Omicron 21L	1
-2022-02-27	Indiana	Omicron 21L	2
-2022-02-28	Indiana	Omicron 21L	1
-2022-03-01	Indiana	Omicron 21L	2
-2022-03-02	Indiana	Omicron 21L	2
-2022-03-03	Indiana	Omicron 21L	1
-2022-03-04	Indiana	Omicron 21L	7
-2022-03-05	Indiana	Omicron 21L	4
-2022-03-06	Indiana	Omicron 21L	3
-2022-03-07	Indiana	Omicron 21L	8
-2022-03-08	Indiana	Omicron 21L	1
-2022-03-09	Indiana	Omicron 21L	4
-2022-03-10	Indiana	Omicron 21L	6
-2022-03-11	Indiana	Omicron 21L	3
-2022-03-12	Indiana	Omicron 21L	3
-2022-03-13	Indiana	Omicron 21L	2
-2022-03-14	Indiana	Omicron 21L	3
-2022-03-15	Indiana	Omicron 21L	8
-2022-03-16	Indiana	Omicron 21L	4
-2022-03-17	Indiana	Omicron 21L	3
-2022-03-18	Indiana	Omicron 21L	12
-2022-03-19	Indiana	Omicron 21L	8
-2022-03-20	Indiana	Omicron 21L	4
-2022-03-21	Indiana	Omicron 21L	19
-2022-03-22	Indiana	Omicron 21L	9
-2022-03-23	Indiana	Omicron 21L	8
-2022-03-24	Indiana	Omicron 21L	6
-2022-03-25	Indiana	Omicron 21L	9
-2022-03-26	Indiana	Omicron 21L	2
-2022-03-27	Indiana	Omicron 21L	5
-2022-03-28	Indiana	Omicron 21L	13
-2022-03-29	Indiana	Omicron 21L	16
-2022-03-30	Indiana	Omicron 21L	8
-2022-03-31	Indiana	Omicron 21L	9
-2022-04-01	Indiana	Omicron 21L	16
-2022-04-02	Indiana	Omicron 21L	9
-2022-04-03	Indiana	Omicron 21L	7
-2022-04-04	Indiana	Omicron 21L	25
-2022-04-05	Indiana	Omicron 21L	27
-2022-04-06	Indiana	Omicron 21L	23
-2022-04-07	Indiana	Omicron 21L	22
-2022-04-08	Indiana	Omicron 21L	18
-2022-04-09	Indiana	Omicron 21L	8
-2022-04-10	Indiana	Omicron 21L	17
-2022-04-11	Indiana	Omicron 21L	20
-2022-04-12	Indiana	Omicron 21L	21
-2022-04-13	Indiana	Omicron 21L	12
-2022-04-14	Indiana	Omicron 21L	14
-2022-04-15	Indiana	Omicron 21L	13
-2022-04-16	Indiana	Omicron 21L	14
-2022-04-17	Indiana	Omicron 21L	5
-2022-04-18	Indiana	Omicron 21L	30
-2022-04-19	Indiana	Omicron 21L	12
-2022-04-20	Indiana	Omicron 21L	18
-2022-04-21	Indiana	Omicron 21L	25
-2022-04-22	Indiana	Omicron 21L	26
-2022-04-23	Indiana	Omicron 21L	16
-2022-04-24	Indiana	Omicron 21L	21
-2022-04-25	Indiana	Omicron 21L	21
-2022-04-26	Indiana	Omicron 21L	22
-2022-04-27	Indiana	Omicron 21L	25
-2022-04-28	Indiana	Omicron 21L	17
-2022-04-29	Indiana	Omicron 21L	18
-2022-04-30	Indiana	Omicron 21L	13
-2022-05-01	Indiana	Omicron 21L	23
-2022-05-02	Indiana	Omicron 21L	35
-2022-05-03	Indiana	Omicron 21L	26
-2022-05-04	Indiana	Omicron 21L	24
-2022-05-05	Indiana	Omicron 21L	41
-2022-05-06	Indiana	Omicron 21L	29
-2022-05-07	Indiana	Omicron 21L	28
-2022-05-08	Indiana	Omicron 21L	14
-2022-05-09	Indiana	Omicron 21L	36
-2022-05-10	Indiana	Omicron 21L	22
-2022-05-11	Indiana	Omicron 21L	28
-2022-05-12	Indiana	Omicron 21L	10
-2022-05-13	Indiana	Omicron 21L	4
-2022-05-14	Indiana	Omicron 21L	1
-2022-05-05	Indiana	Omicron 22A	1
-2022-05-04	Indiana	Omicron 22B	1
-2022-05-10	Indiana	Omicron 22B	1
-2022-05-11	Indiana	Omicron 22B	2
-2022-02-26	Indiana	Omicron 22C	1
-2022-03-20	Indiana	Omicron 22C	1
-2022-03-21	Indiana	Omicron 22C	1
-2022-03-24	Indiana	Omicron 22C	1
-2022-03-25	Indiana	Omicron 22C	1
-2022-03-26	Indiana	Omicron 22C	1
-2022-03-31	Indiana	Omicron 22C	3
-2022-04-01	Indiana	Omicron 22C	2
-2022-04-02	Indiana	Omicron 22C	1
-2022-04-04	Indiana	Omicron 22C	3
-2022-04-05	Indiana	Omicron 22C	2
-2022-04-07	Indiana	Omicron 22C	5
-2022-04-08	Indiana	Omicron 22C	2
-2022-04-09	Indiana	Omicron 22C	2
-2022-04-10	Indiana	Omicron 22C	4
-2022-04-11	Indiana	Omicron 22C	3
-2022-04-12	Indiana	Omicron 22C	3
-2022-04-13	Indiana	Omicron 22C	6
-2022-04-14	Indiana	Omicron 22C	14
-2022-04-15	Indiana	Omicron 22C	12
-2022-04-16	Indiana	Omicron 22C	6
-2022-04-17	Indiana	Omicron 22C	4
-2022-04-18	Indiana	Omicron 22C	12
-2022-04-19	Indiana	Omicron 22C	7
-2022-04-20	Indiana	Omicron 22C	6
-2022-04-21	Indiana	Omicron 22C	11
-2022-04-22	Indiana	Omicron 22C	5
-2022-04-23	Indiana	Omicron 22C	5
-2022-04-24	Indiana	Omicron 22C	6
-2022-04-25	Indiana	Omicron 22C	18
-2022-04-26	Indiana	Omicron 22C	21
-2022-04-27	Indiana	Omicron 22C	15
-2022-04-28	Indiana	Omicron 22C	9
-2022-04-29	Indiana	Omicron 22C	10
-2022-04-30	Indiana	Omicron 22C	6
-2022-05-01	Indiana	Omicron 22C	4
-2022-05-02	Indiana	Omicron 22C	23
-2022-05-03	Indiana	Omicron 22C	27
-2022-05-04	Indiana	Omicron 22C	18
-2022-05-05	Indiana	Omicron 22C	29
-2022-05-06	Indiana	Omicron 22C	19
-2022-05-07	Indiana	Omicron 22C	26
-2022-05-08	Indiana	Omicron 22C	18
-2022-05-09	Indiana	Omicron 22C	27
-2022-05-10	Indiana	Omicron 22C	15
-2022-05-11	Indiana	Omicron 22C	16
-2022-05-12	Indiana	Omicron 22C	4
-2022-05-13	Indiana	Omicron 22C	7
-2022-05-15	Indiana	Omicron 22C	2
+2022-05-15	Illinois	Omicron 22C	7
+2022-05-16	Illinois	Omicron 22C	9
+2022-05-17	Illinois	Omicron 22C	2
+2022-05-18	Illinois	Omicron 22C	5
 2022-02-09	Maryland	other	2
 2022-02-13	Maryland	other	1
 2022-02-14	Maryland	other	2
@@ -2423,15 +2213,8 @@ date	location	variant	sequences
 2022-05-08	Maryland	other	1
 2022-05-10	Maryland	other	1
 2022-05-13	Maryland	other	1
-2022-01-30	Maryland	Delta	2
-2022-02-01	Maryland	Delta	1
 2022-02-02	Maryland	Delta	1
 2022-03-29	Maryland	Delta	1
-2022-01-28	Maryland	Omicron 21K	74
-2022-01-29	Maryland	Omicron 21K	80
-2022-01-30	Maryland	Omicron 21K	87
-2022-01-31	Maryland	Omicron 21K	142
-2022-02-01	Maryland	Omicron 21K	102
 2022-02-02	Maryland	Omicron 21K	101
 2022-02-03	Maryland	Omicron 21K	91
 2022-02-04	Maryland	Omicron 21K	70
@@ -2519,13 +2302,11 @@ date	location	variant	sequences
 2022-04-30	Maryland	Omicron 21K	1
 2022-05-01	Maryland	Omicron 21K	2
 2022-05-02	Maryland	Omicron 21K	1
+2022-05-03	Maryland	Omicron 21K	1
 2022-05-04	Maryland	Omicron 21K	1
-2022-05-08	Maryland	Omicron 21K	1
-2022-05-14	Maryland	Omicron 21K	1
-2022-01-28	Maryland	Omicron 21L	1
-2022-01-30	Maryland	Omicron 21L	1
-2022-01-31	Maryland	Omicron 21L	6
-2022-02-01	Maryland	Omicron 21L	5
+2022-05-08	Maryland	Omicron 21K	2
+2022-05-14	Maryland	Omicron 21K	2
+2022-05-17	Maryland	Omicron 21K	1
 2022-02-02	Maryland	Omicron 21L	1
 2022-02-03	Maryland	Omicron 21L	4
 2022-02-04	Maryland	Omicron 21L	1
@@ -2615,29 +2396,36 @@ date	location	variant	sequences
 2022-04-30	Maryland	Omicron 21L	61
 2022-05-01	Maryland	Omicron 21L	36
 2022-05-02	Maryland	Omicron 21L	55
-2022-05-03	Maryland	Omicron 21L	84
-2022-05-04	Maryland	Omicron 21L	54
-2022-05-05	Maryland	Omicron 21L	59
-2022-05-06	Maryland	Omicron 21L	42
-2022-05-07	Maryland	Omicron 21L	22
-2022-05-08	Maryland	Omicron 21L	40
-2022-05-09	Maryland	Omicron 21L	50
-2022-05-10	Maryland	Omicron 21L	44
-2022-05-11	Maryland	Omicron 21L	41
-2022-05-12	Maryland	Omicron 21L	29
-2022-05-13	Maryland	Omicron 21L	27
-2022-05-14	Maryland	Omicron 21L	8
-2022-05-15	Maryland	Omicron 21L	9
+2022-05-03	Maryland	Omicron 21L	90
+2022-05-04	Maryland	Omicron 21L	59
+2022-05-05	Maryland	Omicron 21L	60
+2022-05-06	Maryland	Omicron 21L	49
+2022-05-07	Maryland	Omicron 21L	25
+2022-05-08	Maryland	Omicron 21L	44
+2022-05-09	Maryland	Omicron 21L	54
+2022-05-10	Maryland	Omicron 21L	52
+2022-05-11	Maryland	Omicron 21L	47
+2022-05-12	Maryland	Omicron 21L	38
+2022-05-13	Maryland	Omicron 21L	30
+2022-05-14	Maryland	Omicron 21L	20
+2022-05-15	Maryland	Omicron 21L	19
+2022-05-16	Maryland	Omicron 21L	8
+2022-05-17	Maryland	Omicron 21L	5
+2022-05-18	Maryland	Omicron 21L	3
+2022-05-19	Maryland	Omicron 21L	2
+2022-05-20	Maryland	Omicron 21L	3
 2022-04-09	Maryland	Omicron 22A	1
 2022-04-22	Maryland	Omicron 22A	1
 2022-04-24	Maryland	Omicron 22A	1
 2022-04-28	Maryland	Omicron 22A	1
 2022-05-03	Maryland	Omicron 22A	2
+2022-05-06	Maryland	Omicron 22A	1
 2022-05-08	Maryland	Omicron 22A	2
 2022-05-09	Maryland	Omicron 22A	2
 2022-05-10	Maryland	Omicron 22A	1
-2022-05-11	Maryland	Omicron 22A	1
+2022-05-11	Maryland	Omicron 22A	2
 2022-05-12	Maryland	Omicron 22A	1
+2022-05-14	Maryland	Omicron 22A	1
 2022-04-24	Maryland	Omicron 22B	1
 2022-05-09	Maryland	Omicron 22B	1
 2022-05-14	Maryland	Omicron 22B	1
@@ -2683,22 +2471,25 @@ date	location	variant	sequences
 2022-04-29	Maryland	Omicron 22C	43
 2022-04-30	Maryland	Omicron 22C	38
 2022-05-01	Maryland	Omicron 22C	27
-2022-05-02	Maryland	Omicron 22C	38
+2022-05-02	Maryland	Omicron 22C	39
 2022-05-03	Maryland	Omicron 22C	59
-2022-05-04	Maryland	Omicron 22C	47
-2022-05-05	Maryland	Omicron 22C	42
-2022-05-06	Maryland	Omicron 22C	35
-2022-05-07	Maryland	Omicron 22C	26
-2022-05-08	Maryland	Omicron 22C	29
-2022-05-09	Maryland	Omicron 22C	42
-2022-05-10	Maryland	Omicron 22C	49
-2022-05-11	Maryland	Omicron 22C	44
-2022-05-12	Maryland	Omicron 22C	49
-2022-05-13	Maryland	Omicron 22C	30
-2022-05-14	Maryland	Omicron 22C	8
-2022-05-15	Maryland	Omicron 22C	10
-2022-01-28	Massachusetts	other	1
-2022-01-30	Massachusetts	other	1
+2022-05-04	Maryland	Omicron 22C	48
+2022-05-05	Maryland	Omicron 22C	46
+2022-05-06	Maryland	Omicron 22C	43
+2022-05-07	Maryland	Omicron 22C	31
+2022-05-08	Maryland	Omicron 22C	33
+2022-05-09	Maryland	Omicron 22C	54
+2022-05-10	Maryland	Omicron 22C	60
+2022-05-11	Maryland	Omicron 22C	52
+2022-05-12	Maryland	Omicron 22C	56
+2022-05-13	Maryland	Omicron 22C	38
+2022-05-14	Maryland	Omicron 22C	20
+2022-05-15	Maryland	Omicron 22C	17
+2022-05-16	Maryland	Omicron 22C	17
+2022-05-17	Maryland	Omicron 22C	9
+2022-05-18	Maryland	Omicron 22C	5
+2022-05-19	Maryland	Omicron 22C	8
+2022-05-20	Maryland	Omicron 22C	3
 2022-02-06	Massachusetts	other	1
 2022-02-07	Massachusetts	other	1
 2022-02-14	Massachusetts	other	1
@@ -2733,8 +2524,6 @@ date	location	variant	sequences
 2022-05-08	Massachusetts	other	2
 2022-05-09	Massachusetts	other	1
 2022-05-14	Massachusetts	other	1
-2022-01-31	Massachusetts	Delta	1
-2022-02-01	Massachusetts	Delta	4
 2022-02-02	Massachusetts	Delta	1
 2022-02-03	Massachusetts	Delta	1
 2022-02-05	Massachusetts	Delta	1
@@ -2748,11 +2537,6 @@ date	location	variant	sequences
 2022-03-11	Massachusetts	Delta	1
 2022-03-12	Massachusetts	Delta	1
 2022-04-11	Massachusetts	Delta	1
-2022-01-28	Massachusetts	Omicron 21K	631
-2022-01-29	Massachusetts	Omicron 21K	30
-2022-01-30	Massachusetts	Omicron 21K	341
-2022-01-31	Massachusetts	Omicron 21K	549
-2022-02-01	Massachusetts	Omicron 21K	546
 2022-02-02	Massachusetts	Omicron 21K	534
 2022-02-03	Massachusetts	Omicron 21K	699
 2022-02-04	Massachusetts	Omicron 21K	351
@@ -2846,10 +2630,6 @@ date	location	variant	sequences
 2022-05-08	Massachusetts	Omicron 21K	1
 2022-05-09	Massachusetts	Omicron 21K	1
 2022-05-12	Massachusetts	Omicron 21K	1
-2022-01-28	Massachusetts	Omicron 21L	11
-2022-01-30	Massachusetts	Omicron 21L	9
-2022-01-31	Massachusetts	Omicron 21L	15
-2022-02-01	Massachusetts	Omicron 21L	15
 2022-02-02	Massachusetts	Omicron 21L	8
 2022-02-03	Massachusetts	Omicron 21L	15
 2022-02-04	Massachusetts	Omicron 21L	6
@@ -2944,14 +2724,14 @@ date	location	variant	sequences
 2022-05-04	Massachusetts	Omicron 21L	178
 2022-05-05	Massachusetts	Omicron 21L	166
 2022-05-06	Massachusetts	Omicron 21L	159
-2022-05-07	Massachusetts	Omicron 21L	167
-2022-05-08	Massachusetts	Omicron 21L	167
-2022-05-09	Massachusetts	Omicron 21L	23
+2022-05-07	Massachusetts	Omicron 21L	170
+2022-05-08	Massachusetts	Omicron 21L	169
+2022-05-09	Massachusetts	Omicron 21L	32
 2022-05-10	Massachusetts	Omicron 21L	2
-2022-05-11	Massachusetts	Omicron 21L	21
-2022-05-12	Massachusetts	Omicron 21L	56
-2022-05-13	Massachusetts	Omicron 21L	13
-2022-05-14	Massachusetts	Omicron 21L	23
+2022-05-11	Massachusetts	Omicron 21L	22
+2022-05-12	Massachusetts	Omicron 21L	58
+2022-05-13	Massachusetts	Omicron 21L	24
+2022-05-14	Massachusetts	Omicron 21L	26
 2022-04-04	Massachusetts	Omicron 22A	1
 2022-04-18	Massachusetts	Omicron 22A	1
 2022-04-20	Massachusetts	Omicron 22A	1
@@ -3033,14 +2813,14 @@ date	location	variant	sequences
 2022-05-04	Massachusetts	Omicron 22C	146
 2022-05-05	Massachusetts	Omicron 22C	154
 2022-05-06	Massachusetts	Omicron 22C	161
-2022-05-07	Massachusetts	Omicron 22C	168
-2022-05-08	Massachusetts	Omicron 22C	187
-2022-05-09	Massachusetts	Omicron 22C	29
+2022-05-07	Massachusetts	Omicron 22C	173
+2022-05-08	Massachusetts	Omicron 22C	194
+2022-05-09	Massachusetts	Omicron 22C	36
 2022-05-10	Massachusetts	Omicron 22C	1
-2022-05-11	Massachusetts	Omicron 22C	31
-2022-05-12	Massachusetts	Omicron 22C	110
-2022-05-13	Massachusetts	Omicron 22C	22
-2022-05-14	Massachusetts	Omicron 22C	11
+2022-05-11	Massachusetts	Omicron 22C	32
+2022-05-12	Massachusetts	Omicron 22C	113
+2022-05-13	Massachusetts	Omicron 22C	34
+2022-05-14	Massachusetts	Omicron 22C	16
 2022-05-15	Massachusetts	Omicron 22C	1
 2022-03-15	Michigan	other	1
 2022-03-18	Michigan	other	1
@@ -3050,17 +2830,10 @@ date	location	variant	sequences
 2022-05-02	Michigan	other	1
 2022-05-05	Michigan	other	1
 2022-05-06	Michigan	other	2
-2022-01-28	Michigan	Delta	2
-2022-02-01	Michigan	Delta	1
 2022-02-07	Michigan	Delta	2
 2022-02-15	Michigan	Delta	2
 2022-02-21	Michigan	Delta	1
 2022-03-24	Michigan	Delta	1
-2022-01-28	Michigan	Omicron 21K	115
-2022-01-29	Michigan	Omicron 21K	131
-2022-01-30	Michigan	Omicron 21K	117
-2022-01-31	Michigan	Omicron 21K	131
-2022-02-01	Michigan	Omicron 21K	128
 2022-02-02	Michigan	Omicron 21K	120
 2022-02-03	Michigan	Omicron 21K	72
 2022-02-04	Michigan	Omicron 21K	69
@@ -3143,12 +2916,10 @@ date	location	variant	sequences
 2022-04-29	Michigan	Omicron 21K	1
 2022-05-01	Michigan	Omicron 21K	2
 2022-05-02	Michigan	Omicron 21K	1
+2022-05-03	Michigan	Omicron 21K	1
 2022-05-04	Michigan	Omicron 21K	2
+2022-05-06	Michigan	Omicron 21K	1
 2022-05-09	Michigan	Omicron 21K	2
-2022-01-28	Michigan	Omicron 21L	1
-2022-01-29	Michigan	Omicron 21L	2
-2022-01-31	Michigan	Omicron 21L	1
-2022-02-01	Michigan	Omicron 21L	1
 2022-02-02	Michigan	Omicron 21L	2
 2022-02-04	Michigan	Omicron 21L	1
 2022-02-07	Michigan	Omicron 21L	3
@@ -3228,28 +2999,31 @@ date	location	variant	sequences
 2022-04-23	Michigan	Omicron 21L	48
 2022-04-24	Michigan	Omicron 21L	46
 2022-04-25	Michigan	Omicron 21L	100
-2022-04-26	Michigan	Omicron 21L	44
+2022-04-26	Michigan	Omicron 21L	46
 2022-04-27	Michigan	Omicron 21L	48
 2022-04-28	Michigan	Omicron 21L	35
 2022-04-29	Michigan	Omicron 21L	33
 2022-04-30	Michigan	Omicron 21L	58
-2022-05-01	Michigan	Omicron 21L	33
-2022-05-02	Michigan	Omicron 21L	113
-2022-05-03	Michigan	Omicron 21L	61
-2022-05-04	Michigan	Omicron 21L	58
-2022-05-05	Michigan	Omicron 21L	40
-2022-05-06	Michigan	Omicron 21L	56
-2022-05-07	Michigan	Omicron 21L	42
-2022-05-08	Michigan	Omicron 21L	11
-2022-05-09	Michigan	Omicron 21L	40
-2022-05-10	Michigan	Omicron 21L	48
-2022-05-11	Michigan	Omicron 21L	25
+2022-05-01	Michigan	Omicron 21L	34
+2022-05-02	Michigan	Omicron 21L	119
+2022-05-03	Michigan	Omicron 21L	62
+2022-05-04	Michigan	Omicron 21L	60
+2022-05-05	Michigan	Omicron 21L	45
+2022-05-06	Michigan	Omicron 21L	58
+2022-05-07	Michigan	Omicron 21L	46
+2022-05-08	Michigan	Omicron 21L	14
+2022-05-09	Michigan	Omicron 21L	52
+2022-05-10	Michigan	Omicron 21L	50
+2022-05-11	Michigan	Omicron 21L	27
 2022-05-12	Michigan	Omicron 21L	1
 2022-05-13	Michigan	Omicron 21L	7
 2022-05-14	Michigan	Omicron 21L	3
+2022-05-15	Michigan	Omicron 21L	1
+2022-05-16	Michigan	Omicron 21L	2
 2022-04-24	Michigan	Omicron 22A	1
 2022-05-02	Michigan	Omicron 22A	1
 2022-05-10	Michigan	Omicron 22A	1
+2022-05-14	Michigan	Omicron 22A	1
 2022-03-29	Michigan	Omicron 22B	1
 2022-04-30	Michigan	Omicron 22B	1
 2022-03-21	Michigan	Omicron 22C	1
@@ -3283,25 +3057,27 @@ date	location	variant	sequences
 2022-04-23	Michigan	Omicron 22C	31
 2022-04-24	Michigan	Omicron 22C	32
 2022-04-25	Michigan	Omicron 22C	46
-2022-04-26	Michigan	Omicron 22C	16
-2022-04-27	Michigan	Omicron 22C	27
+2022-04-26	Michigan	Omicron 22C	17
+2022-04-27	Michigan	Omicron 22C	28
 2022-04-28	Michigan	Omicron 22C	17
 2022-04-29	Michigan	Omicron 22C	20
-2022-04-30	Michigan	Omicron 22C	18
+2022-04-30	Michigan	Omicron 22C	19
 2022-05-01	Michigan	Omicron 22C	17
-2022-05-02	Michigan	Omicron 22C	76
-2022-05-03	Michigan	Omicron 22C	35
-2022-05-04	Michigan	Omicron 22C	32
-2022-05-05	Michigan	Omicron 22C	22
-2022-05-06	Michigan	Omicron 22C	43
-2022-05-07	Michigan	Omicron 22C	30
-2022-05-08	Michigan	Omicron 22C	6
-2022-05-09	Michigan	Omicron 22C	37
-2022-05-10	Michigan	Omicron 22C	31
-2022-05-11	Michigan	Omicron 22C	24
+2022-05-02	Michigan	Omicron 22C	80
+2022-05-03	Michigan	Omicron 22C	36
+2022-05-04	Michigan	Omicron 22C	34
+2022-05-05	Michigan	Omicron 22C	23
+2022-05-06	Michigan	Omicron 22C	47
+2022-05-07	Michigan	Omicron 22C	33
+2022-05-08	Michigan	Omicron 22C	7
+2022-05-09	Michigan	Omicron 22C	42
+2022-05-10	Michigan	Omicron 22C	34
+2022-05-11	Michigan	Omicron 22C	25
 2022-05-12	Michigan	Omicron 22C	7
 2022-05-13	Michigan	Omicron 22C	9
-2022-05-14	Michigan	Omicron 22C	1
+2022-05-14	Michigan	Omicron 22C	4
+2022-05-15	Michigan	Omicron 22C	3
+2022-05-16	Michigan	Omicron 22C	1
 2022-03-27	Minnesota	other	1
 2022-04-04	Minnesota	other	1
 2022-04-07	Minnesota	other	1
@@ -3309,7 +3085,7 @@ date	location	variant	sequences
 2022-04-21	Minnesota	other	2
 2022-04-23	Minnesota	other	1
 2022-05-09	Minnesota	other	1
-2022-01-29	Minnesota	Delta	1
+2022-05-11	Minnesota	other	1
 2022-02-02	Minnesota	Delta	1
 2022-02-03	Minnesota	Delta	1
 2022-02-05	Minnesota	Delta	2
@@ -3324,11 +3100,6 @@ date	location	variant	sequences
 2022-03-19	Minnesota	Delta	1
 2022-03-20	Minnesota	Delta	1
 2022-03-25	Minnesota	Delta	1
-2022-01-28	Minnesota	Omicron 21K	137
-2022-01-29	Minnesota	Omicron 21K	169
-2022-01-30	Minnesota	Omicron 21K	153
-2022-01-31	Minnesota	Omicron 21K	221
-2022-02-01	Minnesota	Omicron 21K	290
 2022-02-02	Minnesota	Omicron 21K	396
 2022-02-03	Minnesota	Omicron 21K	374
 2022-02-04	Minnesota	Omicron 21K	334
@@ -3419,11 +3190,7 @@ date	location	variant	sequences
 2022-05-01	Minnesota	Omicron 21K	1
 2022-05-03	Minnesota	Omicron 21K	1
 2022-05-04	Minnesota	Omicron 21K	2
-2022-05-13	Minnesota	Omicron 21K	1
-2022-01-28	Minnesota	Omicron 21L	1
-2022-01-29	Minnesota	Omicron 21L	2
-2022-01-31	Minnesota	Omicron 21L	1
-2022-02-01	Minnesota	Omicron 21L	1
+2022-05-13	Minnesota	Omicron 21K	2
 2022-02-02	Minnesota	Omicron 21L	5
 2022-02-03	Minnesota	Omicron 21L	6
 2022-02-04	Minnesota	Omicron 21L	2
@@ -3505,27 +3272,30 @@ date	location	variant	sequences
 2022-04-22	Minnesota	Omicron 21L	79
 2022-04-23	Minnesota	Omicron 21L	43
 2022-04-24	Minnesota	Omicron 21L	56
-2022-04-25	Minnesota	Omicron 21L	76
+2022-04-25	Minnesota	Omicron 21L	78
 2022-04-26	Minnesota	Omicron 21L	80
-2022-04-27	Minnesota	Omicron 21L	36
-2022-04-28	Minnesota	Omicron 21L	44
+2022-04-27	Minnesota	Omicron 21L	37
+2022-04-28	Minnesota	Omicron 21L	45
 2022-04-29	Minnesota	Omicron 21L	64
-2022-04-30	Minnesota	Omicron 21L	52
-2022-05-01	Minnesota	Omicron 21L	27
+2022-04-30	Minnesota	Omicron 21L	54
+2022-05-01	Minnesota	Omicron 21L	29
 2022-05-02	Minnesota	Omicron 21L	66
-2022-05-03	Minnesota	Omicron 21L	47
+2022-05-03	Minnesota	Omicron 21L	48
 2022-05-04	Minnesota	Omicron 21L	42
-2022-05-05	Minnesota	Omicron 21L	40
+2022-05-05	Minnesota	Omicron 21L	41
 2022-05-06	Minnesota	Omicron 21L	66
-2022-05-07	Minnesota	Omicron 21L	35
-2022-05-08	Minnesota	Omicron 21L	30
-2022-05-09	Minnesota	Omicron 21L	43
-2022-05-10	Minnesota	Omicron 21L	29
-2022-05-11	Minnesota	Omicron 21L	13
-2022-05-12	Minnesota	Omicron 21L	10
-2022-05-13	Minnesota	Omicron 21L	21
-2022-05-14	Minnesota	Omicron 21L	6
-2022-05-15	Minnesota	Omicron 21L	5
+2022-05-07	Minnesota	Omicron 21L	36
+2022-05-08	Minnesota	Omicron 21L	33
+2022-05-09	Minnesota	Omicron 21L	48
+2022-05-10	Minnesota	Omicron 21L	34
+2022-05-11	Minnesota	Omicron 21L	38
+2022-05-12	Minnesota	Omicron 21L	18
+2022-05-13	Minnesota	Omicron 21L	27
+2022-05-14	Minnesota	Omicron 21L	8
+2022-05-15	Minnesota	Omicron 21L	16
+2022-05-16	Minnesota	Omicron 21L	17
+2022-05-17	Minnesota	Omicron 21L	9
+2022-05-18	Minnesota	Omicron 21L	6
 2022-04-21	Minnesota	Omicron 22A	1
 2022-04-24	Minnesota	Omicron 22A	1
 2022-04-26	Minnesota	Omicron 22A	1
@@ -3535,17 +3305,22 @@ date	location	variant	sequences
 2022-05-06	Minnesota	Omicron 22A	1
 2022-05-08	Minnesota	Omicron 22A	1
 2022-05-10	Minnesota	Omicron 22A	1
-2022-05-11	Minnesota	Omicron 22A	1
-2022-05-12	Minnesota	Omicron 22A	1
-2022-05-15	Minnesota	Omicron 22A	1
+2022-05-11	Minnesota	Omicron 22A	2
+2022-05-12	Minnesota	Omicron 22A	2
+2022-05-14	Minnesota	Omicron 22A	1
+2022-05-15	Minnesota	Omicron 22A	2
+2022-05-16	Minnesota	Omicron 22A	3
+2022-05-17	Minnesota	Omicron 22A	1
 2022-04-30	Minnesota	Omicron 22B	1
 2022-05-05	Minnesota	Omicron 22B	1
 2022-05-09	Minnesota	Omicron 22B	1
 2022-05-10	Minnesota	Omicron 22B	1
-2022-05-11	Minnesota	Omicron 22B	1
+2022-05-11	Minnesota	Omicron 22B	2
 2022-05-13	Minnesota	Omicron 22B	1
 2022-05-14	Minnesota	Omicron 22B	1
-2022-05-15	Minnesota	Omicron 22B	1
+2022-05-15	Minnesota	Omicron 22B	2
+2022-05-16	Minnesota	Omicron 22B	2
+2022-05-17	Minnesota	Omicron 22B	1
 2022-03-25	Minnesota	Omicron 22C	1
 2022-03-29	Minnesota	Omicron 22C	3
 2022-04-01	Minnesota	Omicron 22C	2
@@ -3577,33 +3352,29 @@ date	location	variant	sequences
 2022-04-28	Minnesota	Omicron 22C	8
 2022-04-29	Minnesota	Omicron 22C	13
 2022-04-30	Minnesota	Omicron 22C	6
-2022-05-01	Minnesota	Omicron 22C	5
+2022-05-01	Minnesota	Omicron 22C	6
 2022-05-02	Minnesota	Omicron 22C	23
-2022-05-03	Minnesota	Omicron 22C	19
+2022-05-03	Minnesota	Omicron 22C	20
 2022-05-04	Minnesota	Omicron 22C	17
-2022-05-05	Minnesota	Omicron 22C	16
+2022-05-05	Minnesota	Omicron 22C	17
 2022-05-06	Minnesota	Omicron 22C	20
-2022-05-07	Minnesota	Omicron 22C	10
+2022-05-07	Minnesota	Omicron 22C	11
 2022-05-08	Minnesota	Omicron 22C	9
-2022-05-09	Minnesota	Omicron 22C	11
-2022-05-10	Minnesota	Omicron 22C	14
-2022-05-11	Minnesota	Omicron 22C	5
-2022-05-12	Minnesota	Omicron 22C	6
-2022-05-13	Minnesota	Omicron 22C	5
-2022-05-14	Minnesota	Omicron 22C	4
-2022-05-15	Minnesota	Omicron 22C	2
-2022-01-29	Nebraska	Delta	1
-2022-01-31	Nebraska	Delta	1
-2022-02-01	Nebraska	Delta	3
+2022-05-09	Minnesota	Omicron 22C	16
+2022-05-10	Minnesota	Omicron 22C	20
+2022-05-11	Minnesota	Omicron 22C	11
+2022-05-12	Minnesota	Omicron 22C	13
+2022-05-13	Minnesota	Omicron 22C	14
+2022-05-14	Minnesota	Omicron 22C	8
+2022-05-15	Minnesota	Omicron 22C	6
+2022-05-16	Minnesota	Omicron 22C	6
+2022-05-17	Minnesota	Omicron 22C	11
+2022-05-18	Minnesota	Omicron 22C	1
+2022-05-19	Minnesota	Omicron 22C	2
 2022-02-03	Nebraska	Delta	1
 2022-02-13	Nebraska	Delta	1
 2022-02-16	Nebraska	Delta	1
 2022-03-06	Nebraska	Delta	1
-2022-01-28	Nebraska	Omicron 21K	55
-2022-01-29	Nebraska	Omicron 21K	40
-2022-01-30	Nebraska	Omicron 21K	43
-2022-01-31	Nebraska	Omicron 21K	90
-2022-02-01	Nebraska	Omicron 21K	49
 2022-02-02	Nebraska	Omicron 21K	62
 2022-02-03	Nebraska	Omicron 21K	80
 2022-02-04	Nebraska	Omicron 21K	41
@@ -3685,6 +3456,7 @@ date	location	variant	sequences
 2022-05-09	Nebraska	Omicron 21K	1
 2022-05-10	Nebraska	Omicron 21K	2
 2022-05-12	Nebraska	Omicron 21K	2
+2022-05-17	Nebraska	Omicron 21K	1
 2022-02-08	Nebraska	Omicron 21L	1
 2022-02-10	Nebraska	Omicron 21L	1
 2022-02-16	Nebraska	Omicron 21L	2
@@ -3719,7 +3491,7 @@ date	location	variant	sequences
 2022-04-01	Nebraska	Omicron 21L	7
 2022-04-02	Nebraska	Omicron 21L	11
 2022-04-03	Nebraska	Omicron 21L	10
-2022-04-04	Nebraska	Omicron 21L	16
+2022-04-04	Nebraska	Omicron 21L	17
 2022-04-05	Nebraska	Omicron 21L	16
 2022-04-06	Nebraska	Omicron 21L	33
 2022-04-07	Nebraska	Omicron 21L	9
@@ -3747,32 +3519,43 @@ date	location	variant	sequences
 2022-04-29	Nebraska	Omicron 21L	13
 2022-04-30	Nebraska	Omicron 21L	5
 2022-05-01	Nebraska	Omicron 21L	9
-2022-05-02	Nebraska	Omicron 21L	19
-2022-05-03	Nebraska	Omicron 21L	31
+2022-05-02	Nebraska	Omicron 21L	20
+2022-05-03	Nebraska	Omicron 21L	33
 2022-05-04	Nebraska	Omicron 21L	18
-2022-05-05	Nebraska	Omicron 21L	33
+2022-05-05	Nebraska	Omicron 21L	34
 2022-05-06	Nebraska	Omicron 21L	28
 2022-05-07	Nebraska	Omicron 21L	16
 2022-05-08	Nebraska	Omicron 21L	8
-2022-05-09	Nebraska	Omicron 21L	31
+2022-05-09	Nebraska	Omicron 21L	33
 2022-05-10	Nebraska	Omicron 21L	23
 2022-05-11	Nebraska	Omicron 21L	34
 2022-05-12	Nebraska	Omicron 21L	19
 2022-05-13	Nebraska	Omicron 21L	15
 2022-05-14	Nebraska	Omicron 21L	7
 2022-05-15	Nebraska	Omicron 21L	10
+2022-05-16	Nebraska	Omicron 21L	19
+2022-05-17	Nebraska	Omicron 21L	8
+2022-05-18	Nebraska	Omicron 21L	9
+2022-05-19	Nebraska	Omicron 21L	7
+2022-05-20	Nebraska	Omicron 21L	10
 2022-04-28	Nebraska	Omicron 22A	1
 2022-04-30	Nebraska	Omicron 22A	1
 2022-05-09	Nebraska	Omicron 22A	1
 2022-05-10	Nebraska	Omicron 22A	1
 2022-05-11	Nebraska	Omicron 22A	1
 2022-05-15	Nebraska	Omicron 22A	1
+2022-05-20	Nebraska	Omicron 22A	2
 2022-04-29	Nebraska	Omicron 22B	1
 2022-05-06	Nebraska	Omicron 22B	1
 2022-05-07	Nebraska	Omicron 22B	1
 2022-05-10	Nebraska	Omicron 22B	1
 2022-05-11	Nebraska	Omicron 22B	2
 2022-05-12	Nebraska	Omicron 22B	2
+2022-05-16	Nebraska	Omicron 22B	2
+2022-05-17	Nebraska	Omicron 22B	1
+2022-05-18	Nebraska	Omicron 22B	2
+2022-05-19	Nebraska	Omicron 22B	1
+2022-05-20	Nebraska	Omicron 22B	1
 2022-04-03	Nebraska	Omicron 22C	2
 2022-04-05	Nebraska	Omicron 22C	1
 2022-04-06	Nebraska	Omicron 22C	1
@@ -3805,6 +3588,11 @@ date	location	variant	sequences
 2022-05-13	Nebraska	Omicron 22C	11
 2022-05-14	Nebraska	Omicron 22C	5
 2022-05-15	Nebraska	Omicron 22C	6
+2022-05-16	Nebraska	Omicron 22C	13
+2022-05-17	Nebraska	Omicron 22C	11
+2022-05-18	Nebraska	Omicron 22C	13
+2022-05-19	Nebraska	Omicron 22C	4
+2022-05-20	Nebraska	Omicron 22C	7
 2022-03-01	Nevada	other	2
 2022-03-16	Nevada	other	1
 2022-03-18	Nevada	other	1
@@ -3829,14 +3617,8 @@ date	location	variant	sequences
 2022-04-30	Nevada	other	1
 2022-05-06	Nevada	other	2
 2022-05-07	Nevada	other	3
-2022-01-31	Nevada	Delta	3
-2022-02-01	Nevada	Delta	1
+2022-05-19	Nevada	other	1
 2022-02-02	Nevada	Delta	1
-2022-01-28	Nevada	Omicron 21K	136
-2022-01-29	Nevada	Omicron 21K	56
-2022-01-30	Nevada	Omicron 21K	17
-2022-01-31	Nevada	Omicron 21K	153
-2022-02-01	Nevada	Omicron 21K	134
 2022-02-02	Nevada	Omicron 21K	170
 2022-02-03	Nevada	Omicron 21K	151
 2022-02-04	Nevada	Omicron 21K	67
@@ -3918,8 +3700,6 @@ date	location	variant	sequences
 2022-04-29	Nevada	Omicron 21K	1
 2022-05-02	Nevada	Omicron 21K	1
 2022-05-12	Nevada	Omicron 21K	1
-2022-01-28	Nevada	Omicron 21L	2
-2022-01-29	Nevada	Omicron 21L	2
 2022-02-02	Nevada	Omicron 21L	2
 2022-02-05	Nevada	Omicron 21L	1
 2022-02-07	Nevada	Omicron 21L	1
@@ -3997,7 +3777,7 @@ date	location	variant	sequences
 2022-04-26	Nevada	Omicron 21L	48
 2022-04-27	Nevada	Omicron 21L	45
 2022-04-28	Nevada	Omicron 21L	40
-2022-04-29	Nevada	Omicron 21L	30
+2022-04-29	Nevada	Omicron 21L	31
 2022-04-30	Nevada	Omicron 21L	27
 2022-05-01	Nevada	Omicron 21L	4
 2022-05-02	Nevada	Omicron 21L	32
@@ -4011,9 +3791,13 @@ date	location	variant	sequences
 2022-05-10	Nevada	Omicron 21L	9
 2022-05-11	Nevada	Omicron 21L	7
 2022-05-12	Nevada	Omicron 21L	5
-2022-05-13	Nevada	Omicron 21L	6
+2022-05-13	Nevada	Omicron 21L	9
 2022-05-14	Nevada	Omicron 21L	3
 2022-05-15	Nevada	Omicron 21L	3
+2022-05-16	Nevada	Omicron 21L	3
+2022-05-18	Nevada	Omicron 21L	9
+2022-05-19	Nevada	Omicron 21L	2
+2022-05-20	Nevada	Omicron 21L	3
 2022-04-26	Nevada	Omicron 22A	2
 2022-04-27	Nevada	Omicron 22A	4
 2022-04-28	Nevada	Omicron 22A	1
@@ -4026,6 +3810,9 @@ date	location	variant	sequences
 2022-05-09	Nevada	Omicron 22B	4
 2022-05-11	Nevada	Omicron 22B	1
 2022-05-14	Nevada	Omicron 22B	1
+2022-05-17	Nevada	Omicron 22B	1
+2022-05-18	Nevada	Omicron 22B	1
+2022-05-19	Nevada	Omicron 22B	1
 2022-03-21	Nevada	Omicron 22C	1
 2022-04-02	Nevada	Omicron 22C	2
 2022-04-04	Nevada	Omicron 22C	4
@@ -4069,7 +3856,9 @@ date	location	variant	sequences
 2022-05-13	Nevada	Omicron 22C	3
 2022-05-14	Nevada	Omicron 22C	6
 2022-05-15	Nevada	Omicron 22C	1
-2022-01-29	New Jersey	other	1
+2022-05-16	Nevada	Omicron 22C	8
+2022-05-18	Nevada	Omicron 22C	4
+2022-05-20	Nevada	Omicron 22C	2
 2022-03-09	New Jersey	other	1
 2022-03-22	New Jersey	other	2
 2022-03-27	New Jersey	other	1
@@ -4087,8 +3876,6 @@ date	location	variant	sequences
 2022-05-08	New Jersey	other	1
 2022-05-09	New Jersey	other	2
 2022-05-14	New Jersey	other	1
-2022-01-30	New Jersey	Delta	1
-2022-01-31	New Jersey	Delta	6
 2022-02-02	New Jersey	Delta	1
 2022-02-03	New Jersey	Delta	1
 2022-02-06	New Jersey	Delta	1
@@ -4099,11 +3886,6 @@ date	location	variant	sequences
 2022-02-26	New Jersey	Delta	1
 2022-03-16	New Jersey	Delta	1
 2022-04-11	New Jersey	Delta	1
-2022-01-28	New Jersey	Omicron 21K	85
-2022-01-29	New Jersey	Omicron 21K	12
-2022-01-30	New Jersey	Omicron 21K	47
-2022-01-31	New Jersey	Omicron 21K	129
-2022-02-01	New Jersey	Omicron 21K	81
 2022-02-02	New Jersey	Omicron 21K	235
 2022-02-03	New Jersey	Omicron 21K	193
 2022-02-04	New Jersey	Omicron 21K	70
@@ -4191,10 +3973,10 @@ date	location	variant	sequences
 2022-04-29	New Jersey	Omicron 21K	2
 2022-05-03	New Jersey	Omicron 21K	1
 2022-05-04	New Jersey	Omicron 21K	1
+2022-05-06	New Jersey	Omicron 21K	1
 2022-05-08	New Jersey	Omicron 21K	1
 2022-05-10	New Jersey	Omicron 21K	1
-2022-01-29	New Jersey	Omicron 21L	1
-2022-02-01	New Jersey	Omicron 21L	3
+2022-05-14	New Jersey	Omicron 21K	1
 2022-02-02	New Jersey	Omicron 21L	6
 2022-02-03	New Jersey	Omicron 21L	6
 2022-02-04	New Jersey	Omicron 21L	2
@@ -4279,25 +4061,30 @@ date	location	variant	sequences
 2022-04-24	New Jersey	Omicron 21L	98
 2022-04-25	New Jersey	Omicron 21L	219
 2022-04-26	New Jersey	Omicron 21L	199
-2022-04-27	New Jersey	Omicron 21L	112
-2022-04-28	New Jersey	Omicron 21L	100
+2022-04-27	New Jersey	Omicron 21L	114
+2022-04-28	New Jersey	Omicron 21L	102
 2022-04-29	New Jersey	Omicron 21L	123
 2022-04-30	New Jersey	Omicron 21L	120
 2022-05-01	New Jersey	Omicron 21L	34
-2022-05-02	New Jersey	Omicron 21L	146
-2022-05-03	New Jersey	Omicron 21L	145
-2022-05-04	New Jersey	Omicron 21L	145
-2022-05-05	New Jersey	Omicron 21L	118
-2022-05-06	New Jersey	Omicron 21L	115
-2022-05-07	New Jersey	Omicron 21L	86
-2022-05-08	New Jersey	Omicron 21L	69
-2022-05-09	New Jersey	Omicron 21L	162
-2022-05-10	New Jersey	Omicron 21L	138
-2022-05-11	New Jersey	Omicron 21L	120
-2022-05-12	New Jersey	Omicron 21L	28
-2022-05-13	New Jersey	Omicron 21L	34
-2022-05-14	New Jersey	Omicron 21L	28
-2022-05-15	New Jersey	Omicron 21L	3
+2022-05-02	New Jersey	Omicron 21L	147
+2022-05-03	New Jersey	Omicron 21L	146
+2022-05-04	New Jersey	Omicron 21L	146
+2022-05-05	New Jersey	Omicron 21L	119
+2022-05-06	New Jersey	Omicron 21L	117
+2022-05-07	New Jersey	Omicron 21L	88
+2022-05-08	New Jersey	Omicron 21L	70
+2022-05-09	New Jersey	Omicron 21L	173
+2022-05-10	New Jersey	Omicron 21L	145
+2022-05-11	New Jersey	Omicron 21L	129
+2022-05-12	New Jersey	Omicron 21L	112
+2022-05-13	New Jersey	Omicron 21L	114
+2022-05-14	New Jersey	Omicron 21L	65
+2022-05-15	New Jersey	Omicron 21L	17
+2022-05-16	New Jersey	Omicron 21L	10
+2022-05-17	New Jersey	Omicron 21L	2
+2022-05-18	New Jersey	Omicron 21L	3
+2022-05-19	New Jersey	Omicron 21L	1
+2022-05-20	New Jersey	Omicron 21L	3
 2022-04-13	New Jersey	Omicron 22A	1
 2022-04-20	New Jersey	Omicron 22A	1
 2022-04-23	New Jersey	Omicron 22A	1
@@ -4312,10 +4099,10 @@ date	location	variant	sequences
 2022-05-08	New Jersey	Omicron 22A	1
 2022-05-09	New Jersey	Omicron 22A	2
 2022-05-10	New Jersey	Omicron 22A	2
-2022-05-11	New Jersey	Omicron 22A	3
-2022-05-12	New Jersey	Omicron 22A	2
+2022-05-11	New Jersey	Omicron 22A	5
+2022-05-12	New Jersey	Omicron 22A	3
 2022-05-13	New Jersey	Omicron 22A	1
-2022-05-14	New Jersey	Omicron 22A	2
+2022-05-14	New Jersey	Omicron 22A	5
 2022-04-26	New Jersey	Omicron 22B	2
 2022-04-30	New Jersey	Omicron 22B	1
 2022-05-04	New Jersey	Omicron 22B	1
@@ -4323,8 +4110,10 @@ date	location	variant	sequences
 2022-05-08	New Jersey	Omicron 22B	1
 2022-05-09	New Jersey	Omicron 22B	2
 2022-05-10	New Jersey	Omicron 22B	2
-2022-05-12	New Jersey	Omicron 22B	2
-2022-05-14	New Jersey	Omicron 22B	1
+2022-05-11	New Jersey	Omicron 22B	1
+2022-05-12	New Jersey	Omicron 22B	3
+2022-05-13	New Jersey	Omicron 22B	3
+2022-05-14	New Jersey	Omicron 22B	6
 2022-05-15	New Jersey	Omicron 22B	1
 2022-03-03	New Jersey	Omicron 22C	1
 2022-03-11	New Jersey	Omicron 22C	2
@@ -4370,29 +4159,34 @@ date	location	variant	sequences
 2022-04-20	New Jersey	Omicron 22C	68
 2022-04-21	New Jersey	Omicron 22C	46
 2022-04-22	New Jersey	Omicron 22C	25
-2022-04-23	New Jersey	Omicron 22C	45
+2022-04-23	New Jersey	Omicron 22C	46
 2022-04-24	New Jersey	Omicron 22C	49
 2022-04-25	New Jersey	Omicron 22C	140
-2022-04-26	New Jersey	Omicron 22C	117
+2022-04-26	New Jersey	Omicron 22C	118
 2022-04-27	New Jersey	Omicron 22C	83
 2022-04-28	New Jersey	Omicron 22C	90
-2022-04-29	New Jersey	Omicron 22C	71
+2022-04-29	New Jersey	Omicron 22C	75
 2022-04-30	New Jersey	Omicron 22C	71
 2022-05-01	New Jersey	Omicron 22C	22
-2022-05-02	New Jersey	Omicron 22C	129
+2022-05-02	New Jersey	Omicron 22C	130
 2022-05-03	New Jersey	Omicron 22C	168
-2022-05-04	New Jersey	Omicron 22C	196
-2022-05-05	New Jersey	Omicron 22C	143
-2022-05-06	New Jersey	Omicron 22C	107
-2022-05-07	New Jersey	Omicron 22C	95
-2022-05-08	New Jersey	Omicron 22C	83
-2022-05-09	New Jersey	Omicron 22C	205
-2022-05-10	New Jersey	Omicron 22C	171
-2022-05-11	New Jersey	Omicron 22C	167
-2022-05-12	New Jersey	Omicron 22C	55
-2022-05-13	New Jersey	Omicron 22C	64
-2022-05-14	New Jersey	Omicron 22C	43
-2022-05-15	New Jersey	Omicron 22C	9
+2022-05-04	New Jersey	Omicron 22C	198
+2022-05-05	New Jersey	Omicron 22C	144
+2022-05-06	New Jersey	Omicron 22C	108
+2022-05-07	New Jersey	Omicron 22C	96
+2022-05-08	New Jersey	Omicron 22C	87
+2022-05-09	New Jersey	Omicron 22C	209
+2022-05-10	New Jersey	Omicron 22C	178
+2022-05-11	New Jersey	Omicron 22C	181
+2022-05-12	New Jersey	Omicron 22C	181
+2022-05-13	New Jersey	Omicron 22C	203
+2022-05-14	New Jersey	Omicron 22C	91
+2022-05-15	New Jersey	Omicron 22C	27
+2022-05-16	New Jersey	Omicron 22C	16
+2022-05-17	New Jersey	Omicron 22C	14
+2022-05-18	New Jersey	Omicron 22C	14
+2022-05-19	New Jersey	Omicron 22C	3
+2022-05-20	New Jersey	Omicron 22C	2
 2022-03-05	New York	other	1
 2022-03-08	New York	other	1
 2022-03-11	New York	other	1
@@ -4405,6 +4199,7 @@ date	location	variant	sequences
 2022-04-02	New York	other	1
 2022-04-03	New York	other	1
 2022-04-05	New York	other	2
+2022-04-06	New York	other	1
 2022-04-08	New York	other	1
 2022-04-11	New York	other	4
 2022-04-15	New York	other	1
@@ -4430,11 +4225,8 @@ date	location	variant	sequences
 2022-05-10	New York	other	3
 2022-05-11	New York	other	6
 2022-05-12	New York	other	9
+2022-05-13	New York	other	1
 2022-05-14	New York	other	1
-2022-01-28	New York	Delta	3
-2022-01-30	New York	Delta	2
-2022-01-31	New York	Delta	2
-2022-02-01	New York	Delta	1
 2022-02-02	New York	Delta	3
 2022-02-03	New York	Delta	2
 2022-02-05	New York	Delta	1
@@ -4449,27 +4241,22 @@ date	location	variant	sequences
 2022-03-19	New York	Delta	1
 2022-03-22	New York	Delta	1
 2022-03-31	New York	Delta	1
-2022-01-28	New York	Omicron 21K	500
-2022-01-29	New York	Omicron 21K	183
-2022-01-30	New York	Omicron 21K	190
-2022-01-31	New York	Omicron 21K	401
-2022-02-01	New York	Omicron 21K	389
 2022-02-02	New York	Omicron 21K	467
-2022-02-03	New York	Omicron 21K	532
+2022-02-03	New York	Omicron 21K	533
 2022-02-04	New York	Omicron 21K	400
 2022-02-05	New York	Omicron 21K	307
 2022-02-06	New York	Omicron 21K	185
 2022-02-07	New York	Omicron 21K	290
 2022-02-08	New York	Omicron 21K	311
 2022-02-09	New York	Omicron 21K	313
-2022-02-10	New York	Omicron 21K	349
+2022-02-10	New York	Omicron 21K	350
 2022-02-11	New York	Omicron 21K	276
 2022-02-12	New York	Omicron 21K	214
 2022-02-13	New York	Omicron 21K	174
 2022-02-14	New York	Omicron 21K	311
 2022-02-15	New York	Omicron 21K	247
 2022-02-16	New York	Omicron 21K	295
-2022-02-17	New York	Omicron 21K	226
+2022-02-17	New York	Omicron 21K	227
 2022-02-18	New York	Omicron 21K	230
 2022-02-19	New York	Omicron 21K	114
 2022-02-20	New York	Omicron 21K	132
@@ -4477,7 +4264,7 @@ date	location	variant	sequences
 2022-02-22	New York	Omicron 21K	175
 2022-02-23	New York	Omicron 21K	235
 2022-02-24	New York	Omicron 21K	155
-2022-02-25	New York	Omicron 21K	120
+2022-02-25	New York	Omicron 21K	121
 2022-02-26	New York	Omicron 21K	117
 2022-02-27	New York	Omicron 21K	112
 2022-02-28	New York	Omicron 21K	151
@@ -4512,24 +4299,24 @@ date	location	variant	sequences
 2022-03-29	New York	Omicron 21K	52
 2022-03-30	New York	Omicron 21K	37
 2022-03-31	New York	Omicron 21K	39
-2022-04-01	New York	Omicron 21K	36
-2022-04-02	New York	Omicron 21K	13
-2022-04-03	New York	Omicron 21K	28
+2022-04-01	New York	Omicron 21K	37
+2022-04-02	New York	Omicron 21K	20
+2022-04-03	New York	Omicron 21K	30
 2022-04-04	New York	Omicron 21K	45
-2022-04-05	New York	Omicron 21K	35
-2022-04-06	New York	Omicron 21K	28
-2022-04-07	New York	Omicron 21K	23
+2022-04-05	New York	Omicron 21K	39
+2022-04-06	New York	Omicron 21K	31
+2022-04-07	New York	Omicron 21K	26
 2022-04-08	New York	Omicron 21K	24
 2022-04-09	New York	Omicron 21K	20
-2022-04-10	New York	Omicron 21K	19
+2022-04-10	New York	Omicron 21K	20
 2022-04-11	New York	Omicron 21K	29
 2022-04-12	New York	Omicron 21K	23
 2022-04-13	New York	Omicron 21K	21
-2022-04-14	New York	Omicron 21K	14
-2022-04-15	New York	Omicron 21K	12
-2022-04-16	New York	Omicron 21K	10
+2022-04-14	New York	Omicron 21K	15
+2022-04-15	New York	Omicron 21K	16
+2022-04-16	New York	Omicron 21K	11
 2022-04-17	New York	Omicron 21K	4
-2022-04-18	New York	Omicron 21K	13
+2022-04-18	New York	Omicron 21K	14
 2022-04-19	New York	Omicron 21K	12
 2022-04-20	New York	Omicron 21K	10
 2022-04-21	New York	Omicron 21K	6
@@ -4538,26 +4325,22 @@ date	location	variant	sequences
 2022-04-24	New York	Omicron 21K	4
 2022-04-25	New York	Omicron 21K	5
 2022-04-26	New York	Omicron 21K	5
-2022-04-27	New York	Omicron 21K	7
-2022-04-28	New York	Omicron 21K	4
-2022-04-29	New York	Omicron 21K	8
+2022-04-27	New York	Omicron 21K	9
+2022-04-28	New York	Omicron 21K	5
+2022-04-29	New York	Omicron 21K	10
 2022-04-30	New York	Omicron 21K	4
 2022-05-01	New York	Omicron 21K	3
-2022-05-02	New York	Omicron 21K	3
+2022-05-02	New York	Omicron 21K	4
 2022-05-03	New York	Omicron 21K	2
 2022-05-04	New York	Omicron 21K	7
-2022-05-05	New York	Omicron 21K	2
+2022-05-05	New York	Omicron 21K	3
 2022-05-06	New York	Omicron 21K	3
 2022-05-08	New York	Omicron 21K	1
-2022-05-09	New York	Omicron 21K	1
+2022-05-09	New York	Omicron 21K	2
 2022-05-11	New York	Omicron 21K	2
 2022-05-12	New York	Omicron 21K	1
 2022-05-13	New York	Omicron 21K	1
-2022-01-28	New York	Omicron 21L	6
-2022-01-29	New York	Omicron 21L	3
-2022-01-30	New York	Omicron 21L	2
-2022-01-31	New York	Omicron 21L	8
-2022-02-01	New York	Omicron 21L	16
+2022-05-14	New York	Omicron 21K	1
 2022-02-02	New York	Omicron 21L	5
 2022-02-03	New York	Omicron 21L	14
 2022-02-04	New York	Omicron 21L	10
@@ -4616,51 +4399,53 @@ date	location	variant	sequences
 2022-03-29	New York	Omicron 21L	262
 2022-03-30	New York	Omicron 21L	271
 2022-03-31	New York	Omicron 21L	285
-2022-04-01	New York	Omicron 21L	255
-2022-04-02	New York	Omicron 21L	190
-2022-04-03	New York	Omicron 21L	170
-2022-04-04	New York	Omicron 21L	434
-2022-04-05	New York	Omicron 21L	386
-2022-04-06	New York	Omicron 21L	349
-2022-04-07	New York	Omicron 21L	347
-2022-04-08	New York	Omicron 21L	389
-2022-04-09	New York	Omicron 21L	260
-2022-04-10	New York	Omicron 21L	247
-2022-04-11	New York	Omicron 21L	543
-2022-04-12	New York	Omicron 21L	390
-2022-04-13	New York	Omicron 21L	365
-2022-04-14	New York	Omicron 21L	336
-2022-04-15	New York	Omicron 21L	320
-2022-04-16	New York	Omicron 21L	255
+2022-04-01	New York	Omicron 21L	264
+2022-04-02	New York	Omicron 21L	200
+2022-04-03	New York	Omicron 21L	171
+2022-04-04	New York	Omicron 21L	439
+2022-04-05	New York	Omicron 21L	409
+2022-04-06	New York	Omicron 21L	379
+2022-04-07	New York	Omicron 21L	374
+2022-04-08	New York	Omicron 21L	413
+2022-04-09	New York	Omicron 21L	268
+2022-04-10	New York	Omicron 21L	256
+2022-04-11	New York	Omicron 21L	549
+2022-04-12	New York	Omicron 21L	403
+2022-04-13	New York	Omicron 21L	387
+2022-04-14	New York	Omicron 21L	353
+2022-04-15	New York	Omicron 21L	341
+2022-04-16	New York	Omicron 21L	273
 2022-04-17	New York	Omicron 21L	175
-2022-04-18	New York	Omicron 21L	354
-2022-04-19	New York	Omicron 21L	262
-2022-04-20	New York	Omicron 21L	288
-2022-04-21	New York	Omicron 21L	289
-2022-04-22	New York	Omicron 21L	263
-2022-04-23	New York	Omicron 21L	214
-2022-04-24	New York	Omicron 21L	236
-2022-04-25	New York	Omicron 21L	312
-2022-04-26	New York	Omicron 21L	280
-2022-04-27	New York	Omicron 21L	281
-2022-04-28	New York	Omicron 21L	276
-2022-04-29	New York	Omicron 21L	247
-2022-04-30	New York	Omicron 21L	178
-2022-05-01	New York	Omicron 21L	162
-2022-05-02	New York	Omicron 21L	332
-2022-05-03	New York	Omicron 21L	341
-2022-05-04	New York	Omicron 21L	278
-2022-05-05	New York	Omicron 21L	266
-2022-05-06	New York	Omicron 21L	219
-2022-05-07	New York	Omicron 21L	187
-2022-05-08	New York	Omicron 21L	212
-2022-05-09	New York	Omicron 21L	335
-2022-05-10	New York	Omicron 21L	246
-2022-05-11	New York	Omicron 21L	263
-2022-05-12	New York	Omicron 21L	194
-2022-05-13	New York	Omicron 21L	216
-2022-05-14	New York	Omicron 21L	154
-2022-05-15	New York	Omicron 21L	104
+2022-04-18	New York	Omicron 21L	358
+2022-04-19	New York	Omicron 21L	272
+2022-04-20	New York	Omicron 21L	306
+2022-04-21	New York	Omicron 21L	300
+2022-04-22	New York	Omicron 21L	271
+2022-04-23	New York	Omicron 21L	219
+2022-04-24	New York	Omicron 21L	239
+2022-04-25	New York	Omicron 21L	319
+2022-04-26	New York	Omicron 21L	297
+2022-04-27	New York	Omicron 21L	340
+2022-04-28	New York	Omicron 21L	298
+2022-04-29	New York	Omicron 21L	284
+2022-04-30	New York	Omicron 21L	191
+2022-05-01	New York	Omicron 21L	164
+2022-05-02	New York	Omicron 21L	349
+2022-05-03	New York	Omicron 21L	349
+2022-05-04	New York	Omicron 21L	290
+2022-05-05	New York	Omicron 21L	278
+2022-05-06	New York	Omicron 21L	229
+2022-05-07	New York	Omicron 21L	199
+2022-05-08	New York	Omicron 21L	222
+2022-05-09	New York	Omicron 21L	354
+2022-05-10	New York	Omicron 21L	254
+2022-05-11	New York	Omicron 21L	272
+2022-05-12	New York	Omicron 21L	228
+2022-05-13	New York	Omicron 21L	252
+2022-05-14	New York	Omicron 21L	175
+2022-05-15	New York	Omicron 21L	114
+2022-05-16	New York	Omicron 21L	106
+2022-05-17	New York	Omicron 21L	3
 2022-04-14	New York	Omicron 22A	1
 2022-04-19	New York	Omicron 22A	1
 2022-04-20	New York	Omicron 22A	2
@@ -4682,9 +4467,10 @@ date	location	variant	sequences
 2022-05-10	New York	Omicron 22A	6
 2022-05-11	New York	Omicron 22A	4
 2022-05-12	New York	Omicron 22A	2
-2022-05-13	New York	Omicron 22A	1
-2022-05-14	New York	Omicron 22A	4
+2022-05-13	New York	Omicron 22A	2
+2022-05-14	New York	Omicron 22A	5
 2022-05-15	New York	Omicron 22A	3
+2022-05-16	New York	Omicron 22A	5
 2022-04-20	New York	Omicron 22B	1
 2022-04-27	New York	Omicron 22B	1
 2022-04-28	New York	Omicron 22B	1
@@ -4705,6 +4491,7 @@ date	location	variant	sequences
 2022-05-13	New York	Omicron 22B	6
 2022-05-14	New York	Omicron 22B	3
 2022-05-15	New York	Omicron 22B	6
+2022-05-16	New York	Omicron 22B	5
 2022-02-09	New York	Omicron 22C	1
 2022-02-10	New York	Omicron 22C	1
 2022-02-13	New York	Omicron 22C	1
@@ -4717,7 +4504,7 @@ date	location	variant	sequences
 2022-02-24	New York	Omicron 22C	1
 2022-02-28	New York	Omicron 22C	2
 2022-03-01	New York	Omicron 22C	2
-2022-03-02	New York	Omicron 22C	3
+2022-03-02	New York	Omicron 22C	4
 2022-03-03	New York	Omicron 22C	6
 2022-03-04	New York	Omicron 22C	7
 2022-03-05	New York	Omicron 22C	6
@@ -4747,51 +4534,53 @@ date	location	variant	sequences
 2022-03-29	New York	Omicron 22C	124
 2022-03-30	New York	Omicron 22C	102
 2022-03-31	New York	Omicron 22C	109
-2022-04-01	New York	Omicron 22C	89
-2022-04-02	New York	Omicron 22C	87
-2022-04-03	New York	Omicron 22C	75
-2022-04-04	New York	Omicron 22C	202
-2022-04-05	New York	Omicron 22C	196
-2022-04-06	New York	Omicron 22C	155
-2022-04-07	New York	Omicron 22C	214
-2022-04-08	New York	Omicron 22C	236
-2022-04-09	New York	Omicron 22C	125
-2022-04-10	New York	Omicron 22C	159
-2022-04-11	New York	Omicron 22C	295
-2022-04-12	New York	Omicron 22C	241
-2022-04-13	New York	Omicron 22C	238
-2022-04-14	New York	Omicron 22C	239
-2022-04-15	New York	Omicron 22C	232
-2022-04-16	New York	Omicron 22C	206
+2022-04-01	New York	Omicron 22C	113
+2022-04-02	New York	Omicron 22C	108
+2022-04-03	New York	Omicron 22C	76
+2022-04-04	New York	Omicron 22C	219
+2022-04-05	New York	Omicron 22C	227
+2022-04-06	New York	Omicron 22C	195
+2022-04-07	New York	Omicron 22C	257
+2022-04-08	New York	Omicron 22C	259
+2022-04-09	New York	Omicron 22C	131
+2022-04-10	New York	Omicron 22C	168
+2022-04-11	New York	Omicron 22C	306
+2022-04-12	New York	Omicron 22C	258
+2022-04-13	New York	Omicron 22C	272
+2022-04-14	New York	Omicron 22C	262
+2022-04-15	New York	Omicron 22C	263
+2022-04-16	New York	Omicron 22C	232
 2022-04-17	New York	Omicron 22C	108
-2022-04-18	New York	Omicron 22C	360
-2022-04-19	New York	Omicron 22C	264
-2022-04-20	New York	Omicron 22C	236
-2022-04-21	New York	Omicron 22C	251
-2022-04-22	New York	Omicron 22C	233
-2022-04-23	New York	Omicron 22C	224
-2022-04-24	New York	Omicron 22C	228
-2022-04-25	New York	Omicron 22C	306
-2022-04-26	New York	Omicron 22C	285
-2022-04-27	New York	Omicron 22C	278
-2022-04-28	New York	Omicron 22C	280
-2022-04-29	New York	Omicron 22C	279
-2022-04-30	New York	Omicron 22C	196
-2022-05-01	New York	Omicron 22C	152
-2022-05-02	New York	Omicron 22C	381
-2022-05-03	New York	Omicron 22C	404
-2022-05-04	New York	Omicron 22C	367
-2022-05-05	New York	Omicron 22C	291
-2022-05-06	New York	Omicron 22C	299
-2022-05-07	New York	Omicron 22C	248
-2022-05-08	New York	Omicron 22C	288
-2022-05-09	New York	Omicron 22C	421
-2022-05-10	New York	Omicron 22C	391
-2022-05-11	New York	Omicron 22C	398
-2022-05-12	New York	Omicron 22C	353
-2022-05-13	New York	Omicron 22C	316
-2022-05-14	New York	Omicron 22C	268
-2022-05-15	New York	Omicron 22C	171
+2022-04-18	New York	Omicron 22C	368
+2022-04-19	New York	Omicron 22C	300
+2022-04-20	New York	Omicron 22C	271
+2022-04-21	New York	Omicron 22C	296
+2022-04-22	New York	Omicron 22C	257
+2022-04-23	New York	Omicron 22C	234
+2022-04-24	New York	Omicron 22C	231
+2022-04-25	New York	Omicron 22C	321
+2022-04-26	New York	Omicron 22C	333
+2022-04-27	New York	Omicron 22C	350
+2022-04-28	New York	Omicron 22C	339
+2022-04-29	New York	Omicron 22C	330
+2022-04-30	New York	Omicron 22C	229
+2022-05-01	New York	Omicron 22C	155
+2022-05-02	New York	Omicron 22C	395
+2022-05-03	New York	Omicron 22C	419
+2022-05-04	New York	Omicron 22C	377
+2022-05-05	New York	Omicron 22C	310
+2022-05-06	New York	Omicron 22C	313
+2022-05-07	New York	Omicron 22C	262
+2022-05-08	New York	Omicron 22C	302
+2022-05-09	New York	Omicron 22C	463
+2022-05-10	New York	Omicron 22C	415
+2022-05-11	New York	Omicron 22C	421
+2022-05-12	New York	Omicron 22C	398
+2022-05-13	New York	Omicron 22C	399
+2022-05-14	New York	Omicron 22C	308
+2022-05-15	New York	Omicron 22C	186
+2022-05-16	New York	Omicron 22C	193
+2022-05-17	New York	Omicron 22C	7
 2022-03-17	North Carolina	other	1
 2022-03-29	North Carolina	other	1
 2022-04-06	North Carolina	other	3
@@ -4818,10 +4607,9 @@ date	location	variant	sequences
 2022-05-10	North Carolina	other	2
 2022-05-11	North Carolina	other	2
 2022-05-12	North Carolina	other	4
-2022-01-28	North Carolina	Delta	1
-2022-01-29	North Carolina	Delta	1
-2022-01-30	North Carolina	Delta	1
-2022-02-01	North Carolina	Delta	1
+2022-05-13	North Carolina	other	1
+2022-05-14	North Carolina	other	2
+2022-05-15	North Carolina	other	1
 2022-02-02	North Carolina	Delta	2
 2022-02-05	North Carolina	Delta	1
 2022-02-07	North Carolina	Delta	1
@@ -4832,11 +4620,6 @@ date	location	variant	sequences
 2022-03-18	North Carolina	Delta	1
 2022-04-06	North Carolina	Delta	2
 2022-04-09	North Carolina	Delta	1
-2022-01-28	North Carolina	Omicron 21K	462
-2022-01-29	North Carolina	Omicron 21K	93
-2022-01-30	North Carolina	Omicron 21K	91
-2022-01-31	North Carolina	Omicron 21K	449
-2022-02-01	North Carolina	Omicron 21K	555
 2022-02-02	North Carolina	Omicron 21K	527
 2022-02-03	North Carolina	Omicron 21K	552
 2022-02-04	North Carolina	Omicron 21K	547
@@ -4928,11 +4711,7 @@ date	location	variant	sequences
 2022-05-03	North Carolina	Omicron 21K	2
 2022-05-04	North Carolina	Omicron 21K	2
 2022-05-11	North Carolina	Omicron 21K	2
-2022-01-28	North Carolina	Omicron 21L	12
-2022-01-29	North Carolina	Omicron 21L	2
-2022-01-30	North Carolina	Omicron 21L	1
-2022-01-31	North Carolina	Omicron 21L	1
-2022-02-01	North Carolina	Omicron 21L	1
+2022-05-17	North Carolina	Omicron 21K	1
 2022-02-02	North Carolina	Omicron 21L	9
 2022-02-03	North Carolina	Omicron 21L	4
 2022-02-04	North Carolina	Omicron 21L	4
@@ -5019,23 +4798,28 @@ date	location	variant	sequences
 2022-04-26	North Carolina	Omicron 21L	130
 2022-04-27	North Carolina	Omicron 21L	101
 2022-04-28	North Carolina	Omicron 21L	102
-2022-04-29	North Carolina	Omicron 21L	91
+2022-04-29	North Carolina	Omicron 21L	92
 2022-04-30	North Carolina	Omicron 21L	51
 2022-05-01	North Carolina	Omicron 21L	41
-2022-05-02	North Carolina	Omicron 21L	109
-2022-05-03	North Carolina	Omicron 21L	119
-2022-05-04	North Carolina	Omicron 21L	80
+2022-05-02	North Carolina	Omicron 21L	111
+2022-05-03	North Carolina	Omicron 21L	123
+2022-05-04	North Carolina	Omicron 21L	81
 2022-05-05	North Carolina	Omicron 21L	80
 2022-05-06	North Carolina	Omicron 21L	26
 2022-05-07	North Carolina	Omicron 21L	21
 2022-05-08	North Carolina	Omicron 21L	12
 2022-05-09	North Carolina	Omicron 21L	98
-2022-05-10	North Carolina	Omicron 21L	93
-2022-05-11	North Carolina	Omicron 21L	74
-2022-05-12	North Carolina	Omicron 21L	73
-2022-05-13	North Carolina	Omicron 21L	64
-2022-05-14	North Carolina	Omicron 21L	9
-2022-05-15	North Carolina	Omicron 21L	7
+2022-05-10	North Carolina	Omicron 21L	100
+2022-05-11	North Carolina	Omicron 21L	82
+2022-05-12	North Carolina	Omicron 21L	87
+2022-05-13	North Carolina	Omicron 21L	75
+2022-05-14	North Carolina	Omicron 21L	23
+2022-05-15	North Carolina	Omicron 21L	27
+2022-05-16	North Carolina	Omicron 21L	31
+2022-05-17	North Carolina	Omicron 21L	17
+2022-05-18	North Carolina	Omicron 21L	19
+2022-05-19	North Carolina	Omicron 21L	4
+2022-05-20	North Carolina	Omicron 21L	2
 2022-04-17	North Carolina	Omicron 22A	1
 2022-04-22	North Carolina	Omicron 22A	1
 2022-05-09	North Carolina	Omicron 22A	2
@@ -5053,11 +4837,15 @@ date	location	variant	sequences
 2022-05-05	North Carolina	Omicron 22B	1
 2022-05-07	North Carolina	Omicron 22B	3
 2022-05-09	North Carolina	Omicron 22B	4
-2022-05-10	North Carolina	Omicron 22B	2
-2022-05-11	North Carolina	Omicron 22B	6
-2022-05-12	North Carolina	Omicron 22B	4
+2022-05-10	North Carolina	Omicron 22B	3
+2022-05-11	North Carolina	Omicron 22B	8
+2022-05-12	North Carolina	Omicron 22B	5
 2022-05-13	North Carolina	Omicron 22B	4
-2022-05-15	North Carolina	Omicron 22B	1
+2022-05-14	North Carolina	Omicron 22B	1
+2022-05-15	North Carolina	Omicron 22B	4
+2022-05-16	North Carolina	Omicron 22B	3
+2022-05-17	North Carolina	Omicron 22B	4
+2022-05-18	North Carolina	Omicron 22B	3
 2022-03-07	North Carolina	Omicron 22C	1
 2022-03-14	North Carolina	Omicron 22C	2
 2022-03-17	North Carolina	Omicron 22C	2
@@ -5100,280 +4888,29 @@ date	location	variant	sequences
 2022-04-25	North Carolina	Omicron 22C	150
 2022-04-26	North Carolina	Omicron 22C	128
 2022-04-27	North Carolina	Omicron 22C	121
-2022-04-28	North Carolina	Omicron 22C	72
+2022-04-28	North Carolina	Omicron 22C	73
 2022-04-29	North Carolina	Omicron 22C	95
-2022-04-30	North Carolina	Omicron 22C	67
+2022-04-30	North Carolina	Omicron 22C	68
 2022-05-01	North Carolina	Omicron 22C	62
-2022-05-02	North Carolina	Omicron 22C	136
-2022-05-03	North Carolina	Omicron 22C	166
-2022-05-04	North Carolina	Omicron 22C	108
+2022-05-02	North Carolina	Omicron 22C	137
+2022-05-03	North Carolina	Omicron 22C	168
+2022-05-04	North Carolina	Omicron 22C	110
 2022-05-05	North Carolina	Omicron 22C	96
 2022-05-06	North Carolina	Omicron 22C	35
 2022-05-07	North Carolina	Omicron 22C	49
 2022-05-08	North Carolina	Omicron 22C	23
 2022-05-09	North Carolina	Omicron 22C	150
-2022-05-10	North Carolina	Omicron 22C	117
-2022-05-11	North Carolina	Omicron 22C	116
-2022-05-12	North Carolina	Omicron 22C	105
-2022-05-13	North Carolina	Omicron 22C	110
-2022-05-14	North Carolina	Omicron 22C	11
-2022-05-15	North Carolina	Omicron 22C	15
-2022-02-11	Ohio	other	1
-2022-02-23	Ohio	other	2
-2022-02-24	Ohio	other	1
-2022-02-25	Ohio	other	1
-2022-02-28	Ohio	other	1
-2022-03-01	Ohio	other	1
-2022-03-07	Ohio	other	1
-2022-03-11	Ohio	other	1
-2022-04-12	Ohio	other	1
-2022-02-04	Ohio	Delta	2
-2022-02-21	Ohio	Delta	1
-2022-02-22	Ohio	Delta	1
-2022-03-03	Ohio	Delta	1
-2022-03-22	Ohio	Delta	1
-2022-01-28	Ohio	Omicron 21K	153
-2022-01-29	Ohio	Omicron 21K	38
-2022-01-30	Ohio	Omicron 21K	50
-2022-01-31	Ohio	Omicron 21K	161
-2022-02-01	Ohio	Omicron 21K	119
-2022-02-02	Ohio	Omicron 21K	169
-2022-02-03	Ohio	Omicron 21K	50
-2022-02-04	Ohio	Omicron 21K	107
-2022-02-05	Ohio	Omicron 21K	63
-2022-02-06	Ohio	Omicron 21K	48
-2022-02-07	Ohio	Omicron 21K	236
-2022-02-08	Ohio	Omicron 21K	172
-2022-02-09	Ohio	Omicron 21K	118
-2022-02-10	Ohio	Omicron 21K	89
-2022-02-11	Ohio	Omicron 21K	88
-2022-02-12	Ohio	Omicron 21K	29
-2022-02-13	Ohio	Omicron 21K	27
-2022-02-14	Ohio	Omicron 21K	80
-2022-02-15	Ohio	Omicron 21K	100
-2022-02-16	Ohio	Omicron 21K	60
-2022-02-17	Ohio	Omicron 21K	84
-2022-02-18	Ohio	Omicron 21K	94
-2022-02-19	Ohio	Omicron 21K	78
-2022-02-20	Ohio	Omicron 21K	19
-2022-02-21	Ohio	Omicron 21K	78
-2022-02-22	Ohio	Omicron 21K	82
-2022-02-23	Ohio	Omicron 21K	81
-2022-02-24	Ohio	Omicron 21K	58
-2022-02-25	Ohio	Omicron 21K	113
-2022-02-26	Ohio	Omicron 21K	17
-2022-02-27	Ohio	Omicron 21K	24
-2022-02-28	Ohio	Omicron 21K	61
-2022-03-01	Ohio	Omicron 21K	50
-2022-03-02	Ohio	Omicron 21K	47
-2022-03-03	Ohio	Omicron 21K	37
-2022-03-04	Ohio	Omicron 21K	30
-2022-03-05	Ohio	Omicron 21K	19
-2022-03-06	Ohio	Omicron 21K	9
-2022-03-07	Ohio	Omicron 21K	23
-2022-03-08	Ohio	Omicron 21K	32
-2022-03-09	Ohio	Omicron 21K	33
-2022-03-10	Ohio	Omicron 21K	21
-2022-03-11	Ohio	Omicron 21K	16
-2022-03-12	Ohio	Omicron 21K	6
-2022-03-13	Ohio	Omicron 21K	12
-2022-03-14	Ohio	Omicron 21K	23
-2022-03-15	Ohio	Omicron 21K	27
-2022-03-16	Ohio	Omicron 21K	13
-2022-03-17	Ohio	Omicron 21K	18
-2022-03-18	Ohio	Omicron 21K	18
-2022-03-19	Ohio	Omicron 21K	15
-2022-03-20	Ohio	Omicron 21K	6
-2022-03-21	Ohio	Omicron 21K	38
-2022-03-22	Ohio	Omicron 21K	15
-2022-03-23	Ohio	Omicron 21K	12
-2022-03-24	Ohio	Omicron 21K	18
-2022-03-25	Ohio	Omicron 21K	14
-2022-03-26	Ohio	Omicron 21K	6
-2022-03-27	Ohio	Omicron 21K	10
-2022-03-28	Ohio	Omicron 21K	14
-2022-03-29	Ohio	Omicron 21K	9
-2022-03-30	Ohio	Omicron 21K	15
-2022-03-31	Ohio	Omicron 21K	8
-2022-04-01	Ohio	Omicron 21K	14
-2022-04-02	Ohio	Omicron 21K	1
-2022-04-03	Ohio	Omicron 21K	1
-2022-04-04	Ohio	Omicron 21K	5
-2022-04-05	Ohio	Omicron 21K	5
-2022-04-06	Ohio	Omicron 21K	3
-2022-04-07	Ohio	Omicron 21K	2
-2022-04-08	Ohio	Omicron 21K	6
-2022-04-09	Ohio	Omicron 21K	1
-2022-04-10	Ohio	Omicron 21K	3
-2022-04-11	Ohio	Omicron 21K	1
-2022-04-12	Ohio	Omicron 21K	1
-2022-04-13	Ohio	Omicron 21K	4
-2022-04-14	Ohio	Omicron 21K	2
-2022-04-15	Ohio	Omicron 21K	3
-2022-04-16	Ohio	Omicron 21K	3
-2022-04-18	Ohio	Omicron 21K	6
-2022-04-19	Ohio	Omicron 21K	3
-2022-04-20	Ohio	Omicron 21K	1
-2022-04-21	Ohio	Omicron 21K	2
-2022-04-22	Ohio	Omicron 21K	1
-2022-04-23	Ohio	Omicron 21K	1
-2022-04-24	Ohio	Omicron 21K	1
-2022-04-25	Ohio	Omicron 21K	3
-2022-04-26	Ohio	Omicron 21K	2
-2022-04-27	Ohio	Omicron 21K	1
-2022-04-29	Ohio	Omicron 21K	2
-2022-04-30	Ohio	Omicron 21K	1
-2022-05-02	Ohio	Omicron 21K	1
-2022-05-09	Ohio	Omicron 21K	1
-2022-01-28	Ohio	Omicron 21L	1
-2022-01-30	Ohio	Omicron 21L	1
-2022-01-31	Ohio	Omicron 21L	1
-2022-02-01	Ohio	Omicron 21L	2
-2022-02-02	Ohio	Omicron 21L	1
-2022-02-06	Ohio	Omicron 21L	2
-2022-02-07	Ohio	Omicron 21L	2
-2022-02-08	Ohio	Omicron 21L	4
-2022-02-09	Ohio	Omicron 21L	5
-2022-02-10	Ohio	Omicron 21L	1
-2022-02-11	Ohio	Omicron 21L	3
-2022-02-12	Ohio	Omicron 21L	1
-2022-02-16	Ohio	Omicron 21L	2
-2022-02-17	Ohio	Omicron 21L	3
-2022-02-18	Ohio	Omicron 21L	2
-2022-02-19	Ohio	Omicron 21L	4
-2022-02-22	Ohio	Omicron 21L	4
-2022-02-23	Ohio	Omicron 21L	9
-2022-02-24	Ohio	Omicron 21L	3
-2022-02-25	Ohio	Omicron 21L	11
-2022-02-26	Ohio	Omicron 21L	1
-2022-02-27	Ohio	Omicron 21L	3
-2022-02-28	Ohio	Omicron 21L	8
-2022-03-01	Ohio	Omicron 21L	5
-2022-03-02	Ohio	Omicron 21L	3
-2022-03-03	Ohio	Omicron 21L	10
-2022-03-04	Ohio	Omicron 21L	5
-2022-03-05	Ohio	Omicron 21L	5
-2022-03-06	Ohio	Omicron 21L	3
-2022-03-07	Ohio	Omicron 21L	3
-2022-03-08	Ohio	Omicron 21L	10
-2022-03-09	Ohio	Omicron 21L	8
-2022-03-10	Ohio	Omicron 21L	7
-2022-03-11	Ohio	Omicron 21L	5
-2022-03-12	Ohio	Omicron 21L	1
-2022-03-13	Ohio	Omicron 21L	2
-2022-03-14	Ohio	Omicron 21L	6
-2022-03-15	Ohio	Omicron 21L	3
-2022-03-16	Ohio	Omicron 21L	10
-2022-03-17	Ohio	Omicron 21L	8
-2022-03-18	Ohio	Omicron 21L	6
-2022-03-19	Ohio	Omicron 21L	10
-2022-03-20	Ohio	Omicron 21L	8
-2022-03-21	Ohio	Omicron 21L	28
-2022-03-22	Ohio	Omicron 21L	16
-2022-03-23	Ohio	Omicron 21L	14
-2022-03-24	Ohio	Omicron 21L	16
-2022-03-25	Ohio	Omicron 21L	17
-2022-03-26	Ohio	Omicron 21L	8
-2022-03-27	Ohio	Omicron 21L	7
-2022-03-28	Ohio	Omicron 21L	24
-2022-03-29	Ohio	Omicron 21L	33
-2022-03-30	Ohio	Omicron 21L	25
-2022-03-31	Ohio	Omicron 21L	33
-2022-04-01	Ohio	Omicron 21L	28
-2022-04-02	Ohio	Omicron 21L	13
-2022-04-03	Ohio	Omicron 21L	10
-2022-04-04	Ohio	Omicron 21L	24
-2022-04-05	Ohio	Omicron 21L	53
-2022-04-06	Ohio	Omicron 21L	49
-2022-04-07	Ohio	Omicron 21L	26
-2022-04-08	Ohio	Omicron 21L	38
-2022-04-09	Ohio	Omicron 21L	23
-2022-04-10	Ohio	Omicron 21L	30
-2022-04-11	Ohio	Omicron 21L	51
-2022-04-12	Ohio	Omicron 21L	22
-2022-04-13	Ohio	Omicron 21L	35
-2022-04-14	Ohio	Omicron 21L	42
-2022-04-15	Ohio	Omicron 21L	46
-2022-04-16	Ohio	Omicron 21L	42
-2022-04-17	Ohio	Omicron 21L	2
-2022-04-18	Ohio	Omicron 21L	98
-2022-04-19	Ohio	Omicron 21L	31
-2022-04-20	Ohio	Omicron 21L	36
-2022-04-21	Ohio	Omicron 21L	41
-2022-04-22	Ohio	Omicron 21L	40
-2022-04-23	Ohio	Omicron 21L	26
-2022-04-24	Ohio	Omicron 21L	43
-2022-04-25	Ohio	Omicron 21L	67
-2022-04-26	Ohio	Omicron 21L	78
-2022-04-27	Ohio	Omicron 21L	41
-2022-04-28	Ohio	Omicron 21L	26
-2022-04-29	Ohio	Omicron 21L	54
-2022-04-30	Ohio	Omicron 21L	29
-2022-05-01	Ohio	Omicron 21L	4
-2022-05-02	Ohio	Omicron 21L	52
-2022-05-03	Ohio	Omicron 21L	37
-2022-05-04	Ohio	Omicron 21L	12
-2022-05-05	Ohio	Omicron 21L	10
-2022-05-06	Ohio	Omicron 21L	27
-2022-05-07	Ohio	Omicron 21L	37
-2022-05-08	Ohio	Omicron 21L	5
-2022-05-09	Ohio	Omicron 21L	12
-2022-05-10	Ohio	Omicron 21L	5
-2022-05-11	Ohio	Omicron 21L	3
-2022-05-12	Ohio	Omicron 21L	3
-2022-05-13	Ohio	Omicron 21L	4
-2022-04-07	Ohio	Omicron 22A	1
-2022-04-10	Ohio	Omicron 22A	1
-2022-04-18	Ohio	Omicron 22A	2
-2022-05-02	Ohio	Omicron 22A	2
-2022-05-06	Ohio	Omicron 22A	1
-2022-03-16	Ohio	Omicron 22C	1
-2022-03-19	Ohio	Omicron 22C	1
-2022-03-20	Ohio	Omicron 22C	1
-2022-03-24	Ohio	Omicron 22C	1
-2022-03-28	Ohio	Omicron 22C	2
-2022-03-29	Ohio	Omicron 22C	1
-2022-04-01	Ohio	Omicron 22C	2
-2022-04-02	Ohio	Omicron 22C	2
-2022-04-03	Ohio	Omicron 22C	2
-2022-04-05	Ohio	Omicron 22C	4
-2022-04-06	Ohio	Omicron 22C	11
-2022-04-07	Ohio	Omicron 22C	4
-2022-04-08	Ohio	Omicron 22C	9
-2022-04-09	Ohio	Omicron 22C	8
-2022-04-10	Ohio	Omicron 22C	3
-2022-04-11	Ohio	Omicron 22C	13
-2022-04-12	Ohio	Omicron 22C	9
-2022-04-13	Ohio	Omicron 22C	10
-2022-04-14	Ohio	Omicron 22C	14
-2022-04-15	Ohio	Omicron 22C	6
-2022-04-16	Ohio	Omicron 22C	16
-2022-04-18	Ohio	Omicron 22C	31
-2022-04-19	Ohio	Omicron 22C	20
-2022-04-20	Ohio	Omicron 22C	12
-2022-04-21	Ohio	Omicron 22C	16
-2022-04-22	Ohio	Omicron 22C	16
-2022-04-23	Ohio	Omicron 22C	7
-2022-04-24	Ohio	Omicron 22C	24
-2022-04-25	Ohio	Omicron 22C	35
-2022-04-26	Ohio	Omicron 22C	47
-2022-04-27	Ohio	Omicron 22C	37
-2022-04-28	Ohio	Omicron 22C	19
-2022-04-29	Ohio	Omicron 22C	46
-2022-04-30	Ohio	Omicron 22C	17
-2022-05-01	Ohio	Omicron 22C	5
-2022-05-02	Ohio	Omicron 22C	24
-2022-05-03	Ohio	Omicron 22C	21
-2022-05-04	Ohio	Omicron 22C	12
-2022-05-05	Ohio	Omicron 22C	7
-2022-05-06	Ohio	Omicron 22C	26
-2022-05-07	Ohio	Omicron 22C	33
-2022-05-08	Ohio	Omicron 22C	4
-2022-05-09	Ohio	Omicron 22C	7
-2022-05-10	Ohio	Omicron 22C	1
-2022-05-11	Ohio	Omicron 22C	9
-2022-05-12	Ohio	Omicron 22C	3
-2022-05-13	Ohio	Omicron 22C	5
+2022-05-10	North Carolina	Omicron 22C	126
+2022-05-11	North Carolina	Omicron 22C	129
+2022-05-12	North Carolina	Omicron 22C	114
+2022-05-13	North Carolina	Omicron 22C	132
+2022-05-14	North Carolina	Omicron 22C	42
+2022-05-15	North Carolina	Omicron 22C	54
+2022-05-16	North Carolina	Omicron 22C	52
+2022-05-17	North Carolina	Omicron 22C	47
+2022-05-18	North Carolina	Omicron 22C	57
+2022-05-19	North Carolina	Omicron 22C	15
+2022-05-20	North Carolina	Omicron 22C	8
 2022-02-28	Oregon	other	2
 2022-03-01	Oregon	other	1
 2022-03-04	Oregon	other	1
@@ -5386,11 +4923,6 @@ date	location	variant	sequences
 2022-02-07	Oregon	Delta	1
 2022-02-16	Oregon	Delta	1
 2022-03-05	Oregon	Delta	1
-2022-01-28	Oregon	Omicron 21K	147
-2022-01-29	Oregon	Omicron 21K	46
-2022-01-30	Oregon	Omicron 21K	60
-2022-01-31	Oregon	Omicron 21K	150
-2022-02-01	Oregon	Omicron 21K	153
 2022-02-02	Oregon	Omicron 21K	182
 2022-02-03	Oregon	Omicron 21K	139
 2022-02-04	Oregon	Omicron 21K	122
@@ -5478,7 +5010,7 @@ date	location	variant	sequences
 2022-05-03	Oregon	Omicron 21K	2
 2022-05-05	Oregon	Omicron 21K	2
 2022-05-09	Oregon	Omicron 21K	1
-2022-01-31	Oregon	Omicron 21L	2
+2022-05-18	Oregon	Omicron 21K	3
 2022-02-02	Oregon	Omicron 21L	2
 2022-02-06	Oregon	Omicron 21L	1
 2022-02-07	Oregon	Omicron 21L	3
@@ -5573,8 +5105,13 @@ date	location	variant	sequences
 2022-05-11	Oregon	Omicron 21L	30
 2022-05-12	Oregon	Omicron 21L	25
 2022-05-13	Oregon	Omicron 21L	24
-2022-05-14	Oregon	Omicron 21L	20
-2022-05-15	Oregon	Omicron 21L	8
+2022-05-14	Oregon	Omicron 21L	22
+2022-05-15	Oregon	Omicron 21L	9
+2022-05-16	Oregon	Omicron 21L	8
+2022-05-17	Oregon	Omicron 21L	21
+2022-05-18	Oregon	Omicron 21L	21
+2022-05-19	Oregon	Omicron 21L	9
+2022-05-20	Oregon	Omicron 21L	5
 2022-05-04	Oregon	Omicron 22A	1
 2022-05-05	Oregon	Omicron 22A	1
 2022-05-06	Oregon	Omicron 22A	1
@@ -5582,6 +5119,7 @@ date	location	variant	sequences
 2022-05-09	Oregon	Omicron 22A	2
 2022-05-10	Oregon	Omicron 22A	2
 2022-05-13	Oregon	Omicron 22A	2
+2022-05-19	Oregon	Omicron 22A	2
 2022-05-11	Oregon	Omicron 22B	1
 2022-05-15	Oregon	Omicron 22B	1
 2022-03-18	Oregon	Omicron 22C	1
@@ -5626,7 +5164,11 @@ date	location	variant	sequences
 2022-05-12	Oregon	Omicron 22C	11
 2022-05-13	Oregon	Omicron 22C	7
 2022-05-14	Oregon	Omicron 22C	8
-2022-05-15	Oregon	Omicron 22C	3
+2022-05-15	Oregon	Omicron 22C	4
+2022-05-16	Oregon	Omicron 22C	9
+2022-05-17	Oregon	Omicron 22C	9
+2022-05-18	Oregon	Omicron 22C	13
+2022-05-19	Oregon	Omicron 22C	4
 2022-02-10	Pennsylvania	other	1
 2022-02-25	Pennsylvania	other	1
 2022-03-02	Pennsylvania	other	3
@@ -5641,19 +5183,13 @@ date	location	variant	sequences
 2022-04-28	Pennsylvania	other	1
 2022-05-05	Pennsylvania	other	1
 2022-05-09	Pennsylvania	other	5
-2022-01-30	Pennsylvania	Delta	1
-2022-01-31	Pennsylvania	Delta	2
+2022-05-15	Pennsylvania	other	1
 2022-02-05	Pennsylvania	Delta	1
 2022-02-13	Pennsylvania	Delta	1
 2022-02-23	Pennsylvania	Delta	1
 2022-03-06	Pennsylvania	Delta	1
 2022-03-28	Pennsylvania	Delta	1
 2022-04-19	Pennsylvania	Delta	1
-2022-01-28	Pennsylvania	Omicron 21K	136
-2022-01-29	Pennsylvania	Omicron 21K	133
-2022-01-30	Pennsylvania	Omicron 21K	90
-2022-01-31	Pennsylvania	Omicron 21K	104
-2022-02-01	Pennsylvania	Omicron 21K	125
 2022-02-02	Pennsylvania	Omicron 21K	225
 2022-02-03	Pennsylvania	Omicron 21K	154
 2022-02-04	Pennsylvania	Omicron 21K	131
@@ -5741,11 +5277,7 @@ date	location	variant	sequences
 2022-05-06	Pennsylvania	Omicron 21K	1
 2022-05-08	Pennsylvania	Omicron 21K	1
 2022-05-10	Pennsylvania	Omicron 21K	1
-2022-01-28	Pennsylvania	Omicron 21L	1
-2022-01-29	Pennsylvania	Omicron 21L	2
-2022-01-30	Pennsylvania	Omicron 21L	3
-2022-01-31	Pennsylvania	Omicron 21L	3
-2022-02-01	Pennsylvania	Omicron 21L	2
+2022-05-16	Pennsylvania	Omicron 21K	1
 2022-02-02	Pennsylvania	Omicron 21L	2
 2022-02-03	Pennsylvania	Omicron 21L	2
 2022-02-04	Pennsylvania	Omicron 21L	1
@@ -5827,7 +5359,7 @@ date	location	variant	sequences
 2022-04-23	Pennsylvania	Omicron 21L	41
 2022-04-24	Pennsylvania	Omicron 21L	51
 2022-04-25	Pennsylvania	Omicron 21L	103
-2022-04-26	Pennsylvania	Omicron 21L	55
+2022-04-26	Pennsylvania	Omicron 21L	59
 2022-04-27	Pennsylvania	Omicron 21L	78
 2022-04-28	Pennsylvania	Omicron 21L	55
 2022-04-29	Pennsylvania	Omicron 21L	79
@@ -5841,12 +5373,15 @@ date	location	variant	sequences
 2022-05-07	Pennsylvania	Omicron 21L	67
 2022-05-08	Pennsylvania	Omicron 21L	41
 2022-05-09	Pennsylvania	Omicron 21L	46
-2022-05-10	Pennsylvania	Omicron 21L	58
+2022-05-10	Pennsylvania	Omicron 21L	59
 2022-05-11	Pennsylvania	Omicron 21L	59
-2022-05-12	Pennsylvania	Omicron 21L	19
-2022-05-13	Pennsylvania	Omicron 21L	5
-2022-05-14	Pennsylvania	Omicron 21L	6
-2022-05-15	Pennsylvania	Omicron 21L	2
+2022-05-12	Pennsylvania	Omicron 21L	39
+2022-05-13	Pennsylvania	Omicron 21L	23
+2022-05-14	Pennsylvania	Omicron 21L	19
+2022-05-15	Pennsylvania	Omicron 21L	9
+2022-05-16	Pennsylvania	Omicron 21L	2
+2022-05-17	Pennsylvania	Omicron 21L	10
+2022-05-18	Pennsylvania	Omicron 21L	6
 2022-04-11	Pennsylvania	Omicron 22A	1
 2022-04-14	Pennsylvania	Omicron 22A	1
 2022-04-21	Pennsylvania	Omicron 22A	1
@@ -5855,7 +5390,9 @@ date	location	variant	sequences
 2022-05-02	Pennsylvania	Omicron 22A	1
 2022-05-05	Pennsylvania	Omicron 22A	1
 2022-05-07	Pennsylvania	Omicron 22A	1
+2022-05-12	Pennsylvania	Omicron 22A	2
 2022-05-15	Pennsylvania	Omicron 22A	1
+2022-05-17	Pennsylvania	Omicron 22A	1
 2022-05-03	Pennsylvania	Omicron 22B	1
 2022-05-06	Pennsylvania	Omicron 22B	1
 2022-05-08	Pennsylvania	Omicron 22B	1
@@ -5920,12 +5457,16 @@ date	location	variant	sequences
 2022-05-07	Pennsylvania	Omicron 22C	120
 2022-05-08	Pennsylvania	Omicron 22C	40
 2022-05-09	Pennsylvania	Omicron 22C	66
-2022-05-10	Pennsylvania	Omicron 22C	97
-2022-05-11	Pennsylvania	Omicron 22C	76
-2022-05-12	Pennsylvania	Omicron 22C	53
-2022-05-13	Pennsylvania	Omicron 22C	24
-2022-05-14	Pennsylvania	Omicron 22C	7
-2022-05-15	Pennsylvania	Omicron 22C	4
+2022-05-10	Pennsylvania	Omicron 22C	98
+2022-05-11	Pennsylvania	Omicron 22C	79
+2022-05-12	Pennsylvania	Omicron 22C	92
+2022-05-13	Pennsylvania	Omicron 22C	56
+2022-05-14	Pennsylvania	Omicron 22C	24
+2022-05-15	Pennsylvania	Omicron 22C	14
+2022-05-16	Pennsylvania	Omicron 22C	8
+2022-05-17	Pennsylvania	Omicron 22C	30
+2022-05-18	Pennsylvania	Omicron 22C	11
+2022-05-20	Pennsylvania	Omicron 22C	1
 2022-02-18	Texas	other	1
 2022-02-20	Texas	other	1
 2022-02-24	Texas	other	2
@@ -5946,18 +5487,11 @@ date	location	variant	sequences
 2022-05-03	Texas	other	1
 2022-05-04	Texas	other	1
 2022-05-13	Texas	other	2
-2022-01-29	Texas	Delta	1
-2022-01-31	Texas	Delta	2
-2022-02-01	Texas	Delta	1
+2022-05-15	Texas	other	1
 2022-02-02	Texas	Delta	1
 2022-02-04	Texas	Delta	1
 2022-02-07	Texas	Delta	2
 2022-04-16	Texas	Delta	1
-2022-01-28	Texas	Omicron 21K	630
-2022-01-29	Texas	Omicron 21K	530
-2022-01-30	Texas	Omicron 21K	484
-2022-01-31	Texas	Omicron 21K	713
-2022-02-01	Texas	Omicron 21K	735
 2022-02-02	Texas	Omicron 21K	632
 2022-02-03	Texas	Omicron 21K	278
 2022-02-04	Texas	Omicron 21K	374
@@ -6048,11 +5582,6 @@ date	location	variant	sequences
 2022-05-05	Texas	Omicron 21K	1
 2022-05-06	Texas	Omicron 21K	1
 2022-05-07	Texas	Omicron 21K	1
-2022-01-28	Texas	Omicron 21L	2
-2022-01-29	Texas	Omicron 21L	4
-2022-01-30	Texas	Omicron 21L	4
-2022-01-31	Texas	Omicron 21L	8
-2022-02-01	Texas	Omicron 21L	7
 2022-02-02	Texas	Omicron 21L	9
 2022-02-03	Texas	Omicron 21L	6
 2022-02-04	Texas	Omicron 21L	4
@@ -6122,7 +5651,7 @@ date	location	variant	sequences
 2022-04-09	Texas	Omicron 21L	67
 2022-04-10	Texas	Omicron 21L	102
 2022-04-11	Texas	Omicron 21L	135
-2022-04-12	Texas	Omicron 21L	42
+2022-04-12	Texas	Omicron 21L	43
 2022-04-13	Texas	Omicron 21L	115
 2022-04-14	Texas	Omicron 21L	109
 2022-04-15	Texas	Omicron 21L	97
@@ -6142,19 +5671,23 @@ date	location	variant	sequences
 2022-04-29	Texas	Omicron 21L	89
 2022-04-30	Texas	Omicron 21L	81
 2022-05-01	Texas	Omicron 21L	90
-2022-05-02	Texas	Omicron 21L	138
+2022-05-02	Texas	Omicron 21L	140
 2022-05-03	Texas	Omicron 21L	55
 2022-05-04	Texas	Omicron 21L	68
 2022-05-05	Texas	Omicron 21L	57
 2022-05-06	Texas	Omicron 21L	43
 2022-05-07	Texas	Omicron 21L	18
 2022-05-08	Texas	Omicron 21L	21
-2022-05-09	Texas	Omicron 21L	16
-2022-05-10	Texas	Omicron 21L	17
-2022-05-11	Texas	Omicron 21L	14
-2022-05-12	Texas	Omicron 21L	4
-2022-05-13	Texas	Omicron 21L	26
-2022-05-14	Texas	Omicron 21L	2
+2022-05-09	Texas	Omicron 21L	17
+2022-05-10	Texas	Omicron 21L	20
+2022-05-11	Texas	Omicron 21L	15
+2022-05-12	Texas	Omicron 21L	5
+2022-05-13	Texas	Omicron 21L	37
+2022-05-14	Texas	Omicron 21L	23
+2022-05-15	Texas	Omicron 21L	6
+2022-05-16	Texas	Omicron 21L	3
+2022-05-18	Texas	Omicron 21L	1
+2022-05-19	Texas	Omicron 21L	1
 2022-04-12	Texas	Omicron 22A	1
 2022-04-14	Texas	Omicron 22A	1
 2022-04-21	Texas	Omicron 22A	1
@@ -6164,6 +5697,7 @@ date	location	variant	sequences
 2022-05-02	Texas	Omicron 22A	1
 2022-05-03	Texas	Omicron 22A	1
 2022-05-13	Texas	Omicron 22A	1
+2022-05-15	Texas	Omicron 22A	1
 2022-04-21	Texas	Omicron 22B	1
 2022-04-29	Texas	Omicron 22B	1
 2022-05-01	Texas	Omicron 22B	2
@@ -6176,6 +5710,7 @@ date	location	variant	sequences
 2022-05-09	Texas	Omicron 22B	1
 2022-05-11	Texas	Omicron 22B	1
 2022-05-13	Texas	Omicron 22B	1
+2022-05-14	Texas	Omicron 22B	1
 2022-03-22	Texas	Omicron 22C	2
 2022-03-29	Texas	Omicron 22C	5
 2022-03-30	Texas	Omicron 22C	2
@@ -6209,19 +5744,284 @@ date	location	variant	sequences
 2022-04-29	Texas	Omicron 22C	47
 2022-04-30	Texas	Omicron 22C	37
 2022-05-01	Texas	Omicron 22C	42
-2022-05-02	Texas	Omicron 22C	78
-2022-05-03	Texas	Omicron 22C	36
-2022-05-04	Texas	Omicron 22C	25
+2022-05-02	Texas	Omicron 22C	80
+2022-05-03	Texas	Omicron 22C	37
+2022-05-04	Texas	Omicron 22C	28
 2022-05-05	Texas	Omicron 22C	28
 2022-05-06	Texas	Omicron 22C	24
 2022-05-07	Texas	Omicron 22C	18
-2022-05-08	Texas	Omicron 22C	6
-2022-05-09	Texas	Omicron 22C	14
-2022-05-10	Texas	Omicron 22C	8
+2022-05-08	Texas	Omicron 22C	7
+2022-05-09	Texas	Omicron 22C	16
+2022-05-10	Texas	Omicron 22C	14
 2022-05-11	Texas	Omicron 22C	6
-2022-05-12	Texas	Omicron 22C	6
-2022-05-13	Texas	Omicron 22C	19
-2022-05-14	Texas	Omicron 22C	4
+2022-05-12	Texas	Omicron 22C	8
+2022-05-13	Texas	Omicron 22C	23
+2022-05-14	Texas	Omicron 22C	23
+2022-05-15	Texas	Omicron 22C	7
+2022-05-16	Texas	Omicron 22C	8
+2022-02-12	Utah	other	1
+2022-03-10	Utah	other	1
+2022-04-19	Utah	other	2
+2022-05-16	Utah	other	1
+2022-02-02	Utah	Delta	1
+2022-02-03	Utah	Delta	1
+2022-02-05	Utah	Delta	1
+2022-02-06	Utah	Delta	1
+2022-02-07	Utah	Delta	2
+2022-02-09	Utah	Delta	1
+2022-02-10	Utah	Delta	2
+2022-02-11	Utah	Delta	1
+2022-02-14	Utah	Delta	2
+2022-02-15	Utah	Delta	1
+2022-02-17	Utah	Delta	1
+2022-02-22	Utah	Delta	1
+2022-03-02	Utah	Delta	1
+2022-03-12	Utah	Delta	1
+2022-03-14	Utah	Delta	1
+2022-02-02	Utah	Omicron 21K	416
+2022-02-03	Utah	Omicron 21K	401
+2022-02-04	Utah	Omicron 21K	288
+2022-02-05	Utah	Omicron 21K	137
+2022-02-06	Utah	Omicron 21K	122
+2022-02-07	Utah	Omicron 21K	452
+2022-02-08	Utah	Omicron 21K	339
+2022-02-09	Utah	Omicron 21K	293
+2022-02-10	Utah	Omicron 21K	303
+2022-02-11	Utah	Omicron 21K	195
+2022-02-12	Utah	Omicron 21K	104
+2022-02-13	Utah	Omicron 21K	97
+2022-02-14	Utah	Omicron 21K	329
+2022-02-15	Utah	Omicron 21K	281
+2022-02-16	Utah	Omicron 21K	287
+2022-02-17	Utah	Omicron 21K	197
+2022-02-18	Utah	Omicron 21K	147
+2022-02-19	Utah	Omicron 21K	54
+2022-02-20	Utah	Omicron 21K	78
+2022-02-21	Utah	Omicron 21K	233
+2022-02-22	Utah	Omicron 21K	189
+2022-02-23	Utah	Omicron 21K	190
+2022-02-24	Utah	Omicron 21K	118
+2022-02-25	Utah	Omicron 21K	122
+2022-02-26	Utah	Omicron 21K	54
+2022-02-27	Utah	Omicron 21K	43
+2022-02-28	Utah	Omicron 21K	162
+2022-03-01	Utah	Omicron 21K	87
+2022-03-02	Utah	Omicron 21K	60
+2022-03-03	Utah	Omicron 21K	42
+2022-03-04	Utah	Omicron 21K	50
+2022-03-05	Utah	Omicron 21K	26
+2022-03-06	Utah	Omicron 21K	14
+2022-03-07	Utah	Omicron 21K	47
+2022-03-08	Utah	Omicron 21K	32
+2022-03-09	Utah	Omicron 21K	24
+2022-03-10	Utah	Omicron 21K	25
+2022-03-11	Utah	Omicron 21K	14
+2022-03-12	Utah	Omicron 21K	11
+2022-03-13	Utah	Omicron 21K	22
+2022-03-14	Utah	Omicron 21K	30
+2022-03-15	Utah	Omicron 21K	27
+2022-03-16	Utah	Omicron 21K	19
+2022-03-17	Utah	Omicron 21K	21
+2022-03-18	Utah	Omicron 21K	22
+2022-03-19	Utah	Omicron 21K	12
+2022-03-20	Utah	Omicron 21K	7
+2022-03-21	Utah	Omicron 21K	23
+2022-03-22	Utah	Omicron 21K	14
+2022-03-23	Utah	Omicron 21K	12
+2022-03-24	Utah	Omicron 21K	9
+2022-03-25	Utah	Omicron 21K	5
+2022-03-26	Utah	Omicron 21K	2
+2022-03-27	Utah	Omicron 21K	5
+2022-03-28	Utah	Omicron 21K	6
+2022-03-29	Utah	Omicron 21K	4
+2022-03-30	Utah	Omicron 21K	6
+2022-03-31	Utah	Omicron 21K	4
+2022-04-01	Utah	Omicron 21K	5
+2022-04-02	Utah	Omicron 21K	2
+2022-04-03	Utah	Omicron 21K	2
+2022-04-04	Utah	Omicron 21K	5
+2022-04-05	Utah	Omicron 21K	3
+2022-04-06	Utah	Omicron 21K	5
+2022-04-07	Utah	Omicron 21K	4
+2022-04-10	Utah	Omicron 21K	1
+2022-04-11	Utah	Omicron 21K	2
+2022-04-13	Utah	Omicron 21K	2
+2022-04-14	Utah	Omicron 21K	2
+2022-04-15	Utah	Omicron 21K	1
+2022-04-16	Utah	Omicron 21K	1
+2022-04-19	Utah	Omicron 21K	2
+2022-04-22	Utah	Omicron 21K	1
+2022-04-23	Utah	Omicron 21K	1
+2022-04-26	Utah	Omicron 21K	1
+2022-04-28	Utah	Omicron 21K	1
+2022-05-01	Utah	Omicron 21K	2
+2022-05-02	Utah	Omicron 21K	1
+2022-05-04	Utah	Omicron 21K	1
+2022-05-05	Utah	Omicron 21K	3
+2022-05-06	Utah	Omicron 21K	2
+2022-05-09	Utah	Omicron 21K	1
+2022-05-11	Utah	Omicron 21K	1
+2022-02-02	Utah	Omicron 21L	1
+2022-02-03	Utah	Omicron 21L	4
+2022-02-04	Utah	Omicron 21L	4
+2022-02-06	Utah	Omicron 21L	2
+2022-02-07	Utah	Omicron 21L	1
+2022-02-09	Utah	Omicron 21L	1
+2022-02-10	Utah	Omicron 21L	1
+2022-02-12	Utah	Omicron 21L	3
+2022-02-13	Utah	Omicron 21L	2
+2022-02-14	Utah	Omicron 21L	3
+2022-02-15	Utah	Omicron 21L	8
+2022-02-16	Utah	Omicron 21L	2
+2022-02-17	Utah	Omicron 21L	2
+2022-02-18	Utah	Omicron 21L	2
+2022-02-20	Utah	Omicron 21L	3
+2022-02-21	Utah	Omicron 21L	3
+2022-02-22	Utah	Omicron 21L	1
+2022-02-23	Utah	Omicron 21L	4
+2022-02-24	Utah	Omicron 21L	5
+2022-02-25	Utah	Omicron 21L	4
+2022-02-26	Utah	Omicron 21L	2
+2022-02-27	Utah	Omicron 21L	2
+2022-02-28	Utah	Omicron 21L	10
+2022-03-01	Utah	Omicron 21L	7
+2022-03-02	Utah	Omicron 21L	12
+2022-03-03	Utah	Omicron 21L	6
+2022-03-04	Utah	Omicron 21L	12
+2022-03-05	Utah	Omicron 21L	5
+2022-03-06	Utah	Omicron 21L	3
+2022-03-07	Utah	Omicron 21L	6
+2022-03-08	Utah	Omicron 21L	4
+2022-03-09	Utah	Omicron 21L	1
+2022-03-10	Utah	Omicron 21L	7
+2022-03-11	Utah	Omicron 21L	1
+2022-03-13	Utah	Omicron 21L	3
+2022-03-14	Utah	Omicron 21L	4
+2022-03-15	Utah	Omicron 21L	8
+2022-03-16	Utah	Omicron 21L	9
+2022-03-17	Utah	Omicron 21L	6
+2022-03-18	Utah	Omicron 21L	7
+2022-03-19	Utah	Omicron 21L	5
+2022-03-20	Utah	Omicron 21L	4
+2022-03-21	Utah	Omicron 21L	3
+2022-03-22	Utah	Omicron 21L	7
+2022-03-23	Utah	Omicron 21L	10
+2022-03-24	Utah	Omicron 21L	10
+2022-03-25	Utah	Omicron 21L	16
+2022-03-26	Utah	Omicron 21L	11
+2022-03-27	Utah	Omicron 21L	8
+2022-03-28	Utah	Omicron 21L	20
+2022-03-29	Utah	Omicron 21L	13
+2022-03-30	Utah	Omicron 21L	16
+2022-03-31	Utah	Omicron 21L	9
+2022-04-01	Utah	Omicron 21L	4
+2022-04-02	Utah	Omicron 21L	2
+2022-04-03	Utah	Omicron 21L	6
+2022-04-04	Utah	Omicron 21L	11
+2022-04-05	Utah	Omicron 21L	9
+2022-04-06	Utah	Omicron 21L	14
+2022-04-07	Utah	Omicron 21L	11
+2022-04-08	Utah	Omicron 21L	11
+2022-04-09	Utah	Omicron 21L	7
+2022-04-10	Utah	Omicron 21L	11
+2022-04-11	Utah	Omicron 21L	16
+2022-04-12	Utah	Omicron 21L	11
+2022-04-13	Utah	Omicron 21L	13
+2022-04-14	Utah	Omicron 21L	20
+2022-04-15	Utah	Omicron 21L	11
+2022-04-16	Utah	Omicron 21L	13
+2022-04-17	Utah	Omicron 21L	3
+2022-04-18	Utah	Omicron 21L	20
+2022-04-19	Utah	Omicron 21L	22
+2022-04-20	Utah	Omicron 21L	21
+2022-04-21	Utah	Omicron 21L	13
+2022-04-22	Utah	Omicron 21L	11
+2022-04-23	Utah	Omicron 21L	8
+2022-04-24	Utah	Omicron 21L	9
+2022-04-25	Utah	Omicron 21L	13
+2022-04-26	Utah	Omicron 21L	19
+2022-04-27	Utah	Omicron 21L	42
+2022-04-28	Utah	Omicron 21L	32
+2022-04-29	Utah	Omicron 21L	26
+2022-04-30	Utah	Omicron 21L	14
+2022-05-01	Utah	Omicron 21L	13
+2022-05-02	Utah	Omicron 21L	34
+2022-05-03	Utah	Omicron 21L	18
+2022-05-04	Utah	Omicron 21L	25
+2022-05-05	Utah	Omicron 21L	24
+2022-05-06	Utah	Omicron 21L	24
+2022-05-07	Utah	Omicron 21L	23
+2022-05-08	Utah	Omicron 21L	9
+2022-05-09	Utah	Omicron 21L	21
+2022-05-10	Utah	Omicron 21L	13
+2022-05-11	Utah	Omicron 21L	26
+2022-05-12	Utah	Omicron 21L	27
+2022-05-13	Utah	Omicron 21L	15
+2022-05-14	Utah	Omicron 21L	12
+2022-05-15	Utah	Omicron 21L	5
+2022-05-16	Utah	Omicron 21L	9
+2022-05-17	Utah	Omicron 21L	1
+2022-05-01	Utah	Omicron 22A	1
+2022-05-03	Utah	Omicron 22A	1
+2022-05-06	Utah	Omicron 22A	1
+2022-05-10	Utah	Omicron 22A	1
+2022-05-12	Utah	Omicron 22A	1
+2022-04-23	Utah	Omicron 22B	2
+2022-04-26	Utah	Omicron 22B	1
+2022-05-02	Utah	Omicron 22B	1
+2022-05-04	Utah	Omicron 22B	1
+2022-05-08	Utah	Omicron 22B	1
+2022-05-13	Utah	Omicron 22B	1
+2022-05-15	Utah	Omicron 22B	1
+2022-05-16	Utah	Omicron 22B	1
+2022-03-14	Utah	Omicron 22C	2
+2022-03-16	Utah	Omicron 22C	1
+2022-03-26	Utah	Omicron 22C	1
+2022-03-28	Utah	Omicron 22C	4
+2022-03-29	Utah	Omicron 22C	2
+2022-03-30	Utah	Omicron 22C	1
+2022-04-04	Utah	Omicron 22C	1
+2022-04-05	Utah	Omicron 22C	3
+2022-04-06	Utah	Omicron 22C	6
+2022-04-07	Utah	Omicron 22C	1
+2022-04-08	Utah	Omicron 22C	5
+2022-04-09	Utah	Omicron 22C	1
+2022-04-10	Utah	Omicron 22C	1
+2022-04-11	Utah	Omicron 22C	4
+2022-04-12	Utah	Omicron 22C	3
+2022-04-13	Utah	Omicron 22C	4
+2022-04-14	Utah	Omicron 22C	1
+2022-04-15	Utah	Omicron 22C	4
+2022-04-16	Utah	Omicron 22C	2
+2022-04-18	Utah	Omicron 22C	6
+2022-04-19	Utah	Omicron 22C	12
+2022-04-20	Utah	Omicron 22C	12
+2022-04-21	Utah	Omicron 22C	3
+2022-04-22	Utah	Omicron 22C	3
+2022-04-23	Utah	Omicron 22C	1
+2022-04-24	Utah	Omicron 22C	6
+2022-04-25	Utah	Omicron 22C	5
+2022-04-26	Utah	Omicron 22C	6
+2022-04-27	Utah	Omicron 22C	25
+2022-04-28	Utah	Omicron 22C	17
+2022-04-29	Utah	Omicron 22C	14
+2022-04-30	Utah	Omicron 22C	6
+2022-05-01	Utah	Omicron 22C	13
+2022-05-02	Utah	Omicron 22C	29
+2022-05-03	Utah	Omicron 22C	17
+2022-05-04	Utah	Omicron 22C	28
+2022-05-05	Utah	Omicron 22C	25
+2022-05-06	Utah	Omicron 22C	46
+2022-05-07	Utah	Omicron 22C	20
+2022-05-08	Utah	Omicron 22C	11
+2022-05-09	Utah	Omicron 22C	16
+2022-05-10	Utah	Omicron 22C	10
+2022-05-11	Utah	Omicron 22C	20
+2022-05-12	Utah	Omicron 22C	37
+2022-05-13	Utah	Omicron 22C	28
+2022-05-14	Utah	Omicron 22C	18
+2022-05-15	Utah	Omicron 22C	11
+2022-05-16	Utah	Omicron 22C	22
 2022-02-18	Virginia	other	1
 2022-02-27	Virginia	other	1
 2022-02-28	Virginia	other	1
@@ -6231,23 +6031,17 @@ date	location	variant	sequences
 2022-04-29	Virginia	other	1
 2022-05-03	Virginia	other	1
 2022-05-05	Virginia	other	1
-2022-01-31	Virginia	Delta	2
-2022-02-01	Virginia	Delta	1
+2022-05-16	Virginia	other	1
 2022-02-02	Virginia	Delta	1
 2022-02-17	Virginia	Delta	1
 2022-03-28	Virginia	Delta	1
-2022-01-28	Virginia	Omicron 21K	57
-2022-01-29	Virginia	Omicron 21K	34
-2022-01-30	Virginia	Omicron 21K	51
-2022-01-31	Virginia	Omicron 21K	209
-2022-02-01	Virginia	Omicron 21K	268
 2022-02-02	Virginia	Omicron 21K	252
-2022-02-03	Virginia	Omicron 21K	209
-2022-02-04	Virginia	Omicron 21K	99
-2022-02-05	Virginia	Omicron 21K	71
-2022-02-06	Virginia	Omicron 21K	54
-2022-02-07	Virginia	Omicron 21K	96
-2022-02-08	Virginia	Omicron 21K	203
+2022-02-03	Virginia	Omicron 21K	226
+2022-02-04	Virginia	Omicron 21K	124
+2022-02-05	Virginia	Omicron 21K	72
+2022-02-06	Virginia	Omicron 21K	57
+2022-02-07	Virginia	Omicron 21K	132
+2022-02-08	Virginia	Omicron 21K	283
 2022-02-09	Virginia	Omicron 21K	156
 2022-02-10	Virginia	Omicron 21K	118
 2022-02-11	Virginia	Omicron 21K	128
@@ -6284,18 +6078,18 @@ date	location	variant	sequences
 2022-03-14	Virginia	Omicron 21K	37
 2022-03-15	Virginia	Omicron 21K	37
 2022-03-16	Virginia	Omicron 21K	23
-2022-03-17	Virginia	Omicron 21K	17
+2022-03-17	Virginia	Omicron 21K	18
 2022-03-18	Virginia	Omicron 21K	17
-2022-03-19	Virginia	Omicron 21K	19
+2022-03-19	Virginia	Omicron 21K	20
 2022-03-20	Virginia	Omicron 21K	13
 2022-03-21	Virginia	Omicron 21K	26
-2022-03-22	Virginia	Omicron 21K	15
+2022-03-22	Virginia	Omicron 21K	16
 2022-03-23	Virginia	Omicron 21K	7
 2022-03-24	Virginia	Omicron 21K	7
 2022-03-25	Virginia	Omicron 21K	14
 2022-03-26	Virginia	Omicron 21K	10
 2022-03-27	Virginia	Omicron 21K	9
-2022-03-28	Virginia	Omicron 21K	22
+2022-03-28	Virginia	Omicron 21K	23
 2022-03-29	Virginia	Omicron 21K	12
 2022-03-30	Virginia	Omicron 21K	8
 2022-03-31	Virginia	Omicron 21K	10
@@ -6325,13 +6119,11 @@ date	location	variant	sequences
 2022-05-02	Virginia	Omicron 21K	1
 2022-05-05	Virginia	Omicron 21K	2
 2022-05-09	Virginia	Omicron 21K	1
-2022-01-31	Virginia	Omicron 21L	1
-2022-02-01	Virginia	Omicron 21L	3
 2022-02-02	Virginia	Omicron 21L	2
 2022-02-03	Virginia	Omicron 21L	2
-2022-02-04	Virginia	Omicron 21L	2
+2022-02-04	Virginia	Omicron 21L	3
 2022-02-06	Virginia	Omicron 21L	1
-2022-02-07	Virginia	Omicron 21L	5
+2022-02-07	Virginia	Omicron 21L	6
 2022-02-08	Virginia	Omicron 21L	1
 2022-02-09	Virginia	Omicron 21L	1
 2022-02-11	Virginia	Omicron 21L	4
@@ -6414,28 +6206,35 @@ date	location	variant	sequences
 2022-05-01	Virginia	Omicron 21L	43
 2022-05-02	Virginia	Omicron 21L	74
 2022-05-03	Virginia	Omicron 21L	111
-2022-05-04	Virginia	Omicron 21L	57
-2022-05-05	Virginia	Omicron 21L	100
-2022-05-06	Virginia	Omicron 21L	17
-2022-05-07	Virginia	Omicron 21L	2
-2022-05-08	Virginia	Omicron 21L	30
-2022-05-09	Virginia	Omicron 21L	62
-2022-05-10	Virginia	Omicron 21L	57
+2022-05-04	Virginia	Omicron 21L	62
+2022-05-05	Virginia	Omicron 21L	104
+2022-05-06	Virginia	Omicron 21L	19
+2022-05-07	Virginia	Omicron 21L	3
+2022-05-08	Virginia	Omicron 21L	31
+2022-05-09	Virginia	Omicron 21L	66
+2022-05-10	Virginia	Omicron 21L	60
 2022-05-11	Virginia	Omicron 21L	72
 2022-05-12	Virginia	Omicron 21L	83
-2022-05-13	Virginia	Omicron 21L	37
-2022-05-14	Virginia	Omicron 21L	1
+2022-05-13	Virginia	Omicron 21L	39
+2022-05-14	Virginia	Omicron 21L	27
+2022-05-15	Virginia	Omicron 21L	8
+2022-05-16	Virginia	Omicron 21L	1
+2022-05-17	Virginia	Omicron 21L	8
 2022-04-14	Virginia	Omicron 22A	1
 2022-04-15	Virginia	Omicron 22A	1
 2022-04-30	Virginia	Omicron 22A	2
 2022-05-01	Virginia	Omicron 22A	2
-2022-05-02	Virginia	Omicron 22A	2
+2022-05-02	Virginia	Omicron 22A	3
 2022-05-03	Virginia	Omicron 22A	3
 2022-05-04	Virginia	Omicron 22A	1
 2022-05-05	Virginia	Omicron 22A	2
+2022-05-09	Virginia	Omicron 22A	1
 2022-05-10	Virginia	Omicron 22A	2
 2022-05-11	Virginia	Omicron 22A	4
 2022-05-12	Virginia	Omicron 22A	11
+2022-05-13	Virginia	Omicron 22A	1
+2022-05-16	Virginia	Omicron 22A	4
+2022-05-17	Virginia	Omicron 22A	2
 2022-04-27	Virginia	Omicron 22B	1
 2022-05-03	Virginia	Omicron 22B	1
 2022-05-10	Virginia	Omicron 22B	1
@@ -6479,17 +6278,20 @@ date	location	variant	sequences
 2022-05-01	Virginia	Omicron 22C	30
 2022-05-02	Virginia	Omicron 22C	45
 2022-05-03	Virginia	Omicron 22C	123
-2022-05-04	Virginia	Omicron 22C	62
-2022-05-05	Virginia	Omicron 22C	72
-2022-05-06	Virginia	Omicron 22C	17
+2022-05-04	Virginia	Omicron 22C	66
+2022-05-05	Virginia	Omicron 22C	77
+2022-05-06	Virginia	Omicron 22C	19
 2022-05-07	Virginia	Omicron 22C	3
-2022-05-08	Virginia	Omicron 22C	17
-2022-05-09	Virginia	Omicron 22C	59
-2022-05-10	Virginia	Omicron 22C	41
+2022-05-08	Virginia	Omicron 22C	18
+2022-05-09	Virginia	Omicron 22C	62
+2022-05-10	Virginia	Omicron 22C	44
 2022-05-11	Virginia	Omicron 22C	69
 2022-05-12	Virginia	Omicron 22C	77
-2022-05-13	Virginia	Omicron 22C	43
-2022-05-14	Virginia	Omicron 22C	1
+2022-05-13	Virginia	Omicron 22C	47
+2022-05-14	Virginia	Omicron 22C	30
+2022-05-15	Virginia	Omicron 22C	16
+2022-05-16	Virginia	Omicron 22C	13
+2022-05-17	Virginia	Omicron 22C	6
 2022-02-26	Washington	other	1
 2022-02-28	Washington	other	1
 2022-03-01	Washington	other	1
@@ -6509,22 +6311,15 @@ date	location	variant	sequences
 2022-04-28	Washington	other	1
 2022-05-02	Washington	other	1
 2022-05-04	Washington	other	1
-2022-05-11	Washington	other	1
+2022-05-11	Washington	other	2
 2022-05-12	Washington	other	1
 2022-05-14	Washington	other	1
-2022-01-29	Washington	Delta	1
-2022-01-31	Washington	Delta	3
-2022-02-01	Washington	Delta	1
+2022-05-19	Washington	other	1
 2022-02-02	Washington	Delta	3
 2022-02-21	Washington	Delta	1
 2022-02-25	Washington	Delta	1
 2022-02-26	Washington	Delta	1
 2022-02-28	Washington	Delta	1
-2022-01-28	Washington	Omicron 21K	153
-2022-01-29	Washington	Omicron 21K	39
-2022-01-30	Washington	Omicron 21K	100
-2022-01-31	Washington	Omicron 21K	160
-2022-02-01	Washington	Omicron 21K	263
 2022-02-02	Washington	Omicron 21K	301
 2022-02-03	Washington	Omicron 21K	185
 2022-02-04	Washington	Omicron 21K	165
@@ -6564,15 +6359,15 @@ date	location	variant	sequences
 2022-03-10	Washington	Omicron 21K	79
 2022-03-11	Washington	Omicron 21K	51
 2022-03-12	Washington	Omicron 21K	34
-2022-03-13	Washington	Omicron 21K	29
-2022-03-14	Washington	Omicron 21K	99
+2022-03-13	Washington	Omicron 21K	30
+2022-03-14	Washington	Omicron 21K	100
 2022-03-15	Washington	Omicron 21K	60
 2022-03-16	Washington	Omicron 21K	58
 2022-03-17	Washington	Omicron 21K	82
 2022-03-18	Washington	Omicron 21K	42
 2022-03-19	Washington	Omicron 21K	18
 2022-03-20	Washington	Omicron 21K	16
-2022-03-21	Washington	Omicron 21K	52
+2022-03-21	Washington	Omicron 21K	53
 2022-03-22	Washington	Omicron 21K	48
 2022-03-23	Washington	Omicron 21K	41
 2022-03-24	Washington	Omicron 21K	42
@@ -6589,7 +6384,7 @@ date	location	variant	sequences
 2022-04-04	Washington	Omicron 21K	30
 2022-04-05	Washington	Omicron 21K	14
 2022-04-06	Washington	Omicron 21K	20
-2022-04-07	Washington	Omicron 21K	15
+2022-04-07	Washington	Omicron 21K	16
 2022-04-08	Washington	Omicron 21K	15
 2022-04-09	Washington	Omicron 21K	5
 2022-04-10	Washington	Omicron 21K	2
@@ -6603,7 +6398,7 @@ date	location	variant	sequences
 2022-04-18	Washington	Omicron 21K	10
 2022-04-19	Washington	Omicron 21K	5
 2022-04-20	Washington	Omicron 21K	4
-2022-04-21	Washington	Omicron 21K	9
+2022-04-21	Washington	Omicron 21K	12
 2022-04-22	Washington	Omicron 21K	3
 2022-04-23	Washington	Omicron 21K	1
 2022-04-24	Washington	Omicron 21K	1
@@ -6614,14 +6409,13 @@ date	location	variant	sequences
 2022-04-29	Washington	Omicron 21K	1
 2022-04-30	Washington	Omicron 21K	2
 2022-05-02	Washington	Omicron 21K	2
+2022-05-03	Washington	Omicron 21K	1
 2022-05-05	Washington	Omicron 21K	2
 2022-05-09	Washington	Omicron 21K	2
+2022-05-11	Washington	Omicron 21K	2
 2022-05-12	Washington	Omicron 21K	3
 2022-05-13	Washington	Omicron 21K	1
-2022-01-28	Washington	Omicron 21L	1
-2022-01-29	Washington	Omicron 21L	1
-2022-01-31	Washington	Omicron 21L	1
-2022-02-01	Washington	Omicron 21L	2
+2022-05-17	Washington	Omicron 21K	1
 2022-02-02	Washington	Omicron 21L	2
 2022-02-03	Washington	Omicron 21L	1
 2022-02-04	Washington	Omicron 21L	2
@@ -6685,46 +6479,52 @@ date	location	variant	sequences
 2022-04-03	Washington	Omicron 21L	97
 2022-04-04	Washington	Omicron 21L	275
 2022-04-05	Washington	Omicron 21L	154
-2022-04-06	Washington	Omicron 21L	153
+2022-04-06	Washington	Omicron 21L	154
 2022-04-07	Washington	Omicron 21L	222
-2022-04-08	Washington	Omicron 21L	120
+2022-04-08	Washington	Omicron 21L	122
 2022-04-09	Washington	Omicron 21L	47
 2022-04-10	Washington	Omicron 21L	75
 2022-04-11	Washington	Omicron 21L	214
-2022-04-12	Washington	Omicron 21L	120
-2022-04-13	Washington	Omicron 21L	145
+2022-04-12	Washington	Omicron 21L	121
+2022-04-13	Washington	Omicron 21L	147
 2022-04-14	Washington	Omicron 21L	168
-2022-04-15	Washington	Omicron 21L	171
+2022-04-15	Washington	Omicron 21L	196
 2022-04-16	Washington	Omicron 21L	159
 2022-04-17	Washington	Omicron 21L	104
-2022-04-18	Washington	Omicron 21L	194
-2022-04-19	Washington	Omicron 21L	250
-2022-04-20	Washington	Omicron 21L	257
-2022-04-21	Washington	Omicron 21L	256
-2022-04-22	Washington	Omicron 21L	187
-2022-04-23	Washington	Omicron 21L	85
-2022-04-24	Washington	Omicron 21L	107
-2022-04-25	Washington	Omicron 21L	280
-2022-04-26	Washington	Omicron 21L	165
-2022-04-27	Washington	Omicron 21L	226
-2022-04-28	Washington	Omicron 21L	171
+2022-04-18	Washington	Omicron 21L	196
+2022-04-19	Washington	Omicron 21L	253
+2022-04-20	Washington	Omicron 21L	261
+2022-04-21	Washington	Omicron 21L	305
+2022-04-22	Washington	Omicron 21L	188
+2022-04-23	Washington	Omicron 21L	86
+2022-04-24	Washington	Omicron 21L	110
+2022-04-25	Washington	Omicron 21L	302
+2022-04-26	Washington	Omicron 21L	217
+2022-04-27	Washington	Omicron 21L	255
+2022-04-28	Washington	Omicron 21L	172
 2022-04-29	Washington	Omicron 21L	147
-2022-04-30	Washington	Omicron 21L	121
-2022-05-01	Washington	Omicron 21L	166
+2022-04-30	Washington	Omicron 21L	129
+2022-05-01	Washington	Omicron 21L	167
 2022-05-02	Washington	Omicron 21L	170
 2022-05-03	Washington	Omicron 21L	177
-2022-05-04	Washington	Omicron 21L	162
-2022-05-05	Washington	Omicron 21L	178
-2022-05-06	Washington	Omicron 21L	148
-2022-05-07	Washington	Omicron 21L	84
-2022-05-08	Washington	Omicron 21L	64
-2022-05-09	Washington	Omicron 21L	154
-2022-05-10	Washington	Omicron 21L	125
-2022-05-11	Washington	Omicron 21L	117
-2022-05-12	Washington	Omicron 21L	150
-2022-05-13	Washington	Omicron 21L	54
-2022-05-14	Washington	Omicron 21L	34
-2022-05-15	Washington	Omicron 21L	10
+2022-05-04	Washington	Omicron 21L	165
+2022-05-05	Washington	Omicron 21L	179
+2022-05-06	Washington	Omicron 21L	152
+2022-05-07	Washington	Omicron 21L	89
+2022-05-08	Washington	Omicron 21L	68
+2022-05-09	Washington	Omicron 21L	213
+2022-05-10	Washington	Omicron 21L	128
+2022-05-11	Washington	Omicron 21L	156
+2022-05-12	Washington	Omicron 21L	165
+2022-05-13	Washington	Omicron 21L	91
+2022-05-14	Washington	Omicron 21L	41
+2022-05-15	Washington	Omicron 21L	42
+2022-05-16	Washington	Omicron 21L	72
+2022-05-17	Washington	Omicron 21L	72
+2022-05-18	Washington	Omicron 21L	114
+2022-05-19	Washington	Omicron 21L	117
+2022-05-20	Washington	Omicron 21L	19
+2022-04-15	Washington	Omicron 22A	1
 2022-04-16	Washington	Omicron 22A	1
 2022-04-29	Washington	Omicron 22A	1
 2022-05-08	Washington	Omicron 22A	1
@@ -6732,16 +6532,25 @@ date	location	variant	sequences
 2022-05-11	Washington	Omicron 22A	1
 2022-05-12	Washington	Omicron 22A	3
 2022-05-13	Washington	Omicron 22A	1
+2022-05-16	Washington	Omicron 22A	2
+2022-05-17	Washington	Omicron 22A	2
+2022-05-18	Washington	Omicron 22A	2
+2022-05-19	Washington	Omicron 22A	2
 2022-04-27	Washington	Omicron 22B	1
 2022-05-02	Washington	Omicron 22B	1
 2022-05-05	Washington	Omicron 22B	1
 2022-05-06	Washington	Omicron 22B	1
 2022-05-08	Washington	Omicron 22B	1
-2022-05-09	Washington	Omicron 22B	2
+2022-05-09	Washington	Omicron 22B	3
 2022-05-10	Washington	Omicron 22B	1
 2022-05-11	Washington	Omicron 22B	1
 2022-05-12	Washington	Omicron 22B	5
 2022-05-14	Washington	Omicron 22B	2
+2022-05-15	Washington	Omicron 22B	4
+2022-05-16	Washington	Omicron 22B	3
+2022-05-17	Washington	Omicron 22B	2
+2022-05-18	Washington	Omicron 22B	5
+2022-05-19	Washington	Omicron 22B	4
 2022-03-17	Washington	Omicron 22C	1
 2022-03-21	Washington	Omicron 22C	1
 2022-03-22	Washington	Omicron 22C	3
@@ -6765,37 +6574,42 @@ date	location	variant	sequences
 2022-04-12	Washington	Omicron 22C	6
 2022-04-13	Washington	Omicron 22C	7
 2022-04-14	Washington	Omicron 22C	6
-2022-04-15	Washington	Omicron 22C	11
+2022-04-15	Washington	Omicron 22C	12
 2022-04-16	Washington	Omicron 22C	8
 2022-04-17	Washington	Omicron 22C	5
 2022-04-18	Washington	Omicron 22C	12
 2022-04-19	Washington	Omicron 22C	20
 2022-04-20	Washington	Omicron 22C	26
-2022-04-21	Washington	Omicron 22C	19
+2022-04-21	Washington	Omicron 22C	23
 2022-04-22	Washington	Omicron 22C	16
 2022-04-23	Washington	Omicron 22C	16
 2022-04-24	Washington	Omicron 22C	17
-2022-04-25	Washington	Omicron 22C	21
-2022-04-26	Washington	Omicron 22C	15
-2022-04-27	Washington	Omicron 22C	30
+2022-04-25	Washington	Omicron 22C	25
+2022-04-26	Washington	Omicron 22C	23
+2022-04-27	Washington	Omicron 22C	32
 2022-04-28	Washington	Omicron 22C	30
 2022-04-29	Washington	Omicron 22C	22
 2022-04-30	Washington	Omicron 22C	15
 2022-05-01	Washington	Omicron 22C	28
 2022-05-02	Washington	Omicron 22C	29
 2022-05-03	Washington	Omicron 22C	33
-2022-05-04	Washington	Omicron 22C	33
+2022-05-04	Washington	Omicron 22C	34
 2022-05-05	Washington	Omicron 22C	48
 2022-05-06	Washington	Omicron 22C	28
-2022-05-07	Washington	Omicron 22C	33
+2022-05-07	Washington	Omicron 22C	34
 2022-05-08	Washington	Omicron 22C	25
-2022-05-09	Washington	Omicron 22C	51
-2022-05-10	Washington	Omicron 22C	41
-2022-05-11	Washington	Omicron 22C	48
-2022-05-12	Washington	Omicron 22C	64
-2022-05-13	Washington	Omicron 22C	24
-2022-05-14	Washington	Omicron 22C	10
-2022-05-15	Washington	Omicron 22C	9
+2022-05-09	Washington	Omicron 22C	64
+2022-05-10	Washington	Omicron 22C	43
+2022-05-11	Washington	Omicron 22C	60
+2022-05-12	Washington	Omicron 22C	67
+2022-05-13	Washington	Omicron 22C	35
+2022-05-14	Washington	Omicron 22C	14
+2022-05-15	Washington	Omicron 22C	31
+2022-05-16	Washington	Omicron 22C	37
+2022-05-17	Washington	Omicron 22C	45
+2022-05-18	Washington	Omicron 22C	43
+2022-05-19	Washington	Omicron 22C	64
+2022-05-20	Washington	Omicron 22C	8
 2022-02-24	Washington DC	other	2
 2022-02-26	Washington DC	other	2
 2022-03-03	Washington DC	other	2
@@ -6811,11 +6625,8 @@ date	location	variant	sequences
 2022-05-11	Washington DC	other	1
 2022-05-12	Washington DC	other	3
 2022-05-13	Washington DC	other	1
-2022-01-28	Washington DC	Omicron 21K	13
-2022-01-29	Washington DC	Omicron 21K	2
-2022-01-30	Washington DC	Omicron 21K	6
-2022-01-31	Washington DC	Omicron 21K	17
-2022-02-01	Washington DC	Omicron 21K	9
+2022-05-16	Washington DC	other	3
+2022-05-18	Washington DC	other	1
 2022-02-02	Washington DC	Omicron 21K	10
 2022-02-03	Washington DC	Omicron 21K	20
 2022-02-04	Washington DC	Omicron 21K	9
@@ -6895,9 +6706,8 @@ date	location	variant	sequences
 2022-04-23	Washington DC	Omicron 21K	1
 2022-04-24	Washington DC	Omicron 21K	1
 2022-04-26	Washington DC	Omicron 21K	1
+2022-04-28	Washington DC	Omicron 21K	1
 2022-05-09	Washington DC	Omicron 21K	1
-2022-01-29	Washington DC	Omicron 21L	1
-2022-01-31	Washington DC	Omicron 21L	1
 2022-02-03	Washington DC	Omicron 21L	1
 2022-02-07	Washington DC	Omicron 21L	2
 2022-02-08	Washington DC	Omicron 21L	1
@@ -6952,9 +6762,9 @@ date	location	variant	sequences
 2022-04-01	Washington DC	Omicron 21L	13
 2022-04-02	Washington DC	Omicron 21L	32
 2022-04-03	Washington DC	Omicron 21L	25
-2022-04-04	Washington DC	Omicron 21L	32
-2022-04-05	Washington DC	Omicron 21L	38
-2022-04-06	Washington DC	Omicron 21L	58
+2022-04-04	Washington DC	Omicron 21L	35
+2022-04-05	Washington DC	Omicron 21L	39
+2022-04-06	Washington DC	Omicron 21L	61
 2022-04-07	Washington DC	Omicron 21L	41
 2022-04-08	Washington DC	Omicron 21L	46
 2022-04-09	Washington DC	Omicron 21L	25
@@ -6966,46 +6776,53 @@ date	location	variant	sequences
 2022-04-15	Washington DC	Omicron 21L	34
 2022-04-16	Washington DC	Omicron 21L	37
 2022-04-17	Washington DC	Omicron 21L	22
-2022-04-18	Washington DC	Omicron 21L	36
+2022-04-18	Washington DC	Omicron 21L	40
 2022-04-19	Washington DC	Omicron 21L	33
-2022-04-20	Washington DC	Omicron 21L	42
+2022-04-20	Washington DC	Omicron 21L	43
 2022-04-21	Washington DC	Omicron 21L	41
 2022-04-22	Washington DC	Omicron 21L	46
 2022-04-23	Washington DC	Omicron 21L	17
 2022-04-24	Washington DC	Omicron 21L	20
-2022-04-25	Washington DC	Omicron 21L	49
-2022-04-26	Washington DC	Omicron 21L	46
-2022-04-27	Washington DC	Omicron 21L	45
-2022-04-28	Washington DC	Omicron 21L	45
-2022-04-29	Washington DC	Omicron 21L	34
+2022-04-25	Washington DC	Omicron 21L	52
+2022-04-26	Washington DC	Omicron 21L	48
+2022-04-27	Washington DC	Omicron 21L	46
+2022-04-28	Washington DC	Omicron 21L	46
+2022-04-29	Washington DC	Omicron 21L	35
 2022-04-30	Washington DC	Omicron 21L	21
 2022-05-01	Washington DC	Omicron 21L	19
-2022-05-02	Washington DC	Omicron 21L	46
-2022-05-03	Washington DC	Omicron 21L	39
-2022-05-04	Washington DC	Omicron 21L	45
-2022-05-05	Washington DC	Omicron 21L	35
-2022-05-06	Washington DC	Omicron 21L	10
-2022-05-07	Washington DC	Omicron 21L	10
-2022-05-08	Washington DC	Omicron 21L	8
+2022-05-02	Washington DC	Omicron 21L	47
+2022-05-03	Washington DC	Omicron 21L	44
+2022-05-04	Washington DC	Omicron 21L	47
+2022-05-05	Washington DC	Omicron 21L	40
+2022-05-06	Washington DC	Omicron 21L	16
+2022-05-07	Washington DC	Omicron 21L	12
+2022-05-08	Washington DC	Omicron 21L	11
 2022-05-09	Washington DC	Omicron 21L	36
-2022-05-10	Washington DC	Omicron 21L	32
-2022-05-11	Washington DC	Omicron 21L	35
+2022-05-10	Washington DC	Omicron 21L	36
+2022-05-11	Washington DC	Omicron 21L	37
 2022-05-12	Washington DC	Omicron 21L	46
 2022-05-13	Washington DC	Omicron 21L	25
-2022-05-14	Washington DC	Omicron 21L	8
+2022-05-14	Washington DC	Omicron 21L	22
+2022-05-15	Washington DC	Omicron 21L	3
+2022-05-16	Washington DC	Omicron 21L	8
+2022-05-17	Washington DC	Omicron 21L	4
+2022-05-18	Washington DC	Omicron 21L	11
 2022-04-08	Washington DC	Omicron 22A	1
 2022-04-15	Washington DC	Omicron 22A	1
 2022-04-21	Washington DC	Omicron 22A	1
 2022-04-22	Washington DC	Omicron 22A	1
 2022-04-27	Washington DC	Omicron 22A	1
-2022-05-05	Washington DC	Omicron 22A	1
+2022-05-05	Washington DC	Omicron 22A	2
 2022-05-06	Washington DC	Omicron 22A	1
+2022-05-07	Washington DC	Omicron 22A	1
 2022-05-11	Washington DC	Omicron 22A	1
 2022-05-12	Washington DC	Omicron 22A	3
+2022-05-14	Washington DC	Omicron 22A	1
 2022-04-29	Washington DC	Omicron 22B	1
 2022-05-04	Washington DC	Omicron 22B	1
 2022-05-09	Washington DC	Omicron 22B	1
 2022-05-11	Washington DC	Omicron 22B	1
+2022-05-18	Washington DC	Omicron 22B	1
 2022-03-16	Washington DC	Omicron 22C	2
 2022-03-17	Washington DC	Omicron 22C	1
 2022-03-19	Washington DC	Omicron 22C	1
@@ -7023,7 +6840,7 @@ date	location	variant	sequences
 2022-04-02	Washington DC	Omicron 22C	8
 2022-04-03	Washington DC	Omicron 22C	1
 2022-04-04	Washington DC	Omicron 22C	3
-2022-04-05	Washington DC	Omicron 22C	4
+2022-04-05	Washington DC	Omicron 22C	5
 2022-04-06	Washington DC	Omicron 22C	8
 2022-04-07	Washington DC	Omicron 22C	7
 2022-04-08	Washington DC	Omicron 22C	5
@@ -7038,302 +6855,32 @@ date	location	variant	sequences
 2022-04-17	Washington DC	Omicron 22C	5
 2022-04-18	Washington DC	Omicron 22C	14
 2022-04-19	Washington DC	Omicron 22C	22
-2022-04-20	Washington DC	Omicron 22C	12
+2022-04-20	Washington DC	Omicron 22C	13
 2022-04-21	Washington DC	Omicron 22C	11
 2022-04-22	Washington DC	Omicron 22C	16
 2022-04-23	Washington DC	Omicron 22C	15
 2022-04-24	Washington DC	Omicron 22C	11
-2022-04-25	Washington DC	Omicron 22C	21
-2022-04-26	Washington DC	Omicron 22C	13
-2022-04-27	Washington DC	Omicron 22C	20
+2022-04-25	Washington DC	Omicron 22C	23
+2022-04-26	Washington DC	Omicron 22C	14
+2022-04-27	Washington DC	Omicron 22C	21
 2022-04-28	Washington DC	Omicron 22C	14
-2022-04-29	Washington DC	Omicron 22C	21
-2022-04-30	Washington DC	Omicron 22C	14
+2022-04-29	Washington DC	Omicron 22C	22
+2022-04-30	Washington DC	Omicron 22C	15
 2022-05-01	Washington DC	Omicron 22C	14
-2022-05-02	Washington DC	Omicron 22C	37
-2022-05-03	Washington DC	Omicron 22C	31
-2022-05-04	Washington DC	Omicron 22C	42
-2022-05-05	Washington DC	Omicron 22C	24
-2022-05-06	Washington DC	Omicron 22C	10
-2022-05-07	Washington DC	Omicron 22C	11
-2022-05-08	Washington DC	Omicron 22C	6
-2022-05-09	Washington DC	Omicron 22C	57
+2022-05-02	Washington DC	Omicron 22C	41
+2022-05-03	Washington DC	Omicron 22C	32
+2022-05-04	Washington DC	Omicron 22C	45
+2022-05-05	Washington DC	Omicron 22C	29
+2022-05-06	Washington DC	Omicron 22C	18
+2022-05-07	Washington DC	Omicron 22C	16
+2022-05-08	Washington DC	Omicron 22C	11
+2022-05-09	Washington DC	Omicron 22C	59
 2022-05-10	Washington DC	Omicron 22C	47
-2022-05-11	Washington DC	Omicron 22C	47
-2022-05-12	Washington DC	Omicron 22C	43
-2022-05-13	Washington DC	Omicron 22C	48
-2022-05-14	Washington DC	Omicron 22C	16
-2022-03-14	Wisconsin	other	2
-2022-04-15	Wisconsin	other	1
-2022-04-21	Wisconsin	other	3
-2022-04-22	Wisconsin	other	1
-2022-04-24	Wisconsin	other	1
-2022-05-02	Wisconsin	other	2
-2022-05-04	Wisconsin	other	1
-2022-05-11	Wisconsin	other	1
-2022-01-28	Wisconsin	Delta	1
-2022-01-29	Wisconsin	Delta	2
-2022-01-31	Wisconsin	Delta	3
-2022-02-03	Wisconsin	Delta	1
-2022-02-09	Wisconsin	Delta	1
-2022-03-21	Wisconsin	Delta	1
-2022-04-17	Wisconsin	Delta	1
-2022-01-28	Wisconsin	Omicron 21K	137
-2022-01-29	Wisconsin	Omicron 21K	123
-2022-01-30	Wisconsin	Omicron 21K	136
-2022-01-31	Wisconsin	Omicron 21K	183
-2022-02-01	Wisconsin	Omicron 21K	110
-2022-02-02	Wisconsin	Omicron 21K	123
-2022-02-03	Wisconsin	Omicron 21K	95
-2022-02-04	Wisconsin	Omicron 21K	101
-2022-02-05	Wisconsin	Omicron 21K	74
-2022-02-06	Wisconsin	Omicron 21K	90
-2022-02-07	Wisconsin	Omicron 21K	118
-2022-02-08	Wisconsin	Omicron 21K	162
-2022-02-09	Wisconsin	Omicron 21K	154
-2022-02-10	Wisconsin	Omicron 21K	122
-2022-02-11	Wisconsin	Omicron 21K	105
-2022-02-12	Wisconsin	Omicron 21K	71
-2022-02-13	Wisconsin	Omicron 21K	91
-2022-02-14	Wisconsin	Omicron 21K	151
-2022-02-15	Wisconsin	Omicron 21K	157
-2022-02-16	Wisconsin	Omicron 21K	109
-2022-02-17	Wisconsin	Omicron 21K	110
-2022-02-18	Wisconsin	Omicron 21K	108
-2022-02-19	Wisconsin	Omicron 21K	47
-2022-02-20	Wisconsin	Omicron 21K	54
-2022-02-21	Wisconsin	Omicron 21K	82
-2022-02-22	Wisconsin	Omicron 21K	63
-2022-02-23	Wisconsin	Omicron 21K	135
-2022-02-24	Wisconsin	Omicron 21K	76
-2022-02-25	Wisconsin	Omicron 21K	61
-2022-02-26	Wisconsin	Omicron 21K	38
-2022-02-27	Wisconsin	Omicron 21K	24
-2022-02-28	Wisconsin	Omicron 21K	70
-2022-03-01	Wisconsin	Omicron 21K	76
-2022-03-02	Wisconsin	Omicron 21K	61
-2022-03-03	Wisconsin	Omicron 21K	52
-2022-03-04	Wisconsin	Omicron 21K	38
-2022-03-05	Wisconsin	Omicron 21K	23
-2022-03-06	Wisconsin	Omicron 21K	14
-2022-03-07	Wisconsin	Omicron 21K	69
-2022-03-08	Wisconsin	Omicron 21K	72
-2022-03-09	Wisconsin	Omicron 21K	54
-2022-03-10	Wisconsin	Omicron 21K	56
-2022-03-11	Wisconsin	Omicron 21K	34
-2022-03-12	Wisconsin	Omicron 21K	14
-2022-03-13	Wisconsin	Omicron 21K	12
-2022-03-14	Wisconsin	Omicron 21K	61
-2022-03-15	Wisconsin	Omicron 21K	27
-2022-03-16	Wisconsin	Omicron 21K	44
-2022-03-17	Wisconsin	Omicron 21K	31
-2022-03-18	Wisconsin	Omicron 21K	29
-2022-03-19	Wisconsin	Omicron 21K	11
-2022-03-20	Wisconsin	Omicron 21K	14
-2022-03-21	Wisconsin	Omicron 21K	37
-2022-03-22	Wisconsin	Omicron 21K	27
-2022-03-23	Wisconsin	Omicron 21K	16
-2022-03-24	Wisconsin	Omicron 21K	30
-2022-03-25	Wisconsin	Omicron 21K	17
-2022-03-26	Wisconsin	Omicron 21K	8
-2022-03-27	Wisconsin	Omicron 21K	10
-2022-03-28	Wisconsin	Omicron 21K	27
-2022-03-29	Wisconsin	Omicron 21K	12
-2022-03-30	Wisconsin	Omicron 21K	15
-2022-03-31	Wisconsin	Omicron 21K	17
-2022-04-01	Wisconsin	Omicron 21K	17
-2022-04-02	Wisconsin	Omicron 21K	8
-2022-04-03	Wisconsin	Omicron 21K	6
-2022-04-04	Wisconsin	Omicron 21K	16
-2022-04-05	Wisconsin	Omicron 21K	6
-2022-04-06	Wisconsin	Omicron 21K	18
-2022-04-07	Wisconsin	Omicron 21K	11
-2022-04-08	Wisconsin	Omicron 21K	5
-2022-04-09	Wisconsin	Omicron 21K	1
-2022-04-10	Wisconsin	Omicron 21K	2
-2022-04-11	Wisconsin	Omicron 21K	11
-2022-04-12	Wisconsin	Omicron 21K	3
-2022-04-13	Wisconsin	Omicron 21K	3
-2022-04-14	Wisconsin	Omicron 21K	2
-2022-04-16	Wisconsin	Omicron 21K	2
-2022-04-17	Wisconsin	Omicron 21K	1
-2022-04-18	Wisconsin	Omicron 21K	6
-2022-04-19	Wisconsin	Omicron 21K	3
-2022-04-20	Wisconsin	Omicron 21K	2
-2022-04-22	Wisconsin	Omicron 21K	1
-2022-04-25	Wisconsin	Omicron 21K	1
-2022-04-27	Wisconsin	Omicron 21K	1
-2022-05-03	Wisconsin	Omicron 21K	1
-2022-05-05	Wisconsin	Omicron 21K	1
-2022-05-06	Wisconsin	Omicron 21K	1
-2022-05-10	Wisconsin	Omicron 21K	1
-2022-01-29	Wisconsin	Omicron 21L	1
-2022-01-30	Wisconsin	Omicron 21L	1
-2022-01-31	Wisconsin	Omicron 21L	1
-2022-02-01	Wisconsin	Omicron 21L	1
-2022-02-02	Wisconsin	Omicron 21L	2
-2022-02-03	Wisconsin	Omicron 21L	2
-2022-02-05	Wisconsin	Omicron 21L	1
-2022-02-06	Wisconsin	Omicron 21L	1
-2022-02-07	Wisconsin	Omicron 21L	1
-2022-02-08	Wisconsin	Omicron 21L	3
-2022-02-09	Wisconsin	Omicron 21L	6
-2022-02-10	Wisconsin	Omicron 21L	5
-2022-02-11	Wisconsin	Omicron 21L	3
-2022-02-12	Wisconsin	Omicron 21L	4
-2022-02-13	Wisconsin	Omicron 21L	3
-2022-02-14	Wisconsin	Omicron 21L	2
-2022-02-15	Wisconsin	Omicron 21L	7
-2022-02-16	Wisconsin	Omicron 21L	1
-2022-02-18	Wisconsin	Omicron 21L	4
-2022-02-19	Wisconsin	Omicron 21L	4
-2022-02-20	Wisconsin	Omicron 21L	3
-2022-02-21	Wisconsin	Omicron 21L	5
-2022-02-22	Wisconsin	Omicron 21L	4
-2022-02-23	Wisconsin	Omicron 21L	7
-2022-02-24	Wisconsin	Omicron 21L	9
-2022-02-25	Wisconsin	Omicron 21L	11
-2022-02-26	Wisconsin	Omicron 21L	3
-2022-02-27	Wisconsin	Omicron 21L	4
-2022-02-28	Wisconsin	Omicron 21L	7
-2022-03-01	Wisconsin	Omicron 21L	8
-2022-03-02	Wisconsin	Omicron 21L	9
-2022-03-03	Wisconsin	Omicron 21L	13
-2022-03-04	Wisconsin	Omicron 21L	8
-2022-03-05	Wisconsin	Omicron 21L	10
-2022-03-06	Wisconsin	Omicron 21L	11
-2022-03-07	Wisconsin	Omicron 21L	17
-2022-03-08	Wisconsin	Omicron 21L	23
-2022-03-09	Wisconsin	Omicron 21L	10
-2022-03-10	Wisconsin	Omicron 21L	23
-2022-03-11	Wisconsin	Omicron 21L	14
-2022-03-12	Wisconsin	Omicron 21L	7
-2022-03-13	Wisconsin	Omicron 21L	6
-2022-03-14	Wisconsin	Omicron 21L	27
-2022-03-15	Wisconsin	Omicron 21L	21
-2022-03-16	Wisconsin	Omicron 21L	20
-2022-03-17	Wisconsin	Omicron 21L	16
-2022-03-18	Wisconsin	Omicron 21L	32
-2022-03-19	Wisconsin	Omicron 21L	21
-2022-03-20	Wisconsin	Omicron 21L	6
-2022-03-21	Wisconsin	Omicron 21L	35
-2022-03-22	Wisconsin	Omicron 21L	26
-2022-03-23	Wisconsin	Omicron 21L	39
-2022-03-24	Wisconsin	Omicron 21L	23
-2022-03-25	Wisconsin	Omicron 21L	33
-2022-03-26	Wisconsin	Omicron 21L	25
-2022-03-27	Wisconsin	Omicron 21L	20
-2022-03-28	Wisconsin	Omicron 21L	66
-2022-03-29	Wisconsin	Omicron 21L	46
-2022-03-30	Wisconsin	Omicron 21L	73
-2022-03-31	Wisconsin	Omicron 21L	49
-2022-04-01	Wisconsin	Omicron 21L	38
-2022-04-02	Wisconsin	Omicron 21L	32
-2022-04-03	Wisconsin	Omicron 21L	38
-2022-04-04	Wisconsin	Omicron 21L	79
-2022-04-05	Wisconsin	Omicron 21L	64
-2022-04-06	Wisconsin	Omicron 21L	54
-2022-04-07	Wisconsin	Omicron 21L	72
-2022-04-08	Wisconsin	Omicron 21L	50
-2022-04-09	Wisconsin	Omicron 21L	31
-2022-04-10	Wisconsin	Omicron 21L	23
-2022-04-11	Wisconsin	Omicron 21L	90
-2022-04-12	Wisconsin	Omicron 21L	37
-2022-04-13	Wisconsin	Omicron 21L	64
-2022-04-14	Wisconsin	Omicron 21L	52
-2022-04-15	Wisconsin	Omicron 21L	32
-2022-04-16	Wisconsin	Omicron 21L	20
-2022-04-17	Wisconsin	Omicron 21L	8
-2022-04-18	Wisconsin	Omicron 21L	69
-2022-04-19	Wisconsin	Omicron 21L	50
-2022-04-20	Wisconsin	Omicron 21L	51
-2022-04-21	Wisconsin	Omicron 21L	46
-2022-04-22	Wisconsin	Omicron 21L	54
-2022-04-23	Wisconsin	Omicron 21L	19
-2022-04-24	Wisconsin	Omicron 21L	16
-2022-04-25	Wisconsin	Omicron 21L	50
-2022-04-26	Wisconsin	Omicron 21L	28
-2022-04-27	Wisconsin	Omicron 21L	24
-2022-04-28	Wisconsin	Omicron 21L	28
-2022-04-29	Wisconsin	Omicron 21L	31
-2022-04-30	Wisconsin	Omicron 21L	16
-2022-05-01	Wisconsin	Omicron 21L	5
-2022-05-02	Wisconsin	Omicron 21L	28
-2022-05-03	Wisconsin	Omicron 21L	25
-2022-05-04	Wisconsin	Omicron 21L	26
-2022-05-05	Wisconsin	Omicron 21L	14
-2022-05-06	Wisconsin	Omicron 21L	30
-2022-05-07	Wisconsin	Omicron 21L	16
-2022-05-08	Wisconsin	Omicron 21L	12
-2022-05-09	Wisconsin	Omicron 21L	35
-2022-05-10	Wisconsin	Omicron 21L	21
-2022-05-11	Wisconsin	Omicron 21L	36
-2022-05-12	Wisconsin	Omicron 21L	22
-2022-05-13	Wisconsin	Omicron 21L	14
-2022-04-27	Wisconsin	Omicron 22A	1
-2022-04-29	Wisconsin	Omicron 22A	1
-2022-05-05	Wisconsin	Omicron 22A	1
-2022-05-07	Wisconsin	Omicron 22A	1
-2022-05-08	Wisconsin	Omicron 22A	1
-2022-05-09	Wisconsin	Omicron 22A	2
-2022-05-11	Wisconsin	Omicron 22A	1
-2022-05-12	Wisconsin	Omicron 22A	2
-2022-04-30	Wisconsin	Omicron 22B	1
-2022-05-05	Wisconsin	Omicron 22B	1
-2022-05-06	Wisconsin	Omicron 22B	2
-2022-05-09	Wisconsin	Omicron 22B	1
-2022-05-11	Wisconsin	Omicron 22B	1
-2022-03-13	Wisconsin	Omicron 22C	1
-2022-03-17	Wisconsin	Omicron 22C	1
-2022-03-18	Wisconsin	Omicron 22C	1
-2022-03-21	Wisconsin	Omicron 22C	3
-2022-03-23	Wisconsin	Omicron 22C	1
-2022-03-25	Wisconsin	Omicron 22C	1
-2022-03-26	Wisconsin	Omicron 22C	1
-2022-03-28	Wisconsin	Omicron 22C	7
-2022-03-29	Wisconsin	Omicron 22C	4
-2022-03-30	Wisconsin	Omicron 22C	4
-2022-03-31	Wisconsin	Omicron 22C	7
-2022-04-01	Wisconsin	Omicron 22C	8
-2022-04-02	Wisconsin	Omicron 22C	12
-2022-04-03	Wisconsin	Omicron 22C	2
-2022-04-04	Wisconsin	Omicron 22C	7
-2022-04-05	Wisconsin	Omicron 22C	8
-2022-04-06	Wisconsin	Omicron 22C	4
-2022-04-07	Wisconsin	Omicron 22C	8
-2022-04-08	Wisconsin	Omicron 22C	6
-2022-04-09	Wisconsin	Omicron 22C	3
-2022-04-10	Wisconsin	Omicron 22C	5
-2022-04-11	Wisconsin	Omicron 22C	4
-2022-04-12	Wisconsin	Omicron 22C	7
-2022-04-13	Wisconsin	Omicron 22C	9
-2022-04-14	Wisconsin	Omicron 22C	12
-2022-04-15	Wisconsin	Omicron 22C	8
-2022-04-16	Wisconsin	Omicron 22C	5
-2022-04-17	Wisconsin	Omicron 22C	2
-2022-04-18	Wisconsin	Omicron 22C	12
-2022-04-19	Wisconsin	Omicron 22C	11
-2022-04-20	Wisconsin	Omicron 22C	6
-2022-04-21	Wisconsin	Omicron 22C	15
-2022-04-22	Wisconsin	Omicron 22C	9
-2022-04-23	Wisconsin	Omicron 22C	7
-2022-04-24	Wisconsin	Omicron 22C	6
-2022-04-25	Wisconsin	Omicron 22C	13
-2022-04-26	Wisconsin	Omicron 22C	17
-2022-04-27	Wisconsin	Omicron 22C	6
-2022-04-28	Wisconsin	Omicron 22C	10
-2022-04-29	Wisconsin	Omicron 22C	7
-2022-04-30	Wisconsin	Omicron 22C	5
-2022-05-01	Wisconsin	Omicron 22C	4
-2022-05-02	Wisconsin	Omicron 22C	15
-2022-05-03	Wisconsin	Omicron 22C	10
-2022-05-04	Wisconsin	Omicron 22C	10
-2022-05-05	Wisconsin	Omicron 22C	21
-2022-05-06	Wisconsin	Omicron 22C	17
-2022-05-07	Wisconsin	Omicron 22C	13
-2022-05-08	Wisconsin	Omicron 22C	5
-2022-05-09	Wisconsin	Omicron 22C	27
-2022-05-10	Wisconsin	Omicron 22C	17
-2022-05-11	Wisconsin	Omicron 22C	24
-2022-05-12	Wisconsin	Omicron 22C	11
-2022-05-13	Wisconsin	Omicron 22C	11
+2022-05-11	Washington DC	Omicron 22C	50
+2022-05-12	Washington DC	Omicron 22C	44
+2022-05-13	Washington DC	Omicron 22C	50
+2022-05-14	Washington DC	Omicron 22C	34
+2022-05-15	Washington DC	Omicron 22C	8
+2022-05-16	Washington DC	Omicron 22C	15
+2022-05-17	Washington DC	Omicron 22C	7
+2022-05-18	Washington DC	Omicron 22C	30
