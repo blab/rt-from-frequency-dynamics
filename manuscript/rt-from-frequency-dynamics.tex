@@ -547,9 +547,9 @@ This project was supported by funds from the HHMI COVID-19 Collaboration Initiat
 Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analysis is roughly equivalent to our fixed growth advantage model, but that inferring relative effective reproduction numbers between variants using multinomial logistic regression requires additional restrictions on the generation time.
 Multinomial logistic regression typically models the probability of a given observation belong to class $v$ at time $t$ as
 \begin{equation}
-  f_{v}(t) = \frac{p_{v}\exp(r_{v} t)}{\sum_{1\leq u\leq V} p_{u}\exp(r_{u} t)}.
+  f_{v}(t) = \frac{p_{v}\exp(\beta_{v} t)}{\sum_{1\leq u\leq V} p_{u}\exp(\beta_{u} t)}.
 \end{equation}
-For our purpose, we can assume this probability is equivalent to the true frequency of variant $v$ in the population and in this case, $p_{v}$ is considered to be related to the prevalence on variant $v$ in the population at $t=0$ and $r_{v}$ can be considered to be the growth advantage relative to a pivot class $u_{*}$ which has $r_{k_{*}} = 0$.
+For our purpose, we can assume this probability is equivalent to the true frequency of variant $v$ in the population and in this case, $p_{v}$ is considered to be related to the prevalence on variant $v$ in the population at $t=0$ and $\beta_{v}$ can be considered to be the growth advantage relative to a pivot class $u_{*}$ which has $\beta_{k_{*}} = 0$.
 In order to see the connection between the above model and ours, we return to the original renewal equation of the form
 \begin{equation}
   I(t) = R_{t}\int_{0}^{t} I(t-\tau) g(\tau).
@@ -573,14 +573,16 @@ Writing $\Delta_{v} = \exp(\delta_{v})$ and $t = n T_{g}$, allows us to see that
 By fixing one pivot class so that $I_{u_{*}} = 1$ and $\delta_{u_{*}} / T_{g} = 0$, we can identify our model with the multinomial logistic regression by relating the parameters as
 
 \begin{align}
-  \delta_{v} &= r_{v}T_{g}\\
+  \delta_{v} &= \beta_{v}T_{g}\\
   I_{v}(0) &= p_{v}.
 \end{align}
 
 This shows that the multinomial logistic regression functions similarly to our fixed growth advantage model except with the additional assumption that the generation time is a point mass at $T_{g}$.
-This assumption additionally allows us to relate the epidemic growth rate $r$ and the effective reproduction number as $R = \exp(r T_{g})$ \cite{Wallinga2006}. This means that the relative effective reproduction number for any two variants can be written as
+This assumption additionally allows us to relate the epidemic growth rate $r$ and the effective reproduction number as $R = \exp(r T_{g})$ \cite{Wallinga2006}. 
+Therefore, by furhering assuming that the variant infections are exponentially growing with rates $r_{v}$, we can then identify $\beta_{v} = r_{v} - r_{u_{*}}$.
+This means that the relative effective reproduction number for any two variants can be written as
 \begin{align*}
-\ln \left( \frac{R_{t,v}}{R_{t,u}} \right) = (r_{v} - r_{u}) T_{g}.
+\ln \left( \frac{R_{t,v}}{R_{t,u}} \right) = (\beta_{v} - \beta_{u}) T_{g}.
 \end{align*}
 
 \begin{figure}
