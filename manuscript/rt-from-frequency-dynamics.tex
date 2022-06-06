@@ -451,7 +451,7 @@ which is the sum of the variant-specific effective reproduction numbers weighted
 
 We estimate variant-specific wave sizes using the posterior estimates of incidnce. We define that the wave size attributable to variant $v$ is
  \begin{align*}
-   W_{v} = \sum_{t \geq } I_{v}(t).
+   W_{v} = \sum_{t \geq 0} I_{v}(t).
 \end{align*}
 
 Given that we do not observe all new infections and assuming that all variants have an equal-reporting rate, this is really a relative wave size attributable to each variant.
@@ -570,7 +570,7 @@ Writing $\Delta_{v} = \exp(\delta_{v})$ and $t = n T_{g}$, allows us to see that
 \begin{equation}
   f_{v}(t) = \frac{I_{v}(0) \exp(\frac{\delta_{v}}{T_{g}} t)}{\sum_{1\leq u \leq V}I_{u}(0) \exp(\frac{\delta_{u}}{T_{g}} t)}.
 \end{equation}
-By fixing one pivot class so that $I_{u_{*}} = \delta_{u_{*}} / T_{g} = 1$, we can identify our model with the multinomial logistic regression by relating the parameters as
+By fixing one pivot class so that $I_{u_{*}} = 1$ and $\delta_{u_{*}} / T_{g} = 0$, we can identify our model with the multinomial logistic regression by relating the parameters as
 
 \begin{align}
   \delta_{v} &= r_{v}T_{g}\\
