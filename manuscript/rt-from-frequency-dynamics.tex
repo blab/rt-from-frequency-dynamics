@@ -549,8 +549,8 @@ Multinomial logistic regression typically models the probability of a given obse
 \begin{equation}
   f_{v}(t) = \frac{p_{v}\exp(r_{v} t)}{\sum_{1\leq u\leq V} p_{u}\exp(r_{u} t)}.
 \end{equation}
-For our purpose, we can assume this probability is equivalent to the true frequency of variant $v$ in the population and in this case, $p_{v}$ is considered to be related to the prevalence on variant $v$ in the population at $t=0$ and $r_{v}$ can be considered to be the growth advantage relative to a pivot class $u_{*}$ which has $r_{k_{*}} = 1$.
-In order to see the connection between this above model and ours, we return to the original renewal equation of the form
+For our purpose, we can assume this probability is equivalent to the true frequency of variant $v$ in the population and in this case, $p_{v}$ is considered to be related to the prevalence on variant $v$ in the population at $t=0$ and $r_{v}$ can be considered to be the growth advantage relative to a pivot class $u_{*}$ which has $r_{k_{*}} = 0$.
+In order to see the connection between the above model and ours, we return to the original renewal equation of the form
 \begin{equation}
   I(t) = R_{t}\int_{0}^{t} I(t-\tau) g(\tau).
 \end{equation}
