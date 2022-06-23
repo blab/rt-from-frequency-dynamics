@@ -17,14 +17,18 @@ class FixedGA:
         # Locally adaptive smoothing
         gam = numpyro.sample("gam", dist.HalfCauchy(self.gam_prior))
         beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
-        beta_rw = numpyro.sample("beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k))
+        beta_rw = numpyro.sample(
+            "beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k)
+        )
         beta = beta_0 + beta_rw
 
         # Getting log variant growth advantages
         with numpyro.plate("N_variant_m1", N_variant - 1):
             v = numpyro.sample("v", dist.Normal(0.0, 2.0))
 
-        numpyro.deterministic("ga", jnp.exp(v))  # Transform to growth advantage
+        numpyro.deterministic(
+            "ga", jnp.exp(v)
+        )  # Transform to growth advantage
 
         # Computing R
         R = numpyro.deterministic(
@@ -65,7 +69,9 @@ class GARW:
         # Time varying base trajectory
         gam = numpyro.sample("gam", dist.HalfCauchy(self.gam_prior))
         beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
-        beta_rw = numpyro.sample("beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k))
+        beta_rw = numpyro.sample(
+            "beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k)
+        )
         beta = beta_0 + beta_rw
 
         # Time varying growth advantage as random walk
@@ -86,6 +92,43 @@ class GARW:
         # Construct beta matrix
         beta_mat = beta[:, None] + jnp.hstack((delta, jnp.zeros((k, 1))))
         R = numpyro.deterministic("R", jnp.exp((X @ beta_mat)))
+        return R
+
+
+class GAPRW:
+    def __init__(self, gam_prior=0.5, gam_delta_prior=0.5):
+        self.gam_prior = gam_prior
+        self.gam_delta_prior = gam_delta_prior
+
+    def model(self, N_variant, X):
+        T, _ = X.shape
+
+        # Time varying base trajectory
+        gam = numpyro.sample("gam", dist.HalfNormal(self.gam_prior))
+        beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
+        beta_rw = numpyro.sample(
+            "beta_rw", LaplaceRandomWalk(scale=gam, num_steps=T)
+        )
+        beta = beta_0 + beta_rw
+
+        # Time varying growth advantage as random walk
+        # Regularizes changes in growth advantage of variants
+        with numpyro.plate("N_variant_m1", N_variant - 1):
+            delta_0 = numpyro.sample("delta_0", dist.Normal(0.0, 0.5))
+            gam_delta = numpyro.sample(
+                "gam_delta", dist.HalfNormal(self.gam_delta_prior)
+            )
+            delta_rw = numpyro.sample(
+                "delta_rw", LaplaceRandomWalk(scale=gam_delta, num_steps=k)
+            )
+            delta = delta_0 + delta_rw.T
+
+        # Transform to growth advatnage
+        numpyro.deterministic("ga", jnp.exp(delta))
+
+        # Construct beta matrix
+        beta_mat = beta[:, None] + jnp.hstack((delta, jnp.zeros((k, 1))))
+        R = numpyro.deterministic("R", jnp.exp(beta_mat))
         return R
 
 
@@ -121,7 +164,9 @@ class ZIPoisCases:
         gate = jnp.zeros_like(cases) if pred else gate
         obs = None if pred else np.nan_to_num(cases)
 
-        numpyro.sample("cases", dist.ZeroInflatedPoisson(rate=EC, gate=gate), obs=obs)
+        numpyro.sample(
+            "cases", dist.ZeroInflatedPoisson(rate=EC, gate=gate), obs=obs
+        )
 
 
 class NegBinomCases:
@@ -130,7 +175,9 @@ class NegBinomCases:
 
     def model(self, cases, EC, pred=False):
         # NegativeBinomial sampling
-        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(self.raw_alpha_sd))
+        raw_alpha = numpyro.sample(
+            "raw_alpha", dist.HalfNormal(self.raw_alpha_sd)
+        )
         is_obs = is_obs_idx(cases)  # Find unobserved case counts
 
         # Overwrite defaults for predictive checks
@@ -139,7 +186,8 @@ class NegBinomCases:
         numpyro.sample(
             "cases",
             dist.NegativeBinomial2(
-                mean=pad_to_obs(EC, is_obs), concentration=jnp.power(raw_alpha, -2)
+                mean=pad_to_obs(EC, is_obs),
+                concentration=jnp.power(raw_alpha, -2),
             ),
             obs=obs,
         )
@@ -151,7 +199,9 @@ class ZINegBinomCases:
 
     def model(self, cases, EC, pred=False):
         # NegativeBinomial sampling
-        raw_alpha = numpyro.sample("raw_alpha", dist.HalfNormal(self.raw_alpha_sd))
+        raw_alpha = numpyro.sample(
+            "raw_alpha", dist.HalfNormal(self.raw_alpha_sd)
+        )
 
         # Finding zero locations and making only parameters for zero observation
         is_zero = cases == 0
@@ -206,7 +256,8 @@ class DirMultinomialSeq:
         numpyro.sample(
             "seq_counts",
             dist.DirichletMultinomial(
-                total_count=np.nan_to_num(N), concentration=1e-8 + trans_xi * freq
+                total_count=np.nan_to_num(N),
+                concentration=1e-8 + trans_xi * freq,
             ),
             obs=obs,
         )

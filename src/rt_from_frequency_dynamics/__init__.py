@@ -31,9 +31,14 @@ from .modelfunctions import (  # noqa
 from .LAS import LaplaceRandomWalk, LAS_Laplace  # noqa
 
 
-from .modeloptions import GARW, FixedGA, FreeGrowth  # noqa
+from .modeloptions import GARW, FixedGA, FreeGrowth, GAPRW  # noqa
 
-from .modeloptions import PoisCases, NegBinomCases, ZIPoisCases, ZINegBinomCases  # noqa
+from .modeloptions import (
+    PoisCases,
+    NegBinomCases,
+    ZIPoisCases,
+    ZINegBinomCases,
+)  # noqa
 
 from .modeloptions import MultinomialSeq, DirMultinomialSeq  # noqa
 
@@ -93,4 +98,7 @@ from .analysishelpers import (  # noqa
 )
 
 
-from .pipelinehelpers import make_path_if_absent, make_model_directories  # noqa
+from .pipelinehelpers import (
+    make_path_if_absent,
+    make_model_directories,
+)  # noqa

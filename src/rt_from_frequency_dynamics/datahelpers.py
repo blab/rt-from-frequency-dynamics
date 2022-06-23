@@ -23,7 +23,7 @@ def prep_dates(raw_dates: pd.Series):
 def prep_cases(raw_cases: pd.DataFrame, date_to_index=None):
     raw_cases["date"] = pd.to_datetime(raw_cases["date"])
     if date_to_index is None:
-        _, date_to_index = prep_dates(raw_cases)
+        _, date_to_index = prep_dates(raw_cases["date"])
 
     T = len(date_to_index)
     C = np.full(T, np.nan)
@@ -46,7 +46,7 @@ def format_seq_names(raw_names):
 def counts_to_matrix(raw_seqs, seq_names, date_to_index=None):
     raw_seqs["date"] = pd.to_datetime(raw_seqs["date"])
     if date_to_index is None:
-        _, date_to_index = prep_dates(raw_seqs)
+        _, date_to_index = prep_dates(raw_seqs["date"])
     T = len(date_to_index)
     C = np.full((T, len(seq_names)), np.nan)
     for i, s in enumerate(seq_names):

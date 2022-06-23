@@ -4,7 +4,12 @@ from .datahelpers import prep_dates, prep_cases, prep_sequence_counts
 
 class CaseData:
     def __init__(self, raw_cases):
-        self.dates, self.raw_cases = prep_cases(raw_cases)
+        self.dates, date_to_index = prep_dates(raw_cases["date"])
+        self.cases = prep_cases(raw_cases, date_to_index)
+
+    def make_numpyro_input(self):
+        data = dict()
+        data["cases"] = self.cases
 
 
 class VariantData:

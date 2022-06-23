@@ -53,8 +53,8 @@ def MLR_numpyro(seq_counts, N, X, tau=None, pred=False):
     # Compute growth advantage from model
     if tau is not None:
         numpyro.deterministic(
-            "ga", jnp.exp(beta[-1, :] * tau)
-        )  # Last row corresponds to linar predictor / growth advantage
+            "ga", jnp.exp(beta[-1, :-1] * tau)
+        )  # Last row corresponds to linear predictor / growth advantage
 
 
 class MultinomialLogisticRegression:
