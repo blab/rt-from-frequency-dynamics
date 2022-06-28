@@ -119,7 +119,7 @@ class GAPRW:
                 "gam_delta", dist.HalfNormal(self.gam_delta_prior)
             )
             delta_rw = numpyro.sample(
-                "delta_rw", LaplaceRandomWalk(scale=gam_delta, num_steps=k)
+                "delta_rw", LaplaceRandomWalk(scale=gam_delta, num_steps=T)
             )
             delta = delta_0 + delta_rw.T
 
@@ -127,7 +127,7 @@ class GAPRW:
         numpyro.deterministic("ga", jnp.exp(delta))
 
         # Construct beta matrix
-        beta_mat = beta[:, None] + jnp.hstack((delta, jnp.zeros((k, 1))))
+        beta_mat = beta[:, None] + jnp.hstack((delta, jnp.zeros((T, 1))))
         R = numpyro.deterministic("R", jnp.exp(beta_mat))
         return R
 
