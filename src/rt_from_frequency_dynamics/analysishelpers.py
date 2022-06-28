@@ -1,5 +1,6 @@
 import pandas as pd
 
+import jax.numpy as jnp
 import numpyro
 from numpyro.infer.autoguide import AutoMultivariateNormal
 
@@ -47,13 +48,16 @@ def fit_SVI(
 
     # Fitting model
     if iters > 0:
-        SVIH.fit(LM.model, guide, data, iters, log_each=0)
+        SVIH.fit(LM.model, guide, data, iters)
 
     if save:
         file_name = name.replace(" ", "-")
         SVIH.save_state(f"{path}/models/{file_name}_svi.p")
 
     dataset = SVIH.predict(LM.model, guide, data=data, num_samples=num_samples)
+
+    # Adding in losses
+    dataset["loss"] = SVIH.losses
     return PosteriorHandler(dataset=dataset, data=VD, name=name)
 
 
@@ -141,7 +145,9 @@ def gather_little_r(MP, ps, forecast=False):
     r_dfs = []
     for name, p in MP.locator.items():
         r_dfs.append(
-            pd.DataFrame(get_little_r(p.dataset, p.data, ps, name, forecast=forecast))
+            pd.DataFrame(
+                get_little_r(p.dataset, p.data, ps, name, forecast=forecast)
+            )
         )
     return pd.concat(r_dfs)
 
@@ -151,7 +157,9 @@ def gather_ga(MP, ps, rel_to="other"):
     for name, p in MP.locator.items():
         ga_dfs.append(
             pd.DataFrame(
-                get_growth_advantage(p.dataset, p.data, ps, name, rel_to=rel_to)
+                get_growth_advantage(
+                    p.dataset, p.data, ps, name, rel_to=rel_to
+                )
             )
         )
     return pd.concat(ga_dfs)
@@ -162,7 +170,9 @@ def gather_ga_time(MP, ps, rel_to="other"):
     for name, p in MP.locator.items():
         ga_dfs.append(
             pd.DataFrame(
-                get_growth_advantage_time(p.dataset, p.data, ps, name, rel_to=rel_to)
+                get_growth_advantage_time(
+                    p.dataset, p.data, ps, name, rel_to=rel_to
+                )
             )
         )
     return pd.concat(ga_dfs)
@@ -181,6 +191,8 @@ def gather_freq(MP, ps, forecast=False):
     freq_dfs = []
     for name, p in MP.locator.items():
         freq_dfs.append(
-            pd.DataFrame(get_freq(p.dataset, p.data, ps, name, forecast=forecast))
+            pd.DataFrame(
+                get_freq(p.dataset, p.data, ps, name, forecast=forecast)
+            )
         )
     return pd.concat(freq_dfs)
