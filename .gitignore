@@ -13,6 +13,7 @@ open_metadata.tsv
 open_metadata_pruned.tsv
 gisaid_metadata.tsv
 gisaid_metadata_pruned.tsv
+gisaid_metadata_filtered.tsv
 sfs_counts.csv
 
 # Protect environment variables
