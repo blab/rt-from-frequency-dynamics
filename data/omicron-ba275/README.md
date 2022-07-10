@@ -20,6 +20,6 @@ tsv-select -H -f strain,date,country,division,QC_overall_status,Nextstrain_clade
 tsv-filter -H --str-eq country:India gisaid_metadata_pruned.tsv > gisaid_metadata_filtered.tsv
 ```
 
-4. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `omicron-ba275_data-prep.nb`. This results in the export of files: `omicron-ba275_location-variant-sequence-counts.tsv` and `omicron-ba275_location-case-counts.tsv` versioned here. Samples labeled as `bad` in Nextclade QC are removed. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
+4. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `omicron-ba275_data-prep.nb`. This results in the export of files: `omicron-ba275_location-variant-sequence-counts.tsv` and `omicron-ba275_location-case-counts.tsv` versioned here. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
 
 There will be dates that are missing sequence counts or case counts. These should be assumed to be 0.
