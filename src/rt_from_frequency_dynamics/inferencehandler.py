@@ -28,7 +28,7 @@ class SVIHandler:
     def fit(self, model, guide, data, n_epochs):
         self.init_svi(model, guide, data)
         self.svi_result = (
-            self.svi.run(self.rng_key, n_epochs, **data, progress_bar=False)
+            self.svi.run(self.rng_key, n_epochs, **data, progress_bar=False, stable_update=True)
         )
         self.svi_state = self.svi_result.state
 
