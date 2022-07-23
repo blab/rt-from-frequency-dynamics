@@ -1,5 +1,4 @@
 date	location	variant	sequences
-2022-02-21	India	other	13
 2022-02-22	India	other	3
 2022-02-23	India	other	3
 2022-02-24	India	other	4
@@ -35,6 +34,7 @@ date	location	variant	sequences
 2022-05-01	India	other	2
 2022-05-05	India	other	1
 2022-05-06	India	other	2
+2022-05-07	India	other	1
 2022-05-10	India	other	1
 2022-05-12	India	other	1
 2022-05-16	India	other	1
@@ -46,18 +46,27 @@ date	location	variant	sequences
 2022-05-25	India	other	1
 2022-05-30	India	other	1
 2022-06-02	India	other	3
-2022-06-04	India	other	1
+2022-06-04	India	other	2
 2022-06-06	India	other	2
 2022-06-07	India	other	2
 2022-06-08	India	other	2
 2022-06-13	India	other	1
+2022-06-16	India	other	1
 2022-06-17	India	other	1
-2022-06-18	India	other	2
-2022-06-21	India	other	1
-2022-06-22	India	other	2
-2022-06-27	India	other	1
-2022-07-01	India	other	1
-2022-02-21	India	Delta	3
+2022-06-18	India	other	3
+2022-06-19	India	other	1
+2022-06-21	India	other	2
+2022-06-22	India	other	3
+2022-06-24	India	other	1
+2022-06-26	India	other	2
+2022-06-27	India	other	2
+2022-06-28	India	other	7
+2022-06-29	India	other	3
+2022-06-30	India	other	6
+2022-07-01	India	other	15
+2022-07-02	India	other	23
+2022-07-03	India	other	2
+2022-07-04	India	other	3
 2022-02-22	India	Delta	2
 2022-02-23	India	Delta	1
 2022-03-01	India	Delta	2
@@ -75,7 +84,6 @@ date	location	variant	sequences
 2022-05-23	India	Delta	1
 2022-06-21	India	Delta	1
 2022-06-22	India	Delta	3
-2022-02-21	India	Omicron 21K	13
 2022-02-22	India	Omicron 21K	6
 2022-02-23	India	Omicron 21K	7
 2022-02-24	India	Omicron 21K	5
@@ -114,35 +122,34 @@ date	location	variant	sequences
 2022-05-12	India	Omicron 21K	2
 2022-05-17	India	Omicron 21K	1
 2022-06-18	India	Omicron 21K	1
-2022-02-21	India	Omicron 21L	434
-2022-02-22	India	Omicron 21L	298
-2022-02-23	India	Omicron 21L	235
-2022-02-24	India	Omicron 21L	262
-2022-02-25	India	Omicron 21L	246
-2022-02-26	India	Omicron 21L	228
+2022-02-22	India	Omicron 21L	299
+2022-02-23	India	Omicron 21L	236
+2022-02-24	India	Omicron 21L	263
+2022-02-25	India	Omicron 21L	247
+2022-02-26	India	Omicron 21L	229
 2022-02-27	India	Omicron 21L	137
 2022-02-28	India	Omicron 21L	253
-2022-03-01	India	Omicron 21L	145
+2022-03-01	India	Omicron 21L	146
 2022-03-02	India	Omicron 21L	204
-2022-03-03	India	Omicron 21L	175
-2022-03-04	India	Omicron 21L	269
-2022-03-05	India	Omicron 21L	98
-2022-03-06	India	Omicron 21L	49
-2022-03-07	India	Omicron 21L	90
+2022-03-03	India	Omicron 21L	176
+2022-03-04	India	Omicron 21L	270
+2022-03-05	India	Omicron 21L	99
+2022-03-06	India	Omicron 21L	50
+2022-03-07	India	Omicron 21L	91
 2022-03-08	India	Omicron 21L	83
-2022-03-09	India	Omicron 21L	94
-2022-03-10	India	Omicron 21L	134
-2022-03-11	India	Omicron 21L	97
-2022-03-12	India	Omicron 21L	72
-2022-03-13	India	Omicron 21L	79
-2022-03-14	India	Omicron 21L	64
+2022-03-09	India	Omicron 21L	95
+2022-03-10	India	Omicron 21L	135
+2022-03-11	India	Omicron 21L	98
+2022-03-12	India	Omicron 21L	73
+2022-03-13	India	Omicron 21L	80
+2022-03-14	India	Omicron 21L	65
 2022-03-15	India	Omicron 21L	107
 2022-03-16	India	Omicron 21L	58
-2022-03-17	India	Omicron 21L	110
+2022-03-17	India	Omicron 21L	111
 2022-03-18	India	Omicron 21L	52
 2022-03-19	India	Omicron 21L	53
 2022-03-20	India	Omicron 21L	47
-2022-03-21	India	Omicron 21L	42
+2022-03-21	India	Omicron 21L	43
 2022-03-22	India	Omicron 21L	106
 2022-03-23	India	Omicron 21L	40
 2022-03-24	India	Omicron 21L	31
@@ -189,7 +196,7 @@ date	location	variant	sequences
 2022-05-04	India	Omicron 21L	134
 2022-05-05	India	Omicron 21L	123
 2022-05-06	India	Omicron 21L	159
-2022-05-07	India	Omicron 21L	112
+2022-05-07	India	Omicron 21L	113
 2022-05-08	India	Omicron 21L	37
 2022-05-09	India	Omicron 21L	81
 2022-05-10	India	Omicron 21L	99
@@ -220,36 +227,41 @@ date	location	variant	sequences
 2022-06-04	India	Omicron 21L	157
 2022-06-05	India	Omicron 21L	105
 2022-06-06	India	Omicron 21L	201
-2022-06-07	India	Omicron 21L	184
+2022-06-07	India	Omicron 21L	185
 2022-06-08	India	Omicron 21L	191
-2022-06-09	India	Omicron 21L	182
-2022-06-10	India	Omicron 21L	166
-2022-06-11	India	Omicron 21L	134
-2022-06-12	India	Omicron 21L	115
-2022-06-13	India	Omicron 21L	225
-2022-06-14	India	Omicron 21L	201
-2022-06-15	India	Omicron 21L	205
-2022-06-16	India	Omicron 21L	269
-2022-06-17	India	Omicron 21L	186
-2022-06-18	India	Omicron 21L	202
-2022-06-19	India	Omicron 21L	139
-2022-06-20	India	Omicron 21L	228
-2022-06-21	India	Omicron 21L	209
-2022-06-22	India	Omicron 21L	153
-2022-06-23	India	Omicron 21L	122
-2022-06-24	India	Omicron 21L	87
-2022-06-25	India	Omicron 21L	70
-2022-06-26	India	Omicron 21L	81
-2022-06-27	India	Omicron 21L	113
-2022-06-28	India	Omicron 21L	105
-2022-06-29	India	Omicron 21L	50
-2022-06-30	India	Omicron 21L	50
-2022-07-01	India	Omicron 21L	52
-2022-07-02	India	Omicron 21L	7
-2022-07-03	India	Omicron 21L	5
-2022-07-04	India	Omicron 21L	7
-2022-07-05	India	Omicron 21L	1
-2022-07-06	India	Omicron 21L	1
+2022-06-09	India	Omicron 21L	187
+2022-06-10	India	Omicron 21L	167
+2022-06-11	India	Omicron 21L	139
+2022-06-12	India	Omicron 21L	116
+2022-06-13	India	Omicron 21L	231
+2022-06-14	India	Omicron 21L	204
+2022-06-15	India	Omicron 21L	211
+2022-06-16	India	Omicron 21L	280
+2022-06-17	India	Omicron 21L	201
+2022-06-18	India	Omicron 21L	225
+2022-06-19	India	Omicron 21L	160
+2022-06-20	India	Omicron 21L	237
+2022-06-21	India	Omicron 21L	219
+2022-06-22	India	Omicron 21L	167
+2022-06-23	India	Omicron 21L	137
+2022-06-24	India	Omicron 21L	94
+2022-06-25	India	Omicron 21L	80
+2022-06-26	India	Omicron 21L	86
+2022-06-27	India	Omicron 21L	137
+2022-06-28	India	Omicron 21L	131
+2022-06-29	India	Omicron 21L	75
+2022-06-30	India	Omicron 21L	72
+2022-07-01	India	Omicron 21L	85
+2022-07-02	India	Omicron 21L	27
+2022-07-03	India	Omicron 21L	11
+2022-07-04	India	Omicron 21L	17
+2022-07-05	India	Omicron 21L	10
+2022-07-06	India	Omicron 21L	16
+2022-07-07	India	Omicron 21L	14
+2022-07-08	India	Omicron 21L	9
+2022-07-09	India	Omicron 21L	10
+2022-07-10	India	Omicron 21L	4
+2022-07-11	India	Omicron 21L	1
 2022-05-04	India	Omicron 22A	3
 2022-05-09	India	Omicron 22A	1
 2022-05-11	India	Omicron 22A	2
@@ -278,21 +290,21 @@ date	location	variant	sequences
 2022-06-11	India	Omicron 22A	2
 2022-06-12	India	Omicron 22A	2
 2022-06-13	India	Omicron 22A	4
-2022-06-15	India	Omicron 22A	4
+2022-06-15	India	Omicron 22A	5
 2022-06-16	India	Omicron 22A	4
 2022-06-17	India	Omicron 22A	6
 2022-06-18	India	Omicron 22A	4
-2022-06-19	India	Omicron 22A	3
+2022-06-19	India	Omicron 22A	4
 2022-06-20	India	Omicron 22A	1
 2022-06-21	India	Omicron 22A	2
 2022-06-22	India	Omicron 22A	2
 2022-06-23	India	Omicron 22A	1
+2022-06-24	India	Omicron 22A	2
 2022-06-25	India	Omicron 22A	1
 2022-06-27	India	Omicron 22A	1
 2022-06-28	India	Omicron 22A	1
 2022-06-30	India	Omicron 22A	2
 2022-07-01	India	Omicron 22A	2
-2022-02-21	India	Omicron 22B	2
 2022-02-22	India	Omicron 22B	2
 2022-02-23	India	Omicron 22B	2
 2022-02-24	India	Omicron 22B	1
@@ -327,33 +339,38 @@ date	location	variant	sequences
 2022-06-06	India	Omicron 22B	23
 2022-06-07	India	Omicron 22B	17
 2022-06-08	India	Omicron 22B	19
-2022-06-09	India	Omicron 22B	41
+2022-06-09	India	Omicron 22B	42
 2022-06-10	India	Omicron 22B	17
 2022-06-11	India	Omicron 22B	19
 2022-06-12	India	Omicron 22B	24
-2022-06-13	India	Omicron 22B	30
+2022-06-13	India	Omicron 22B	31
 2022-06-14	India	Omicron 22B	45
-2022-06-15	India	Omicron 22B	64
-2022-06-16	India	Omicron 22B	49
-2022-06-17	India	Omicron 22B	47
-2022-06-18	India	Omicron 22B	48
+2022-06-15	India	Omicron 22B	65
+2022-06-16	India	Omicron 22B	52
+2022-06-17	India	Omicron 22B	48
+2022-06-18	India	Omicron 22B	52
 2022-06-19	India	Omicron 22B	40
-2022-06-20	India	Omicron 22B	63
-2022-06-21	India	Omicron 22B	39
-2022-06-22	India	Omicron 22B	28
-2022-06-23	India	Omicron 22B	31
-2022-06-24	India	Omicron 22B	15
-2022-06-25	India	Omicron 22B	21
-2022-06-26	India	Omicron 22B	6
-2022-06-27	India	Omicron 22B	22
-2022-06-28	India	Omicron 22B	16
-2022-06-29	India	Omicron 22B	11
-2022-06-30	India	Omicron 22B	16
-2022-07-01	India	Omicron 22B	18
-2022-07-02	India	Omicron 22B	3
-2022-07-03	India	Omicron 22B	1
-2022-07-04	India	Omicron 22B	4
-2022-07-05	India	Omicron 22B	1
+2022-06-20	India	Omicron 22B	67
+2022-06-21	India	Omicron 22B	43
+2022-06-22	India	Omicron 22B	31
+2022-06-23	India	Omicron 22B	32
+2022-06-24	India	Omicron 22B	19
+2022-06-25	India	Omicron 22B	28
+2022-06-26	India	Omicron 22B	9
+2022-06-27	India	Omicron 22B	30
+2022-06-28	India	Omicron 22B	21
+2022-06-29	India	Omicron 22B	21
+2022-06-30	India	Omicron 22B	22
+2022-07-01	India	Omicron 22B	43
+2022-07-02	India	Omicron 22B	27
+2022-07-03	India	Omicron 22B	18
+2022-07-04	India	Omicron 22B	14
+2022-07-05	India	Omicron 22B	13
+2022-07-06	India	Omicron 22B	21
+2022-07-07	India	Omicron 22B	15
+2022-07-09	India	Omicron 22B	2
+2022-07-10	India	Omicron 22B	2
+2022-07-11	India	Omicron 22B	1
 2022-04-01	India	Omicron 22C	1
 2022-04-04	India	Omicron 22C	1
 2022-04-11	India	Omicron 22C	2
@@ -404,14 +421,14 @@ date	location	variant	sequences
 2022-06-09	India	Omicron 22C	9
 2022-06-10	India	Omicron 22C	4
 2022-06-11	India	Omicron 22C	5
-2022-06-12	India	Omicron 22C	3
+2022-06-12	India	Omicron 22C	4
 2022-06-13	India	Omicron 22C	4
 2022-06-14	India	Omicron 22C	2
 2022-06-15	India	Omicron 22C	4
 2022-06-16	India	Omicron 22C	2
 2022-06-18	India	Omicron 22C	5
-2022-06-19	India	Omicron 22C	1
-2022-06-20	India	Omicron 22C	1
+2022-06-19	India	Omicron 22C	2
+2022-06-20	India	Omicron 22C	2
 2022-06-21	India	Omicron 22C	2
 2022-06-22	India	Omicron 22C	3
 2022-06-23	India	Omicron 22C	1
@@ -422,30 +439,37 @@ date	location	variant	sequences
 2022-06-02	India	Omicron BA.2.75	1
 2022-06-03	India	Omicron BA.2.75	1
 2022-06-04	India	Omicron BA.2.75	2
-2022-06-07	India	Omicron BA.2.75	3
+2022-06-07	India	Omicron BA.2.75	5
 2022-06-08	India	Omicron BA.2.75	3
 2022-06-09	India	Omicron BA.2.75	3
 2022-06-10	India	Omicron BA.2.75	4
-2022-06-11	India	Omicron BA.2.75	3
+2022-06-11	India	Omicron BA.2.75	4
 2022-06-12	India	Omicron BA.2.75	3
 2022-06-13	India	Omicron BA.2.75	10
-2022-06-14	India	Omicron BA.2.75	9
+2022-06-14	India	Omicron BA.2.75	10
 2022-06-15	India	Omicron BA.2.75	18
-2022-06-16	India	Omicron BA.2.75	17
-2022-06-17	India	Omicron BA.2.75	8
-2022-06-18	India	Omicron BA.2.75	9
-2022-06-19	India	Omicron BA.2.75	11
-2022-06-20	India	Omicron BA.2.75	19
-2022-06-21	India	Omicron BA.2.75	23
+2022-06-16	India	Omicron BA.2.75	18
+2022-06-17	India	Omicron BA.2.75	10
+2022-06-18	India	Omicron BA.2.75	11
+2022-06-19	India	Omicron BA.2.75	12
+2022-06-20	India	Omicron BA.2.75	23
+2022-06-21	India	Omicron BA.2.75	25
 2022-06-22	India	Omicron BA.2.75	14
-2022-06-23	India	Omicron BA.2.75	25
+2022-06-23	India	Omicron BA.2.75	26
 2022-06-24	India	Omicron BA.2.75	12
-2022-06-25	India	Omicron BA.2.75	14
-2022-06-26	India	Omicron BA.2.75	17
+2022-06-25	India	Omicron BA.2.75	16
+2022-06-26	India	Omicron BA.2.75	18
 2022-06-27	India	Omicron BA.2.75	29
-2022-06-28	India	Omicron BA.2.75	9
-2022-06-29	India	Omicron BA.2.75	11
-2022-06-30	India	Omicron BA.2.75	14
-2022-07-01	India	Omicron BA.2.75	14
-2022-07-03	India	Omicron BA.2.75	1
-2022-07-04	India	Omicron BA.2.75	3
+2022-06-28	India	Omicron BA.2.75	11
+2022-06-29	India	Omicron BA.2.75	15
+2022-06-30	India	Omicron BA.2.75	15
+2022-07-01	India	Omicron BA.2.75	17
+2022-07-02	India	Omicron BA.2.75	4
+2022-07-03	India	Omicron BA.2.75	4
+2022-07-04	India	Omicron BA.2.75	8
+2022-07-05	India	Omicron BA.2.75	7
+2022-07-06	India	Omicron BA.2.75	9
+2022-07-07	India	Omicron BA.2.75	10
+2022-07-08	India	Omicron BA.2.75	4
+2022-07-09	India	Omicron BA.2.75	12
+2022-07-10	India	Omicron BA.2.75	12
