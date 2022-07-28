@@ -1,6 +1,6 @@
-## Omicron countries split dataset
+## Omicron BA.2.75 dataset
 
-This dataset includes the following variant categories: other, Delta, Omicron 21K and Omicron 21L and only includes countries with >100 Omicron 21L sequences.
+This dataset only includes countries with >100 Omicron clade 22D / lineage BA.2.75 sequences.
 
 Data preparation followed:
 
@@ -12,7 +12,7 @@ gzip -d metadata.tsv.gz -c > gisaid_metadata.tsv
 
 2. The metadata file was pruned to only relevant columns via:
 ```
-tsv-select -H -f strain,date,country,division,QC_overall_status,Nextstrain_clade,Nextclade_pango gisaid_metadata.tsv > gisaid_metadata_pruned.tsv
+tsv-select -H -f strain,date,country,division,QC_overall_status,Nextstrain_clade gisaid_metadata.tsv > gisaid_metadata_pruned.tsv
 ```
 
 3. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `omicron-ba275_data-prep.nb`. This results in the export of files: `omicron-ba275_location-variant-sequence-counts.tsv` and `omicron-ba275_location-case-counts.tsv` versioned here. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
