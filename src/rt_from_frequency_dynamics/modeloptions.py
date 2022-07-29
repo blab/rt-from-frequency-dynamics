@@ -2,20 +2,26 @@ import jax.numpy as jnp
 import numpy as np
 import numpyro
 import numpyro.distributions as dist
+from numpyro.distributions.continuous import GaussianRandomWalk
 
 from .LAS import LaplaceRandomWalk
 from .modelhelpers import is_obs_idx, pad_to_obs
 
 
 class FixedGA:
-    def __init__(self, gam_prior=0.5):
+    def __init__(self, gam_prior=0.5, prior_family="Cauchy"):
         self.gam_prior = gam_prior
+
+        if prior_family == "Cauchy":
+            self.scale_prior = lambda s: dist.HalfCauchy(scale=s)
+        elif prior_family == "Normal":
+            self.scale_prior = lambda s: dist.HalfNormal(scale=s)
 
     def model(self, N_variant, X):
         _, k = X.shape
 
         # Locally adaptive smoothing
-        gam = numpyro.sample("gam", dist.HalfCauchy(self.gam_prior))
+        gam = numpyro.sample("gam", self.scale_prior(self.gam_prior))
         beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
         beta_rw = numpyro.sample(
             "beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k)
@@ -38,14 +44,19 @@ class FixedGA:
 
 
 class FreeGrowth:
-    def __init__(self, gam_prior=0.5):
+    def __init__(self, gam_prior=0.5, prior_family="Cauchy"):
         self.gam_prior = gam_prior
+
+        if prior_family == "Cauchy":
+            self.scale_prior = lambda s: dist.HalfCauchy(scale=s)
+        elif prior_family == "Normal":
+            self.scale_prior = lambda s: dist.HalfNormal(scale=s)
 
     def model(self, N_variant, X):
         _, k = X.shape
 
         # Locally adaptive smoothing on all R trajectories
-        gam = numpyro.sample("gam", dist.HalfCauchy(self.gam_prior))
+        gam = numpyro.sample("gam", self.scale_prior(self.gam_prior))
         with numpyro.plate("variant_beta", N_variant):
             beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
             beta_rw = numpyro.sample(
@@ -59,15 +70,20 @@ class FreeGrowth:
 
 
 class GARW:
-    def __init__(self, gam_prior=0.5, gam_delta_prior=0.5):
+    def __init__(self, gam_prior=0.5, gam_delta_prior=0.5, prior_family="Cauchy"):
         self.gam_prior = gam_prior
         self.gam_delta_prior = gam_delta_prior
+
+        if prior_family == "Cauchy":
+            self.scale_prior = lambda s: dist.HalfCauchy(scale=s)
+        elif prior_family == "Normal":
+            self.scale_prior = lambda s: dist.HalfNormal(scale=s)
 
     def model(self, N_variant, X):
         _, k = X.shape
 
         # Time varying base trajectory
-        gam = numpyro.sample("gam", dist.HalfCauchy(self.gam_prior))
+        gam = numpyro.sample("gam", self.scale_prior(self.gam_prior))
         beta_0 = numpyro.sample("beta_0", dist.Normal(0.0, 1.0))
         beta_rw = numpyro.sample(
             "beta_rw", LaplaceRandomWalk(scale=gam, num_steps=k)
@@ -79,7 +95,7 @@ class GARW:
         with numpyro.plate("N_variant_m1", N_variant - 1):
             delta_0 = numpyro.sample("delta_0", dist.Normal(0.0, 0.5))
             gam_delta = numpyro.sample(
-                "gam_delta", dist.HalfCauchy(self.gam_delta_prior)
+                "gam_delta", self.scale_prior(self.gam_delta_prior)
             )
             delta_rw = numpyro.sample(
                 "delta_rw", LaplaceRandomWalk(scale=gam_delta, num_steps=k)
