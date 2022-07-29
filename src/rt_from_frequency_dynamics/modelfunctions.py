@@ -28,7 +28,7 @@ def get_infections_intros(m, R, g_rev, seed_L):
     def _scan_infections(infections, xs):
         R, im = xs
         curr_I = R * jnp.dot(infections, g_rev) + im  # New I
-        return jnp.append(infections[-(max_age - 1) :], curr_I), curr_I
+        return jnp.append(infections[-(max_age - 1):], curr_I), curr_I
 
     _, infections = lax.scan(
         _scan_infections,
