@@ -48,6 +48,9 @@
 \def\tb#1#2{\sout{#1} \textcolor{purple}{#2}}
 \def\tbc#1{\textcolor{purple}{[#1]}}
 
+\definecolor{brown}{rgb}{0.700,0.150,0.150}
+\def\mfc#1{\textcolor{brown}{[#1]}}
+
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 
 \title{SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers}
@@ -95,10 +98,10 @@ To overcome this we require models that partition case counts into contributions
 Ongoing SARS-CoV-2 evolution serves as an important example of this phenomenon.
 After initial emergence in late 2020, over the course of 2021, Variant of Concern (VOC) and Variant of Interest (VOI) viruses spread throughout the world and replaced existing viral diversity.
 Multiple WHO designated \cite{Konings2021} VOC and VOI viruses circulated in spring and early summer 2021, but this diversity was largely replaced by Delta variant viruses which became globally dominant in late summer 2021.
-Subsequently Delta variant viruses were rapidly eclipsed by Omicron variant viruses after Omicron's emergence in October 2021 \cite{viana2022rapid}.
+Subsequently, Delta variant viruses were rapidly eclipsed by Omicron variant viruses after Omicron's emergence in October 2021 \cite{viana2022rapid}.
 Although it is now clear that Delta's spread was driven by greater transmissibility than other co-circulating variants and Omicron's rapid spread was primarily driven by escape from existing population immunity, rigorous estimates of the relative fitness of circulating variant viruses are of interest.
 Here, we develop a joint epidemiological and population genetic model of SARS-CoV-2 to assess the growth of different variants over time and infer differences in the effective reproduction numbers of SARS-CoV-2 variants as well as underlying frequency of variants under noisy sampling.
-We apply this model to sequence data and case count data from United States between January 2021 and March 2022 to estimate differences in transmissibility between circulating VOC and VOI viruses.
+We apply this model to sequence data and case count data from the United States between January 2021 and March 2022 to estimate differences in transmissibility between circulating VOC and VOI viruses.
 
 \section*{Results}
 
@@ -126,12 +129,11 @@ This model provides the benefit of the inferred parameters being interpretable a
   (a) Posterior expected cases without weekly seasonality in reporting rate.
   Gray bars are observed daily case counts, while blue lines are model inferences with 50\%, 80\% and 95\% credible intervals.
   (b) Posterior expected cases by variant.
-  Each colored lines is a different variant with intervals of varying opacity showing 50\%, 80\% and 95\% credible intervals.
+  Each colored line is a different variant with intervals of varying opacity showing 50\%, 80\% and 95\% credible intervals.
   (c) Posterior variant frequency against observed sample frequency.
   Dots represent observed weekly frequencies in sequence data and each colored line is a different variant with shaded CIs.
   (d) Variant-specific effective reproduction numbers.
   (e) Posterior growth advantage by variant.
-  \tbc{A (larger, colored) dot at the median of each violin plot would make this panel easier to read. Some of the lines are quite thin.}
   }
   \label{fig:fixed_growth_Washington}
 \end{figure}
@@ -147,21 +149,20 @@ Therefore, we can use smoothing priors on the coefficients of these basis expans
   \caption{\textbf{Fitting the GARW model to Washington state data.}
     (a) When assessing epidemic growth rates, we often compute a single effective reproduction number trajectory which is effectively an average over the all viruses in population. We show the posterior smoothed incidence over time as well as the average effective reproduction number.
     Gray bars are observed daily case counts, while black intervals are the posterior 50\%, 80\% and 95\% credible intervals.
-    (b) Epidemics are made of different variants which may differ in fitness. Using case counts alongside sequences of different variants allows us to understand the proportion of different variants in the population.
-    We show the posterior variant-specific smoothed incidence as well as the posterior effective reproduction number.
-    (c) Using both case count and frequency data, we can estimate the effective reproduction numbers of different variants.
-    \tbc{Thanks for humoring me with the figure adjustments. The only thing I'd recommend here is giving each panel a separate letter a--f. As it stands it was hard for me to follow which parts of legend correspond to which panels in the figure.}
+    (b-d) Epidemics are made of different variants which may differ in fitness.
+    We show the posterior variant-specific smoothed incidence (b) as well as the average and variant-specific effective reproduction numbers (c-d).
+    (e-f) Using case counts alongside sequences of different variants allows us to understand the proportion of different variants in the infected population.
     }
   \label{fig:GARW_rt_Washington}
 \end{figure}
 
 We demonstrate these models on data from Washington State with results from the fixed growth advantage model shown in Figure \ref{fig:fixed_growth_Washington} and results from the GARW model is shown in Figure \ref{fig:GARW_rt_Washington}.
-Example model output from several other states is provided in the supplemental appendix in Figures \ref{fig:GARW_rt_California}, \ref{fig:GARW_rt_Florida}, \ref{fig:GARW_rt_Michigan}, and \ref{fig:GARW_rt_New-York}
+Example model output from several other states is provided in the supplemental appendix in Figures \ref{fig:GARW_rt_California}, \ref{fig:fixed_growth_California}, \ref{fig:GARW_rt_Florida}, \ref{fig:fixed_growth_Florida}, \ref{fig:GARW_rt_Michigan}, \ref{fig:fixed_growth_Michigan}, \ref{fig:GARW_rt_New-York}, \ref{fig:fixed_growth_New-York}.
 
 \paragraph{Estimating growth advantages in the United States}
 
 We estimate the effective reproduction numbers of SARS-CoV-2 Variant of Concern and Variant of Interest viruses in the United States using daily confirmed case counts obtained from the US CDC and sequence counts annotated by variant obtained from the Nextstrain-curated `open' dataset \cite{Hadfield2018} (see Data and code accessibility).
-Each sequence is labeled with a Nextstrain clade \cite{Hadfield2018} and we partition clades into variants based on WHO VOC/VOI designation \cite{Konings2021}.
+Each sequence is labeled with a Nextstrain clade \cite{Hadfield2018}, and we partition clades into variants based on WHO VOC/VOI designation \cite{Konings2021}.
 Nextstrain clades annotated in the fashion correspond to a subset of lineages designated by Pango \cite{Rambaut2020}.
 We consider the following 8 variants which have been flagged as variants of interest or concern and which circulated in the US during 2021 and early 2022: Alpha (Pango lineage B.1.1.7, Nextstrain clade 20I), Beta (lineage B.1.351, clade 20H), Gamma (lineage P.1, clade 20J), Delta (lineage B.1.617.2, clade 21A), Epsilon (lineage B.1.427/429, clade 21C), Iota (lineage B.1.526, clade 21F), Mu (lineage B.1.621, clade 21H) and Omicron (lineage B.1.1.529, clade 21M).
 We use a cutoff of 2000 sequences from a particular variant across states to determine threshold of circulation.
@@ -187,8 +188,9 @@ Initial Omicron $R_t$ in November and December is significantly greater than ear
 \end{figure}
 
 In order to transform these observed trends to a variant-specific growth advantage, we rely on our fixed growth advantage model which infers a fixed variant-specific growth advantage as a multiplicative scaling of the effective reproduction number.
-Using the fixed growth advantage model, we find that most variants identified share some positive growth advantage with the exception of Epsilon (Fig.\ \ref{fig:growth_advantages}).
+Using the fixed growth advantage model, we find that most variants identified share some positive growth advantage except for Epsilon (Fig.\ \ref{fig:growth_advantages}).
 Further, these growth advantages appear to be consistent between the states analyzed.
+These results from the fixed growth advantage model are consistent with a multinomial logistic growth analysis (Fig.\ \ref{fig:MLR_growth_advantages}).
 Alpha, Beta, Gamma and Iota show modest growth advantage over largely ancestral `other' viruses, while Mu and Delta show larger growth advantages.
 Mu has previously been associated with increased neutralization resistance to convalescent serum \cite{Uriu2021}, and its advantage of 1.2--1.8 across states is perhaps partially driven by immune escape.
 Despite this, Mu's growth advantage whether from immune escape or otherwise was insufficient to outcompete Delta in any of the states analyzed.
@@ -229,13 +231,10 @@ Using the posterior estimates of variant-specific case counts and state populati
 We refer to this cumulative fraction as the variant `wave size'.
 With these posterior estimates of wave size, we can begin to analyze patterns in these wave sizes and their potential relationships with post-infection and post-vaccination immunity.
 
-%TODO: Clean and correct this for updated posteiors.
-% \tbc{Methods section describing what wave size is.}
-
 We first began to look at the wave sizes attributable to subsequent major variants as a crude look into potential effects of cross-immunity between variants.
 It appears that individual US states with larger Alpha waves tended to have smaller Delta waves though this dependence appears to be weak (Fig.\ \ref{fig:wave_size_to_wave_size}a).
-We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size}b).
-\tbc{I'm pretty concerned that the apparent positive correlation between larger Delta waves and larger Omicron waves is an artifact of state-level differences in reporting rate. I can't think of an easy solution for this issue. If we decide to keep, this result should be heavily caveated.}
+We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size}b) though neither effect is statistically significant.
+It is important to caveat these results as possibly being impacted by state-wise differences in overall reporting rates and not necessarily reflective of the true underlying transmission dynamics.
 
 \begin{figure}[h!]
   \centering
@@ -243,44 +242,40 @@ We can also see that states with larger Delta waves tended to have larger Omicro
   \caption{\textbf{Comparing sizes of subsequent waves.}
     (a) Plotting estimated Alpha wave size against Delta wave size in individual states. Error bars denote 80\% credible intervals.
     (b) Plotting estimated Delta wave size against Omicron wave size in individual states. Error bars denote 80\% credible intervals.
-    \tbc{Each of these panels should have $r$ or $R^2$ and $p$ listed in the top-left corner.}
-    \tbc{This figure should be more interpretable if the axes were in natural units of 0, 2.5\%, 5\%, etc...}
   }
   \label{fig:wave_size_to_wave_size}
 \end{figure}
 
-Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes [REF].
+Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes.
 In order to see if such an effect was observable between states, we examine the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size}a).
-For some variants such as Gamma, Iota, and Mu, we see a decline in relative wave size as a function of vaccination.
-Largely, for Delta and Omicron, this effect is less clear.
-Note that this analysis does not say much about vaccination itself and in fact although Delta showed partially reduced vaccine effectiveness against infection, studies still found significant protection [REF]. %TODO: What reference should go here?
-Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}b).
+For some variants such as Gamma, Iota, and Delta, we see a decline in relative wave size as a function of vaccination.
+Largely, for Mu and Omicron, this effect is not statistically significant and less clear.
+Note that this analysis does not say much about vaccination efficacy itself.
+Although Omicron showed partially reduced vaccine effectiveness against symptomatic disease and hospitalization, studies have still found significant protection \cite{Kirsebom2022}.
+Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}b).
 These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in Omicron wave.
-\tbc{Current Figure 7a seems like a perfect illustration of Simpson's paradox. The surface reading is that more vaccination results in larger waves, but this is due to the fitter Delta and Omicron variants emerging after widespread vaccination. I think it would be more honest and interpretable to panel out individual variants. Take each variant and do the same plot of proportion vaccinated vs wave size. Include $r$ or $R^2$ for each panel. Include Omicron booster current Figure 7b as just another panel in this series. Feel free to drop uninformative variants (I think basically everything's zero for Alpha, Beta and Epsilon). I think this leaves 6 panels (Gamma, Iota, Mu, Delta, Omicron, Omicron boosters).}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{figs/vaccination_to_wave_size.png}
   \caption{\textbf{Visualizing vaccination at introduction against posterior variant wave size.}
-  (a) Posterior wave size as a function of the proportion vaccinated at time of first successful variant introduction. Colors of points above correspond to each variant as shown in \ref{fig:GARW_rt_Washington}.
-  (b) Posterior wave size for Omicron as a function of the proportion of the population with a booster vaccine.
-  \tbc{This figure should be more interpretable if the axes were reported as fractions 0, 20\%, 40\%, etc... rather than proportions.}
+  (a-e) Posterior wave size as a function of the proportion vaccinated at time of first successful variant introduction. Colors of points above correspond to each variant as shown in \ref{fig:GARW_rt_Washington}.
+  (f) Posterior wave size for Omicron as a function of the proportion of the population with a booster vaccine.
 }
   \label{fig:vaccination_to_wave_size}
 \end{figure}
 
 Standard compartment models of epidemics suggest that a higher initial variant $R_{t}$ will lead to larger wave sizes assuming the mechanism for increase is due to intrinsic transmissibility.
-In order to see if this trend held in our analyses, we plot the $R_{t}$ at introduction for all variants against their total wave sizes (Fig.\ \ref{fig:intro_R_to_wave_size}).
-We find that generally variants with higher $R_{t}$ values have higher waves sizes consistent with that theory though initial $R_{t}$ alone cannot be used to predict wave size wholly.
-\tbc{Most of the signal here is coming from Omicron vs previous variants. It seems a little wonky that Delta gets estimated as having a consistently higher growth rate in the fixed model (Figure 4), but it's initial $R_t$ is often quite low (Figure 3). A couple thoughts: (1) How about increasing the stringency for when to consider `initial' $R_t$ to be a greater sequence fraction? (2) What would the relationship between fixed growth advantage from Figure 4 and wave size look like? Here, I'm really hoping for a decently predictive metric that can predict variant impact. This has seemed to be a key question with BA.5, etc...}
+In order to see if this trend held in our analyses, we plot the $R_{t}$ at introduction for all variants against their total wave sizes (Fig.\ \ref{fig:intro_R_to_wave_size}a).
+We find that generally variants with higher $R_{t}$ values have higher waves sizes consistent with that theory though initial $R_{t}$ alone cannot be used to predict wave size wholly as this trend appears to be driven largely by the Delta and Omicron variants.
+We additionally plot the variant growth advantage at introduction for all variants against the total wave size (Fig.\ \ref{fig:intro_R_to_wave_size}b) and observe a similar trend though once again this alone cannot completely predict wave size.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{figs/intro_R_to_wave_size.png}
-  \caption{\textbf{Visualizing $R_{t}$ at introduction against posterior variant-specific wave size}
-  Posterior estimates of variant-specific wave size against $R_{t}$ at time of first successful introduction.
-  \tbc{I think the two outliers for Alpha and Epsilon are due to model taking a couple weeks to calibrate. The overly large initial $R_t$ can be seen in Figure 3 where it takes just a couple of weeks to settle. We may want to only start estimates from Jan 15 even if this dataset starts at Jan 1, 2021.}
-  \tbc{The x axis should be `Variant $R_t$ at introduction' and I think the y axis should just be `Variant wave size'.}
+  \caption{\textbf{Visualizing variant $R_{t}$ and growth advantage at introduction against posterior variant-specific wave size}
+      (a) Posterior estimates of variant-specific wave size against $R_{t}$ from GARW model at time of first successful introduction.
+      (b) Posterior estimates of variant-specific wave size against growth advantage from GARW model at time of first successful introduction.
   }
   \label{fig:intro_R_to_wave_size}
 \end{figure}
@@ -292,23 +287,23 @@ In each state, spring waves in 2021 were primarily driven by the arrival of Alph
 However, as these waves subsided, the arrival of Delta with a significantly greater growth advantage, drove a large wave in summer 2021.
 Omicron's arrival in November 2021 drove a much larger wave in January/February 2022 due to significant immune escape of the variant.
 Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticeable in overall case counts, and that Omicron's initial $R_{t}$ was estimated to be between 2 and 4 in December 2021, presaging a substantial Omicron driven wave.
-\tbc{It would be good to somehow mention results from Figures 6--8 here as well.}
+Our estimates of the variant-specific $R_{t}$ and incidence then allow us to assess the relationship between variant wave sizes across states as a function of past variant-specific exposure, $R_{t}$, growth advantages, as well as vaccination.
 
 We imagine that this approach could provide early warning of imminent epidemics driven by low-frequency but highly transmissible variants and generally serve to identify newly arising variants that show significant transmission advantages and that may drive epidemics.
 Indeed, we have continually updated estimates of spread of Omicron and Omicron sublineages BA.2, BA.2.12.1, BA.4 and BA.5 using this method and shared results in real-time online at \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
-As an example, we assess the rise of Omicron sublineage BA.2 in the United States in Figure \ref{fig:BA_2_growth_advantages}.
+As an example, we estimate the growth advantages of Omicron sublineages BA.2, BA.2.12.1, BA.4, and BA.5 during their rise in the United States in Figure \ref{fig:omicron_growth_advantages}.
 These real-time estimates have served as a basis for reporting to public health, policy makers and the general public.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=\linewidth]{figs/BA.2_growth_advantage.png}
-  \caption{\textbf{Estimating variant growth advantages relative to BA.1 in 16 US states.}
-    (a) Time-varying growth advantages for Delta and BA.2 relative to BA.1 using GARW model. Histograms denote the distribution of the variant growth advantages across all times.
+  \includegraphics[width=\linewidth]{figs/omicron_growth_advantage.png}
+  \caption{\textbf{Estimating growth advantages of Omicron sublineages relative to BA.1 in 33 US states.}
+    (a) Time-varying growth advantages for BA.2, BA.2.12.1, BA.4, and BA.5 relative to BA.1 using the GARW model.
+    Histograms denote the distribution of the variant growth advantages across all times.
     (b) Fixed growth advantages for Delta and BA.2 relative to BA.1 using fixed growth advantage model.
     (c) Same as (b) but with state medians visualized by variant.
-    \tbc{I think you can just drop Delta from this figure. The key question is BA.2 relative to BA.1. Just like we generally ignore `Other' I think appropriate to ignore Delta in this presentation.}
   }
-  \label{fig:BA_2_growth_advantages}
+  \label{fig:omicron_growth_advantages}
 \end{figure}
 
 With this mind, this work is not without limitations.
@@ -319,11 +314,11 @@ This source of error can be partially combated by converting effective reproduct
 There is also a general need to account for biases in the case data which may not faithfully describe the infection dynamics of SARS-CoV-2 due to changes in case ascertainment rate, as possibly caused by differences in testing intensity, infection severity among other reasons.
 However, we suspect that case ascertainment remained largely consistent from January to $\sim$Dec 2021, even if it declined with the advent of widespread circulation of Omicron.
 
-We do not explicitly model multiple introductions of variants which can play an important role in variants establishing themselves in different geographies at low infection counts and could bias our estimates of the effective reproduction number if not properly accounted for \cite{Cori2013, MullerWagner2021}.
-This could be especially impactful early on when variant cases are driven by multiple importations from a large epidemic elsewhere in the world.
+We do not explicitly model additional introductions of variants outside a fixed seeding period which can play an important role in variants establishing themselves in different geographies at low infection counts and could bias our estimates of the effective reproduction number if not properly accounted for \cite{Cori2013, MullerWagner2021}.
+% This could be especially impactful early on when variant cases are driven by multiple importations from a large epidemic elsewhere in the world.
 However, we expect once local transmission is predominant that estimated $R_{t}$ will reflect characteristics intrinsic to the variant in the local geography.
 Using hierarchical models of variants to jointly estimate growth advantages and pool estimates across locations could be a useful approach for analyzing consistency between growth advantages of variants geographically and beginning to combat the issue of multiple introduction events.
-That said, fully combating this issue would likely involve incorporating demographic stochastic into the model at the level of transmission and reduce its speed of inference, scalability, and limit available inference options.
+That said, fully combating this issue would likely involve incorporating demographic stochastic into the model at the level of transmission and likely reduce the speed of inference, scalability, and limit available inference options.
 
 Although there are several ways to improve these methods and expand their applicability, our current model does have utility as a way of assessing early claims of variant advantages and is able to show there is evidence of consistent variant advantages shared between different geographies.
 Additional work is needed to attribute these inferred advantages to biological mechanisms like immune escape and transmissibility \cite{tao2021biological}.
@@ -337,7 +332,7 @@ Currently, our GARW model can be used to assess claims of growth advantages of v
 
 This method can be extended further to analyze the role of specific constituent mutations defining a variant or lineage in changing the effective reproduction number of specific variants directly, similar to the model formulation of Obermeyer et al.\ \cite{Obermeyer2021}.
 With this in mind, our method potentially has use for evolutionary forecasting of variants for SARS-CoV-2 as we inform the frequency dynamics of co-circulating variants by describing their population-level transmission dynamics.
-Extending the model further towards this aim will likely require methods for quantifying various sources population immunity as well as escape potential for circulating and emerging SARS-CoV-2 variants as a way to explain these growth advantages using data.
+Extending the model further towards this aim will likely require methods for quantifying various sources population immunity as well as escape potential for circulating and emerging SARS-CoV-2 variants as a way to explain these growth advantages and their underlying mechanisms using data.
 
 With these issues in mind, surveillance of variants should be folded into standard epidemiological surveillance as knowledge of variant-specific growth advantages will be useful for forecasting growth of cases, hospitalization, deaths, vaccine effectiveness among other key metrics related to epidemic response.
 
@@ -358,7 +353,7 @@ In addition, we also include onset distribution $o$ for symptoms which allows us
 \begin{equation}
   P(t) = \int_{0}^{t} I(\tau) o_{t-\tau} d \tau.
 \end{equation}
-We bin the generation time $g$ and the onset distribution $o$ to nearest day, so that we estimate the daily incidence $I(t)$ and prevalence $P(t)$ as
+We bin the generation time $g$ and the onset distribution $o$ to the nearest day, so that we estimate the daily incidence $I(t)$ and prevalence $P(t)$ as
 
 \begin{align}
   I(t) &= R_{t} \sum_{\tau < t} I(\tau) g_{t-\tau}\\
@@ -366,7 +361,7 @@ We bin the generation time $g$ and the onset distribution $o$ to nearest day, so
 \end{align}
 
 We parameterize all variants excluding Delta and Omicron as having generation time $g$ as having Gamma distribution with mean 5.2 and standard deviation 1.2 in line with the estimates of \cite{Ganyani2020}.
-Due observed shorter serial intervals for Delta and Omicron, we instead use a mean generation time of 3.6 for Delta and a mean of 3.2 for Omicron\ \cite{Backer2022, Ryu2022, Song2022}.
+Due to observed shorter serial intervals for Delta and Omicron, we instead use a mean generation time of 3.6 for Delta and a mean of 3.2 for Omicron\ \cite{Backer2022, Ryu2022, Song2022}.
 For all variants, we parameterize the onset time $o$ as having LogNormal with mean 6.8 and standard deviation 2.0 in line with \cite{Cheng2021}.
 We note that the choice of generation time can have strong effects on the inferred effective reproduction number and growth advantage under renewal equation model.
 The effect of generation time choice is quantifiable as shown in Figures \ref{fig:generation_time_sensitivity}, \ref{fig:growth_advantage_sensitivity} and Supplemental Appendix (see Relating epidemic growth rates to relative effective reproduction numbers).
@@ -393,6 +388,7 @@ We then define the observation likelihood using a negative binomial distribution
 \end{equation}
 where $[t] = t \mod 7 + 1$, $\alpha$ is an over-dispersion parameter relative to the Poisson distribution and $\text{NegBinom}(\mu, \alpha)$ is the negative binomial distribution with mean $\mu$ and variance  $\mu + \alpha\mu^{2}$. In the case of multiple variants, we use $P(t) = \sum_{1\leq v \leq V} P_{v}(t)$.
 The negative binomial likelihood is often used for modeling observation noise for count data such as epidemic time series which are often over-dispersed relative to a Poisson distribution.
+In order to account for zero-counts due to a lack of observations, we also include zero-inflation on the case counts.
 
 \paragraph{Observation process for variant annotations}%
 
@@ -413,7 +409,7 @@ Each basis spline is written as a column in the design matrix $\vec{X}$, so that
 \end{equation}
 where the $\vec{\beta}$ are to be estimated to parameterize the effective reproduction number.
 We then use locally adaptive smoothing of order one with a Laplace prior on the coefficients $\vec{\beta}$ to promote smoothness on the inferred $R_t$ trajectory \cite{Faulkner2018}.
-This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity, etc...
+This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity, etc.
 
 \paragraph{Modeling variant-specific effective reproduction numbers}%
 
@@ -422,7 +418,7 @@ To model the variant-specific reproduction numbers, we can infer individual inde
   \ln R_{t, v} = \vec{X} \vec{\beta}_{v},
 \end{equation}
 where each variant $v$ gets its own vector of parameters $\vec{\beta}_{v}$ in this model.
-We use the same prior structure as above to promote smoothness on inferred trajectories.  %M: Do we leave this as a first step and just don't name it or should we start directly with FGA?
+We use the same prior structure as above to promote smoothness on inferred trajectories.
 
 \paragraph{Modeling variant-specific growth advantages}%
 
@@ -435,7 +431,7 @@ We consider $\Delta_{v} = \exp(\delta_{v})$ to be the variant-specific growth ad
 This model is referred to as the ``fixed growth advantage model'' throughout the paper.
 
 \paragraph{Estimating time varying growth advantages}
-In reality, the growth advantage of a variant may vary in time due to factors like cross-immunity between variants, overall immune escape, etc...
+In reality, the growth advantage of a variant may vary in time due to factors like cross-immunity between variants, overall immune escape, etc.
 This can additionally occur under variant generation time misspecification \cite{Park2021.05.03.21256545}.
 
 To combat these issues, we extend our model to allow for time-varying growth advantages.
@@ -464,8 +460,7 @@ We estimate variant-specific wave sizes using the posterior estimates of inciden
 
 Given that we do not observe all new infections and assuming that all variants have an equal-reporting rate, this is really a relative wave size attributable to each variant.
 
-For the purposes of the wave size analyses in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first successful introduction to be the first time point at which variant $v$ is above a threshold frequency and have effective reproduction number greater than one.
-\tbc{What's this threshold frequency?}
+For the purposes of the wave size analysis in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first successful introduction to be the first time point at which variant $v$ is above a threshold frequency of 5\% and have effective reproduction number greater than one.
 
 % \paragraph{Decomposing variant-specific growth advantages}%
 
@@ -486,8 +481,9 @@ For the purposes of the wave size analyses in Figures \ref{fig:vaccination_to_wa
 
 \paragraph{Priors for Bayesian Inference}%
 
-For both models, we provide a Laplace random walk prior on the spline coefficients $\vec{\beta}$ with scale parameter $\gamma$ which itself has a HalfCauchy$(0, 0.5)$ prior distribution.
+For both models, we provide a Laplace random walk prior on the spline coefficients $\vec{\beta}$ with scale parameter $\gamma$ which itself has a HalfNormal$(0, 0.1)$ prior distribution.
 In the fixed growth advantage model, only a baseline $R_{t}$ trajectory is parameterized by $\vec{\beta}$ and the variant advantages $\delta_{v}$ are given a Normal$(0,1)$ prior.
+For the GARW model, the variant growth advantage spline coefficients are modeled with a Laplace random walk with scale parameter $\gamma_{\delta}$ which has HalfNormal$(0, 0.01)$ prior distribution.
 The initial infected individuals for each variant have a uniform prior between 0 and 300,000.
 The weekly reporting rates $\rho_{[t]}$ each follow a Beta$(5, 5)$ prior, and the case observation over-dispersion is given a HalfNormal$(0, 0.05)$ prior on $\alpha^{\frac{1}{2}}$.
 Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to penalize high levels of over-dispersion in sequencing.
@@ -496,7 +492,7 @@ Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to p
 
 The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a full-rank Gaussian variational distribution / Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which approximates the posterior (with appropriate constraints on the individual parameter spaces) as a multivariate normal distribution.
 
-Models for each individual state in the United States variants data set were fit for 50,000 iterations and 3000 posterior samples were produced under both the fixed growth advantage model and the GARW model.
+Models for each individual state in the United States variants data set were fit for 60,000 iterations and 3000 posterior samples were produced under both the fixed growth advantage model and the GARW model.
 
 \subsection*{Data and code accessibility}
 
@@ -510,6 +506,8 @@ We additionally filtered to sequences with known collection date, assigned Nexts
 This subsetting resulted in 1,906,759 sequences for analysis.
 However, we reduced dataset to just the 34 states with more 12,000 sequences available in this timeframe.
 Doing so reduced the full dataset to 1,541,099 sequences for analysis.
+
+%TODO: Add details for `omicron-us-manuscript` data set
 
 Derived data of sequence counts and case counts, along with all source code used to analyze this data and produce figures is available via the GitHub repository \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
 
@@ -548,6 +546,66 @@ This project was supported by funds from the HHMI COVID-19 Collaboration Initiat
 \renewcommand{\thepage}{S\arabic{page}}
 
 \section*{Supplemental Appendix}
+
+\clearpage 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_California.png}
+  \caption{\textbf{Fitting the GARW model to California data.}}%
+  \label{fig:GARW_rt_California}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_California.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to California data.}}%
+  \label{fig:fixed_growth_California}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_Florida.png}
+  \caption{\textbf{Fitting the GARW model to Florida data.}}%
+  \label{fig:GARW_rt_Florida}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Florida.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Florida data.}}%
+  \label{fig:fixed_growth_Florida}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_Michigan.png}
+  \caption{\textbf{Fitting the GARW model to Michigan data.}}%
+  \label{fig:GARW_rt_Michigan}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_Michigan.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to Michigan data.}}%
+  \label{fig:fixed_growth_Michigan}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/GARW_rt_New-York.png}
+  \caption{\textbf{Fitting the GARW model to New York state data.}}%
+  \label{fig:GARW_rt_New-York}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/fixed_growth_New-York.png}
+  \caption{\textbf{Fitting the fixed growth advantage model to New York state data.}}%
+  \label{fig:fixed_growth_New-York}
+\end{figure}
+
+\clearpage 
 
 \subsection*{Supplemental Results}
 
@@ -627,7 +685,7 @@ R_{t,v} = \exp(r_{v}T_{g}).
 
 In this case, the relative effective reproduction number will depend on only the difference between the epidemic growth rates and therefore, is commonly used when converting estimated growth advantages to relative reproduction numbers in the case of logistic growth models.
 
-Second, we consider the case where the the generation time is an exponential distribution with mean $T_{g}$. This assumption is often implicit and common in models of infectious diseases such as ODEs and their stochastic variants. Using the corresponding moment-generating function, we see that
+Second, we consider the case where the generation time is an exponential distribution with mean $T_{g}$. This assumption is often implicit and common in models of infectious diseases such as ODEs and their stochastic variants. Using the corresponding moment-generating function, we see that
 \begin{align*}
 R_{t,v} = 1 + r_{v} T_{g}
 \end{align*}
@@ -675,9 +733,6 @@ Under the misspecified variant generation time $g_{M}$, we can then write the in
 
 In general, the term inside the log is non-constant meaning that fixed variant growth advantages under one generation time become non-constant under generation time specification.
 
-
-%TODO: Mention Sang Woo Park paper
-
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/generation_time_sensitivity.png}
@@ -703,64 +758,6 @@ In general, the term inside the log is non-constant meaning that fixed variant g
 (a) We vary the mean of Omicron generation time keeping a constant standard deviation 1.2 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our fixed growth model.
 (b) The same as (a), but we instead vary the standard deviation of Omicron generation time keeping a constant mean 3.2.}%
   \label{fig:growth_advantage_sensitivity}
-\end{figure}
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/GARW_rt_California.png}
-  \caption{\textbf{Fitting the GARW model to California data.}}%
-  \label{fig:GARW_rt_California}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/fixed_growth_California.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to California data.}}%
-  \label{fig:fixed_growth_California}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/GARW_rt_Florida.png}
-  \caption{\textbf{Fitting the GARW model to Florida data.}}%
-  \label{fig:GARW_rt_Florida}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/fixed_growth_Florida.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to Florida data.}}%
-  \label{fig:fixed_growth_Florida}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/GARW_rt_Michigan.png}
-  \caption{\textbf{Fitting the GARW model to Michigan data.}}%
-  \label{fig:GARW_rt_Michigan}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/fixed_growth_Michigan.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to Michigan data.}}%
-  \label{fig:fixed_growth_Michigan}
-\end{figure}
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/GARW_rt_New-York.png}
-  \caption{\textbf{Fitting the GARW model to New York state data.}}%
-  \label{fig:GARW_rt_New-York}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/fixed_growth_New-York.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to New York state data.}}%
-  \label{fig:fixed_growth_New-York}
 \end{figure}
 
 \end{document}
