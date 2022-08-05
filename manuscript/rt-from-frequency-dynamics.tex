@@ -157,7 +157,7 @@ Therefore, we can use smoothing priors on the coefficients of these basis expans
 \end{figure}
 
 We demonstrate these models on data from Washington State with results from the fixed growth advantage model shown in Figure \ref{fig:fixed_growth_Washington} and results from the GARW model is shown in Figure \ref{fig:GARW_rt_Washington}.
-Example model output from several other states is provided in the supplemental appendix in Figures \ref{fig:GARW_rt_California}, \ref{fig:fixed_growth_California}, \ref{fig:GARW_rt_Florida}, \ref{fig:fixed_growth_Florida}, \ref{fig:GARW_rt_Michigan}, \ref{fig:fixed_growth_Michigan}, \ref{fig:GARW_rt_New-York}, \ref{fig:fixed_growth_New-York}.
+Further example model output for California, Florida, Michigan and New York is provided in the supplemental appendix in Figures \ref{fig:GARW_rt_California}--\ref{fig:fixed_growth_New-York}.
 
 \paragraph{Estimating growth advantages in the United States}
 
@@ -248,11 +248,11 @@ It is important to caveat these results as possibly being impacted by state-wise
 
 Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes.
 In order to see if such an effect was observable between states, we examine the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size}a).
-For some variants such as Gamma, Iota, and Delta, we see a decline in relative wave size as a function of vaccination.
-Largely, for Mu and Omicron, this effect is not statistically significant and less clear.
-Note that this analysis does not say much about vaccination efficacy itself.
-Although Omicron showed partially reduced vaccine effectiveness against symptomatic disease and hospitalization, studies have still found significant protection \cite{Kirsebom2022}.
-Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}b).
+For some variants such as Gamma, Iota, and Delta, we see a statistically significant decline in relative wave size as a function of vaccination.
+However, for Omicron (Fig.\ \ref{fig:vaccination_to_wave_size}e), this effect is not apparent.
+This result is largely consistent with individual-level estimates of vaccine effectiveness (VE), where prior to Omicron, variant emergence did little to significantly reduce VE, while Omicron showed substantial reductions in VE against symptomatic illness \cite{Kirsebom2022}.
+% Although Omicron showed partially reduced vaccine effectiveness against symptomatic disease and hospitalization, studies have still found significant protection.
+Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}f).
 These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in Omicron wave.
 
 \begin{figure}[h!]
@@ -286,7 +286,7 @@ We find that a model that partitions case count data based on variant frequency 
 In each state, spring waves in 2021 were primarily driven by the arrival of Alpha, Beta, Gamma, and Iota variants.
 However, as these waves subsided, the arrival of Delta with a significantly greater growth advantage, drove a large wave in summer 2021.
 Omicron's arrival in November 2021 drove a much larger wave in January/February 2022 due to significant immune escape of the variant.
-Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticeable in overall case counts, and that Omicron's initial $R_{t}$ was estimated to be between 2 and 4 in December 2021, presaging a substantial Omicron driven wave.
+Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticeable in overall case counts, and that Omicron's initial $R_{t}$ was estimated to be between 2 and 3 in December 2021, presaging a substantial Omicron driven wave.
 Our estimates of the variant-specific $R_{t}$ and incidence then allow us to assess the relationship between variant wave sizes across states as a function of past variant-specific exposure, $R_{t}$, growth advantages, as well as vaccination.
 
 We imagine that this approach could provide early warning of imminent epidemics driven by low-frequency but highly transmissible variants and generally serve to identify newly arising variants that show significant transmission advantages and that may drive epidemics.
