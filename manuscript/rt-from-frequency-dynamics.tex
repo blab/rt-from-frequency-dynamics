@@ -134,7 +134,6 @@ This model provides the benefit of the inferred parameters being interpretable a
   Dots represent observed weekly frequencies in sequence data and each colored line is a different variant with shaded CIs.
   (d) Variant-specific effective reproduction numbers.
   (e) Posterior growth advantage by variant.
-  % \tbc{A (larger, colored) dot at the median of each violin plot would make this panel easier to read. Some of the lines are quite thin.}
   }
   \label{fig:fixed_growth_Washington}
 \end{figure}
@@ -150,10 +149,9 @@ Therefore, we can use smoothing priors on the coefficients of these basis expans
   \caption{\textbf{Fitting the GARW model to Washington state data.}
     (a) When assessing epidemic growth rates, we often compute a single effective reproduction number trajectory which is effectively an average over the all viruses in population. We show the posterior smoothed incidence over time as well as the average effective reproduction number.
     Gray bars are observed daily case counts, while black intervals are the posterior 50\%, 80\% and 95\% credible intervals.
-    (b-d) Epidemics are made of different variants which may differ in fitness. 
+    (b-d) Epidemics are made of different variants which may differ in fitness.
     We show the posterior variant-specific smoothed incidence (b) as well as the average and variant-specific effective reproduction numbers (c-d).
     (e-f) Using case counts alongside sequences of different variants allows us to understand the proportion of different variants in the infected population.
-    % \tbc{Thanks for humoring me with the figure adjustments. The only thing I'd recommend here is giving each panel a separate letter a--f. As it stands it was hard for me to follow which parts of legend correspond to which panels in the figure.}
     }
   \label{fig:GARW_rt_Washington}
 \end{figure}
@@ -238,17 +236,12 @@ It appears that individual US states with larger Alpha waves tended to have smal
 We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size}b) though neither effect is statistically significant.
 It is important to caveat these results as possibly being impacted by state-wise differences in overall reporting rates and not necessarily reflective of the true underlying transmission dynamics.
 
-% \tbc{I'm pretty concerned that the apparent positive correlation between larger Delta waves and larger Omicron waves is an artifact of state-level differences in reporting rate. I can't think of an easy solution for this issue. If we decide to keep, this result should be heavily caveated.}
-
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{figs/wave_size_to_wave_size.png}
   \caption{\textbf{Comparing sizes of subsequent waves.}
     (a) Plotting estimated Alpha wave size against Delta wave size in individual states. Error bars denote 80\% credible intervals.
     (b) Plotting estimated Delta wave size against Omicron wave size in individual states. Error bars denote 80\% credible intervals.
-    % \tbc{Each of these panels should have $r$ or $R^2$ and $p$ listed in the top-left corner.}
-    % \tbc{This figure should be more interpretable if the axes were in natural units of 0, 2.5\%, 5\%, etc...}
-    % \mfc{I'll make these corrections}
   }
   \label{fig:wave_size_to_wave_size}
 \end{figure}
@@ -268,9 +261,6 @@ These results highlight the complicated relationship between variant success and
   \caption{\textbf{Visualizing vaccination at introduction against posterior variant wave size.}
   (a-e) Posterior wave size as a function of the proportion vaccinated at time of first successful variant introduction. Colors of points above correspond to each variant as shown in \ref{fig:GARW_rt_Washington}.
   (f) Posterior wave size for Omicron as a function of the proportion of the population with a booster vaccine.
-  % \tbc{Current Figure 7a seems like a perfect illustration of Simpson's paradox. The surface reading is that more vaccination results in larger waves, but this is due to the fitter Delta and Omicron variants emerging after widespread vaccination. I think it would be more honest and interpretable to panel out individual variants. Take each variant and do the same plot of proportion vaccinated vs wave size. Include $r$ or $R^2$ for each panel. Include Omicron booster current Figure 7b as just another panel in this series. Feel free to drop uninformative variants (I think basically everything's zero for Alpha, Beta and Epsilon). I think this leaves 6 panels (Gamma, Iota, Mu, Delta, Omicron, Omicron boosters).}
-  % \mfc{I agree generally with this comment. I'll implement these figure suggests and perhaps mention the paradox more explicitly in the text above.}
-  % \tbc{This figure should be more interpretable if the axes were reported as fractions 0, 20\%, 40\%, etc... rather than proportions.}
 }
   \label{fig:vaccination_to_wave_size}
 \end{figure}
@@ -280,17 +270,12 @@ In order to see if this trend held in our analyses, we plot the $R_{t}$ at intro
 We find that generally variants with higher $R_{t}$ values have higher waves sizes consistent with that theory though initial $R_{t}$ alone cannot be used to predict wave size wholly as this trend appears to be driven largely by the Delta and Omicron variants.
 We additionally plot the variant growth advantage at introduction for all variants against the total wave size (Fig.\ \ref{fig:intro_R_to_wave_size}b) and observe a similar trend though once again this alone cannot completely predict wave size.
 
-% \tbc{Most of the signal here is coming from Omicron vs previous variants. It seems a little wonky that Delta gets estimated as having a consistently higher growth rate in the fixed model (Figure 4), but it's initial $R_t$ is often quite low (Figure 3). A couple thoughts: (1) How about increasing the stringency for when to consider `initial' $R_t$ to be a greater sequence fraction? (2) What would the relationship between fixed growth advantage from Figure 4 and wave size look like? Here, I'm really hoping for a decently predictive metric that can predict variant impact. This has seemed to be a key question with BA.5, etc...}
-% \mfc{I'll add an inset to Figure 8 looking at the variant growth advantage at introduction (or fixed growth advantage) as well though I doubt the relationship will be as simple as we want it to be.}
-
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{figs/intro_R_to_wave_size.png}
   \caption{\textbf{Visualizing variant $R_{t}$ and growth advantage at introduction against posterior variant-specific wave size}
       (a) Posterior estimates of variant-specific wave size against $R_{t}$ from GARW model at time of first successful introduction.
       (b) Posterior estimates of variant-specific wave size against growth advantage from GARW model at time of first successful introduction.
-  % \tbc{I think the two outliers for Alpha and Epsilon are due to model taking a couple weeks to calibrate. The overly large initial $R_t$ can be seen in Figure 3 where it takes just a couple of weeks to settle. We may want to only start estimates from Jan 15 even if this dataset starts at Jan 1, 2021.}
-  % \tbc{The x axis should be `Variant $R_t$ at introduction' and I think the y axis should just be `Variant wave size'.}
   }
   \label{fig:intro_R_to_wave_size}
 \end{figure}
@@ -304,8 +289,6 @@ Omicron's arrival in November 2021 drove a much larger wave in January/February 
 Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticeable in overall case counts, and that Omicron's initial $R_{t}$ was estimated to be between 2 and 4 in December 2021, presaging a substantial Omicron driven wave.
 Our estimates of the variant-specific $R_{t}$ and incidence then allow us to assess the relationship between variant wave sizes across states as a function of past variant-specific exposure, $R_{t}$, growth advantages, as well as vaccination.
 
-% \tbc{It would be good to somehow mention results from Figures 6--8 here as well.}
-
 We imagine that this approach could provide early warning of imminent epidemics driven by low-frequency but highly transmissible variants and generally serve to identify newly arising variants that show significant transmission advantages and that may drive epidemics.
 Indeed, we have continually updated estimates of spread of Omicron and Omicron sublineages BA.2, BA.2.12.1, BA.4 and BA.5 using this method and shared results in real-time online at \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
 As an example, we estimate the growth advantages of Omicron sublineages BA.2, BA.2.12.1, BA.4, and BA.5 during their rise in the United States in Figure \ref{fig:omicron_growth_advantages}.
@@ -315,12 +298,10 @@ These real-time estimates have served as a basis for reporting to public health,
   \centering
   \includegraphics[width=\linewidth]{figs/omicron_growth_advantage.png}
   \caption{\textbf{Estimating growth advantages of Omicron sublineages relative to BA.1 in 33 US states.}
-    (a) Time-varying growth advantages for BA.2, BA.2.12.1, BA.4, and BA.5 relative to BA.1 using the GARW model. 
+    (a) Time-varying growth advantages for BA.2, BA.2.12.1, BA.4, and BA.5 relative to BA.1 using the GARW model.
     Histograms denote the distribution of the variant growth advantages across all times.
     (b) Fixed growth advantages for Delta and BA.2 relative to BA.1 using fixed growth advantage model.
     (c) Same as (b) but with state medians visualized by variant.
-    % \tbc{I think you can just drop Delta from this figure. The key question is BA.2 relative to BA.1. Just like we generally ignore `Other' I think appropriate to ignore Delta in this presentation.}
-    % \mfc{I'll remove Delta from this plot and repeat this analysis including BA.4, BA.5, and BA.2.12.1}
   }
   \label{fig:omicron_growth_advantages}
 \end{figure}
@@ -480,7 +461,6 @@ We estimate variant-specific wave sizes using the posterior estimates of inciden
 Given that we do not observe all new infections and assuming that all variants have an equal-reporting rate, this is really a relative wave size attributable to each variant.
 
 For the purposes of the wave size analysis in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first successful introduction to be the first time point at which variant $v$ is above a threshold frequency of 5\% and have effective reproduction number greater than one.
-% \tbc{What's this threshold frequency?}
 
 % \paragraph{Decomposing variant-specific growth advantages}%
 
