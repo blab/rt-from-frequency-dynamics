@@ -6,17 +6,9 @@ This shows 7-day smoothed variant frequencies. This includes a logistic growth r
 
 #### Variant frequencies on logit y axis
 
-##### Focus on lineage BA.4 / clade 22A
-
-![](figures/omicron-countries-split_logistic-growth-transformed-axis-22A.png)
-
 ##### Focus on lineage BA.5 / clade 22B
 
 ![](figures/omicron-countries-split_logistic-growth-transformed-axis-22B.png)
-
-##### Focus on lineage BA.2.12.1 / clade 22C
-
-![](figures/omicron-countries-split_logistic-growth-transformed-axis-22C.png)
 
 ## Partitioning case counts by variant
 
@@ -32,17 +24,9 @@ This includes estimate of _r_ from regression of logged Omicron case counts.
 
 ![](figures/omicron-countries-split_partitioned-log-cases.png)
 
-##### Focus on lineage BA.4 / clade 22A
-
-![](figures/omicron-countries-split_partitioned-log-cases-22A.png)
-
 ##### Focus on lineage BA.5 / clade 22B
 
 ![](figures/omicron-countries-split_partitioned-log-cases-22B.png)
-
-##### Focus on lineage BA.2.12.1 / clade 22C
-
-![](figures/omicron-countries-split_partitioned-log-cases-22C.png)
 
 ## Model outputs
 
