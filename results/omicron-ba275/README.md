@@ -6,9 +6,9 @@ This shows 7-day smoothed variant frequencies. This includes a logistic growth r
 
 #### Variant frequencies on logit y axis
 
-##### BA.5 vs BA.2.75
+This includes estimate of _r_ from regression of logit Omicron BA.2.75 frequencies.
 
-![](figures/omicron-ba275_logistic-growth-transformed-axis-BA5-BA275.png)
+![](figures/omicron-ba275_logistic-growth-transformed-axis.png)
 
 ## Partitioning case counts by variant
 
@@ -22,7 +22,7 @@ This uses 7-day smoothed daily case counts alongside 7-day smoothed variant freq
 
 This includes estimate of _r_ from regression of logged Omicron BA.2.75 case counts.
 
-![](figures/omicron-ba275_partitioned-log-cases-BA275.png)
+![](figures/omicron-ba275_partitioned-log-cases.png)
 
 ## Model outputs
 
