@@ -1,75 +1,90 @@
-\documentclass[stdletter,letterpaper,addrfromright,orderfromdateto,dateleft,11pt,noaddrto,sigleft]{newlfm}
-\topmarginskip{-0.0in}
-\bottommarginskip{-0.0in}
-\leftmarginsize{1.25in}
-\rightmarginsize{1.5in}
-\sigskipbefore{0.2in}
-\sigskipafter{0in}
-\noLines
-\nolines
-\noHeadline
-\noheadline
-\signature{Marlin Figgins}
+\documentclass[11pt]{article}
 
-\usepackage{etoolbox}
+\usepackage{geometry}
+\geometry{left=1.1in, right=1.1in, top=1.0in, bottom=0.95in}
 
-\makeatletter
-\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
-\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
-\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
-\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
-\makeatother
+% graphicx package, useful for including eps and pdf graphics
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-\namefrom{}
-\addrfrom{
-	\includegraphics[width=6.5cm]{figures/fhcrc_logo} \\
-  Vaccines and Infectious Disease Division \\
-  Fred Hutchinson Cancer Research Center \\
-  1100 Fairview Ave N \\
-  Seattle, WA 98109, USA}
-\emailfrom{mfiggins@uw.edu}
+% basic packages
+\usepackage{color}
+\usepackage{parskip}
+\setlength{\parskip}{0.16cm}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{enumitem}
+\usepackage{microtype}
 
-\greetto{Dear Editors,}
-\closeline{Sincerely,}
+\definecolor{green}{rgb}{0.20,0.50,0.48}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=green}
 
-% % comments
-% \usepackage{color}
-% \usepackage{ulem}
-% \definecolor{purple}{rgb}{0.459,0.109,0.538}
-% \def\tb#1#2{\sout{#1} \textcolor{purple}{#2}}
-% \def\tbc#1{\textcolor{purple}{[#1]}}
+\setlength{\parindent}{0pt} % Remove paragraph indent
+
 \definecolor{brown}{rgb}{0.700,0.150,0.150}
 \def\mfc#1{\textcolor{brown}{[#1]}}
 
 \begin{document}
 
-\begin{newlfm}
+\thispagestyle{empty} % Remove page headers/footers
 
-   Please find attached our manuscript entitled ``SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers''.
-   We would be grateful if you considered it for publication in \textit{PNAS}.
+\mbox{}\hfill
+\begin{tabular}{l @{}}
+	\includegraphics[width=6.5cm]{figures/fhcrc_logo} \\
+	Vaccine and Infectious Disease Division \\
+	Fred Hutchinson Cancer Research Center \\
+	1100 Fairview Ave N \\
+	Seattle, WA 98109, USA \\
+	Phone: (206) 667-6372 \\
+	Email: \href{mailto:mfiggins@uw.edu}{mfiggins@uw.edu} \\
+\end{tabular}
 
-   The COVID-19 pandemic has been characterized by waves of infection driven by the emergence of SARS-CoV-2 variants. 
-   With the continued transmission and evolution of SARS-CoV-2, there is an increased need to monitor the transmission of individual genetic variants and their dynamics.
-   This has led to development of several models which estimate the selective advantage of SARS-CoV-2 variants using proportions of given variants in sequenced data.
+\vspace{0.1in} % Vertical skip between sender/receiver address
 
-   Though these methods are useful, most rely on population genetic models which often assume constant growth advantages for variants and do not quantify variant transmission dynamics directly due to several simplifying implicit assumptions.
-   This is complicated by the fact that various biological, social, and political phenomena such as immune escape, population structure, and non-pharmaceutical intervention can contribute to changing fitness landscapes for respiratory viruses.
-   Understanding this variation in growth advantages over time and across locations is therefore important for understanding both the evolution and transmission dynamics of SARS-CoV-2 more generally.
+\begin{tabular}{@{} l}
+  \today
+\end{tabular}
 
-   In order to address how variant growth advantages differ over time and between locations, we develop a model of variant dynamics where variant frequencies are determined directly by a transmission model.
-   This allows us to determine a growth advantage for variants at the level of the time-varying effective reproduction number and estimate absolute growth rates for each variant.
-   We apply this model to jointly estimate the variant-specific effective reproductive numbers, growth advantages, and frequencies in 34 US states for 8 SARS-CoV-2 variants.
-   We show that variant growth advantages are relatively consistent between states with Omicron exhibiting the highest variation between states and there is strong evidence for temporal variation in variant growth advantages.
+\vspace{0.1in} % Vertical skip between receive address and letter opening
 
-   Further, we relate the observed variant incidence and growth advantages to estimates of past exposure and vaccination as a way to highlight various mechanisms which may underlie heterogeneity in variant growth advantages.
-   Our results suggest that the inclusion of factors relating population immunity and exposure may be useful for further quantification and explanation of SARS-CoV-2 variant dynamics and epidemic potential.
-   As SARS-CoV-2 continues to evolve in a population with increasingly complex exposure histories, it will become important to tie in population-level estimates of immunity and infection to estimate and predict the fitness of emerging SARS-CoV-2 variants in this environment.
-   This suggests that future approaches for estimating and predicting variant growth advantages can benefit from a mechanistic representation of transmission and relative fitness.
+Dear Editors,
 
-   \mfc{Should we add a sentence here mentioning that we've continued to use this model over the course of the last 9 months to make weekly nowcasts-forecasts?}
+\medskip % Vertical skip between letter opening and letter body
 
-   This manuscript is relevant to a general audience including evolutionary biologists, infectious disease researchers, computational biologists.
-   For this reason, we would appreciate your consideration for publication in \textit{PNAS}.
-\end{newlfm}
+Please find attached our manuscript entitled ``SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers''.
+We would be grateful if you considered it for publication in \textit{PNAS}.
+
+The COVID-19 pandemic has been characterized by waves of infection driven by the emergence of SARS-CoV-2 variants.
+With the continued transmission and evolution of SARS-CoV-2, there is an increased need to monitor the transmission of individual genetic variants and their dynamics.
+This has led to development of several models which estimate the selective advantage of SARS-CoV-2 variants using proportions of given variants in sequenced data.
+
+Though these methods are useful, most rely on population genetic models which often assume constant growth advantages for variants and do not quantify variant transmission dynamics directly due to several simplifying implicit assumptions.
+This is complicated by the fact that various biological, social, and political phenomena such as immune escape, population structure, and non-pharmaceutical intervention can contribute to changing fitness landscapes for respiratory viruses.
+Understanding this variation in growth advantages over time and across locations is therefore important for understanding both the evolution and transmission dynamics of SARS-CoV-2 more generally.
+
+In order to address how variant growth advantages differ over time and between locations, we develop a model of variant dynamics where variant frequencies are determined directly by a transmission model.
+This allows us to determine a growth advantage for variants at the level of the time-varying effective reproduction number and estimate absolute growth rates for each variant.
+We apply this model to jointly estimate the variant-specific effective reproductive numbers, growth advantages, and frequencies in 34 US states for 8 SARS-CoV-2 variants.
+We show that variant growth advantages are relatively consistent between states with Omicron exhibiting the highest variation between states and there is strong evidence for temporal variation in variant growth advantages.
+
+Further, we relate the observed variant incidence and growth advantages to estimates of past exposure and vaccination as a way to highlight various mechanisms which may underlie heterogeneity in variant growth advantages.
+Our results suggest that the inclusion of factors relating population immunity and exposure may be useful for further quantification and explanation of SARS-CoV-2 variant dynamics and epidemic potential.
+As SARS-CoV-2 continues to evolve in a population with increasingly complex exposure histories, it will become important to tie in population-level estimates of immunity and infection to estimate and predict the fitness of emerging SARS-CoV-2 variants in this environment.
+This suggests that future approaches for estimating and predicting variant growth advantages can benefit from a mechanistic representation of transmission and relative fitness.
+
+\mfc{Should we add a sentence here mentioning that we've continued to use this model over the course of the last 9 months to make weekly nowcasts-forecasts?}
+
+This manuscript is relevant to a general audience including evolutionary biologists, infectious disease researchers, computational biologists.
+For this reason, we would appreciate your consideration for publication in \textit{PNAS}.
+
+\vspace{0.3in} % Vertical skip between letter closing and signature start
+
+Sincerely, \newline
+\vspace{0.05in} \newline
+Marlin Figgins \newline
+PhD Candidate \newline
+Department of Applied Mathematics, University of Washington \newline
+Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center
 
 \end{document}
