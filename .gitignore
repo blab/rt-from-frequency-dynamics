@@ -33,8 +33,9 @@ environment*
 *.cb2
 .*.lb
 
-# Keep final manuscript PDF from being versioned
+# Keep final manuscript PDF and cover letter PDF from being versioned
 rt-from-frequency-dynamics.pdf
+cover-letter.pdf
 
 ## Intermediate documents:
 *.dvi
