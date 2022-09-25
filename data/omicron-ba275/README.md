@@ -1,6 +1,6 @@
 ## Omicron BA.2.75 dataset
 
-This dataset only includes countries with >100 Omicron clade 22D / lineage BA.2.75 sequences.
+This dataset only includes countries with >150 Omicron clade 22D / lineage BA.2.75 sequences + lineage BQ.1 sequences.
 
 Data preparation followed:
 
