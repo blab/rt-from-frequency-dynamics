@@ -15,6 +15,11 @@ gisaid_metadata.tsv
 gisaid_metadata_pruned.tsv
 gisaid_metadata_filtered.tsv
 sfs_counts.csv
+data/pango-countries/output/
+data/pango-countries/sars-cov-2/
+data/pango-countries/sars-cov-2-21L/
+data/pango-countries/pango_consensus_sequences.fasta
+data/pango-countries/pango_consensus_sequences.fasta.zstd
 
 # Protect environment variables
 environment*
