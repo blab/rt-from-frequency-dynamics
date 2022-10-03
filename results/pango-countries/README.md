@@ -10,9 +10,9 @@ The following are posterior estimate from the growth advantage random walk (GARW
 
 ![](figures/pango-countries_variant-rt-listplot.png)
 
-##### Reproductive number _Rt_ at present for top 5 fast growing Pango lineages
+##### Frequency and reproductive number _Rt_ at present for top 5 growing Pango lineages
 
-![](figures/pango-countries_variant-rt-table.png)
+![](figures/pango-countries_variant-rt-top.png)
 
 ##### Variant-specific daily case count on log y axis
 
