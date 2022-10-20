@@ -43,12 +43,12 @@ This will generate the file `output/nextclade.tsv` containing columns `Nextclade
 
 7. Prune this file to relevant columns:
 ```
-tsv-select -H -f seqName,clade,Nextclade_pango,partiallyAliased,immune_escape,ace2_binding output/nextclade.tsv > output/nextclade_escape_scores.tsv
+tsv-select -H -f seqName,clade,Nextclade_pango,partiallyAliased output/nextclade.tsv > output/nextclade_pruned.tsv
 ```
 
 8. Prune this file to only relevant rows:
 ```
-tsv-filter -H --str-ne clade:outgroup output/nextclade_escape_scores.tsv > pango_aliasing.tsv
+tsv-filter -H --str-ne clade:outgroup output/nextclade_pruned.tsv > pango_aliasing.tsv
 ```
 
 9. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `pango-countries_data-prep.nb`. This results in the file `pango_location-variant-sequence-counts.tsv` versioned here. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
