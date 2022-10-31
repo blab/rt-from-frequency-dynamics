@@ -1,6 +1,4 @@
 date	location	variant	sequences
-2022-05-31	Australia	other	1
-2022-06-01	Australia	other	1
 2022-06-02	Australia	other	1
 2022-06-03	Australia	other	1
 2022-06-05	Australia	other	1
@@ -30,9 +28,9 @@ date	location	variant	sequences
 2022-10-11	Australia	other	2
 2022-10-12	Australia	other	1
 2022-10-13	Australia	other	1
-2022-05-30	Australia	Omicron 21L	378
-2022-05-31	Australia	Omicron 21L	450
-2022-06-01	Australia	Omicron 21L	342
+2022-10-14	Australia	other	1
+2022-10-15	Australia	other	1
+2022-10-17	Australia	other	1
 2022-06-02	Australia	Omicron 21L	353
 2022-06-03	Australia	Omicron 21L	257
 2022-06-04	Australia	Omicron 21L	165
@@ -149,7 +147,7 @@ date	location	variant	sequences
 2022-09-23	Australia	Omicron 21L	7
 2022-09-24	Australia	Omicron 21L	3
 2022-09-25	Australia	Omicron 21L	8
-2022-09-26	Australia	Omicron 21L	9
+2022-09-26	Australia	Omicron 21L	10
 2022-09-27	Australia	Omicron 21L	12
 2022-09-28	Australia	Omicron 21L	5
 2022-09-29	Australia	Omicron 21L	10
@@ -166,10 +164,10 @@ date	location	variant	sequences
 2022-10-10	Australia	Omicron 21L	13
 2022-10-11	Australia	Omicron 21L	3
 2022-10-12	Australia	Omicron 21L	12
-2022-10-13	Australia	Omicron 21L	2
-2022-05-30	Australia	Omicron 22A	23
-2022-05-31	Australia	Omicron 22A	29
-2022-06-01	Australia	Omicron 22A	22
+2022-10-13	Australia	Omicron 21L	3
+2022-10-15	Australia	Omicron 21L	3
+2022-10-16	Australia	Omicron 21L	3
+2022-10-17	Australia	Omicron 21L	8
 2022-06-02	Australia	Omicron 22A	29
 2022-06-03	Australia	Omicron 22A	25
 2022-06-04	Australia	Omicron 22A	12
@@ -288,7 +286,7 @@ date	location	variant	sequences
 2022-09-25	Australia	Omicron 22A	15
 2022-09-26	Australia	Omicron 22A	15
 2022-09-27	Australia	Omicron 22A	13
-2022-09-28	Australia	Omicron 22A	12
+2022-09-28	Australia	Omicron 22A	13
 2022-09-29	Australia	Omicron 22A	13
 2022-09-30	Australia	Omicron 22A	5
 2022-10-01	Australia	Omicron 22A	3
@@ -300,13 +298,13 @@ date	location	variant	sequences
 2022-10-08	Australia	Omicron 22A	5
 2022-10-09	Australia	Omicron 22A	13
 2022-10-10	Australia	Omicron 22A	11
-2022-10-11	Australia	Omicron 22A	14
-2022-10-12	Australia	Omicron 22A	16
-2022-10-13	Australia	Omicron 22A	6
-2022-10-14	Australia	Omicron 22A	6
-2022-05-30	Australia	Omicron 22B	40
-2022-05-31	Australia	Omicron 22B	48
-2022-06-01	Australia	Omicron 22B	23
+2022-10-11	Australia	Omicron 22A	15
+2022-10-12	Australia	Omicron 22A	22
+2022-10-13	Australia	Omicron 22A	10
+2022-10-14	Australia	Omicron 22A	13
+2022-10-15	Australia	Omicron 22A	14
+2022-10-16	Australia	Omicron 22A	12
+2022-10-17	Australia	Omicron 22A	13
 2022-06-02	Australia	Omicron 22B	53
 2022-06-03	Australia	Omicron 22B	44
 2022-06-04	Australia	Omicron 22B	36
@@ -384,7 +382,7 @@ date	location	variant	sequences
 2022-08-15	Australia	Omicron 22B	465
 2022-08-16	Australia	Omicron 22B	278
 2022-08-17	Australia	Omicron 22B	236
-2022-08-18	Australia	Omicron 22B	238
+2022-08-18	Australia	Omicron 22B	239
 2022-08-19	Australia	Omicron 22B	163
 2022-08-20	Australia	Omicron 22B	172
 2022-08-21	Australia	Omicron 22B	194
@@ -416,35 +414,35 @@ date	location	variant	sequences
 2022-09-16	Australia	Omicron 22B	132
 2022-09-17	Australia	Omicron 22B	93
 2022-09-18	Australia	Omicron 22B	142
-2022-09-19	Australia	Omicron 22B	248
+2022-09-19	Australia	Omicron 22B	249
 2022-09-20	Australia	Omicron 22B	207
 2022-09-21	Australia	Omicron 22B	173
 2022-09-22	Australia	Omicron 22B	113
 2022-09-23	Australia	Omicron 22B	154
 2022-09-24	Australia	Omicron 22B	101
 2022-09-25	Australia	Omicron 22B	190
-2022-09-26	Australia	Omicron 22B	265
-2022-09-27	Australia	Omicron 22B	163
-2022-09-28	Australia	Omicron 22B	190
-2022-09-29	Australia	Omicron 22B	143
+2022-09-26	Australia	Omicron 22B	266
+2022-09-27	Australia	Omicron 22B	164
+2022-09-28	Australia	Omicron 22B	192
+2022-09-29	Australia	Omicron 22B	144
 2022-09-30	Australia	Omicron 22B	106
-2022-10-01	Australia	Omicron 22B	72
+2022-10-01	Australia	Omicron 22B	73
 2022-10-02	Australia	Omicron 22B	104
-2022-10-03	Australia	Omicron 22B	309
-2022-10-04	Australia	Omicron 22B	306
+2022-10-03	Australia	Omicron 22B	311
+2022-10-04	Australia	Omicron 22B	307
 2022-10-05	Australia	Omicron 22B	146
 2022-10-06	Australia	Omicron 22B	145
-2022-10-07	Australia	Omicron 22B	61
-2022-10-08	Australia	Omicron 22B	83
-2022-10-09	Australia	Omicron 22B	85
-2022-10-10	Australia	Omicron 22B	202
-2022-10-11	Australia	Omicron 22B	127
-2022-10-12	Australia	Omicron 22B	149
-2022-10-13	Australia	Omicron 22B	52
-2022-10-14	Australia	Omicron 22B	33
-2022-05-30	Australia	Omicron 22C	18
-2022-05-31	Australia	Omicron 22C	21
-2022-06-01	Australia	Omicron 22C	14
+2022-10-07	Australia	Omicron 22B	62
+2022-10-08	Australia	Omicron 22B	84
+2022-10-09	Australia	Omicron 22B	86
+2022-10-10	Australia	Omicron 22B	204
+2022-10-11	Australia	Omicron 22B	131
+2022-10-12	Australia	Omicron 22B	270
+2022-10-13	Australia	Omicron 22B	89
+2022-10-14	Australia	Omicron 22B	169
+2022-10-15	Australia	Omicron 22B	152
+2022-10-16	Australia	Omicron 22B	101
+2022-10-17	Australia	Omicron 22B	166
 2022-06-02	Australia	Omicron 22C	20
 2022-06-03	Australia	Omicron 22C	14
 2022-06-04	Australia	Omicron 22C	6
@@ -613,10 +611,13 @@ date	location	variant	sequences
 2022-10-08	Australia	Omicron 22D	4
 2022-10-09	Australia	Omicron 22D	12
 2022-10-10	Australia	Omicron 22D	18
-2022-10-11	Australia	Omicron 22D	14
-2022-10-12	Australia	Omicron 22D	40
+2022-10-11	Australia	Omicron 22D	16
+2022-10-12	Australia	Omicron 22D	41
 2022-10-13	Australia	Omicron 22D	5
-2022-10-14	Australia	Omicron 22D	3
+2022-10-14	Australia	Omicron 22D	10
+2022-10-15	Australia	Omicron 22D	6
+2022-10-16	Australia	Omicron 22D	16
+2022-10-17	Australia	Omicron 22D	27
 2022-08-05	Australia	Omicron BA.2.75.2	1
 2022-08-06	Australia	Omicron BA.2.75.2	1
 2022-08-09	Australia	Omicron BA.2.75.2	1
@@ -672,6 +673,9 @@ date	location	variant	sequences
 2022-10-12	Australia	Omicron BA.2.75.2	13
 2022-10-13	Australia	Omicron BA.2.75.2	3
 2022-10-14	Australia	Omicron BA.2.75.2	2
+2022-10-15	Australia	Omicron BA.2.75.2	1
+2022-10-16	Australia	Omicron BA.2.75.2	2
+2022-10-17	Australia	Omicron BA.2.75.2	2
 2022-08-26	Australia	Omicron BQ.1	1
 2022-09-02	Australia	Omicron BQ.1	1
 2022-09-04	Australia	Omicron BQ.1	1
@@ -701,10 +705,13 @@ date	location	variant	sequences
 2022-10-08	Australia	Omicron BQ.1	6
 2022-10-09	Australia	Omicron BQ.1	3
 2022-10-10	Australia	Omicron BQ.1	19
-2022-10-11	Australia	Omicron BQ.1	12
-2022-10-12	Australia	Omicron BQ.1	11
-2022-10-13	Australia	Omicron BQ.1	7
-2022-10-14	Australia	Omicron BQ.1	7
+2022-10-11	Australia	Omicron BQ.1	15
+2022-10-12	Australia	Omicron BQ.1	18
+2022-10-13	Australia	Omicron BQ.1	10
+2022-10-14	Australia	Omicron BQ.1	11
+2022-10-15	Australia	Omicron BQ.1	20
+2022-10-16	Australia	Omicron BQ.1	11
+2022-10-17	Australia	Omicron BQ.1	26
 2022-09-13	Australia	Omicron XBB	1
 2022-09-16	Australia	Omicron XBB	1
 2022-09-17	Australia	Omicron XBB	1
@@ -713,10 +720,11 @@ date	location	variant	sequences
 2022-09-24	Australia	Omicron XBB	1
 2022-09-25	Australia	Omicron XBB	4
 2022-09-26	Australia	Omicron XBB	3
-2022-09-28	Australia	Omicron XBB	2
+2022-09-28	Australia	Omicron XBB	3
 2022-09-29	Australia	Omicron XBB	4
+2022-10-01	Australia	Omicron XBB	1
 2022-10-02	Australia	Omicron XBB	2
-2022-10-03	Australia	Omicron XBB	4
+2022-10-03	Australia	Omicron XBB	5
 2022-10-04	Australia	Omicron XBB	6
 2022-10-05	Australia	Omicron XBB	5
 2022-10-06	Australia	Omicron XBB	1
@@ -725,10 +733,12 @@ date	location	variant	sequences
 2022-10-09	Australia	Omicron XBB	1
 2022-10-10	Australia	Omicron XBB	8
 2022-10-11	Australia	Omicron XBB	7
-2022-10-12	Australia	Omicron XBB	15
-2022-10-13	Australia	Omicron XBB	2
-2022-10-14	Australia	Omicron XBB	1
-2022-05-30	Belgium	other	3
+2022-10-12	Australia	Omicron XBB	17
+2022-10-13	Australia	Omicron XBB	3
+2022-10-14	Australia	Omicron XBB	8
+2022-10-15	Australia	Omicron XBB	3
+2022-10-16	Australia	Omicron XBB	13
+2022-10-17	Australia	Omicron XBB	12
 2022-06-04	Belgium	other	1
 2022-06-06	Belgium	other	1
 2022-06-09	Belgium	other	2
@@ -793,9 +803,6 @@ date	location	variant	sequences
 2022-09-27	Belgium	other	1
 2022-10-02	Belgium	other	1
 2022-10-08	Belgium	other	1
-2022-05-30	Belgium	Omicron 21L	133
-2022-05-31	Belgium	Omicron 21L	79
-2022-06-01	Belgium	Omicron 21L	66
 2022-06-02	Belgium	Omicron 21L	121
 2022-06-03	Belgium	Omicron 21L	53
 2022-06-04	Belgium	Omicron 21L	35
@@ -875,9 +882,6 @@ date	location	variant	sequences
 2022-10-08	Belgium	Omicron 21L	1
 2022-10-10	Belgium	Omicron 21L	1
 2022-10-11	Belgium	Omicron 21L	1
-2022-05-30	Belgium	Omicron 22A	12
-2022-05-31	Belgium	Omicron 22A	11
-2022-06-01	Belgium	Omicron 22A	6
 2022-06-02	Belgium	Omicron 22A	17
 2022-06-03	Belgium	Omicron 22A	4
 2022-06-04	Belgium	Omicron 22A	7
@@ -995,7 +999,7 @@ date	location	variant	sequences
 2022-09-25	Belgium	Omicron 22A	9
 2022-09-26	Belgium	Omicron 22A	5
 2022-09-27	Belgium	Omicron 22A	9
-2022-09-28	Belgium	Omicron 22A	11
+2022-09-28	Belgium	Omicron 22A	14
 2022-09-29	Belgium	Omicron 22A	7
 2022-09-30	Belgium	Omicron 22A	5
 2022-10-01	Belgium	Omicron 22A	6
@@ -1008,13 +1012,13 @@ date	location	variant	sequences
 2022-10-08	Belgium	Omicron 22A	6
 2022-10-09	Belgium	Omicron 22A	5
 2022-10-10	Belgium	Omicron 22A	2
-2022-10-11	Belgium	Omicron 22A	4
+2022-10-11	Belgium	Omicron 22A	5
 2022-10-12	Belgium	Omicron 22A	2
 2022-10-13	Belgium	Omicron 22A	6
-2022-10-14	Belgium	Omicron 22A	2
-2022-05-30	Belgium	Omicron 22B	43
-2022-05-31	Belgium	Omicron 22B	42
-2022-06-01	Belgium	Omicron 22B	36
+2022-10-14	Belgium	Omicron 22A	3
+2022-10-15	Belgium	Omicron 22A	5
+2022-10-16	Belgium	Omicron 22A	1
+2022-10-17	Belgium	Omicron 22A	4
 2022-06-02	Belgium	Omicron 22B	73
 2022-06-03	Belgium	Omicron 22B	35
 2022-06-04	Belgium	Omicron 22B	29
@@ -1132,8 +1136,8 @@ date	location	variant	sequences
 2022-09-24	Belgium	Omicron 22B	69
 2022-09-25	Belgium	Omicron 22B	77
 2022-09-26	Belgium	Omicron 22B	182
-2022-09-27	Belgium	Omicron 22B	127
-2022-09-28	Belgium	Omicron 22B	182
+2022-09-27	Belgium	Omicron 22B	132
+2022-09-28	Belgium	Omicron 22B	187
 2022-09-29	Belgium	Omicron 22B	116
 2022-09-30	Belgium	Omicron 22B	92
 2022-10-01	Belgium	Omicron 22B	148
@@ -1142,17 +1146,17 @@ date	location	variant	sequences
 2022-10-04	Belgium	Omicron 22B	111
 2022-10-05	Belgium	Omicron 22B	157
 2022-10-06	Belgium	Omicron 22B	148
-2022-10-07	Belgium	Omicron 22B	85
+2022-10-07	Belgium	Omicron 22B	86
 2022-10-08	Belgium	Omicron 22B	59
 2022-10-09	Belgium	Omicron 22B	72
 2022-10-10	Belgium	Omicron 22B	95
-2022-10-11	Belgium	Omicron 22B	117
-2022-10-12	Belgium	Omicron 22B	42
+2022-10-11	Belgium	Omicron 22B	120
+2022-10-12	Belgium	Omicron 22B	44
 2022-10-13	Belgium	Omicron 22B	88
-2022-10-14	Belgium	Omicron 22B	21
-2022-05-30	Belgium	Omicron 22C	15
-2022-05-31	Belgium	Omicron 22C	9
-2022-06-01	Belgium	Omicron 22C	5
+2022-10-14	Belgium	Omicron 22B	36
+2022-10-15	Belgium	Omicron 22B	66
+2022-10-16	Belgium	Omicron 22B	12
+2022-10-17	Belgium	Omicron 22B	50
 2022-06-02	Belgium	Omicron 22C	12
 2022-06-03	Belgium	Omicron 22C	4
 2022-06-04	Belgium	Omicron 22C	4
@@ -1276,6 +1280,7 @@ date	location	variant	sequences
 2022-10-12	Belgium	Omicron 22D	3
 2022-10-13	Belgium	Omicron 22D	5
 2022-10-14	Belgium	Omicron 22D	1
+2022-10-17	Belgium	Omicron 22D	4
 2022-08-01	Belgium	Omicron BA.2.75.2	1
 2022-08-03	Belgium	Omicron BA.2.75.2	1
 2022-08-04	Belgium	Omicron BA.2.75.2	1
@@ -1301,6 +1306,7 @@ date	location	variant	sequences
 2022-10-05	Belgium	Omicron BA.2.75.2	2
 2022-10-10	Belgium	Omicron BA.2.75.2	1
 2022-10-14	Belgium	Omicron BA.2.75.2	1
+2022-10-15	Belgium	Omicron BA.2.75.2	1
 2022-08-20	Belgium	Omicron BQ.1	1
 2022-08-24	Belgium	Omicron BQ.1	1
 2022-09-01	Belgium	Omicron BQ.1	1
@@ -1340,11 +1346,14 @@ date	location	variant	sequences
 2022-10-11	Belgium	Omicron BQ.1	22
 2022-10-12	Belgium	Omicron BQ.1	4
 2022-10-13	Belgium	Omicron BQ.1	12
-2022-10-14	Belgium	Omicron BQ.1	12
+2022-10-14	Belgium	Omicron BQ.1	14
+2022-10-15	Belgium	Omicron BQ.1	27
+2022-10-16	Belgium	Omicron BQ.1	5
+2022-10-17	Belgium	Omicron BQ.1	14
 2022-09-21	Belgium	Omicron XBB	2
 2022-09-22	Belgium	Omicron XBB	1
 2022-09-25	Belgium	Omicron XBB	1
-2022-09-28	Belgium	Omicron XBB	1
+2022-09-28	Belgium	Omicron XBB	2
 2022-10-02	Belgium	Omicron XBB	1
 2022-10-03	Belgium	Omicron XBB	2
 2022-10-04	Belgium	Omicron XBB	3
@@ -1352,9 +1361,6 @@ date	location	variant	sequences
 2022-10-09	Belgium	Omicron XBB	1
 2022-10-10	Belgium	Omicron XBB	2
 2022-10-13	Belgium	Omicron XBB	1
-2022-05-30	Canada	other	14
-2022-05-31	Canada	other	6
-2022-06-01	Canada	other	4
 2022-06-02	Canada	other	5
 2022-06-03	Canada	other	3
 2022-06-04	Canada	other	8
@@ -1444,11 +1450,8 @@ date	location	variant	sequences
 2022-10-04	Canada	other	1
 2022-10-05	Canada	other	1
 2022-10-07	Canada	other	1
-2022-10-10	Canada	other	1
+2022-10-10	Canada	other	2
 2022-10-12	Canada	other	1
-2022-05-30	Canada	Omicron 21L	415
-2022-05-31	Canada	Omicron 21L	173
-2022-06-01	Canada	Omicron 21L	146
 2022-06-02	Canada	Omicron 21L	139
 2022-06-03	Canada	Omicron 21L	117
 2022-06-04	Canada	Omicron 21L	118
@@ -1537,15 +1540,18 @@ date	location	variant	sequences
 2022-08-29	Canada	Omicron 21L	3
 2022-08-30	Canada	Omicron 21L	2
 2022-08-31	Canada	Omicron 21L	1
+2022-09-01	Canada	Omicron 21L	1
 2022-09-05	Canada	Omicron 21L	1
 2022-09-09	Canada	Omicron 21L	1
-2022-09-12	Canada	Omicron 21L	8
-2022-09-13	Canada	Omicron 21L	4
-2022-09-15	Canada	Omicron 21L	1
+2022-09-12	Canada	Omicron 21L	9
+2022-09-13	Canada	Omicron 21L	5
+2022-09-14	Canada	Omicron 21L	1
+2022-09-15	Canada	Omicron 21L	2
 2022-09-16	Canada	Omicron 21L	3
 2022-09-17	Canada	Omicron 21L	1
 2022-09-19	Canada	Omicron 21L	4
 2022-09-21	Canada	Omicron 21L	2
+2022-09-22	Canada	Omicron 21L	2
 2022-09-24	Canada	Omicron 21L	1
 2022-09-25	Canada	Omicron 21L	1
 2022-09-26	Canada	Omicron 21L	3
@@ -1557,12 +1563,11 @@ date	location	variant	sequences
 2022-10-04	Canada	Omicron 21L	2
 2022-10-05	Canada	Omicron 21L	1
 2022-10-06	Canada	Omicron 21L	2
-2022-10-08	Canada	Omicron 21L	2
-2022-10-11	Canada	Omicron 21L	4
+2022-10-08	Canada	Omicron 21L	3
+2022-10-10	Canada	Omicron 21L	1
+2022-10-11	Canada	Omicron 21L	5
 2022-10-14	Canada	Omicron 21L	1
-2022-05-30	Canada	Omicron 22A	21
-2022-05-31	Canada	Omicron 22A	23
-2022-06-01	Canada	Omicron 22A	11
+2022-10-17	Canada	Omicron 21L	1
 2022-06-02	Canada	Omicron 22A	15
 2022-06-03	Canada	Omicron 22A	15
 2022-06-04	Canada	Omicron 22A	8
@@ -1648,38 +1653,38 @@ date	location	variant	sequences
 2022-08-23	Canada	Omicron 22A	54
 2022-08-24	Canada	Omicron 22A	37
 2022-08-25	Canada	Omicron 22A	31
-2022-08-26	Canada	Omicron 22A	31
-2022-08-27	Canada	Omicron 22A	17
+2022-08-26	Canada	Omicron 22A	33
+2022-08-27	Canada	Omicron 22A	18
 2022-08-28	Canada	Omicron 22A	26
 2022-08-29	Canada	Omicron 22A	111
 2022-08-30	Canada	Omicron 22A	52
-2022-08-31	Canada	Omicron 22A	30
+2022-08-31	Canada	Omicron 22A	31
 2022-09-01	Canada	Omicron 22A	20
-2022-09-02	Canada	Omicron 22A	22
+2022-09-02	Canada	Omicron 22A	23
 2022-09-03	Canada	Omicron 22A	20
-2022-09-04	Canada	Omicron 22A	54
-2022-09-05	Canada	Omicron 22A	60
-2022-09-06	Canada	Omicron 22A	49
-2022-09-07	Canada	Omicron 22A	29
+2022-09-04	Canada	Omicron 22A	55
+2022-09-05	Canada	Omicron 22A	61
+2022-09-06	Canada	Omicron 22A	51
+2022-09-07	Canada	Omicron 22A	30
 2022-09-08	Canada	Omicron 22A	17
 2022-09-09	Canada	Omicron 22A	21
-2022-09-10	Canada	Omicron 22A	14
+2022-09-10	Canada	Omicron 22A	15
 2022-09-11	Canada	Omicron 22A	53
-2022-09-12	Canada	Omicron 22A	112
-2022-09-13	Canada	Omicron 22A	47
-2022-09-14	Canada	Omicron 22A	28
-2022-09-15	Canada	Omicron 22A	17
-2022-09-16	Canada	Omicron 22A	27
+2022-09-12	Canada	Omicron 22A	114
+2022-09-13	Canada	Omicron 22A	49
+2022-09-14	Canada	Omicron 22A	29
+2022-09-15	Canada	Omicron 22A	18
+2022-09-16	Canada	Omicron 22A	29
 2022-09-17	Canada	Omicron 22A	13
-2022-09-18	Canada	Omicron 22A	52
-2022-09-19	Canada	Omicron 22A	112
-2022-09-20	Canada	Omicron 22A	40
+2022-09-18	Canada	Omicron 22A	53
+2022-09-19	Canada	Omicron 22A	117
+2022-09-20	Canada	Omicron 22A	44
 2022-09-21	Canada	Omicron 22A	16
 2022-09-22	Canada	Omicron 22A	19
-2022-09-23	Canada	Omicron 22A	19
-2022-09-24	Canada	Omicron 22A	9
-2022-09-25	Canada	Omicron 22A	45
-2022-09-26	Canada	Omicron 22A	100
+2022-09-23	Canada	Omicron 22A	22
+2022-09-24	Canada	Omicron 22A	12
+2022-09-25	Canada	Omicron 22A	47
+2022-09-26	Canada	Omicron 22A	101
 2022-09-27	Canada	Omicron 22A	42
 2022-09-28	Canada	Omicron 22A	22
 2022-09-29	Canada	Omicron 22A	41
@@ -1688,19 +1693,19 @@ date	location	variant	sequences
 2022-10-02	Canada	Omicron 22A	46
 2022-10-03	Canada	Omicron 22A	81
 2022-10-04	Canada	Omicron 22A	31
-2022-10-05	Canada	Omicron 22A	26
-2022-10-06	Canada	Omicron 22A	31
+2022-10-05	Canada	Omicron 22A	27
+2022-10-06	Canada	Omicron 22A	33
 2022-10-07	Canada	Omicron 22A	19
-2022-10-08	Canada	Omicron 22A	13
-2022-10-09	Canada	Omicron 22A	13
-2022-10-10	Canada	Omicron 22A	26
-2022-10-11	Canada	Omicron 22A	33
+2022-10-08	Canada	Omicron 22A	14
+2022-10-09	Canada	Omicron 22A	28
+2022-10-10	Canada	Omicron 22A	63
+2022-10-11	Canada	Omicron 22A	45
 2022-10-12	Canada	Omicron 22A	11
 2022-10-13	Canada	Omicron 22A	11
-2022-10-14	Canada	Omicron 22A	13
-2022-05-30	Canada	Omicron 22B	47
-2022-05-31	Canada	Omicron 22B	35
-2022-06-01	Canada	Omicron 22B	16
+2022-10-14	Canada	Omicron 22A	14
+2022-10-15	Canada	Omicron 22A	3
+2022-10-16	Canada	Omicron 22A	7
+2022-10-17	Canada	Omicron 22A	27
 2022-06-02	Canada	Omicron 22B	28
 2022-06-03	Canada	Omicron 22B	28
 2022-06-04	Canada	Omicron 22B	48
@@ -1785,60 +1790,60 @@ date	location	variant	sequences
 2022-08-22	Canada	Omicron 22B	867
 2022-08-23	Canada	Omicron 22B	489
 2022-08-24	Canada	Omicron 22B	458
-2022-08-25	Canada	Omicron 22B	451
-2022-08-26	Canada	Omicron 22B	453
-2022-08-27	Canada	Omicron 22B	313
-2022-08-28	Canada	Omicron 22B	345
-2022-08-29	Canada	Omicron 22B	780
+2022-08-25	Canada	Omicron 22B	452
+2022-08-26	Canada	Omicron 22B	458
+2022-08-27	Canada	Omicron 22B	314
+2022-08-28	Canada	Omicron 22B	349
+2022-08-29	Canada	Omicron 22B	781
 2022-08-30	Canada	Omicron 22B	544
-2022-08-31	Canada	Omicron 22B	422
-2022-09-01	Canada	Omicron 22B	352
+2022-08-31	Canada	Omicron 22B	423
+2022-09-01	Canada	Omicron 22B	354
 2022-09-02	Canada	Omicron 22B	374
-2022-09-03	Canada	Omicron 22B	226
-2022-09-04	Canada	Omicron 22B	377
-2022-09-05	Canada	Omicron 22B	421
-2022-09-06	Canada	Omicron 22B	439
-2022-09-07	Canada	Omicron 22B	338
-2022-09-08	Canada	Omicron 22B	263
-2022-09-09	Canada	Omicron 22B	234
-2022-09-10	Canada	Omicron 22B	194
-2022-09-11	Canada	Omicron 22B	332
-2022-09-12	Canada	Omicron 22B	629
-2022-09-13	Canada	Omicron 22B	365
-2022-09-14	Canada	Omicron 22B	280
-2022-09-15	Canada	Omicron 22B	241
-2022-09-16	Canada	Omicron 22B	273
-2022-09-17	Canada	Omicron 22B	185
-2022-09-18	Canada	Omicron 22B	394
-2022-09-19	Canada	Omicron 22B	640
-2022-09-20	Canada	Omicron 22B	402
-2022-09-21	Canada	Omicron 22B	370
-2022-09-22	Canada	Omicron 22B	343
-2022-09-23	Canada	Omicron 22B	271
-2022-09-24	Canada	Omicron 22B	200
-2022-09-25	Canada	Omicron 22B	316
-2022-09-26	Canada	Omicron 22B	616
-2022-09-27	Canada	Omicron 22B	329
-2022-09-28	Canada	Omicron 22B	330
-2022-09-29	Canada	Omicron 22B	303
-2022-09-30	Canada	Omicron 22B	213
-2022-10-01	Canada	Omicron 22B	111
-2022-10-02	Canada	Omicron 22B	273
-2022-10-03	Canada	Omicron 22B	586
-2022-10-04	Canada	Omicron 22B	302
-2022-10-05	Canada	Omicron 22B	309
-2022-10-06	Canada	Omicron 22B	318
-2022-10-07	Canada	Omicron 22B	297
-2022-10-08	Canada	Omicron 22B	117
-2022-10-09	Canada	Omicron 22B	116
-2022-10-10	Canada	Omicron 22B	225
-2022-10-11	Canada	Omicron 22B	423
-2022-10-12	Canada	Omicron 22B	274
-2022-10-13	Canada	Omicron 22B	255
-2022-10-14	Canada	Omicron 22B	169
-2022-05-30	Canada	Omicron 22C	269
-2022-05-31	Canada	Omicron 22C	205
-2022-06-01	Canada	Omicron 22C	171
+2022-09-03	Canada	Omicron 22B	231
+2022-09-04	Canada	Omicron 22B	383
+2022-09-05	Canada	Omicron 22B	430
+2022-09-06	Canada	Omicron 22B	452
+2022-09-07	Canada	Omicron 22B	343
+2022-09-08	Canada	Omicron 22B	269
+2022-09-09	Canada	Omicron 22B	241
+2022-09-10	Canada	Omicron 22B	208
+2022-09-11	Canada	Omicron 22B	340
+2022-09-12	Canada	Omicron 22B	650
+2022-09-13	Canada	Omicron 22B	392
+2022-09-14	Canada	Omicron 22B	303
+2022-09-15	Canada	Omicron 22B	258
+2022-09-16	Canada	Omicron 22B	288
+2022-09-17	Canada	Omicron 22B	218
+2022-09-18	Canada	Omicron 22B	416
+2022-09-19	Canada	Omicron 22B	682
+2022-09-20	Canada	Omicron 22B	419
+2022-09-21	Canada	Omicron 22B	405
+2022-09-22	Canada	Omicron 22B	363
+2022-09-23	Canada	Omicron 22B	298
+2022-09-24	Canada	Omicron 22B	222
+2022-09-25	Canada	Omicron 22B	344
+2022-09-26	Canada	Omicron 22B	662
+2022-09-27	Canada	Omicron 22B	347
+2022-09-28	Canada	Omicron 22B	336
+2022-09-29	Canada	Omicron 22B	314
+2022-09-30	Canada	Omicron 22B	215
+2022-10-01	Canada	Omicron 22B	113
+2022-10-02	Canada	Omicron 22B	274
+2022-10-03	Canada	Omicron 22B	596
+2022-10-04	Canada	Omicron 22B	318
+2022-10-05	Canada	Omicron 22B	325
+2022-10-06	Canada	Omicron 22B	340
+2022-10-07	Canada	Omicron 22B	321
+2022-10-08	Canada	Omicron 22B	129
+2022-10-09	Canada	Omicron 22B	184
+2022-10-10	Canada	Omicron 22B	414
+2022-10-11	Canada	Omicron 22B	492
+2022-10-12	Canada	Omicron 22B	278
+2022-10-13	Canada	Omicron 22B	261
+2022-10-14	Canada	Omicron 22B	176
+2022-10-15	Canada	Omicron 22B	71
+2022-10-16	Canada	Omicron 22B	48
+2022-10-17	Canada	Omicron 22B	101
 2022-06-02	Canada	Omicron 22C	130
 2022-06-03	Canada	Omicron 22C	105
 2022-06-04	Canada	Omicron 22C	144
@@ -1939,7 +1944,6 @@ date	location	variant	sequences
 2022-09-15	Canada	Omicron 22C	3
 2022-09-18	Canada	Omicron 22C	1
 2022-09-26	Canada	Omicron 22C	1
-2022-06-01	Canada	Omicron 22D	1
 2022-06-09	Canada	Omicron 22D	1
 2022-06-11	Canada	Omicron 22D	1
 2022-06-16	Canada	Omicron 22D	1
@@ -2006,31 +2010,32 @@ date	location	variant	sequences
 2022-08-29	Canada	Omicron 22D	10
 2022-08-30	Canada	Omicron 22D	6
 2022-08-31	Canada	Omicron 22D	4
-2022-09-01	Canada	Omicron 22D	6
-2022-09-03	Canada	Omicron 22D	2
+2022-09-01	Canada	Omicron 22D	7
+2022-09-02	Canada	Omicron 22D	1
+2022-09-03	Canada	Omicron 22D	3
 2022-09-04	Canada	Omicron 22D	3
-2022-09-05	Canada	Omicron 22D	5
+2022-09-05	Canada	Omicron 22D	6
 2022-09-06	Canada	Omicron 22D	2
-2022-09-07	Canada	Omicron 22D	4
+2022-09-07	Canada	Omicron 22D	5
 2022-09-08	Canada	Omicron 22D	6
-2022-09-09	Canada	Omicron 22D	3
-2022-09-10	Canada	Omicron 22D	4
+2022-09-09	Canada	Omicron 22D	5
+2022-09-10	Canada	Omicron 22D	5
 2022-09-11	Canada	Omicron 22D	4
-2022-09-12	Canada	Omicron 22D	5
+2022-09-12	Canada	Omicron 22D	6
 2022-09-13	Canada	Omicron 22D	2
 2022-09-14	Canada	Omicron 22D	1
-2022-09-15	Canada	Omicron 22D	3
-2022-09-16	Canada	Omicron 22D	3
-2022-09-17	Canada	Omicron 22D	1
-2022-09-18	Canada	Omicron 22D	2
-2022-09-19	Canada	Omicron 22D	5
-2022-09-20	Canada	Omicron 22D	4
-2022-09-21	Canada	Omicron 22D	1
-2022-09-22	Canada	Omicron 22D	8
-2022-09-23	Canada	Omicron 22D	2
+2022-09-15	Canada	Omicron 22D	5
+2022-09-16	Canada	Omicron 22D	4
+2022-09-17	Canada	Omicron 22D	2
+2022-09-18	Canada	Omicron 22D	4
+2022-09-19	Canada	Omicron 22D	9
+2022-09-20	Canada	Omicron 22D	8
+2022-09-21	Canada	Omicron 22D	2
+2022-09-22	Canada	Omicron 22D	11
+2022-09-23	Canada	Omicron 22D	3
 2022-09-24	Canada	Omicron 22D	1
-2022-09-25	Canada	Omicron 22D	1
-2022-09-26	Canada	Omicron 22D	5
+2022-09-25	Canada	Omicron 22D	2
+2022-09-26	Canada	Omicron 22D	6
 2022-09-27	Canada	Omicron 22D	5
 2022-09-28	Canada	Omicron 22D	1
 2022-09-29	Canada	Omicron 22D	3
@@ -2041,14 +2046,15 @@ date	location	variant	sequences
 2022-10-04	Canada	Omicron 22D	3
 2022-10-05	Canada	Omicron 22D	4
 2022-10-06	Canada	Omicron 22D	5
-2022-10-07	Canada	Omicron 22D	2
+2022-10-07	Canada	Omicron 22D	3
 2022-10-08	Canada	Omicron 22D	3
 2022-10-09	Canada	Omicron 22D	1
-2022-10-10	Canada	Omicron 22D	7
-2022-10-11	Canada	Omicron 22D	6
+2022-10-10	Canada	Omicron 22D	13
+2022-10-11	Canada	Omicron 22D	7
 2022-10-12	Canada	Omicron 22D	5
 2022-10-13	Canada	Omicron 22D	3
 2022-10-14	Canada	Omicron 22D	1
+2022-10-15	Canada	Omicron 22D	1
 2022-08-09	Canada	Omicron BA.2.75.2	1
 2022-08-10	Canada	Omicron BA.2.75.2	3
 2022-08-11	Canada	Omicron BA.2.75.2	2
@@ -2064,7 +2070,7 @@ date	location	variant	sequences
 2022-08-23	Canada	Omicron BA.2.75.2	1
 2022-08-24	Canada	Omicron BA.2.75.2	1
 2022-08-27	Canada	Omicron BA.2.75.2	1
-2022-08-28	Canada	Omicron BA.2.75.2	1
+2022-08-28	Canada	Omicron BA.2.75.2	2
 2022-08-29	Canada	Omicron BA.2.75.2	1
 2022-08-31	Canada	Omicron BA.2.75.2	2
 2022-09-01	Canada	Omicron BA.2.75.2	1
@@ -2076,15 +2082,17 @@ date	location	variant	sequences
 2022-09-10	Canada	Omicron BA.2.75.2	1
 2022-09-11	Canada	Omicron BA.2.75.2	1
 2022-09-12	Canada	Omicron BA.2.75.2	2
-2022-09-15	Canada	Omicron BA.2.75.2	9
+2022-09-13	Canada	Omicron BA.2.75.2	1
+2022-09-15	Canada	Omicron BA.2.75.2	10
 2022-09-16	Canada	Omicron BA.2.75.2	3
-2022-09-17	Canada	Omicron BA.2.75.2	4
+2022-09-17	Canada	Omicron BA.2.75.2	5
 2022-09-18	Canada	Omicron BA.2.75.2	1
-2022-09-19	Canada	Omicron BA.2.75.2	1
+2022-09-19	Canada	Omicron BA.2.75.2	5
 2022-09-21	Canada	Omicron BA.2.75.2	3
+2022-09-22	Canada	Omicron BA.2.75.2	2
 2022-09-23	Canada	Omicron BA.2.75.2	3
-2022-09-24	Canada	Omicron BA.2.75.2	1
-2022-09-25	Canada	Omicron BA.2.75.2	2
+2022-09-24	Canada	Omicron BA.2.75.2	2
+2022-09-25	Canada	Omicron BA.2.75.2	3
 2022-09-26	Canada	Omicron BA.2.75.2	1
 2022-09-27	Canada	Omicron BA.2.75.2	2
 2022-09-28	Canada	Omicron BA.2.75.2	2
@@ -2094,6 +2102,8 @@ date	location	variant	sequences
 2022-10-06	Canada	Omicron BA.2.75.2	1
 2022-10-10	Canada	Omicron BA.2.75.2	2
 2022-10-13	Canada	Omicron BA.2.75.2	2
+2022-10-15	Canada	Omicron BA.2.75.2	1
+2022-10-17	Canada	Omicron BA.2.75.2	1
 2022-08-16	Canada	Omicron BQ.1	1
 2022-08-17	Canada	Omicron BQ.1	2
 2022-08-19	Canada	Omicron BQ.1	2
@@ -2114,51 +2124,56 @@ date	location	variant	sequences
 2022-09-10	Canada	Omicron BQ.1	3
 2022-09-11	Canada	Omicron BQ.1	3
 2022-09-12	Canada	Omicron BQ.1	6
-2022-09-13	Canada	Omicron BQ.1	2
-2022-09-14	Canada	Omicron BQ.1	1
+2022-09-13	Canada	Omicron BQ.1	4
+2022-09-14	Canada	Omicron BQ.1	2
 2022-09-15	Canada	Omicron BQ.1	1
-2022-09-16	Canada	Omicron BQ.1	3
-2022-09-17	Canada	Omicron BQ.1	5
-2022-09-18	Canada	Omicron BQ.1	4
+2022-09-16	Canada	Omicron BQ.1	4
+2022-09-17	Canada	Omicron BQ.1	6
+2022-09-18	Canada	Omicron BQ.1	5
 2022-09-19	Canada	Omicron BQ.1	6
-2022-09-20	Canada	Omicron BQ.1	8
-2022-09-21	Canada	Omicron BQ.1	3
-2022-09-22	Canada	Omicron BQ.1	4
+2022-09-20	Canada	Omicron BQ.1	11
+2022-09-21	Canada	Omicron BQ.1	6
+2022-09-22	Canada	Omicron BQ.1	9
 2022-09-23	Canada	Omicron BQ.1	3
 2022-09-24	Canada	Omicron BQ.1	1
-2022-09-25	Canada	Omicron BQ.1	5
-2022-09-26	Canada	Omicron BQ.1	10
-2022-09-27	Canada	Omicron BQ.1	10
+2022-09-25	Canada	Omicron BQ.1	8
+2022-09-26	Canada	Omicron BQ.1	12
+2022-09-27	Canada	Omicron BQ.1	12
 2022-09-28	Canada	Omicron BQ.1	3
-2022-09-29	Canada	Omicron BQ.1	15
+2022-09-29	Canada	Omicron BQ.1	16
 2022-09-30	Canada	Omicron BQ.1	7
 2022-10-01	Canada	Omicron BQ.1	6
 2022-10-02	Canada	Omicron BQ.1	12
 2022-10-03	Canada	Omicron BQ.1	37
 2022-10-04	Canada	Omicron BQ.1	11
-2022-10-05	Canada	Omicron BQ.1	9
-2022-10-06	Canada	Omicron BQ.1	19
-2022-10-07	Canada	Omicron BQ.1	22
-2022-10-08	Canada	Omicron BQ.1	5
-2022-10-09	Canada	Omicron BQ.1	7
-2022-10-10	Canada	Omicron BQ.1	17
-2022-10-11	Canada	Omicron BQ.1	20
-2022-10-12	Canada	Omicron BQ.1	14
+2022-10-05	Canada	Omicron BQ.1	14
+2022-10-06	Canada	Omicron BQ.1	23
+2022-10-07	Canada	Omicron BQ.1	23
+2022-10-08	Canada	Omicron BQ.1	6
+2022-10-09	Canada	Omicron BQ.1	12
+2022-10-10	Canada	Omicron BQ.1	31
+2022-10-11	Canada	Omicron BQ.1	31
+2022-10-12	Canada	Omicron BQ.1	17
 2022-10-13	Canada	Omicron BQ.1	16
 2022-10-14	Canada	Omicron BQ.1	14
+2022-10-15	Canada	Omicron BQ.1	11
+2022-10-16	Canada	Omicron BQ.1	4
+2022-10-17	Canada	Omicron BQ.1	13
 2022-08-28	Canada	Omicron XBB	1
 2022-08-31	Canada	Omicron XBB	1
 2022-09-11	Canada	Omicron XBB	1
-2022-09-21	Canada	Omicron XBB	1
+2022-09-13	Canada	Omicron XBB	1
+2022-09-21	Canada	Omicron XBB	2
 2022-09-22	Canada	Omicron XBB	2
-2022-09-29	Canada	Omicron XBB	1
+2022-09-23	Canada	Omicron XBB	1
+2022-09-27	Canada	Omicron XBB	1
+2022-09-29	Canada	Omicron XBB	2
 2022-10-01	Canada	Omicron XBB	1
 2022-10-03	Canada	Omicron XBB	2
 2022-10-08	Canada	Omicron XBB	1
 2022-10-11	Canada	Omicron XBB	1
 2022-10-12	Canada	Omicron XBB	1
-2022-05-30	Denmark	other	1
-2022-06-01	Denmark	other	4
+2022-10-15	Canada	Omicron XBB	1
 2022-06-02	Denmark	other	2
 2022-06-03	Denmark	other	1
 2022-06-04	Denmark	other	1
@@ -2250,9 +2265,8 @@ date	location	variant	sequences
 2022-10-12	Denmark	other	2
 2022-10-13	Denmark	other	1
 2022-10-14	Denmark	other	1
-2022-05-30	Denmark	Omicron 21L	275
-2022-05-31	Denmark	Omicron 21L	235
-2022-06-01	Denmark	Omicron 21L	179
+2022-10-15	Denmark	other	2
+2022-10-17	Denmark	other	1
 2022-06-02	Denmark	Omicron 21L	123
 2022-06-03	Denmark	Omicron 21L	190
 2022-06-04	Denmark	Omicron 21L	72
@@ -2357,17 +2371,18 @@ date	location	variant	sequences
 2022-10-01	Denmark	Omicron 21L	4
 2022-10-02	Denmark	Omicron 21L	3
 2022-10-03	Denmark	Omicron 21L	2
-2022-10-04	Denmark	Omicron 21L	1
+2022-10-04	Denmark	Omicron 21L	2
 2022-10-05	Denmark	Omicron 21L	3
 2022-10-06	Denmark	Omicron 21L	2
 2022-10-07	Denmark	Omicron 21L	4
 2022-10-10	Denmark	Omicron 21L	4
 2022-10-11	Denmark	Omicron 21L	1
 2022-10-12	Denmark	Omicron 21L	3
+2022-10-13	Denmark	Omicron 21L	3
 2022-10-14	Denmark	Omicron 21L	4
-2022-05-30	Denmark	Omicron 22A	18
-2022-05-31	Denmark	Omicron 22A	11
-2022-06-01	Denmark	Omicron 22A	34
+2022-10-15	Denmark	Omicron 21L	1
+2022-10-16	Denmark	Omicron 21L	4
+2022-10-17	Denmark	Omicron 21L	5
 2022-06-02	Denmark	Omicron 22A	19
 2022-06-03	Denmark	Omicron 22A	15
 2022-06-04	Denmark	Omicron 22A	9
@@ -2487,25 +2502,25 @@ date	location	variant	sequences
 2022-09-26	Denmark	Omicron 22A	25
 2022-09-27	Denmark	Omicron 22A	24
 2022-09-28	Denmark	Omicron 22A	13
-2022-09-29	Denmark	Omicron 22A	13
+2022-09-29	Denmark	Omicron 22A	14
 2022-09-30	Denmark	Omicron 22A	10
 2022-10-01	Denmark	Omicron 22A	28
 2022-10-02	Denmark	Omicron 22A	19
 2022-10-03	Denmark	Omicron 22A	13
-2022-10-04	Denmark	Omicron 22A	7
+2022-10-04	Denmark	Omicron 22A	9
 2022-10-05	Denmark	Omicron 22A	20
 2022-10-06	Denmark	Omicron 22A	7
 2022-10-07	Denmark	Omicron 22A	5
 2022-10-08	Denmark	Omicron 22A	14
 2022-10-09	Denmark	Omicron 22A	22
 2022-10-10	Denmark	Omicron 22A	20
-2022-10-11	Denmark	Omicron 22A	18
-2022-10-12	Denmark	Omicron 22A	8
-2022-10-13	Denmark	Omicron 22A	5
+2022-10-11	Denmark	Omicron 22A	21
+2022-10-12	Denmark	Omicron 22A	9
+2022-10-13	Denmark	Omicron 22A	9
 2022-10-14	Denmark	Omicron 22A	11
-2022-05-30	Denmark	Omicron 22B	91
-2022-05-31	Denmark	Omicron 22B	114
-2022-06-01	Denmark	Omicron 22B	124
+2022-10-15	Denmark	Omicron 22A	9
+2022-10-16	Denmark	Omicron 22A	7
+2022-10-17	Denmark	Omicron 22A	18
 2022-06-02	Denmark	Omicron 22B	66
 2022-06-03	Denmark	Omicron 22B	138
 2022-06-04	Denmark	Omicron 22B	44
@@ -2617,33 +2632,33 @@ date	location	variant	sequences
 2022-09-18	Denmark	Omicron 22B	400
 2022-09-19	Denmark	Omicron 22B	527
 2022-09-20	Denmark	Omicron 22B	411
-2022-09-21	Denmark	Omicron 22B	635
-2022-09-22	Denmark	Omicron 22B	557
-2022-09-23	Denmark	Omicron 22B	392
+2022-09-21	Denmark	Omicron 22B	639
+2022-09-22	Denmark	Omicron 22B	560
+2022-09-23	Denmark	Omicron 22B	396
 2022-09-24	Denmark	Omicron 22B	341
 2022-09-25	Denmark	Omicron 22B	491
 2022-09-26	Denmark	Omicron 22B	684
-2022-09-27	Denmark	Omicron 22B	510
-2022-09-28	Denmark	Omicron 22B	302
-2022-09-29	Denmark	Omicron 22B	335
-2022-09-30	Denmark	Omicron 22B	357
+2022-09-27	Denmark	Omicron 22B	511
+2022-09-28	Denmark	Omicron 22B	311
+2022-09-29	Denmark	Omicron 22B	340
+2022-09-30	Denmark	Omicron 22B	359
 2022-10-01	Denmark	Omicron 22B	549
-2022-10-02	Denmark	Omicron 22B	450
-2022-10-03	Denmark	Omicron 22B	598
-2022-10-04	Denmark	Omicron 22B	399
-2022-10-05	Denmark	Omicron 22B	576
-2022-10-06	Denmark	Omicron 22B	344
-2022-10-07	Denmark	Omicron 22B	397
+2022-10-02	Denmark	Omicron 22B	453
+2022-10-03	Denmark	Omicron 22B	682
+2022-10-04	Denmark	Omicron 22B	535
+2022-10-05	Denmark	Omicron 22B	578
+2022-10-06	Denmark	Omicron 22B	347
+2022-10-07	Denmark	Omicron 22B	402
 2022-10-08	Denmark	Omicron 22B	377
-2022-10-09	Denmark	Omicron 22B	477
-2022-10-10	Denmark	Omicron 22B	438
-2022-10-11	Denmark	Omicron 22B	427
-2022-10-12	Denmark	Omicron 22B	402
-2022-10-13	Denmark	Omicron 22B	215
-2022-10-14	Denmark	Omicron 22B	475
-2022-05-30	Denmark	Omicron 22C	62
-2022-05-31	Denmark	Omicron 22C	56
-2022-06-01	Denmark	Omicron 22C	33
+2022-10-09	Denmark	Omicron 22B	478
+2022-10-10	Denmark	Omicron 22B	460
+2022-10-11	Denmark	Omicron 22B	471
+2022-10-12	Denmark	Omicron 22B	442
+2022-10-13	Denmark	Omicron 22B	353
+2022-10-14	Denmark	Omicron 22B	479
+2022-10-15	Denmark	Omicron 22B	300
+2022-10-16	Denmark	Omicron 22B	374
+2022-10-17	Denmark	Omicron 22B	531
 2022-06-02	Denmark	Omicron 22C	32
 2022-06-03	Denmark	Omicron 22C	53
 2022-06-04	Denmark	Omicron 22C	19
@@ -2787,18 +2802,21 @@ date	location	variant	sequences
 2022-09-30	Denmark	Omicron 22D	6
 2022-10-01	Denmark	Omicron 22D	7
 2022-10-02	Denmark	Omicron 22D	4
-2022-10-03	Denmark	Omicron 22D	15
-2022-10-04	Denmark	Omicron 22D	15
+2022-10-03	Denmark	Omicron 22D	16
+2022-10-04	Denmark	Omicron 22D	18
 2022-10-05	Denmark	Omicron 22D	5
 2022-10-06	Denmark	Omicron 22D	7
 2022-10-07	Denmark	Omicron 22D	7
 2022-10-08	Denmark	Omicron 22D	8
 2022-10-09	Denmark	Omicron 22D	9
 2022-10-10	Denmark	Omicron 22D	10
-2022-10-11	Denmark	Omicron 22D	12
+2022-10-11	Denmark	Omicron 22D	13
 2022-10-12	Denmark	Omicron 22D	9
-2022-10-13	Denmark	Omicron 22D	5
+2022-10-13	Denmark	Omicron 22D	8
 2022-10-14	Denmark	Omicron 22D	15
+2022-10-15	Denmark	Omicron 22D	9
+2022-10-16	Denmark	Omicron 22D	11
+2022-10-17	Denmark	Omicron 22D	13
 2022-08-22	Denmark	Omicron BA.2.75.2	1
 2022-08-31	Denmark	Omicron BA.2.75.2	1
 2022-09-06	Denmark	Omicron BA.2.75.2	1
@@ -2820,10 +2838,10 @@ date	location	variant	sequences
 2022-09-27	Denmark	Omicron BA.2.75.2	6
 2022-09-28	Denmark	Omicron BA.2.75.2	1
 2022-09-29	Denmark	Omicron BA.2.75.2	3
-2022-09-30	Denmark	Omicron BA.2.75.2	2
+2022-09-30	Denmark	Omicron BA.2.75.2	4
 2022-10-01	Denmark	Omicron BA.2.75.2	2
 2022-10-02	Denmark	Omicron BA.2.75.2	1
-2022-10-03	Denmark	Omicron BA.2.75.2	2
+2022-10-03	Denmark	Omicron BA.2.75.2	3
 2022-10-04	Denmark	Omicron BA.2.75.2	6
 2022-10-05	Denmark	Omicron BA.2.75.2	4
 2022-10-06	Denmark	Omicron BA.2.75.2	3
@@ -2834,6 +2852,8 @@ date	location	variant	sequences
 2022-10-11	Denmark	Omicron BA.2.75.2	1
 2022-10-12	Denmark	Omicron BA.2.75.2	1
 2022-10-14	Denmark	Omicron BA.2.75.2	3
+2022-10-15	Denmark	Omicron BA.2.75.2	2
+2022-10-17	Denmark	Omicron BA.2.75.2	1
 2022-08-26	Denmark	Omicron BQ.1	2
 2022-08-30	Denmark	Omicron BQ.1	1
 2022-08-31	Denmark	Omicron BQ.1	1
@@ -2861,18 +2881,21 @@ date	location	variant	sequences
 2022-09-30	Denmark	Omicron BQ.1	19
 2022-10-01	Denmark	Omicron BQ.1	15
 2022-10-02	Denmark	Omicron BQ.1	22
-2022-10-03	Denmark	Omicron BQ.1	36
-2022-10-04	Denmark	Omicron BQ.1	21
+2022-10-03	Denmark	Omicron BQ.1	40
+2022-10-04	Denmark	Omicron BQ.1	25
 2022-10-05	Denmark	Omicron BQ.1	28
 2022-10-06	Denmark	Omicron BQ.1	22
 2022-10-07	Denmark	Omicron BQ.1	25
 2022-10-08	Denmark	Omicron BQ.1	31
 2022-10-09	Denmark	Omicron BQ.1	46
 2022-10-10	Denmark	Omicron BQ.1	52
-2022-10-11	Denmark	Omicron BQ.1	46
-2022-10-12	Denmark	Omicron BQ.1	45
-2022-10-13	Denmark	Omicron BQ.1	25
+2022-10-11	Denmark	Omicron BQ.1	52
+2022-10-12	Denmark	Omicron BQ.1	48
+2022-10-13	Denmark	Omicron BQ.1	33
 2022-10-14	Denmark	Omicron BQ.1	48
+2022-10-15	Denmark	Omicron BQ.1	28
+2022-10-16	Denmark	Omicron BQ.1	54
+2022-10-17	Denmark	Omicron BQ.1	52
 2022-09-19	Denmark	Omicron XBB	1
 2022-09-22	Denmark	Omicron XBB	2
 2022-09-23	Denmark	Omicron XBB	1
@@ -2882,6 +2905,7 @@ date	location	variant	sequences
 2022-10-01	Denmark	Omicron XBB	1
 2022-10-02	Denmark	Omicron XBB	1
 2022-10-03	Denmark	Omicron XBB	1
+2022-10-04	Denmark	Omicron XBB	1
 2022-10-07	Denmark	Omicron XBB	3
 2022-10-09	Denmark	Omicron XBB	1
 2022-10-10	Denmark	Omicron XBB	1
@@ -2889,9 +2913,9 @@ date	location	variant	sequences
 2022-10-12	Denmark	Omicron XBB	1
 2022-10-13	Denmark	Omicron XBB	3
 2022-10-14	Denmark	Omicron XBB	5
-2022-05-30	France	other	34
-2022-05-31	France	other	4
-2022-06-01	France	other	5
+2022-10-15	Denmark	Omicron XBB	1
+2022-10-16	Denmark	Omicron XBB	3
+2022-10-17	Denmark	Omicron XBB	2
 2022-06-02	France	other	5
 2022-06-03	France	other	3
 2022-06-04	France	other	4
@@ -2972,16 +2996,14 @@ date	location	variant	sequences
 2022-09-10	France	other	1
 2022-09-12	France	other	8
 2022-09-17	France	other	2
-2022-09-19	France	other	5
+2022-09-19	France	other	6
 2022-09-22	France	other	1
 2022-09-25	France	other	1
-2022-09-26	France	other	2
+2022-09-26	France	other	4
 2022-09-30	France	other	3
-2022-10-03	France	other	3
-2022-10-10	France	other	1
-2022-05-30	France	Omicron 21L	2302
-2022-05-31	France	Omicron 21L	186
-2022-06-01	France	Omicron 21L	219
+2022-10-03	France	other	6
+2022-10-10	France	other	3
+2022-10-17	France	other	1
 2022-06-02	France	Omicron 21L	168
 2022-06-03	France	Omicron 21L	126
 2022-06-04	France	Omicron 21L	89
@@ -2992,19 +3014,19 @@ date	location	variant	sequences
 2022-06-09	France	Omicron 21L	145
 2022-06-10	France	Omicron 21L	94
 2022-06-11	France	Omicron 21L	69
-2022-06-12	France	Omicron 21L	47
-2022-06-13	France	Omicron 21L	895
-2022-06-14	France	Omicron 21L	41
+2022-06-12	France	Omicron 21L	48
+2022-06-13	France	Omicron 21L	920
+2022-06-14	France	Omicron 21L	42
 2022-06-15	France	Omicron 21L	74
 2022-06-16	France	Omicron 21L	47
-2022-06-17	France	Omicron 21L	44
+2022-06-17	France	Omicron 21L	47
 2022-06-18	France	Omicron 21L	28
 2022-06-19	France	Omicron 21L	39
 2022-06-20	France	Omicron 21L	655
-2022-06-21	France	Omicron 21L	64
+2022-06-21	France	Omicron 21L	65
 2022-06-22	France	Omicron 21L	61
-2022-06-23	France	Omicron 21L	48
-2022-06-24	France	Omicron 21L	17
+2022-06-23	France	Omicron 21L	49
+2022-06-24	France	Omicron 21L	18
 2022-06-25	France	Omicron 21L	23
 2022-06-26	France	Omicron 21L	24
 2022-06-27	France	Omicron 21L	498
@@ -3028,7 +3050,7 @@ date	location	variant	sequences
 2022-07-15	France	Omicron 21L	19
 2022-07-16	France	Omicron 21L	5
 2022-07-17	France	Omicron 21L	3
-2022-07-18	France	Omicron 21L	65
+2022-07-18	France	Omicron 21L	66
 2022-07-19	France	Omicron 21L	11
 2022-07-20	France	Omicron 21L	9
 2022-07-21	France	Omicron 21L	4
@@ -3036,7 +3058,7 @@ date	location	variant	sequences
 2022-07-23	France	Omicron 21L	3
 2022-07-24	France	Omicron 21L	5
 2022-07-25	France	Omicron 21L	25
-2022-07-26	France	Omicron 21L	5
+2022-07-26	France	Omicron 21L	6
 2022-07-27	France	Omicron 21L	6
 2022-07-29	France	Omicron 21L	5
 2022-07-31	France	Omicron 21L	1
@@ -3080,15 +3102,16 @@ date	location	variant	sequences
 2022-09-23	France	Omicron 21L	1
 2022-09-24	France	Omicron 21L	1
 2022-09-26	France	Omicron 21L	1
-2022-09-27	France	Omicron 21L	1
+2022-09-27	France	Omicron 21L	2
 2022-09-28	France	Omicron 21L	1
-2022-10-03	France	Omicron 21L	1
-2022-10-07	France	Omicron 21L	1
+2022-10-03	France	Omicron 21L	3
+2022-10-05	France	Omicron 21L	2
+2022-10-07	France	Omicron 21L	2
 2022-10-08	France	Omicron 21L	1
-2022-10-10	France	Omicron 21L	2
-2022-05-30	France	Omicron 22A	142
-2022-05-31	France	Omicron 22A	35
-2022-06-01	France	Omicron 22A	43
+2022-10-10	France	Omicron 21L	3
+2022-10-11	France	Omicron 21L	2
+2022-10-12	France	Omicron 21L	1
+2022-10-13	France	Omicron 21L	1
 2022-06-02	France	Omicron 22A	42
 2022-06-03	France	Omicron 22A	45
 2022-06-04	France	Omicron 22A	22
@@ -3100,9 +3123,9 @@ date	location	variant	sequences
 2022-06-10	France	Omicron 22A	13
 2022-06-11	France	Omicron 22A	16
 2022-06-12	France	Omicron 22A	7
-2022-06-13	France	Omicron 22A	187
-2022-06-14	France	Omicron 22A	7
-2022-06-15	France	Omicron 22A	20
+2022-06-13	France	Omicron 22A	189
+2022-06-14	France	Omicron 22A	8
+2022-06-15	France	Omicron 22A	21
 2022-06-16	France	Omicron 22A	11
 2022-06-17	France	Omicron 22A	9
 2022-06-18	France	Omicron 22A	4
@@ -3145,7 +3168,7 @@ date	location	variant	sequences
 2022-07-25	France	Omicron 22A	144
 2022-07-26	France	Omicron 22A	11
 2022-07-27	France	Omicron 22A	21
-2022-07-28	France	Omicron 22A	5
+2022-07-28	France	Omicron 22A	6
 2022-07-29	France	Omicron 22A	13
 2022-07-30	France	Omicron 22A	6
 2022-07-31	France	Omicron 22A	5
@@ -3158,7 +3181,7 @@ date	location	variant	sequences
 2022-08-07	France	Omicron 22A	4
 2022-08-08	France	Omicron 22A	82
 2022-08-09	France	Omicron 22A	10
-2022-08-10	France	Omicron 22A	5
+2022-08-10	France	Omicron 22A	6
 2022-08-11	France	Omicron 22A	9
 2022-08-12	France	Omicron 22A	4
 2022-08-13	France	Omicron 22A	5
@@ -3191,36 +3214,37 @@ date	location	variant	sequences
 2022-09-09	France	Omicron 22A	3
 2022-09-10	France	Omicron 22A	2
 2022-09-11	France	Omicron 22A	5
-2022-09-12	France	Omicron 22A	121
+2022-09-12	France	Omicron 22A	122
 2022-09-13	France	Omicron 22A	5
 2022-09-14	France	Omicron 22A	5
 2022-09-15	France	Omicron 22A	3
 2022-09-16	France	Omicron 22A	4
 2022-09-18	France	Omicron 22A	2
-2022-09-19	France	Omicron 22A	145
+2022-09-19	France	Omicron 22A	147
 2022-09-20	France	Omicron 22A	6
 2022-09-21	France	Omicron 22A	4
 2022-09-22	France	Omicron 22A	7
 2022-09-23	France	Omicron 22A	6
 2022-09-25	France	Omicron 22A	6
-2022-09-26	France	Omicron 22A	137
-2022-09-27	France	Omicron 22A	9
-2022-09-28	France	Omicron 22A	4
+2022-09-26	France	Omicron 22A	166
+2022-09-27	France	Omicron 22A	10
+2022-09-28	France	Omicron 22A	5
 2022-09-29	France	Omicron 22A	2
 2022-09-30	France	Omicron 22A	10
-2022-10-01	France	Omicron 22A	3
+2022-10-01	France	Omicron 22A	4
 2022-10-02	France	Omicron 22A	3
-2022-10-03	France	Omicron 22A	59
-2022-10-04	France	Omicron 22A	4
-2022-10-05	France	Omicron 22A	3
-2022-10-06	France	Omicron 22A	3
+2022-10-03	France	Omicron 22A	101
+2022-10-04	France	Omicron 22A	5
+2022-10-05	France	Omicron 22A	4
+2022-10-06	France	Omicron 22A	5
 2022-10-07	France	Omicron 22A	4
 2022-10-08	France	Omicron 22A	3
-2022-10-10	France	Omicron 22A	47
+2022-10-09	France	Omicron 22A	1
+2022-10-10	France	Omicron 22A	85
 2022-10-11	France	Omicron 22A	1
-2022-05-30	France	Omicron 22B	938
-2022-05-31	France	Omicron 22B	267
-2022-06-01	France	Omicron 22B	282
+2022-10-12	France	Omicron 22A	6
+2022-10-15	France	Omicron 22A	1
+2022-10-17	France	Omicron 22A	13
 2022-06-02	France	Omicron 22B	276
 2022-06-03	France	Omicron 22B	316
 2022-06-04	France	Omicron 22B	190
@@ -3232,17 +3256,17 @@ date	location	variant	sequences
 2022-06-10	France	Omicron 22B	77
 2022-06-11	France	Omicron 22B	56
 2022-06-12	France	Omicron 22B	95
-2022-06-13	France	Omicron 22B	1750
-2022-06-14	France	Omicron 22B	71
-2022-06-15	France	Omicron 22B	159
-2022-06-16	France	Omicron 22B	103
-2022-06-17	France	Omicron 22B	66
-2022-06-18	France	Omicron 22B	90
+2022-06-13	France	Omicron 22B	1803
+2022-06-14	France	Omicron 22B	74
+2022-06-15	France	Omicron 22B	160
+2022-06-16	France	Omicron 22B	105
+2022-06-17	France	Omicron 22B	74
+2022-06-18	France	Omicron 22B	93
 2022-06-19	France	Omicron 22B	159
-2022-06-20	France	Omicron 22B	3155
+2022-06-20	France	Omicron 22B	3158
 2022-06-21	France	Omicron 22B	181
 2022-06-22	France	Omicron 22B	271
-2022-06-23	France	Omicron 22B	183
+2022-06-23	France	Omicron 22B	184
 2022-06-24	France	Omicron 22B	100
 2022-06-25	France	Omicron 22B	77
 2022-06-26	France	Omicron 22B	225
@@ -3264,101 +3288,101 @@ date	location	variant	sequences
 2022-07-12	France	Omicron 22B	336
 2022-07-13	France	Omicron 22B	256
 2022-07-14	France	Omicron 22B	72
-2022-07-15	France	Omicron 22B	168
+2022-07-15	France	Omicron 22B	169
 2022-07-16	France	Omicron 22B	119
 2022-07-17	France	Omicron 22B	155
-2022-07-18	France	Omicron 22B	3801
-2022-07-19	France	Omicron 22B	244
-2022-07-20	France	Omicron 22B	227
+2022-07-18	France	Omicron 22B	3804
+2022-07-19	France	Omicron 22B	247
+2022-07-20	France	Omicron 22B	228
 2022-07-21	France	Omicron 22B	148
-2022-07-22	France	Omicron 22B	175
-2022-07-23	France	Omicron 22B	111
-2022-07-24	France	Omicron 22B	183
-2022-07-25	France	Omicron 22B	2564
-2022-07-26	France	Omicron 22B	142
-2022-07-27	France	Omicron 22B	234
-2022-07-28	France	Omicron 22B	96
+2022-07-22	France	Omicron 22B	176
+2022-07-23	France	Omicron 22B	112
+2022-07-24	France	Omicron 22B	184
+2022-07-25	France	Omicron 22B	2565
+2022-07-26	France	Omicron 22B	145
+2022-07-27	France	Omicron 22B	236
+2022-07-28	France	Omicron 22B	99
 2022-07-29	France	Omicron 22B	194
 2022-07-30	France	Omicron 22B	63
-2022-07-31	France	Omicron 22B	93
-2022-08-01	France	Omicron 22B	2093
-2022-08-02	France	Omicron 22B	98
-2022-08-03	France	Omicron 22B	180
-2022-08-04	France	Omicron 22B	92
+2022-07-31	France	Omicron 22B	95
+2022-08-01	France	Omicron 22B	2096
+2022-08-02	France	Omicron 22B	100
+2022-08-03	France	Omicron 22B	182
+2022-08-04	France	Omicron 22B	97
 2022-08-05	France	Omicron 22B	158
 2022-08-06	France	Omicron 22B	68
-2022-08-07	France	Omicron 22B	89
-2022-08-08	France	Omicron 22B	1433
+2022-08-07	France	Omicron 22B	90
+2022-08-08	France	Omicron 22B	1434
 2022-08-09	France	Omicron 22B	117
-2022-08-10	France	Omicron 22B	99
-2022-08-11	France	Omicron 22B	54
-2022-08-12	France	Omicron 22B	64
+2022-08-10	France	Omicron 22B	101
+2022-08-11	France	Omicron 22B	55
+2022-08-12	France	Omicron 22B	65
 2022-08-13	France	Omicron 22B	46
 2022-08-14	France	Omicron 22B	39
 2022-08-15	France	Omicron 22B	83
-2022-08-16	France	Omicron 22B	1689
-2022-08-17	France	Omicron 22B	96
-2022-08-18	France	Omicron 22B	101
+2022-08-16	France	Omicron 22B	1690
+2022-08-17	France	Omicron 22B	100
+2022-08-18	France	Omicron 22B	105
 2022-08-19	France	Omicron 22B	117
-2022-08-20	France	Omicron 22B	60
+2022-08-20	France	Omicron 22B	61
 2022-08-21	France	Omicron 22B	82
-2022-08-22	France	Omicron 22B	1446
-2022-08-23	France	Omicron 22B	96
-2022-08-24	France	Omicron 22B	117
-2022-08-25	France	Omicron 22B	89
+2022-08-22	France	Omicron 22B	1451
+2022-08-23	France	Omicron 22B	99
+2022-08-24	France	Omicron 22B	118
+2022-08-25	France	Omicron 22B	92
 2022-08-26	France	Omicron 22B	72
 2022-08-27	France	Omicron 22B	72
 2022-08-28	France	Omicron 22B	97
-2022-08-29	France	Omicron 22B	1658
-2022-08-30	France	Omicron 22B	131
+2022-08-29	France	Omicron 22B	1662
+2022-08-30	France	Omicron 22B	133
 2022-08-31	France	Omicron 22B	55
-2022-09-01	France	Omicron 22B	47
-2022-09-02	France	Omicron 22B	50
-2022-09-03	France	Omicron 22B	47
-2022-09-04	France	Omicron 22B	68
+2022-09-01	France	Omicron 22B	48
+2022-09-02	France	Omicron 22B	53
+2022-09-03	France	Omicron 22B	48
+2022-09-04	France	Omicron 22B	69
 2022-09-05	France	Omicron 22B	1359
-2022-09-06	France	Omicron 22B	149
-2022-09-07	France	Omicron 22B	42
-2022-09-08	France	Omicron 22B	54
-2022-09-09	France	Omicron 22B	44
-2022-09-10	France	Omicron 22B	44
+2022-09-06	France	Omicron 22B	150
+2022-09-07	France	Omicron 22B	43
+2022-09-08	France	Omicron 22B	55
+2022-09-09	France	Omicron 22B	45
+2022-09-10	France	Omicron 22B	45
 2022-09-11	France	Omicron 22B	54
-2022-09-12	France	Omicron 22B	1249
+2022-09-12	France	Omicron 22B	1299
 2022-09-13	France	Omicron 22B	64
-2022-09-14	France	Omicron 22B	61
+2022-09-14	France	Omicron 22B	64
 2022-09-15	France	Omicron 22B	55
 2022-09-16	France	Omicron 22B	61
 2022-09-17	France	Omicron 22B	46
-2022-09-18	France	Omicron 22B	54
-2022-09-19	France	Omicron 22B	1450
-2022-09-20	France	Omicron 22B	51
-2022-09-21	France	Omicron 22B	45
-2022-09-22	France	Omicron 22B	44
-2022-09-23	France	Omicron 22B	46
-2022-09-24	France	Omicron 22B	39
-2022-09-25	France	Omicron 22B	56
-2022-09-26	France	Omicron 22B	1286
-2022-09-27	France	Omicron 22B	113
-2022-09-28	France	Omicron 22B	75
-2022-09-29	France	Omicron 22B	56
-2022-09-30	France	Omicron 22B	81
-2022-10-01	France	Omicron 22B	46
-2022-10-02	France	Omicron 22B	65
-2022-10-03	France	Omicron 22B	652
-2022-10-04	France	Omicron 22B	56
-2022-10-05	France	Omicron 22B	43
-2022-10-06	France	Omicron 22B	46
-2022-10-07	France	Omicron 22B	35
-2022-10-08	France	Omicron 22B	45
-2022-10-09	France	Omicron 22B	27
-2022-10-10	France	Omicron 22B	372
-2022-10-11	France	Omicron 22B	45
-2022-10-12	France	Omicron 22B	8
-2022-10-13	France	Omicron 22B	2
-2022-10-14	France	Omicron 22B	4
-2022-05-30	France	Omicron 22C	158
-2022-05-31	France	Omicron 22C	18
-2022-06-01	France	Omicron 22C	25
+2022-09-18	France	Omicron 22B	56
+2022-09-19	France	Omicron 22B	1478
+2022-09-20	France	Omicron 22B	52
+2022-09-21	France	Omicron 22B	49
+2022-09-22	France	Omicron 22B	46
+2022-09-23	France	Omicron 22B	47
+2022-09-24	France	Omicron 22B	43
+2022-09-25	France	Omicron 22B	69
+2022-09-26	France	Omicron 22B	1649
+2022-09-27	France	Omicron 22B	135
+2022-09-28	France	Omicron 22B	79
+2022-09-29	France	Omicron 22B	66
+2022-09-30	France	Omicron 22B	90
+2022-10-01	France	Omicron 22B	55
+2022-10-02	France	Omicron 22B	84
+2022-10-03	France	Omicron 22B	1186
+2022-10-04	France	Omicron 22B	69
+2022-10-05	France	Omicron 22B	60
+2022-10-06	France	Omicron 22B	55
+2022-10-07	France	Omicron 22B	40
+2022-10-08	France	Omicron 22B	52
+2022-10-09	France	Omicron 22B	42
+2022-10-10	France	Omicron 22B	878
+2022-10-11	France	Omicron 22B	66
+2022-10-12	France	Omicron 22B	69
+2022-10-13	France	Omicron 22B	5
+2022-10-14	France	Omicron 22B	11
+2022-10-15	France	Omicron 22B	9
+2022-10-16	France	Omicron 22B	10
+2022-10-17	France	Omicron 22B	186
 2022-06-02	France	Omicron 22C	27
 2022-06-03	France	Omicron 22C	25
 2022-06-04	France	Omicron 22C	22
@@ -3370,16 +3394,16 @@ date	location	variant	sequences
 2022-06-10	France	Omicron 22C	2
 2022-06-11	France	Omicron 22C	5
 2022-06-12	France	Omicron 22C	11
-2022-06-13	France	Omicron 22C	199
-2022-06-14	France	Omicron 22C	7
+2022-06-13	France	Omicron 22C	207
+2022-06-14	France	Omicron 22C	8
 2022-06-15	France	Omicron 22C	15
-2022-06-16	France	Omicron 22C	5
+2022-06-16	France	Omicron 22C	6
 2022-06-17	France	Omicron 22C	5
 2022-06-18	France	Omicron 22C	10
-2022-06-19	France	Omicron 22C	8
+2022-06-19	France	Omicron 22C	9
 2022-06-20	France	Omicron 22C	181
 2022-06-21	France	Omicron 22C	10
-2022-06-22	France	Omicron 22C	14
+2022-06-22	France	Omicron 22C	15
 2022-06-23	France	Omicron 22C	8
 2022-06-24	France	Omicron 22C	6
 2022-06-25	France	Omicron 22C	6
@@ -3435,7 +3459,7 @@ date	location	variant	sequences
 2022-08-08	France	Omicron 22D	2
 2022-08-09	France	Omicron 22D	1
 2022-08-16	France	Omicron 22D	7
-2022-08-19	France	Omicron 22D	1
+2022-08-19	France	Omicron 22D	2
 2022-08-20	France	Omicron 22D	1
 2022-08-22	France	Omicron 22D	2
 2022-08-23	France	Omicron 22D	1
@@ -3457,19 +3481,25 @@ date	location	variant	sequences
 2022-09-18	France	Omicron 22D	1
 2022-09-19	France	Omicron 22D	11
 2022-09-22	France	Omicron 22D	1
-2022-09-23	France	Omicron 22D	1
-2022-09-26	France	Omicron 22D	18
+2022-09-23	France	Omicron 22D	2
+2022-09-25	France	Omicron 22D	1
+2022-09-26	France	Omicron 22D	22
 2022-09-27	France	Omicron 22D	5
 2022-09-28	France	Omicron 22D	2
 2022-09-30	France	Omicron 22D	1
 2022-10-01	France	Omicron 22D	1
 2022-10-02	France	Omicron 22D	7
-2022-10-03	France	Omicron 22D	6
+2022-10-03	France	Omicron 22D	16
 2022-10-04	France	Omicron 22D	1
-2022-10-05	France	Omicron 22D	4
+2022-10-05	France	Omicron 22D	5
 2022-10-06	France	Omicron 22D	2
-2022-10-07	France	Omicron 22D	1
-2022-10-10	France	Omicron 22D	7
+2022-10-07	France	Omicron 22D	2
+2022-10-09	France	Omicron 22D	1
+2022-10-10	France	Omicron 22D	17
+2022-10-11	France	Omicron 22D	2
+2022-10-12	France	Omicron 22D	2
+2022-10-13	France	Omicron 22D	1
+2022-10-17	France	Omicron 22D	2
 2022-08-22	France	Omicron BA.2.75.2	1
 2022-08-26	France	Omicron BA.2.75.2	1
 2022-08-29	France	Omicron BA.2.75.2	4
@@ -3479,10 +3509,12 @@ date	location	variant	sequences
 2022-09-12	France	Omicron BA.2.75.2	2
 2022-09-17	France	Omicron BA.2.75.2	1
 2022-09-19	France	Omicron BA.2.75.2	4
+2022-09-23	France	Omicron BA.2.75.2	1
 2022-09-25	France	Omicron BA.2.75.2	1
-2022-09-26	France	Omicron BA.2.75.2	3
-2022-10-03	France	Omicron BA.2.75.2	1
-2022-10-10	France	Omicron BA.2.75.2	3
+2022-09-26	France	Omicron BA.2.75.2	4
+2022-09-27	France	Omicron BA.2.75.2	1
+2022-10-03	France	Omicron BA.2.75.2	2
+2022-10-10	France	Omicron BA.2.75.2	6
 2022-08-08	France	Omicron BQ.1	1
 2022-08-21	France	Omicron BQ.1	1
 2022-08-22	France	Omicron BQ.1	4
@@ -3495,46 +3527,49 @@ date	location	variant	sequences
 2022-09-08	France	Omicron BQ.1	2
 2022-09-09	France	Omicron BQ.1	2
 2022-09-11	France	Omicron BQ.1	2
-2022-09-12	France	Omicron BQ.1	30
+2022-09-12	France	Omicron BQ.1	33
 2022-09-13	France	Omicron BQ.1	1
 2022-09-14	France	Omicron BQ.1	2
 2022-09-15	France	Omicron BQ.1	1
 2022-09-16	France	Omicron BQ.1	2
-2022-09-17	France	Omicron BQ.1	5
-2022-09-18	France	Omicron BQ.1	6
-2022-09-19	France	Omicron BQ.1	66
+2022-09-17	France	Omicron BQ.1	6
+2022-09-18	France	Omicron BQ.1	7
+2022-09-19	France	Omicron BQ.1	69
 2022-09-20	France	Omicron BQ.1	13
-2022-09-21	France	Omicron BQ.1	4
-2022-09-22	France	Omicron BQ.1	15
-2022-09-23	France	Omicron BQ.1	11
-2022-09-24	France	Omicron BQ.1	2
-2022-09-25	France	Omicron BQ.1	7
-2022-09-26	France	Omicron BQ.1	182
-2022-09-27	France	Omicron BQ.1	32
-2022-09-28	France	Omicron BQ.1	8
-2022-09-29	France	Omicron BQ.1	4
-2022-09-30	France	Omicron BQ.1	8
-2022-10-01	France	Omicron BQ.1	4
-2022-10-02	France	Omicron BQ.1	14
-2022-10-03	France	Omicron BQ.1	187
-2022-10-04	France	Omicron BQ.1	10
-2022-10-05	France	Omicron BQ.1	9
-2022-10-06	France	Omicron BQ.1	11
-2022-10-07	France	Omicron BQ.1	11
-2022-10-08	France	Omicron BQ.1	10
-2022-10-09	France	Omicron BQ.1	12
-2022-10-10	France	Omicron BQ.1	165
-2022-10-11	France	Omicron BQ.1	44
-2022-10-12	France	Omicron BQ.1	7
-2022-10-13	France	Omicron BQ.1	5
-2022-10-14	France	Omicron BQ.1	3
+2022-09-21	France	Omicron BQ.1	5
+2022-09-22	France	Omicron BQ.1	17
+2022-09-23	France	Omicron BQ.1	14
+2022-09-24	France	Omicron BQ.1	3
+2022-09-25	France	Omicron BQ.1	8
+2022-09-26	France	Omicron BQ.1	242
+2022-09-27	France	Omicron BQ.1	44
+2022-09-28	France	Omicron BQ.1	10
+2022-09-29	France	Omicron BQ.1	12
+2022-09-30	France	Omicron BQ.1	19
+2022-10-01	France	Omicron BQ.1	10
+2022-10-02	France	Omicron BQ.1	21
+2022-10-03	France	Omicron BQ.1	336
+2022-10-04	France	Omicron BQ.1	19
+2022-10-05	France	Omicron BQ.1	28
+2022-10-06	France	Omicron BQ.1	22
+2022-10-07	France	Omicron BQ.1	24
+2022-10-08	France	Omicron BQ.1	17
+2022-10-09	France	Omicron BQ.1	19
+2022-10-10	France	Omicron BQ.1	318
+2022-10-11	France	Omicron BQ.1	55
+2022-10-12	France	Omicron BQ.1	69
+2022-10-13	France	Omicron BQ.1	6
+2022-10-14	France	Omicron BQ.1	7
+2022-10-15	France	Omicron BQ.1	1
+2022-10-16	France	Omicron BQ.1	11
+2022-10-17	France	Omicron BQ.1	97
 2022-09-19	France	Omicron XBB	1
 2022-09-29	France	Omicron XBB	1
 2022-10-03	France	Omicron XBB	1
 2022-10-06	France	Omicron XBB	1
-2022-05-30	Germany	other	28
-2022-05-31	Germany	other	13
-2022-06-01	Germany	other	22
+2022-10-12	France	Omicron XBB	1
+2022-10-14	France	Omicron XBB	2
+2022-10-17	France	Omicron XBB	1
 2022-06-02	Germany	other	9
 2022-06-03	Germany	other	4
 2022-06-04	Germany	other	3
@@ -3646,21 +3681,24 @@ date	location	variant	sequences
 2022-09-26	Germany	other	5
 2022-09-27	Germany	other	3
 2022-09-28	Germany	other	1
-2022-09-29	Germany	other	1
+2022-09-29	Germany	other	2
 2022-09-30	Germany	other	1
 2022-10-02	Germany	other	3
 2022-10-03	Germany	other	2
-2022-10-05	Germany	other	5
+2022-10-04	Germany	other	1
+2022-10-05	Germany	other	6
 2022-10-06	Germany	other	3
-2022-10-07	Germany	other	1
-2022-10-08	Germany	other	1
-2022-10-10	Germany	other	2
-2022-10-11	Germany	other	1
-2022-10-12	Germany	other	1
-2022-10-13	Germany	other	4
-2022-05-30	Germany	Omicron 21L	1057
-2022-05-31	Germany	Omicron 21L	756
-2022-06-01	Germany	Omicron 21L	706
+2022-10-07	Germany	other	3
+2022-10-08	Germany	other	2
+2022-10-09	Germany	other	1
+2022-10-10	Germany	other	3
+2022-10-11	Germany	other	3
+2022-10-12	Germany	other	2
+2022-10-13	Germany	other	5
+2022-10-14	Germany	other	3
+2022-10-15	Germany	other	1
+2022-10-16	Germany	other	1
+2022-10-17	Germany	other	3
 2022-06-02	Germany	Omicron 21L	670
 2022-06-03	Germany	Omicron 21L	497
 2022-06-04	Germany	Omicron 21L	299
@@ -3686,9 +3724,9 @@ date	location	variant	sequences
 2022-06-24	Germany	Omicron 21L	279
 2022-06-25	Germany	Omicron 21L	143
 2022-06-26	Germany	Omicron 21L	45
-2022-06-27	Germany	Omicron 21L	250
+2022-06-27	Germany	Omicron 21L	251
 2022-06-28	Germany	Omicron 21L	190
-2022-06-29	Germany	Omicron 21L	139
+2022-06-29	Germany	Omicron 21L	142
 2022-06-30	Germany	Omicron 21L	178
 2022-07-01	Germany	Omicron 21L	88
 2022-07-02	Germany	Omicron 21L	40
@@ -3762,32 +3800,31 @@ date	location	variant	sequences
 2022-09-16	Germany	Omicron 21L	1
 2022-09-19	Germany	Omicron 21L	1
 2022-09-20	Germany	Omicron 21L	6
-2022-09-21	Germany	Omicron 21L	1
-2022-09-22	Germany	Omicron 21L	2
+2022-09-21	Germany	Omicron 21L	2
+2022-09-22	Germany	Omicron 21L	3
 2022-09-23	Germany	Omicron 21L	6
 2022-09-24	Germany	Omicron 21L	3
 2022-09-25	Germany	Omicron 21L	2
 2022-09-26	Germany	Omicron 21L	6
-2022-09-27	Germany	Omicron 21L	5
-2022-09-28	Germany	Omicron 21L	2
+2022-09-27	Germany	Omicron 21L	6
+2022-09-28	Germany	Omicron 21L	3
 2022-09-29	Germany	Omicron 21L	1
 2022-09-30	Germany	Omicron 21L	1
 2022-10-01	Germany	Omicron 21L	2
 2022-10-02	Germany	Omicron 21L	1
-2022-10-03	Germany	Omicron 21L	2
-2022-10-04	Germany	Omicron 21L	4
-2022-10-05	Germany	Omicron 21L	1
-2022-10-06	Germany	Omicron 21L	2
+2022-10-03	Germany	Omicron 21L	5
+2022-10-04	Germany	Omicron 21L	7
+2022-10-05	Germany	Omicron 21L	2
+2022-10-06	Germany	Omicron 21L	5
 2022-10-08	Germany	Omicron 21L	3
 2022-10-09	Germany	Omicron 21L	1
-2022-10-10	Germany	Omicron 21L	1
-2022-10-11	Germany	Omicron 21L	1
+2022-10-10	Germany	Omicron 21L	2
+2022-10-11	Germany	Omicron 21L	4
 2022-10-12	Germany	Omicron 21L	1
-2022-10-13	Germany	Omicron 21L	1
-2022-10-14	Germany	Omicron 21L	1
-2022-05-30	Germany	Omicron 22A	64
-2022-05-31	Germany	Omicron 22A	47
-2022-06-01	Germany	Omicron 22A	52
+2022-10-13	Germany	Omicron 21L	2
+2022-10-14	Germany	Omicron 21L	3
+2022-10-15	Germany	Omicron 21L	2
+2022-10-17	Germany	Omicron 21L	7
 2022-06-02	Germany	Omicron 22A	63
 2022-06-03	Germany	Omicron 22A	40
 2022-06-04	Germany	Omicron 22A	36
@@ -3816,8 +3853,8 @@ date	location	variant	sequences
 2022-06-27	Germany	Omicron 22A	160
 2022-06-28	Germany	Omicron 22A	160
 2022-06-29	Germany	Omicron 22A	135
-2022-06-30	Germany	Omicron 22A	155
-2022-07-01	Germany	Omicron 22A	78
+2022-06-30	Germany	Omicron 22A	156
+2022-07-01	Germany	Omicron 22A	80
 2022-07-02	Germany	Omicron 22A	71
 2022-07-03	Germany	Omicron 22A	60
 2022-07-04	Germany	Omicron 22A	86
@@ -3894,43 +3931,45 @@ date	location	variant	sequences
 2022-09-13	Germany	Omicron 22A	39
 2022-09-14	Germany	Omicron 22A	34
 2022-09-15	Germany	Omicron 22A	32
-2022-09-16	Germany	Omicron 22A	32
+2022-09-16	Germany	Omicron 22A	33
 2022-09-17	Germany	Omicron 22A	12
 2022-09-18	Germany	Omicron 22A	4
 2022-09-19	Germany	Omicron 22A	29
 2022-09-20	Germany	Omicron 22A	20
-2022-09-21	Germany	Omicron 22A	10
+2022-09-21	Germany	Omicron 22A	11
 2022-09-22	Germany	Omicron 22A	12
 2022-09-23	Germany	Omicron 22A	17
 2022-09-24	Germany	Omicron 22A	15
 2022-09-25	Germany	Omicron 22A	1
 2022-09-26	Germany	Omicron 22A	15
 2022-09-27	Germany	Omicron 22A	16
-2022-09-28	Germany	Omicron 22A	8
-2022-09-29	Germany	Omicron 22A	10
-2022-09-30	Germany	Omicron 22A	10
+2022-09-28	Germany	Omicron 22A	11
+2022-09-29	Germany	Omicron 22A	11
+2022-09-30	Germany	Omicron 22A	13
 2022-10-01	Germany	Omicron 22A	14
 2022-10-02	Germany	Omicron 22A	7
-2022-10-03	Germany	Omicron 22A	6
-2022-10-04	Germany	Omicron 22A	21
-2022-10-05	Germany	Omicron 22A	13
-2022-10-06	Germany	Omicron 22A	7
-2022-10-07	Germany	Omicron 22A	10
-2022-10-08	Germany	Omicron 22A	7
+2022-10-03	Germany	Omicron 22A	7
+2022-10-04	Germany	Omicron 22A	26
+2022-10-05	Germany	Omicron 22A	22
+2022-10-06	Germany	Omicron 22A	10
+2022-10-07	Germany	Omicron 22A	14
+2022-10-08	Germany	Omicron 22A	10
 2022-10-09	Germany	Omicron 22A	4
-2022-10-10	Germany	Omicron 22A	6
-2022-10-11	Germany	Omicron 22A	4
-2022-10-13	Germany	Omicron 22A	3
-2022-05-30	Germany	Omicron 22B	369
-2022-05-31	Germany	Omicron 22B	349
-2022-06-01	Germany	Omicron 22B	415
+2022-10-10	Germany	Omicron 22A	12
+2022-10-11	Germany	Omicron 22A	9
+2022-10-12	Germany	Omicron 22A	11
+2022-10-13	Germany	Omicron 22A	15
+2022-10-14	Germany	Omicron 22A	3
+2022-10-15	Germany	Omicron 22A	5
+2022-10-16	Germany	Omicron 22A	2
+2022-10-17	Germany	Omicron 22A	16
 2022-06-02	Germany	Omicron 22B	445
 2022-06-03	Germany	Omicron 22B	401
 2022-06-04	Germany	Omicron 22B	226
 2022-06-05	Germany	Omicron 22B	154
 2022-06-06	Germany	Omicron 22B	250
 2022-06-07	Germany	Omicron 22B	857
-2022-06-08	Germany	Omicron 22B	784
+2022-06-08	Germany	Omicron 22B	785
 2022-06-09	Germany	Omicron 22B	847
 2022-06-10	Germany	Omicron 22B	638
 2022-06-11	Germany	Omicron 22B	450
@@ -3949,13 +3988,13 @@ date	location	variant	sequences
 2022-06-24	Germany	Omicron 22B	1746
 2022-06-25	Germany	Omicron 22B	885
 2022-06-26	Germany	Omicron 22B	419
-2022-06-27	Germany	Omicron 22B	2170
-2022-06-28	Germany	Omicron 22B	2013
-2022-06-29	Germany	Omicron 22B	1631
-2022-06-30	Germany	Omicron 22B	1820
-2022-07-01	Germany	Omicron 22B	1187
-2022-07-02	Germany	Omicron 22B	690
-2022-07-03	Germany	Omicron 22B	567
+2022-06-27	Germany	Omicron 22B	2174
+2022-06-28	Germany	Omicron 22B	2023
+2022-06-29	Germany	Omicron 22B	1637
+2022-06-30	Germany	Omicron 22B	1830
+2022-07-01	Germany	Omicron 22B	1190
+2022-07-02	Germany	Omicron 22B	691
+2022-07-03	Germany	Omicron 22B	570
 2022-07-04	Germany	Omicron 22B	1508
 2022-07-05	Germany	Omicron 22B	1361
 2022-07-06	Germany	Omicron 22B	1213
@@ -3967,17 +4006,17 @@ date	location	variant	sequences
 2022-07-12	Germany	Omicron 22B	1215
 2022-07-13	Germany	Omicron 22B	1123
 2022-07-14	Germany	Omicron 22B	1406
-2022-07-15	Germany	Omicron 22B	856
-2022-07-16	Germany	Omicron 22B	839
-2022-07-17	Germany	Omicron 22B	370
-2022-07-18	Germany	Omicron 22B	1273
+2022-07-15	Germany	Omicron 22B	857
+2022-07-16	Germany	Omicron 22B	841
+2022-07-17	Germany	Omicron 22B	372
+2022-07-18	Germany	Omicron 22B	1274
 2022-07-19	Germany	Omicron 22B	1496
 2022-07-20	Germany	Omicron 22B	1204
 2022-07-21	Germany	Omicron 22B	1175
 2022-07-22	Germany	Omicron 22B	1011
 2022-07-23	Germany	Omicron 22B	517
 2022-07-24	Germany	Omicron 22B	422
-2022-07-25	Germany	Omicron 22B	1296
+2022-07-25	Germany	Omicron 22B	1298
 2022-07-26	Germany	Omicron 22B	926
 2022-07-27	Germany	Omicron 22B	957
 2022-07-28	Germany	Omicron 22B	853
@@ -4019,49 +4058,49 @@ date	location	variant	sequences
 2022-09-02	Germany	Omicron 22B	618
 2022-09-03	Germany	Omicron 22B	427
 2022-09-04	Germany	Omicron 22B	299
-2022-09-05	Germany	Omicron 22B	1207
-2022-09-06	Germany	Omicron 22B	995
-2022-09-07	Germany	Omicron 22B	996
-2022-09-08	Germany	Omicron 22B	842
-2022-09-09	Germany	Omicron 22B	816
-2022-09-10	Germany	Omicron 22B	537
-2022-09-11	Germany	Omicron 22B	369
-2022-09-12	Germany	Omicron 22B	1084
-2022-09-13	Germany	Omicron 22B	1205
-2022-09-14	Germany	Omicron 22B	1017
-2022-09-15	Germany	Omicron 22B	822
-2022-09-16	Germany	Omicron 22B	872
+2022-09-05	Germany	Omicron 22B	1211
+2022-09-06	Germany	Omicron 22B	997
+2022-09-07	Germany	Omicron 22B	998
+2022-09-08	Germany	Omicron 22B	843
+2022-09-09	Germany	Omicron 22B	818
+2022-09-10	Germany	Omicron 22B	538
+2022-09-11	Germany	Omicron 22B	370
+2022-09-12	Germany	Omicron 22B	1087
+2022-09-13	Germany	Omicron 22B	1209
+2022-09-14	Germany	Omicron 22B	1019
+2022-09-15	Germany	Omicron 22B	824
+2022-09-16	Germany	Omicron 22B	874
 2022-09-17	Germany	Omicron 22B	323
-2022-09-18	Germany	Omicron 22B	257
-2022-09-19	Germany	Omicron 22B	997
-2022-09-20	Germany	Omicron 22B	774
-2022-09-21	Germany	Omicron 22B	555
-2022-09-22	Germany	Omicron 22B	583
-2022-09-23	Germany	Omicron 22B	536
+2022-09-18	Germany	Omicron 22B	260
+2022-09-19	Germany	Omicron 22B	1003
+2022-09-20	Germany	Omicron 22B	779
+2022-09-21	Germany	Omicron 22B	562
+2022-09-22	Germany	Omicron 22B	590
+2022-09-23	Germany	Omicron 22B	545
 2022-09-24	Germany	Omicron 22B	369
-2022-09-25	Germany	Omicron 22B	209
-2022-09-26	Germany	Omicron 22B	884
-2022-09-27	Germany	Omicron 22B	629
-2022-09-28	Germany	Omicron 22B	541
-2022-09-29	Germany	Omicron 22B	565
-2022-09-30	Germany	Omicron 22B	383
-2022-10-01	Germany	Omicron 22B	379
-2022-10-02	Germany	Omicron 22B	305
-2022-10-03	Germany	Omicron 22B	480
-2022-10-04	Germany	Omicron 22B	822
-2022-10-05	Germany	Omicron 22B	459
-2022-10-06	Germany	Omicron 22B	389
-2022-10-07	Germany	Omicron 22B	550
-2022-10-08	Germany	Omicron 22B	315
-2022-10-09	Germany	Omicron 22B	171
-2022-10-10	Germany	Omicron 22B	490
-2022-10-11	Germany	Omicron 22B	259
-2022-10-12	Germany	Omicron 22B	67
-2022-10-13	Germany	Omicron 22B	133
-2022-10-14	Germany	Omicron 22B	41
-2022-05-30	Germany	Omicron 22C	85
-2022-05-31	Germany	Omicron 22C	76
-2022-06-01	Germany	Omicron 22C	68
+2022-09-25	Germany	Omicron 22B	217
+2022-09-26	Germany	Omicron 22B	910
+2022-09-27	Germany	Omicron 22B	657
+2022-09-28	Germany	Omicron 22B	589
+2022-09-29	Germany	Omicron 22B	627
+2022-09-30	Germany	Omicron 22B	473
+2022-10-01	Germany	Omicron 22B	443
+2022-10-02	Germany	Omicron 22B	353
+2022-10-03	Germany	Omicron 22B	562
+2022-10-04	Germany	Omicron 22B	1193
+2022-10-05	Germany	Omicron 22B	775
+2022-10-06	Germany	Omicron 22B	717
+2022-10-07	Germany	Omicron 22B	807
+2022-10-08	Germany	Omicron 22B	488
+2022-10-09	Germany	Omicron 22B	261
+2022-10-10	Germany	Omicron 22B	1036
+2022-10-11	Germany	Omicron 22B	804
+2022-10-12	Germany	Omicron 22B	514
+2022-10-13	Germany	Omicron 22B	617
+2022-10-14	Germany	Omicron 22B	457
+2022-10-15	Germany	Omicron 22B	291
+2022-10-16	Germany	Omicron 22B	249
+2022-10-17	Germany	Omicron 22B	804
 2022-06-02	Germany	Omicron 22C	61
 2022-06-03	Germany	Omicron 22C	40
 2022-06-04	Germany	Omicron 22C	40
@@ -4089,7 +4128,7 @@ date	location	variant	sequences
 2022-06-26	Germany	Omicron 22C	10
 2022-06-27	Germany	Omicron 22C	93
 2022-06-28	Germany	Omicron 22C	69
-2022-06-29	Germany	Omicron 22C	46
+2022-06-29	Germany	Omicron 22C	47
 2022-06-30	Germany	Omicron 22C	69
 2022-07-01	Germany	Omicron 22C	24
 2022-07-02	Germany	Omicron 22C	22
@@ -4204,23 +4243,28 @@ date	location	variant	sequences
 2022-09-23	Germany	Omicron 22D	3
 2022-09-24	Germany	Omicron 22D	6
 2022-09-25	Germany	Omicron 22D	1
-2022-09-26	Germany	Omicron 22D	6
+2022-09-26	Germany	Omicron 22D	7
 2022-09-27	Germany	Omicron 22D	7
-2022-09-28	Germany	Omicron 22D	6
-2022-09-29	Germany	Omicron 22D	10
-2022-09-30	Germany	Omicron 22D	1
-2022-10-01	Germany	Omicron 22D	5
-2022-10-02	Germany	Omicron 22D	2
+2022-09-28	Germany	Omicron 22D	7
+2022-09-29	Germany	Omicron 22D	11
+2022-09-30	Germany	Omicron 22D	4
+2022-10-01	Germany	Omicron 22D	6
+2022-10-02	Germany	Omicron 22D	3
 2022-10-03	Germany	Omicron 22D	4
-2022-10-04	Germany	Omicron 22D	6
-2022-10-05	Germany	Omicron 22D	8
-2022-10-06	Germany	Omicron 22D	6
-2022-10-07	Germany	Omicron 22D	8
-2022-10-08	Germany	Omicron 22D	5
-2022-10-09	Germany	Omicron 22D	1
-2022-10-10	Germany	Omicron 22D	3
-2022-10-11	Germany	Omicron 22D	4
-2022-10-12	Germany	Omicron 22D	1
+2022-10-04	Germany	Omicron 22D	13
+2022-10-05	Germany	Omicron 22D	10
+2022-10-06	Germany	Omicron 22D	9
+2022-10-07	Germany	Omicron 22D	15
+2022-10-08	Germany	Omicron 22D	13
+2022-10-09	Germany	Omicron 22D	2
+2022-10-10	Germany	Omicron 22D	18
+2022-10-11	Germany	Omicron 22D	18
+2022-10-12	Germany	Omicron 22D	9
+2022-10-13	Germany	Omicron 22D	7
+2022-10-14	Germany	Omicron 22D	7
+2022-10-15	Germany	Omicron 22D	10
+2022-10-16	Germany	Omicron 22D	3
+2022-10-17	Germany	Omicron 22D	16
 2022-08-03	Germany	Omicron BA.2.75.2	1
 2022-08-07	Germany	Omicron BA.2.75.2	2
 2022-08-10	Germany	Omicron BA.2.75.2	1
@@ -4243,15 +4287,21 @@ date	location	variant	sequences
 2022-09-23	Germany	Omicron BA.2.75.2	1
 2022-09-24	Germany	Omicron BA.2.75.2	2
 2022-09-26	Germany	Omicron BA.2.75.2	3
+2022-09-27	Germany	Omicron BA.2.75.2	1
 2022-09-28	Germany	Omicron BA.2.75.2	1
 2022-09-29	Germany	Omicron BA.2.75.2	1
-2022-09-30	Germany	Omicron BA.2.75.2	1
+2022-09-30	Germany	Omicron BA.2.75.2	2
 2022-10-04	Germany	Omicron BA.2.75.2	1
-2022-10-07	Germany	Omicron BA.2.75.2	1
+2022-10-05	Germany	Omicron BA.2.75.2	1
+2022-10-06	Germany	Omicron BA.2.75.2	1
+2022-10-07	Germany	Omicron BA.2.75.2	2
 2022-10-08	Germany	Omicron BA.2.75.2	1
 2022-10-09	Germany	Omicron BA.2.75.2	1
-2022-10-10	Germany	Omicron BA.2.75.2	1
-2022-10-13	Germany	Omicron BA.2.75.2	1
+2022-10-10	Germany	Omicron BA.2.75.2	2
+2022-10-11	Germany	Omicron BA.2.75.2	1
+2022-10-12	Germany	Omicron BA.2.75.2	3
+2022-10-13	Germany	Omicron BA.2.75.2	2
+2022-10-17	Germany	Omicron BA.2.75.2	3
 2022-08-13	Germany	Omicron BQ.1	1
 2022-08-23	Germany	Omicron BQ.1	1
 2022-08-24	Germany	Omicron BQ.1	2
@@ -4270,32 +4320,35 @@ date	location	variant	sequences
 2022-09-16	Germany	Omicron BQ.1	5
 2022-09-17	Germany	Omicron BQ.1	6
 2022-09-18	Germany	Omicron BQ.1	3
-2022-09-19	Germany	Omicron BQ.1	11
+2022-09-19	Germany	Omicron BQ.1	12
 2022-09-20	Germany	Omicron BQ.1	7
 2022-09-21	Germany	Omicron BQ.1	5
 2022-09-22	Germany	Omicron BQ.1	5
 2022-09-23	Germany	Omicron BQ.1	5
 2022-09-24	Germany	Omicron BQ.1	6
 2022-09-25	Germany	Omicron BQ.1	2
-2022-09-26	Germany	Omicron BQ.1	8
+2022-09-26	Germany	Omicron BQ.1	11
 2022-09-27	Germany	Omicron BQ.1	13
 2022-09-28	Germany	Omicron BQ.1	14
-2022-09-29	Germany	Omicron BQ.1	20
-2022-09-30	Germany	Omicron BQ.1	9
+2022-09-29	Germany	Omicron BQ.1	22
+2022-09-30	Germany	Omicron BQ.1	11
 2022-10-01	Germany	Omicron BQ.1	11
-2022-10-02	Germany	Omicron BQ.1	9
-2022-10-03	Germany	Omicron BQ.1	21
-2022-10-04	Germany	Omicron BQ.1	22
-2022-10-05	Germany	Omicron BQ.1	19
-2022-10-06	Germany	Omicron BQ.1	12
-2022-10-07	Germany	Omicron BQ.1	33
-2022-10-08	Germany	Omicron BQ.1	17
-2022-10-09	Germany	Omicron BQ.1	11
-2022-10-10	Germany	Omicron BQ.1	29
-2022-10-11	Germany	Omicron BQ.1	16
-2022-10-12	Germany	Omicron BQ.1	1
-2022-10-13	Germany	Omicron BQ.1	6
-2022-10-14	Germany	Omicron BQ.1	4
+2022-10-02	Germany	Omicron BQ.1	11
+2022-10-03	Germany	Omicron BQ.1	23
+2022-10-04	Germany	Omicron BQ.1	40
+2022-10-05	Germany	Omicron BQ.1	35
+2022-10-06	Germany	Omicron BQ.1	25
+2022-10-07	Germany	Omicron BQ.1	41
+2022-10-08	Germany	Omicron BQ.1	28
+2022-10-09	Germany	Omicron BQ.1	14
+2022-10-10	Germany	Omicron BQ.1	55
+2022-10-11	Germany	Omicron BQ.1	50
+2022-10-12	Germany	Omicron BQ.1	22
+2022-10-13	Germany	Omicron BQ.1	40
+2022-10-14	Germany	Omicron BQ.1	32
+2022-10-15	Germany	Omicron BQ.1	21
+2022-10-16	Germany	Omicron BQ.1	14
+2022-10-17	Germany	Omicron BQ.1	43
 2022-09-07	Germany	Omicron XBB	1
 2022-09-14	Germany	Omicron XBB	1
 2022-09-18	Germany	Omicron XBB	1
@@ -4303,9 +4356,16 @@ date	location	variant	sequences
 2022-09-24	Germany	Omicron XBB	1
 2022-09-26	Germany	Omicron XBB	1
 2022-09-28	Germany	Omicron XBB	1
+2022-10-03	Germany	Omicron XBB	1
+2022-10-05	Germany	Omicron XBB	1
 2022-10-06	Germany	Omicron XBB	3
-2022-10-07	Germany	Omicron XBB	1
+2022-10-07	Germany	Omicron XBB	2
 2022-10-08	Germany	Omicron XBB	1
+2022-10-12	Germany	Omicron XBB	2
+2022-10-13	Germany	Omicron XBB	2
+2022-10-14	Germany	Omicron XBB	1
+2022-10-16	Germany	Omicron XBB	1
+2022-10-17	Germany	Omicron XBB	3
 2022-06-02	India	other	1
 2022-06-07	India	other	2
 2022-06-18	India	other	1
@@ -4332,16 +4392,17 @@ date	location	variant	sequences
 2022-09-06	India	other	1
 2022-09-08	India	other	1
 2022-09-09	India	other	2
-2022-09-13	India	other	1
+2022-09-13	India	other	2
+2022-09-15	India	other	2
 2022-09-16	India	other	1
-2022-09-17	India	other	1
+2022-09-17	India	other	2
 2022-09-21	India	other	1
+2022-09-23	India	other	1
+2022-09-28	India	other	1
 2022-10-01	India	other	1
-2022-10-05	India	other	1
+2022-10-03	India	other	1
+2022-10-05	India	other	3
 2022-10-11	India	other	1
-2022-05-30	India	Omicron 21L	115
-2022-05-31	India	Omicron 21L	102
-2022-06-01	India	Omicron 21L	123
 2022-06-02	India	Omicron 21L	114
 2022-06-03	India	Omicron 21L	136
 2022-06-04	India	Omicron 21L	154
@@ -4398,11 +4459,11 @@ date	location	variant	sequences
 2022-07-25	India	Omicron 21L	77
 2022-07-26	India	Omicron 21L	60
 2022-07-27	India	Omicron 21L	60
-2022-07-28	India	Omicron 21L	74
+2022-07-28	India	Omicron 21L	75
 2022-07-29	India	Omicron 21L	32
 2022-07-30	India	Omicron 21L	33
 2022-07-31	India	Omicron 21L	15
-2022-08-01	India	Omicron 21L	31
+2022-08-01	India	Omicron 21L	32
 2022-08-02	India	Omicron 21L	34
 2022-08-03	India	Omicron 21L	29
 2022-08-04	India	Omicron 21L	27
@@ -4431,7 +4492,7 @@ date	location	variant	sequences
 2022-08-27	India	Omicron 21L	4
 2022-08-28	India	Omicron 21L	1
 2022-08-29	India	Omicron 21L	3
-2022-08-30	India	Omicron 21L	2
+2022-08-30	India	Omicron 21L	3
 2022-08-31	India	Omicron 21L	1
 2022-09-01	India	Omicron 21L	3
 2022-09-02	India	Omicron 21L	5
@@ -4444,15 +4505,15 @@ date	location	variant	sequences
 2022-09-09	India	Omicron 21L	1
 2022-09-10	India	Omicron 21L	2
 2022-09-12	India	Omicron 21L	1
-2022-09-19	India	Omicron 21L	2
+2022-09-13	India	Omicron 21L	1
+2022-09-19	India	Omicron 21L	3
+2022-09-21	India	Omicron 21L	1
 2022-09-23	India	Omicron 21L	1
 2022-09-24	India	Omicron 21L	2
 2022-09-27	India	Omicron 21L	1
 2022-10-01	India	Omicron 21L	2
 2022-10-04	India	Omicron 21L	1
 2022-10-06	India	Omicron 21L	1
-2022-05-30	India	Omicron 22A	1
-2022-06-01	India	Omicron 22A	4
 2022-06-02	India	Omicron 22A	1
 2022-06-03	India	Omicron 22A	3
 2022-06-04	India	Omicron 22A	6
@@ -4506,9 +4567,6 @@ date	location	variant	sequences
 2022-09-05	India	Omicron 22A	1
 2022-09-07	India	Omicron 22A	1
 2022-09-16	India	Omicron 22A	1
-2022-05-30	India	Omicron 22B	7
-2022-05-31	India	Omicron 22B	9
-2022-06-01	India	Omicron 22B	18
 2022-06-02	India	Omicron 22B	19
 2022-06-03	India	Omicron 22B	11
 2022-06-04	India	Omicron 22B	28
@@ -4563,67 +4621,69 @@ date	location	variant	sequences
 2022-07-23	India	Omicron 22B	49
 2022-07-24	India	Omicron 22B	27
 2022-07-25	India	Omicron 22B	57
-2022-07-26	India	Omicron 22B	61
-2022-07-27	India	Omicron 22B	54
-2022-07-28	India	Omicron 22B	66
-2022-07-29	India	Omicron 22B	38
-2022-07-30	India	Omicron 22B	16
+2022-07-26	India	Omicron 22B	66
+2022-07-27	India	Omicron 22B	59
+2022-07-28	India	Omicron 22B	67
+2022-07-29	India	Omicron 22B	39
+2022-07-30	India	Omicron 22B	18
 2022-07-31	India	Omicron 22B	11
 2022-08-01	India	Omicron 22B	70
-2022-08-02	India	Omicron 22B	35
-2022-08-03	India	Omicron 22B	50
-2022-08-04	India	Omicron 22B	27
-2022-08-05	India	Omicron 22B	21
-2022-08-06	India	Omicron 22B	26
+2022-08-02	India	Omicron 22B	36
+2022-08-03	India	Omicron 22B	51
+2022-08-04	India	Omicron 22B	28
+2022-08-05	India	Omicron 22B	27
+2022-08-06	India	Omicron 22B	27
 2022-08-07	India	Omicron 22B	2
-2022-08-08	India	Omicron 22B	16
+2022-08-08	India	Omicron 22B	17
 2022-08-09	India	Omicron 22B	15
-2022-08-10	India	Omicron 22B	11
-2022-08-11	India	Omicron 22B	17
-2022-08-12	India	Omicron 22B	17
-2022-08-13	India	Omicron 22B	11
-2022-08-14	India	Omicron 22B	8
+2022-08-10	India	Omicron 22B	12
+2022-08-11	India	Omicron 22B	20
+2022-08-12	India	Omicron 22B	18
+2022-08-13	India	Omicron 22B	17
+2022-08-14	India	Omicron 22B	9
 2022-08-15	India	Omicron 22B	7
-2022-08-16	India	Omicron 22B	10
-2022-08-17	India	Omicron 22B	9
+2022-08-16	India	Omicron 22B	13
+2022-08-17	India	Omicron 22B	10
 2022-08-18	India	Omicron 22B	10
 2022-08-19	India	Omicron 22B	7
-2022-08-20	India	Omicron 22B	3
+2022-08-20	India	Omicron 22B	5
 2022-08-21	India	Omicron 22B	3
-2022-08-22	India	Omicron 22B	1
-2022-08-23	India	Omicron 22B	4
-2022-08-24	India	Omicron 22B	3
-2022-08-25	India	Omicron 22B	1
-2022-08-26	India	Omicron 22B	4
-2022-08-29	India	Omicron 22B	2
-2022-08-31	India	Omicron 22B	1
+2022-08-22	India	Omicron 22B	7
+2022-08-23	India	Omicron 22B	7
+2022-08-24	India	Omicron 22B	5
+2022-08-25	India	Omicron 22B	2
+2022-08-26	India	Omicron 22B	5
+2022-08-29	India	Omicron 22B	3
+2022-08-30	India	Omicron 22B	2
+2022-08-31	India	Omicron 22B	2
 2022-09-01	India	Omicron 22B	13
-2022-09-02	India	Omicron 22B	11
-2022-09-03	India	Omicron 22B	9
+2022-09-02	India	Omicron 22B	12
+2022-09-03	India	Omicron 22B	10
 2022-09-04	India	Omicron 22B	5
 2022-09-05	India	Omicron 22B	6
-2022-09-06	India	Omicron 22B	9
-2022-09-07	India	Omicron 22B	6
+2022-09-06	India	Omicron 22B	10
+2022-09-07	India	Omicron 22B	7
 2022-09-08	India	Omicron 22B	14
-2022-09-09	India	Omicron 22B	11
-2022-09-10	India	Omicron 22B	12
+2022-09-09	India	Omicron 22B	12
+2022-09-10	India	Omicron 22B	13
 2022-09-11	India	Omicron 22B	1
-2022-09-13	India	Omicron 22B	5
-2022-09-14	India	Omicron 22B	3
+2022-09-12	India	Omicron 22B	1
+2022-09-13	India	Omicron 22B	8
+2022-09-14	India	Omicron 22B	4
+2022-09-15	India	Omicron 22B	1
 2022-09-16	India	Omicron 22B	1
 2022-09-17	India	Omicron 22B	3
 2022-09-18	India	Omicron 22B	1
-2022-09-19	India	Omicron 22B	2
-2022-09-21	India	Omicron 22B	3
+2022-09-19	India	Omicron 22B	4
+2022-09-21	India	Omicron 22B	5
+2022-09-23	India	Omicron 22B	1
 2022-09-24	India	Omicron 22B	1
 2022-09-25	India	Omicron 22B	1
+2022-09-27	India	Omicron 22B	1
 2022-09-28	India	Omicron 22B	1
 2022-09-29	India	Omicron 22B	1
 2022-10-06	India	Omicron 22B	1
 2022-10-08	India	Omicron 22B	3
-2022-05-30	India	Omicron 22C	8
-2022-05-31	India	Omicron 22C	9
-2022-06-01	India	Omicron 22C	4
 2022-06-02	India	Omicron 22C	8
 2022-06-03	India	Omicron 22C	3
 2022-06-04	India	Omicron 22C	6
@@ -4662,8 +4722,6 @@ date	location	variant	sequences
 2022-07-20	India	Omicron 22C	2
 2022-08-06	India	Omicron 22C	1
 2022-08-17	India	Omicron 22C	1
-2022-05-30	India	Omicron 22D	1
-2022-06-01	India	Omicron 22D	1
 2022-06-02	India	Omicron 22D	1
 2022-06-03	India	Omicron 22D	2
 2022-06-04	India	Omicron 22D	2
@@ -4720,81 +4778,82 @@ date	location	variant	sequences
 2022-07-26	India	Omicron 22D	88
 2022-07-27	India	Omicron 22D	89
 2022-07-28	India	Omicron 22D	159
-2022-07-29	India	Omicron 22D	75
+2022-07-29	India	Omicron 22D	77
 2022-07-30	India	Omicron 22D	81
 2022-07-31	India	Omicron 22D	108
-2022-08-01	India	Omicron 22D	130
+2022-08-01	India	Omicron 22D	131
 2022-08-02	India	Omicron 22D	125
 2022-08-03	India	Omicron 22D	86
-2022-08-04	India	Omicron 22D	85
-2022-08-05	India	Omicron 22D	100
+2022-08-04	India	Omicron 22D	87
+2022-08-05	India	Omicron 22D	101
 2022-08-06	India	Omicron 22D	119
 2022-08-07	India	Omicron 22D	24
 2022-08-08	India	Omicron 22D	104
 2022-08-09	India	Omicron 22D	67
-2022-08-10	India	Omicron 22D	77
+2022-08-10	India	Omicron 22D	78
 2022-08-11	India	Omicron 22D	122
 2022-08-12	India	Omicron 22D	77
-2022-08-13	India	Omicron 22D	66
+2022-08-13	India	Omicron 22D	68
 2022-08-14	India	Omicron 22D	45
 2022-08-15	India	Omicron 22D	49
-2022-08-16	India	Omicron 22D	73
-2022-08-17	India	Omicron 22D	78
-2022-08-18	India	Omicron 22D	80
-2022-08-19	India	Omicron 22D	62
-2022-08-20	India	Omicron 22D	54
+2022-08-16	India	Omicron 22D	74
+2022-08-17	India	Omicron 22D	80
+2022-08-18	India	Omicron 22D	81
+2022-08-19	India	Omicron 22D	63
+2022-08-20	India	Omicron 22D	55
 2022-08-21	India	Omicron 22D	13
-2022-08-22	India	Omicron 22D	80
-2022-08-23	India	Omicron 22D	89
-2022-08-24	India	Omicron 22D	60
-2022-08-25	India	Omicron 22D	51
-2022-08-26	India	Omicron 22D	60
-2022-08-27	India	Omicron 22D	34
+2022-08-22	India	Omicron 22D	82
+2022-08-23	India	Omicron 22D	94
+2022-08-24	India	Omicron 22D	64
+2022-08-25	India	Omicron 22D	56
+2022-08-26	India	Omicron 22D	61
+2022-08-27	India	Omicron 22D	40
 2022-08-28	India	Omicron 22D	9
 2022-08-29	India	Omicron 22D	40
-2022-08-30	India	Omicron 22D	26
+2022-08-30	India	Omicron 22D	29
 2022-08-31	India	Omicron 22D	21
-2022-09-01	India	Omicron 22D	62
-2022-09-02	India	Omicron 22D	66
-2022-09-03	India	Omicron 22D	61
+2022-09-01	India	Omicron 22D	63
+2022-09-02	India	Omicron 22D	72
+2022-09-03	India	Omicron 22D	64
 2022-09-04	India	Omicron 22D	51
-2022-09-05	India	Omicron 22D	84
-2022-09-06	India	Omicron 22D	86
-2022-09-07	India	Omicron 22D	88
-2022-09-08	India	Omicron 22D	72
-2022-09-09	India	Omicron 22D	65
-2022-09-10	India	Omicron 22D	63
+2022-09-05	India	Omicron 22D	90
+2022-09-06	India	Omicron 22D	89
+2022-09-07	India	Omicron 22D	93
+2022-09-08	India	Omicron 22D	76
+2022-09-09	India	Omicron 22D	66
+2022-09-10	India	Omicron 22D	71
 2022-09-11	India	Omicron 22D	43
-2022-09-12	India	Omicron 22D	48
-2022-09-13	India	Omicron 22D	29
-2022-09-14	India	Omicron 22D	26
-2022-09-15	India	Omicron 22D	46
-2022-09-16	India	Omicron 22D	35
-2022-09-17	India	Omicron 22D	23
-2022-09-18	India	Omicron 22D	22
-2022-09-19	India	Omicron 22D	52
-2022-09-20	India	Omicron 22D	28
-2022-09-21	India	Omicron 22D	34
-2022-09-22	India	Omicron 22D	18
-2022-09-23	India	Omicron 22D	14
-2022-09-24	India	Omicron 22D	20
+2022-09-12	India	Omicron 22D	60
+2022-09-13	India	Omicron 22D	45
+2022-09-14	India	Omicron 22D	32
+2022-09-15	India	Omicron 22D	56
+2022-09-16	India	Omicron 22D	43
+2022-09-17	India	Omicron 22D	28
+2022-09-18	India	Omicron 22D	23
+2022-09-19	India	Omicron 22D	60
+2022-09-20	India	Omicron 22D	39
+2022-09-21	India	Omicron 22D	40
+2022-09-22	India	Omicron 22D	21
+2022-09-23	India	Omicron 22D	20
+2022-09-24	India	Omicron 22D	23
 2022-09-25	India	Omicron 22D	9
-2022-09-26	India	Omicron 22D	10
-2022-09-27	India	Omicron 22D	8
-2022-09-28	India	Omicron 22D	6
-2022-09-29	India	Omicron 22D	3
-2022-10-01	India	Omicron 22D	10
-2022-10-02	India	Omicron 22D	12
-2022-10-03	India	Omicron 22D	5
-2022-10-04	India	Omicron 22D	5
+2022-09-26	India	Omicron 22D	15
+2022-09-27	India	Omicron 22D	14
+2022-09-28	India	Omicron 22D	10
+2022-09-29	India	Omicron 22D	7
+2022-09-30	India	Omicron 22D	1
+2022-10-01	India	Omicron 22D	17
+2022-10-02	India	Omicron 22D	18
+2022-10-03	India	Omicron 22D	11
+2022-10-04	India	Omicron 22D	9
 2022-10-05	India	Omicron 22D	3
-2022-10-06	India	Omicron 22D	8
-2022-10-07	India	Omicron 22D	5
-2022-10-08	India	Omicron 22D	2
-2022-10-09	India	Omicron 22D	5
-2022-10-10	India	Omicron 22D	3
-2022-10-11	India	Omicron 22D	7
-2022-10-12	India	Omicron 22D	3
+2022-10-06	India	Omicron 22D	16
+2022-10-07	India	Omicron 22D	12
+2022-10-08	India	Omicron 22D	5
+2022-10-09	India	Omicron 22D	6
+2022-10-10	India	Omicron 22D	4
+2022-10-11	India	Omicron 22D	11
+2022-10-12	India	Omicron 22D	4
 2022-06-09	India	Omicron BA.2.75.2	1
 2022-07-04	India	Omicron BA.2.75.2	1
 2022-07-19	India	Omicron BA.2.75.2	1
@@ -4823,48 +4882,48 @@ date	location	variant	sequences
 2022-08-20	India	Omicron BA.2.75.2	5
 2022-08-21	India	Omicron BA.2.75.2	4
 2022-08-22	India	Omicron BA.2.75.2	15
-2022-08-23	India	Omicron BA.2.75.2	21
+2022-08-23	India	Omicron BA.2.75.2	22
 2022-08-24	India	Omicron BA.2.75.2	16
-2022-08-25	India	Omicron BA.2.75.2	8
-2022-08-26	India	Omicron BA.2.75.2	12
+2022-08-25	India	Omicron BA.2.75.2	10
+2022-08-26	India	Omicron BA.2.75.2	13
 2022-08-27	India	Omicron BA.2.75.2	10
 2022-08-29	India	Omicron BA.2.75.2	9
 2022-08-30	India	Omicron BA.2.75.2	1
 2022-08-31	India	Omicron BA.2.75.2	1
 2022-09-01	India	Omicron BA.2.75.2	18
-2022-09-02	India	Omicron BA.2.75.2	11
-2022-09-03	India	Omicron BA.2.75.2	21
+2022-09-02	India	Omicron BA.2.75.2	12
+2022-09-03	India	Omicron BA.2.75.2	22
 2022-09-04	India	Omicron BA.2.75.2	15
 2022-09-05	India	Omicron BA.2.75.2	15
-2022-09-06	India	Omicron BA.2.75.2	18
+2022-09-06	India	Omicron BA.2.75.2	20
 2022-09-07	India	Omicron BA.2.75.2	21
-2022-09-08	India	Omicron BA.2.75.2	15
-2022-09-09	India	Omicron BA.2.75.2	21
-2022-09-10	India	Omicron BA.2.75.2	12
+2022-09-08	India	Omicron BA.2.75.2	16
+2022-09-09	India	Omicron BA.2.75.2	22
+2022-09-10	India	Omicron BA.2.75.2	13
 2022-09-11	India	Omicron BA.2.75.2	10
-2022-09-12	India	Omicron BA.2.75.2	9
-2022-09-13	India	Omicron BA.2.75.2	9
-2022-09-14	India	Omicron BA.2.75.2	12
-2022-09-15	India	Omicron BA.2.75.2	10
-2022-09-16	India	Omicron BA.2.75.2	8
-2022-09-17	India	Omicron BA.2.75.2	10
+2022-09-12	India	Omicron BA.2.75.2	15
+2022-09-13	India	Omicron BA.2.75.2	16
+2022-09-14	India	Omicron BA.2.75.2	15
+2022-09-15	India	Omicron BA.2.75.2	11
+2022-09-16	India	Omicron BA.2.75.2	10
+2022-09-17	India	Omicron BA.2.75.2	15
 2022-09-18	India	Omicron BA.2.75.2	5
-2022-09-19	India	Omicron BA.2.75.2	9
-2022-09-20	India	Omicron BA.2.75.2	8
-2022-09-21	India	Omicron BA.2.75.2	12
-2022-09-22	India	Omicron BA.2.75.2	8
-2022-09-23	India	Omicron BA.2.75.2	2
-2022-09-24	India	Omicron BA.2.75.2	3
-2022-09-25	India	Omicron BA.2.75.2	4
-2022-09-26	India	Omicron BA.2.75.2	1
-2022-09-27	India	Omicron BA.2.75.2	2
+2022-09-19	India	Omicron BA.2.75.2	14
+2022-09-20	India	Omicron BA.2.75.2	9
+2022-09-21	India	Omicron BA.2.75.2	14
+2022-09-22	India	Omicron BA.2.75.2	10
+2022-09-23	India	Omicron BA.2.75.2	4
+2022-09-24	India	Omicron BA.2.75.2	4
+2022-09-25	India	Omicron BA.2.75.2	5
+2022-09-26	India	Omicron BA.2.75.2	2
+2022-09-27	India	Omicron BA.2.75.2	4
 2022-09-28	India	Omicron BA.2.75.2	3
 2022-09-29	India	Omicron BA.2.75.2	1
 2022-10-02	India	Omicron BA.2.75.2	2
-2022-10-03	India	Omicron BA.2.75.2	4
-2022-10-04	India	Omicron BA.2.75.2	3
+2022-10-03	India	Omicron BA.2.75.2	5
+2022-10-04	India	Omicron BA.2.75.2	6
 2022-10-05	India	Omicron BA.2.75.2	1
-2022-10-06	India	Omicron BA.2.75.2	3
+2022-10-06	India	Omicron BA.2.75.2	4
 2022-10-07	India	Omicron BA.2.75.2	1
 2022-10-08	India	Omicron BA.2.75.2	2
 2022-10-09	India	Omicron BA.2.75.2	1
@@ -4894,35 +4953,35 @@ date	location	variant	sequences
 2022-09-12	India	Omicron XBB	12
 2022-09-13	India	Omicron XBB	6
 2022-09-14	India	Omicron XBB	7
-2022-09-15	India	Omicron XBB	7
+2022-09-15	India	Omicron XBB	8
 2022-09-16	India	Omicron XBB	6
-2022-09-17	India	Omicron XBB	4
+2022-09-17	India	Omicron XBB	8
 2022-09-18	India	Omicron XBB	2
-2022-09-19	India	Omicron XBB	7
-2022-09-20	India	Omicron XBB	9
+2022-09-19	India	Omicron XBB	13
+2022-09-20	India	Omicron XBB	12
 2022-09-21	India	Omicron XBB	9
-2022-09-22	India	Omicron XBB	10
+2022-09-22	India	Omicron XBB	13
 2022-09-23	India	Omicron XBB	7
 2022-09-24	India	Omicron XBB	4
-2022-09-26	India	Omicron XBB	2
-2022-09-27	India	Omicron XBB	1
-2022-09-28	India	Omicron XBB	1
-2022-10-01	India	Omicron XBB	6
-2022-10-02	India	Omicron XBB	2
-2022-10-03	India	Omicron XBB	6
-2022-10-04	India	Omicron XBB	11
-2022-10-05	India	Omicron XBB	6
-2022-10-06	India	Omicron XBB	8
-2022-10-07	India	Omicron XBB	10
-2022-10-08	India	Omicron XBB	9
-2022-10-09	India	Omicron XBB	3
-2022-10-10	India	Omicron XBB	8
-2022-10-11	India	Omicron XBB	13
-2022-10-12	India	Omicron XBB	5
+2022-09-26	India	Omicron XBB	4
+2022-09-27	India	Omicron XBB	5
+2022-09-28	India	Omicron XBB	2
+2022-09-29	India	Omicron XBB	1
+2022-09-30	India	Omicron XBB	1
+2022-10-01	India	Omicron XBB	7
+2022-10-02	India	Omicron XBB	4
+2022-10-03	India	Omicron XBB	15
+2022-10-04	India	Omicron XBB	17
+2022-10-05	India	Omicron XBB	12
+2022-10-06	India	Omicron XBB	17
+2022-10-07	India	Omicron XBB	18
+2022-10-08	India	Omicron XBB	13
+2022-10-09	India	Omicron XBB	5
+2022-10-10	India	Omicron XBB	16
+2022-10-11	India	Omicron XBB	22
+2022-10-12	India	Omicron XBB	6
 2022-10-13	India	Omicron XBB	2
-2022-05-30	Israel	other	3
-2022-05-31	Israel	other	3
-2022-06-01	Israel	other	4
+2022-10-16	India	Omicron XBB	1
 2022-06-02	Israel	other	5
 2022-06-03	Israel	other	7
 2022-06-05	Israel	other	1
@@ -4983,9 +5042,6 @@ date	location	variant	sequences
 2022-10-02	Israel	other	3
 2022-10-12	Israel	other	1
 2022-10-14	Israel	other	1
-2022-05-30	Israel	Omicron 21L	94
-2022-05-31	Israel	Omicron 21L	168
-2022-06-01	Israel	Omicron 21L	135
 2022-06-02	Israel	Omicron 21L	115
 2022-06-03	Israel	Omicron 21L	93
 2022-06-04	Israel	Omicron 21L	28
@@ -5083,9 +5139,8 @@ date	location	variant	sequences
 2022-10-07	Israel	Omicron 21L	1
 2022-10-11	Israel	Omicron 21L	3
 2022-10-12	Israel	Omicron 21L	1
-2022-05-30	Israel	Omicron 22A	20
-2022-05-31	Israel	Omicron 22A	42
-2022-06-01	Israel	Omicron 22A	26
+2022-10-16	Israel	Omicron 21L	1
+2022-10-17	Israel	Omicron 21L	5
 2022-06-02	Israel	Omicron 22A	51
 2022-06-03	Israel	Omicron 22A	22
 2022-06-04	Israel	Omicron 22A	15
@@ -5218,9 +5273,8 @@ date	location	variant	sequences
 2022-10-12	Israel	Omicron 22A	1
 2022-10-13	Israel	Omicron 22A	4
 2022-10-14	Israel	Omicron 22A	2
-2022-05-30	Israel	Omicron 22B	51
-2022-05-31	Israel	Omicron 22B	66
-2022-06-01	Israel	Omicron 22B	95
+2022-10-15	Israel	Omicron 22A	2
+2022-10-17	Israel	Omicron 22A	2
 2022-06-02	Israel	Omicron 22B	79
 2022-06-03	Israel	Omicron 22B	43
 2022-06-04	Israel	Omicron 22B	28
@@ -5356,9 +5410,9 @@ date	location	variant	sequences
 2022-10-12	Israel	Omicron 22B	106
 2022-10-13	Israel	Omicron 22B	93
 2022-10-14	Israel	Omicron 22B	73
-2022-05-30	Israel	Omicron 22C	23
-2022-05-31	Israel	Omicron 22C	59
-2022-06-01	Israel	Omicron 22C	45
+2022-10-15	Israel	Omicron 22B	61
+2022-10-16	Israel	Omicron 22B	85
+2022-10-17	Israel	Omicron 22B	80
 2022-06-02	Israel	Omicron 22C	40
 2022-06-03	Israel	Omicron 22C	31
 2022-06-04	Israel	Omicron 22C	11
@@ -5506,6 +5560,9 @@ date	location	variant	sequences
 2022-10-12	Israel	Omicron 22D	6
 2022-10-13	Israel	Omicron 22D	6
 2022-10-14	Israel	Omicron 22D	12
+2022-10-15	Israel	Omicron 22D	5
+2022-10-16	Israel	Omicron 22D	12
+2022-10-17	Israel	Omicron 22D	6
 2022-08-15	Israel	Omicron BA.2.75.2	1
 2022-08-18	Israel	Omicron BA.2.75.2	1
 2022-08-19	Israel	Omicron BA.2.75.2	1
@@ -5536,6 +5593,8 @@ date	location	variant	sequences
 2022-10-10	Israel	Omicron BA.2.75.2	1
 2022-10-13	Israel	Omicron BA.2.75.2	3
 2022-10-14	Israel	Omicron BA.2.75.2	1
+2022-10-16	Israel	Omicron BA.2.75.2	2
+2022-10-17	Israel	Omicron BA.2.75.2	2
 2022-08-27	Israel	Omicron BQ.1	1
 2022-08-31	Israel	Omicron BQ.1	1
 2022-09-05	Israel	Omicron BQ.1	1
@@ -5572,6 +5631,9 @@ date	location	variant	sequences
 2022-10-12	Israel	Omicron BQ.1	21
 2022-10-13	Israel	Omicron BQ.1	10
 2022-10-14	Israel	Omicron BQ.1	10
+2022-10-15	Israel	Omicron BQ.1	5
+2022-10-16	Israel	Omicron BQ.1	27
+2022-10-17	Israel	Omicron BQ.1	30
 2022-09-01	Israel	Omicron XBB	1
 2022-09-12	Israel	Omicron XBB	1
 2022-09-14	Israel	Omicron XBB	1
@@ -5585,535 +5647,8 @@ date	location	variant	sequences
 2022-10-12	Israel	Omicron XBB	4
 2022-10-13	Israel	Omicron XBB	1
 2022-10-14	Israel	Omicron XBB	1
-2022-05-30	Italy	other	1
-2022-05-31	Italy	other	3
-2022-06-01	Italy	other	4
-2022-06-02	Italy	other	1
-2022-06-06	Italy	other	3
-2022-06-07	Italy	other	4
-2022-06-10	Italy	other	1
-2022-06-13	Italy	other	1
-2022-06-18	Italy	other	1
-2022-06-20	Italy	other	1
-2022-06-21	Italy	other	3
-2022-06-22	Italy	other	2
-2022-06-23	Italy	other	1
-2022-06-28	Italy	other	2
-2022-06-29	Italy	other	1
-2022-07-01	Italy	other	1
-2022-07-04	Italy	other	3
-2022-07-05	Italy	other	3
-2022-07-08	Italy	other	2
-2022-07-12	Italy	other	1
-2022-07-15	Italy	other	1
-2022-07-17	Italy	other	1
-2022-07-18	Italy	other	4
-2022-07-21	Italy	other	1
-2022-07-22	Italy	other	1
-2022-07-25	Italy	other	3
-2022-07-26	Italy	other	1
-2022-07-27	Italy	other	1
-2022-07-28	Italy	other	2
-2022-07-29	Italy	other	1
-2022-07-30	Italy	other	1
-2022-08-01	Italy	other	1
-2022-08-02	Italy	other	3
-2022-08-05	Italy	other	1
-2022-08-06	Italy	other	1
-2022-08-08	Italy	other	1
-2022-08-09	Italy	other	1
-2022-08-11	Italy	other	1
-2022-08-12	Italy	other	2
-2022-08-22	Italy	other	2
-2022-08-24	Italy	other	1
-2022-08-25	Italy	other	1
-2022-08-29	Italy	other	2
-2022-08-30	Italy	other	1
-2022-08-31	Italy	other	1
-2022-09-01	Italy	other	1
-2022-09-05	Italy	other	1
-2022-09-06	Italy	other	9
-2022-09-07	Italy	other	1
-2022-09-10	Italy	other	1
-2022-09-13	Italy	other	1
-2022-09-15	Italy	other	1
-2022-09-30	Italy	other	1
-2022-10-03	Italy	other	1
-2022-10-09	Italy	other	1
-2022-05-30	Italy	Omicron 21L	94
-2022-05-31	Italy	Omicron 21L	49
-2022-06-01	Italy	Omicron 21L	308
-2022-06-02	Italy	Omicron 21L	17
-2022-06-03	Italy	Omicron 21L	49
-2022-06-04	Italy	Omicron 21L	47
-2022-06-05	Italy	Omicron 21L	22
-2022-06-06	Italy	Omicron 21L	120
-2022-06-07	Italy	Omicron 21L	365
-2022-06-08	Italy	Omicron 21L	46
-2022-06-09	Italy	Omicron 21L	34
-2022-06-10	Italy	Omicron 21L	211
-2022-06-11	Italy	Omicron 21L	21
-2022-06-12	Italy	Omicron 21L	16
-2022-06-13	Italy	Omicron 21L	48
-2022-06-14	Italy	Omicron 21L	45
-2022-06-15	Italy	Omicron 21L	38
-2022-06-16	Italy	Omicron 21L	21
-2022-06-17	Italy	Omicron 21L	49
-2022-06-18	Italy	Omicron 21L	15
-2022-06-19	Italy	Omicron 21L	13
-2022-06-20	Italy	Omicron 21L	43
-2022-06-21	Italy	Omicron 21L	27
-2022-06-22	Italy	Omicron 21L	29
-2022-06-23	Italy	Omicron 21L	16
-2022-06-24	Italy	Omicron 21L	16
-2022-06-25	Italy	Omicron 21L	16
-2022-06-26	Italy	Omicron 21L	8
-2022-06-27	Italy	Omicron 21L	21
-2022-06-28	Italy	Omicron 21L	21
-2022-06-29	Italy	Omicron 21L	13
-2022-06-30	Italy	Omicron 21L	19
-2022-07-01	Italy	Omicron 21L	78
-2022-07-02	Italy	Omicron 21L	4
-2022-07-03	Italy	Omicron 21L	2
-2022-07-04	Italy	Omicron 21L	12
-2022-07-05	Italy	Omicron 21L	70
-2022-07-06	Italy	Omicron 21L	4
-2022-07-07	Italy	Omicron 21L	2
-2022-07-08	Italy	Omicron 21L	46
-2022-07-09	Italy	Omicron 21L	4
-2022-07-10	Italy	Omicron 21L	3
-2022-07-11	Italy	Omicron 21L	13
-2022-07-12	Italy	Omicron 21L	7
-2022-07-13	Italy	Omicron 21L	8
-2022-07-14	Italy	Omicron 21L	13
-2022-07-15	Italy	Omicron 21L	2
-2022-07-16	Italy	Omicron 21L	5
-2022-07-17	Italy	Omicron 21L	1
-2022-07-18	Italy	Omicron 21L	10
-2022-07-19	Italy	Omicron 21L	3
-2022-07-20	Italy	Omicron 21L	4
-2022-07-21	Italy	Omicron 21L	11
-2022-07-22	Italy	Omicron 21L	13
-2022-07-23	Italy	Omicron 21L	4
-2022-07-24	Italy	Omicron 21L	1
-2022-07-25	Italy	Omicron 21L	8
-2022-07-26	Italy	Omicron 21L	9
-2022-07-27	Italy	Omicron 21L	1
-2022-07-28	Italy	Omicron 21L	2
-2022-07-29	Italy	Omicron 21L	2
-2022-08-01	Italy	Omicron 21L	1
-2022-08-02	Italy	Omicron 21L	5
-2022-08-04	Italy	Omicron 21L	1
-2022-08-05	Italy	Omicron 21L	1
-2022-08-06	Italy	Omicron 21L	1
-2022-08-16	Italy	Omicron 21L	4
-2022-08-17	Italy	Omicron 21L	1
-2022-08-18	Italy	Omicron 21L	1
-2022-08-19	Italy	Omicron 21L	2
-2022-08-22	Italy	Omicron 21L	3
-2022-08-23	Italy	Omicron 21L	1
-2022-08-24	Italy	Omicron 21L	1
-2022-08-30	Italy	Omicron 21L	1
-2022-09-03	Italy	Omicron 21L	1
-2022-09-05	Italy	Omicron 21L	1
-2022-09-06	Italy	Omicron 21L	3
-2022-09-09	Italy	Omicron 21L	1
-2022-09-12	Italy	Omicron 21L	2
-2022-09-15	Italy	Omicron 21L	1
-2022-09-19	Italy	Omicron 21L	1
-2022-09-21	Italy	Omicron 21L	1
-2022-10-03	Italy	Omicron 21L	1
-2022-10-04	Italy	Omicron 21L	3
-2022-10-06	Italy	Omicron 21L	1
-2022-05-30	Italy	Omicron 22A	2
-2022-05-31	Italy	Omicron 22A	3
-2022-06-01	Italy	Omicron 22A	38
-2022-06-02	Italy	Omicron 22A	4
-2022-06-03	Italy	Omicron 22A	6
-2022-06-04	Italy	Omicron 22A	18
-2022-06-05	Italy	Omicron 22A	3
-2022-06-06	Italy	Omicron 22A	20
-2022-06-07	Italy	Omicron 22A	81
-2022-06-08	Italy	Omicron 22A	4
-2022-06-09	Italy	Omicron 22A	12
-2022-06-10	Italy	Omicron 22A	36
-2022-06-11	Italy	Omicron 22A	5
-2022-06-12	Italy	Omicron 22A	3
-2022-06-13	Italy	Omicron 22A	13
-2022-06-14	Italy	Omicron 22A	30
-2022-06-15	Italy	Omicron 22A	20
-2022-06-16	Italy	Omicron 22A	9
-2022-06-17	Italy	Omicron 22A	15
-2022-06-18	Italy	Omicron 22A	14
-2022-06-19	Italy	Omicron 22A	6
-2022-06-20	Italy	Omicron 22A	23
-2022-06-21	Italy	Omicron 22A	27
-2022-06-22	Italy	Omicron 22A	18
-2022-06-23	Italy	Omicron 22A	11
-2022-06-24	Italy	Omicron 22A	15
-2022-06-25	Italy	Omicron 22A	10
-2022-06-26	Italy	Omicron 22A	5
-2022-06-27	Italy	Omicron 22A	21
-2022-06-28	Italy	Omicron 22A	33
-2022-06-29	Italy	Omicron 22A	25
-2022-06-30	Italy	Omicron 22A	19
-2022-07-01	Italy	Omicron 22A	53
-2022-07-02	Italy	Omicron 22A	9
-2022-07-03	Italy	Omicron 22A	7
-2022-07-04	Italy	Omicron 22A	21
-2022-07-05	Italy	Omicron 22A	122
-2022-07-06	Italy	Omicron 22A	18
-2022-07-07	Italy	Omicron 22A	14
-2022-07-08	Italy	Omicron 22A	58
-2022-07-09	Italy	Omicron 22A	10
-2022-07-10	Italy	Omicron 22A	7
-2022-07-11	Italy	Omicron 22A	38
-2022-07-12	Italy	Omicron 22A	20
-2022-07-13	Italy	Omicron 22A	27
-2022-07-14	Italy	Omicron 22A	25
-2022-07-15	Italy	Omicron 22A	39
-2022-07-16	Italy	Omicron 22A	14
-2022-07-17	Italy	Omicron 22A	6
-2022-07-18	Italy	Omicron 22A	32
-2022-07-19	Italy	Omicron 22A	15
-2022-07-20	Italy	Omicron 22A	13
-2022-07-21	Italy	Omicron 22A	23
-2022-07-22	Italy	Omicron 22A	12
-2022-07-23	Italy	Omicron 22A	12
-2022-07-24	Italy	Omicron 22A	1
-2022-07-25	Italy	Omicron 22A	23
-2022-07-26	Italy	Omicron 22A	16
-2022-07-27	Italy	Omicron 22A	8
-2022-07-28	Italy	Omicron 22A	11
-2022-07-29	Italy	Omicron 22A	14
-2022-07-30	Italy	Omicron 22A	7
-2022-07-31	Italy	Omicron 22A	2
-2022-08-01	Italy	Omicron 22A	14
-2022-08-02	Italy	Omicron 22A	43
-2022-08-03	Italy	Omicron 22A	4
-2022-08-04	Italy	Omicron 22A	14
-2022-08-05	Italy	Omicron 22A	32
-2022-08-06	Italy	Omicron 22A	6
-2022-08-07	Italy	Omicron 22A	1
-2022-08-08	Italy	Omicron 22A	9
-2022-08-09	Italy	Omicron 22A	9
-2022-08-10	Italy	Omicron 22A	5
-2022-08-11	Italy	Omicron 22A	6
-2022-08-12	Italy	Omicron 22A	10
-2022-08-13	Italy	Omicron 22A	4
-2022-08-15	Italy	Omicron 22A	3
-2022-08-16	Italy	Omicron 22A	4
-2022-08-17	Italy	Omicron 22A	6
-2022-08-18	Italy	Omicron 22A	4
-2022-08-19	Italy	Omicron 22A	6
-2022-08-20	Italy	Omicron 22A	2
-2022-08-22	Italy	Omicron 22A	4
-2022-08-23	Italy	Omicron 22A	4
-2022-08-24	Italy	Omicron 22A	5
-2022-08-25	Italy	Omicron 22A	10
-2022-08-26	Italy	Omicron 22A	4
-2022-08-27	Italy	Omicron 22A	5
-2022-08-29	Italy	Omicron 22A	3
-2022-08-30	Italy	Omicron 22A	3
-2022-08-31	Italy	Omicron 22A	2
-2022-09-01	Italy	Omicron 22A	2
-2022-09-02	Italy	Omicron 22A	6
-2022-09-03	Italy	Omicron 22A	1
-2022-09-04	Italy	Omicron 22A	2
-2022-09-05	Italy	Omicron 22A	6
-2022-09-06	Italy	Omicron 22A	19
-2022-09-07	Italy	Omicron 22A	10
-2022-09-08	Italy	Omicron 22A	1
-2022-09-09	Italy	Omicron 22A	9
-2022-09-10	Italy	Omicron 22A	5
-2022-09-11	Italy	Omicron 22A	1
-2022-09-12	Italy	Omicron 22A	4
-2022-09-13	Italy	Omicron 22A	4
-2022-09-14	Italy	Omicron 22A	2
-2022-09-15	Italy	Omicron 22A	1
-2022-09-16	Italy	Omicron 22A	3
-2022-09-17	Italy	Omicron 22A	4
-2022-09-18	Italy	Omicron 22A	1
-2022-09-19	Italy	Omicron 22A	4
-2022-09-20	Italy	Omicron 22A	2
-2022-09-21	Italy	Omicron 22A	4
-2022-09-22	Italy	Omicron 22A	5
-2022-09-23	Italy	Omicron 22A	2
-2022-09-24	Italy	Omicron 22A	5
-2022-09-26	Italy	Omicron 22A	8
-2022-09-27	Italy	Omicron 22A	4
-2022-09-28	Italy	Omicron 22A	4
-2022-09-29	Italy	Omicron 22A	3
-2022-09-30	Italy	Omicron 22A	1
-2022-10-03	Italy	Omicron 22A	15
-2022-10-04	Italy	Omicron 22A	28
-2022-10-05	Italy	Omicron 22A	6
-2022-10-08	Italy	Omicron 22A	2
-2022-10-09	Italy	Omicron 22A	5
-2022-10-10	Italy	Omicron 22A	1
-2022-10-11	Italy	Omicron 22A	2
-2022-10-12	Italy	Omicron 22A	1
-2022-10-13	Italy	Omicron 22A	3
-2022-05-30	Italy	Omicron 22B	15
-2022-05-31	Italy	Omicron 22B	8
-2022-06-01	Italy	Omicron 22B	70
-2022-06-02	Italy	Omicron 22B	9
-2022-06-03	Italy	Omicron 22B	10
-2022-06-04	Italy	Omicron 22B	17
-2022-06-05	Italy	Omicron 22B	18
-2022-06-06	Italy	Omicron 22B	57
-2022-06-07	Italy	Omicron 22B	180
-2022-06-08	Italy	Omicron 22B	25
-2022-06-09	Italy	Omicron 22B	25
-2022-06-10	Italy	Omicron 22B	114
-2022-06-11	Italy	Omicron 22B	22
-2022-06-12	Italy	Omicron 22B	17
-2022-06-13	Italy	Omicron 22B	35
-2022-06-14	Italy	Omicron 22B	55
-2022-06-15	Italy	Omicron 22B	44
-2022-06-16	Italy	Omicron 22B	45
-2022-06-17	Italy	Omicron 22B	65
-2022-06-18	Italy	Omicron 22B	33
-2022-06-19	Italy	Omicron 22B	18
-2022-06-20	Italy	Omicron 22B	139
-2022-06-21	Italy	Omicron 22B	83
-2022-06-22	Italy	Omicron 22B	86
-2022-06-23	Italy	Omicron 22B	87
-2022-06-24	Italy	Omicron 22B	78
-2022-06-25	Italy	Omicron 22B	71
-2022-06-26	Italy	Omicron 22B	41
-2022-06-27	Italy	Omicron 22B	127
-2022-06-28	Italy	Omicron 22B	141
-2022-06-29	Italy	Omicron 22B	96
-2022-06-30	Italy	Omicron 22B	80
-2022-07-01	Italy	Omicron 22B	217
-2022-07-02	Italy	Omicron 22B	45
-2022-07-03	Italy	Omicron 22B	25
-2022-07-04	Italy	Omicron 22B	159
-2022-07-05	Italy	Omicron 22B	809
-2022-07-06	Italy	Omicron 22B	72
-2022-07-07	Italy	Omicron 22B	89
-2022-07-08	Italy	Omicron 22B	355
-2022-07-09	Italy	Omicron 22B	60
-2022-07-10	Italy	Omicron 22B	37
-2022-07-11	Italy	Omicron 22B	279
-2022-07-12	Italy	Omicron 22B	152
-2022-07-13	Italy	Omicron 22B	197
-2022-07-14	Italy	Omicron 22B	247
-2022-07-15	Italy	Omicron 22B	257
-2022-07-16	Italy	Omicron 22B	110
-2022-07-17	Italy	Omicron 22B	53
-2022-07-18	Italy	Omicron 22B	249
-2022-07-19	Italy	Omicron 22B	129
-2022-07-20	Italy	Omicron 22B	143
-2022-07-21	Italy	Omicron 22B	255
-2022-07-22	Italy	Omicron 22B	159
-2022-07-23	Italy	Omicron 22B	128
-2022-07-24	Italy	Omicron 22B	41
-2022-07-25	Italy	Omicron 22B	259
-2022-07-26	Italy	Omicron 22B	202
-2022-07-27	Italy	Omicron 22B	81
-2022-07-28	Italy	Omicron 22B	93
-2022-07-29	Italy	Omicron 22B	130
-2022-07-30	Italy	Omicron 22B	79
-2022-07-31	Italy	Omicron 22B	29
-2022-08-01	Italy	Omicron 22B	224
-2022-08-02	Italy	Omicron 22B	647
-2022-08-03	Italy	Omicron 22B	67
-2022-08-04	Italy	Omicron 22B	91
-2022-08-05	Italy	Omicron 22B	146
-2022-08-06	Italy	Omicron 22B	99
-2022-08-07	Italy	Omicron 22B	25
-2022-08-08	Italy	Omicron 22B	152
-2022-08-09	Italy	Omicron 22B	170
-2022-08-10	Italy	Omicron 22B	70
-2022-08-11	Italy	Omicron 22B	76
-2022-08-12	Italy	Omicron 22B	126
-2022-08-13	Italy	Omicron 22B	55
-2022-08-14	Italy	Omicron 22B	17
-2022-08-15	Italy	Omicron 22B	44
-2022-08-16	Italy	Omicron 22B	98
-2022-08-17	Italy	Omicron 22B	53
-2022-08-18	Italy	Omicron 22B	52
-2022-08-19	Italy	Omicron 22B	72
-2022-08-20	Italy	Omicron 22B	55
-2022-08-21	Italy	Omicron 22B	7
-2022-08-22	Italy	Omicron 22B	75
-2022-08-23	Italy	Omicron 22B	55
-2022-08-24	Italy	Omicron 22B	109
-2022-08-25	Italy	Omicron 22B	105
-2022-08-26	Italy	Omicron 22B	55
-2022-08-27	Italy	Omicron 22B	43
-2022-08-28	Italy	Omicron 22B	11
-2022-08-29	Italy	Omicron 22B	93
-2022-08-30	Italy	Omicron 22B	103
-2022-08-31	Italy	Omicron 22B	35
-2022-09-01	Italy	Omicron 22B	43
-2022-09-02	Italy	Omicron 22B	72
-2022-09-03	Italy	Omicron 22B	32
-2022-09-04	Italy	Omicron 22B	23
-2022-09-05	Italy	Omicron 22B	119
-2022-09-06	Italy	Omicron 22B	418
-2022-09-07	Italy	Omicron 22B	84
-2022-09-08	Italy	Omicron 22B	45
-2022-09-09	Italy	Omicron 22B	61
-2022-09-10	Italy	Omicron 22B	44
-2022-09-11	Italy	Omicron 22B	21
-2022-09-12	Italy	Omicron 22B	79
-2022-09-13	Italy	Omicron 22B	89
-2022-09-14	Italy	Omicron 22B	66
-2022-09-15	Italy	Omicron 22B	120
-2022-09-16	Italy	Omicron 22B	99
-2022-09-17	Italy	Omicron 22B	57
-2022-09-18	Italy	Omicron 22B	15
-2022-09-19	Italy	Omicron 22B	132
-2022-09-20	Italy	Omicron 22B	65
-2022-09-21	Italy	Omicron 22B	84
-2022-09-22	Italy	Omicron 22B	127
-2022-09-23	Italy	Omicron 22B	72
-2022-09-24	Italy	Omicron 22B	65
-2022-09-25	Italy	Omicron 22B	49
-2022-09-26	Italy	Omicron 22B	134
-2022-09-27	Italy	Omicron 22B	106
-2022-09-28	Italy	Omicron 22B	60
-2022-09-29	Italy	Omicron 22B	55
-2022-09-30	Italy	Omicron 22B	39
-2022-10-01	Italy	Omicron 22B	26
-2022-10-02	Italy	Omicron 22B	13
-2022-10-03	Italy	Omicron 22B	142
-2022-10-04	Italy	Omicron 22B	605
-2022-10-05	Italy	Omicron 22B	65
-2022-10-06	Italy	Omicron 22B	44
-2022-10-07	Italy	Omicron 22B	65
-2022-10-08	Italy	Omicron 22B	40
-2022-10-09	Italy	Omicron 22B	28
-2022-10-10	Italy	Omicron 22B	83
-2022-10-11	Italy	Omicron 22B	22
-2022-10-12	Italy	Omicron 22B	17
-2022-10-13	Italy	Omicron 22B	24
-2022-10-14	Italy	Omicron 22B	19
-2022-05-30	Italy	Omicron 22C	2
-2022-05-31	Italy	Omicron 22C	4
-2022-06-01	Italy	Omicron 22C	9
-2022-06-02	Italy	Omicron 22C	1
-2022-06-03	Italy	Omicron 22C	3
-2022-06-04	Italy	Omicron 22C	2
-2022-06-05	Italy	Omicron 22C	3
-2022-06-06	Italy	Omicron 22C	8
-2022-06-07	Italy	Omicron 22C	38
-2022-06-09	Italy	Omicron 22C	3
-2022-06-10	Italy	Omicron 22C	17
-2022-06-11	Italy	Omicron 22C	1
-2022-06-12	Italy	Omicron 22C	3
-2022-06-13	Italy	Omicron 22C	1
-2022-06-14	Italy	Omicron 22C	5
-2022-06-15	Italy	Omicron 22C	3
-2022-06-16	Italy	Omicron 22C	5
-2022-06-17	Italy	Omicron 22C	7
-2022-06-18	Italy	Omicron 22C	1
-2022-06-19	Italy	Omicron 22C	1
-2022-06-20	Italy	Omicron 22C	4
-2022-06-21	Italy	Omicron 22C	7
-2022-06-22	Italy	Omicron 22C	8
-2022-06-23	Italy	Omicron 22C	1
-2022-06-24	Italy	Omicron 22C	3
-2022-06-25	Italy	Omicron 22C	10
-2022-06-26	Italy	Omicron 22C	1
-2022-06-27	Italy	Omicron 22C	6
-2022-06-28	Italy	Omicron 22C	6
-2022-06-29	Italy	Omicron 22C	5
-2022-06-30	Italy	Omicron 22C	3
-2022-07-01	Italy	Omicron 22C	11
-2022-07-02	Italy	Omicron 22C	1
-2022-07-03	Italy	Omicron 22C	3
-2022-07-04	Italy	Omicron 22C	4
-2022-07-05	Italy	Omicron 22C	21
-2022-07-06	Italy	Omicron 22C	4
-2022-07-07	Italy	Omicron 22C	1
-2022-07-08	Italy	Omicron 22C	5
-2022-07-09	Italy	Omicron 22C	1
-2022-07-11	Italy	Omicron 22C	2
-2022-07-12	Italy	Omicron 22C	2
-2022-07-13	Italy	Omicron 22C	1
-2022-07-14	Italy	Omicron 22C	5
-2022-07-15	Italy	Omicron 22C	1
-2022-07-18	Italy	Omicron 22C	1
-2022-07-19	Italy	Omicron 22C	2
-2022-07-21	Italy	Omicron 22C	2
-2022-07-22	Italy	Omicron 22C	1
-2022-07-25	Italy	Omicron 22C	3
-2022-07-26	Italy	Omicron 22C	1
-2022-08-01	Italy	Omicron 22C	1
-2022-08-02	Italy	Omicron 22C	6
-2022-08-05	Italy	Omicron 22C	2
-2022-08-08	Italy	Omicron 22C	1
-2022-08-12	Italy	Omicron 22C	1
-2022-08-19	Italy	Omicron 22C	1
-2022-09-22	Italy	Omicron 22C	1
-2022-10-04	Italy	Omicron 22C	1
-2022-08-02	Italy	Omicron 22D	1
-2022-08-24	Italy	Omicron 22D	1
-2022-08-25	Italy	Omicron 22D	1
-2022-09-05	Italy	Omicron 22D	3
-2022-09-06	Italy	Omicron 22D	2
-2022-09-11	Italy	Omicron 22D	1
-2022-09-16	Italy	Omicron 22D	1
-2022-09-17	Italy	Omicron 22D	1
-2022-09-21	Italy	Omicron 22D	3
-2022-09-22	Italy	Omicron 22D	2
-2022-09-26	Italy	Omicron 22D	2
-2022-09-27	Italy	Omicron 22D	1
-2022-09-30	Italy	Omicron 22D	3
-2022-10-03	Italy	Omicron 22D	4
-2022-10-04	Italy	Omicron 22D	8
-2022-10-06	Italy	Omicron 22D	1
-2022-10-07	Italy	Omicron 22D	2
-2022-10-10	Italy	Omicron 22D	1
-2022-10-13	Italy	Omicron 22D	2
-2022-10-14	Italy	Omicron 22D	2
-2022-08-31	Italy	Omicron BA.2.75.2	1
-2022-09-22	Italy	Omicron BA.2.75.2	1
-2022-09-24	Italy	Omicron BA.2.75.2	1
-2022-09-06	Italy	Omicron BQ.1	2
-2022-09-09	Italy	Omicron BQ.1	1
-2022-09-12	Italy	Omicron BQ.1	3
-2022-09-13	Italy	Omicron BQ.1	2
-2022-09-14	Italy	Omicron BQ.1	1
-2022-09-15	Italy	Omicron BQ.1	4
-2022-09-16	Italy	Omicron BQ.1	5
-2022-09-18	Italy	Omicron BQ.1	1
-2022-09-19	Italy	Omicron BQ.1	2
-2022-09-20	Italy	Omicron BQ.1	2
-2022-09-22	Italy	Omicron BQ.1	2
-2022-09-23	Italy	Omicron BQ.1	9
-2022-09-24	Italy	Omicron BQ.1	5
-2022-09-25	Italy	Omicron BQ.1	4
-2022-09-26	Italy	Omicron BQ.1	1
-2022-09-27	Italy	Omicron BQ.1	2
-2022-09-28	Italy	Omicron BQ.1	2
-2022-09-29	Italy	Omicron BQ.1	1
-2022-09-30	Italy	Omicron BQ.1	2
-2022-10-01	Italy	Omicron BQ.1	1
-2022-10-03	Italy	Omicron BQ.1	9
-2022-10-04	Italy	Omicron BQ.1	47
-2022-10-05	Italy	Omicron BQ.1	1
-2022-10-06	Italy	Omicron BQ.1	5
-2022-10-07	Italy	Omicron BQ.1	1
-2022-10-08	Italy	Omicron BQ.1	3
-2022-10-09	Italy	Omicron BQ.1	2
-2022-10-10	Italy	Omicron BQ.1	5
-2022-10-11	Italy	Omicron BQ.1	4
-2022-10-12	Italy	Omicron BQ.1	2
-2022-10-13	Italy	Omicron BQ.1	5
-2022-10-14	Italy	Omicron BQ.1	3
-2022-09-21	Italy	Omicron XBB	1
-2022-09-27	Italy	Omicron XBB	1
-2022-10-01	Italy	Omicron XBB	1
-2022-10-04	Italy	Omicron XBB	3
-2022-10-07	Italy	Omicron XBB	1
-2022-05-30	Netherlands	other	1
-2022-05-31	Netherlands	other	3
-2022-06-01	Netherlands	other	1
+2022-10-16	Israel	Omicron XBB	1
+2022-10-17	Israel	Omicron XBB	7
 2022-06-02	Netherlands	other	3
 2022-06-10	Netherlands	other	2
 2022-06-13	Netherlands	other	2
@@ -6155,10 +5690,10 @@ date	location	variant	sequences
 2022-09-26	Netherlands	other	1
 2022-09-27	Netherlands	other	1
 2022-09-28	Netherlands	other	1
+2022-10-03	Netherlands	other	1
 2022-10-07	Netherlands	other	1
-2022-05-30	Netherlands	Omicron 21L	69
-2022-05-31	Netherlands	Omicron 21L	67
-2022-06-01	Netherlands	Omicron 21L	67
+2022-10-10	Netherlands	other	1
+2022-10-12	Netherlands	other	1
 2022-06-02	Netherlands	Omicron 21L	41
 2022-06-03	Netherlands	Omicron 21L	32
 2022-06-04	Netherlands	Omicron 21L	29
@@ -6236,13 +5771,14 @@ date	location	variant	sequences
 2022-09-19	Netherlands	Omicron 21L	2
 2022-09-21	Netherlands	Omicron 21L	1
 2022-09-22	Netherlands	Omicron 21L	1
+2022-09-26	Netherlands	Omicron 21L	1
 2022-09-28	Netherlands	Omicron 21L	1
+2022-09-29	Netherlands	Omicron 21L	3
 2022-10-06	Netherlands	Omicron 21L	2
 2022-10-07	Netherlands	Omicron 21L	2
 2022-10-12	Netherlands	Omicron 21L	2
-2022-05-30	Netherlands	Omicron 22A	19
-2022-05-31	Netherlands	Omicron 22A	15
-2022-06-01	Netherlands	Omicron 22A	9
+2022-10-15	Netherlands	Omicron 21L	1
+2022-10-17	Netherlands	Omicron 21L	1
 2022-06-02	Netherlands	Omicron 22A	17
 2022-06-03	Netherlands	Omicron 22A	10
 2022-06-04	Netherlands	Omicron 22A	13
@@ -6346,37 +5882,40 @@ date	location	variant	sequences
 2022-09-10	Netherlands	Omicron 22A	8
 2022-09-11	Netherlands	Omicron 22A	7
 2022-09-12	Netherlands	Omicron 22A	6
-2022-09-13	Netherlands	Omicron 22A	8
-2022-09-14	Netherlands	Omicron 22A	13
+2022-09-13	Netherlands	Omicron 22A	9
+2022-09-14	Netherlands	Omicron 22A	15
 2022-09-15	Netherlands	Omicron 22A	10
 2022-09-16	Netherlands	Omicron 22A	13
 2022-09-17	Netherlands	Omicron 22A	7
 2022-09-18	Netherlands	Omicron 22A	10
-2022-09-19	Netherlands	Omicron 22A	9
+2022-09-19	Netherlands	Omicron 22A	10
 2022-09-20	Netherlands	Omicron 22A	9
 2022-09-21	Netherlands	Omicron 22A	10
 2022-09-22	Netherlands	Omicron 22A	9
-2022-09-23	Netherlands	Omicron 22A	9
+2022-09-23	Netherlands	Omicron 22A	10
 2022-09-24	Netherlands	Omicron 22A	7
-2022-09-25	Netherlands	Omicron 22A	6
-2022-09-26	Netherlands	Omicron 22A	4
-2022-09-27	Netherlands	Omicron 22A	6
-2022-09-28	Netherlands	Omicron 22A	3
-2022-09-29	Netherlands	Omicron 22A	4
-2022-09-30	Netherlands	Omicron 22A	4
-2022-10-01	Netherlands	Omicron 22A	6
-2022-10-02	Netherlands	Omicron 22A	3
-2022-10-03	Netherlands	Omicron 22A	5
-2022-10-04	Netherlands	Omicron 22A	6
-2022-10-05	Netherlands	Omicron 22A	6
-2022-10-06	Netherlands	Omicron 22A	2
-2022-10-07	Netherlands	Omicron 22A	2
-2022-10-09	Netherlands	Omicron 22A	1
-2022-10-11	Netherlands	Omicron 22A	2
-2022-10-13	Netherlands	Omicron 22A	1
-2022-05-30	Netherlands	Omicron 22B	50
-2022-05-31	Netherlands	Omicron 22B	24
-2022-06-01	Netherlands	Omicron 22B	43
+2022-09-25	Netherlands	Omicron 22A	7
+2022-09-26	Netherlands	Omicron 22A	8
+2022-09-27	Netherlands	Omicron 22A	8
+2022-09-28	Netherlands	Omicron 22A	5
+2022-09-29	Netherlands	Omicron 22A	7
+2022-09-30	Netherlands	Omicron 22A	5
+2022-10-01	Netherlands	Omicron 22A	10
+2022-10-02	Netherlands	Omicron 22A	6
+2022-10-03	Netherlands	Omicron 22A	14
+2022-10-04	Netherlands	Omicron 22A	14
+2022-10-05	Netherlands	Omicron 22A	12
+2022-10-06	Netherlands	Omicron 22A	4
+2022-10-07	Netherlands	Omicron 22A	6
+2022-10-08	Netherlands	Omicron 22A	2
+2022-10-09	Netherlands	Omicron 22A	4
+2022-10-10	Netherlands	Omicron 22A	4
+2022-10-11	Netherlands	Omicron 22A	12
+2022-10-12	Netherlands	Omicron 22A	10
+2022-10-13	Netherlands	Omicron 22A	7
+2022-10-14	Netherlands	Omicron 22A	1
+2022-10-15	Netherlands	Omicron 22A	2
+2022-10-16	Netherlands	Omicron 22A	1
 2022-06-02	Netherlands	Omicron 22B	42
 2022-06-03	Netherlands	Omicron 22B	31
 2022-06-04	Netherlands	Omicron 22B	40
@@ -6479,42 +6018,42 @@ date	location	variant	sequences
 2022-09-09	Netherlands	Omicron 22B	104
 2022-09-10	Netherlands	Omicron 22B	87
 2022-09-11	Netherlands	Omicron 22B	71
-2022-09-12	Netherlands	Omicron 22B	144
-2022-09-13	Netherlands	Omicron 22B	123
-2022-09-14	Netherlands	Omicron 22B	129
-2022-09-15	Netherlands	Omicron 22B	114
-2022-09-16	Netherlands	Omicron 22B	79
-2022-09-17	Netherlands	Omicron 22B	83
-2022-09-18	Netherlands	Omicron 22B	74
-2022-09-19	Netherlands	Omicron 22B	152
-2022-09-20	Netherlands	Omicron 22B	141
-2022-09-21	Netherlands	Omicron 22B	111
-2022-09-22	Netherlands	Omicron 22B	134
-2022-09-23	Netherlands	Omicron 22B	128
-2022-09-24	Netherlands	Omicron 22B	77
-2022-09-25	Netherlands	Omicron 22B	99
-2022-09-26	Netherlands	Omicron 22B	115
-2022-09-27	Netherlands	Omicron 22B	163
-2022-09-28	Netherlands	Omicron 22B	114
-2022-09-29	Netherlands	Omicron 22B	75
-2022-09-30	Netherlands	Omicron 22B	68
-2022-10-01	Netherlands	Omicron 22B	53
-2022-10-02	Netherlands	Omicron 22B	29
-2022-10-03	Netherlands	Omicron 22B	79
-2022-10-04	Netherlands	Omicron 22B	46
-2022-10-05	Netherlands	Omicron 22B	34
-2022-10-06	Netherlands	Omicron 22B	61
-2022-10-07	Netherlands	Omicron 22B	28
-2022-10-08	Netherlands	Omicron 22B	23
-2022-10-09	Netherlands	Omicron 22B	12
-2022-10-10	Netherlands	Omicron 22B	15
-2022-10-11	Netherlands	Omicron 22B	15
-2022-10-12	Netherlands	Omicron 22B	19
-2022-10-13	Netherlands	Omicron 22B	25
-2022-10-14	Netherlands	Omicron 22B	20
-2022-05-30	Netherlands	Omicron 22C	20
-2022-05-31	Netherlands	Omicron 22C	12
-2022-06-01	Netherlands	Omicron 22C	14
+2022-09-12	Netherlands	Omicron 22B	155
+2022-09-13	Netherlands	Omicron 22B	130
+2022-09-14	Netherlands	Omicron 22B	135
+2022-09-15	Netherlands	Omicron 22B	118
+2022-09-16	Netherlands	Omicron 22B	86
+2022-09-17	Netherlands	Omicron 22B	86
+2022-09-18	Netherlands	Omicron 22B	77
+2022-09-19	Netherlands	Omicron 22B	158
+2022-09-20	Netherlands	Omicron 22B	149
+2022-09-21	Netherlands	Omicron 22B	115
+2022-09-22	Netherlands	Omicron 22B	137
+2022-09-23	Netherlands	Omicron 22B	131
+2022-09-24	Netherlands	Omicron 22B	80
+2022-09-25	Netherlands	Omicron 22B	104
+2022-09-26	Netherlands	Omicron 22B	147
+2022-09-27	Netherlands	Omicron 22B	197
+2022-09-28	Netherlands	Omicron 22B	158
+2022-09-29	Netherlands	Omicron 22B	137
+2022-09-30	Netherlands	Omicron 22B	131
+2022-10-01	Netherlands	Omicron 22B	96
+2022-10-02	Netherlands	Omicron 22B	76
+2022-10-03	Netherlands	Omicron 22B	170
+2022-10-04	Netherlands	Omicron 22B	125
+2022-10-05	Netherlands	Omicron 22B	126
+2022-10-06	Netherlands	Omicron 22B	161
+2022-10-07	Netherlands	Omicron 22B	99
+2022-10-08	Netherlands	Omicron 22B	65
+2022-10-09	Netherlands	Omicron 22B	62
+2022-10-10	Netherlands	Omicron 22B	88
+2022-10-11	Netherlands	Omicron 22B	85
+2022-10-12	Netherlands	Omicron 22B	93
+2022-10-13	Netherlands	Omicron 22B	77
+2022-10-14	Netherlands	Omicron 22B	42
+2022-10-15	Netherlands	Omicron 22B	39
+2022-10-16	Netherlands	Omicron 22B	25
+2022-10-17	Netherlands	Omicron 22B	6
 2022-06-02	Netherlands	Omicron 22C	29
 2022-06-03	Netherlands	Omicron 22C	13
 2022-06-04	Netherlands	Omicron 22C	7
@@ -6602,21 +6141,26 @@ date	location	variant	sequences
 2022-09-18	Netherlands	Omicron 22D	2
 2022-09-19	Netherlands	Omicron 22D	3
 2022-09-20	Netherlands	Omicron 22D	2
-2022-09-21	Netherlands	Omicron 22D	4
+2022-09-21	Netherlands	Omicron 22D	5
 2022-09-22	Netherlands	Omicron 22D	1
 2022-09-23	Netherlands	Omicron 22D	1
-2022-09-26	Netherlands	Omicron 22D	3
-2022-09-28	Netherlands	Omicron 22D	3
+2022-09-26	Netherlands	Omicron 22D	4
+2022-09-28	Netherlands	Omicron 22D	4
 2022-09-29	Netherlands	Omicron 22D	1
+2022-09-30	Netherlands	Omicron 22D	2
 2022-10-01	Netherlands	Omicron 22D	2
-2022-10-03	Netherlands	Omicron 22D	2
+2022-10-03	Netherlands	Omicron 22D	4
 2022-10-04	Netherlands	Omicron 22D	1
-2022-10-05	Netherlands	Omicron 22D	2
-2022-10-06	Netherlands	Omicron 22D	1
-2022-10-08	Netherlands	Omicron 22D	1
-2022-10-09	Netherlands	Omicron 22D	1
-2022-10-12	Netherlands	Omicron 22D	4
-2022-10-14	Netherlands	Omicron 22D	1
+2022-10-05	Netherlands	Omicron 22D	3
+2022-10-06	Netherlands	Omicron 22D	3
+2022-10-07	Netherlands	Omicron 22D	2
+2022-10-08	Netherlands	Omicron 22D	2
+2022-10-09	Netherlands	Omicron 22D	3
+2022-10-10	Netherlands	Omicron 22D	5
+2022-10-11	Netherlands	Omicron 22D	1
+2022-10-12	Netherlands	Omicron 22D	7
+2022-10-14	Netherlands	Omicron 22D	2
+2022-10-17	Netherlands	Omicron 22D	1
 2022-08-09	Netherlands	Omicron BA.2.75.2	2
 2022-08-13	Netherlands	Omicron BA.2.75.2	1
 2022-08-16	Netherlands	Omicron BA.2.75.2	1
@@ -6628,16 +6172,20 @@ date	location	variant	sequences
 2022-09-09	Netherlands	Omicron BA.2.75.2	1
 2022-09-12	Netherlands	Omicron BA.2.75.2	1
 2022-09-13	Netherlands	Omicron BA.2.75.2	1
-2022-09-19	Netherlands	Omicron BA.2.75.2	1
+2022-09-19	Netherlands	Omicron BA.2.75.2	2
 2022-09-20	Netherlands	Omicron BA.2.75.2	1
 2022-09-22	Netherlands	Omicron BA.2.75.2	4
 2022-09-23	Netherlands	Omicron BA.2.75.2	1
 2022-09-25	Netherlands	Omicron BA.2.75.2	1
 2022-09-26	Netherlands	Omicron BA.2.75.2	1
 2022-09-28	Netherlands	Omicron BA.2.75.2	1
-2022-10-03	Netherlands	Omicron BA.2.75.2	1
+2022-09-30	Netherlands	Omicron BA.2.75.2	1
+2022-10-03	Netherlands	Omicron BA.2.75.2	3
+2022-10-06	Netherlands	Omicron BA.2.75.2	1
+2022-10-08	Netherlands	Omicron BA.2.75.2	1
 2022-10-09	Netherlands	Omicron BA.2.75.2	1
-2022-10-11	Netherlands	Omicron BA.2.75.2	1
+2022-10-11	Netherlands	Omicron BA.2.75.2	2
+2022-10-17	Netherlands	Omicron BA.2.75.2	1
 2022-08-24	Netherlands	Omicron BQ.1	2
 2022-08-31	Netherlands	Omicron BQ.1	1
 2022-09-01	Netherlands	Omicron BQ.1	1
@@ -6652,38 +6200,45 @@ date	location	variant	sequences
 2022-09-12	Netherlands	Omicron BQ.1	3
 2022-09-13	Netherlands	Omicron BQ.1	1
 2022-09-15	Netherlands	Omicron BQ.1	3
-2022-09-16	Netherlands	Omicron BQ.1	2
+2022-09-16	Netherlands	Omicron BQ.1	3
 2022-09-17	Netherlands	Omicron BQ.1	5
 2022-09-18	Netherlands	Omicron BQ.1	2
 2022-09-19	Netherlands	Omicron BQ.1	2
 2022-09-20	Netherlands	Omicron BQ.1	7
 2022-09-21	Netherlands	Omicron BQ.1	3
-2022-09-22	Netherlands	Omicron BQ.1	6
+2022-09-22	Netherlands	Omicron BQ.1	7
 2022-09-23	Netherlands	Omicron BQ.1	5
-2022-09-24	Netherlands	Omicron BQ.1	3
+2022-09-24	Netherlands	Omicron BQ.1	4
 2022-09-25	Netherlands	Omicron BQ.1	4
 2022-09-26	Netherlands	Omicron BQ.1	6
 2022-09-27	Netherlands	Omicron BQ.1	9
-2022-09-28	Netherlands	Omicron BQ.1	4
-2022-09-29	Netherlands	Omicron BQ.1	3
-2022-09-30	Netherlands	Omicron BQ.1	3
-2022-10-01	Netherlands	Omicron BQ.1	3
-2022-10-02	Netherlands	Omicron BQ.1	5
-2022-10-03	Netherlands	Omicron BQ.1	8
-2022-10-04	Netherlands	Omicron BQ.1	2
-2022-10-05	Netherlands	Omicron BQ.1	7
-2022-10-06	Netherlands	Omicron BQ.1	1
-2022-10-07	Netherlands	Omicron BQ.1	3
-2022-10-08	Netherlands	Omicron BQ.1	5
-2022-10-09	Netherlands	Omicron BQ.1	4
-2022-10-10	Netherlands	Omicron BQ.1	2
-2022-10-11	Netherlands	Omicron BQ.1	1
-2022-10-12	Netherlands	Omicron BQ.1	1
-2022-10-13	Netherlands	Omicron BQ.1	5
-2022-10-14	Netherlands	Omicron BQ.1	1
+2022-09-28	Netherlands	Omicron BQ.1	7
+2022-09-29	Netherlands	Omicron BQ.1	5
+2022-09-30	Netherlands	Omicron BQ.1	6
+2022-10-01	Netherlands	Omicron BQ.1	5
+2022-10-02	Netherlands	Omicron BQ.1	7
+2022-10-03	Netherlands	Omicron BQ.1	15
+2022-10-04	Netherlands	Omicron BQ.1	9
+2022-10-05	Netherlands	Omicron BQ.1	14
+2022-10-06	Netherlands	Omicron BQ.1	4
+2022-10-07	Netherlands	Omicron BQ.1	6
+2022-10-08	Netherlands	Omicron BQ.1	11
+2022-10-09	Netherlands	Omicron BQ.1	14
+2022-10-10	Netherlands	Omicron BQ.1	3
+2022-10-11	Netherlands	Omicron BQ.1	19
+2022-10-12	Netherlands	Omicron BQ.1	13
+2022-10-13	Netherlands	Omicron BQ.1	7
+2022-10-14	Netherlands	Omicron BQ.1	3
+2022-10-15	Netherlands	Omicron BQ.1	5
+2022-10-16	Netherlands	Omicron BQ.1	4
+2022-10-17	Netherlands	Omicron BQ.1	2
 2022-09-22	Netherlands	Omicron XBB	1
-2022-10-05	Netherlands	Omicron XBB	1
+2022-10-04	Netherlands	Omicron XBB	1
+2022-10-05	Netherlands	Omicron XBB	2
+2022-10-09	Netherlands	Omicron XBB	1
 2022-10-13	Netherlands	Omicron XBB	1
+2022-10-16	Netherlands	Omicron XBB	1
+2022-10-17	Netherlands	Omicron XBB	1
 2022-06-07	Singapore	other	1
 2022-08-09	Singapore	other	1
 2022-09-16	Singapore	other	1
@@ -6693,9 +6248,6 @@ date	location	variant	sequences
 2022-10-04	Singapore	other	1
 2022-10-13	Singapore	other	1
 2022-10-14	Singapore	other	1
-2022-05-30	Singapore	Omicron 21L	49
-2022-05-31	Singapore	Omicron 21L	22
-2022-06-01	Singapore	Omicron 21L	58
 2022-06-02	Singapore	Omicron 21L	19
 2022-06-03	Singapore	Omicron 21L	16
 2022-06-04	Singapore	Omicron 21L	14
@@ -6817,9 +6369,7 @@ date	location	variant	sequences
 2022-10-12	Singapore	Omicron 21L	1
 2022-10-13	Singapore	Omicron 21L	2
 2022-10-14	Singapore	Omicron 21L	2
-2022-05-30	Singapore	Omicron 22A	3
-2022-05-31	Singapore	Omicron 22A	1
-2022-06-01	Singapore	Omicron 22A	3
+2022-10-15	Singapore	Omicron 21L	1
 2022-06-02	Singapore	Omicron 22A	5
 2022-06-03	Singapore	Omicron 22A	6
 2022-06-04	Singapore	Omicron 22A	1
@@ -6887,9 +6437,7 @@ date	location	variant	sequences
 2022-09-27	Singapore	Omicron 22A	1
 2022-10-09	Singapore	Omicron 22A	1
 2022-10-10	Singapore	Omicron 22A	1
-2022-05-30	Singapore	Omicron 22B	13
-2022-05-31	Singapore	Omicron 22B	11
-2022-06-01	Singapore	Omicron 22B	24
+2022-10-15	Singapore	Omicron 22A	1
 2022-06-02	Singapore	Omicron 22B	13
 2022-06-03	Singapore	Omicron 22B	10
 2022-06-04	Singapore	Omicron 22B	13
@@ -7024,9 +6572,8 @@ date	location	variant	sequences
 2022-10-12	Singapore	Omicron 22B	16
 2022-10-13	Singapore	Omicron 22B	24
 2022-10-14	Singapore	Omicron 22B	10
-2022-05-30	Singapore	Omicron 22C	5
-2022-05-31	Singapore	Omicron 22C	3
-2022-06-01	Singapore	Omicron 22C	7
+2022-10-15	Singapore	Omicron 22B	2
+2022-10-17	Singapore	Omicron 22B	16
 2022-06-02	Singapore	Omicron 22C	3
 2022-06-03	Singapore	Omicron 22C	8
 2022-06-04	Singapore	Omicron 22C	1
@@ -7183,6 +6730,8 @@ date	location	variant	sequences
 2022-10-12	Singapore	Omicron 22D	9
 2022-10-13	Singapore	Omicron 22D	3
 2022-10-14	Singapore	Omicron 22D	2
+2022-10-15	Singapore	Omicron 22D	3
+2022-10-17	Singapore	Omicron 22D	3
 2022-08-08	Singapore	Omicron BA.2.75.2	1
 2022-08-14	Singapore	Omicron BA.2.75.2	2
 2022-08-18	Singapore	Omicron BA.2.75.2	1
@@ -7267,9 +6816,9 @@ date	location	variant	sequences
 2022-10-12	Singapore	Omicron XBB	43
 2022-10-13	Singapore	Omicron XBB	34
 2022-10-14	Singapore	Omicron XBB	31
-2022-05-30	United Kingdom	other	11
-2022-05-31	United Kingdom	other	5
-2022-06-01	United Kingdom	other	8
+2022-10-15	Singapore	Omicron XBB	12
+2022-10-16	Singapore	Omicron XBB	3
+2022-10-17	Singapore	Omicron XBB	44
 2022-06-02	United Kingdom	other	1
 2022-06-03	United Kingdom	other	3
 2022-06-04	United Kingdom	other	3
@@ -7358,11 +6907,11 @@ date	location	variant	sequences
 2022-10-03	United Kingdom	other	2
 2022-10-04	United Kingdom	other	5
 2022-10-06	United Kingdom	other	1
+2022-10-07	United Kingdom	other	1
+2022-10-09	United Kingdom	other	1
 2022-10-10	United Kingdom	other	1
 2022-10-11	United Kingdom	other	1
-2022-05-30	United Kingdom	Omicron 21L	308
-2022-05-31	United Kingdom	Omicron 21L	405
-2022-06-01	United Kingdom	Omicron 21L	336
+2022-10-12	United Kingdom	other	1
 2022-06-02	United Kingdom	Omicron 21L	193
 2022-06-03	United Kingdom	Omicron 21L	169
 2022-06-04	United Kingdom	Omicron 21L	252
@@ -7469,16 +7018,15 @@ date	location	variant	sequences
 2022-09-29	United Kingdom	Omicron 21L	5
 2022-10-01	United Kingdom	Omicron 21L	1
 2022-10-02	United Kingdom	Omicron 21L	1
-2022-10-03	United Kingdom	Omicron 21L	3
+2022-10-03	United Kingdom	Omicron 21L	4
 2022-10-04	United Kingdom	Omicron 21L	1
 2022-10-05	United Kingdom	Omicron 21L	4
 2022-10-07	United Kingdom	Omicron 21L	2
+2022-10-09	United Kingdom	Omicron 21L	1
 2022-10-10	United Kingdom	Omicron 21L	4
 2022-10-12	United Kingdom	Omicron 21L	2
 2022-10-13	United Kingdom	Omicron 21L	2
-2022-05-30	United Kingdom	Omicron 22A	81
-2022-05-31	United Kingdom	Omicron 22A	79
-2022-06-01	United Kingdom	Omicron 22A	81
+2022-10-16	United Kingdom	Omicron 21L	1
 2022-06-02	United Kingdom	Omicron 22A	52
 2022-06-03	United Kingdom	Omicron 22A	58
 2022-06-04	United Kingdom	Omicron 22A	99
@@ -7596,27 +7144,27 @@ date	location	variant	sequences
 2022-09-24	United Kingdom	Omicron 22A	25
 2022-09-25	United Kingdom	Omicron 22A	37
 2022-09-26	United Kingdom	Omicron 22A	51
-2022-09-27	United Kingdom	Omicron 22A	55
-2022-09-28	United Kingdom	Omicron 22A	62
+2022-09-27	United Kingdom	Omicron 22A	56
+2022-09-28	United Kingdom	Omicron 22A	63
 2022-09-29	United Kingdom	Omicron 22A	56
-2022-09-30	United Kingdom	Omicron 22A	29
-2022-10-01	United Kingdom	Omicron 22A	25
-2022-10-02	United Kingdom	Omicron 22A	34
-2022-10-03	United Kingdom	Omicron 22A	82
-2022-10-04	United Kingdom	Omicron 22A	60
-2022-10-05	United Kingdom	Omicron 22A	55
-2022-10-06	United Kingdom	Omicron 22A	48
-2022-10-07	United Kingdom	Omicron 22A	38
-2022-10-08	United Kingdom	Omicron 22A	19
-2022-10-09	United Kingdom	Omicron 22A	11
-2022-10-10	United Kingdom	Omicron 22A	48
-2022-10-11	United Kingdom	Omicron 22A	42
-2022-10-12	United Kingdom	Omicron 22A	36
-2022-10-13	United Kingdom	Omicron 22A	19
-2022-10-14	United Kingdom	Omicron 22A	24
-2022-05-30	United Kingdom	Omicron 22B	130
-2022-05-31	United Kingdom	Omicron 22B	173
-2022-06-01	United Kingdom	Omicron 22B	146
+2022-09-30	United Kingdom	Omicron 22A	31
+2022-10-01	United Kingdom	Omicron 22A	27
+2022-10-02	United Kingdom	Omicron 22A	38
+2022-10-03	United Kingdom	Omicron 22A	87
+2022-10-04	United Kingdom	Omicron 22A	68
+2022-10-05	United Kingdom	Omicron 22A	59
+2022-10-06	United Kingdom	Omicron 22A	52
+2022-10-07	United Kingdom	Omicron 22A	42
+2022-10-08	United Kingdom	Omicron 22A	24
+2022-10-09	United Kingdom	Omicron 22A	17
+2022-10-10	United Kingdom	Omicron 22A	55
+2022-10-11	United Kingdom	Omicron 22A	45
+2022-10-12	United Kingdom	Omicron 22A	43
+2022-10-13	United Kingdom	Omicron 22A	25
+2022-10-14	United Kingdom	Omicron 22A	27
+2022-10-15	United Kingdom	Omicron 22A	9
+2022-10-16	United Kingdom	Omicron 22A	8
+2022-10-17	United Kingdom	Omicron 22A	33
 2022-06-02	United Kingdom	Omicron 22B	145
 2022-06-03	United Kingdom	Omicron 22B	108
 2022-06-04	United Kingdom	Omicron 22B	223
@@ -7714,47 +7262,47 @@ date	location	variant	sequences
 2022-09-04	United Kingdom	Omicron 22B	250
 2022-09-05	United Kingdom	Omicron 22B	524
 2022-09-06	United Kingdom	Omicron 22B	419
-2022-09-07	United Kingdom	Omicron 22B	326
+2022-09-07	United Kingdom	Omicron 22B	327
 2022-09-08	United Kingdom	Omicron 22B	320
 2022-09-09	United Kingdom	Omicron 22B	308
 2022-09-10	United Kingdom	Omicron 22B	229
-2022-09-11	United Kingdom	Omicron 22B	235
-2022-09-12	United Kingdom	Omicron 22B	506
+2022-09-11	United Kingdom	Omicron 22B	236
+2022-09-12	United Kingdom	Omicron 22B	508
 2022-09-13	United Kingdom	Omicron 22B	496
-2022-09-14	United Kingdom	Omicron 22B	425
-2022-09-15	United Kingdom	Omicron 22B	420
-2022-09-16	United Kingdom	Omicron 22B	339
+2022-09-14	United Kingdom	Omicron 22B	426
+2022-09-15	United Kingdom	Omicron 22B	421
+2022-09-16	United Kingdom	Omicron 22B	340
 2022-09-17	United Kingdom	Omicron 22B	242
 2022-09-18	United Kingdom	Omicron 22B	224
 2022-09-19	United Kingdom	Omicron 22B	335
-2022-09-20	United Kingdom	Omicron 22B	670
-2022-09-21	United Kingdom	Omicron 22B	712
-2022-09-22	United Kingdom	Omicron 22B	589
+2022-09-20	United Kingdom	Omicron 22B	672
+2022-09-21	United Kingdom	Omicron 22B	718
+2022-09-22	United Kingdom	Omicron 22B	591
 2022-09-23	United Kingdom	Omicron 22B	667
 2022-09-24	United Kingdom	Omicron 22B	398
 2022-09-25	United Kingdom	Omicron 22B	397
-2022-09-26	United Kingdom	Omicron 22B	758
-2022-09-27	United Kingdom	Omicron 22B	653
-2022-09-28	United Kingdom	Omicron 22B	661
-2022-09-29	United Kingdom	Omicron 22B	584
-2022-09-30	United Kingdom	Omicron 22B	489
-2022-10-01	United Kingdom	Omicron 22B	363
-2022-10-02	United Kingdom	Omicron 22B	454
-2022-10-03	United Kingdom	Omicron 22B	971
-2022-10-04	United Kingdom	Omicron 22B	799
-2022-10-05	United Kingdom	Omicron 22B	794
-2022-10-06	United Kingdom	Omicron 22B	765
-2022-10-07	United Kingdom	Omicron 22B	656
-2022-10-08	United Kingdom	Omicron 22B	276
-2022-10-09	United Kingdom	Omicron 22B	239
-2022-10-10	United Kingdom	Omicron 22B	628
-2022-10-11	United Kingdom	Omicron 22B	592
-2022-10-12	United Kingdom	Omicron 22B	409
-2022-10-13	United Kingdom	Omicron 22B	242
-2022-10-14	United Kingdom	Omicron 22B	307
-2022-05-30	United Kingdom	Omicron 22C	78
-2022-05-31	United Kingdom	Omicron 22C	99
-2022-06-01	United Kingdom	Omicron 22C	93
+2022-09-26	United Kingdom	Omicron 22B	759
+2022-09-27	United Kingdom	Omicron 22B	669
+2022-09-28	United Kingdom	Omicron 22B	681
+2022-09-29	United Kingdom	Omicron 22B	597
+2022-09-30	United Kingdom	Omicron 22B	506
+2022-10-01	United Kingdom	Omicron 22B	379
+2022-10-02	United Kingdom	Omicron 22B	476
+2022-10-03	United Kingdom	Omicron 22B	1011
+2022-10-04	United Kingdom	Omicron 22B	843
+2022-10-05	United Kingdom	Omicron 22B	846
+2022-10-06	United Kingdom	Omicron 22B	829
+2022-10-07	United Kingdom	Omicron 22B	769
+2022-10-08	United Kingdom	Omicron 22B	354
+2022-10-09	United Kingdom	Omicron 22B	319
+2022-10-10	United Kingdom	Omicron 22B	749
+2022-10-11	United Kingdom	Omicron 22B	667
+2022-10-12	United Kingdom	Omicron 22B	506
+2022-10-13	United Kingdom	Omicron 22B	302
+2022-10-14	United Kingdom	Omicron 22B	345
+2022-10-15	United Kingdom	Omicron 22B	149
+2022-10-16	United Kingdom	Omicron 22B	76
+2022-10-17	United Kingdom	Omicron 22B	353
 2022-06-02	United Kingdom	Omicron 22C	50
 2022-06-03	United Kingdom	Omicron 22C	44
 2022-06-04	United Kingdom	Omicron 22C	90
@@ -7924,17 +7472,20 @@ date	location	variant	sequences
 2022-10-01	United Kingdom	Omicron 22D	19
 2022-10-02	United Kingdom	Omicron 22D	25
 2022-10-03	United Kingdom	Omicron 22D	56
-2022-10-04	United Kingdom	Omicron 22D	49
-2022-10-05	United Kingdom	Omicron 22D	34
-2022-10-06	United Kingdom	Omicron 22D	33
-2022-10-07	United Kingdom	Omicron 22D	39
-2022-10-08	United Kingdom	Omicron 22D	20
-2022-10-09	United Kingdom	Omicron 22D	17
-2022-10-10	United Kingdom	Omicron 22D	32
-2022-10-11	United Kingdom	Omicron 22D	31
-2022-10-12	United Kingdom	Omicron 22D	20
-2022-10-13	United Kingdom	Omicron 22D	16
-2022-10-14	United Kingdom	Omicron 22D	16
+2022-10-04	United Kingdom	Omicron 22D	51
+2022-10-05	United Kingdom	Omicron 22D	35
+2022-10-06	United Kingdom	Omicron 22D	34
+2022-10-07	United Kingdom	Omicron 22D	50
+2022-10-08	United Kingdom	Omicron 22D	26
+2022-10-09	United Kingdom	Omicron 22D	22
+2022-10-10	United Kingdom	Omicron 22D	37
+2022-10-11	United Kingdom	Omicron 22D	33
+2022-10-12	United Kingdom	Omicron 22D	24
+2022-10-13	United Kingdom	Omicron 22D	18
+2022-10-14	United Kingdom	Omicron 22D	17
+2022-10-15	United Kingdom	Omicron 22D	9
+2022-10-16	United Kingdom	Omicron 22D	4
+2022-10-17	United Kingdom	Omicron 22D	37
 2022-08-04	United Kingdom	Omicron BA.2.75.2	1
 2022-08-06	United Kingdom	Omicron BA.2.75.2	1
 2022-08-15	United Kingdom	Omicron BA.2.75.2	2
@@ -7975,14 +7526,18 @@ date	location	variant	sequences
 2022-10-03	United Kingdom	Omicron BA.2.75.2	22
 2022-10-04	United Kingdom	Omicron BA.2.75.2	14
 2022-10-05	United Kingdom	Omicron BA.2.75.2	14
-2022-10-06	United Kingdom	Omicron BA.2.75.2	12
-2022-10-07	United Kingdom	Omicron BA.2.75.2	7
-2022-10-08	United Kingdom	Omicron BA.2.75.2	5
+2022-10-06	United Kingdom	Omicron BA.2.75.2	14
+2022-10-07	United Kingdom	Omicron BA.2.75.2	8
+2022-10-08	United Kingdom	Omicron BA.2.75.2	7
 2022-10-09	United Kingdom	Omicron BA.2.75.2	5
 2022-10-10	United Kingdom	Omicron BA.2.75.2	7
 2022-10-11	United Kingdom	Omicron BA.2.75.2	20
 2022-10-12	United Kingdom	Omicron BA.2.75.2	7
+2022-10-13	United Kingdom	Omicron BA.2.75.2	1
 2022-10-14	United Kingdom	Omicron BA.2.75.2	12
+2022-10-15	United Kingdom	Omicron BA.2.75.2	4
+2022-10-16	United Kingdom	Omicron BA.2.75.2	1
+2022-10-17	United Kingdom	Omicron BA.2.75.2	5
 2022-08-12	United Kingdom	Omicron BQ.1	1
 2022-08-22	United Kingdom	Omicron BQ.1	1
 2022-08-24	United Kingdom	Omicron BQ.1	1
@@ -8010,29 +7565,32 @@ date	location	variant	sequences
 2022-09-19	United Kingdom	Omicron BQ.1	6
 2022-09-20	United Kingdom	Omicron BQ.1	40
 2022-09-21	United Kingdom	Omicron BQ.1	40
-2022-09-22	United Kingdom	Omicron BQ.1	32
+2022-09-22	United Kingdom	Omicron BQ.1	33
 2022-09-23	United Kingdom	Omicron BQ.1	29
 2022-09-24	United Kingdom	Omicron BQ.1	35
 2022-09-25	United Kingdom	Omicron BQ.1	12
 2022-09-26	United Kingdom	Omicron BQ.1	64
 2022-09-27	United Kingdom	Omicron BQ.1	75
-2022-09-28	United Kingdom	Omicron BQ.1	67
+2022-09-28	United Kingdom	Omicron BQ.1	69
 2022-09-29	United Kingdom	Omicron BQ.1	57
-2022-09-30	United Kingdom	Omicron BQ.1	48
-2022-10-01	United Kingdom	Omicron BQ.1	43
-2022-10-02	United Kingdom	Omicron BQ.1	55
-2022-10-03	United Kingdom	Omicron BQ.1	106
-2022-10-04	United Kingdom	Omicron BQ.1	140
-2022-10-05	United Kingdom	Omicron BQ.1	154
-2022-10-06	United Kingdom	Omicron BQ.1	119
-2022-10-07	United Kingdom	Omicron BQ.1	118
-2022-10-08	United Kingdom	Omicron BQ.1	90
-2022-10-09	United Kingdom	Omicron BQ.1	46
-2022-10-10	United Kingdom	Omicron BQ.1	148
-2022-10-11	United Kingdom	Omicron BQ.1	136
-2022-10-12	United Kingdom	Omicron BQ.1	116
-2022-10-13	United Kingdom	Omicron BQ.1	102
-2022-10-14	United Kingdom	Omicron BQ.1	93
+2022-09-30	United Kingdom	Omicron BQ.1	49
+2022-10-01	United Kingdom	Omicron BQ.1	44
+2022-10-02	United Kingdom	Omicron BQ.1	58
+2022-10-03	United Kingdom	Omicron BQ.1	108
+2022-10-04	United Kingdom	Omicron BQ.1	142
+2022-10-05	United Kingdom	Omicron BQ.1	158
+2022-10-06	United Kingdom	Omicron BQ.1	124
+2022-10-07	United Kingdom	Omicron BQ.1	134
+2022-10-08	United Kingdom	Omicron BQ.1	96
+2022-10-09	United Kingdom	Omicron BQ.1	60
+2022-10-10	United Kingdom	Omicron BQ.1	169
+2022-10-11	United Kingdom	Omicron BQ.1	143
+2022-10-12	United Kingdom	Omicron BQ.1	130
+2022-10-13	United Kingdom	Omicron BQ.1	117
+2022-10-14	United Kingdom	Omicron BQ.1	104
+2022-10-15	United Kingdom	Omicron BQ.1	45
+2022-10-16	United Kingdom	Omicron BQ.1	26
+2022-10-17	United Kingdom	Omicron BQ.1	124
 2022-09-10	United Kingdom	Omicron XBB	1
 2022-09-17	United Kingdom	Omicron XBB	1
 2022-09-20	United Kingdom	Omicron XBB	1
@@ -8042,18 +7600,18 @@ date	location	variant	sequences
 2022-09-30	United Kingdom	Omicron XBB	1
 2022-10-01	United Kingdom	Omicron XBB	1
 2022-10-02	United Kingdom	Omicron XBB	2
-2022-10-04	United Kingdom	Omicron XBB	2
+2022-10-04	United Kingdom	Omicron XBB	3
 2022-10-05	United Kingdom	Omicron XBB	3
 2022-10-06	United Kingdom	Omicron XBB	5
 2022-10-07	United Kingdom	Omicron XBB	3
 2022-10-09	United Kingdom	Omicron XBB	2
-2022-10-10	United Kingdom	Omicron XBB	4
+2022-10-10	United Kingdom	Omicron XBB	5
 2022-10-11	United Kingdom	Omicron XBB	1
 2022-10-12	United Kingdom	Omicron XBB	4
-2022-10-14	United Kingdom	Omicron XBB	2
-2022-05-30	USA	other	12
-2022-05-31	USA	other	60
-2022-06-01	USA	other	29
+2022-10-13	United Kingdom	Omicron XBB	2
+2022-10-14	United Kingdom	Omicron XBB	3
+2022-10-15	United Kingdom	Omicron XBB	1
+2022-10-17	United Kingdom	Omicron XBB	6
 2022-06-02	USA	other	32
 2022-06-03	USA	other	18
 2022-06-04	USA	other	11
@@ -8075,7 +7633,7 @@ date	location	variant	sequences
 2022-06-20	USA	other	15
 2022-06-21	USA	other	8
 2022-06-22	USA	other	18
-2022-06-23	USA	other	9
+2022-06-23	USA	other	10
 2022-06-24	USA	other	9
 2022-06-25	USA	other	8
 2022-06-26	USA	other	2
@@ -8101,9 +7659,9 @@ date	location	variant	sequences
 2022-07-16	USA	other	4
 2022-07-17	USA	other	9
 2022-07-18	USA	other	10
-2022-07-19	USA	other	7
+2022-07-19	USA	other	8
 2022-07-20	USA	other	6
-2022-07-21	USA	other	11
+2022-07-21	USA	other	12
 2022-07-22	USA	other	7
 2022-07-23	USA	other	5
 2022-07-24	USA	other	5
@@ -8121,7 +7679,7 @@ date	location	variant	sequences
 2022-08-05	USA	other	7
 2022-08-06	USA	other	2
 2022-08-07	USA	other	4
-2022-08-08	USA	other	5
+2022-08-08	USA	other	6
 2022-08-09	USA	other	6
 2022-08-10	USA	other	3
 2022-08-11	USA	other	12
@@ -8166,7 +7724,7 @@ date	location	variant	sequences
 2022-09-20	USA	other	2
 2022-09-21	USA	other	4
 2022-09-22	USA	other	6
-2022-09-23	USA	other	6
+2022-09-23	USA	other	7
 2022-09-24	USA	other	2
 2022-09-25	USA	other	3
 2022-09-26	USA	other	3
@@ -8174,18 +7732,21 @@ date	location	variant	sequences
 2022-09-28	USA	other	5
 2022-09-29	USA	other	4
 2022-09-30	USA	other	2
-2022-10-01	USA	other	1
+2022-10-01	USA	other	2
 2022-10-02	USA	other	2
-2022-10-03	USA	other	4
+2022-10-03	USA	other	6
+2022-10-04	USA	other	1
 2022-10-05	USA	other	2
 2022-10-06	USA	other	1
 2022-10-07	USA	other	1
-2022-10-08	USA	other	2
-2022-10-10	USA	other	2
-2022-10-12	USA	other	1
-2022-05-30	USA	Omicron 21L	545
-2022-05-31	USA	Omicron 21L	2194
-2022-06-01	USA	Omicron 21L	1396
+2022-10-08	USA	other	4
+2022-10-09	USA	other	1
+2022-10-10	USA	other	3
+2022-10-11	USA	other	2
+2022-10-12	USA	other	4
+2022-10-14	USA	other	2
+2022-10-16	USA	other	1
+2022-10-17	USA	other	1
 2022-06-02	USA	Omicron 21L	1307
 2022-06-03	USA	Omicron 21L	1148
 2022-06-04	USA	Omicron 21L	725
@@ -8193,21 +7754,21 @@ date	location	variant	sequences
 2022-06-06	USA	Omicron 21L	1377
 2022-06-07	USA	Omicron 21L	1116
 2022-06-08	USA	Omicron 21L	971
-2022-06-09	USA	Omicron 21L	857
+2022-06-09	USA	Omicron 21L	858
 2022-06-10	USA	Omicron 21L	753
 2022-06-11	USA	Omicron 21L	495
-2022-06-12	USA	Omicron 21L	477
-2022-06-13	USA	Omicron 21L	791
+2022-06-12	USA	Omicron 21L	482
+2022-06-13	USA	Omicron 21L	792
 2022-06-14	USA	Omicron 21L	596
 2022-06-15	USA	Omicron 21L	700
 2022-06-16	USA	Omicron 21L	619
 2022-06-17	USA	Omicron 21L	500
 2022-06-18	USA	Omicron 21L	364
-2022-06-19	USA	Omicron 21L	227
+2022-06-19	USA	Omicron 21L	228
 2022-06-20	USA	Omicron 21L	483
-2022-06-21	USA	Omicron 21L	446
+2022-06-21	USA	Omicron 21L	447
 2022-06-22	USA	Omicron 21L	421
-2022-06-23	USA	Omicron 21L	362
+2022-06-23	USA	Omicron 21L	363
 2022-06-24	USA	Omicron 21L	339
 2022-06-25	USA	Omicron 21L	217
 2022-06-26	USA	Omicron 21L	181
@@ -8219,7 +7780,7 @@ date	location	variant	sequences
 2022-07-02	USA	Omicron 21L	133
 2022-07-03	USA	Omicron 21L	131
 2022-07-04	USA	Omicron 21L	60
-2022-07-05	USA	Omicron 21L	304
+2022-07-05	USA	Omicron 21L	305
 2022-07-06	USA	Omicron 21L	174
 2022-07-07	USA	Omicron 21L	175
 2022-07-08	USA	Omicron 21L	167
@@ -8234,10 +7795,10 @@ date	location	variant	sequences
 2022-07-17	USA	Omicron 21L	73
 2022-07-18	USA	Omicron 21L	85
 2022-07-19	USA	Omicron 21L	82
-2022-07-20	USA	Omicron 21L	63
+2022-07-20	USA	Omicron 21L	64
 2022-07-21	USA	Omicron 21L	67
-2022-07-22	USA	Omicron 21L	67
-2022-07-23	USA	Omicron 21L	38
+2022-07-22	USA	Omicron 21L	68
+2022-07-23	USA	Omicron 21L	39
 2022-07-24	USA	Omicron 21L	48
 2022-07-25	USA	Omicron 21L	82
 2022-07-26	USA	Omicron 21L	47
@@ -8255,9 +7816,9 @@ date	location	variant	sequences
 2022-08-07	USA	Omicron 21L	8
 2022-08-08	USA	Omicron 21L	22
 2022-08-09	USA	Omicron 21L	11
-2022-08-10	USA	Omicron 21L	14
+2022-08-10	USA	Omicron 21L	15
 2022-08-11	USA	Omicron 21L	12
-2022-08-12	USA	Omicron 21L	11
+2022-08-12	USA	Omicron 21L	12
 2022-08-13	USA	Omicron 21L	14
 2022-08-14	USA	Omicron 21L	6
 2022-08-15	USA	Omicron 21L	19
@@ -8272,17 +7833,17 @@ date	location	variant	sequences
 2022-08-24	USA	Omicron 21L	7
 2022-08-25	USA	Omicron 21L	10
 2022-08-26	USA	Omicron 21L	6
-2022-08-27	USA	Omicron 21L	7
+2022-08-27	USA	Omicron 21L	8
 2022-08-28	USA	Omicron 21L	6
 2022-08-29	USA	Omicron 21L	14
 2022-08-30	USA	Omicron 21L	6
 2022-08-31	USA	Omicron 21L	6
-2022-09-01	USA	Omicron 21L	6
+2022-09-01	USA	Omicron 21L	7
 2022-09-02	USA	Omicron 21L	5
 2022-09-03	USA	Omicron 21L	3
 2022-09-04	USA	Omicron 21L	2
 2022-09-05	USA	Omicron 21L	1
-2022-09-06	USA	Omicron 21L	9
+2022-09-06	USA	Omicron 21L	10
 2022-09-07	USA	Omicron 21L	2
 2022-09-08	USA	Omicron 21L	2
 2022-09-09	USA	Omicron 21L	5
@@ -8290,11 +7851,11 @@ date	location	variant	sequences
 2022-09-11	USA	Omicron 21L	4
 2022-09-12	USA	Omicron 21L	13
 2022-09-13	USA	Omicron 21L	4
-2022-09-14	USA	Omicron 21L	5
-2022-09-15	USA	Omicron 21L	3
+2022-09-14	USA	Omicron 21L	6
+2022-09-15	USA	Omicron 21L	4
 2022-09-16	USA	Omicron 21L	14
 2022-09-17	USA	Omicron 21L	12
-2022-09-18	USA	Omicron 21L	4
+2022-09-18	USA	Omicron 21L	5
 2022-09-19	USA	Omicron 21L	8
 2022-09-20	USA	Omicron 21L	6
 2022-09-21	USA	Omicron 21L	9
@@ -8304,24 +7865,25 @@ date	location	variant	sequences
 2022-09-25	USA	Omicron 21L	5
 2022-09-26	USA	Omicron 21L	15
 2022-09-27	USA	Omicron 21L	12
-2022-09-28	USA	Omicron 21L	4
-2022-09-29	USA	Omicron 21L	5
-2022-09-30	USA	Omicron 21L	6
+2022-09-28	USA	Omicron 21L	5
+2022-09-29	USA	Omicron 21L	6
+2022-09-30	USA	Omicron 21L	7
 2022-10-01	USA	Omicron 21L	2
 2022-10-02	USA	Omicron 21L	8
-2022-10-03	USA	Omicron 21L	6
-2022-10-04	USA	Omicron 21L	3
-2022-10-05	USA	Omicron 21L	4
-2022-10-06	USA	Omicron 21L	5
-2022-10-07	USA	Omicron 21L	7
-2022-10-08	USA	Omicron 21L	8
-2022-10-09	USA	Omicron 21L	2
-2022-10-10	USA	Omicron 21L	6
-2022-10-11	USA	Omicron 21L	6
-2022-10-12	USA	Omicron 21L	3
-2022-05-30	USA	Omicron 22A	134
-2022-05-31	USA	Omicron 22A	522
-2022-06-01	USA	Omicron 22A	351
+2022-10-03	USA	Omicron 21L	9
+2022-10-04	USA	Omicron 21L	6
+2022-10-05	USA	Omicron 21L	5
+2022-10-06	USA	Omicron 21L	6
+2022-10-07	USA	Omicron 21L	9
+2022-10-08	USA	Omicron 21L	9
+2022-10-09	USA	Omicron 21L	5
+2022-10-10	USA	Omicron 21L	13
+2022-10-11	USA	Omicron 21L	12
+2022-10-12	USA	Omicron 21L	7
+2022-10-13	USA	Omicron 21L	5
+2022-10-14	USA	Omicron 21L	10
+2022-10-15	USA	Omicron 21L	7
+2022-10-16	USA	Omicron 21L	5
 2022-06-02	USA	Omicron 22A	435
 2022-06-03	USA	Omicron 22A	381
 2022-06-04	USA	Omicron 22A	284
@@ -8332,134 +7894,134 @@ date	location	variant	sequences
 2022-06-09	USA	Omicron 22A	537
 2022-06-10	USA	Omicron 22A	493
 2022-06-11	USA	Omicron 22A	410
-2022-06-12	USA	Omicron 22A	347
+2022-06-12	USA	Omicron 22A	349
 2022-06-13	USA	Omicron 22A	652
-2022-06-14	USA	Omicron 22A	609
-2022-06-15	USA	Omicron 22A	771
+2022-06-14	USA	Omicron 22A	610
+2022-06-15	USA	Omicron 22A	772
 2022-06-16	USA	Omicron 22A	661
 2022-06-17	USA	Omicron 22A	662
 2022-06-18	USA	Omicron 22A	449
-2022-06-19	USA	Omicron 22A	347
+2022-06-19	USA	Omicron 22A	355
 2022-06-20	USA	Omicron 22A	661
 2022-06-21	USA	Omicron 22A	776
-2022-06-22	USA	Omicron 22A	836
-2022-06-23	USA	Omicron 22A	743
+2022-06-22	USA	Omicron 22A	837
+2022-06-23	USA	Omicron 22A	744
 2022-06-24	USA	Omicron 22A	684
 2022-06-25	USA	Omicron 22A	468
-2022-06-26	USA	Omicron 22A	510
+2022-06-26	USA	Omicron 22A	513
 2022-06-27	USA	Omicron 22A	1021
-2022-06-28	USA	Omicron 22A	859
+2022-06-28	USA	Omicron 22A	860
 2022-06-29	USA	Omicron 22A	848
 2022-06-30	USA	Omicron 22A	777
 2022-07-01	USA	Omicron 22A	821
 2022-07-02	USA	Omicron 22A	563
 2022-07-03	USA	Omicron 22A	515
-2022-07-04	USA	Omicron 22A	281
-2022-07-05	USA	Omicron 22A	1317
-2022-07-06	USA	Omicron 22A	921
-2022-07-07	USA	Omicron 22A	903
+2022-07-04	USA	Omicron 22A	282
+2022-07-05	USA	Omicron 22A	1318
+2022-07-06	USA	Omicron 22A	923
+2022-07-07	USA	Omicron 22A	904
 2022-07-08	USA	Omicron 22A	846
 2022-07-09	USA	Omicron 22A	597
 2022-07-10	USA	Omicron 22A	670
-2022-07-11	USA	Omicron 22A	1191
+2022-07-11	USA	Omicron 22A	1192
 2022-07-12	USA	Omicron 22A	808
 2022-07-13	USA	Omicron 22A	766
 2022-07-14	USA	Omicron 22A	801
 2022-07-15	USA	Omicron 22A	790
 2022-07-16	USA	Omicron 22A	709
 2022-07-17	USA	Omicron 22A	634
-2022-07-18	USA	Omicron 22A	944
-2022-07-19	USA	Omicron 22A	803
+2022-07-18	USA	Omicron 22A	948
+2022-07-19	USA	Omicron 22A	805
 2022-07-20	USA	Omicron 22A	630
-2022-07-21	USA	Omicron 22A	600
-2022-07-22	USA	Omicron 22A	731
+2022-07-21	USA	Omicron 22A	602
+2022-07-22	USA	Omicron 22A	735
 2022-07-23	USA	Omicron 22A	494
 2022-07-24	USA	Omicron 22A	465
-2022-07-25	USA	Omicron 22A	935
-2022-07-26	USA	Omicron 22A	617
+2022-07-25	USA	Omicron 22A	948
+2022-07-26	USA	Omicron 22A	618
 2022-07-27	USA	Omicron 22A	559
-2022-07-28	USA	Omicron 22A	533
-2022-07-29	USA	Omicron 22A	545
+2022-07-28	USA	Omicron 22A	534
+2022-07-29	USA	Omicron 22A	547
 2022-07-30	USA	Omicron 22A	439
 2022-07-31	USA	Omicron 22A	472
-2022-08-01	USA	Omicron 22A	927
+2022-08-01	USA	Omicron 22A	940
 2022-08-02	USA	Omicron 22A	659
 2022-08-03	USA	Omicron 22A	585
-2022-08-04	USA	Omicron 22A	536
+2022-08-04	USA	Omicron 22A	537
 2022-08-05	USA	Omicron 22A	488
 2022-08-06	USA	Omicron 22A	304
-2022-08-07	USA	Omicron 22A	330
+2022-08-07	USA	Omicron 22A	331
 2022-08-08	USA	Omicron 22A	663
-2022-08-09	USA	Omicron 22A	411
-2022-08-10	USA	Omicron 22A	435
-2022-08-11	USA	Omicron 22A	490
-2022-08-12	USA	Omicron 22A	501
+2022-08-09	USA	Omicron 22A	412
+2022-08-10	USA	Omicron 22A	436
+2022-08-11	USA	Omicron 22A	491
+2022-08-12	USA	Omicron 22A	502
 2022-08-13	USA	Omicron 22A	382
-2022-08-14	USA	Omicron 22A	355
-2022-08-15	USA	Omicron 22A	572
-2022-08-16	USA	Omicron 22A	420
-2022-08-17	USA	Omicron 22A	451
+2022-08-14	USA	Omicron 22A	359
+2022-08-15	USA	Omicron 22A	577
+2022-08-16	USA	Omicron 22A	425
+2022-08-17	USA	Omicron 22A	453
 2022-08-18	USA	Omicron 22A	448
-2022-08-19	USA	Omicron 22A	470
-2022-08-20	USA	Omicron 22A	308
-2022-08-21	USA	Omicron 22A	370
-2022-08-22	USA	Omicron 22A	593
-2022-08-23	USA	Omicron 22A	451
-2022-08-24	USA	Omicron 22A	365
-2022-08-25	USA	Omicron 22A	375
+2022-08-19	USA	Omicron 22A	474
+2022-08-20	USA	Omicron 22A	309
+2022-08-21	USA	Omicron 22A	371
+2022-08-22	USA	Omicron 22A	600
+2022-08-23	USA	Omicron 22A	454
+2022-08-24	USA	Omicron 22A	367
+2022-08-25	USA	Omicron 22A	376
 2022-08-26	USA	Omicron 22A	469
 2022-08-27	USA	Omicron 22A	466
 2022-08-28	USA	Omicron 22A	382
-2022-08-29	USA	Omicron 22A	567
-2022-08-30	USA	Omicron 22A	479
-2022-08-31	USA	Omicron 22A	417
-2022-09-01	USA	Omicron 22A	393
+2022-08-29	USA	Omicron 22A	569
+2022-08-30	USA	Omicron 22A	480
+2022-08-31	USA	Omicron 22A	420
+2022-09-01	USA	Omicron 22A	398
 2022-09-02	USA	Omicron 22A	342
-2022-09-03	USA	Omicron 22A	357
-2022-09-04	USA	Omicron 22A	361
-2022-09-05	USA	Omicron 22A	111
-2022-09-06	USA	Omicron 22A	656
-2022-09-07	USA	Omicron 22A	383
-2022-09-08	USA	Omicron 22A	328
-2022-09-09	USA	Omicron 22A	277
-2022-09-10	USA	Omicron 22A	348
-2022-09-11	USA	Omicron 22A	272
-2022-09-12	USA	Omicron 22A	554
-2022-09-13	USA	Omicron 22A	516
-2022-09-14	USA	Omicron 22A	350
-2022-09-15	USA	Omicron 22A	364
-2022-09-16	USA	Omicron 22A	386
-2022-09-17	USA	Omicron 22A	327
-2022-09-18	USA	Omicron 22A	251
-2022-09-19	USA	Omicron 22A	469
-2022-09-20	USA	Omicron 22A	387
-2022-09-21	USA	Omicron 22A	390
-2022-09-22	USA	Omicron 22A	341
-2022-09-23	USA	Omicron 22A	304
-2022-09-24	USA	Omicron 22A	195
-2022-09-25	USA	Omicron 22A	184
-2022-09-26	USA	Omicron 22A	343
-2022-09-27	USA	Omicron 22A	250
-2022-09-28	USA	Omicron 22A	229
-2022-09-29	USA	Omicron 22A	183
-2022-09-30	USA	Omicron 22A	142
-2022-10-01	USA	Omicron 22A	128
-2022-10-02	USA	Omicron 22A	112
-2022-10-03	USA	Omicron 22A	165
-2022-10-04	USA	Omicron 22A	130
-2022-10-05	USA	Omicron 22A	131
-2022-10-06	USA	Omicron 22A	151
-2022-10-07	USA	Omicron 22A	141
-2022-10-08	USA	Omicron 22A	91
-2022-10-09	USA	Omicron 22A	79
-2022-10-10	USA	Omicron 22A	122
-2022-10-11	USA	Omicron 22A	75
-2022-10-12	USA	Omicron 22A	53
-2022-10-13	USA	Omicron 22A	37
-2022-10-14	USA	Omicron 22A	21
-2022-05-30	USA	Omicron 22B	154
-2022-05-31	USA	Omicron 22B	846
-2022-06-01	USA	Omicron 22B	616
+2022-09-03	USA	Omicron 22A	359
+2022-09-04	USA	Omicron 22A	362
+2022-09-05	USA	Omicron 22A	115
+2022-09-06	USA	Omicron 22A	665
+2022-09-07	USA	Omicron 22A	388
+2022-09-08	USA	Omicron 22A	337
+2022-09-09	USA	Omicron 22A	285
+2022-09-10	USA	Omicron 22A	350
+2022-09-11	USA	Omicron 22A	276
+2022-09-12	USA	Omicron 22A	559
+2022-09-13	USA	Omicron 22A	522
+2022-09-14	USA	Omicron 22A	357
+2022-09-15	USA	Omicron 22A	369
+2022-09-16	USA	Omicron 22A	391
+2022-09-17	USA	Omicron 22A	328
+2022-09-18	USA	Omicron 22A	255
+2022-09-19	USA	Omicron 22A	476
+2022-09-20	USA	Omicron 22A	396
+2022-09-21	USA	Omicron 22A	397
+2022-09-22	USA	Omicron 22A	347
+2022-09-23	USA	Omicron 22A	311
+2022-09-24	USA	Omicron 22A	199
+2022-09-25	USA	Omicron 22A	193
+2022-09-26	USA	Omicron 22A	352
+2022-09-27	USA	Omicron 22A	261
+2022-09-28	USA	Omicron 22A	247
+2022-09-29	USA	Omicron 22A	215
+2022-09-30	USA	Omicron 22A	186
+2022-10-01	USA	Omicron 22A	161
+2022-10-02	USA	Omicron 22A	138
+2022-10-03	USA	Omicron 22A	221
+2022-10-04	USA	Omicron 22A	153
+2022-10-05	USA	Omicron 22A	153
+2022-10-06	USA	Omicron 22A	160
+2022-10-07	USA	Omicron 22A	151
+2022-10-08	USA	Omicron 22A	111
+2022-10-09	USA	Omicron 22A	97
+2022-10-10	USA	Omicron 22A	192
+2022-10-11	USA	Omicron 22A	159
+2022-10-12	USA	Omicron 22A	171
+2022-10-13	USA	Omicron 22A	138
+2022-10-14	USA	Omicron 22A	94
+2022-10-15	USA	Omicron 22A	64
+2022-10-16	USA	Omicron 22A	26
+2022-10-17	USA	Omicron 22A	23
 2022-06-02	USA	Omicron 22B	609
 2022-06-03	USA	Omicron 22B	594
 2022-06-04	USA	Omicron 22B	485
@@ -8470,134 +8032,134 @@ date	location	variant	sequences
 2022-06-09	USA	Omicron 22B	1035
 2022-06-10	USA	Omicron 22B	1092
 2022-06-11	USA	Omicron 22B	776
-2022-06-12	USA	Omicron 22B	855
-2022-06-13	USA	Omicron 22B	1605
-2022-06-14	USA	Omicron 22B	1449
-2022-06-15	USA	Omicron 22B	1746
+2022-06-12	USA	Omicron 22B	865
+2022-06-13	USA	Omicron 22B	1608
+2022-06-14	USA	Omicron 22B	1451
+2022-06-15	USA	Omicron 22B	1747
 2022-06-16	USA	Omicron 22B	1598
-2022-06-17	USA	Omicron 22B	1697
-2022-06-18	USA	Omicron 22B	1152
-2022-06-19	USA	Omicron 22B	940
-2022-06-20	USA	Omicron 22B	2005
-2022-06-21	USA	Omicron 22B	2368
-2022-06-22	USA	Omicron 22B	2372
-2022-06-23	USA	Omicron 22B	2381
+2022-06-17	USA	Omicron 22B	1701
+2022-06-18	USA	Omicron 22B	1153
+2022-06-19	USA	Omicron 22B	952
+2022-06-20	USA	Omicron 22B	2007
+2022-06-21	USA	Omicron 22B	2371
+2022-06-22	USA	Omicron 22B	2377
+2022-06-23	USA	Omicron 22B	2386
 2022-06-24	USA	Omicron 22B	2184
 2022-06-25	USA	Omicron 22B	1599
-2022-06-26	USA	Omicron 22B	1821
-2022-06-27	USA	Omicron 22B	3748
-2022-06-28	USA	Omicron 22B	3154
-2022-06-29	USA	Omicron 22B	3122
-2022-06-30	USA	Omicron 22B	3034
-2022-07-01	USA	Omicron 22B	3300
+2022-06-26	USA	Omicron 22B	1828
+2022-06-27	USA	Omicron 22B	3757
+2022-06-28	USA	Omicron 22B	3162
+2022-06-29	USA	Omicron 22B	3127
+2022-06-30	USA	Omicron 22B	3041
+2022-07-01	USA	Omicron 22B	3301
 2022-07-02	USA	Omicron 22B	2206
-2022-07-03	USA	Omicron 22B	2161
+2022-07-03	USA	Omicron 22B	2162
 2022-07-04	USA	Omicron 22B	1298
-2022-07-05	USA	Omicron 22B	6064
-2022-07-06	USA	Omicron 22B	4706
-2022-07-07	USA	Omicron 22B	3940
+2022-07-05	USA	Omicron 22B	6069
+2022-07-06	USA	Omicron 22B	4710
+2022-07-07	USA	Omicron 22B	3941
 2022-07-08	USA	Omicron 22B	4073
-2022-07-09	USA	Omicron 22B	3165
-2022-07-10	USA	Omicron 22B	3432
-2022-07-11	USA	Omicron 22B	5647
-2022-07-12	USA	Omicron 22B	4463
-2022-07-13	USA	Omicron 22B	4181
+2022-07-09	USA	Omicron 22B	3166
+2022-07-10	USA	Omicron 22B	3433
+2022-07-11	USA	Omicron 22B	5661
+2022-07-12	USA	Omicron 22B	4466
+2022-07-13	USA	Omicron 22B	4184
 2022-07-14	USA	Omicron 22B	4245
-2022-07-15	USA	Omicron 22B	4203
+2022-07-15	USA	Omicron 22B	4205
 2022-07-16	USA	Omicron 22B	3877
-2022-07-17	USA	Omicron 22B	3587
-2022-07-18	USA	Omicron 22B	5731
-2022-07-19	USA	Omicron 22B	4959
-2022-07-20	USA	Omicron 22B	4052
-2022-07-21	USA	Omicron 22B	3806
-2022-07-22	USA	Omicron 22B	4632
-2022-07-23	USA	Omicron 22B	2831
+2022-07-17	USA	Omicron 22B	3589
+2022-07-18	USA	Omicron 22B	5767
+2022-07-19	USA	Omicron 22B	4983
+2022-07-20	USA	Omicron 22B	4066
+2022-07-21	USA	Omicron 22B	3836
+2022-07-22	USA	Omicron 22B	4656
+2022-07-23	USA	Omicron 22B	2840
 2022-07-24	USA	Omicron 22B	3158
-2022-07-25	USA	Omicron 22B	5964
-2022-07-26	USA	Omicron 22B	4480
-2022-07-27	USA	Omicron 22B	3879
-2022-07-28	USA	Omicron 22B	3861
-2022-07-29	USA	Omicron 22B	3772
+2022-07-25	USA	Omicron 22B	5990
+2022-07-26	USA	Omicron 22B	4481
+2022-07-27	USA	Omicron 22B	3881
+2022-07-28	USA	Omicron 22B	3864
+2022-07-29	USA	Omicron 22B	3775
 2022-07-30	USA	Omicron 22B	3000
 2022-07-31	USA	Omicron 22B	3371
-2022-08-01	USA	Omicron 22B	6366
-2022-08-02	USA	Omicron 22B	4685
-2022-08-03	USA	Omicron 22B	4087
-2022-08-04	USA	Omicron 22B	3724
-2022-08-05	USA	Omicron 22B	3243
-2022-08-06	USA	Omicron 22B	2193
-2022-08-07	USA	Omicron 22B	2173
-2022-08-08	USA	Omicron 22B	4285
-2022-08-09	USA	Omicron 22B	3403
-2022-08-10	USA	Omicron 22B	3414
-2022-08-11	USA	Omicron 22B	3907
-2022-08-12	USA	Omicron 22B	3749
-2022-08-13	USA	Omicron 22B	2896
-2022-08-14	USA	Omicron 22B	2554
-2022-08-15	USA	Omicron 22B	4323
-2022-08-16	USA	Omicron 22B	3678
-2022-08-17	USA	Omicron 22B	3628
-2022-08-18	USA	Omicron 22B	3375
-2022-08-19	USA	Omicron 22B	3539
-2022-08-20	USA	Omicron 22B	2583
-2022-08-21	USA	Omicron 22B	2728
-2022-08-22	USA	Omicron 22B	4618
-2022-08-23	USA	Omicron 22B	3386
-2022-08-24	USA	Omicron 22B	3023
-2022-08-25	USA	Omicron 22B	2846
-2022-08-26	USA	Omicron 22B	3327
-2022-08-27	USA	Omicron 22B	3184
-2022-08-28	USA	Omicron 22B	2763
-2022-08-29	USA	Omicron 22B	4386
-2022-08-30	USA	Omicron 22B	3385
-2022-08-31	USA	Omicron 22B	2844
-2022-09-01	USA	Omicron 22B	2680
-2022-09-02	USA	Omicron 22B	2297
-2022-09-03	USA	Omicron 22B	2213
-2022-09-04	USA	Omicron 22B	2481
-2022-09-05	USA	Omicron 22B	789
-2022-09-06	USA	Omicron 22B	4473
-2022-09-07	USA	Omicron 22B	2516
-2022-09-08	USA	Omicron 22B	2083
-2022-09-09	USA	Omicron 22B	1841
-2022-09-10	USA	Omicron 22B	2134
-2022-09-11	USA	Omicron 22B	1838
-2022-09-12	USA	Omicron 22B	3802
-2022-09-13	USA	Omicron 22B	3167
-2022-09-14	USA	Omicron 22B	2281
-2022-09-15	USA	Omicron 22B	2466
-2022-09-16	USA	Omicron 22B	2610
-2022-09-17	USA	Omicron 22B	2005
-2022-09-18	USA	Omicron 22B	1746
-2022-09-19	USA	Omicron 22B	3419
-2022-09-20	USA	Omicron 22B	2530
-2022-09-21	USA	Omicron 22B	2506
-2022-09-22	USA	Omicron 22B	2171
-2022-09-23	USA	Omicron 22B	2000
-2022-09-24	USA	Omicron 22B	1418
-2022-09-25	USA	Omicron 22B	1133
-2022-09-26	USA	Omicron 22B	2388
-2022-09-27	USA	Omicron 22B	1660
-2022-09-28	USA	Omicron 22B	1392
-2022-09-29	USA	Omicron 22B	1293
-2022-09-30	USA	Omicron 22B	1236
-2022-10-01	USA	Omicron 22B	984
-2022-10-02	USA	Omicron 22B	808
-2022-10-03	USA	Omicron 22B	1254
-2022-10-04	USA	Omicron 22B	947
-2022-10-05	USA	Omicron 22B	940
-2022-10-06	USA	Omicron 22B	913
-2022-10-07	USA	Omicron 22B	998
-2022-10-08	USA	Omicron 22B	713
-2022-10-09	USA	Omicron 22B	547
-2022-10-10	USA	Omicron 22B	847
-2022-10-11	USA	Omicron 22B	526
-2022-10-12	USA	Omicron 22B	331
-2022-10-13	USA	Omicron 22B	221
-2022-10-14	USA	Omicron 22B	168
-2022-05-30	USA	Omicron 22C	1352
-2022-05-31	USA	Omicron 22C	5705
-2022-06-01	USA	Omicron 22C	3891
+2022-08-01	USA	Omicron 22B	6392
+2022-08-02	USA	Omicron 22B	4696
+2022-08-03	USA	Omicron 22B	4093
+2022-08-04	USA	Omicron 22B	3734
+2022-08-05	USA	Omicron 22B	3257
+2022-08-06	USA	Omicron 22B	2195
+2022-08-07	USA	Omicron 22B	2180
+2022-08-08	USA	Omicron 22B	4296
+2022-08-09	USA	Omicron 22B	3415
+2022-08-10	USA	Omicron 22B	3425
+2022-08-11	USA	Omicron 22B	3916
+2022-08-12	USA	Omicron 22B	3768
+2022-08-13	USA	Omicron 22B	2902
+2022-08-14	USA	Omicron 22B	2599
+2022-08-15	USA	Omicron 22B	4349
+2022-08-16	USA	Omicron 22B	3699
+2022-08-17	USA	Omicron 22B	3640
+2022-08-18	USA	Omicron 22B	3388
+2022-08-19	USA	Omicron 22B	3552
+2022-08-20	USA	Omicron 22B	2598
+2022-08-21	USA	Omicron 22B	2730
+2022-08-22	USA	Omicron 22B	4631
+2022-08-23	USA	Omicron 22B	3397
+2022-08-24	USA	Omicron 22B	3033
+2022-08-25	USA	Omicron 22B	2860
+2022-08-26	USA	Omicron 22B	3341
+2022-08-27	USA	Omicron 22B	3193
+2022-08-28	USA	Omicron 22B	2766
+2022-08-29	USA	Omicron 22B	4394
+2022-08-30	USA	Omicron 22B	3399
+2022-08-31	USA	Omicron 22B	2862
+2022-09-01	USA	Omicron 22B	2699
+2022-09-02	USA	Omicron 22B	2317
+2022-09-03	USA	Omicron 22B	2228
+2022-09-04	USA	Omicron 22B	2510
+2022-09-05	USA	Omicron 22B	803
+2022-09-06	USA	Omicron 22B	4511
+2022-09-07	USA	Omicron 22B	2540
+2022-09-08	USA	Omicron 22B	2120
+2022-09-09	USA	Omicron 22B	1876
+2022-09-10	USA	Omicron 22B	2149
+2022-09-11	USA	Omicron 22B	1874
+2022-09-12	USA	Omicron 22B	3831
+2022-09-13	USA	Omicron 22B	3201
+2022-09-14	USA	Omicron 22B	2322
+2022-09-15	USA	Omicron 22B	2505
+2022-09-16	USA	Omicron 22B	2642
+2022-09-17	USA	Omicron 22B	2021
+2022-09-18	USA	Omicron 22B	1774
+2022-09-19	USA	Omicron 22B	3458
+2022-09-20	USA	Omicron 22B	2580
+2022-09-21	USA	Omicron 22B	2548
+2022-09-22	USA	Omicron 22B	2212
+2022-09-23	USA	Omicron 22B	2044
+2022-09-24	USA	Omicron 22B	1444
+2022-09-25	USA	Omicron 22B	1166
+2022-09-26	USA	Omicron 22B	2447
+2022-09-27	USA	Omicron 22B	1717
+2022-09-28	USA	Omicron 22B	1514
+2022-09-29	USA	Omicron 22B	1481
+2022-09-30	USA	Omicron 22B	1501
+2022-10-01	USA	Omicron 22B	1174
+2022-10-02	USA	Omicron 22B	1005
+2022-10-03	USA	Omicron 22B	1604
+2022-10-04	USA	Omicron 22B	1194
+2022-10-05	USA	Omicron 22B	1167
+2022-10-06	USA	Omicron 22B	1078
+2022-10-07	USA	Omicron 22B	1104
+2022-10-08	USA	Omicron 22B	849
+2022-10-09	USA	Omicron 22B	736
+2022-10-10	USA	Omicron 22B	1527
+2022-10-11	USA	Omicron 22B	1157
+2022-10-12	USA	Omicron 22B	1057
+2022-10-13	USA	Omicron 22B	922
+2022-10-14	USA	Omicron 22B	761
+2022-10-15	USA	Omicron 22B	495
+2022-10-16	USA	Omicron 22B	228
+2022-10-17	USA	Omicron 22B	188
 2022-06-02	USA	Omicron 22C	3689
 2022-06-03	USA	Omicron 22C	3392
 2022-06-04	USA	Omicron 22C	2367
@@ -8608,50 +8170,50 @@ date	location	variant	sequences
 2022-06-09	USA	Omicron 22C	3050
 2022-06-10	USA	Omicron 22C	2751
 2022-06-11	USA	Omicron 22C	1897
-2022-06-12	USA	Omicron 22C	1771
-2022-06-13	USA	Omicron 22C	3156
+2022-06-12	USA	Omicron 22C	1787
+2022-06-13	USA	Omicron 22C	3157
 2022-06-14	USA	Omicron 22C	2531
-2022-06-15	USA	Omicron 22C	2772
+2022-06-15	USA	Omicron 22C	2773
 2022-06-16	USA	Omicron 22C	2456
 2022-06-17	USA	Omicron 22C	2228
 2022-06-18	USA	Omicron 22C	1491
-2022-06-19	USA	Omicron 22C	1044
-2022-06-20	USA	Omicron 22C	1977
+2022-06-19	USA	Omicron 22C	1066
+2022-06-20	USA	Omicron 22C	1980
 2022-06-21	USA	Omicron 22C	2133
 2022-06-22	USA	Omicron 22C	2006
-2022-06-23	USA	Omicron 22C	1747
+2022-06-23	USA	Omicron 22C	1748
 2022-06-24	USA	Omicron 22C	1507
 2022-06-25	USA	Omicron 22C	1014
-2022-06-26	USA	Omicron 22C	987
+2022-06-26	USA	Omicron 22C	996
 2022-06-27	USA	Omicron 22C	1973
-2022-06-28	USA	Omicron 22C	1498
+2022-06-28	USA	Omicron 22C	1499
 2022-06-29	USA	Omicron 22C	1232
 2022-06-30	USA	Omicron 22C	1253
 2022-07-01	USA	Omicron 22C	1204
-2022-07-02	USA	Omicron 22C	679
+2022-07-02	USA	Omicron 22C	680
 2022-07-03	USA	Omicron 22C	608
 2022-07-04	USA	Omicron 22C	366
-2022-07-05	USA	Omicron 22C	1517
-2022-07-06	USA	Omicron 22C	1029
+2022-07-05	USA	Omicron 22C	1518
+2022-07-06	USA	Omicron 22C	1031
 2022-07-07	USA	Omicron 22C	845
 2022-07-08	USA	Omicron 22C	794
 2022-07-09	USA	Omicron 22C	573
 2022-07-10	USA	Omicron 22C	583
-2022-07-11	USA	Omicron 22C	829
-2022-07-12	USA	Omicron 22C	606
+2022-07-11	USA	Omicron 22C	831
+2022-07-12	USA	Omicron 22C	607
 2022-07-13	USA	Omicron 22C	517
 2022-07-14	USA	Omicron 22C	487
 2022-07-15	USA	Omicron 22C	472
 2022-07-16	USA	Omicron 22C	371
 2022-07-17	USA	Omicron 22C	334
-2022-07-18	USA	Omicron 22C	488
+2022-07-18	USA	Omicron 22C	490
 2022-07-19	USA	Omicron 22C	396
 2022-07-20	USA	Omicron 22C	287
-2022-07-21	USA	Omicron 22C	254
-2022-07-22	USA	Omicron 22C	306
-2022-07-23	USA	Omicron 22C	165
+2022-07-21	USA	Omicron 22C	257
+2022-07-22	USA	Omicron 22C	307
+2022-07-23	USA	Omicron 22C	166
 2022-07-24	USA	Omicron 22C	154
-2022-07-25	USA	Omicron 22C	278
+2022-07-25	USA	Omicron 22C	281
 2022-07-26	USA	Omicron 22C	191
 2022-07-27	USA	Omicron 22C	166
 2022-07-28	USA	Omicron 22C	152
@@ -8675,7 +8237,7 @@ date	location	variant	sequences
 2022-08-15	USA	Omicron 22C	44
 2022-08-16	USA	Omicron 22C	36
 2022-08-17	USA	Omicron 22C	23
-2022-08-18	USA	Omicron 22C	30
+2022-08-18	USA	Omicron 22C	31
 2022-08-19	USA	Omicron 22C	27
 2022-08-20	USA	Omicron 22C	20
 2022-08-21	USA	Omicron 22C	17
@@ -8716,7 +8278,9 @@ date	location	variant	sequences
 2022-09-29	USA	Omicron 22C	2
 2022-09-30	USA	Omicron 22C	1
 2022-10-04	USA	Omicron 22C	1
-2022-10-10	USA	Omicron 22C	1
+2022-10-05	USA	Omicron 22C	2
+2022-10-10	USA	Omicron 22C	2
+2022-10-11	USA	Omicron 22C	1
 2022-06-14	USA	Omicron 22D	1
 2022-06-15	USA	Omicron 22D	1
 2022-06-18	USA	Omicron 22D	2
@@ -8789,8 +8353,8 @@ date	location	variant	sequences
 2022-09-01	USA	Omicron 22D	21
 2022-09-02	USA	Omicron 22D	9
 2022-09-03	USA	Omicron 22D	13
-2022-09-04	USA	Omicron 22D	19
-2022-09-05	USA	Omicron 22D	5
+2022-09-04	USA	Omicron 22D	20
+2022-09-05	USA	Omicron 22D	6
 2022-09-06	USA	Omicron 22D	30
 2022-09-07	USA	Omicron 22D	14
 2022-09-08	USA	Omicron 22D	20
@@ -8798,14 +8362,14 @@ date	location	variant	sequences
 2022-09-10	USA	Omicron 22D	25
 2022-09-11	USA	Omicron 22D	23
 2022-09-12	USA	Omicron 22D	41
-2022-09-13	USA	Omicron 22D	25
+2022-09-13	USA	Omicron 22D	26
 2022-09-14	USA	Omicron 22D	29
 2022-09-15	USA	Omicron 22D	23
-2022-09-16	USA	Omicron 22D	37
+2022-09-16	USA	Omicron 22D	38
 2022-09-17	USA	Omicron 22D	24
 2022-09-18	USA	Omicron 22D	28
 2022-09-19	USA	Omicron 22D	38
-2022-09-20	USA	Omicron 22D	24
+2022-09-20	USA	Omicron 22D	25
 2022-09-21	USA	Omicron 22D	38
 2022-09-22	USA	Omicron 22D	22
 2022-09-23	USA	Omicron 22D	32
@@ -8813,23 +8377,26 @@ date	location	variant	sequences
 2022-09-25	USA	Omicron 22D	18
 2022-09-26	USA	Omicron 22D	34
 2022-09-27	USA	Omicron 22D	24
-2022-09-28	USA	Omicron 22D	23
+2022-09-28	USA	Omicron 22D	24
 2022-09-29	USA	Omicron 22D	25
-2022-09-30	USA	Omicron 22D	24
-2022-10-01	USA	Omicron 22D	18
-2022-10-02	USA	Omicron 22D	19
-2022-10-03	USA	Omicron 22D	27
-2022-10-04	USA	Omicron 22D	27
-2022-10-05	USA	Omicron 22D	16
-2022-10-06	USA	Omicron 22D	9
-2022-10-07	USA	Omicron 22D	16
-2022-10-08	USA	Omicron 22D	27
-2022-10-09	USA	Omicron 22D	23
-2022-10-10	USA	Omicron 22D	13
-2022-10-11	USA	Omicron 22D	15
-2022-10-12	USA	Omicron 22D	4
-2022-10-13	USA	Omicron 22D	14
-2022-10-14	USA	Omicron 22D	9
+2022-09-30	USA	Omicron 22D	27
+2022-10-01	USA	Omicron 22D	19
+2022-10-02	USA	Omicron 22D	21
+2022-10-03	USA	Omicron 22D	33
+2022-10-04	USA	Omicron 22D	31
+2022-10-05	USA	Omicron 22D	22
+2022-10-06	USA	Omicron 22D	13
+2022-10-07	USA	Omicron 22D	17
+2022-10-08	USA	Omicron 22D	30
+2022-10-09	USA	Omicron 22D	31
+2022-10-10	USA	Omicron 22D	31
+2022-10-11	USA	Omicron 22D	38
+2022-10-12	USA	Omicron 22D	30
+2022-10-13	USA	Omicron 22D	41
+2022-10-14	USA	Omicron 22D	26
+2022-10-15	USA	Omicron 22D	26
+2022-10-16	USA	Omicron 22D	7
+2022-10-17	USA	Omicron 22D	6
 2022-07-29	USA	Omicron BA.2.75.2	2
 2022-08-03	USA	Omicron BA.2.75.2	1
 2022-08-06	USA	Omicron BA.2.75.2	1
@@ -8862,18 +8429,18 @@ date	location	variant	sequences
 2022-09-04	USA	Omicron BA.2.75.2	4
 2022-09-05	USA	Omicron BA.2.75.2	1
 2022-09-06	USA	Omicron BA.2.75.2	14
-2022-09-07	USA	Omicron BA.2.75.2	3
+2022-09-07	USA	Omicron BA.2.75.2	4
 2022-09-08	USA	Omicron BA.2.75.2	4
 2022-09-09	USA	Omicron BA.2.75.2	4
 2022-09-11	USA	Omicron BA.2.75.2	3
 2022-09-12	USA	Omicron BA.2.75.2	17
 2022-09-13	USA	Omicron BA.2.75.2	4
 2022-09-14	USA	Omicron BA.2.75.2	4
-2022-09-15	USA	Omicron BA.2.75.2	7
+2022-09-15	USA	Omicron BA.2.75.2	8
 2022-09-16	USA	Omicron BA.2.75.2	9
 2022-09-17	USA	Omicron BA.2.75.2	5
 2022-09-18	USA	Omicron BA.2.75.2	7
-2022-09-19	USA	Omicron BA.2.75.2	12
+2022-09-19	USA	Omicron BA.2.75.2	13
 2022-09-20	USA	Omicron BA.2.75.2	12
 2022-09-21	USA	Omicron BA.2.75.2	8
 2022-09-22	USA	Omicron BA.2.75.2	5
@@ -8882,23 +8449,25 @@ date	location	variant	sequences
 2022-09-25	USA	Omicron BA.2.75.2	5
 2022-09-26	USA	Omicron BA.2.75.2	4
 2022-09-27	USA	Omicron BA.2.75.2	6
-2022-09-28	USA	Omicron BA.2.75.2	3
+2022-09-28	USA	Omicron BA.2.75.2	5
 2022-09-29	USA	Omicron BA.2.75.2	6
-2022-09-30	USA	Omicron BA.2.75.2	1
-2022-10-01	USA	Omicron BA.2.75.2	7
+2022-09-30	USA	Omicron BA.2.75.2	2
+2022-10-01	USA	Omicron BA.2.75.2	11
 2022-10-02	USA	Omicron BA.2.75.2	2
-2022-10-03	USA	Omicron BA.2.75.2	3
+2022-10-03	USA	Omicron BA.2.75.2	7
 2022-10-04	USA	Omicron BA.2.75.2	9
-2022-10-05	USA	Omicron BA.2.75.2	4
-2022-10-06	USA	Omicron BA.2.75.2	3
+2022-10-05	USA	Omicron BA.2.75.2	5
+2022-10-06	USA	Omicron BA.2.75.2	5
 2022-10-07	USA	Omicron BA.2.75.2	6
-2022-10-08	USA	Omicron BA.2.75.2	4
-2022-10-09	USA	Omicron BA.2.75.2	2
-2022-10-10	USA	Omicron BA.2.75.2	6
-2022-10-11	USA	Omicron BA.2.75.2	2
-2022-10-12	USA	Omicron BA.2.75.2	1
-2022-10-13	USA	Omicron BA.2.75.2	3
-2022-10-14	USA	Omicron BA.2.75.2	3
+2022-10-08	USA	Omicron BA.2.75.2	5
+2022-10-09	USA	Omicron BA.2.75.2	3
+2022-10-10	USA	Omicron BA.2.75.2	7
+2022-10-11	USA	Omicron BA.2.75.2	6
+2022-10-12	USA	Omicron BA.2.75.2	7
+2022-10-13	USA	Omicron BA.2.75.2	8
+2022-10-14	USA	Omicron BA.2.75.2	4
+2022-10-15	USA	Omicron BA.2.75.2	5
+2022-10-16	USA	Omicron BA.2.75.2	1
 2022-06-21	USA	Omicron BQ.1	1
 2022-07-25	USA	Omicron BQ.1	1
 2022-07-29	USA	Omicron BQ.1	1
@@ -8938,33 +8507,36 @@ date	location	variant	sequences
 2022-09-15	USA	Omicron BQ.1	22
 2022-09-16	USA	Omicron BQ.1	32
 2022-09-17	USA	Omicron BQ.1	25
-2022-09-18	USA	Omicron BQ.1	41
-2022-09-19	USA	Omicron BQ.1	68
+2022-09-18	USA	Omicron BQ.1	42
+2022-09-19	USA	Omicron BQ.1	69
 2022-09-20	USA	Omicron BQ.1	44
 2022-09-21	USA	Omicron BQ.1	60
-2022-09-22	USA	Omicron BQ.1	51
-2022-09-23	USA	Omicron BQ.1	45
-2022-09-24	USA	Omicron BQ.1	45
-2022-09-25	USA	Omicron BQ.1	29
+2022-09-22	USA	Omicron BQ.1	52
+2022-09-23	USA	Omicron BQ.1	47
+2022-09-24	USA	Omicron BQ.1	46
+2022-09-25	USA	Omicron BQ.1	30
 2022-09-26	USA	Omicron BQ.1	86
-2022-09-27	USA	Omicron BQ.1	75
-2022-09-28	USA	Omicron BQ.1	63
-2022-09-29	USA	Omicron BQ.1	64
-2022-09-30	USA	Omicron BQ.1	88
-2022-10-01	USA	Omicron BQ.1	48
-2022-10-02	USA	Omicron BQ.1	84
-2022-10-03	USA	Omicron BQ.1	95
-2022-10-04	USA	Omicron BQ.1	77
-2022-10-05	USA	Omicron BQ.1	60
-2022-10-06	USA	Omicron BQ.1	83
-2022-10-07	USA	Omicron BQ.1	122
-2022-10-08	USA	Omicron BQ.1	70
-2022-10-09	USA	Omicron BQ.1	77
-2022-10-10	USA	Omicron BQ.1	110
-2022-10-11	USA	Omicron BQ.1	100
-2022-10-12	USA	Omicron BQ.1	76
-2022-10-13	USA	Omicron BQ.1	61
-2022-10-14	USA	Omicron BQ.1	57
+2022-09-27	USA	Omicron BQ.1	77
+2022-09-28	USA	Omicron BQ.1	64
+2022-09-29	USA	Omicron BQ.1	75
+2022-09-30	USA	Omicron BQ.1	93
+2022-10-01	USA	Omicron BQ.1	59
+2022-10-02	USA	Omicron BQ.1	101
+2022-10-03	USA	Omicron BQ.1	117
+2022-10-04	USA	Omicron BQ.1	88
+2022-10-05	USA	Omicron BQ.1	68
+2022-10-06	USA	Omicron BQ.1	95
+2022-10-07	USA	Omicron BQ.1	125
+2022-10-08	USA	Omicron BQ.1	84
+2022-10-09	USA	Omicron BQ.1	87
+2022-10-10	USA	Omicron BQ.1	160
+2022-10-11	USA	Omicron BQ.1	186
+2022-10-12	USA	Omicron BQ.1	163
+2022-10-13	USA	Omicron BQ.1	132
+2022-10-14	USA	Omicron BQ.1	144
+2022-10-15	USA	Omicron BQ.1	108
+2022-10-16	USA	Omicron BQ.1	38
+2022-10-17	USA	Omicron BQ.1	24
 2022-08-27	USA	Omicron XBB	1
 2022-09-02	USA	Omicron XBB	1
 2022-09-06	USA	Omicron XBB	2
@@ -8979,19 +8551,21 @@ date	location	variant	sequences
 2022-09-25	USA	Omicron XBB	2
 2022-09-26	USA	Omicron XBB	5
 2022-09-28	USA	Omicron XBB	4
-2022-09-29	USA	Omicron XBB	4
+2022-09-29	USA	Omicron XBB	5
 2022-09-30	USA	Omicron XBB	1
 2022-10-01	USA	Omicron XBB	3
-2022-10-02	USA	Omicron XBB	1
+2022-10-02	USA	Omicron XBB	2
 2022-10-03	USA	Omicron XBB	5
 2022-10-04	USA	Omicron XBB	4
-2022-10-05	USA	Omicron XBB	3
+2022-10-05	USA	Omicron XBB	5
 2022-10-06	USA	Omicron XBB	4
 2022-10-07	USA	Omicron XBB	6
 2022-10-08	USA	Omicron XBB	1
 2022-10-09	USA	Omicron XBB	1
-2022-10-10	USA	Omicron XBB	1
-2022-10-11	USA	Omicron XBB	3
-2022-10-12	USA	Omicron XBB	4
-2022-10-13	USA	Omicron XBB	7
-2022-10-14	USA	Omicron XBB	4
+2022-10-10	USA	Omicron XBB	4
+2022-10-11	USA	Omicron XBB	4
+2022-10-12	USA	Omicron XBB	6
+2022-10-13	USA	Omicron XBB	10
+2022-10-14	USA	Omicron XBB	7
+2022-10-15	USA	Omicron XBB	6
+2022-10-16	USA	Omicron XBB	1
