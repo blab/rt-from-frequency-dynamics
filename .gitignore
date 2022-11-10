@@ -21,6 +21,8 @@ data/pango-countries/sars-cov-2/
 data/pango-countries/sars-cov-2-21L/
 data/pango-countries/pango_consensus_sequences.fasta
 data/pango-countries/pango_consensus_sequences.fasta.zstd
+data/pango-countries/nextclade_sars-cov-2_21L.json
+data/pango-countries/nextclade_sars-cov-2_21L.json.gz
 
 # Protect environment variables
 environment*
