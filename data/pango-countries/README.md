@@ -2,7 +2,7 @@
 
 This dataset only includes Pango lineages with >150 sequences in US dataset. Rarer Pango lineages are collapsed into parental lineages, ie BM.1 was collapsed into BA.2.75.3.
 
-Data preparation followed:
+### Metadata
 
 1. Nextstrain-curated metadata TSV of GISAID database was downloaded. Uncompressing and renaming this file resulted in `gisaid_metadata.tsv` via:
 ```
@@ -15,42 +15,32 @@ gzip -d metadata.tsv.gz -c > gisaid_metadata.tsv
 tsv-select -H -f strain,date,country,division,QC_overall_status,Nextclade_pango gisaid_metadata.tsv > gisaid_metadata_pruned.tsv
 ```
 
-3. Install `nextclade` CLI following instructions at [docs.nextstrain.org](https://docs.nextstrain.org/projects/nextclade/en/stable/user/nextclade-cli.html)
+### Pango aliasing
 
-4. Provision `sars-cov-2-21L` dataset with:
+3. Download JSON from the 21L Nextclade build:
 ```
-nextclade dataset get --name 'sars-cov-2-21L' --output-dir 'sars-cov-2-21L'
-```
-
-5. Download canonical Pango sequences provisioned by [@corneliusroemer](https://github.com/corneliusroemer) via:
-```
-curl -fsSL https://github.com/corneliusroemer/pango-sequences/blob/main/data/pango_consensus_sequences.fasta.zstd?raw=true -o pango_consensus_sequences.fasta.zstd
-```
-And decompress with:
-```
-zstdcat pango_consensus_sequences.fasta.zstd > pango_consensus_sequences.fasta
+curl -fsSL https://data.nextstrain.org/nextclade_sars-cov-2_21L.json -o nextclade_sars-cov-2_21L.json.gz
 ```
 
-6. Run Nextclade on each Pango lineage with:
+4. Decompress this file:
 ```
-nextclade run \
-   --input-dataset sars-cov-2-21L \
-   --output-all=output/ \
-   pango_consensus_sequences.fasta
+gzip -d nextclade_sars-cov-2_21L.json.gz -c > nextclade_sars-cov-2_21L.json
 ```
 
-This will generate the file `output/nextclade.tsv` containing columns `Nextclade_pango` and `partiallyAliased` and rows for each Pango lineage.
-
-7. Prune this file to relevant columns:
+5. Extract relevant tip attributes to TSV:
 ```
-tsv-select -H -f seqName,clade,Nextclade_pango,partiallyAliased output/nextclade.tsv > output/nextclade_pruned.tsv
+python extract_tip_attributes.py --json nextclade_sars-cov-2_21L.json > pango_aliasing.tsv
 ```
 
-8. Prune this file to only relevant rows:
+This TSV looks like
 ```
-tsv-filter -H --str-ne clade:outgroup output/nextclade_pruned.tsv > pango_aliasing.tsv
+seqName	clade	Nextclade_pango	partiallyAliased
+BQ.1	22E (Omicron)	BQ.1	BA.5.3.1.1.1.1.1
+BQ.1.1	22E (Omicron)	BQ.1.1	BA.5.3.1.1.1.1.1.1
 ```
 
-9. This `gisaid_metadata_pruned.tsv` is processed in Mathematica by running the notebook `pango-countries_data-prep.nb`. This results in the file `pango_location-variant-sequence-counts.tsv` versioned here. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
+### Counts
+
+6. These files are processed in Mathematica by running the notebook `pango-countries_data-prep.nb`. This results in the file `pango_location-variant-sequence-counts.tsv` versioned here. These files represent heavily derived GISAID data and are equivalent to downloadable results from [outbreak.info](https://outbreak.info), [cov-spectrum.org](https://cov-spectrum.org) and [covariants.org](https://covariants.org). This use is allowable under the [GISAID Terms of Use](https://www.gisaid.org/registration/terms-of-use/).
 
 There will be dates that are missing sequence counts. These should be assumed to be 0.
