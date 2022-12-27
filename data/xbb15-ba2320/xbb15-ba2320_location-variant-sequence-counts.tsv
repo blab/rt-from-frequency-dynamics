@@ -64,17 +64,17 @@ date	location	variant	sequences
 2022-11-29	Australia	other	42
 2022-11-30	Australia	other	53
 2022-12-01	Australia	other	35
-2022-12-02	Australia	other	18
-2022-12-03	Australia	other	16
-2022-12-04	Australia	other	20
-2022-12-05	Australia	other	25
-2022-12-06	Australia	other	24
-2022-12-07	Australia	other	49
-2022-12-08	Australia	other	15
-2022-12-09	Australia	other	15
-2022-12-10	Australia	other	13
-2022-12-11	Australia	other	17
-2022-07-27	Australia	clade 21L	32
+2022-12-02	Australia	other	19
+2022-12-03	Australia	other	18
+2022-12-04	Australia	other	21
+2022-12-05	Australia	other	26
+2022-12-06	Australia	other	32
+2022-12-07	Australia	other	71
+2022-12-08	Australia	other	36
+2022-12-09	Australia	other	39
+2022-12-10	Australia	other	30
+2022-12-11	Australia	other	34
+2022-12-12	Australia	other	57
 2022-07-28	Australia	clade 21L	13
 2022-07-29	Australia	clade 21L	19
 2022-07-30	Australia	clade 21L	12
@@ -204,13 +204,13 @@ date	location	variant	sequences
 2022-12-03	Australia	clade 21L	2
 2022-12-04	Australia	clade 21L	1
 2022-12-05	Australia	clade 21L	2
-2022-12-06	Australia	clade 21L	2
+2022-12-06	Australia	clade 21L	3
 2022-12-07	Australia	clade 21L	6
 2022-12-08	Australia	clade 21L	1
 2022-12-09	Australia	clade 21L	1
-2022-12-10	Australia	clade 21L	4
+2022-12-10	Australia	clade 21L	5
 2022-12-11	Australia	clade 21L	1
-2022-07-27	Australia	clade 22A	33
+2022-12-12	Australia	clade 21L	1
 2022-07-28	Australia	clade 22A	42
 2022-07-29	Australia	clade 22A	20
 2022-07-30	Australia	clade 22A	25
@@ -335,9 +335,10 @@ date	location	variant	sequences
 2022-11-28	Australia	clade 22A	3
 2022-11-30	Australia	clade 22A	4
 2022-12-04	Australia	clade 22A	1
-2022-12-06	Australia	clade 22A	1
+2022-12-06	Australia	clade 22A	2
 2022-12-07	Australia	clade 22A	2
-2022-07-27	Australia	clade 22B	169
+2022-12-08	Australia	clade 22A	3
+2022-12-09	Australia	clade 22A	1
 2022-07-28	Australia	clade 22B	228
 2022-07-29	Australia	clade 22B	132
 2022-07-30	Australia	clade 22B	206
@@ -464,18 +465,18 @@ date	location	variant	sequences
 2022-11-28	Australia	clade 22B	70
 2022-11-29	Australia	clade 22B	43
 2022-11-30	Australia	clade 22B	42
-2022-12-01	Australia	clade 22B	22
+2022-12-01	Australia	clade 22B	23
 2022-12-02	Australia	clade 22B	15
-2022-12-03	Australia	clade 22B	25
+2022-12-03	Australia	clade 22B	26
 2022-12-04	Australia	clade 22B	24
-2022-12-05	Australia	clade 22B	29
-2022-12-06	Australia	clade 22B	24
-2022-12-07	Australia	clade 22B	47
-2022-12-08	Australia	clade 22B	13
-2022-12-09	Australia	clade 22B	9
-2022-12-10	Australia	clade 22B	4
-2022-12-11	Australia	clade 22B	9
-2022-07-27	Australia	clade 22C	5
+2022-12-05	Australia	clade 22B	31
+2022-12-06	Australia	clade 22B	36
+2022-12-07	Australia	clade 22B	64
+2022-12-08	Australia	clade 22B	26
+2022-12-09	Australia	clade 22B	24
+2022-12-10	Australia	clade 22B	7
+2022-12-11	Australia	clade 22B	17
+2022-12-12	Australia	clade 22B	25
 2022-07-28	Australia	clade 22C	2
 2022-07-29	Australia	clade 22C	3
 2022-07-30	Australia	clade 22C	3
@@ -497,7 +498,6 @@ date	location	variant	sequences
 2022-09-07	Australia	clade 22C	1
 2022-09-12	Australia	clade 22C	1
 2022-09-16	Australia	clade 22C	1
-2022-07-27	Australia	clade 22D	3
 2022-07-28	Australia	clade 22D	2
 2022-07-29	Australia	clade 22D	8
 2022-07-30	Australia	clade 22D	3
@@ -626,15 +626,16 @@ date	location	variant	sequences
 2022-11-30	Australia	clade 22D	200
 2022-12-01	Australia	clade 22D	50
 2022-12-02	Australia	clade 22D	31
-2022-12-03	Australia	clade 22D	47
-2022-12-04	Australia	clade 22D	45
-2022-12-05	Australia	clade 22D	78
-2022-12-06	Australia	clade 22D	53
-2022-12-07	Australia	clade 22D	178
-2022-12-08	Australia	clade 22D	65
-2022-12-09	Australia	clade 22D	53
-2022-12-10	Australia	clade 22D	39
-2022-12-11	Australia	clade 22D	44
+2022-12-03	Australia	clade 22D	48
+2022-12-04	Australia	clade 22D	48
+2022-12-05	Australia	clade 22D	80
+2022-12-06	Australia	clade 22D	75
+2022-12-07	Australia	clade 22D	203
+2022-12-08	Australia	clade 22D	91
+2022-12-09	Australia	clade 22D	73
+2022-12-10	Australia	clade 22D	61
+2022-12-11	Australia	clade 22D	64
+2022-12-12	Australia	clade 22D	93
 2022-08-26	Australia	clade 22E	1
 2022-09-02	Australia	clade 22E	1
 2022-09-04	Australia	clade 22E	1
@@ -716,16 +717,17 @@ date	location	variant	sequences
 2022-11-29	Australia	clade 22E	76
 2022-11-30	Australia	clade 22E	83
 2022-12-01	Australia	clade 22E	34
-2022-12-02	Australia	clade 22E	17
-2022-12-03	Australia	clade 22E	44
-2022-12-04	Australia	clade 22E	35
-2022-12-05	Australia	clade 22E	56
-2022-12-06	Australia	clade 22E	46
-2022-12-07	Australia	clade 22E	85
-2022-12-08	Australia	clade 22E	28
-2022-12-09	Australia	clade 22E	11
-2022-12-10	Australia	clade 22E	9
-2022-12-11	Australia	clade 22E	13
+2022-12-02	Australia	clade 22E	19
+2022-12-03	Australia	clade 22E	47
+2022-12-04	Australia	clade 22E	38
+2022-12-05	Australia	clade 22E	61
+2022-12-06	Australia	clade 22E	54
+2022-12-07	Australia	clade 22E	97
+2022-12-08	Australia	clade 22E	55
+2022-12-09	Australia	clade 22E	26
+2022-12-10	Australia	clade 22E	19
+2022-12-11	Australia	clade 22E	27
+2022-12-12	Australia	clade 22E	51
 2022-09-13	Australia	clade 22F	1
 2022-09-16	Australia	clade 22F	1
 2022-09-17	Australia	clade 22F	1
@@ -805,11 +807,13 @@ date	location	variant	sequences
 2022-12-05	Australia	clade 22F	9
 2022-12-06	Australia	clade 22F	6
 2022-12-07	Australia	clade 22F	17
-2022-12-08	Australia	clade 22F	4
-2022-12-09	Australia	clade 22F	3
-2022-12-10	Australia	clade 22F	3
+2022-12-08	Australia	clade 22F	7
+2022-12-09	Australia	clade 22F	4
+2022-12-10	Australia	clade 22F	5
 2022-12-11	Australia	clade 22F	9
+2022-12-12	Australia	clade 22F	6
 2022-12-05	Australia	lineage XBB.1.5	1
+2022-12-09	Australia	lineage XBB.1.5	2
 2022-08-16	Australia	lineage BA.2.3.20	1
 2022-08-28	Australia	lineage BA.2.3.20	2
 2022-08-30	Australia	lineage BA.2.3.20	1
@@ -893,10 +897,10 @@ date	location	variant	sequences
 2022-12-04	Australia	lineage BA.2.3.20	2
 2022-12-05	Australia	lineage BA.2.3.20	3
 2022-12-06	Australia	lineage BA.2.3.20	1
-2022-12-07	Australia	lineage BA.2.3.20	2
+2022-12-07	Australia	lineage BA.2.3.20	3
 2022-12-09	Australia	lineage BA.2.3.20	1
+2022-12-10	Australia	lineage BA.2.3.20	1
 2022-12-11	Australia	lineage BA.2.3.20	2
-2022-07-27	Austria	other	1
 2022-08-01	Austria	other	2
 2022-08-02	Austria	other	3
 2022-08-05	Austria	other	1
@@ -930,7 +934,6 @@ date	location	variant	sequences
 2022-11-21	Austria	other	1
 2022-11-23	Austria	other	2
 2022-11-27	Austria	other	1
-2022-07-27	Austria	clade 21L	12
 2022-07-28	Austria	clade 21L	2
 2022-07-29	Austria	clade 21L	2
 2022-07-30	Austria	clade 21L	1
@@ -1038,7 +1041,7 @@ date	location	variant	sequences
 2022-11-27	Austria	clade 22A	2
 2022-11-28	Austria	clade 22A	4
 2022-11-30	Austria	clade 22A	3
-2022-07-27	Austria	clade 22B	35
+2022-12-12	Austria	clade 22A	1
 2022-07-28	Austria	clade 22B	1
 2022-07-29	Austria	clade 22B	2
 2022-07-31	Austria	clade 22B	1
@@ -1134,7 +1137,7 @@ date	location	variant	sequences
 2022-11-07	Austria	clade 22B	74
 2022-11-08	Austria	clade 22B	155
 2022-11-09	Austria	clade 22B	8
-2022-11-10	Austria	clade 22B	3
+2022-11-10	Austria	clade 22B	4
 2022-11-12	Austria	clade 22B	1
 2022-11-13	Austria	clade 22B	27
 2022-11-14	Austria	clade 22B	36
@@ -1143,19 +1146,19 @@ date	location	variant	sequences
 2022-11-19	Austria	clade 22B	1
 2022-11-20	Austria	clade 22B	47
 2022-11-21	Austria	clade 22B	63
-2022-11-22	Austria	clade 22B	37
+2022-11-22	Austria	clade 22B	38
 2022-11-23	Austria	clade 22B	108
-2022-11-27	Austria	clade 22B	39
+2022-11-27	Austria	clade 22B	40
 2022-11-28	Austria	clade 22B	84
 2022-11-29	Austria	clade 22B	13
 2022-11-30	Austria	clade 22B	86
 2022-12-01	Austria	clade 22B	1
-2022-12-04	Austria	clade 22B	33
+2022-12-04	Austria	clade 22B	40
 2022-12-05	Austria	clade 22B	6
-2022-12-06	Austria	clade 22B	4
+2022-12-06	Austria	clade 22B	13
 2022-12-07	Austria	clade 22B	3
-2022-12-11	Austria	clade 22B	9
-2022-07-27	Austria	clade 22C	1
+2022-12-11	Austria	clade 22B	31
+2022-12-12	Austria	clade 22B	73
 2022-08-01	Austria	clade 22C	4
 2022-08-02	Austria	clade 22C	8
 2022-08-03	Austria	clade 22C	1
@@ -1167,7 +1170,6 @@ date	location	variant	sequences
 2022-08-17	Austria	clade 22C	3
 2022-08-21	Austria	clade 22C	1
 2022-08-30	Austria	clade 22C	1
-2022-07-27	Austria	clade 22D	1
 2022-08-01	Austria	clade 22D	1
 2022-08-02	Austria	clade 22D	5
 2022-08-06	Austria	clade 22D	1
@@ -1252,6 +1254,7 @@ date	location	variant	sequences
 2022-12-04	Austria	clade 22D	3
 2022-12-07	Austria	clade 22D	1
 2022-12-11	Austria	clade 22D	1
+2022-12-12	Austria	clade 22D	25
 2022-08-31	Austria	clade 22E	1
 2022-09-12	Austria	clade 22E	2
 2022-09-19	Austria	clade 22E	1
@@ -1286,10 +1289,11 @@ date	location	variant	sequences
 2022-11-28	Austria	clade 22E	73
 2022-11-29	Austria	clade 22E	2
 2022-11-30	Austria	clade 22E	76
-2022-12-04	Austria	clade 22E	21
+2022-12-04	Austria	clade 22E	22
 2022-12-05	Austria	clade 22E	2
-2022-12-06	Austria	clade 22E	1
-2022-12-11	Austria	clade 22E	24
+2022-12-06	Austria	clade 22E	2
+2022-12-11	Austria	clade 22E	30
+2022-12-12	Austria	clade 22E	80
 2022-09-21	Austria	clade 22F	1
 2022-09-26	Austria	clade 22F	2
 2022-09-27	Austria	clade 22F	1
@@ -1328,6 +1332,7 @@ date	location	variant	sequences
 2022-11-28	Austria	clade 22F	10
 2022-11-30	Austria	clade 22F	7
 2022-12-08	Austria	clade 22F	1
+2022-12-12	Austria	clade 22F	6
 2022-09-05	Austria	lineage BA.2.3.20	1
 2022-09-13	Austria	lineage BA.2.3.20	1
 2022-09-19	Austria	lineage BA.2.3.20	1
@@ -1366,6 +1371,7 @@ date	location	variant	sequences
 2022-11-21	Austria	lineage BA.2.3.20	1
 2022-11-23	Austria	lineage BA.2.3.20	1
 2022-11-30	Austria	lineage BA.2.3.20	3
+2022-12-12	Austria	lineage BA.2.3.20	3
 2022-07-28	Denmark	other	1
 2022-07-30	Denmark	other	2
 2022-07-31	Denmark	other	3
@@ -1470,7 +1476,7 @@ date	location	variant	sequences
 2022-12-09	Denmark	other	17
 2022-12-10	Denmark	other	13
 2022-12-11	Denmark	other	6
-2022-07-27	Denmark	clade 21L	15
+2022-12-12	Denmark	other	13
 2022-07-29	Denmark	clade 21L	5
 2022-07-30	Denmark	clade 21L	4
 2022-07-31	Denmark	clade 21L	2
@@ -1571,7 +1577,7 @@ date	location	variant	sequences
 2022-12-07	Denmark	clade 21L	5
 2022-12-08	Denmark	clade 21L	4
 2022-12-09	Denmark	clade 21L	1
-2022-07-27	Denmark	clade 22A	37
+2022-12-12	Denmark	clade 21L	1
 2022-07-28	Denmark	clade 22A	19
 2022-07-29	Denmark	clade 22A	38
 2022-07-30	Denmark	clade 22A	44
@@ -1709,7 +1715,7 @@ date	location	variant	sequences
 2022-12-09	Denmark	clade 22A	7
 2022-12-10	Denmark	clade 22A	5
 2022-12-11	Denmark	clade 22A	3
-2022-07-27	Denmark	clade 22B	538
+2022-12-12	Denmark	clade 22A	7
 2022-07-28	Denmark	clade 22B	317
 2022-07-29	Denmark	clade 22B	534
 2022-07-30	Denmark	clade 22B	646
@@ -1847,7 +1853,7 @@ date	location	variant	sequences
 2022-12-09	Denmark	clade 22B	51
 2022-12-10	Denmark	clade 22B	38
 2022-12-11	Denmark	clade 22B	53
-2022-07-27	Denmark	clade 22C	6
+2022-12-12	Denmark	clade 22B	68
 2022-07-28	Denmark	clade 22C	2
 2022-07-29	Denmark	clade 22C	2
 2022-07-30	Denmark	clade 22C	6
@@ -1868,7 +1874,6 @@ date	location	variant	sequences
 2022-08-27	Denmark	clade 22C	1
 2022-08-29	Denmark	clade 22C	1
 2022-09-05	Denmark	clade 22C	1
-2022-07-27	Denmark	clade 22D	1
 2022-07-29	Denmark	clade 22D	1
 2022-07-30	Denmark	clade 22D	1
 2022-07-31	Denmark	clade 22D	1
@@ -1993,10 +1998,11 @@ date	location	variant	sequences
 2022-12-05	Denmark	clade 22D	141
 2022-12-06	Denmark	clade 22D	129
 2022-12-07	Denmark	clade 22D	118
-2022-12-08	Denmark	clade 22D	160
+2022-12-08	Denmark	clade 22D	161
 2022-12-09	Denmark	clade 22D	64
 2022-12-10	Denmark	clade 22D	30
 2022-12-11	Denmark	clade 22D	48
+2022-12-12	Denmark	clade 22D	81
 2022-08-26	Denmark	clade 22E	2
 2022-08-30	Denmark	clade 22E	1
 2022-08-31	Denmark	clade 22E	1
@@ -2093,7 +2099,8 @@ date	location	variant	sequences
 2022-12-08	Denmark	clade 22E	379
 2022-12-09	Denmark	clade 22E	149
 2022-12-10	Denmark	clade 22E	80
-2022-12-11	Denmark	clade 22E	115
+2022-12-11	Denmark	clade 22E	117
+2022-12-12	Denmark	clade 22E	247
 2022-09-19	Denmark	clade 22F	1
 2022-09-22	Denmark	clade 22F	2
 2022-09-23	Denmark	clade 22F	1
@@ -2169,6 +2176,7 @@ date	location	variant	sequences
 2022-12-09	Denmark	clade 22F	20
 2022-12-10	Denmark	clade 22F	9
 2022-12-11	Denmark	clade 22F	17
+2022-12-12	Denmark	clade 22F	27
 2022-11-16	Denmark	lineage XBB.1.5	1
 2022-11-27	Denmark	lineage XBB.1.5	1
 2022-11-28	Denmark	lineage XBB.1.5	2
@@ -2225,7 +2233,6 @@ date	location	variant	sequences
 2022-12-05	Denmark	lineage BA.2.3.20	2
 2022-12-06	Denmark	lineage BA.2.3.20	3
 2022-12-09	Denmark	lineage BA.2.3.20	1
-2022-07-27	Germany	other	2
 2022-07-28	Germany	other	4
 2022-07-29	Germany	other	4
 2022-07-30	Germany	other	2
@@ -2339,7 +2346,7 @@ date	location	variant	sequences
 2022-12-07	Germany	other	2
 2022-12-09	Germany	other	2
 2022-12-10	Germany	other	4
-2022-07-27	Germany	clade 21L	6
+2022-12-12	Germany	other	2
 2022-07-28	Germany	clade 21L	10
 2022-07-29	Germany	clade 21L	5
 2022-07-30	Germany	clade 21L	3
@@ -2434,7 +2441,6 @@ date	location	variant	sequences
 2022-12-07	Germany	clade 21L	1
 2022-12-09	Germany	clade 21L	4
 2022-12-10	Germany	clade 21L	1
-2022-07-27	Germany	clade 22A	35
 2022-07-28	Germany	clade 22A	33
 2022-07-29	Germany	clade 22A	33
 2022-07-30	Germany	clade 22A	22
@@ -2572,7 +2578,7 @@ date	location	variant	sequences
 2022-12-09	Germany	clade 22A	3
 2022-12-10	Germany	clade 22A	3
 2022-12-11	Germany	clade 22A	2
-2022-07-27	Germany	clade 22B	960
+2022-12-12	Germany	clade 22A	5
 2022-07-28	Germany	clade 22B	856
 2022-07-29	Germany	clade 22B	832
 2022-07-30	Germany	clade 22B	543
@@ -2710,7 +2716,7 @@ date	location	variant	sequences
 2022-12-09	Germany	clade 22B	231
 2022-12-10	Germany	clade 22B	82
 2022-12-11	Germany	clade 22B	101
-2022-07-27	Germany	clade 22C	5
+2022-12-12	Germany	clade 22B	321
 2022-07-28	Germany	clade 22C	6
 2022-07-30	Germany	clade 22C	4
 2022-07-31	Germany	clade 22C	1
@@ -2735,7 +2741,6 @@ date	location	variant	sequences
 2022-09-02	Germany	clade 22C	1
 2022-09-06	Germany	clade 22C	1
 2022-09-11	Germany	clade 22C	1
-2022-07-27	Germany	clade 22D	1
 2022-07-28	Germany	clade 22D	2
 2022-07-29	Germany	clade 22D	2
 2022-07-30	Germany	clade 22D	1
@@ -2866,6 +2871,7 @@ date	location	variant	sequences
 2022-12-09	Germany	clade 22D	29
 2022-12-10	Germany	clade 22D	16
 2022-12-11	Germany	clade 22D	24
+2022-12-12	Germany	clade 22D	66
 2022-08-13	Germany	clade 22E	1
 2022-08-23	Germany	clade 22E	1
 2022-08-24	Germany	clade 22E	2
@@ -2969,6 +2975,7 @@ date	location	variant	sequences
 2022-12-09	Germany	clade 22E	155
 2022-12-10	Germany	clade 22E	81
 2022-12-11	Germany	clade 22E	73
+2022-12-12	Germany	clade 22E	214
 2022-09-07	Germany	clade 22F	1
 2022-09-14	Germany	clade 22F	1
 2022-09-18	Germany	clade 22F	1
@@ -3039,6 +3046,7 @@ date	location	variant	sequences
 2022-12-09	Germany	clade 22F	6
 2022-12-10	Germany	clade 22F	4
 2022-12-11	Germany	clade 22F	4
+2022-12-12	Germany	clade 22F	7
 2022-11-21	Germany	lineage XBB.1.5	1
 2022-11-28	Germany	lineage XBB.1.5	1
 2022-12-05	Germany	lineage XBB.1.5	1
@@ -3046,6 +3054,7 @@ date	location	variant	sequences
 2022-12-07	Germany	lineage XBB.1.5	1
 2022-12-08	Germany	lineage XBB.1.5	1
 2022-12-10	Germany	lineage XBB.1.5	1
+2022-12-12	Germany	lineage XBB.1.5	2
 2022-09-12	Germany	lineage BA.2.3.20	1
 2022-09-14	Germany	lineage BA.2.3.20	1
 2022-09-22	Germany	lineage BA.2.3.20	1
@@ -3109,6 +3118,7 @@ date	location	variant	sequences
 2022-12-08	Germany	lineage BA.2.3.20	2
 2022-12-09	Germany	lineage BA.2.3.20	3
 2022-12-11	Germany	lineage BA.2.3.20	1
+2022-12-12	Germany	lineage BA.2.3.20	1
 2022-07-28	Japan	other	1
 2022-07-29	Japan	other	1
 2022-07-30	Japan	other	4
@@ -3186,23 +3196,24 @@ date	location	variant	sequences
 2022-11-11	Japan	other	1
 2022-11-12	Japan	other	1
 2022-11-14	Japan	other	2
+2022-11-15	Japan	other	1
+2022-11-16	Japan	other	2
 2022-11-17	Japan	other	3
 2022-11-18	Japan	other	1
-2022-11-19	Japan	other	1
+2022-11-19	Japan	other	3
 2022-11-20	Japan	other	1
 2022-11-21	Japan	other	2
 2022-11-22	Japan	other	3
-2022-11-24	Japan	other	3
-2022-11-25	Japan	other	1
-2022-11-28	Japan	other	3
-2022-11-29	Japan	other	3
+2022-11-24	Japan	other	4
+2022-11-25	Japan	other	2
+2022-11-28	Japan	other	4
+2022-11-29	Japan	other	6
 2022-11-30	Japan	other	3
 2022-12-01	Japan	other	2
 2022-12-02	Japan	other	2
 2022-12-09	Japan	other	1
-2022-07-27	Japan	clade 21L	70
 2022-07-28	Japan	clade 21L	94
-2022-07-29	Japan	clade 21L	49
+2022-07-29	Japan	clade 21L	51
 2022-07-30	Japan	clade 21L	56
 2022-07-31	Japan	clade 21L	30
 2022-08-01	Japan	clade 21L	69
@@ -3307,27 +3318,28 @@ date	location	variant	sequences
 2022-11-15	Japan	clade 21L	6
 2022-11-16	Japan	clade 21L	2
 2022-11-17	Japan	clade 21L	7
-2022-11-18	Japan	clade 21L	2
+2022-11-18	Japan	clade 21L	4
 2022-11-19	Japan	clade 21L	1
 2022-11-21	Japan	clade 21L	7
 2022-11-22	Japan	clade 21L	9
 2022-11-24	Japan	clade 21L	4
-2022-11-25	Japan	clade 21L	5
+2022-11-25	Japan	clade 21L	9
 2022-11-26	Japan	clade 21L	2
 2022-11-27	Japan	clade 21L	1
 2022-11-28	Japan	clade 21L	4
-2022-11-29	Japan	clade 21L	1
+2022-11-29	Japan	clade 21L	2
 2022-11-30	Japan	clade 21L	2
 2022-12-01	Japan	clade 21L	3
 2022-12-02	Japan	clade 21L	4
 2022-12-03	Japan	clade 21L	2
 2022-12-04	Japan	clade 21L	1
-2022-12-05	Japan	clade 21L	2
+2022-12-05	Japan	clade 21L	3
+2022-12-07	Japan	clade 21L	1
 2022-12-08	Japan	clade 21L	1
-2022-07-27	Japan	clade 22A	7
+2022-12-09	Japan	clade 21L	2
 2022-07-28	Japan	clade 22A	14
 2022-07-29	Japan	clade 22A	2
-2022-07-30	Japan	clade 22A	8
+2022-07-30	Japan	clade 22A	10
 2022-07-31	Japan	clade 22A	7
 2022-08-01	Japan	clade 22A	9
 2022-08-02	Japan	clade 22A	16
@@ -3411,21 +3423,22 @@ date	location	variant	sequences
 2022-11-14	Japan	clade 22A	4
 2022-11-16	Japan	clade 22A	1
 2022-11-17	Japan	clade 22A	3
+2022-11-19	Japan	clade 22A	1
 2022-11-21	Japan	clade 22A	4
-2022-11-22	Japan	clade 22A	2
-2022-11-24	Japan	clade 22A	2
+2022-11-22	Japan	clade 22A	3
+2022-11-24	Japan	clade 22A	4
 2022-11-25	Japan	clade 22A	1
 2022-11-26	Japan	clade 22A	1
-2022-11-29	Japan	clade 22A	1
+2022-11-28	Japan	clade 22A	7
+2022-11-29	Japan	clade 22A	4
 2022-11-30	Japan	clade 22A	1
 2022-12-01	Japan	clade 22A	1
 2022-12-02	Japan	clade 22A	1
 2022-12-05	Japan	clade 22A	1
-2022-07-27	Japan	clade 22B	973
 2022-07-28	Japan	clade 22B	1726
-2022-07-29	Japan	clade 22B	898
-2022-07-30	Japan	clade 22B	1056
-2022-07-31	Japan	clade 22B	365
+2022-07-29	Japan	clade 22B	1010
+2022-07-30	Japan	clade 22B	1128
+2022-07-31	Japan	clade 22B	374
 2022-08-01	Japan	clade 22B	1185
 2022-08-02	Japan	clade 22B	1517
 2022-08-03	Japan	clade 22B	1038
@@ -3492,76 +3505,76 @@ date	location	variant	sequences
 2022-10-03	Japan	clade 22B	897
 2022-10-04	Japan	clade 22B	745
 2022-10-05	Japan	clade 22B	596
-2022-10-06	Japan	clade 22B	727
-2022-10-07	Japan	clade 22B	464
-2022-10-08	Japan	clade 22B	414
+2022-10-06	Japan	clade 22B	728
+2022-10-07	Japan	clade 22B	465
+2022-10-08	Japan	clade 22B	415
 2022-10-09	Japan	clade 22B	214
 2022-10-10	Japan	clade 22B	247
-2022-10-11	Japan	clade 22B	1197
-2022-10-12	Japan	clade 22B	642
-2022-10-13	Japan	clade 22B	817
-2022-10-14	Japan	clade 22B	468
+2022-10-11	Japan	clade 22B	1200
+2022-10-12	Japan	clade 22B	643
+2022-10-13	Japan	clade 22B	819
+2022-10-14	Japan	clade 22B	470
 2022-10-15	Japan	clade 22B	455
-2022-10-16	Japan	clade 22B	199
-2022-10-17	Japan	clade 22B	826
-2022-10-18	Japan	clade 22B	776
-2022-10-19	Japan	clade 22B	478
-2022-10-20	Japan	clade 22B	624
-2022-10-21	Japan	clade 22B	500
+2022-10-16	Japan	clade 22B	200
+2022-10-17	Japan	clade 22B	828
+2022-10-18	Japan	clade 22B	778
+2022-10-19	Japan	clade 22B	479
+2022-10-20	Japan	clade 22B	625
+2022-10-21	Japan	clade 22B	503
 2022-10-22	Japan	clade 22B	517
-2022-10-23	Japan	clade 22B	209
-2022-10-24	Japan	clade 22B	889
+2022-10-23	Japan	clade 22B	210
+2022-10-24	Japan	clade 22B	891
 2022-10-25	Japan	clade 22B	792
-2022-10-26	Japan	clade 22B	558
-2022-10-27	Japan	clade 22B	739
-2022-10-28	Japan	clade 22B	570
+2022-10-26	Japan	clade 22B	560
+2022-10-27	Japan	clade 22B	741
+2022-10-28	Japan	clade 22B	573
 2022-10-29	Japan	clade 22B	559
-2022-10-30	Japan	clade 22B	194
+2022-10-30	Japan	clade 22B	195
 2022-10-31	Japan	clade 22B	932
-2022-11-01	Japan	clade 22B	1017
-2022-11-02	Japan	clade 22B	594
+2022-11-01	Japan	clade 22B	1018
+2022-11-02	Japan	clade 22B	599
 2022-11-03	Japan	clade 22B	181
-2022-11-04	Japan	clade 22B	739
-2022-11-05	Japan	clade 22B	588
+2022-11-04	Japan	clade 22B	742
+2022-11-05	Japan	clade 22B	592
 2022-11-06	Japan	clade 22B	114
-2022-11-07	Japan	clade 22B	701
-2022-11-08	Japan	clade 22B	1133
-2022-11-09	Japan	clade 22B	738
-2022-11-10	Japan	clade 22B	1014
-2022-11-11	Japan	clade 22B	666
+2022-11-07	Japan	clade 22B	705
+2022-11-08	Japan	clade 22B	1138
+2022-11-09	Japan	clade 22B	742
+2022-11-10	Japan	clade 22B	1016
+2022-11-11	Japan	clade 22B	668
 2022-11-12	Japan	clade 22B	564
 2022-11-13	Japan	clade 22B	130
-2022-11-14	Japan	clade 22B	1502
-2022-11-15	Japan	clade 22B	1101
-2022-11-16	Japan	clade 22B	718
-2022-11-17	Japan	clade 22B	878
-2022-11-18	Japan	clade 22B	690
-2022-11-19	Japan	clade 22B	289
+2022-11-14	Japan	clade 22B	1507
+2022-11-15	Japan	clade 22B	1107
+2022-11-16	Japan	clade 22B	722
+2022-11-17	Japan	clade 22B	915
+2022-11-18	Japan	clade 22B	1025
+2022-11-19	Japan	clade 22B	510
 2022-11-20	Japan	clade 22B	142
 2022-11-21	Japan	clade 22B	1409
-2022-11-22	Japan	clade 22B	942
+2022-11-22	Japan	clade 22B	1019
 2022-11-23	Japan	clade 22B	244
-2022-11-24	Japan	clade 22B	470
-2022-11-25	Japan	clade 22B	458
-2022-11-26	Japan	clade 22B	256
-2022-11-27	Japan	clade 22B	131
-2022-11-28	Japan	clade 22B	466
-2022-11-29	Japan	clade 22B	511
-2022-11-30	Japan	clade 22B	427
-2022-12-01	Japan	clade 22B	325
-2022-12-02	Japan	clade 22B	376
-2022-12-03	Japan	clade 22B	145
-2022-12-04	Japan	clade 22B	70
-2022-12-05	Japan	clade 22B	193
-2022-12-06	Japan	clade 22B	136
-2022-12-07	Japan	clade 22B	89
-2022-12-08	Japan	clade 22B	80
-2022-12-09	Japan	clade 22B	63
-2022-12-10	Japan	clade 22B	29
-2022-12-11	Japan	clade 22B	21
-2022-07-27	Japan	clade 22C	8
+2022-11-24	Japan	clade 22B	777
+2022-11-25	Japan	clade 22B	671
+2022-11-26	Japan	clade 22B	291
+2022-11-27	Japan	clade 22B	137
+2022-11-28	Japan	clade 22B	860
+2022-11-29	Japan	clade 22B	765
+2022-11-30	Japan	clade 22B	431
+2022-12-01	Japan	clade 22B	328
+2022-12-02	Japan	clade 22B	378
+2022-12-03	Japan	clade 22B	156
+2022-12-04	Japan	clade 22B	73
+2022-12-05	Japan	clade 22B	283
+2022-12-06	Japan	clade 22B	188
+2022-12-07	Japan	clade 22B	211
+2022-12-08	Japan	clade 22B	159
+2022-12-09	Japan	clade 22B	114
+2022-12-10	Japan	clade 22B	62
+2022-12-11	Japan	clade 22B	25
+2022-12-12	Japan	clade 22B	31
 2022-07-28	Japan	clade 22C	13
-2022-07-29	Japan	clade 22C	3
+2022-07-29	Japan	clade 22C	5
 2022-07-30	Japan	clade 22C	10
 2022-07-31	Japan	clade 22C	4
 2022-08-01	Japan	clade 22C	14
@@ -3595,7 +3608,6 @@ date	location	variant	sequences
 2022-09-09	Japan	clade 22C	1
 2022-09-14	Japan	clade 22C	1
 2022-11-03	Japan	clade 22C	1
-2022-07-27	Japan	clade 22D	4
 2022-07-28	Japan	clade 22D	5
 2022-07-29	Japan	clade 22D	3
 2022-07-30	Japan	clade 22D	3
@@ -3699,35 +3711,36 @@ date	location	variant	sequences
 2022-11-10	Japan	clade 22D	40
 2022-11-11	Japan	clade 22D	21
 2022-11-12	Japan	clade 22D	30
-2022-11-13	Japan	clade 22D	10
+2022-11-13	Japan	clade 22D	11
 2022-11-14	Japan	clade 22D	79
 2022-11-15	Japan	clade 22D	101
 2022-11-16	Japan	clade 22D	45
-2022-11-17	Japan	clade 22D	59
-2022-11-18	Japan	clade 22D	42
-2022-11-19	Japan	clade 22D	20
+2022-11-17	Japan	clade 22D	62
+2022-11-18	Japan	clade 22D	69
+2022-11-19	Japan	clade 22D	37
 2022-11-20	Japan	clade 22D	9
 2022-11-21	Japan	clade 22D	99
-2022-11-22	Japan	clade 22D	79
+2022-11-22	Japan	clade 22D	82
 2022-11-23	Japan	clade 22D	12
-2022-11-24	Japan	clade 22D	26
-2022-11-25	Japan	clade 22D	28
-2022-11-26	Japan	clade 22D	17
+2022-11-24	Japan	clade 22D	61
+2022-11-25	Japan	clade 22D	53
+2022-11-26	Japan	clade 22D	20
 2022-11-27	Japan	clade 22D	9
-2022-11-28	Japan	clade 22D	52
-2022-11-29	Japan	clade 22D	34
-2022-11-30	Japan	clade 22D	31
+2022-11-28	Japan	clade 22D	95
+2022-11-29	Japan	clade 22D	63
+2022-11-30	Japan	clade 22D	32
 2022-12-01	Japan	clade 22D	30
 2022-12-02	Japan	clade 22D	30
 2022-12-03	Japan	clade 22D	24
 2022-12-04	Japan	clade 22D	9
-2022-12-05	Japan	clade 22D	25
-2022-12-06	Japan	clade 22D	25
-2022-12-07	Japan	clade 22D	11
-2022-12-08	Japan	clade 22D	7
-2022-12-09	Japan	clade 22D	9
-2022-12-10	Japan	clade 22D	4
+2022-12-05	Japan	clade 22D	29
+2022-12-06	Japan	clade 22D	30
+2022-12-07	Japan	clade 22D	24
+2022-12-08	Japan	clade 22D	16
+2022-12-09	Japan	clade 22D	19
+2022-12-10	Japan	clade 22D	9
 2022-12-11	Japan	clade 22D	3
+2022-12-12	Japan	clade 22D	4
 2022-08-14	Japan	clade 22E	1
 2022-09-01	Japan	clade 22E	1
 2022-09-07	Japan	clade 22E	1
@@ -3767,7 +3780,7 @@ date	location	variant	sequences
 2022-10-23	Japan	clade 22E	9
 2022-10-24	Japan	clade 22E	31
 2022-10-25	Japan	clade 22E	37
-2022-10-26	Japan	clade 22E	14
+2022-10-26	Japan	clade 22E	15
 2022-10-27	Japan	clade 22E	24
 2022-10-28	Japan	clade 22E	23
 2022-10-29	Japan	clade 22E	42
@@ -3786,32 +3799,35 @@ date	location	variant	sequences
 2022-11-11	Japan	clade 22E	57
 2022-11-12	Japan	clade 22E	46
 2022-11-13	Japan	clade 22E	7
-2022-11-14	Japan	clade 22E	153
+2022-11-14	Japan	clade 22E	154
 2022-11-15	Japan	clade 22E	130
 2022-11-16	Japan	clade 22E	64
-2022-11-17	Japan	clade 22E	105
-2022-11-18	Japan	clade 22E	57
-2022-11-19	Japan	clade 22E	54
+2022-11-17	Japan	clade 22E	111
+2022-11-18	Japan	clade 22E	105
+2022-11-19	Japan	clade 22E	96
 2022-11-20	Japan	clade 22E	10
 2022-11-21	Japan	clade 22E	163
-2022-11-22	Japan	clade 22E	130
+2022-11-22	Japan	clade 22E	156
 2022-11-23	Japan	clade 22E	12
-2022-11-24	Japan	clade 22E	45
-2022-11-25	Japan	clade 22E	43
-2022-11-26	Japan	clade 22E	20
+2022-11-24	Japan	clade 22E	109
+2022-11-25	Japan	clade 22E	96
+2022-11-26	Japan	clade 22E	27
 2022-11-27	Japan	clade 22E	16
-2022-11-28	Japan	clade 22E	39
-2022-11-29	Japan	clade 22E	54
+2022-11-28	Japan	clade 22E	109
+2022-11-29	Japan	clade 22E	100
 2022-11-30	Japan	clade 22E	45
-2022-12-01	Japan	clade 22E	43
-2022-12-02	Japan	clade 22E	33
-2022-12-03	Japan	clade 22E	24
+2022-12-01	Japan	clade 22E	44
+2022-12-02	Japan	clade 22E	34
+2022-12-03	Japan	clade 22E	25
 2022-12-04	Japan	clade 22E	13
-2022-12-05	Japan	clade 22E	23
-2022-12-06	Japan	clade 22E	11
-2022-12-07	Japan	clade 22E	9
-2022-12-08	Japan	clade 22E	6
-2022-12-09	Japan	clade 22E	11
+2022-12-05	Japan	clade 22E	33
+2022-12-06	Japan	clade 22E	21
+2022-12-07	Japan	clade 22E	20
+2022-12-08	Japan	clade 22E	16
+2022-12-09	Japan	clade 22E	20
+2022-12-10	Japan	clade 22E	2
+2022-12-11	Japan	clade 22E	2
+2022-12-12	Japan	clade 22E	10
 2022-09-09	Japan	clade 22F	1
 2022-09-15	Japan	clade 22F	1
 2022-09-19	Japan	clade 22F	1
@@ -3839,7 +3855,7 @@ date	location	variant	sequences
 2022-10-21	Japan	clade 22F	4
 2022-10-22	Japan	clade 22F	2
 2022-10-23	Japan	clade 22F	5
-2022-10-24	Japan	clade 22F	6
+2022-10-24	Japan	clade 22F	7
 2022-10-25	Japan	clade 22F	7
 2022-10-26	Japan	clade 22F	2
 2022-10-27	Japan	clade 22F	4
@@ -3863,26 +3879,28 @@ date	location	variant	sequences
 2022-11-16	Japan	clade 22F	6
 2022-11-17	Japan	clade 22F	6
 2022-11-18	Japan	clade 22F	3
-2022-11-19	Japan	clade 22F	1
+2022-11-19	Japan	clade 22F	3
 2022-11-20	Japan	clade 22F	3
 2022-11-21	Japan	clade 22F	9
 2022-11-22	Japan	clade 22F	2
 2022-11-23	Japan	clade 22F	1
-2022-11-24	Japan	clade 22F	1
+2022-11-24	Japan	clade 22F	5
 2022-11-26	Japan	clade 22F	1
 2022-11-27	Japan	clade 22F	2
-2022-11-28	Japan	clade 22F	3
-2022-11-29	Japan	clade 22F	3
+2022-11-28	Japan	clade 22F	6
+2022-11-29	Japan	clade 22F	4
 2022-11-30	Japan	clade 22F	4
 2022-12-01	Japan	clade 22F	2
 2022-12-02	Japan	clade 22F	3
 2022-12-03	Japan	clade 22F	1
 2022-12-04	Japan	clade 22F	5
 2022-12-05	Japan	clade 22F	1
-2022-12-06	Japan	clade 22F	4
+2022-12-06	Japan	clade 22F	5
 2022-12-07	Japan	clade 22F	1
-2022-12-08	Japan	clade 22F	1
+2022-12-08	Japan	clade 22F	2
 2022-12-09	Japan	clade 22F	1
+2022-12-10	Japan	clade 22F	1
+2022-12-12	Japan	clade 22F	2
 2022-09-05	Japan	lineage BA.2.3.20	1
 2022-09-06	Japan	lineage BA.2.3.20	2
 2022-09-14	Japan	lineage BA.2.3.20	1
@@ -3937,19 +3955,23 @@ date	location	variant	sequences
 2022-11-14	Japan	lineage BA.2.3.20	13
 2022-11-15	Japan	lineage BA.2.3.20	9
 2022-11-16	Japan	lineage BA.2.3.20	4
-2022-11-17	Japan	lineage BA.2.3.20	7
-2022-11-18	Japan	lineage BA.2.3.20	3
-2022-11-19	Japan	lineage BA.2.3.20	3
+2022-11-17	Japan	lineage BA.2.3.20	8
+2022-11-18	Japan	lineage BA.2.3.20	6
+2022-11-19	Japan	lineage BA.2.3.20	4
 2022-11-21	Japan	lineage BA.2.3.20	11
 2022-11-22	Japan	lineage BA.2.3.20	4
-2022-11-24	Japan	lineage BA.2.3.20	6
-2022-11-25	Japan	lineage BA.2.3.20	2
-2022-11-28	Japan	lineage BA.2.3.20	4
+2022-11-24	Japan	lineage BA.2.3.20	9
+2022-11-25	Japan	lineage BA.2.3.20	3
+2022-11-28	Japan	lineage BA.2.3.20	8
 2022-11-29	Japan	lineage BA.2.3.20	1
 2022-11-30	Japan	lineage BA.2.3.20	1
 2022-12-01	Japan	lineage BA.2.3.20	3
 2022-12-05	Japan	lineage BA.2.3.20	1
-2022-12-06	Japan	lineage BA.2.3.20	1
+2022-12-06	Japan	lineage BA.2.3.20	2
+2022-12-07	Japan	lineage BA.2.3.20	2
+2022-12-08	Japan	lineage BA.2.3.20	1
+2022-12-09	Japan	lineage BA.2.3.20	1
+2022-12-12	Japan	lineage BA.2.3.20	1
 2022-08-18	Philippines	other	1
 2022-08-22	Philippines	other	1
 2022-08-24	Philippines	other	2
@@ -3992,7 +4014,6 @@ date	location	variant	sequences
 2022-11-05	Philippines	other	3
 2022-11-06	Philippines	other	1
 2022-11-07	Philippines	other	1
-2022-07-27	Philippines	clade 21L	2
 2022-07-28	Philippines	clade 21L	1
 2022-08-01	Philippines	clade 21L	1
 2022-08-04	Philippines	clade 21L	2
@@ -4058,7 +4079,6 @@ date	location	variant	sequences
 2022-11-04	Philippines	clade 21L	2
 2022-11-05	Philippines	clade 21L	1
 2022-11-06	Philippines	clade 21L	2
-2022-07-27	Philippines	clade 22A	2
 2022-07-28	Philippines	clade 22A	2
 2022-07-29	Philippines	clade 22A	3
 2022-07-31	Philippines	clade 22A	2
@@ -4073,7 +4093,6 @@ date	location	variant	sequences
 2022-08-19	Philippines	clade 22A	1
 2022-08-30	Philippines	clade 22A	1
 2022-09-03	Philippines	clade 22A	1
-2022-07-27	Philippines	clade 22B	65
 2022-07-28	Philippines	clade 22B	75
 2022-07-29	Philippines	clade 22B	70
 2022-07-30	Philippines	clade 22B	64
@@ -4279,7 +4298,6 @@ date	location	variant	sequences
 2022-11-18	South Korea	other	2
 2022-11-24	South Korea	other	1
 2022-11-27	South Korea	other	1
-2022-07-27	South Korea	clade 21L	12
 2022-07-28	South Korea	clade 21L	5
 2022-07-29	South Korea	clade 21L	18
 2022-07-30	South Korea	clade 21L	1
@@ -4363,7 +4381,6 @@ date	location	variant	sequences
 2022-11-27	South Korea	clade 21L	1
 2022-11-28	South Korea	clade 21L	1
 2022-11-30	South Korea	clade 21L	1
-2022-07-27	South Korea	clade 22A	1
 2022-07-28	South Korea	clade 22A	3
 2022-07-29	South Korea	clade 22A	2
 2022-07-31	South Korea	clade 22A	1
@@ -4418,12 +4435,11 @@ date	location	variant	sequences
 2022-11-04	South Korea	clade 22A	2
 2022-11-07	South Korea	clade 22A	1
 2022-11-12	South Korea	clade 22A	1
-2022-07-27	South Korea	clade 22B	265
 2022-07-28	South Korea	clade 22B	70
 2022-07-29	South Korea	clade 22B	331
 2022-07-30	South Korea	clade 22B	45
 2022-07-31	South Korea	clade 22B	183
-2022-08-01	South Korea	clade 22B	153
+2022-08-01	South Korea	clade 22B	154
 2022-08-02	South Korea	clade 22B	92
 2022-08-03	South Korea	clade 22B	67
 2022-08-04	South Korea	clade 22B	33
@@ -4549,7 +4565,6 @@ date	location	variant	sequences
 2022-12-02	South Korea	clade 22B	12
 2022-12-03	South Korea	clade 22B	20
 2022-12-04	South Korea	clade 22B	2
-2022-07-27	South Korea	clade 22C	1
 2022-07-28	South Korea	clade 22C	1
 2022-07-29	South Korea	clade 22C	1
 2022-08-01	South Korea	clade 22C	1
@@ -4562,7 +4577,6 @@ date	location	variant	sequences
 2022-08-28	South Korea	clade 22C	1
 2022-09-04	South Korea	clade 22C	2
 2022-09-07	South Korea	clade 22C	1
-2022-07-27	South Korea	clade 22D	3
 2022-07-28	South Korea	clade 22D	1
 2022-07-30	South Korea	clade 22D	1
 2022-07-31	South Korea	clade 22D	6
@@ -4881,7 +4895,6 @@ date	location	variant	sequences
 2022-11-26	South Korea	lineage BA.2.3.20	2
 2022-11-27	South Korea	lineage BA.2.3.20	3
 2022-11-30	South Korea	lineage BA.2.3.20	1
-2022-07-27	United Kingdom	other	1
 2022-07-29	United Kingdom	other	5
 2022-07-30	United Kingdom	other	3
 2022-08-01	United Kingdom	other	5
@@ -4974,16 +4987,15 @@ date	location	variant	sequences
 2022-11-29	United Kingdom	other	1
 2022-11-30	United Kingdom	other	2
 2022-12-01	United Kingdom	other	2
-2022-12-02	United Kingdom	other	2
+2022-12-02	United Kingdom	other	3
 2022-12-03	United Kingdom	other	1
 2022-12-04	United Kingdom	other	2
 2022-12-05	United Kingdom	other	2
 2022-12-06	United Kingdom	other	1
 2022-12-07	United Kingdom	other	2
-2022-12-08	United Kingdom	other	3
-2022-12-09	United Kingdom	other	1
+2022-12-08	United Kingdom	other	4
+2022-12-09	United Kingdom	other	2
 2022-12-11	United Kingdom	other	1
-2022-07-27	United Kingdom	clade 21L	10
 2022-07-28	United Kingdom	clade 21L	8
 2022-07-29	United Kingdom	clade 21L	4
 2022-07-30	United Kingdom	clade 21L	1
@@ -5064,12 +5076,11 @@ date	location	variant	sequences
 2022-11-28	United Kingdom	clade 21L	4
 2022-11-30	United Kingdom	clade 21L	4
 2022-12-01	United Kingdom	clade 21L	2
-2022-12-02	United Kingdom	clade 21L	1
+2022-12-02	United Kingdom	clade 21L	2
 2022-12-03	United Kingdom	clade 21L	1
 2022-12-05	United Kingdom	clade 21L	1
 2022-12-06	United Kingdom	clade 21L	1
 2022-12-09	United Kingdom	clade 21L	2
-2022-07-27	United Kingdom	clade 22A	166
 2022-07-28	United Kingdom	clade 22A	125
 2022-07-29	United Kingdom	clade 22A	89
 2022-07-30	United Kingdom	clade 22A	61
@@ -5203,7 +5214,7 @@ date	location	variant	sequences
 2022-12-06	United Kingdom	clade 22A	8
 2022-12-07	United Kingdom	clade 22A	2
 2022-12-10	United Kingdom	clade 22A	1
-2022-07-27	United Kingdom	clade 22B	1107
+2022-12-12	United Kingdom	clade 22A	3
 2022-07-28	United Kingdom	clade 22B	983
 2022-07-29	United Kingdom	clade 22B	890
 2022-07-30	United Kingdom	clade 22B	524
@@ -5317,14 +5328,14 @@ date	location	variant	sequences
 2022-11-15	United Kingdom	clade 22B	141
 2022-11-16	United Kingdom	clade 22B	102
 2022-11-17	United Kingdom	clade 22B	149
-2022-11-18	United Kingdom	clade 22B	130
+2022-11-18	United Kingdom	clade 22B	131
 2022-11-19	United Kingdom	clade 22B	86
 2022-11-20	United Kingdom	clade 22B	50
-2022-11-21	United Kingdom	clade 22B	130
+2022-11-21	United Kingdom	clade 22B	131
 2022-11-22	United Kingdom	clade 22B	119
 2022-11-23	United Kingdom	clade 22B	90
 2022-11-24	United Kingdom	clade 22B	106
-2022-11-25	United Kingdom	clade 22B	118
+2022-11-25	United Kingdom	clade 22B	119
 2022-11-26	United Kingdom	clade 22B	66
 2022-11-27	United Kingdom	clade 22B	58
 2022-11-28	United Kingdom	clade 22B	123
@@ -5332,16 +5343,16 @@ date	location	variant	sequences
 2022-11-30	United Kingdom	clade 22B	103
 2022-12-01	United Kingdom	clade 22B	106
 2022-12-02	United Kingdom	clade 22B	107
-2022-12-03	United Kingdom	clade 22B	46
-2022-12-04	United Kingdom	clade 22B	39
-2022-12-05	United Kingdom	clade 22B	129
-2022-12-06	United Kingdom	clade 22B	100
-2022-12-07	United Kingdom	clade 22B	57
-2022-12-08	United Kingdom	clade 22B	39
-2022-12-09	United Kingdom	clade 22B	40
+2022-12-03	United Kingdom	clade 22B	47
+2022-12-04	United Kingdom	clade 22B	42
+2022-12-05	United Kingdom	clade 22B	130
+2022-12-06	United Kingdom	clade 22B	104
+2022-12-07	United Kingdom	clade 22B	59
+2022-12-08	United Kingdom	clade 22B	54
+2022-12-09	United Kingdom	clade 22B	41
 2022-12-10	United Kingdom	clade 22B	14
-2022-12-11	United Kingdom	clade 22B	16
-2022-07-27	United Kingdom	clade 22C	5
+2022-12-11	United Kingdom	clade 22B	17
+2022-12-12	United Kingdom	clade 22B	47
 2022-07-28	United Kingdom	clade 22C	8
 2022-07-29	United Kingdom	clade 22C	2
 2022-07-30	United Kingdom	clade 22C	3
@@ -5487,20 +5498,21 @@ date	location	variant	sequences
 2022-11-25	United Kingdom	clade 22D	72
 2022-11-26	United Kingdom	clade 22D	75
 2022-11-27	United Kingdom	clade 22D	46
-2022-11-28	United Kingdom	clade 22D	124
+2022-11-28	United Kingdom	clade 22D	125
 2022-11-29	United Kingdom	clade 22D	155
 2022-11-30	United Kingdom	clade 22D	86
 2022-12-01	United Kingdom	clade 22D	51
 2022-12-02	United Kingdom	clade 22D	102
 2022-12-03	United Kingdom	clade 22D	53
 2022-12-04	United Kingdom	clade 22D	44
-2022-12-05	United Kingdom	clade 22D	161
-2022-12-06	United Kingdom	clade 22D	109
-2022-12-07	United Kingdom	clade 22D	144
-2022-12-08	United Kingdom	clade 22D	57
-2022-12-09	United Kingdom	clade 22D	67
-2022-12-10	United Kingdom	clade 22D	11
-2022-12-11	United Kingdom	clade 22D	5
+2022-12-05	United Kingdom	clade 22D	162
+2022-12-06	United Kingdom	clade 22D	113
+2022-12-07	United Kingdom	clade 22D	147
+2022-12-08	United Kingdom	clade 22D	64
+2022-12-09	United Kingdom	clade 22D	82
+2022-12-10	United Kingdom	clade 22D	17
+2022-12-11	United Kingdom	clade 22D	6
+2022-12-12	United Kingdom	clade 22D	86
 2022-08-03	United Kingdom	clade 22E	1
 2022-08-12	United Kingdom	clade 22E	1
 2022-08-22	United Kingdom	clade 22E	1
@@ -5595,21 +5607,22 @@ date	location	variant	sequences
 2022-11-24	United Kingdom	clade 22E	252
 2022-11-25	United Kingdom	clade 22E	233
 2022-11-26	United Kingdom	clade 22E	179
-2022-11-27	United Kingdom	clade 22E	166
-2022-11-28	United Kingdom	clade 22E	400
-2022-11-29	United Kingdom	clade 22E	436
+2022-11-27	United Kingdom	clade 22E	167
+2022-11-28	United Kingdom	clade 22E	401
+2022-11-29	United Kingdom	clade 22E	437
 2022-11-30	United Kingdom	clade 22E	328
-2022-12-01	United Kingdom	clade 22E	257
-2022-12-02	United Kingdom	clade 22E	436
-2022-12-03	United Kingdom	clade 22E	197
-2022-12-04	United Kingdom	clade 22E	190
-2022-12-05	United Kingdom	clade 22E	365
-2022-12-06	United Kingdom	clade 22E	402
-2022-12-07	United Kingdom	clade 22E	321
-2022-12-08	United Kingdom	clade 22E	276
-2022-12-09	United Kingdom	clade 22E	232
-2022-12-10	United Kingdom	clade 22E	100
-2022-12-11	United Kingdom	clade 22E	34
+2022-12-01	United Kingdom	clade 22E	258
+2022-12-02	United Kingdom	clade 22E	440
+2022-12-03	United Kingdom	clade 22E	199
+2022-12-04	United Kingdom	clade 22E	194
+2022-12-05	United Kingdom	clade 22E	372
+2022-12-06	United Kingdom	clade 22E	416
+2022-12-07	United Kingdom	clade 22E	352
+2022-12-08	United Kingdom	clade 22E	316
+2022-12-09	United Kingdom	clade 22E	262
+2022-12-10	United Kingdom	clade 22E	113
+2022-12-11	United Kingdom	clade 22E	38
+2022-12-12	United Kingdom	clade 22E	229
 2022-09-10	United Kingdom	clade 22F	1
 2022-09-17	United Kingdom	clade 22F	1
 2022-09-20	United Kingdom	clade 22F	2
@@ -5673,20 +5686,21 @@ date	location	variant	sequences
 2022-11-25	United Kingdom	clade 22F	23
 2022-11-26	United Kingdom	clade 22F	11
 2022-11-27	United Kingdom	clade 22F	9
-2022-11-28	United Kingdom	clade 22F	31
+2022-11-28	United Kingdom	clade 22F	33
 2022-11-29	United Kingdom	clade 22F	44
 2022-11-30	United Kingdom	clade 22F	29
-2022-12-01	United Kingdom	clade 22F	20
+2022-12-01	United Kingdom	clade 22F	21
 2022-12-02	United Kingdom	clade 22F	21
 2022-12-03	United Kingdom	clade 22F	23
 2022-12-04	United Kingdom	clade 22F	10
 2022-12-05	United Kingdom	clade 22F	40
 2022-12-06	United Kingdom	clade 22F	37
-2022-12-07	United Kingdom	clade 22F	24
-2022-12-08	United Kingdom	clade 22F	15
+2022-12-07	United Kingdom	clade 22F	25
+2022-12-08	United Kingdom	clade 22F	18
 2022-12-09	United Kingdom	clade 22F	10
 2022-12-10	United Kingdom	clade 22F	6
 2022-12-11	United Kingdom	clade 22F	2
+2022-12-12	United Kingdom	clade 22F	16
 2022-11-24	United Kingdom	lineage XBB.1.5	1
 2022-11-25	United Kingdom	lineage XBB.1.5	1
 2022-11-28	United Kingdom	lineage XBB.1.5	1
@@ -5697,6 +5711,7 @@ date	location	variant	sequences
 2022-12-06	United Kingdom	lineage XBB.1.5	2
 2022-12-07	United Kingdom	lineage XBB.1.5	3
 2022-12-09	United Kingdom	lineage XBB.1.5	1
+2022-12-12	United Kingdom	lineage XBB.1.5	2
 2022-09-23	United Kingdom	lineage BA.2.3.20	1
 2022-09-24	United Kingdom	lineage BA.2.3.20	1
 2022-10-02	United Kingdom	lineage BA.2.3.20	1
@@ -5743,7 +5758,6 @@ date	location	variant	sequences
 2022-12-07	United Kingdom	lineage BA.2.3.20	2
 2022-12-08	United Kingdom	lineage BA.2.3.20	1
 2022-12-09	United Kingdom	lineage BA.2.3.20	2
-2022-07-27	USA	other	6
 2022-07-28	USA	other	8
 2022-07-29	USA	other	4
 2022-07-30	USA	other	6
@@ -5869,15 +5883,17 @@ date	location	variant	sequences
 2022-11-29	USA	other	7
 2022-11-30	USA	other	4
 2022-12-01	USA	other	4
-2022-12-02	USA	other	6
+2022-12-02	USA	other	8
 2022-12-03	USA	other	3
-2022-12-04	USA	other	5
-2022-12-05	USA	other	6
-2022-12-06	USA	other	3
-2022-12-07	USA	other	2
+2022-12-04	USA	other	6
+2022-12-05	USA	other	10
+2022-12-06	USA	other	4
+2022-12-07	USA	other	4
+2022-12-08	USA	other	2
 2022-12-09	USA	other	1
+2022-12-10	USA	other	1
 2022-12-11	USA	other	1
-2022-07-27	USA	clade 21L	32
+2022-12-12	USA	other	2
 2022-07-28	USA	clade 21L	39
 2022-07-29	USA	clade 21L	39
 2022-07-30	USA	clade 21L	26
@@ -5978,7 +5994,7 @@ date	location	variant	sequences
 2022-11-03	USA	clade 21L	16
 2022-11-04	USA	clade 21L	5
 2022-11-05	USA	clade 21L	5
-2022-11-06	USA	clade 21L	10
+2022-11-06	USA	clade 21L	11
 2022-11-07	USA	clade 21L	14
 2022-11-08	USA	clade 21L	12
 2022-11-09	USA	clade 21L	8
@@ -6000,20 +6016,20 @@ date	location	variant	sequences
 2022-11-25	USA	clade 21L	11
 2022-11-26	USA	clade 21L	10
 2022-11-27	USA	clade 21L	9
-2022-11-28	USA	clade 21L	17
-2022-11-29	USA	clade 21L	13
+2022-11-28	USA	clade 21L	18
+2022-11-29	USA	clade 21L	14
 2022-11-30	USA	clade 21L	11
-2022-12-01	USA	clade 21L	8
-2022-12-02	USA	clade 21L	13
-2022-12-03	USA	clade 21L	4
-2022-12-04	USA	clade 21L	1
-2022-12-05	USA	clade 21L	10
-2022-12-06	USA	clade 21L	4
-2022-12-07	USA	clade 21L	3
-2022-12-08	USA	clade 21L	3
-2022-12-09	USA	clade 21L	1
-2022-12-11	USA	clade 21L	1
-2022-07-27	USA	clade 22A	585
+2022-12-01	USA	clade 21L	9
+2022-12-02	USA	clade 21L	20
+2022-12-03	USA	clade 21L	7
+2022-12-04	USA	clade 21L	5
+2022-12-05	USA	clade 21L	14
+2022-12-06	USA	clade 21L	7
+2022-12-07	USA	clade 21L	4
+2022-12-08	USA	clade 21L	7
+2022-12-09	USA	clade 21L	4
+2022-12-11	USA	clade 21L	2
+2022-12-12	USA	clade 21L	1
 2022-07-28	USA	clade 22A	561
 2022-07-29	USA	clade 22A	550
 2022-07-30	USA	clade 22A	441
@@ -6087,8 +6103,8 @@ date	location	variant	sequences
 2022-10-06	USA	clade 22A	229
 2022-10-07	USA	clade 22A	212
 2022-10-08	USA	clade 22A	146
-2022-10-09	USA	clade 22A	136
-2022-10-10	USA	clade 22A	274
+2022-10-09	USA	clade 22A	137
+2022-10-10	USA	clade 22A	276
 2022-10-11	USA	clade 22A	254
 2022-10-12	USA	clade 22A	274
 2022-10-13	USA	clade 22A	270
@@ -6103,7 +6119,7 @@ date	location	variant	sequences
 2022-10-22	USA	clade 22A	88
 2022-10-23	USA	clade 22A	112
 2022-10-24	USA	clade 22A	197
-2022-10-25	USA	clade 22A	138
+2022-10-25	USA	clade 22A	140
 2022-10-26	USA	clade 22A	194
 2022-10-27	USA	clade 22A	189
 2022-10-28	USA	clade 22A	127
@@ -6115,43 +6131,43 @@ date	location	variant	sequences
 2022-11-03	USA	clade 22A	145
 2022-11-04	USA	clade 22A	128
 2022-11-05	USA	clade 22A	107
-2022-11-06	USA	clade 22A	81
-2022-11-07	USA	clade 22A	163
-2022-11-08	USA	clade 22A	112
-2022-11-09	USA	clade 22A	111
+2022-11-06	USA	clade 22A	82
+2022-11-07	USA	clade 22A	165
+2022-11-08	USA	clade 22A	113
+2022-11-09	USA	clade 22A	112
 2022-11-10	USA	clade 22A	107
-2022-11-11	USA	clade 22A	68
+2022-11-11	USA	clade 22A	70
 2022-11-12	USA	clade 22A	75
 2022-11-13	USA	clade 22A	61
-2022-11-14	USA	clade 22A	117
+2022-11-14	USA	clade 22A	121
 2022-11-15	USA	clade 22A	75
 2022-11-16	USA	clade 22A	107
 2022-11-17	USA	clade 22A	66
 2022-11-18	USA	clade 22A	72
-2022-11-19	USA	clade 22A	35
+2022-11-19	USA	clade 22A	36
 2022-11-20	USA	clade 22A	29
-2022-11-21	USA	clade 22A	76
+2022-11-21	USA	clade 22A	78
 2022-11-22	USA	clade 22A	65
-2022-11-23	USA	clade 22A	49
-2022-11-24	USA	clade 22A	11
-2022-11-25	USA	clade 22A	53
+2022-11-23	USA	clade 22A	50
+2022-11-24	USA	clade 22A	12
+2022-11-25	USA	clade 22A	54
 2022-11-26	USA	clade 22A	51
 2022-11-27	USA	clade 22A	51
-2022-11-28	USA	clade 22A	71
-2022-11-29	USA	clade 22A	64
-2022-11-30	USA	clade 22A	52
-2022-12-01	USA	clade 22A	27
-2022-12-02	USA	clade 22A	30
-2022-12-03	USA	clade 22A	15
-2022-12-04	USA	clade 22A	20
-2022-12-05	USA	clade 22A	32
-2022-12-06	USA	clade 22A	25
-2022-12-07	USA	clade 22A	26
-2022-12-08	USA	clade 22A	9
-2022-12-09	USA	clade 22A	6
-2022-12-10	USA	clade 22A	3
-2022-12-11	USA	clade 22A	4
-2022-07-27	USA	clade 22B	4093
+2022-11-28	USA	clade 22A	75
+2022-11-29	USA	clade 22A	65
+2022-11-30	USA	clade 22A	55
+2022-12-01	USA	clade 22A	33
+2022-12-02	USA	clade 22A	41
+2022-12-03	USA	clade 22A	20
+2022-12-04	USA	clade 22A	29
+2022-12-05	USA	clade 22A	39
+2022-12-06	USA	clade 22A	33
+2022-12-07	USA	clade 22A	33
+2022-12-08	USA	clade 22A	22
+2022-12-09	USA	clade 22A	17
+2022-12-10	USA	clade 22A	5
+2022-12-11	USA	clade 22A	8
+2022-12-12	USA	clade 22A	13
 2022-07-28	USA	clade 22B	4047
 2022-07-29	USA	clade 22B	3881
 2022-07-30	USA	clade 22B	3032
@@ -6222,11 +6238,11 @@ date	location	variant	sequences
 2022-10-03	USA	clade 22B	2228
 2022-10-04	USA	clade 22B	1752
 2022-10-05	USA	clade 22B	1771
-2022-10-06	USA	clade 22B	1676
-2022-10-07	USA	clade 22B	1732
-2022-10-08	USA	clade 22B	1237
-2022-10-09	USA	clade 22B	1080
-2022-10-10	USA	clade 22B	2227
+2022-10-06	USA	clade 22B	1679
+2022-10-07	USA	clade 22B	1735
+2022-10-08	USA	clade 22B	1246
+2022-10-09	USA	clade 22B	1091
+2022-10-10	USA	clade 22B	2239
 2022-10-11	USA	clade 22B	2043
 2022-10-12	USA	clade 22B	1976
 2022-10-13	USA	clade 22B	2036
@@ -6239,57 +6255,57 @@ date	location	variant	sequences
 2022-10-20	USA	clade 22B	1328
 2022-10-21	USA	clade 22B	1175
 2022-10-22	USA	clade 22B	887
-2022-10-23	USA	clade 22B	970
-2022-10-24	USA	clade 22B	2146
-2022-10-25	USA	clade 22B	1343
-2022-10-26	USA	clade 22B	1719
-2022-10-27	USA	clade 22B	1417
+2022-10-23	USA	clade 22B	971
+2022-10-24	USA	clade 22B	2153
+2022-10-25	USA	clade 22B	1346
+2022-10-26	USA	clade 22B	1722
+2022-10-27	USA	clade 22B	1419
 2022-10-28	USA	clade 22B	1309
 2022-10-29	USA	clade 22B	1015
 2022-10-30	USA	clade 22B	961
 2022-10-31	USA	clade 22B	1780
 2022-11-01	USA	clade 22B	1560
-2022-11-02	USA	clade 22B	1301
-2022-11-03	USA	clade 22B	1391
-2022-11-04	USA	clade 22B	1259
-2022-11-05	USA	clade 22B	829
-2022-11-06	USA	clade 22B	935
-2022-11-07	USA	clade 22B	1603
-2022-11-08	USA	clade 22B	1329
-2022-11-09	USA	clade 22B	1258
-2022-11-10	USA	clade 22B	1190
-2022-11-11	USA	clade 22B	860
-2022-11-12	USA	clade 22B	734
-2022-11-13	USA	clade 22B	697
-2022-11-14	USA	clade 22B	1348
-2022-11-15	USA	clade 22B	1084
-2022-11-16	USA	clade 22B	1171
-2022-11-17	USA	clade 22B	1091
-2022-11-18	USA	clade 22B	897
-2022-11-19	USA	clade 22B	535
-2022-11-20	USA	clade 22B	543
-2022-11-21	USA	clade 22B	1066
-2022-11-22	USA	clade 22B	949
-2022-11-23	USA	clade 22B	830
-2022-11-24	USA	clade 22B	145
-2022-11-25	USA	clade 22B	793
-2022-11-26	USA	clade 22B	658
-2022-11-27	USA	clade 22B	700
-2022-11-28	USA	clade 22B	1159
-2022-11-29	USA	clade 22B	822
-2022-11-30	USA	clade 22B	706
-2022-12-01	USA	clade 22B	626
-2022-12-02	USA	clade 22B	569
-2022-12-03	USA	clade 22B	306
-2022-12-04	USA	clade 22B	257
-2022-12-05	USA	clade 22B	543
-2022-12-06	USA	clade 22B	316
-2022-12-07	USA	clade 22B	259
-2022-12-08	USA	clade 22B	142
-2022-12-09	USA	clade 22B	116
-2022-12-10	USA	clade 22B	46
-2022-12-11	USA	clade 22B	31
-2022-07-27	USA	clade 22C	171
+2022-11-02	USA	clade 22B	1302
+2022-11-03	USA	clade 22B	1392
+2022-11-04	USA	clade 22B	1262
+2022-11-05	USA	clade 22B	833
+2022-11-06	USA	clade 22B	937
+2022-11-07	USA	clade 22B	1612
+2022-11-08	USA	clade 22B	1331
+2022-11-09	USA	clade 22B	1264
+2022-11-10	USA	clade 22B	1199
+2022-11-11	USA	clade 22B	871
+2022-11-12	USA	clade 22B	738
+2022-11-13	USA	clade 22B	702
+2022-11-14	USA	clade 22B	1377
+2022-11-15	USA	clade 22B	1091
+2022-11-16	USA	clade 22B	1175
+2022-11-17	USA	clade 22B	1097
+2022-11-18	USA	clade 22B	902
+2022-11-19	USA	clade 22B	541
+2022-11-20	USA	clade 22B	550
+2022-11-21	USA	clade 22B	1073
+2022-11-22	USA	clade 22B	968
+2022-11-23	USA	clade 22B	842
+2022-11-24	USA	clade 22B	152
+2022-11-25	USA	clade 22B	809
+2022-11-26	USA	clade 22B	671
+2022-11-27	USA	clade 22B	713
+2022-11-28	USA	clade 22B	1187
+2022-11-29	USA	clade 22B	848
+2022-11-30	USA	clade 22B	754
+2022-12-01	USA	clade 22B	752
+2022-12-02	USA	clade 22B	745
+2022-12-03	USA	clade 22B	478
+2022-12-04	USA	clade 22B	388
+2022-12-05	USA	clade 22B	731
+2022-12-06	USA	clade 22B	477
+2022-12-07	USA	clade 22B	450
+2022-12-08	USA	clade 22B	322
+2022-12-09	USA	clade 22B	304
+2022-12-10	USA	clade 22B	147
+2022-12-11	USA	clade 22B	115
+2022-12-12	USA	clade 22B	139
 2022-07-28	USA	clade 22C	158
 2022-07-29	USA	clade 22C	147
 2022-07-30	USA	clade 22C	103
@@ -6380,7 +6396,6 @@ date	location	variant	sequences
 2022-12-03	USA	clade 22C	2
 2022-12-06	USA	clade 22C	1
 2022-12-07	USA	clade 22C	1
-2022-07-27	USA	clade 22D	9
 2022-07-28	USA	clade 22D	8
 2022-07-29	USA	clade 22D	11
 2022-07-30	USA	clade 22D	4
@@ -6470,7 +6485,7 @@ date	location	variant	sequences
 2022-10-22	USA	clade 22D	48
 2022-10-23	USA	clade 22D	52
 2022-10-24	USA	clade 22D	114
-2022-10-25	USA	clade 22D	67
+2022-10-25	USA	clade 22D	68
 2022-10-26	USA	clade 22D	82
 2022-10-27	USA	clade 22D	84
 2022-10-28	USA	clade 22D	80
@@ -6480,44 +6495,45 @@ date	location	variant	sequences
 2022-11-01	USA	clade 22D	89
 2022-11-02	USA	clade 22D	73
 2022-11-03	USA	clade 22D	83
-2022-11-04	USA	clade 22D	87
+2022-11-04	USA	clade 22D	88
 2022-11-05	USA	clade 22D	51
 2022-11-06	USA	clade 22D	83
 2022-11-07	USA	clade 22D	139
 2022-11-08	USA	clade 22D	104
-2022-11-09	USA	clade 22D	102
-2022-11-10	USA	clade 22D	116
+2022-11-09	USA	clade 22D	103
+2022-11-10	USA	clade 22D	117
 2022-11-11	USA	clade 22D	108
 2022-11-12	USA	clade 22D	60
 2022-11-13	USA	clade 22D	71
-2022-11-14	USA	clade 22D	154
-2022-11-15	USA	clade 22D	149
+2022-11-14	USA	clade 22D	156
+2022-11-15	USA	clade 22D	151
 2022-11-16	USA	clade 22D	130
-2022-11-17	USA	clade 22D	103
-2022-11-18	USA	clade 22D	106
-2022-11-19	USA	clade 22D	74
+2022-11-17	USA	clade 22D	104
+2022-11-18	USA	clade 22D	107
+2022-11-19	USA	clade 22D	75
 2022-11-20	USA	clade 22D	71
-2022-11-21	USA	clade 22D	132
-2022-11-22	USA	clade 22D	135
+2022-11-21	USA	clade 22D	134
+2022-11-22	USA	clade 22D	140
 2022-11-23	USA	clade 22D	111
 2022-11-24	USA	clade 22D	29
-2022-11-25	USA	clade 22D	99
+2022-11-25	USA	clade 22D	100
 2022-11-26	USA	clade 22D	93
-2022-11-27	USA	clade 22D	96
-2022-11-28	USA	clade 22D	196
-2022-11-29	USA	clade 22D	142
-2022-11-30	USA	clade 22D	101
-2022-12-01	USA	clade 22D	117
-2022-12-02	USA	clade 22D	126
-2022-12-03	USA	clade 22D	71
-2022-12-04	USA	clade 22D	59
-2022-12-05	USA	clade 22D	95
-2022-12-06	USA	clade 22D	65
-2022-12-07	USA	clade 22D	51
-2022-12-08	USA	clade 22D	37
-2022-12-09	USA	clade 22D	31
-2022-12-10	USA	clade 22D	20
-2022-12-11	USA	clade 22D	6
+2022-11-27	USA	clade 22D	97
+2022-11-28	USA	clade 22D	199
+2022-11-29	USA	clade 22D	146
+2022-11-30	USA	clade 22D	106
+2022-12-01	USA	clade 22D	134
+2022-12-02	USA	clade 22D	165
+2022-12-03	USA	clade 22D	109
+2022-12-04	USA	clade 22D	80
+2022-12-05	USA	clade 22D	134
+2022-12-06	USA	clade 22D	93
+2022-12-07	USA	clade 22D	81
+2022-12-08	USA	clade 22D	75
+2022-12-09	USA	clade 22D	71
+2022-12-10	USA	clade 22D	41
+2022-12-11	USA	clade 22D	31
+2022-12-12	USA	clade 22D	40
 2022-07-29	USA	clade 22E	1
 2022-07-31	USA	clade 22E	1
 2022-08-01	USA	clade 22E	1
@@ -6579,11 +6595,11 @@ date	location	variant	sequences
 2022-10-03	USA	clade 22E	160
 2022-10-04	USA	clade 22E	126
 2022-10-05	USA	clade 22E	98
-2022-10-06	USA	clade 22E	138
+2022-10-06	USA	clade 22E	139
 2022-10-07	USA	clade 22E	163
 2022-10-08	USA	clade 22E	115
-2022-10-09	USA	clade 22E	124
-2022-10-10	USA	clade 22E	230
+2022-10-09	USA	clade 22E	125
+2022-10-10	USA	clade 22E	231
 2022-10-11	USA	clade 22E	271
 2022-10-12	USA	clade 22E	272
 2022-10-13	USA	clade 22E	291
@@ -6597,55 +6613,56 @@ date	location	variant	sequences
 2022-10-21	USA	clade 22E	265
 2022-10-22	USA	clade 22E	247
 2022-10-23	USA	clade 22E	310
-2022-10-24	USA	clade 22E	642
-2022-10-25	USA	clade 22E	409
+2022-10-24	USA	clade 22E	644
+2022-10-25	USA	clade 22E	412
 2022-10-26	USA	clade 22E	570
-2022-10-27	USA	clade 22E	501
+2022-10-27	USA	clade 22E	503
 2022-10-28	USA	clade 22E	468
 2022-10-29	USA	clade 22E	385
 2022-10-30	USA	clade 22E	380
-2022-10-31	USA	clade 22E	821
+2022-10-31	USA	clade 22E	822
 2022-11-01	USA	clade 22E	788
 2022-11-02	USA	clade 22E	711
 2022-11-03	USA	clade 22E	759
-2022-11-04	USA	clade 22E	724
-2022-11-05	USA	clade 22E	523
-2022-11-06	USA	clade 22E	609
-2022-11-07	USA	clade 22E	1088
-2022-11-08	USA	clade 22E	887
-2022-11-09	USA	clade 22E	995
-2022-11-10	USA	clade 22E	918
-2022-11-11	USA	clade 22E	703
-2022-11-12	USA	clade 22E	664
-2022-11-13	USA	clade 22E	651
-2022-11-14	USA	clade 22E	1475
-2022-11-15	USA	clade 22E	1136
-2022-11-16	USA	clade 22E	1338
-2022-11-17	USA	clade 22E	1156
-2022-11-18	USA	clade 22E	1089
-2022-11-19	USA	clade 22E	690
-2022-11-20	USA	clade 22E	755
-2022-11-21	USA	clade 22E	1491
-2022-11-22	USA	clade 22E	1266
-2022-11-23	USA	clade 22E	1219
-2022-11-24	USA	clade 22E	215
-2022-11-25	USA	clade 22E	1165
-2022-11-26	USA	clade 22E	1147
-2022-11-27	USA	clade 22E	1329
-2022-11-28	USA	clade 22E	2194
-2022-11-29	USA	clade 22E	1707
-2022-11-30	USA	clade 22E	1365
-2022-12-01	USA	clade 22E	1211
-2022-12-02	USA	clade 22E	1309
-2022-12-03	USA	clade 22E	722
-2022-12-04	USA	clade 22E	726
-2022-12-05	USA	clade 22E	1266
-2022-12-06	USA	clade 22E	787
-2022-12-07	USA	clade 22E	644
-2022-12-08	USA	clade 22E	427
-2022-12-09	USA	clade 22E	360
-2022-12-10	USA	clade 22E	182
-2022-12-11	USA	clade 22E	173
+2022-11-04	USA	clade 22E	725
+2022-11-05	USA	clade 22E	527
+2022-11-06	USA	clade 22E	612
+2022-11-07	USA	clade 22E	1094
+2022-11-08	USA	clade 22E	890
+2022-11-09	USA	clade 22E	998
+2022-11-10	USA	clade 22E	924
+2022-11-11	USA	clade 22E	707
+2022-11-12	USA	clade 22E	666
+2022-11-13	USA	clade 22E	653
+2022-11-14	USA	clade 22E	1489
+2022-11-15	USA	clade 22E	1140
+2022-11-16	USA	clade 22E	1342
+2022-11-17	USA	clade 22E	1166
+2022-11-18	USA	clade 22E	1097
+2022-11-19	USA	clade 22E	696
+2022-11-20	USA	clade 22E	763
+2022-11-21	USA	clade 22E	1512
+2022-11-22	USA	clade 22E	1292
+2022-11-23	USA	clade 22E	1232
+2022-11-24	USA	clade 22E	223
+2022-11-25	USA	clade 22E	1184
+2022-11-26	USA	clade 22E	1163
+2022-11-27	USA	clade 22E	1357
+2022-11-28	USA	clade 22E	2239
+2022-11-29	USA	clade 22E	1738
+2022-11-30	USA	clade 22E	1455
+2022-12-01	USA	clade 22E	1442
+2022-12-02	USA	clade 22E	1664
+2022-12-03	USA	clade 22E	1072
+2022-12-04	USA	clade 22E	1044
+2022-12-05	USA	clade 22E	1805
+2022-12-06	USA	clade 22E	1218
+2022-12-07	USA	clade 22E	1065
+2022-12-08	USA	clade 22E	987
+2022-12-09	USA	clade 22E	945
+2022-12-10	USA	clade 22E	526
+2022-12-11	USA	clade 22E	415
+2022-12-12	USA	clade 22E	572
 2022-08-12	USA	clade 22F	1
 2022-08-27	USA	clade 22F	1
 2022-09-02	USA	clade 22F	1
@@ -6696,7 +6713,7 @@ date	location	variant	sequences
 2022-10-29	USA	clade 22F	18
 2022-10-30	USA	clade 22F	11
 2022-10-31	USA	clade 22F	35
-2022-11-01	USA	clade 22F	46
+2022-11-01	USA	clade 22F	47
 2022-11-02	USA	clade 22F	38
 2022-11-03	USA	clade 22F	59
 2022-11-04	USA	clade 22F	29
@@ -6705,14 +6722,14 @@ date	location	variant	sequences
 2022-11-07	USA	clade 22F	38
 2022-11-08	USA	clade 22F	49
 2022-11-09	USA	clade 22F	48
-2022-11-10	USA	clade 22F	42
+2022-11-10	USA	clade 22F	43
 2022-11-11	USA	clade 22F	49
 2022-11-12	USA	clade 22F	50
 2022-11-13	USA	clade 22F	52
 2022-11-14	USA	clade 22F	96
 2022-11-15	USA	clade 22F	77
 2022-11-16	USA	clade 22F	73
-2022-11-17	USA	clade 22F	81
+2022-11-17	USA	clade 22F	82
 2022-11-18	USA	clade 22F	80
 2022-11-19	USA	clade 22F	57
 2022-11-20	USA	clade 22F	33
@@ -6720,23 +6737,24 @@ date	location	variant	sequences
 2022-11-22	USA	clade 22F	88
 2022-11-23	USA	clade 22F	90
 2022-11-24	USA	clade 22F	17
-2022-11-25	USA	clade 22F	75
-2022-11-26	USA	clade 22F	97
-2022-11-27	USA	clade 22F	106
-2022-11-28	USA	clade 22F	150
+2022-11-25	USA	clade 22F	77
+2022-11-26	USA	clade 22F	98
+2022-11-27	USA	clade 22F	107
+2022-11-28	USA	clade 22F	155
 2022-11-29	USA	clade 22F	116
-2022-11-30	USA	clade 22F	110
-2022-12-01	USA	clade 22F	106
-2022-12-02	USA	clade 22F	101
-2022-12-03	USA	clade 22F	54
-2022-12-04	USA	clade 22F	65
-2022-12-05	USA	clade 22F	130
-2022-12-06	USA	clade 22F	98
-2022-12-07	USA	clade 22F	61
-2022-12-08	USA	clade 22F	50
-2022-12-09	USA	clade 22F	59
-2022-12-10	USA	clade 22F	24
-2022-12-11	USA	clade 22F	17
+2022-11-30	USA	clade 22F	116
+2022-12-01	USA	clade 22F	111
+2022-12-02	USA	clade 22F	122
+2022-12-03	USA	clade 22F	66
+2022-12-04	USA	clade 22F	70
+2022-12-05	USA	clade 22F	143
+2022-12-06	USA	clade 22F	115
+2022-12-07	USA	clade 22F	89
+2022-12-08	USA	clade 22F	83
+2022-12-09	USA	clade 22F	91
+2022-12-10	USA	clade 22F	48
+2022-12-11	USA	clade 22F	37
+2022-12-12	USA	clade 22F	73
 2022-10-22	USA	lineage XBB.1.5	1
 2022-10-26	USA	lineage XBB.1.5	2
 2022-10-27	USA	lineage XBB.1.5	1
@@ -6761,26 +6779,27 @@ date	location	variant	sequences
 2022-11-19	USA	lineage XBB.1.5	17
 2022-11-20	USA	lineage XBB.1.5	11
 2022-11-21	USA	lineage XBB.1.5	19
-2022-11-22	USA	lineage XBB.1.5	21
+2022-11-22	USA	lineage XBB.1.5	22
 2022-11-23	USA	lineage XBB.1.5	15
 2022-11-24	USA	lineage XBB.1.5	3
-2022-11-25	USA	lineage XBB.1.5	18
+2022-11-25	USA	lineage XBB.1.5	19
 2022-11-26	USA	lineage XBB.1.5	22
 2022-11-27	USA	lineage XBB.1.5	46
-2022-11-28	USA	lineage XBB.1.5	70
+2022-11-28	USA	lineage XBB.1.5	72
 2022-11-29	USA	lineage XBB.1.5	61
 2022-11-30	USA	lineage XBB.1.5	54
-2022-12-01	USA	lineage XBB.1.5	55
-2022-12-02	USA	lineage XBB.1.5	60
-2022-12-03	USA	lineage XBB.1.5	39
-2022-12-04	USA	lineage XBB.1.5	54
-2022-12-05	USA	lineage XBB.1.5	125
-2022-12-06	USA	lineage XBB.1.5	88
-2022-12-07	USA	lineage XBB.1.5	75
-2022-12-08	USA	lineage XBB.1.5	80
-2022-12-09	USA	lineage XBB.1.5	68
-2022-12-10	USA	lineage XBB.1.5	54
-2022-12-11	USA	lineage XBB.1.5	58
+2022-12-01	USA	lineage XBB.1.5	58
+2022-12-02	USA	lineage XBB.1.5	61
+2022-12-03	USA	lineage XBB.1.5	40
+2022-12-04	USA	lineage XBB.1.5	55
+2022-12-05	USA	lineage XBB.1.5	133
+2022-12-06	USA	lineage XBB.1.5	96
+2022-12-07	USA	lineage XBB.1.5	85
+2022-12-08	USA	lineage XBB.1.5	100
+2022-12-09	USA	lineage XBB.1.5	101
+2022-12-10	USA	lineage XBB.1.5	70
+2022-12-11	USA	lineage XBB.1.5	98
+2022-12-12	USA	lineage XBB.1.5	156
 2022-08-15	USA	lineage BA.2.3.20	1
 2022-08-17	USA	lineage BA.2.3.20	2
 2022-08-18	USA	lineage BA.2.3.20	1
@@ -6864,7 +6883,7 @@ date	location	variant	sequences
 2022-11-20	USA	lineage BA.2.3.20	11
 2022-11-21	USA	lineage BA.2.3.20	10
 2022-11-22	USA	lineage BA.2.3.20	10
-2022-11-23	USA	lineage BA.2.3.20	7
+2022-11-23	USA	lineage BA.2.3.20	8
 2022-11-24	USA	lineage BA.2.3.20	2
 2022-11-25	USA	lineage BA.2.3.20	10
 2022-11-26	USA	lineage BA.2.3.20	13
@@ -6872,12 +6891,14 @@ date	location	variant	sequences
 2022-11-28	USA	lineage BA.2.3.20	16
 2022-11-29	USA	lineage BA.2.3.20	13
 2022-11-30	USA	lineage BA.2.3.20	5
-2022-12-01	USA	lineage BA.2.3.20	8
-2022-12-02	USA	lineage BA.2.3.20	6
+2022-12-01	USA	lineage BA.2.3.20	9
+2022-12-02	USA	lineage BA.2.3.20	10
+2022-12-03	USA	lineage BA.2.3.20	2
 2022-12-04	USA	lineage BA.2.3.20	9
-2022-12-05	USA	lineage BA.2.3.20	6
-2022-12-06	USA	lineage BA.2.3.20	3
+2022-12-05	USA	lineage BA.2.3.20	12
+2022-12-06	USA	lineage BA.2.3.20	4
 2022-12-07	USA	lineage BA.2.3.20	4
-2022-12-08	USA	lineage BA.2.3.20	1
-2022-12-09	USA	lineage BA.2.3.20	1
-2022-12-10	USA	lineage BA.2.3.20	1
+2022-12-08	USA	lineage BA.2.3.20	2
+2022-12-09	USA	lineage BA.2.3.20	5
+2022-12-10	USA	lineage BA.2.3.20	4
+2022-12-12	USA	lineage BA.2.3.20	1
