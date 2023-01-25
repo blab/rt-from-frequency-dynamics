@@ -53,7 +53,7 @@
 
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 
-\title{SARS-CoV-2 variant dynamics across US states show consistent differences in effective reproduction numbers}
+\title{Inferring variant-specific effective reproduction numbers from combined case and sequencing data}
 
 \author[1,2,*]{Marlin D.\ Figgins}
 \author[1,3]{Trevor Bedford}
@@ -77,6 +77,14 @@ Our method can be used to infer structured relationships between effective repro
 We use this model to estimate the effective reproduction number of SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages of particular variants across different locations.
 
 \end{abstract}
+
+% \section*{Significance statement}%
+%
+% Mathematical models of infectious disease transmission often assume that all infected individuals transmit at similar rates.
+% However, genetic variation in pathogens can contribute to increased transmission for certain genetic variants of the pathogen compared to others.
+% Quantifying how these variants differ in their transmission potential is important for understanding how pathogen populations will change in the short-term.
+% To quantify how the composition of these populations changes due to differential transmission of genetic variants, we develop a Bayesian model for estimating the growth rates and relative advantages of genetic variants.
+% We apply our model to quantify transmission of SARS-CoV-2 variants of concern in the United States in 2021-2022.
 
 \section*{Introduction}
 
@@ -253,7 +261,7 @@ However, for Omicron (Fig.\ \ref{fig:vaccination_to_wave_size}e), this effect is
 This result is largely consistent with individual-level estimates of vaccine effectiveness (VE), where prior to Omicron, variant emergence did little to significantly reduce VE, while Omicron showed substantial reductions in VE against symptomatic illness \cite{Kirsebom2022}.
 % Although Omicron showed partially reduced vaccine effectiveness against symptomatic disease and hospitalization, studies have still found significant protection.
 Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}f).
-These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in Omicron wave.
+These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in the Omicron wave.
 
 \begin{figure}[h!]
   \centering
@@ -462,23 +470,6 @@ Given that we do not observe all new infections and assuming that all variants h
 
 For the purposes of the wave size analysis in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first successful introduction to be the first time point at which variant $v$ is above a threshold frequency of 5\% and have effective reproduction number greater than one.
 
-% \paragraph{Decomposing variant-specific growth advantages}%
-
-% Under the free $R_{t}$ model, we can attempt to decompose the relative advantage of different lineages over time into increased transmissibility and immune escape. For example, given that a variant effective reproduction number can be written as an sum of these two contributions, we can write
-% \begin{align*}
-%   R_{t,v} = (1+\eta_{T}) R_{0} S_{t} + \eta_{E} R_{0} \phi_{t},
-% \end{align*}
-% where $R_{0}$ is the basic reproduction number of the baseline strain, $S_{t}$ is the fraction of the population susceptible to first infection, $\phi_{t}$ is the fraction of the population with prior immunity due to vaccination or past infection. Assuming that the baseline variant has no immune escape, we can then write the difference in the reproduction number as
-% \begin{align*}
-%   R_{t,v} - R_{t} &= R_{0} (\eta_{T} S_{t} + \eta_{E} \phi_{t}).
-% \end{align*}
-% Writing $S_{t}$ as $1 - \phi_{t}$, we have that
-% \begin{align*}
-%   \frac{R_{t,v}-R_{t}}{R_{0}} &= \eta_{T} + (\eta_{E} - \eta_{T})\phi_{t}.
-% \end{align*}
-
-% Using this model, we can estimate the relative contribution of each component by estimating the fraction of the population with some immunity jointly with these to variant advantages.
-
 \paragraph{Priors for Bayesian Inference}%
 
 For both models, we provide a Laplace random walk prior on the spline coefficients $\vec{\beta}$ with scale parameter $\gamma$ which itself has a HalfNormal$(0, 0.1)$ prior distribution.
@@ -531,6 +522,7 @@ MF is an ARCS Foundation scholar and was supported by the National Science Found
 TB is an Investigator of the Howard Hughes Medical Institute.
 This project was supported by funds from the HHMI COVID-19 Collaboration Initiative awarded to the Fred Hutchinson Cancer Research Center and the University of Washington.
 We thank data generators in the United States for generously sharing SARS-CoV-2 sequence data to open databases. Without open data sharing, this work would not be possible.
+We also thank a previous anonymous reviewer for multiple suggestions.
 
 \bibliographystyle{plos}
 \bibliography{rt-from-frequency-dynamics}
