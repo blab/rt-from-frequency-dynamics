@@ -19,7 +19,7 @@ tsv-select -H -f strain,date,country,division,QC_overall_status,Nextclade_pango 
 
 3. Download JSON from the 21L Nextclade build:
 ```
-curl -fsSL https://data.nextstrain.org/nextclade_sars-cov-2_21L.json -o nextclade_sars-cov-2_21L.json.gz
+curl -fsSL https://staging.nextstrain.org/nextclade_sars-cov-2_21L.json -o nextclade_sars-cov-2_21L.json.gz
 ```
 
 4. Decompress this file:
