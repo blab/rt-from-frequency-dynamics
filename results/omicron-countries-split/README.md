@@ -1,4 +1,6 @@
-# Results for Omicron across countries splitting out Omicron sublineages / subclades: BA.2 / 21L, BA.4 / 22A, BA.5 / 22B, BA.2.12.1 / 22C, BA.2.75 / 22D, BQ.1 / 22E, XBB / 22F
+# Results for Omicron across countries splitting out Omicron sublineages / subclades
+
+BA.4 / 22A, BA.5 / 22B, BA.2.75 / 22D, BQ.1 / 22E, XBB / 22F, XBB.1.5 / 23A
 
 ## Variant frequencies
 
@@ -6,7 +8,7 @@ This shows 7-day smoothed variant frequencies. This includes a logistic growth r
 
 #### Variant frequencies on logit y axis
 
-##### Focus on lineage BQ.1 / clade 22E
+##### Focus on lineage XBB.1.5 / clade 23A
 
 ![](figures/omicron-countries-split_logistic-growth-transformed-axis.png)
 
@@ -20,7 +22,7 @@ This uses 7-day smoothed daily case counts alongside 7-day smoothed variant freq
 
 #### Variant case counts on log y-axis
 
-##### Focus on lineage BQ.1 / clade 22E
+##### Focus on lineage XBB.1.5 / clade 23A
 
 ![](figures/omicron-countries-split_partitioned-log-cases.png)
 
