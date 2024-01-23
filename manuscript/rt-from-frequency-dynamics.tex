@@ -75,7 +75,6 @@ Recent studies have used the sample proportions of different variants from genet
 Here, we extend methods for inferring the effective reproduction number of an epidemic using confirmed case data to jointly estimate variant-specific effective reproduction numbers and frequencies of co-circulating variants using cases and sequences across states in the US from January 2021 to March 2022.
 Our method can be used to infer structured relationships between effective reproduction numbers across time series allowing us to estimate fixed variant-specific growth advantages.
 We use this model to estimate the effective reproduction number of SARS-CoV-2 Variants of Concern and Variants of Interest in the United States and estimate consistent growth advantages of particular variants across different locations.
-
 \end{abstract}
 
 % \section*{Significance statement}%
@@ -102,6 +101,7 @@ To more fully capture epidemiological dynamics, there are methods which describe
 Although these methods are excellent for describing overall epidemic growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they generally assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020}, which internally is unrelated to the genetic and phenotypic composition of the population.
 This is of particular importance in the analysis of an epidemic in which a dominant variant may be declining overall, but a minor variant is rapidly increasing in frequency and absolute prevalence, creating the potential for a secondary wave of infections that may go unnoticed at first glance.
 To overcome this we require models that partition case counts into contributions from different variants to estimate variant-specific effective reproduction numbers.
+%TODO: Mention that since we are modeling jointly we account for uncertainty in cases alongside uncertainty in frequencies.
 
 Ongoing SARS-CoV-2 evolution serves as an important example of this phenomenon.
 After initial emergence in late 2020, over the course of 2021, Variant of Concern (VOC) and Variant of Interest (VOI) viruses spread throughout the world and replaced existing viral diversity.
@@ -183,6 +183,7 @@ We then use these counts alongside the daily case counts in each state to estima
 We find that overall there appears to be consistent trends in the effective reproduction numbers of variants across the United States (Fig.\ \ref{fig:rt_consensus}).
 We see that early VOCs Alpha and Gamma initially had $R_t>1$, but saw $R_t$ decline below one across most states in April and May respectively.
 Upon arrival in May, Delta shows significantly higher values of $R_t$ that don't decline below 1 until September.
+%TODO: Is this the point to mention the point about Delta consisting of several lineages?
 Initial Omicron $R_t$ in November and December is significantly greater than earlier variants, but declines below 1 in late January and early February after driving large epidemics across states.
 
 \begin{figure}[h!]
@@ -244,15 +245,15 @@ It appears that individual US states with larger Alpha waves tended to have smal
 We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size}b) though neither effect is statistically significant.
 It is important to caveat these results as possibly being impacted by state-wise differences in overall reporting rates and not necessarily reflective of the true underlying transmission dynamics.
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth]{figs/wave_size_to_wave_size.png}
-  \caption{\textbf{Comparing sizes of subsequent waves.}
-    (a) Plotting estimated Alpha wave size against Delta wave size in individual states. Error bars denote 80\% credible intervals.
-    (b) Plotting estimated Delta wave size against Omicron wave size in individual states. Error bars denote 80\% credible intervals.
-  }
-  \label{fig:wave_size_to_wave_size}
-\end{figure}
+% \begin{figure}[h!]
+%   \centering
+%   \includegraphics[width=\linewidth]{figs/wave_size_to_wave_size.png}
+%   \caption{\textbf{Comparing sizes of subsequent waves.}
+%     (a) Plotting estimated Alpha wave size against Delta wave size in individual states. Error bars denote 80\% credible intervals.
+%     (b) Plotting estimated Delta wave size against Omicron wave size in individual states. Error bars denote 80\% credible intervals.
+%   }
+%   \label{fig:wave_size_to_wave_size}
+% \end{figure}
 
 Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes.
 In order to see if such an effect was observable between states, we examine the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size}a).
@@ -263,15 +264,15 @@ This result is largely consistent with individual-level estimates of vaccine eff
 Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}f).
 These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in the Omicron wave.
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth]{figs/vaccination_to_wave_size.png}
-  \caption{\textbf{Visualizing vaccination at introduction against posterior variant wave size.}
-  (a-e) Posterior wave size as a function of the proportion vaccinated at time of first successful variant introduction. Colors of points above correspond to each variant as shown in \ref{fig:GARW_rt_Washington}.
-  (f) Posterior wave size for Omicron as a function of the proportion of the population with a booster vaccine.
-}
-  \label{fig:vaccination_to_wave_size}
-\end{figure}
+% \begin{figure}[h!]
+%   \centering
+%   \includegraphics[width=\linewidth]{figs/vaccination_to_wave_size.png}
+%   \caption{\textbf{Visualizing vaccination at introduction against posterior variant wave size.}
+%   (a-e) Posterior wave size as a function of the proportion vaccinated at time of first successful variant introduction. Colors of points above correspond to each variant as shown in \ref{fig:GARW_rt_Washington}.
+%   (f) Posterior wave size for Omicron as a function of the proportion of the population with a booster vaccine.
+% }
+%   \label{fig:vaccination_to_wave_size}
+% \end{figure}
 
 Standard compartment models of epidemics suggest that a higher initial variant $R_{t}$ will lead to larger wave sizes assuming the mechanism for increase is due to intrinsic transmissibility.
 In order to see if this trend held in our analyses, we plot the $R_{t}$ at introduction for all variants against their total wave sizes (Fig.\ \ref{fig:intro_R_to_wave_size}a).
@@ -321,6 +322,9 @@ In order to quantify this source of error, we derive an equation relating our in
 This source of error can be partially combated by converting effective reproduction numbers to their corresponding epidemic growth rates under the generation time assumption (see Supplement Appendix).
 There is also a general need to account for biases in the case data which may not faithfully describe the infection dynamics of SARS-CoV-2 due to changes in case ascertainment rate, as possibly caused by differences in testing intensity, infection severity among other reasons.
 However, we suspect that case ascertainment remained largely consistent from January to $\sim$Dec 2021, even if it declined with the advent of widespread circulation of Omicron.
+
+%TODO: Mention that biases in sequencing and submission of these sequences can affect these methods much like all other frequency based methods 
+% This can potential lead to issues for real-time applications of this method.
 
 We do not explicitly model additional introductions of variants outside a fixed seeding period which can play an important role in variants establishing themselves in different geographies at low infection counts and could bias our estimates of the effective reproduction number if not properly accounted for \cite{Cori2013, MullerWagner2021}.
 % This could be especially impactful early on when variant cases are driven by multiple importations from a large epidemic elsewhere in the world.
@@ -408,6 +412,8 @@ We then assume that the likelihood of observing these counts of each variant is 
 given variant frequencies $f(t) = (f_{1}(t), \ldots, f_{V}(t))$ and over-dispersion parameter $0<\xi<1$.
 Here, we use a Dirichlet-multinomial distribution to account for possible over-dispersion in the counts relative to the standard Multinomial distribution.
 
+%TODO: Mention that the DirMultinomial acts as a way to account for higher variance in day-to-day sequence counts than would be expected from a standard multinomial
+
 \paragraph{Basis expansions of log effective reproduction numbers}%
 
 Instead of inferring $R_{t}$ directly, we parameterize the log effective reproduction number using a basis of cubic splines.
@@ -418,6 +424,10 @@ Each basis spline is written as a column in the design matrix $\vec{X}$, so that
 where the $\vec{\beta}$ are to be estimated to parameterize the effective reproduction number.
 We then use locally adaptive smoothing of order one with a Laplace prior on the coefficients $\vec{\beta}$ to promote smoothness on the inferred $R_t$ trajectory \cite{Faulkner2018}.
 This method also allows one to use other predictors such as vaccination proportion, intervention indicators, temperature, humidity, etc.
+
+
+%TODO: Add sentence about implementation used for models in the paper: 4th order spline with $k$ evenly spaced knots. 
+% Mention that knots used can affect results
 
 \paragraph{Modeling variant-specific effective reproduction numbers}%
 
