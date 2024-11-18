@@ -234,16 +234,16 @@ For Omicron, we also observe a large variability in the time-varying growth adva
   \label{fig:ga_consensus}
 \end{figure}
 
-\paragraph{Analyzing variant-specific wave size}%
-
-Using the posterior estimates of variant-specific case counts and state population sizes, we can estimate the cumulative fraction of the population that were confirmed cases for each variant.
-We refer to this cumulative fraction as the variant `wave size'.
-With these posterior estimates of wave size, we can begin to analyze patterns in these wave sizes and their potential relationships with post-infection and post-vaccination immunity.
-
-We first began to look at the wave sizes attributable to subsequent major variants as a crude look into potential effects of cross-immunity between variants.
-It appears that individual US states with larger Alpha waves tended to have smaller Delta waves though this dependence appears to be weak (Fig.\ \ref{fig:wave_size_to_wave_size}a).
-We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size}b) though neither effect is statistically significant.
-It is important to caveat these results as possibly being impacted by state-wise differences in overall reporting rates and not necessarily reflective of the true underlying transmission dynamics.
+% \paragraph{Analyzing variant-specific wave size}%
+%
+% Using the posterior estimates of variant-specific case counts and state population sizes, we can estimate the cumulative fraction of the population that were confirmed cases for each variant.
+% We refer to this cumulative fraction as the variant `wave size'.
+% With these posterior estimates of wave size, we can begin to analyze patterns in these wave sizes and their potential relationships with post-infection and post-vaccination immunity.
+%
+% We first began to look at the wave sizes attributable to subsequent major variants as a crude look into potential effects of cross-immunity between variants.
+% It appears that individual US states with larger Alpha waves tended to have smaller Delta waves though this dependence appears to be weak (Fig.\ \ref{fig:wave_size_to_wave_size}a).
+% We can also see that states with larger Delta waves tended to have larger Omicron waves as well (Fig.\ \ref{fig:wave_size_to_wave_size}b) though neither effect is statistically significant.
+% It is important to caveat these results as possibly being impacted by state-wise differences in overall reporting rates and not necessarily reflective of the true underlying transmission dynamics.
 
 % \begin{figure}[h!]
 %   \centering
@@ -255,14 +255,14 @@ It is important to caveat these results as possibly being impacted by state-wise
 %   \label{fig:wave_size_to_wave_size}
 % \end{figure}
 
-Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes.
-In order to see if such an effect was observable between states, we examine the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size}a).
-For some variants such as Gamma, Iota, and Delta, we see a statistically significant decline in relative wave size as a function of vaccination.
-However, for Omicron (Fig.\ \ref{fig:vaccination_to_wave_size}e), this effect is not apparent.
-This result is largely consistent with individual-level estimates of vaccine effectiveness (VE), where prior to Omicron, variant emergence did little to significantly reduce VE, while Omicron showed substantial reductions in VE against symptomatic illness \cite{Kirsebom2022}.
-% Although Omicron showed partially reduced vaccine effectiveness against symptomatic disease and hospitalization, studies have still found significant protection.
-Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}f).
-These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in the Omicron wave.
+% Theory suggests that having a higher proportion of a population with prior immune exposure would ultimately lead to smaller wave sizes.
+% In order to see if such an effect was observable between states, we examine the posterior variant wave size against proportion of the population fully vaccinated at introduction (Fig.\ \ref{fig:vaccination_to_wave_size}a).
+% For some variants such as Gamma, Iota, and Delta, we see a statistically significant decline in relative wave size as a function of vaccination.
+% However, for Omicron (Fig.\ \ref{fig:vaccination_to_wave_size}e), this effect is not apparent.
+% This result is largely consistent with individual-level estimates of vaccine effectiveness (VE), where prior to Omicron, variant emergence did little to significantly reduce VE, while Omicron showed substantial reductions in VE against symptomatic illness \cite{Kirsebom2022}.
+% % Although Omicron showed partially reduced vaccine effectiveness against symptomatic disease and hospitalization, studies have still found significant protection.
+% Further, we see that repeating this analysis using state population with a booster vaccine and wave size for Omicron again shows no clear trend (Fig.\ \ref{fig:vaccination_to_wave_size}f).
+% These results highlight the complicated relationship between variant success and population immunity as it is clear that single immunity sources or one-off transmission advantages can not completely explain the observed variation in the Omicron wave.
 
 % \begin{figure}[h!]
 %   \centering
@@ -274,20 +274,20 @@ These results highlight the complicated relationship between variant success and
 %   \label{fig:vaccination_to_wave_size}
 % \end{figure}
 
-Standard compartment models of epidemics suggest that a higher initial variant $R_{t}$ will lead to larger wave sizes assuming the mechanism for increase is due to intrinsic transmissibility.
-In order to see if this trend held in our analyses, we plot the $R_{t}$ at introduction for all variants against their total wave sizes (Fig.\ \ref{fig:intro_R_to_wave_size}a).
-We find that generally variants with higher $R_{t}$ values have higher waves sizes consistent with that theory though initial $R_{t}$ alone cannot be used to predict wave size wholly as this trend appears to be driven largely by the Delta and Omicron variants.
-We additionally plot the variant growth advantage at introduction for all variants against the total wave size (Fig.\ \ref{fig:intro_R_to_wave_size}b) and observe a similar trend though once again this alone cannot completely predict wave size.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth]{figs/intro_R_to_wave_size.png}
-  \caption{\textbf{Visualizing variant $R_{t}$ and growth advantage at introduction against posterior variant-specific wave size}
-      (a) Posterior estimates of variant-specific wave size against $R_{t}$ from GARW model at time of first successful introduction.
-      (b) Posterior estimates of variant-specific wave size against growth advantage from GARW model at time of first successful introduction.
-  }
-  \label{fig:intro_R_to_wave_size}
-\end{figure}
+% Standard compartment models of epidemics suggest that a higher initial variant $R_{t}$ will lead to larger wave sizes assuming the mechanism for increase is due to intrinsic transmissibility.
+% In order to see if this trend held in our analyses, we plot the $R_{t}$ at introduction for all variants against their total wave sizes (Fig.\ \ref{fig:intro_R_to_wave_size}a).
+% We find that generally variants with higher $R_{t}$ values have higher waves sizes consistent with that theory though initial $R_{t}$ alone cannot be used to predict wave size wholly as this trend appears to be driven largely by the Delta and Omicron variants.
+% We additionally plot the variant growth advantage at introduction for all variants against the total wave size (Fig.\ \ref{fig:intro_R_to_wave_size}b) and observe a similar trend though once again this alone cannot completely predict wave size.
+%
+% \begin{figure}[h!]
+%   \centering
+%   \includegraphics[width=\linewidth]{figs/intro_R_to_wave_size.png}
+%   \caption{\textbf{Visualizing variant $R_{t}$ and growth advantage at introduction against posterior variant-specific wave size}
+%       (a) Posterior estimates of variant-specific wave size against $R_{t}$ from GARW model at time of first successful introduction.
+%       (b) Posterior estimates of variant-specific wave size against growth advantage from GARW model at time of first successful introduction.
+%   }
+%   \label{fig:intro_R_to_wave_size}
+% \end{figure}
 
 \section*{Discussion}
 
@@ -296,7 +296,7 @@ In each state, spring waves in 2021 were primarily driven by the arrival of Alph
 However, as these waves subsided, the arrival of Delta with a significantly greater growth advantage, drove a large wave in summer 2021.
 Omicron's arrival in November 2021 drove a much larger wave in January/February 2022 due to significant immune escape of the variant.
 Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticeable in overall case counts, and that Omicron's initial $R_{t}$ was estimated to be between 2 and 3 in December 2021, presaging a substantial Omicron driven wave.
-Our estimates of the variant-specific $R_{t}$ and incidence then allow us to assess the relationship between variant wave sizes across states as a function of past variant-specific exposure, $R_{t}$, growth advantages, as well as vaccination.
+% Our estimates of the variant-specific $R_{t}$ and incidence then allow us to assess the relationship between variant wave sizes across states as a function of past variant-specific exposure, $R_{t}$, growth advantages, as well as vaccination.
 
 We imagine that this approach could provide early warning of imminent epidemics driven by low-frequency but highly transmissible variants and generally serve to identify newly arising variants that show significant transmission advantages and that may drive epidemics.
 Indeed, we have continually updated estimates of spread of Omicron and Omicron sublineages BA.2, BA.2.12.1, BA.4 and BA.5 using this method and shared results in real-time online at \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
@@ -471,16 +471,16 @@ Given variant-specific effective reproduction numbers $R_{t,v}$ and the frequenc
 \end{equation}
 which is the sum of the variant-specific effective reproduction numbers weighted by their frequency. This quantity can be seen in Figure \ref{fig:GARW_rt_Washington}.
 
-\paragraph{Variant-specific wave sizes}%
-
-We estimate variant-specific wave sizes using the posterior estimates of incidence. We define that the wave size attributable to variant $v$ is
- \begin{align*}
-   W_{v} = \sum_{t \geq 0} I_{v}(t).
-\end{align*}
-
-Given that we do not observe all new infections and assuming that all variants have an equal-reporting rate, this is really a relative wave size attributable to each variant.
-
-For the purposes of the wave size analysis in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first successful introduction to be the first time point at which variant $v$ is above a threshold frequency of 5\% and have effective reproduction number greater than one.
+% \paragraph{Variant-specific wave sizes}%
+%
+% We estimate variant-specific wave sizes using the posterior estimates of incidence. We define that the wave size attributable to variant $v$ is
+%  \begin{align*}
+%    W_{v} = \sum_{t \geq 0} I_{v}(t).
+% \end{align*}
+%
+% Given that we do not observe all new infections and assuming that all variants have an equal-reporting rate, this is really a relative wave size attributable to each variant.
+%
+% For the purposes of the wave size analysis in Figures \ref{fig:vaccination_to_wave_size} and \ref{fig:intro_R_to_wave_size}, we define the first successful introduction to be the first time point at which variant $v$ is above a threshold frequency of 5\% and have effective reproduction number greater than one.
 
 \paragraph{Priors for Bayesian Inference}%
 
