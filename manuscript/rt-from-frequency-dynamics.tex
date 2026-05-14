@@ -92,15 +92,16 @@ Quantifying the observed growth advantages of SARS-CoV-2 variants allows us to b
 Relating genomic data of SARS-CoV-2 variants to epidemic surveillance data is difficult.
 Although it is typical to use phylodynamic methods to analyze genetic sequence data from epidemics, the sheer amount of data as well as challenges to describing fitness effects in phylodynamic models make these methods hard to apply to potential differences in transmission rate among circulating variants.
 In order to deal with the limitations of phylodynamic inference, previous studies have estimated the growth of variants using observed frequencies in sequenced SARS-CoV-2 samples \cite{Annavajhala2021, Faria2021, Obermeyer2021, Ito2021}.
-Such methods often model the frequency of variants using multinomial logistic regression \cite{Annavajhala2021, Obermeyer2021}, which generally assumes that genetic variants have a fitness advantage over one another which is fixed in time and acts as a estimate for the selective advantage of different variants at the level of frequencies.
+Such methods often model the frequency of variants using multinomial logistic regression \cite{Annavajhala2021, Obermeyer2021}, which generally assumes that genetic variants have a fitness advantage over one another which is fixed in time and acts as an estimate for the selective advantage of different variants at the level of frequencies.
 Although a consistent increase in frequency of one variant over another is expected to reflect differences in transmission rate, these models do not directly account for the complicated infection and transmission dynamics which influence which variants lead to local and regional epidemics.
 When dealing with competition between variants, variants which are declining in frequency can still lead to an increasing number of infections.
 Similarly, growth in frequency does not necessarily entail an increase in absolute infections.
 
 To more fully capture epidemiological dynamics, there are methods which describe the growth in number of infections using confirmed case, hospitalization, or death data to estimate changes in the effective reproduction number $R_{t}$, the average number of infections a single infectious individual generates at a given point of time $t$.
 Although these methods are excellent for describing overall epidemic growth rates, they cannot capture the evolutionary dynamics and fitness changes between different variants since they generally assume the population dynamics are described by a singular $R_{t}$ trajectory \cite{Cori2013, Abbott2020}, which internally is unrelated to the genetic and phenotypic composition of the population.
-This is of particular importance in the analysis of an epidemic in which a dominant variant may be declining overall, but a minor variant is rapidly increasing in frequency and absolute prevalence, creating the potential for a secondary wave of infections that may go unnoticed at first glance.
-To overcome this we require models that partition case counts into contributions from different variants to estimate variant-specific effective reproduction numbers.
+This is of particular importance in epidemics where a dominant variant may be declining overall while a minor variant is rapidly increases in frequency and absolute prevalence.
+In such cases, the early rise of the new variant may be masked in aggregated case counts, delaying the response to an emerging secondary wave.
+To overcome this we require models that partition case counts into contributions from different variants to estimate variant-specific effective reproduction numbers, in addition to relative growth advantage.
 %TODO: Mention that since we are modeling jointly we account for uncertainty in cases alongside uncertainty in frequencies.
 
 Ongoing SARS-CoV-2 evolution serves as an important example of this phenomenon.
@@ -112,6 +113,10 @@ Here, we develop a joint epidemiological and population genetic model of SARS-Co
 We apply this model to sequence data and case count data from the United States between January 2021 and March 2022 to estimate differences in transmissibility between circulating VOC and VOI viruses.
 
 \section*{Results}
+
+We begin by presenting the structure of our models which are the central contribution of this study.
+These models estimate variant-specific effective reproduction numbers using a renewal equation framework applied to case and sequence data.
+We then apply these approaches to SARS-CoV-2 variant dynamics in the United States.
 
 \paragraph{Model Overview}%
 
@@ -201,13 +206,14 @@ Using the fixed growth advantage model, we find that most variants identified sh
 Further, these growth advantages appear to be consistent between the states analyzed.
 These results from the fixed growth advantage model are consistent with a multinomial logistic growth analysis (Fig.\ \ref{fig:MLR_growth_advantages}).
 Alpha, Beta, Gamma and Iota show modest growth advantage over largely ancestral `other' viruses, while Mu and Delta show larger growth advantages.
-Mu has previously been associated with increased neutralization resistance to convalescent serum \cite{Uriu2021}, and its advantage of 1.2--1.8 across states is perhaps partially driven by immune escape.
+Mu has previously been associated with increased neutralization resistance to convalescent serum \cite{Uriu2021}, and its advantage of 1.2--1.8 across states is may be partially driven by immune escape, intrinsic transmissibility, and differences in population immunity.
 Despite this, Mu's growth advantage whether from immune escape or otherwise was insufficient to outcompete Delta in any of the states analyzed.
 Delta's advantage of 1.6--2.0 across states is particularly significant.
 Given this large growth advantage was evident in May (Fig.\ \ref{fig:rt_consensus}), Delta's rapid rise in frequency and sizable epidemic should have been clear at the time.
 The significant growth advantage observed in Delta is recapitulated in other studies including Obermeyer et al.\ \cite{Obermeyer2021} and V\"ohringer et al.\ \cite{vohringer2021genomic}.
 In the case of Omicron, we see significant variability in the growth advantage which spans 2.0--4.4.
 This large variability could be motivated by multiple factors including state-level variation in population immunity.
+However, our model estimates variant-specific $R_{t}$ and relative growth advantages based on epidemiological patterns and does not disentangle these underlying mechanisms.
 
 \begin{figure}[h!]
   \centering
@@ -298,7 +304,10 @@ Omicron's arrival in November 2021 drove a much larger wave in January/February 
 Importantly, we can directly estimate a variant-specific $R_{t}$, which for example, shows that Delta was a growing rapidly sub-epidemic across states in May, before its impact was noticeable in overall case counts, and that Omicron's initial $R_{t}$ was estimated to be between 2 and 3 in December 2021, presaging a substantial Omicron driven wave.
 % Our estimates of the variant-specific $R_{t}$ and incidence then allow us to assess the relationship between variant wave sizes across states as a function of past variant-specific exposure, $R_{t}$, growth advantages, as well as vaccination.
 
-We imagine that this approach could provide early warning of imminent epidemics driven by low-frequency but highly transmissible variants and generally serve to identify newly arising variants that show significant transmission advantages and that may drive epidemics.
+This approach enables estimation of variant-specific reproduction numbers, offering a direct view on transmission dynamics rather than relative frequency changes alone.
+By modeling variant-specific $R_{t}$, this appraoch characterizes absolute transmission potential of each variant over time in addition to competitive advantage relative to others.
+This allows us to interpret variant dynamics in terms of sustained transmission in a population which is essential for public health planning and epidemic response.
+
 Indeed, we have continually updated estimates of spread of Omicron and Omicron sublineages BA.2, BA.2.12.1, BA.4 and BA.5 using this method and shared results in real-time online at \href{https://github.com/blab/rt-from-frequency-dynamics/}{github.com/blab/rt-from-frequency-dynamics}.
 As an example, we estimate the growth advantages of Omicron sublineages BA.2, BA.2.12.1, BA.4, and BA.5 during their rise in the United States in Figure \ref{fig:omicron_growth_advantages}.
 These real-time estimates have served as a basis for reporting to public health, policy makers and the general public.
@@ -493,7 +502,7 @@ Finally, the over-dispersion parameter $\xi$ is given a Beta$(1, 99)$ prior to p
 
 \paragraph{Inference}
 
-The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a full-rank Gaussian variational distribution / Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which approximates the posterior (with appropriate constraints on the individual parameter spaces) as a multivariate normal distribution.
+The model is implemented in NumPyro \cite{phan2019composable} in Python and approximate Bayesian inference was conducted using Stochastic Variational Inference (SVI) \cite{hoffman2013svi} using the ADAM optimizer \cite{kingma2017adam} with a learning rate of 0.01. For the analyses presented, all models are fit using a full-rank Gaussian variational distribution / Multivariate Normal autoguide as implemented in NumPyro \cite{phan2019composable} which approximates the posterior (with appropriate constraints on the individual parameter spaces) as a multivariate normal distribution.
 
 Models for each individual state in the United States variants data set were fit for 60,000 iterations and 3000 posterior samples were produced under both the fixed growth advantage model and the GARW model.
 
@@ -518,14 +527,14 @@ Derived data of sequence counts and case counts, along with all source code used
 
 The authors declare no conflicting interests.
 
-\subsection*{Author contributions}
-
-MF, TB conceived the study.
-TB gathered sequence and case count data.
-MF designed and implemented inference model.
-MF performed the analysis.
-MF, TB interpreted the results.
-MF, TB wrote the paper.
+% \subsection*{Author contributions}
+%
+% MF, TB conceived the study.
+% TB gathered sequence and case count data.
+% MF designed and implemented inference model.
+% MF performed the analysis.
+% MF, TB interpreted the results.
+% MF, TB wrote the paper.
 
 \subsection*{Acknowledgements}%
 
@@ -550,73 +559,71 @@ We also thank a previous anonymous reviewer for multiple suggestions.
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thepage}{S\arabic{page}}
 
-\section*{Supplemental Appendix}
+\section*{Appendix}
 
 \clearpage
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/GARW_rt_California.png}
-  \caption{\textbf{Fitting the GARW model to California data.}}%
+  \caption{Figure 1-figure supplement 1 \textbf{Fitting the GARW model to California data.}}%
   \label{fig:GARW_rt_California}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fixed_growth_California.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to California data.}}%
+  \caption{Figure 1-figure supplement 2 \textbf{Fitting the fixed growth advantage model to California data.}}%
   \label{fig:fixed_growth_California}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/GARW_rt_Florida.png}
-  \caption{\textbf{Fitting the GARW model to Florida data.}}%
+  \caption{Figure 1-figure supplement 3 \textbf{Fitting the GARW model to Florida data.}}%
   \label{fig:GARW_rt_Florida}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fixed_growth_Florida.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to Florida data.}}%
+  \caption{Figure 1-figure supplement 4 \textbf{Fitting the fixed growth advantage model to Florida data.}}%
   \label{fig:fixed_growth_Florida}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/GARW_rt_Michigan.png}
-  \caption{\textbf{Fitting the GARW model to Michigan data.}}%
+  \caption{Figure 1-figure supplement 5 \textbf{Fitting the GARW model to Michigan data.}}%
   \label{fig:GARW_rt_Michigan}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fixed_growth_Michigan.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to Michigan data.}}%
+  \caption{Figure 1-figure supplement 6 \textbf{Fitting the fixed growth advantage model to Michigan data.}}%
   \label{fig:fixed_growth_Michigan}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/GARW_rt_New-York.png}
-  \caption{\textbf{Fitting the GARW model to New York state data.}}%
+  \caption{Figure 1-figure supplement 7\textbf{Fitting the GARW model to New York state data.}}%
   \label{fig:GARW_rt_New-York}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fixed_growth_New-York.png}
-  \caption{\textbf{Fitting the fixed growth advantage model to New York state data.}}%
+  \caption{Figure 1-figure supplement 8 \textbf{Fitting the fixed growth advantage model to New York state data.}}%
   \label{fig:fixed_growth_New-York}
 \end{figure}
 
 \clearpage
 
-\subsection*{Supplemental Results}
+\subsection*{Relationship to multinomial logistic regression}
 
-\subsubsection*{Relationship to multinomial logistic regression}
-
-Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analysis is roughly equivalent to our fixed growth advantage model, but that inferring relative effective reproduction numbers between variants using multinomial logistic regression requires additional restrictions on the generation time.
+Other papers have tried to infer growth advantages of variants from sequence data alone, we show that the multinomial logistic regression model typically used in these analyses is roughly equivalent to our fixed growth advantage model, but that inferring relative effective reproduction numbers between variants using multinomial logistic regression requires additional restrictions on the generation time.
 Multinomial logistic regression typically models the probability of a given observation belong to class $v$ at time $t$ as
 \begin{equation}
   f_{v}(t) = \frac{p_{v}\exp(\beta_{v} t)}{\sum_{1\leq u\leq V} p_{u}\exp(\beta_{u} t)}.
@@ -660,7 +667,7 @@ This means that the relative effective reproduction number for any two variants 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/fig_MLR_growth_advantages_supp.png}
-  \caption{Estimating variant growth advantages in various states using Multinomial Logistic Regression model assuming generation time $T_{g} = 5.2$.
+  \caption{\textbf{Appendix 1--figure 1}Estimating variant growth advantages in various states using Multinomial Logistic Regression model assuming generation time $T_{g} = 5.2$.
   (a) Growth advantages visualized by state.
   (b) Same as (a) but grouped by variant.}%
   \label{fig:MLR_growth_advantages}
@@ -668,7 +675,7 @@ This means that the relative effective reproduction number for any two variants 
 
 \newpage
 
-\subsubsection*{Relating epidemic growth rates to relative effective reproduction numbers}
+\subsection*{Relating epidemic growth rates to relative effective reproduction numbers}
 
 An important relationship of interest is between the epidemic growth rate of an epidemic and its effective reproduction number.
 In the case of our analysis, we are particularly interested in the effect of generation time assumptions on estimated variant-specific effective reproduction numbers.
@@ -741,7 +748,7 @@ In general, the term inside the log is non-constant meaning that fixed variant g
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/generation_time_sensitivity.png}
-  \caption{\textbf{Sensitivity of effective reproduction number to changes in generation time.}
+  \caption{\textbf{Appendix 1--figure 2} \textbf{Sensitivity of effective reproduction number to changes in generation time.}
 (a) We vary the mean of Omicron generation time keeping a constant standard deviation 1.2 and plot against effective reproduction number estimates for Omicron in Washington state on February 1st, 2022 using our GARW model.
 (b) The same as (a), but we instead vary the standard deviation of Omicron generation time keeping a constant mean 3.1.}%
   \label{fig:generation_time_sensitivity}
@@ -750,7 +757,7 @@ In general, the term inside the log is non-constant meaning that fixed variant g
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/little_r_sensitivity.png}
-  \caption{\textbf{Sensitivity of epidemic growth rates to changes in generation time.}
+  \caption{\textbf{Appendix 1--figure 3} \textbf{Sensitivity of epidemic growth rates to changes in generation time.}
 (a) We vary the mean of Omicron generation time keeping a constant standard deviation 1.2 and plot against exponential growth rates for Omicron in Washington state on February 1st, 2022 using our GARW model and assuming a Gamma-distributed generation time.
 (b) The same as (a), but we instead vary the standard deviation of Omicron generation time keeping a constant mean 3.1. }%
   \label{fig:little_r_sensitivity}
@@ -759,7 +766,7 @@ In general, the term inside the log is non-constant meaning that fixed variant g
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/growth_advantage_sensitivity.png}
-  \caption{\textbf{Sensitivity of growth advantages to changes in generation time.}
+  \caption{\textbf{Appendix 1--figure 4} \textbf{Sensitivity of growth advantages to changes in generation time.}
 (a) We vary the mean of Omicron generation time keeping a constant standard deviation 1.2 and plot against exponential growth rates for Delta in Washington state on July 1st, 2021 using our fixed growth model.
 (b) The same as (a), but we instead vary the standard deviation of Omicron generation time keeping a constant mean 3.2.}%
   \label{fig:growth_advantage_sensitivity}
